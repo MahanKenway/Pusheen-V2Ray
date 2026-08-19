@@ -49,7 +49,7 @@ class VmessParser:
                 for key, value in payload.items()
                 if key
                 not in {
-                    "v", "ps", "add", "port", "id", "aid", "scy", "net", "type",
+                    "v", "ps", "add", "port", "id", "net", "type",
                     "host", "path", "tls", "sni", "alpn", "fp", "serviceName",
                 }
                 and value not in (None, "")

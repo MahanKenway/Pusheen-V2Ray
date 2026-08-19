@@ -40,12 +40,6 @@ class StandardUriParser:
             "path",
             "serviceName",
             "servicename",
-            "flow",
-            "fp",
-            "pbk",
-            "sid",
-            "spx",
-            "encryption",
         }
         transport = Transport(
             network=query.get("type", "tcp"),

@@ -42,6 +42,9 @@ class IngestSources:
         rejection_codes: dict[str, int] = {}
 
         for source in sources:
+            register_source = getattr(self.repository, "upsert_source", None)
+            if callable(register_source):
+                register_source(source)
             if not source.enabled:
                 continue
             try:

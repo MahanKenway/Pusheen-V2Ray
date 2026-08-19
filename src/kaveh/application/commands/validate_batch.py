@@ -62,6 +62,9 @@ class ValidateBatch:
                 self.source_weights.get(config.source_id or "", 0.5),
             )
             scorecards.append(scorecard)
+            save_scorecard = getattr(self.history, "save_scorecard", None)
+            if callable(save_scorecard):
+                save_scorecard(scorecard)
             if scorecard.qualified:
                 qualified += 1
         return ValidationReport(

@@ -76,7 +76,23 @@ A failed TCP check is not equivalent to a failed end-to-end check, and a success
 
 Kaveh treats upstream source content and public issue text as untrusted data. The foundation uses reviewable registries, HTTPS-only source URLs, response limits, safe errors that avoid logging raw URIs, and atomic snapshots that do not replace the last known-good publication with an empty run.
 
-The scheduled pipeline is intentionally not enabled until the isolated runtime validation adapter and persistent history are added. This is preferable to publishing outputs that have not satisfied the Kaveh quality contract.
+The scheduled pipeline remains disabled by default until production secrets, a controlled probe endpoint, source policies, and a persistent PostgreSQL instance are configured. This is preferable to publishing outputs that have not satisfied the Kaveh quality contract.
+
+## PostgreSQL and Xray end-to-end validation
+
+Kaveh stores canonical configurations, source observations, append-only probe results, current status, scorecards, and publication snapshots in PostgreSQL. The schema is migration-based and uses `KAVEH_DATABASE_URL`; credentials belong only in a protected runtime environment such as `.env.local` or a secret manager.
+
+```bash
+cp .env.example .env.local
+# Set KAVEH_DATABASE_URL, XRAY_BINARY, KAVEH_PROBE_URL, and KAVEH_VANTAGE_ID.
+set -a && . ./.env.local && set +a
+python -m kaveh migrate
+python -m kaveh validate --registry configs/sources/registry.v1.json --limit 25
+```
+
+The `validate` command first ingests only enabled and reviewable registry sources. It then creates a unique, local `127.0.0.1` SOCKS inbound for each candidate, starts Xray in a temporary workspace, sends a `HEAD` request to `KAVEH_PROBE_URL` through that SOCKS listener, records every stage in PostgreSQL, and terminates the process. The probe endpoint must be an HTTPS endpoint you control or explicitly approve and must return HTTP 204.
+
+The adapter does **not** download Xray during a run. Install an audited, version-pinned binary separately and set `XRAY_BINARY`; the implementation requires `END_TO_END` success before qualification. A failed run records a safe error code, retains the prior healthy publication, and does not emit a new snapshot.
 
 ## Development
 
