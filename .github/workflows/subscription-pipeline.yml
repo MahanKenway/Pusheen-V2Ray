@@ -68,16 +68,22 @@ jobs:
           python -m kaveh validate \
             --registry configs/sources/registry.v1.json \
             --limit "${limit}" \
-            --publish-root subscriptions
+            --publish-root .
       - name: Commit subscription changes only
         run: |
           set -euo pipefail
-          if git diff --quiet -- subscriptions; then
+          git add -A -- subscriptions
+          if [ -d snapshots ]; then
+            git add -A -- snapshots
+          fi
+          if [ -f latest.txt ]; then
+            git add -A -- latest.txt
+          fi
+          if git diff --cached --quiet; then
             echo "No qualified subscription change; no commit created."
             exit 0
           fi
           git config user.name "pusheen-v2ray-bot[bot]"
           git config user.email "pusheen-v2ray-bot[bot]@users.noreply.github.com"
-          git add subscriptions
           git commit -m "chore(subscription): publish qualified feed"
           git push
