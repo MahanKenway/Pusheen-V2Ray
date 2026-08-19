@@ -17,7 +17,7 @@ jobs:
   validate-and-publish:
     # Set repository variable KAVEH_AUTOMATION_ENABLED=true only after the
     # required secret and variables are configured.
-    if: vars.KAVEH_AUTOMATION_ENABLED == 'true'
+    if: github.event_name == 'workflow_dispatch' || vars.KAVEH_AUTOMATION_ENABLED == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 14
     steps:
