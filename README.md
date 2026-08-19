@@ -23,6 +23,20 @@ A reachable TCP port is not proof that a configuration works for an end user. Ka
 | Runtime end-to-end adapter | Xray/sing-box isolated runtime probe | Planned next milestone |
 | Persistent history / dashboard | PostgreSQL, queue, status UI | Planned after runtime validation |
 
+## Subscription links
+
+Kaveh publishes consumer-facing files under `subscriptions/`. The links below are stable; their contents change only after an end-to-end qualified feed changes. Because this repository is currently private, raw links require an authorized GitHub session or token. If the repository is made public, they become ordinary client subscription URLs.
+
+| Feed | Raw URI list | Base64 subscription |
+|---|---|---|
+| All qualified protocols | [all.txt](https://raw.githubusercontent.com/MahanKenway/Kaveh/main/subscriptions/all.txt) | [all.base64](https://raw.githubusercontent.com/MahanKenway/Kaveh/main/subscriptions/all.base64) |
+| VLESS | `subscriptions/vless.txt` after first qualified VLESS publication | `subscriptions/vless.base64` after first qualified VLESS publication |
+| VMess | `subscriptions/vmess.txt` after first qualified VMess publication | `subscriptions/vmess.base64` after first qualified VMess publication |
+| Trojan | `subscriptions/trojan.txt` after first qualified Trojan publication | `subscriptions/trojan.base64` after first qualified Trojan publication |
+| Shadowsocks | `subscriptions/ss.txt` after first qualified Shadowsocks publication | `subscriptions/ss.base64` after first qualified Shadowsocks publication |
+
+Use [manifest.v1.json](https://raw.githubusercontent.com/MahanKenway/Kaveh/main/subscriptions/manifest.v1.json) to inspect the current snapshot and quality metadata. Before the first qualified result the feed files are intentionally empty.
+
 ## Architecture
 
 ```text

@@ -31,6 +31,6 @@ class PublishSnapshot:
             return PublishReport(
                 published=False,
                 snapshot=None,
-                reason="NO_QUALIFIED_CONFIGS",
+                reason=self.publisher.last_skip_reason or "NO_QUALIFIED_CONFIGS",
             )
         return PublishReport(published=True, snapshot=snapshot)

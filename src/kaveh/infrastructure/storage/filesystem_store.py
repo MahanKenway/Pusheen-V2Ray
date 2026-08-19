@@ -22,6 +22,13 @@ class FileSystemArtifactStore:
         os.replace(temporary, target)
         return hashlib.sha256(content).hexdigest()
 
+    def read_bytes(self, relative_path: str) -> bytes | None:
+        target = self.root / relative_path
+        try:
+            return target.read_bytes()
+        except FileNotFoundError:
+            return None
+
     def switch_latest(self, snapshot_id: str) -> None:
         payload = (snapshot_id + "\n").encode("utf-8")
         self.write_atomic("latest.txt", payload)
