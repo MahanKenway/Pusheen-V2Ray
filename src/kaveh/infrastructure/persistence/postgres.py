@@ -195,6 +195,33 @@ class PostgresConfigRepository:
             ).fetchall()
         return tuple(_config_from_row(row) for row in rows)
 
+    def recently_qualified(self, max_age_hours: int) -> tuple[CanonicalConfig, ...]:
+        """Return configurations with fresh persisted qualification evidence.
+
+        This is deliberately bounded by the policy's freshness window. It lets a
+        transient runner-specific failure preserve a previously verified public
+        feed without treating stale evidence as publishable.
+        """
+
+        with self.database.transaction() as connection:
+            rows = connection.execute(
+                """
+                SELECT c.*, observation.source_id
+                FROM configs AS c
+                JOIN config_status AS status ON status.identity_hash = c.identity_hash
+                LEFT JOIN LATERAL (
+                    SELECT source_id FROM config_observations
+                    WHERE identity_hash = c.identity_hash
+                    ORDER BY last_seen_at DESC LIMIT 1
+                ) AS observation ON TRUE
+                WHERE status.state = 'qualified'
+                  AND status.last_e2e_success_at >= NOW() - (%s * INTERVAL '1 hour')
+                ORDER BY status.score DESC NULLS LAST, status.last_e2e_success_at DESC
+                """,
+                (max_age_hours,),
+            ).fetchall()
+        return tuple(_config_from_row(row) for row in rows)
+
 
 class PostgresValidationHistory:
     """Stores append-only probe evidence and a materialized current status."""

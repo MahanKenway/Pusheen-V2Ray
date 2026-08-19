@@ -137,9 +137,12 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
         validation = ValidateBatch(
             _LimitedRepository(candidates), supervisor, history, policy, sources
         ).run()
+        publication_configs, publication_cards, publication_mode = _publication_inputs(
+            candidates, validation.scorecards, repository, history, policy, sources
+        )
         publication = PublishSnapshot(
             SnapshotPublisher(FileSystemArtifactStore(publish_root), policy.version)
-        ).run(candidates, validation.scorecards, ingestion.source_errors)
+        ).run(publication_configs, publication_cards, ingestion.source_errors)
         history.finish_run()
     except Exception:
         history.finish_run(status="failed", error_code="VALIDATION_RUN_FAILED")
@@ -165,12 +168,46 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
                     "published": publication.published,
                     "snapshot_id": publication.snapshot.snapshot_id if publication.snapshot else None,
                     "reason": publication.reason,
+                    "mode": publication_mode,
                 },
             },
             sort_keys=True,
         )
     )
     return 0
+
+
+def _publication_inputs(candidates, scorecards, repository, history, policy, sources):  # type: ignore[no-untyped-def]
+    """Choose current evidence first, then only fresh persisted qualification.
+
+    A scheduled runner can have path-specific reachability failures. A failed
+    round must not replace a live feed with an empty one when a configuration
+    still has qualifying end-to-end evidence within the active policy window.
+    """
+
+    current_cards = tuple(scorecards)
+    if any(card.qualified for card in current_cards):
+        return candidates, current_cards, "current_run"
+
+    recently_qualified = getattr(repository, "recently_qualified", None)
+    if not callable(recently_qualified):
+        return candidates, current_cards, "current_run"
+    historical_configs = tuple(recently_qualified(policy.max_staleness_hours))
+    if not historical_configs:
+        return candidates, current_cards, "current_run"
+
+    source_weights = {source.source_id: source.trust_weight for source in sources}
+    historical_cards = tuple(
+        policy.score(
+            history.health_window(config.identity_hash or ""),
+            source_weights.get(config.source_id or "", 0.5),
+        )
+        for config in historical_configs
+        if config.identity_hash
+    )
+    if not any(card.qualified for card in historical_cards):
+        return candidates, current_cards, "current_run"
+    return historical_configs, historical_cards, "fresh_history"
 
 
 class _LimitedRepository:
