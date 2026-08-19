@@ -1,61 +1,90 @@
-<p align="center">
-  <img src="assets/banner.png" alt="Freedom V2Ray Banner" width="100%">
-</p>
+# Kaveh
 
-# 🚀 Freedom V2Ray (Auto-Update)
+> **Measured routes. Clear choices.**
 
-[English](#english) | [فارسی](#فارسی)
+Kaveh is a **quality-first proxy feed pipeline**. It is designed to replace the opaque model of “collect a large list and publish it” with a traceable process: reviewed sources, typed parsing, deterministic validation stages, health history, transparent scoring, and immutable publications.
 
----
+Kaveh is an independent repository that began from the public Freedom-V2Ray codebase under its MIT license. It preserves the license and keeps `upstream` configured for optional reference; its product direction, architecture, and releases are independent.
 
-## English
+## Why Kaveh
 
-A professional and automated V2Ray configuration collector. This project automatically fetches, tests, and categorizes high-speed V2Ray configs from multiple reliable sources every **2 hours**.
+A reachable TCP port is not proof that a configuration works for an end user. Kaveh separates parsing, network reachability, runtime construction, end-to-end validation, scoring, and publishing. A future `stable` feed will require successful end-to-end evidence rather than a TCP handshake alone.
 
-### ✨ Features
-- **Auto-Update**: Configs are updated every **2 hours** via GitHub Actions.
-- **Auto-Ping Test**: Only high-speed and healthy configs are published.
-- **Multi-Protocol**: Supports VLESS, VMESS, Shadowsocks, Trojan, and Reality.
-- **Subscription Ready**: Provides base64 encoded links for easy import into any V2Ray client.
-- **Clean & Fast**: Removes duplicates and organizes configs by protocol.
+| Capability | Kaveh foundation | Status |
+|---|---|---|
+| Versioned source registry | Reviewable JSON registry outside application code | Implemented |
+| Typed protocol parsing | VLESS, VMess, Trojan, and Shadowsocks adapters | Implemented |
+| Canonical identity | SHA-256 identity from connection-significant fields | Implemented |
+| Safe deduplication | Source and label do not create duplicate identities | Implemented |
+| Bounded ingestion | HTTPS-only, timeout, size cap, redirect rejection | Implemented |
+| Validation policy | Explicit schema and TCP stages; E2E required for qualification | Implemented foundation |
+| Health scoring | Explainable score policy and in-memory history | Implemented foundation |
+| Atomic publication | Immutable snapshot artifacts and `latest` pointer | Implemented foundation |
+| Runtime end-to-end adapter | Xray/sing-box isolated runtime probe | Planned next milestone |
+| Persistent history / dashboard | PostgreSQL, queue, status UI | Planned after runtime validation |
 
-### 🔗 Subscription Links
-| Protocol | Raw Link | Subscription (Base64) |
-| --- | --- | --- |
-| **Mix (All)** | [Raw](https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/mix.txt) | [Sub](https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/mix_sub.txt) |
-| **VLESS** | [Raw](https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/vless.txt) | [Sub](https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/vless_sub.txt) |
-| **VMESS** | [Raw](https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/vmess.txt) | [Sub](https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/vmess_sub.txt) |
-| **Shadowsocks** | [Raw](https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/ss.txt) | [Sub](https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/ss_sub.txt) |
-| **Trojan** | [Raw](https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/trojan.txt) | [Sub](https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/trojan_sub.txt) |
+## Architecture
 
-### 🤝 Contributing
-Want to help? Please see our [Contributing Guide](CONTRIBUTING.md).
+```text
+Source Registry → Fetcher → Container Normalizer → Protocol Parsers
+    → Canonical Identity & Dedupe → Validation Queue
+    → Schema / Reachability / Runtime / End-to-End evidence
+    → Health History & Scoring → Immutable Snapshot Publisher
+```
 
----
+The source tree follows a modular-monolith design.
 
-## فارسی
+```text
+src/kaveh/
+├── domain/          # Typed models, business policies, and ports
+├── application/     # Ingestion, validation, and publication commands
+├── adapters/        # Protocol parsers, containers, and publishers
+├── infrastructure/  # HTTP, persistence, probes, storage, observability
+├── interfaces/      # Future CLI/API/job endpoints
+└── config/          # Loading versioned source registries and policies
+```
 
-یک جمع‌آوری‌کننده حرفه‌ای و خودکار کانفیگ‌های V2Ray. این پروژه به صورت خودکار هر **۲ ساعت** یکبار، کانفیگ‌های پرسرعت را از منابع معتبر جمع‌آوری، تست و دسته‌بندی می‌کند.
+The dependency rule is deliberate: `domain` does not import HTTP, database, process, or framework code. Infrastructure implements domain ports; interfaces call application commands.
 
-### ✨ ویژگی‌ها
-- **آپدیت خودکار**: به‌روزرسانی هر **۲ ساعت** یکبار توسط GitHub Actions.
-- **تست پینگ خودکار**: فقط کانفیگ‌های سالم و پرسرعت منتشر می‌شوند.
-- **پشتیبانی از پروتکل‌های مختلف**: VLESS, VMESS, Shadowsocks, Trojan و Reality.
-- **لینک‌های سابسکریپشن**: ارائه لینک‌های انکود شده (Base64) برای استفاده آسان در تمام کلاینت‌ها.
-- **منظم و سریع**: حذف موارد تکراری و دسته‌بندی دقیق بر اساس پروتکل.
+## Quick start
 
-### 🔗 لینک‌های سابسکریپشن
-| پروتکل | لینک خام | سابسکریپشن (Base64) |
-| --- | --- | --- |
-| **ترکیبی (همه)** | [Raw](https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/mix.txt) | [Sub](https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/mix_sub.txt) |
-| **VLESS** | [Raw](https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/vless.txt) | [Sub](https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/vless_sub.txt) |
-| **VMESS** | [Raw](https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/vmess.txt) | [Sub](https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/vmess_sub.txt) |
-| **Shadowsocks** | [Raw](https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/ss.txt) | [Sub](https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/ss_sub.txt) |
-| **Trojan** | [Raw](https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/trojan.txt) | [Sub](https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/trojan_sub.txt) |
+Kaveh has no third-party runtime dependency in the foundation release.
 
-### 🤝 مشارکت در پروژه
-می‌خواهید کمک کنید؟ لطفاً [راهنمای مشارکت](CONTRIBUTING.md) را مطالعه کنید.
+```bash
+python3 -m venv .venv
+. .venv/bin/activate
+pip install -e .
+cp configs/sources/registry.v1.example.json configs/sources/registry.v1.json
+# Review the registry, add only approved HTTPS sources, then explicitly enable them.
+python -m kaveh ingest --registry configs/sources/registry.v1.json
+```
 
----
-🕊️ **For a Free Iran - برای آزادی ایران**
-*Created by MahanKenway*
+The example registry is disabled by default. Do not add unreviewed URLs or credentials to the repository.
+
+## Quality contract
+
+A candidate progresses through this lifecycle:
+
+```text
+DISCOVERED → PARSED → POLICY_ACCEPTED → QUEUED
+  → REACHABLE → E2E_VERIFIED → QUALIFIED → PUBLISHED
+```
+
+A failed TCP check is not equivalent to a failed end-to-end check, and a successful TCP check is never enough for the future `stable` feed. Every score will record a policy version and its contributing components.
+
+## Security posture
+
+Kaveh treats upstream source content and public issue text as untrusted data. The foundation uses reviewable registries, HTTPS-only source URLs, response limits, safe errors that avoid logging raw URIs, and atomic snapshots that do not replace the last known-good publication with an empty run.
+
+The scheduled pipeline is intentionally not enabled until the isolated runtime validation adapter and persistent history are added. This is preferable to publishing outputs that have not satisfied the Kaveh quality contract.
+
+## Development
+
+```bash
+PYTHONPATH=src python -m unittest discover -s tests/kaveh -p 'test_*.py'
+PYTHONPATH=src python -m kaveh --help
+```
+
+## License and attribution
+
+Kaveh is distributed under the repository's [MIT License](LICENSE). The project originated from [Freedom-V2Ray](https://github.com/MahanKenway/Freedom-V2Ray); the original copyright and license notices are retained.

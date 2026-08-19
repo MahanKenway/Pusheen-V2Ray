@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kaveh-feed"
+version = "0.1.0"
+description = "Quality-first, transparent proxy feed pipeline"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "MahanKenway"}]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+]
+
+[project.scripts]
+kaveh = "kaveh.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["kaveh*"]
+
+[tool.unittest]
+start-directory = "tests/kaveh"
+pattern = "test_*.py"
