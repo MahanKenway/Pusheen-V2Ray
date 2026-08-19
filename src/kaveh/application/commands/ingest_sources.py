@@ -52,7 +52,7 @@ class IngestSources:
             except SourceFetchError as exc:
                 source_errors[source.source_id] = exc.code
                 continue
-            for raw_uri in normalize_lines(content):
+            for raw_uri in normalize_lines(content, max_lines=source.max_entries):
                 discovered += 1
                 try:
                     config = self.parser_registry.parse(raw_uri, source_id=source.source_id)

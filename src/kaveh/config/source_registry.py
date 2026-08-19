@@ -17,6 +17,7 @@ class SourceRegistryError(ValueError):
 
 _SOURCE_ID = re.compile(r"[a-z0-9][a-z0-9-]{0,63}")
 _MAX_SOURCE_BYTES = 2_000_000
+_MAX_SOURCE_ENTRIES = 2_000
 
 
 def _validated_source_id(value: object) -> str:
@@ -54,6 +55,17 @@ def _validated_max_bytes(value: object) -> int:
     return max_bytes
 
 
+def _validated_max_entries(value: object) -> int:
+    if isinstance(value, bool):
+        raise SourceRegistryError("Source max_entries must be an integer")
+    max_entries = int(value)
+    if not 1 <= max_entries <= _MAX_SOURCE_ENTRIES:
+        raise SourceRegistryError(
+            f"Source max_entries must be between 1 and {_MAX_SOURCE_ENTRIES}"
+        )
+    return max_entries
+
+
 def load_sources(path: str | Path) -> tuple[Source, ...]:
     """Load a bounded, HTTPS-only v1 source registry."""
 
@@ -80,6 +92,7 @@ def load_sources(path: str | Path) -> tuple[Source, ...]:
                     trust_weight=_validated_weight(item.get("trust_weight", 0.5)),
                     allowed_protocols=allowed or frozenset(Protocol),
                     max_bytes=_validated_max_bytes(item.get("max_bytes", _MAX_SOURCE_BYTES)),
+                    max_entries=_validated_max_entries(item.get("max_entries", 500)),
                 )
             )
             seen_ids.add(source_id)

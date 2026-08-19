@@ -66,6 +66,7 @@ class Source:
         default_factory=lambda: frozenset(Protocol)
     )
     max_bytes: int = 2_000_000
+    max_entries: int = 500
 
 
 @dataclass(frozen=True)

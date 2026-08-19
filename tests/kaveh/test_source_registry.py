@@ -24,6 +24,7 @@ class SourceRegistryTests(unittest.TestCase):
             "trust_weight": 0.75,
             "allowed_protocols": ["vless", "trojan"],
             "max_bytes": 250_000,
+            "max_entries": 120,
         }
         source.update(overrides)
         return source
@@ -35,6 +36,7 @@ class SourceRegistryTests(unittest.TestCase):
         self.assertEqual(sources[0].source_id, "reviewed-source")
         self.assertEqual(sources[0].trust_weight, 0.75)
         self.assertEqual(sources[0].max_bytes, 250_000)
+        self.assertEqual(sources[0].max_entries, 120)
 
     def test_rejects_insecure_url(self) -> None:
         with self.assertRaisesRegex(SourceRegistryError, "HTTPS"):
@@ -57,6 +59,10 @@ class SourceRegistryTests(unittest.TestCase):
     def test_rejects_max_bytes_above_budget(self) -> None:
         with self.assertRaisesRegex(SourceRegistryError, "between 1 and 2000000"):
             load_sources(self._write_registry(self._source(max_bytes=2_000_001)))
+
+    def test_rejects_max_entries_above_budget(self) -> None:
+        with self.assertRaisesRegex(SourceRegistryError, "between 1 and 2000"):
+            load_sources(self._write_registry(self._source(max_entries=2_001)))
 
 
 if __name__ == "__main__":
