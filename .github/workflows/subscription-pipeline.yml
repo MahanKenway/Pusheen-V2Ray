@@ -19,7 +19,9 @@ jobs:
     # required secret and variables are configured.
     if: github.event_name == 'workflow_dispatch' || vars.KAVEH_AUTOMATION_ENABLED == 'true'
     runs-on: ubuntu-latest
-    timeout-minutes: 14
+    # Four sequential Xray probes leave headroom for setup, ingest, and commit
+    # inside the 15-minute schedule interval.
+    timeout-minutes: 12
     steps:
       - name: Checkout
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
@@ -51,7 +53,14 @@ jobs:
           test -n "${KAVEH_DATABASE_URL}"
           test -n "${KAVEH_PROBE_URL}"
           test -n "${KAVEH_VANTAGE_ID}"
-          limit="${KAVEH_CANDIDATE_LIMIT:-12}"
+          # A four-candidate default keeps a worst-case sequential Xray run below
+          # the job budget. The repository variable can only lower this safety cap.
+          requested_limit="${KAVEH_CANDIDATE_LIMIT:-4}"
+          limit="${requested_limit}"
+          if [ "${limit}" -gt 4 ] 2>/dev/null; then
+            echo "Capping KAVEH_CANDIDATE_LIMIT at 4 to preserve the 15-minute schedule budget."
+            limit=4
+          fi
           case "${limit}" in
             ''|*[!0-9]*) echo "KAVEH_CANDIDATE_LIMIT must be a positive integer" >&2; exit 1 ;;
           esac
