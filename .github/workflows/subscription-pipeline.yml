@@ -1,4 +1,4 @@
-name: Kaveh Subscription Pipeline
+name: Pusheen V2Ray Subscription Pipeline
 
 on:
   schedule:
@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: kaveh-subscription-pipeline
+  group: pusheen-v2ray-subscription-pipeline
   cancel-in-progress: false
 
 jobs:
@@ -67,8 +67,8 @@ jobs:
             echo "No qualified subscription change; no commit created."
             exit 0
           fi
-          git config user.name "kaveh-bot[bot]"
-          git config user.email "kaveh-bot[bot]@users.noreply.github.com"
+          git config user.name "pusheen-v2ray-bot[bot]"
+          git config user.email "pusheen-v2ray-bot[bot]@users.noreply.github.com"
           git add subscriptions
           git commit -m "chore(subscription): publish qualified feed"
           git push

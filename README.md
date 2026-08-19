@@ -1,79 +1,28 @@
-# Kaveh
+# Pusheen V2Ray
 
-> **Measured routes. Clear choices.**
+<p align="center">
+  <img src="assets/brand/pusheen-playing-bone.jpg" alt="Selected Pusheen brand artwork" width="280">
+</p>
 
-Kaveh is a **quality-first proxy feed pipeline**. It is designed to replace the opaque model of “collect a large list and publish it” with a traceable process: reviewed sources, typed parsing, deterministic validation stages, health history, transparent scoring, and immutable publications.
+> **Playful branding. Measured routes.**
 
-Kaveh is an independent repository that began from the public Freedom-V2Ray codebase under its MIT license. It preserves the license and keeps `upstream` configured for optional reference; its product direction, architecture, and releases are independent.
+**Pusheen V2Ray** is a quality-first proxy feed pipeline. It replaces the opaque pattern of collecting a large list and publishing it immediately with a traceable process: reviewed sources, typed parsing, bounded validation, health history, transparent scoring, and immutable publications.
 
-## Why Kaveh
-
-A reachable TCP port is not proof that a configuration works for an end user. Kaveh separates parsing, network reachability, runtime construction, end-to-end validation, scoring, and publishing. A future `stable` feed will require successful end-to-end evidence rather than a TCP handshake alone.
-
-| Capability | Kaveh foundation | Status |
-|---|---|---|
-| Versioned source registry | Reviewable JSON registry outside application code | Implemented |
-| Typed protocol parsing | VLESS, VMess, Trojan, and Shadowsocks adapters | Implemented |
-| Canonical identity | SHA-256 identity from connection-significant fields | Implemented |
-| Safe deduplication | Source and label do not create duplicate identities | Implemented |
-| Bounded ingestion | HTTPS-only, timeout, size cap, redirect rejection | Implemented |
-| Validation policy | Explicit schema and TCP stages; E2E required for qualification | Implemented foundation |
-| Health scoring | Explainable score policy and in-memory history | Implemented foundation |
-| Atomic publication | Immutable snapshot artifacts and `latest` pointer | Implemented foundation |
-| Runtime end-to-end adapter | Xray/sing-box isolated runtime probe | Planned next milestone |
-| Persistent history / dashboard | PostgreSQL, queue, status UI | Planned after runtime validation |
+Pusheen V2Ray is an independent project that began from the public Freedom-V2Ray codebase under its MIT license. Its product direction, architecture, release process, and automation are independent; `upstream` remains configured only as an optional reference.
 
 ## Subscription links
 
-Kaveh publishes consumer-facing files under `subscriptions/`. The links below are stable; their contents change only after an end-to-end qualified feed changes. Because this repository is currently private, raw links require an authorized GitHub session or token. If the repository is made public, they become ordinary client subscription URLs.
+The repository is public and publishes consumer-facing feeds under `subscriptions/`. Stable URLs change their contents only after the qualified feed itself changes.
 
 | Feed | Raw URI list | Base64 subscription |
 |---|---|---|
-| All qualified protocols | [all.txt](https://raw.githubusercontent.com/MahanKenway/Kaveh/main/subscriptions/all.txt) | [all.base64](https://raw.githubusercontent.com/MahanKenway/Kaveh/main/subscriptions/all.base64) |
+| All qualified protocols | [all.txt](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/all.txt) | [all.base64](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/all.base64) |
 | VLESS | `subscriptions/vless.txt` after first qualified VLESS publication | `subscriptions/vless.base64` after first qualified VLESS publication |
 | VMess | `subscriptions/vmess.txt` after first qualified VMess publication | `subscriptions/vmess.base64` after first qualified VMess publication |
 | Trojan | `subscriptions/trojan.txt` after first qualified Trojan publication | `subscriptions/trojan.base64` after first qualified Trojan publication |
 | Shadowsocks | `subscriptions/ss.txt` after first qualified Shadowsocks publication | `subscriptions/ss.base64` after first qualified Shadowsocks publication |
 
-Use [manifest.v1.json](https://raw.githubusercontent.com/MahanKenway/Kaveh/main/subscriptions/manifest.v1.json) to inspect the current snapshot and quality metadata. Before the first qualified result the feed files are intentionally empty.
-
-## Architecture
-
-```text
-Source Registry → Fetcher → Container Normalizer → Protocol Parsers
-    → Canonical Identity & Dedupe → Validation Queue
-    → Schema / Reachability / Runtime / End-to-End evidence
-    → Health History & Scoring → Immutable Snapshot Publisher
-```
-
-The source tree follows a modular-monolith design.
-
-```text
-src/kaveh/
-├── domain/          # Typed models, business policies, and ports
-├── application/     # Ingestion, validation, and publication commands
-├── adapters/        # Protocol parsers, containers, and publishers
-├── infrastructure/  # HTTP, persistence, probes, storage, observability
-├── interfaces/      # Future CLI/API/job endpoints
-└── config/          # Loading versioned source registries and policies
-```
-
-The dependency rule is deliberate: `domain` does not import HTTP, database, process, or framework code. Infrastructure implements domain ports; interfaces call application commands.
-
-## Quick start
-
-Kaveh has no third-party runtime dependency in the foundation release.
-
-```bash
-python3 -m venv .venv
-. .venv/bin/activate
-pip install -e .
-cp configs/sources/registry.v1.example.json configs/sources/registry.v1.json
-# Review the registry, add only approved HTTPS sources, then explicitly enable them.
-python -m kaveh ingest --registry configs/sources/registry.v1.json
-```
-
-The example registry is disabled by default. Do not add unreviewed URLs or credentials to the repository.
+Use [manifest.v1.json](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/manifest.v1.json) to inspect snapshot metadata. Before the first end-to-end qualified result, the feed files are intentionally empty.
 
 ## Quality contract
 
@@ -84,37 +33,51 @@ DISCOVERED → PARSED → POLICY_ACCEPTED → QUEUED
   → REACHABLE → E2E_VERIFIED → QUALIFIED → PUBLISHED
 ```
 
-A failed TCP check is not equivalent to a failed end-to-end check, and a successful TCP check is never enough for the future `stable` feed. Every score will record a policy version and its contributing components.
+A successful TCP connection is never enough to qualify a feed entry. Pusheen V2Ray creates a temporary local Xray SOCKS runtime, probes an approved HTTPS endpoint through that runtime, records structured evidence in PostgreSQL, and requires `END_TO_END` success before publication.
 
-## Security posture
+| Capability | Status |
+|---|---|
+| Versioned source registry, typed parsing, and canonical deduplication | Implemented |
+| Bounded HTTPS ingestion and reviewable source policy | Implemented |
+| Xray runtime configuration and isolated end-to-end probe | Implemented |
+| Persistent PostgreSQL history, status, scorecards, and snapshots | Implemented |
+| Stable raw/Base64 subscription artifacts | Implemented |
+| Scheduled guarded publication | Implemented; disabled until production settings are configured |
 
-Kaveh treats upstream source content and public issue text as untrusted data. The foundation uses reviewable registries, HTTPS-only source URLs, response limits, safe errors that avoid logging raw URIs, and atomic snapshots that do not replace the last known-good publication with an empty run.
+## Automation
 
-The scheduled pipeline remains disabled by default until production secrets, a controlled probe endpoint, source policies, and a persistent PostgreSQL instance are configured. This is preferable to publishing outputs that have not satisfied the Kaveh quality contract.
+The guarded subscription workflow targets minutes **07, 22, 37, and 52** of each hour. It permits no overlapping runs, applies a hard timeout and candidate cap, uses one pinned Xray binary, and creates a commit only when the qualified feed changes.
 
-## PostgreSQL and Xray end-to-end validation
+Before enabling it, configure the GitHub secret `KAVEH_DATABASE_URL` and the non-secret variables `KAVEH_PROBE_URL`, `KAVEH_VANTAGE_ID`, and `KAVEH_CANDIDATE_LIMIT`. Set `KAVEH_AUTOMATION_ENABLED=true` only after a manual run succeeds. The legacy `KAVEH_*` names and the internal Python package `kaveh` remain deliberately stable for backwards compatibility.
 
-Kaveh stores canonical configurations, source observations, append-only probe results, current status, scorecards, and publication snapshots in PostgreSQL. The schema is migration-based and uses `KAVEH_DATABASE_URL`; credentials belong only in a protected runtime environment such as `.env.local` or a secret manager.
+## Architecture
 
-```bash
-cp .env.example .env.local
-# Set KAVEH_DATABASE_URL, XRAY_BINARY, KAVEH_PROBE_URL, and KAVEH_VANTAGE_ID.
-set -a && . ./.env.local && set +a
-python -m kaveh migrate
-python -m kaveh validate --registry configs/sources/registry.v1.json --limit 25
+```text
+Source Registry → Fetcher → Container Normalizer → Protocol Parsers
+    → Canonical Identity & Dedupe → Validation Queue
+    → Schema / Reachability / Runtime / End-to-End evidence
+    → PostgreSQL History & Scoring → Immutable Snapshot Publisher
 ```
 
-The `validate` command first ingests only enabled and reviewable registry sources. It then creates a unique, local `127.0.0.1` SOCKS inbound for each candidate, starts Xray in a temporary workspace, sends a `HEAD` request to `KAVEH_PROBE_URL` through that SOCKS listener, records every stage in PostgreSQL, and terminates the process. The probe endpoint must be an HTTPS endpoint you control or explicitly approve and must return HTTP 204.
+The source tree follows a modular-monolith design. The `domain` package has no dependency on HTTP, database, process, or framework code. Infrastructure implements ports; application commands coordinate workflows; runtime adapters create isolated Xray configurations.
 
-The adapter does **not** download Xray during a run. Install an audited, version-pinned binary separately and set `XRAY_BINARY`; the implementation requires `END_TO_END` success before qualification. A failed run records a safe error code, retains the prior healthy publication, and does not emit a new snapshot.
-
-## Development
+## Quick start
 
 ```bash
-PYTHONPATH=src python -m unittest discover -s tests/kaveh -p 'test_*.py'
-PYTHONPATH=src python -m kaveh --help
+python3 -m venv .venv
+. .venv/bin/activate
+pip install -e .
+cp configs/sources/registry.v1.example.json configs/sources/registry.v1.json
+# Review the registry, add only approved HTTPS sources, then explicitly enable them.
+python -m kaveh ingest --registry configs/sources/registry.v1.json
 ```
 
-## License and attribution
+For PostgreSQL and Xray validation, see [the runbook](docs/postgres-xray-runbook.md). For scheduled subscription automation, see [the automation guide](docs/subscription-automation.md).
 
-Kaveh is distributed under the repository's [MIT License](LICENSE). The project originated from [Freedom-V2Ray](https://github.com/MahanKenway/Freedom-V2Ray); the original copyright and license notices are retained.
+## Brand asset and attribution
+
+The brand image at [`assets/brand/pusheen-playing-bone.jpg`](assets/brand/pusheen-playing-bone.jpg) was selected by the project owner from [Pusheen’s official artwork](https://pusheen.com/). Pusheen artwork and marks are associated with Pusheen Corp.; this repository does not claim ownership of them. Any public use remains subject to the relevant rights and permissions. The project owner may replace the image with licensed or original artwork at any time.
+
+## License and source attribution
+
+The code is distributed under this repository’s [MIT License](LICENSE). The project originated from [Freedom-V2Ray](https://github.com/MahanKenway/Freedom-V2Ray); original copyright and license notices are retained.
