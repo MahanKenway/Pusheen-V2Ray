@@ -1400,6 +1400,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "188.114.97.4",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cf39fab0-bb85-42cb-9945-2ad69d78e575"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "rubifen.adaspoloandco.com"
+        },
+        "wsSettings": {
+          "path": "/GOrbEh"
+        }
+      },
+      "tag": "resilient-b4c77b8362895842"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "172.66.156.81",
             "port": 80,
             "users": [
@@ -1444,35 +1473,6 @@
         }
       },
       "tag": "resilient-eba58c0b45b3b2a3"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.17.28.89",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "1078d418-b4e0-4668-9018-dc90c2042d61"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "workspace.evan00.dpdns.org"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-b533feb32bfe553d"
     },
     {
       "protocol": "blackhole",

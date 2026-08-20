@@ -5,7 +5,7 @@
     "vmess": 9
   },
   "count": 53,
-  "created_at": "2026-08-20T16:45:59.066078+00:00",
+  "created_at": "2026-08-20T17:50:13.080083+00:00",
   "evidence": "recent successful TCP reachability",
   "max_evidence_age_hours": 72,
   "notice": "A receipt records why the item is eligible for this tier at publication time. It does not disclose hostnames, credentials, raw URIs, or guarantee availability from another network.",
@@ -361,6 +361,13 @@
       "transport_family": "vless:ws:none"
     },
     {
+      "id": "b4c77b8362895842",
+      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
+      "latest_source_id": "iboxz-vless-probationary",
+      "protocol": "vless",
+      "transport_family": "vless:ws:tls"
+    },
+    {
       "id": "2ce33340b87e2b3a",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "iboxz-vless-probationary",
@@ -373,13 +380,6 @@
       "latest_source_id": "iboxz-vless-probationary",
       "protocol": "vless",
       "transport_family": "vless:ws:none"
-    },
-    {
-      "id": "b533feb32bfe553d",
-      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
-      "latest_source_id": "raydikal-verified",
-      "protocol": "vless",
-      "transport_family": "vless:ws:tls"
     }
   ],
   "schema_version": 1,
