@@ -1106,6 +1106,57 @@
       "settings": {
         "vnext": [
           {
+            "address": "104.26.14.85",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cf39fab0-bb85-42cb-9945-2ad69d78e575"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-bd89eac4d9977831"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "69.46.46.220",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "f40c72be-e337-2441-61f7-8bc19e07410b"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "toysar-production.up.railway.app"
+        },
+        "wsSettings": {
+          "path": "/ws/f40c72be-e337-2441-61f7-8bc19e07410b"
+        }
+      },
+      "tag": "resilient-6ddcb4cfb4747988"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "172.66.156.81",
             "port": 80,
             "users": [
@@ -1125,35 +1176,6 @@
         }
       },
       "tag": "resilient-29f5940e14c35228"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.26.14.85",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "cf39fab0-bb85-42cb-9945-2ad69d78e575"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "rubifen.adaspoloandco.com"
-        },
-        "wsSettings": {
-          "path": "/GOrbEh"
-        }
-      },
-      "tag": "resilient-ec947ad6f5b10744"
     },
     {
       "protocol": "vless",
@@ -1452,31 +1474,6 @@
         }
       },
       "tag": "resilient-b4c77b8362895842"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "102.177.189.29",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/TelegramU0001F1E8U0001F1F3"
-        }
-      },
-      "tag": "resilient-eba58c0b45b3b2a3"
     },
     {
       "protocol": "blackhole",
