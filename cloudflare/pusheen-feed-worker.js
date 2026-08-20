@@ -28,6 +28,18 @@ const ARTIFACTS = {
   "status.json": "status.json",
 };
 
+// These five artifacts are mirrored by Cron after each publication window.
+// The remaining allowlisted artifacts are mirrored opportunistically on a
+// successful client request, avoiding needless KV writes while retaining a
+// last-known-good path for the continuity tier.
+const SCHEDULED_ARTIFACTS = [
+  "subscriptions/resilient.txt",
+  "subscriptions/strict.txt",
+  "subscriptions/resilient.receipts.v1.json",
+  "profiles/resilient-xray.json",
+  "status.json",
+];
+
 addEventListener("fetch", (event) => {
   event.respondWith(handleRequest(event.request, event));
 });
@@ -83,7 +95,7 @@ async function handleRequest(request, ctx) {
 
 async function refreshAllArtifacts() {
   const results = await Promise.allSettled(
-    Object.values(ARTIFACTS).map(async (artifact) => {
+    SCHEDULED_ARTIFACTS.map(async (artifact) => {
       const upstream = await fetchUpstream(artifact);
       const body = await upstream.arrayBuffer();
       if (body.byteLength === 0) throw new Error("empty_upstream_artifact");
