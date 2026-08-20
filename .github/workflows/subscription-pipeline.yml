@@ -99,4 +99,8 @@ jobs:
           git config user.name "pusheen-v2ray-bot[bot]"
           git config user.email "pusheen-v2ray-bot[bot]@users.noreply.github.com"
           git commit -m "chore(subscription): refresh validated feeds and status"
+          # A manual code change may land while validation is running. Rebase the
+          # generated artifact commit before publication instead of losing it to
+          # a non-fast-forward push rejection.
+          git pull --rebase origin main
           git push
