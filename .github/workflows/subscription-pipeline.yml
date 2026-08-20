@@ -19,7 +19,7 @@ jobs:
     # required secret and variables are configured.
     if: github.event_name == 'workflow_dispatch' || vars.KAVEH_AUTOMATION_ENABLED == 'true'
     runs-on: ubuntu-latest
-    # Twelve candidates are processed with four bounded workers, preserving
+    # Eight candidates are processed with four bounded workers, preserving
     # end-to-end evidence while leaving headroom inside the 15-minute interval
     # even when newly discovered endpoints require full probe timeouts.
     timeout-minutes: 12
@@ -68,11 +68,11 @@ jobs:
           test -n "${KAVEH_VANTAGE_ID}"
           # Bounded parallel validation improves strict-feed discovery without
           # weakening the end-to-end requirement or exceeding the job budget.
-          requested_limit="${KAVEH_CANDIDATE_LIMIT:-12}"
+          requested_limit="${KAVEH_CANDIDATE_LIMIT:-8}"
           limit="${requested_limit}"
-          if [ "${limit}" -gt 12 ] 2>/dev/null; then
-            echo "Capping KAVEH_CANDIDATE_LIMIT at 12 to preserve the 15-minute schedule budget."
-            limit=12
+          if [ "${limit}" -gt 8 ] 2>/dev/null; then
+            echo "Capping KAVEH_CANDIDATE_LIMIT at 8 to preserve the 15-minute schedule budget."
+            limit=8
           fi
           case "${limit}" in
             ''|*[!0-9]*) echo "KAVEH_CANDIDATE_LIMIT must be a positive integer" >&2; exit 1 ;;
