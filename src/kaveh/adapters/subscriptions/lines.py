@@ -2,7 +2,12 @@
 
 from __future__ import annotations
 
+import re
+
 from kaveh.adapters.protocols.encoded import decode_base64
+
+
+_URI_LINE = re.compile(r"(?m)^\s*[A-Za-z][A-Za-z0-9+.-]*://")
 
 
 def normalize_lines(content: str, max_lines: int = 20_000) -> list[str]:
@@ -16,12 +21,12 @@ def normalize_lines(content: str, max_lines: int = 20_000) -> list[str]:
     stripped = content.strip()
     if not stripped:
         return []
-    if "://" not in stripped[:200]:
+    if not _URI_LINE.search(stripped):
         try:
             decoded = decode_base64(stripped)
         except ValueError:
             decoded = stripped
-        if "://" in decoded[:200]:
+        if _URI_LINE.search(decoded):
             stripped = decoded
     lines = [line.strip() for line in stripped.splitlines() if "://" in line]
     return lines[:max_lines]
