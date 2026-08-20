@@ -344,6 +344,25 @@
     },
     {
       "network": "tcp",
+      "server": "104.16.79.73",
+      "server_port": 443,
+      "tag": "outage-843144ebf2f246e3",
+      "tls": {
+        "enabled": true,
+        "server_name": "josni.hoyes.cloudns.ch"
+      },
+      "transport": {
+        "headers": {
+          "Host": "josni.hoyes.cloudns.ch"
+        },
+        "path": "musiclovers85?ed=512",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    },
+    {
+      "network": "tcp",
       "server": "45.130.125.76",
       "server_port": 8443,
       "tag": "outage-3b5060a664ca5998",
@@ -368,25 +387,6 @@
       "tag": "outage-bd89eac4d9977831",
       "type": "vless",
       "uuid": "cf39fab0-bb85-42cb-9945-2ad69d78e575"
-    },
-    {
-      "network": "tcp",
-      "server": "69.46.46.220",
-      "server_port": 443,
-      "tag": "outage-6ddcb4cfb4747988",
-      "tls": {
-        "enabled": true,
-        "server_name": "toysar-production.up.railway.app"
-      },
-      "transport": {
-        "headers": {
-          "Host": "toysar-production.up.railway.app"
-        },
-        "path": "/ws/f40c72be-e337-2441-61f7-8bc19e07410b",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "f40c72be-e337-2441-61f7-8bc19e07410b"
     },
     {
       "network": "tcp",
@@ -560,9 +560,9 @@
         "outage-1634e2ff5d67077a",
         "outage-99909b012335b4dd",
         "outage-25654f2adc9c9c9f",
+        "outage-843144ebf2f246e3",
         "outage-3b5060a664ca5998",
         "outage-bd89eac4d9977831",
-        "outage-6ddcb4cfb4747988",
         "outage-29f5940e14c35228",
         "outage-ea9026764e87f710",
         "outage-d35e553bae001534",

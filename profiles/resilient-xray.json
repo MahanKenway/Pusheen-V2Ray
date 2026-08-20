@@ -1164,6 +1164,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "104.16.79.73",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "josni.hoyes.cloudns.ch"
+        },
+        "wsSettings": {
+          "path": "musiclovers85?ed=512"
+        }
+      },
+      "tag": "resilient-843144ebf2f246e3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "45.130.125.76",
             "port": 8443,
             "users": [
@@ -1238,31 +1267,6 @@
         }
       },
       "tag": "resilient-6ddcb4cfb4747988"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.66.156.81",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "cda9ae20-f69f-4112-be95-90cdfc7a21ae"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-29f5940e14c35228"
     },
     {
       "protocol": "trojan",
