@@ -7,6 +7,7 @@ import json
 from pathlib import Path
 
 from kaveh.adapters.protocols.registry import ParserRegistry
+from kaveh.adapters.publishers.reachable_publisher import ReachableFeedPublisher
 from kaveh.adapters.publishers.snapshot_publisher import SnapshotPublisher
 from kaveh.adapters.runtime.xray_adapter import XrayEndToEndProbe
 from kaveh.application.commands.ingest_sources import IngestSources
@@ -70,8 +71,8 @@ def build_parser() -> argparse.ArgumentParser:
     validate.add_argument(
         "--publish-root",
         type=Path,
-        default=Path("public/generated"),
-        help="artifact root used for immutable snapshots",
+        default=Path("."),
+        help="repository root that contains stable subscriptions/ and snapshots/ paths",
     )
     return parser
 
@@ -140,9 +141,13 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
         publication_configs, publication_cards, publication_mode = _publication_inputs(
             candidates, validation.scorecards, repository, history, policy, sources
         )
+        artifact_store = FileSystemArtifactStore(publish_root)
         publication = PublishSnapshot(
-            SnapshotPublisher(FileSystemArtifactStore(publish_root), policy.version)
+            SnapshotPublisher(artifact_store, policy.version)
         ).run(publication_configs, publication_cards, ingestion.source_errors)
+        reachable_publication = ReachableFeedPublisher(artifact_store).publish(
+            _reachable_publication_inputs(repository, policy), ingestion.source_errors
+        )
         history.finish_run()
     except Exception:
         history.finish_run(status="failed", error_code="VALIDATION_RUN_FAILED")
@@ -170,11 +175,26 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
                     "reason": publication.reason,
                     "mode": publication_mode,
                 },
+                "reachable_publication": {
+                    "published": reachable_publication.published,
+                    "count": reachable_publication.count,
+                    "snapshot_id": reachable_publication.snapshot_id,
+                    "reason": reachable_publication.reason,
+                },
             },
             sort_keys=True,
         )
     )
     return 0
+
+
+def _reachable_publication_inputs(repository, policy):  # type: ignore[no-untyped-def]
+    """Return a bounded, fresh TCP-reachable tier without weakening strict feed."""
+
+    recently_reachable = getattr(repository, "recently_reachable", None)
+    if not callable(recently_reachable):
+        return ()
+    return tuple(recently_reachable(policy.max_staleness_hours))[:100]
 
 
 def _publication_inputs(candidates, scorecards, repository, history, policy, sources):  # type: ignore[no-untyped-def]
@@ -192,11 +212,15 @@ def _publication_inputs(candidates, scorecards, repository, history, policy, sou
     recently_qualified = getattr(repository, "recently_qualified", None)
     if not callable(recently_qualified):
         return candidates, current_cards, "current_run"
-    historical_configs = tuple(recently_qualified(policy.max_staleness_hours))
+    source_weights = {source.source_id: source.trust_weight for source in sources}
+    historical_configs = tuple(
+        config
+        for config in recently_qualified(policy.max_staleness_hours)
+        if config.source_id in source_weights
+    )
     if not historical_configs:
         return candidates, current_cards, "current_run"
 
-    source_weights = {source.source_id: source.trust_weight for source in sources}
     historical_cards = tuple(
         policy.score(
             history.health_window(config.identity_hash or ""),
