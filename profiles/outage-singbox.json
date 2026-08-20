@@ -297,6 +297,18 @@
       "uuid": "2acde116-5949-48d8-a1e6-60a1d2547deb"
     },
     {
+      "network": "tcp",
+      "server": "172.67.211.177",
+      "server_port": 8880,
+      "tag": "outage-1634e2ff5d67077a",
+      "transport": {
+        "path": "/pyip=ProxyIP.US.CMLiussss.net",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "ef770523-8eb5-403f-9e95-06b328719c87"
+    },
+    {
       "alter_id": 0,
       "network": "tcp",
       "security": "auto",
@@ -525,21 +537,6 @@
       "uuid": "4b5e4565-322f-4223-a891-78a84f189726"
     },
     {
-      "network": "tcp",
-      "server": "104.18.42.163",
-      "server_port": 2095,
-      "tag": "outage-6eb470adb04b9789",
-      "transport": {
-        "headers": {
-          "Host": "download.pusytroller.gq"
-        },
-        "path": "/?telegram-marambashi_marambashi_marambashi_marambashi_marambashi?ed=512",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -560,6 +557,7 @@
         "outage-d1244412c1798a64",
         "outage-9f5f58f64211a2c8",
         "outage-05cd1db3c73baca6",
+        "outage-1634e2ff5d67077a",
         "outage-99909b012335b4dd",
         "outage-25654f2adc9c9c9f",
         "outage-3b5060a664ca5998",
@@ -573,8 +571,7 @@
         "outage-a17d8298b4c22b93",
         "outage-4f72b4f5393bce7f",
         "outage-227a5613c8cafb61",
-        "outage-b57b9ce2e344e8ee",
-        "outage-6eb470adb04b9789"
+        "outage-b57b9ce2e344e8ee"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
