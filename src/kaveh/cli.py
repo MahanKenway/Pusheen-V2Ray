@@ -180,7 +180,11 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
             },
             strict_publication={
                 "published": publication.published,
-                "count": publication.snapshot.config_count if publication.snapshot else 0,
+                "count": (
+                    publication.snapshot.config_count
+                    if publication.snapshot
+                    else _active_feed_count(artifact_store, "subscriptions/all.txt")
+                ),
                 "snapshot_id": publication.snapshot.snapshot_id if publication.snapshot else None,
                 "reason": publication.reason,
                 "mode": publication_mode,
@@ -233,6 +237,18 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
         )
     )
     return 0
+
+
+def _active_feed_count(artifact_store, relative_path: str) -> int:  # type: ignore[no-untyped-def]
+    """Count active stable-feed entries without exposing their URI contents."""
+
+    read_bytes = getattr(artifact_store, "read_bytes", None)
+    if not callable(read_bytes):
+        return 0
+    content = read_bytes(relative_path)
+    if not content:
+        return 0
+    return sum(1 for line in content.decode("utf-8").splitlines() if line.strip())
 
 
 def _reachable_publication_inputs(repository):  # type: ignore[no-untyped-def]
