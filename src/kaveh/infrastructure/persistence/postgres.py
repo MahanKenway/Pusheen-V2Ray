@@ -291,18 +291,19 @@ class PostgresConfigRepository:
                 )
                 for config in batch
             ]
-            connection.executemany(
-                """
-                INSERT INTO configs (
-                    identity_hash, protocol, host, port, credential, transport, label, raw_uri
-                ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
-                ON CONFLICT (identity_hash) DO UPDATE SET
-                    label = EXCLUDED.label,
-                    raw_uri = EXCLUDED.raw_uri,
-                    last_seen_at = NOW()
-                """,
-                config_rows,
-            )
+            with connection.cursor() as cursor:
+                cursor.executemany(
+                    """
+                    INSERT INTO configs (
+                        identity_hash, protocol, host, port, credential, transport, label, raw_uri
+                    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+                    ON CONFLICT (identity_hash) DO UPDATE SET
+                        label = EXCLUDED.label,
+                        raw_uri = EXCLUDED.raw_uri,
+                        last_seen_at = NOW()
+                    """,
+                    config_rows,
+                )
             observation_rows = [
                 (
                     config.identity_hash,
@@ -313,16 +314,17 @@ class PostgresConfigRepository:
                 if config.source_id
             ]
             if observation_rows:
-                connection.executemany(
-                    """
-                    INSERT INTO config_observations (identity_hash, source_id, raw_hash)
-                    VALUES (%s, %s, %s)
-                    ON CONFLICT (identity_hash, source_id) DO UPDATE SET
-                        raw_hash = EXCLUDED.raw_hash,
-                        last_seen_at = NOW()
-                    """,
-                    observation_rows,
-                )
+                with connection.cursor() as cursor:
+                    cursor.executemany(
+                        """
+                        INSERT INTO config_observations (identity_hash, source_id, raw_hash)
+                        VALUES (%s, %s, %s)
+                        ON CONFLICT (identity_hash, source_id) DO UPDATE SET
+                            raw_hash = EXCLUDED.raw_hash,
+                            last_seen_at = NOW()
+                        """,
+                        observation_rows,
+                    )
         return tuple(config.identity_hash not in existing for config in batch)
 
     def get(self, identity_hash: str) -> CanonicalConfig | None:
