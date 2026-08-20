@@ -14,6 +14,7 @@ const CACHE_SECONDS = 60;
 const UPSTREAM_TIMEOUT_MS = 12_000;
 const KV_ARTIFACT_PREFIX = "artifact:";
 const KV_METADATA_PREFIX = "metadata:";
+const RELEASE_MANIFEST_PATH = /^releases\/\d{8}T\d{6}Z-[a-f0-9]{12}\/manifest\.v2\.json$/;
 
 const ARTIFACTS = {
   "all.txt": "subscriptions/all.txt",
@@ -74,7 +75,9 @@ async function handleRequest(request, ctx) {
     });
   }
 
-  const artifact = ARTIFACTS[url.pathname.slice(1)];
+  const requestedPath = url.pathname.slice(1);
+  const artifact = ARTIFACTS[requestedPath]
+    || (RELEASE_MANIFEST_PATH.test(requestedPath) ? requestedPath : null);
   if (!artifact) {
     return jsonResponse({ error: "artifact_not_found", available: Object.keys(ARTIFACTS) }, 404);
   }
