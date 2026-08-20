@@ -184,14 +184,46 @@ class PostgresConfigRepository:
             rows = connection.execute(
                 """
                 SELECT c.*, observation.source_id
-                FROM configs c
-                LEFT JOIN LATERAL (
-                    SELECT source_id FROM config_observations
-                    WHERE identity_hash = c.identity_hash
-                    ORDER BY last_seen_at DESC LIMIT 1
+                FROM configs AS c
+                JOIN LATERAL (
+                    SELECT o.source_id
+                    FROM config_observations AS o
+                    JOIN sources AS s ON s.source_id = o.source_id
+                    WHERE o.identity_hash = c.identity_hash AND s.enabled
+                    ORDER BY o.last_seen_at DESC LIMIT 1
                 ) AS observation ON TRUE
-                ORDER BY c.last_seen_at DESC
+                LEFT JOIN config_status AS status ON status.identity_hash = c.identity_hash
+                ORDER BY status.last_checked_at ASC NULLS FIRST, c.last_seen_at DESC
                 """
+            ).fetchall()
+        return tuple(_config_from_row(row) for row in rows)
+
+    def recently_reachable(self, max_age_hours: int) -> tuple[CanonicalConfig, ...]:
+        """Return active-source configs with recent successful TCP reachability."""
+
+        with self.database.transaction() as connection:
+            rows = connection.execute(
+                """
+                SELECT c.*, observation.source_id, reachable.last_success_at
+                FROM configs AS c
+                JOIN LATERAL (
+                    SELECT o.source_id
+                    FROM config_observations AS o
+                    JOIN sources AS s ON s.source_id = o.source_id
+                    WHERE o.identity_hash = c.identity_hash AND s.enabled
+                    ORDER BY o.last_seen_at DESC LIMIT 1
+                ) AS observation ON TRUE
+                JOIN LATERAL (
+                    SELECT MAX(p.observed_at) AS last_success_at
+                    FROM probe_results AS p
+                    WHERE p.identity_hash = c.identity_hash
+                      AND p.stage = 'reachability'
+                      AND p.outcome = 'pass'
+                ) AS reachable ON reachable.last_success_at IS NOT NULL
+                WHERE reachable.last_success_at >= NOW() - (%s * INTERVAL '1 hour')
+                ORDER BY reachable.last_success_at DESC, c.identity_hash
+                """,
+                (max_age_hours,),
             ).fetchall()
         return tuple(_config_from_row(row) for row in rows)
 
