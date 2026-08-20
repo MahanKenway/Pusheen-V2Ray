@@ -1044,64 +1044,6 @@
       "tag": "resilient-f7e8ce2eb305128a"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.131.6.7",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "7967bf59-57e3-4cde-9898-527b0fe60022"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "speed.dulacloud.store"
-        },
-        "wsSettings": {
-          "path": "/dula?Telegram-WangCai2"
-        }
-      },
-      "tag": "resilient-073b6bc00ecc1eea"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.64.155.209",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "4ff70740-8c80-48ae-985f-2afe4924e908"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "pubb.clnahanpnln.workers.dev"
-        },
-        "wsSettings": {
-          "path": "/sync"
-        }
-      },
-      "tag": "resilient-2f6f80b898615097"
-    },
-    {
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -1158,6 +1100,35 @@
         }
       },
       "tag": "resilient-25654f2adc9c9c9f"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "199.232.78.159",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "b813cbc9-dc15-4348-9765-b99dc76d4422"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "default.ssl.fastly.net"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-554cfefa19afe35d"
     },
     {
       "protocol": "vless",
@@ -1267,6 +1238,31 @@
         }
       },
       "tag": "resilient-6ddcb4cfb4747988"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.66.156.81",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cda9ae20-f69f-4112-be95-90cdfc7a21ae"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-29f5940e14c35228"
     },
     {
       "protocol": "trojan",
