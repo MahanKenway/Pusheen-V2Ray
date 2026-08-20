@@ -40,7 +40,9 @@ class ReachableFeedPublisher:
         configs: Iterable[CanonicalConfig],
         source_errors: dict[str, str] | None = None,
     ) -> ReachablePublishReport:
-        reachable = _deduplicate_preserving_order(configs)
+        reachable = _deduplicate_preserving_order(
+            config for config in configs if _is_client_share_uri(config)
+        )
         if not reachable:
             return ReachablePublishReport(False, 0, reason="NO_RECENT_REACHABLE_CONFIGS")
 
@@ -116,6 +118,12 @@ def _deduplicate_preserving_order(configs: Iterable[CanonicalConfig]) -> list[Ca
         seen.add(config.identity_hash)
         selected.append(config)
     return selected
+
+
+def _is_client_share_uri(config: CanonicalConfig) -> bool:
+    """Do not serialize an internal JSON profile as a client subscription URI."""
+
+    return not config.raw_uri.startswith("profile-json://")
 
 
 def _content(configs: Iterable[CanonicalConfig]) -> bytes:

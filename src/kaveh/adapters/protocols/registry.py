@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from kaveh.adapters.protocols.base import ConfigParser, ParseError
 from kaveh.adapters.protocols.encoded import ShadowsocksParser, VmessParser
-from kaveh.adapters.protocols.standard import Hy2Parser, Hysteria2Parser, TrojanParser, VlessParser
+from kaveh.adapters.protocols.standard import Hy2Parser, Hysteria2Parser, TrojanParser, TuicParser, VlessParser
 from kaveh.domain.models import CanonicalConfig
 
 
@@ -19,6 +19,7 @@ class ParserRegistry:
             ShadowsocksParser(),
             Hysteria2Parser(),
             Hy2Parser(),
+            TuicParser(),
         ]
         self._parsers = {parser.scheme: parser for parser in active}
 

@@ -55,6 +55,24 @@ class ProtocolParserTests(unittest.TestCase):
         self.assertEqual(config.transport.server_name, "cdn.example")
         self.assertEqual(alias.protocol, Protocol.HYSTERIA2)
 
+    def test_tuic_v5_uri_preserves_runtime_fields_and_rejects_insecure_tls(self) -> None:
+        raw = (
+            "tuic://00000000-0000-0000-0000-000000000001:secret@tuic.example:443"
+            "?congestion_control=bbr&udp_relay_mode=native&zero_rtt_handshake=true"
+            "&sni=cdn.example&alpn=h3#TUIC-v5"
+        )
+        config = self.registry.parse(raw)
+        self.assertEqual(config.protocol, Protocol.TUIC)
+        self.assertEqual(config.transport.network, "udp")
+        self.assertEqual(config.transport.security, "tls")
+        self.assertEqual(config.transport.server_name, "cdn.example")
+        self.assertEqual(config.transport.extra["congestion_control"], "bbr")
+        self.assertEqual(config.transport.extra["alpn"], "h3")
+        with self.assertRaisesRegex(Exception, "must verify TLS certificates"):
+            self.registry.parse(
+                "tuic://00000000-0000-0000-0000-000000000001:secret@tuic.example:443?insecure=1"
+            )
+
     def test_identity_ignores_label_and_source(self) -> None:
         first = self.registry.parse("trojan://secret@example.com:443?security=tls#one", "a")
         second = self.registry.parse("trojan://secret@example.com:443?security=tls#two", "b")

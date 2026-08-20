@@ -8,7 +8,8 @@ from typing import Iterable
 from kaveh.adapters.protocols.base import ParseError
 from kaveh.adapters.protocols.registry import ParserRegistry
 from kaveh.adapters.subscriptions.lines import normalize_lines
-from kaveh.domain.models import Source
+from kaveh.adapters.protocols.structured_profiles import parse_json_profiles
+from kaveh.domain.models import Source, SourceFormat
 from kaveh.domain.ports import ConfigRepository, SourceClient
 from kaveh.infrastructure.http.http_source_client import SourceFetchError
 
@@ -71,11 +72,35 @@ class IngestSources:
                 source_errors[source.source_id] = exc.code
                 source_stats[source.source_id] = SourceIngestionStats(error_code=exc.code)
                 continue
-            for raw_uri in normalize_lines(content, max_lines=source.max_entries):
-                discovered += 1
-                source_discovered += 1
+            if source.format is SourceFormat.JSON_PROFILES:
                 try:
-                    config = self.parser_registry.parse(raw_uri, source_id=source.source_id)
+                    batch = parse_json_profiles(content, source.source_id, source.max_entries)
+                except ParseError as exc:
+                    source_errors[source.source_id] = exc.code
+                    source_stats[source.source_id] = SourceIngestionStats(error_code=exc.code)
+                    continue
+                source_discovered = len(batch.configs) + len(batch.rejection_codes)
+                discovered += source_discovered
+                rejected += len(batch.rejection_codes)
+                source_rejected += len(batch.rejection_codes)
+                for code in batch.rejection_codes:
+                    rejection_codes[code] = rejection_codes.get(code, 0) + 1
+                configs = batch.configs
+            else:
+                configs = ()
+                raw_uris = normalize_lines(content, max_lines=source.max_entries)
+                source_discovered = len(raw_uris)
+                discovered += source_discovered
+                for raw_uri in raw_uris:
+                    try:
+                        configs += (self.parser_registry.parse(raw_uri, source_id=source.source_id),)
+                    except ParseError as exc:
+                        rejected += 1
+                        source_rejected += 1
+                        rejection_codes[exc.code] = rejection_codes.get(exc.code, 0) + 1
+
+            for config in configs:
+                try:
                     if config.protocol not in source.allowed_protocols:
                         raise ParseError(
                             "PROTOCOL_NOT_ALLOWED",

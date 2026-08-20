@@ -83,3 +83,25 @@ The official TUIC v5 specification defines the protocol framing, UUID/password a
 
 Source: https://github.com/EAimTY/tuic/blob/dev/SPEC.md
 
+
+## NaiveProxy and TUIC v5 extension assessment
+
+NaiveProxy is available as a sing-box outbound since 1.13.0. The documented outbound requires a server address/port and supports username/password, optional QUIC, QUIC congestion control and a narrow TLS surface. On Linux, the official non-suffixed sing-box build includes `libcronet.so`, which must remain beside the executable; this makes the pinned official archive the appropriate runtime distribution for GitHub Actions. NaiveProxy documentation explicitly warns that self-signed certificates alter traffic behavior and should not be used in production.
+
+TUIC v5 runtime fields documented by sing-box include `uuid`, `password`, `congestion_control`, `udp_relay_mode`, `udp_over_stream`, `zero_rtt_handshake`, `heartbeat` and `network`. The existing adapter currently uses the minimal portable subset. A structured JSON profile is the preferred ingestion form because the TUIC protocol specification does not define a generic share URI.
+
+Sources: https://github.com/klzgrad/naiveproxy ; https://sing-box.sagernet.org/configuration/outbound/naive/ ; https://sing-box.sagernet.org/configuration/outbound/tuic/
+
+
+## Production extension decision
+
+The pinned GitHub Actions runtime was checked locally: `sing-box 1.13.19` Linux amd64 reports the `with_naive_outbound` build tag and ships `libcronet.so` beside the executable. Both a Naive outbound and a detailed TUIC v5 outbound pass `sing-box check` with that exact binary. Therefore, both protocols can use the same disposable SOCKS-plus-approved-HTTPS end-to-end evidence path as existing TUIC support.
+
+A strict `tuic://UUID:PASSWORD@HOST:PORT?...` parser is enabled for the widely implemented v5 URI convention. It requires a UUID and password, retains documented runtime controls such as congestion control, UDP relay mode, 0-RTT, heartbeat, SNI and ALPN, and rejects `insecure` TLS bypasses. The TUIC wire protocol remains the normative compatibility boundary; the share URI is explicitly treated as a de-facto interoperability contract, not a claim of an official standard. Surge independently documents that TUIC v5 uses a UUID/password pair and differs from v4's token authentication.
+
+NaiveProxy does not have a safely distinguishable public share scheme: its documented client configuration uses ordinary `https://` or `quic://` proxy endpoints, which would collide with non-Naive web URLs in mixed feeds. It is therefore supported through a reviewed `json_profiles` source format instead. The ingestion contract requires a versioned JSON container, explicit `naive` protocol, username/password, server/port and verified TLS; insecure TLS profiles are rejected. Internal JSON profiles are never serialized to public feeds, so the existing `strict.txt` and high-coverage URI feeds cannot be contaminated by a nonportable configuration format. A future public Naive feed requires a portable client serializer agreed with the consuming clients.
+
+No new public probationary source was registered solely to create count: the currently reviewed aggregator contained zero `tuic://` entries at the time of inspection, and an upstream source should only be added after it provides parseable candidates. This preserves the pipeline rule that no protocol is published without end-to-end evidence.
+
+Additional references: https://manual.nssurge.com/policies/tuic.html ; https://github.com/tuic-protocol/tuic
+

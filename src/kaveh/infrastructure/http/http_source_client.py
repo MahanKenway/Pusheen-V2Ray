@@ -43,7 +43,7 @@ class BoundedHttpsSourceClient:
                 if status != 200:
                     raise SourceFetchError(f"SOURCE_HTTP_{status}")
                 content_type = response.headers.get_content_type()
-                if content_type not in {"text/plain", "application/octet-stream", "text/html"}:
+                if content_type not in {"text/plain", "application/octet-stream", "text/html", "application/json"}:
                     raise SourceFetchError("SOURCE_CONTENT_TYPE_REJECTED")
                 body = response.read(source.max_bytes + 1)
         except HTTPError as exc:

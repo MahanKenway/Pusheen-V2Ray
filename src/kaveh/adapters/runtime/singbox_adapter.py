@@ -1,7 +1,6 @@
-"""Pinned sing-box runtime adapter for TUIC end-to-end validation.
+"""Pinned sing-box runtime adapter for TUIC and Naive end-to-end validation.
 
-TUIC is deliberately isolated from Xray because Project X does not provide a
-TUIC proxy implementation. This adapter follows the same evidence contract as
+TUIC and NaiveProxy are deliberately isolated from Xray because Project X does not provide these proxy implementations. This adapter follows the same evidence contract as
 Xray: a transient local SOCKS listener must successfully proxy an approved
 HTTPS request before an end-to-end pass is recorded.
 """
@@ -29,38 +28,17 @@ class SingBoxBuildError(ValueError):
 
 
 class SingBoxConfigBuilder:
-    """Build the narrow sing-box configuration required to probe a TUIC URI."""
+    """Build narrowly-scoped, documented sing-box probe configurations."""
 
     def build(self, config: CanonicalConfig, socks_port: int) -> dict[str, Any]:
-        if config.protocol is not Protocol.TUIC:
-            raise SingBoxBuildError("Sing-box adapter only supports TUIC")
         if not config.identity_hash:
             raise SingBoxBuildError("Configuration identity is required")
-        user_uuid, separator, password = config.credential.partition(":")
-        if not separator or not password:
-            raise SingBoxBuildError("TUIC requires uuid and password")
-        try:
-            uuid.UUID(user_uuid)
-        except ValueError as exc:
-            raise SingBoxBuildError("TUIC requires a valid UUID") from exc
-
-        tls: dict[str, Any] = {"enabled": True}
-        if config.transport.server_name:
-            tls["server_name"] = config.transport.server_name
-        outbound: dict[str, Any] = {
-            "type": "tuic",
-            "tag": "candidate",
-            "server": config.host,
-            "server_port": config.port,
-            "uuid": user_uuid,
-            "password": password,
-            "tls": tls,
-        }
-        congestion = config.transport.extra.get("congestion_control")
-        if congestion:
-            if congestion not in {"cubic", "new_reno", "bbr"}:
-                raise SingBoxBuildError("Unsupported TUIC congestion control")
-            outbound["congestion_control"] = congestion
+        if config.protocol is Protocol.TUIC:
+            outbound = self._build_tuic(config)
+        elif config.protocol is Protocol.NAIVE:
+            outbound = self._build_naive(config)
+        else:
+            raise SingBoxBuildError("Sing-box adapter does not support this protocol")
         return {
             "log": {"disabled": True},
             "inbounds": [
@@ -75,9 +53,86 @@ class SingBoxConfigBuilder:
             "route": {"rules": [{"inbound": ["probe-socks"], "outbound": "candidate"}]},
         }
 
+    def _tls(self, config: CanonicalConfig) -> dict[str, Any]:
+        tls: dict[str, Any] = {"enabled": True}
+        if config.transport.server_name:
+            tls["server_name"] = config.transport.server_name
+        if config.transport.extra.get("ech"):
+            tls["ech"] = {"enabled": True, "config": [config.transport.extra["ech"]]}
+        if config.transport.extra.get("alpn"):
+            alpn = [value.strip() for value in config.transport.extra["alpn"].split(",") if value.strip()]
+            if not alpn or len(alpn) > 8:
+                raise SingBoxBuildError("Invalid TLS ALPN list")
+            tls["alpn"] = alpn
+        return tls
+
+    def _build_tuic(self, config: CanonicalConfig) -> dict[str, Any]:
+        user_uuid, separator, password = config.credential.partition(":")
+        if not separator or not password:
+            raise SingBoxBuildError("TUIC requires uuid and password")
+        try:
+            uuid.UUID(user_uuid)
+        except ValueError as exc:
+            raise SingBoxBuildError("TUIC requires a valid UUID") from exc
+        outbound: dict[str, Any] = {
+            "type": "tuic",
+            "tag": "candidate",
+            "server": config.host,
+            "server_port": config.port,
+            "uuid": user_uuid,
+            "password": password,
+            "tls": self._tls(config),
+        }
+        congestion = config.transport.extra.get("congestion_control")
+        if congestion:
+            if congestion not in {"cubic", "new_reno", "bbr"}:
+                raise SingBoxBuildError("Unsupported TUIC congestion control")
+            outbound["congestion_control"] = congestion
+        for field in ("udp_relay_mode", "network", "heartbeat"):
+            if config.transport.extra.get(field):
+                outbound[field] = config.transport.extra[field]
+        for field in ("udp_over_stream", "zero_rtt_handshake"):
+            if config.transport.extra.get(field) == "true":
+                outbound[field] = True
+        if outbound.get("udp_relay_mode") and outbound.get("udp_over_stream"):
+            raise SingBoxBuildError("TUIC udp_relay_mode conflicts with udp_over_stream")
+        return outbound
+
+    def _build_naive(self, config: CanonicalConfig) -> dict[str, Any]:
+        username, separator, password = config.credential.partition(":")
+        if not separator or not username or not password:
+            raise SingBoxBuildError("Naive requires username and password")
+        if config.transport.extra.get("insecure"):
+            raise SingBoxBuildError("Naive insecure TLS is not allowed")
+        outbound: dict[str, Any] = {
+            "type": "naive",
+            "tag": "candidate",
+            "server": config.host,
+            "server_port": config.port,
+            "username": username,
+            "password": password,
+            "tls": self._tls(config),
+        }
+        if config.transport.extra.get("quic") == "true":
+            outbound["quic"] = True
+        congestion = config.transport.extra.get("quic_congestion_control")
+        if congestion:
+            if congestion not in {"bbr", "bbr2", "cubic", "reno"}:
+                raise SingBoxBuildError("Unsupported Naive QUIC congestion control")
+            outbound["quic_congestion_control"] = congestion
+        if config.transport.extra.get("insecure_concurrency"):
+            try:
+                concurrency = int(config.transport.extra["insecure_concurrency"])
+            except ValueError as exc:
+                raise SingBoxBuildError("Invalid Naive insecure concurrency") from exc
+            if not 0 <= concurrency <= 4:
+                raise SingBoxBuildError("Naive insecure concurrency is outside policy")
+            outbound["insecure_concurrency"] = concurrency
+        return outbound
+
 
 class SingBoxEndToEndProbe:
-    """Run one TUIC candidate through a disposable sing-box SOCKS listener."""
+    """Run one TUIC or Naive candidate through a disposable sing-box SOCKS listener."""
 
     def __init__(self, settings: RuntimeSettings, builder: SingBoxConfigBuilder | None = None) -> None:
         self.settings = settings

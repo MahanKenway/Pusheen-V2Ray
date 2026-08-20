@@ -8,7 +8,7 @@ import re
 from pathlib import Path
 from urllib.parse import urlparse
 
-from kaveh.domain.models import Protocol, Source
+from kaveh.domain.models import Protocol, Source, SourceFormat
 
 
 class SourceRegistryError(ValueError):
@@ -93,6 +93,7 @@ def load_sources(path: str | Path) -> tuple[Source, ...]:
                     allowed_protocols=allowed or frozenset(Protocol),
                     max_bytes=_validated_max_bytes(item.get("max_bytes", _MAX_SOURCE_BYTES)),
                     max_entries=_validated_max_entries(item.get("max_entries", 500)),
+                    format=SourceFormat(item.get("format", SourceFormat.URI_LINES.value)),
                 )
             )
             seen_ids.add(source_id)

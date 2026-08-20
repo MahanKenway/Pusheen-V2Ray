@@ -16,6 +16,6 @@ class ProtocolRuntimeProbe:
         self.singbox = SingBoxEndToEndProbe(settings)
 
     def run(self, config: CanonicalConfig) -> ProbeResult:
-        if config.protocol is Protocol.TUIC:
+        if config.protocol in {Protocol.TUIC, Protocol.NAIVE}:
             return self.singbox.run(config)
         return self.xray.run(config)

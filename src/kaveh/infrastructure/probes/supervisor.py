@@ -37,9 +37,13 @@ class ValidationSupervisor:
 
     def run(self, config: CanonicalConfig) -> tuple[ProbeResult, ...]:
         results: list[ProbeResult] = []
+        quic_native = (
+            config.protocol in self._quic_protocols
+            or (config.protocol is ProxyProtocol.NAIVE and config.transport.extra.get("quic") == "true")
+        )
         runners: tuple[StageRunner | None, ...] = (
             self.schema_runner,
-            None if config.protocol in self._quic_protocols else self.reachability_runner,
+            None if quic_native else self.reachability_runner,
             self.runtime_runner,
             self.end_to_end_runner,
         )

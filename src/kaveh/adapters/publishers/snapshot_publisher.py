@@ -8,7 +8,7 @@ import json
 from datetime import UTC, datetime
 from typing import Iterable
 
-from kaveh.domain.models import CanonicalConfig, PublicationSnapshot, ScoreCard
+from kaveh.domain.models import CanonicalConfig, PublicationSnapshot, Protocol, ScoreCard
 from kaveh.domain.ports import ArtifactStore
 
 
@@ -37,7 +37,7 @@ class SnapshotPublisher:
         qualified = [
             config
             for config in configs
-            if config.identity_hash and config.identity_hash in cards
+            if config.identity_hash and config.identity_hash in cards and _is_client_share_uri(config)
         ]
         if not qualified:
             self.last_skip_reason = "NO_QUALIFIED_CONFIGS"
@@ -129,6 +129,15 @@ class SnapshotPublisher:
             "source_errors": source_errors,
             "notice": "Results are time- and vantage-specific; no availability guarantee is implied.",
         }
+
+
+def _is_client_share_uri(config: CanonicalConfig) -> bool:
+    """Reject internal structured profiles until a portable share format is approved."""
+
+    return (
+        not config.raw_uri.startswith("profile-json://")
+        and config.protocol not in {Protocol.TUIC, Protocol.NAIVE}
+    )
 
 
 def _b64(content: bytes) -> bytes:

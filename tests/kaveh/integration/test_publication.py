@@ -38,6 +38,27 @@ class PublicationTests(unittest.TestCase):
             self.assertTrue((root / "subscriptions" / "strict.base64").exists())
             self.assertTrue((root / "subscriptions" / "strict-trojan.base64").exists())
 
+    def test_publisher_keeps_tuic_v5_out_of_strict_feed(self) -> None:
+        config = ParserRegistry().parse(
+            "tuic://00000000-0000-0000-0000-000000000001:secret@tuic.example:443?sni=cdn.example"
+        )
+        card = ScoreCard(
+            identity_hash=config.identity_hash or "",
+            score=99,
+            policy_version="kaveh-standard-v1",
+            explanation={"success": 50, "latency": 20, "freshness": 20, "source_trust": 9},
+            qualified=True,
+        )
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            strict = root / "subscriptions" / "strict.txt"
+            strict.parent.mkdir(parents=True)
+            strict.write_text("trojan://existing@strict.example:443\n")
+            publisher = SnapshotPublisher(FileSystemArtifactStore(root), "kaveh-standard-v1")
+            self.assertIsNone(publisher.publish([config], [card]))
+            self.assertEqual(strict.read_text(), "trojan://existing@strict.example:443\n")
+            self.assertEqual(publisher.last_skip_reason, "NO_QUALIFIED_CONFIGS")
+
     def test_publisher_does_not_replace_latest_when_nothing_qualifies(self) -> None:
         config = ParserRegistry().parse("trojan://secret@example.com:443?security=tls#sample")
         card = ScoreCard(

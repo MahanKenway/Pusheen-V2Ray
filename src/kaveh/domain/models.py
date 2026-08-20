@@ -20,6 +20,14 @@ class Protocol(str, Enum):
     SHADOWSOCKS = "ss"
     HYSTERIA2 = "hysteria2"
     TUIC = "tuic"
+    NAIVE = "naive"
+
+
+class SourceFormat(str, Enum):
+    """Reviewed source container formats supported by ingestion."""
+
+    URI_LINES = "uri_lines"
+    JSON_PROFILES = "json_profiles"
 
 
 class ValidationState(str, Enum):
@@ -69,6 +77,7 @@ class Source:
     )
     max_bytes: int = 2_000_000
     max_entries: int = 500
+    format: SourceFormat = SourceFormat.URI_LINES
 
 
 @dataclass(frozen=True)
