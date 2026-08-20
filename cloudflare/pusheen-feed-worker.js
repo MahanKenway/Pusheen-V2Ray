@@ -29,6 +29,7 @@ const ARTIFACTS = {
   "resilient-xray.json": "profiles/resilient-xray.json",
   "resilient-xray.meta.v1.json": "profiles/resilient-xray.meta.v1.json",
   "status.json": "status.json",
+  "current-release.json": "releases/current-release.json",
 };
 
 // These five artifacts are mirrored by Cron after each publication window.
@@ -43,6 +44,7 @@ const SCHEDULED_ARTIFACTS = [
   "subscriptions/outage.receipts.v1.json",
   "profiles/resilient-xray.json",
   "status.json",
+  "releases/current-release.json",
 ];
 
 addEventListener("fetch", (event) => {

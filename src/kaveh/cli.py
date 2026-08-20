@@ -11,10 +11,12 @@ from pathlib import Path
 from kaveh.adapters.protocols.registry import ParserRegistry
 from kaveh.adapters.publishers.evidence_receipt_publisher import EvidenceReceiptPublisher
 from kaveh.adapters.publishers.reachable_publisher import ReachableFeedPublisher
+from kaveh.adapters.publishers.release_manifest_publisher import ReleaseManifestPublisher
 from kaveh.adapters.publishers.resilient_publisher import (
     OutageDiverseFeedPublisher,
     ResilientFeedPublisher,
 )
+from kaveh.adapters.publishers.singbox_urltest_publisher import SingBoxUrlTestPublisher
 from kaveh.adapters.publishers.snapshot_publisher import SnapshotPublisher
 from kaveh.adapters.publishers.status_publisher import StatusPublisher
 from kaveh.adapters.publishers.xray_failover_publisher import XrayFailoverPublisher
@@ -211,6 +213,7 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
                 "protocol, endpoint, and transport anti-concentration policy"
             ),
         )
+        outage_singbox_profile = SingBoxUrlTestPublisher(artifact_store).publish(outage_inputs)
         StatusPublisher(artifact_store).publish(
             ingestion={
                 "discovered": ingestion.discovered_count,
@@ -272,8 +275,17 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
                 "receipt_published": outage_receipts.published,
                 "receipt_reason": outage_receipts.reason,
                 "receipt_path": "subscriptions/outage.receipts.v1.json",
+                "singbox_profile": {
+                    "path": "profiles/outage-singbox.json",
+                    "published": outage_singbox_profile.published,
+                    "count": outage_singbox_profile.count,
+                    "reason": outage_singbox_profile.reason,
+                    "artifact_hash": outage_singbox_profile.artifact_hash,
+                    "rejected_count": outage_singbox_profile.rejected_count,
+                },
             },
         )
+        release_manifest = ReleaseManifestPublisher(artifact_store).publish()
         history.finish_run()
         _log_validation_progress("publication_complete", started)
     except Exception:
@@ -309,6 +321,13 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
                     "count": reachable_publication.count,
                     "snapshot_id": reachable_publication.snapshot_id,
                     "reason": reachable_publication.reason,
+                },
+                "release_manifest": {
+                    "published": release_manifest.published,
+                    "release_id": release_manifest.release_id,
+                    "artifact_hash": release_manifest.artifact_hash,
+                    "reason": release_manifest.reason,
+                    "path": "releases/current-release.json",
                 },
                 "outage_publication": {
                     "published": outage_publication.published,

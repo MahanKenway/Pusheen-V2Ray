@@ -55,6 +55,7 @@ jobs:
           KAVEH_PROBE_FALLBACK_URL: "https://www.cloudflare.com/cdn-cgi/trace"
           KAVEH_VANTAGE_ID: ${{ vars.KAVEH_VANTAGE_ID }}
           KAVEH_CANDIDATE_LIMIT: ${{ vars.KAVEH_CANDIDATE_LIMIT }}
+          KAVEH_RELEASE_SIGNING_KEY: ${{ secrets.KAVEH_RELEASE_SIGNING_KEY }}
           KAVEH_VALIDATION_WORKERS: "4"
           XRAY_BINARY: ${{ github.workspace }}/.tools/xray/xray
           SINGBOX_BINARY: ${{ github.workspace }}/.tools/sing-box/sing-box
@@ -87,6 +88,11 @@ jobs:
           set -euo pipefail
           test -s profiles/resilient-xray.json
           .tools/xray/xray run -test -c profiles/resilient-xray.json
+      - name: Validate generated sing-box outage profile
+        run: |
+          set -euo pipefail
+          test -s profiles/outage-singbox.json
+          .tools/sing-box/sing-box check -c profiles/outage-singbox.json
       - name: Commit subscription changes only
         run: |
           set -euo pipefail
@@ -97,6 +103,9 @@ jobs:
           git add -- status.json
           if [ -d snapshots ]; then
             git add -A -- snapshots
+          fi
+          if [ -d releases ]; then
+            git add -A -- releases
           fi
           if [ -f latest.txt ]; then
             git add -A -- latest.txt

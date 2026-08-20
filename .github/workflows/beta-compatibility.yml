@@ -1,0 +1,50 @@
+name: Pusheen V2Ray Beta Compatibility
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 3 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pusheen-v2ray-beta-compatibility
+  cancel-in-progress: false
+
+jobs:
+  singbox-beta-schema:
+    # Manual runs are always allowed. Scheduled beta checks require an explicit
+    # opt-in variable and never modify subscriptions, profiles, or database state.
+    if: github.event_name == 'workflow_dispatch' || vars.KAVEH_BETA_LAB_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Restore pinned sing-box beta binary
+        id: cache-singbox-beta
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: .tools/sing-box-beta
+          key: sing-box-linux-amd64-v1.14.0-beta.17-sha256-ecb0055e3b7f236191db41a9c23988b558796104cd231246a4fd12a193a1a933
+      - name: Install pinned sing-box beta on cache miss
+        if: steps.cache-singbox-beta.outputs.cache-hit != 'true'
+        run: scripts/install_singbox_beta_ci.sh .tools/sing-box-beta
+      - name: Validate opt-in profile against beta runtime
+        run: |
+          set -euo pipefail
+          if [ ! -s profiles/outage-singbox.json ]; then
+            echo "No generated outage sing-box profile is committed yet; beta schema check skipped."
+            exit 0
+          fi
+          .tools/sing-box-beta/sing-box version
+          .tools/sing-box-beta/sing-box check -c profiles/outage-singbox.json
+      - name: Publish compatibility summary
+        run: |
+          {
+            echo "## Beta compatibility result"
+            echo
+            echo "The profile was checked with pinned sing-box 1.14.0-beta.17."
+            echo "This is a read-only compatibility signal; it does not alter stable, strict, outage, or resilient publication."
+          } >> "$GITHUB_STEP_SUMMARY"
