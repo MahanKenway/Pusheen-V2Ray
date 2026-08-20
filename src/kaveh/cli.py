@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import base64
 import json
+import time
 from pathlib import Path
 
 from kaveh.adapters.protocols.registry import ParserRegistry
@@ -126,8 +127,10 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
     if limit < 1:
         raise ValueError("--limit must be at least 1")
     settings = RuntimeSettings.from_environment()
+    started = time.perf_counter()
     database = PostgresDatabase(settings.require_database_url())
     database.migrate("migrations")
+    _log_validation_progress("database_ready", started)
     sources = load_sources(registry_path)
     repository = PostgresConfigRepository(database)
 
@@ -142,6 +145,7 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
         BoundedHttpsSourceClient(), ParserRegistry(), repository
     ).run(active_sources)
     repository.record_source_health(ingestion.source_stats)
+    _log_validation_progress("ingestion_complete", started)
 
     history = PostgresValidationHistory(database)
     policy = QualificationPolicy()
@@ -149,6 +153,7 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
     try:
         # all() prioritizes never-probed then least-recently-probed candidates.
         candidates = repository.all()[:limit]
+        _log_validation_progress("candidates_selected", started, count=len(candidates))
         supervisor = ValidationSupervisor(
             SchemaProbe(),
             TcpReachabilityProbe(),
@@ -162,6 +167,7 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
             active_sources,
             max_workers=settings.validation_workers,
         ).run()
+        _log_validation_progress("runtime_validation_complete", started, count=validation.validated_count)
         publication_configs, publication_cards, publication_mode = _publication_inputs(
             candidates, validation.scorecards, repository, history, policy, active_sources
         )
@@ -241,6 +247,7 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
             reachable_max_age_hours=REACHABLE_MAX_AGE_HOURS,
         )
         history.finish_run()
+        _log_validation_progress("publication_complete", started)
     except Exception:
         history.finish_run(status="failed", error_code="VALIDATION_RUN_FAILED")
         raise
@@ -296,6 +303,17 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
         )
     )
     return 0
+
+
+def _log_validation_progress(event: str, started: float, **details: object) -> None:
+    """Emit credential-safe, line-buffered timing telemetry for CI diagnostics."""
+
+    payload: dict[str, object] = {
+        "event": event,
+        "elapsed_seconds": round(time.perf_counter() - started, 3),
+    }
+    payload.update(details)
+    print(json.dumps({"validation_progress": payload}, sort_keys=True), flush=True)
 
 
 def _migrate_legacy_strict_feed(artifact_store) -> None:  # type: ignore[no-untyped-def]
