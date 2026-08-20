@@ -1,0 +1,92 @@
+{
+  "feeds": {
+    "balanced": {
+      "count": 44,
+      "evidence": "recent TCP reachability only",
+      "max_evidence_age_hours": 72,
+      "published": true,
+      "reason": null,
+      "snapshot_id": "20260820T005452Z-e7a3dcc648f7",
+      "variants": [
+        "reachable",
+        "reachable-fast",
+        "reachable-vless",
+        "reachable-vmess",
+        "reachable-trojan",
+        "reachable-ss"
+      ]
+    },
+    "strict": {
+      "count": 0,
+      "evidence": "end-to-end HTTPS probe through Xray",
+      "mode": "current_run",
+      "published": false,
+      "reason": "NO_QUALIFIED_CONFIGS",
+      "snapshot_id": null
+    }
+  },
+  "ingestion": {
+    "discovered": 600,
+    "duplicates": 330,
+    "parsed": 173,
+    "rejected": 97,
+    "source_errors": {}
+  },
+  "notice": "Evidence is time- and validator-origin-specific; availability is not guaranteed.",
+  "schema_version": 1,
+  "service": "Pusheen V2Ray quality-first subscription pipeline",
+  "sources": {
+    "healthy": 3,
+    "items": [
+      {
+        "consecutive_failures": 0,
+        "enabled": true,
+        "last_accepted_count": 135,
+        "last_checked_at": "2026-08-20T00:54:41.147896+00:00",
+        "last_discovered_count": 200,
+        "last_error_code": null,
+        "quarantine_until": null,
+        "quarantined": false,
+        "source_id": "aggregator-merge",
+        "successful_runs": 1,
+        "total_runs": 1
+      },
+      {
+        "consecutive_failures": 0,
+        "enabled": true,
+        "last_accepted_count": 200,
+        "last_checked_at": "2026-08-20T00:54:41.147896+00:00",
+        "last_discovered_count": 200,
+        "last_error_code": null,
+        "quarantine_until": null,
+        "quarantined": false,
+        "source_id": "configforge-vless",
+        "successful_runs": 1,
+        "total_runs": 1
+      },
+      {
+        "consecutive_failures": 0,
+        "enabled": true,
+        "last_accepted_count": 168,
+        "last_checked_at": "2026-08-20T00:54:41.147896+00:00",
+        "last_discovered_count": 200,
+        "last_error_code": null,
+        "quarantine_until": null,
+        "quarantined": false,
+        "source_id": "raydikal-verified",
+        "successful_runs": 1,
+        "total_runs": 1
+      }
+    ],
+    "quarantined": 0,
+    "total": 3
+  },
+  "updated_at": "2026-08-20T00:54:53.384647+00:00",
+  "validation": {
+    "candidates": 10,
+    "end_to_end_verified": 0,
+    "probe_endpoints": 2,
+    "qualified": 0,
+    "validated": 10
+  }
+}
