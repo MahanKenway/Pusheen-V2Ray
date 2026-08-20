@@ -8,10 +8,12 @@ import json
 from pathlib import Path
 
 from kaveh.adapters.protocols.registry import ParserRegistry
+from kaveh.adapters.publishers.evidence_receipt_publisher import EvidenceReceiptPublisher
 from kaveh.adapters.publishers.reachable_publisher import ReachableFeedPublisher
 from kaveh.adapters.publishers.resilient_publisher import ResilientFeedPublisher
 from kaveh.adapters.publishers.snapshot_publisher import SnapshotPublisher
 from kaveh.adapters.publishers.status_publisher import StatusPublisher
+from kaveh.adapters.publishers.xray_failover_publisher import XrayFailoverPublisher
 from kaveh.adapters.runtime.probe_router import ProtocolRuntimeProbe
 from kaveh.application.commands.ingest_sources import IngestSources
 from kaveh.application.commands.publish_snapshot import PublishSnapshot
@@ -172,9 +174,19 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
         reachable_publication = ReachableFeedPublisher(artifact_store).publish(
             reachable_inputs, ingestion.source_errors
         )
-        resilient_publication = ResilientFeedPublisher(artifact_store).publish(
+        resilient_publisher = ResilientFeedPublisher(artifact_store)
+        resilient_inputs = resilient_publisher.select(reachable_inputs)
+        resilient_publication = resilient_publisher.publish(
             reachable_inputs, ingestion.source_errors
         )
+        resilient_receipts = EvidenceReceiptPublisher(artifact_store).publish(
+            resilient_inputs,
+            tier="tcp-reachable-diverse-v1",
+            evidence="recent successful TCP reachability",
+            vantage_id=settings.vantage_id,
+            max_evidence_age_hours=REACHABLE_MAX_AGE_HOURS,
+        )
+        failover_profile = XrayFailoverPublisher(artifact_store).publish(resilient_inputs)
         StatusPublisher(artifact_store).publish(
             ingestion={
                 "discovered": ingestion.discovered_count,
@@ -213,6 +225,17 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
                 "count": resilient_publication.count,
                 "snapshot_id": resilient_publication.snapshot_id,
                 "reason": resilient_publication.reason,
+                "receipt_count": resilient_receipts.count,
+                "receipt_published": resilient_receipts.published,
+                "receipt_reason": resilient_receipts.reason,
+                "receipt_path": "subscriptions/resilient.receipts.v1.json",
+                "failover_profile": {
+                    "path": "profiles/resilient-xray.json",
+                    "published": failover_profile.published,
+                    "count": failover_profile.count,
+                    "reason": failover_profile.reason,
+                    "artifact_hash": failover_profile.artifact_hash,
+                },
             },
             source_health=repository.source_health_snapshot(),
             reachable_max_age_hours=REACHABLE_MAX_AGE_HOURS,
@@ -257,6 +280,16 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
                     "count": resilient_publication.count,
                     "snapshot_id": resilient_publication.snapshot_id,
                     "reason": resilient_publication.reason,
+                    "receipt_count": resilient_receipts.count,
+                    "receipt_published": resilient_receipts.published,
+                    "receipt_reason": resilient_receipts.reason,
+                    "failover_profile": {
+                        "path": "profiles/resilient-xray.json",
+                        "published": failover_profile.published,
+                        "count": failover_profile.count,
+                        "reason": failover_profile.reason,
+                        "artifact_hash": failover_profile.artifact_hash,
+                    },
                 },
             },
             sort_keys=True,

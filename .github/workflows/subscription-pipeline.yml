@@ -82,10 +82,18 @@ jobs:
             --registry configs/sources/registry.v1.json \
             --limit "${limit}" \
             --publish-root .
+      - name: Validate generated Xray failover profile
+        run: |
+          set -euo pipefail
+          test -s profiles/resilient-xray.json
+          .tools/xray/xray run -test -c profiles/resilient-xray.json
       - name: Commit subscription changes only
         run: |
           set -euo pipefail
           git add -A -- subscriptions
+          if [ -d profiles ]; then
+            git add -A -- profiles
+          fi
           git add -- status.json
           if [ -d snapshots ]; then
             git add -A -- snapshots

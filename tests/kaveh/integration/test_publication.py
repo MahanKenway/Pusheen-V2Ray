@@ -6,10 +6,12 @@ import unittest
 from pathlib import Path
 
 from kaveh.adapters.protocols.registry import ParserRegistry
+from kaveh.adapters.publishers.evidence_receipt_publisher import EvidenceReceiptPublisher
 from kaveh.adapters.publishers.reachable_publisher import ReachableFeedPublisher
 from kaveh.adapters.publishers.resilient_publisher import ResilientFeedPublisher
 from kaveh.adapters.publishers.snapshot_publisher import SnapshotPublisher
 from kaveh.adapters.publishers.status_publisher import StatusPublisher
+from kaveh.adapters.publishers.xray_failover_publisher import XrayFailoverPublisher
 from kaveh.domain.models import ScoreCard
 from kaveh.infrastructure.storage.filesystem_store import FileSystemArtifactStore
 
@@ -169,6 +171,52 @@ class PublicationTests(unittest.TestCase):
             self.assertEqual(manifest["by_protocol"]["vless"], 30)
             self.assertTrue((root / "subscriptions" / "resilient.base64").exists())
             self.assertFalse(ResilientFeedPublisher(FileSystemArtifactStore(root)).publish(configs).published)
+
+    def test_xray_failover_profile_uses_only_local_socks_and_block_fallback(self) -> None:
+        config = ParserRegistry().parse(
+            "vless://00000000-0000-0000-0000-000000000001@vless.example:443?type=ws&security=tls&sni=cdn.example#sample"
+        )
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            report = XrayFailoverPublisher(FileSystemArtifactStore(root)).publish([config])
+            self.assertTrue(report.published)
+            profile = json.loads((root / "profiles" / "resilient-xray.json").read_text())
+            self.assertEqual(profile["inbounds"][0]["listen"], "127.0.0.1")
+            self.assertEqual(profile["routing"]["balancers"][0]["strategy"]["type"], "leastPing")
+            self.assertEqual(profile["routing"]["balancers"][0]["fallbackTag"], "blocked")
+            self.assertEqual(profile["observatory"]["probeInterval"], "5m")
+            self.assertEqual(profile["version"]["min"], "26.3.27")
+            self.assertTrue((root / "profiles" / "resilient-xray.meta.v1.json").exists())
+
+    def test_evidence_receipts_are_credential_free_and_stable(self) -> None:
+        config = ParserRegistry().parse(
+            "vless://super-secret@private.example:443?type=ws&security=tls#sample"
+        )
+        config = config.__class__(**{**config.__dict__, "source_id": "reviewed-source"})
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            publisher = EvidenceReceiptPublisher(FileSystemArtifactStore(root))
+            report = publisher.publish(
+                [config],
+                tier="tcp-reachable-diverse-v1",
+                evidence="recent successful TCP reachability",
+                vantage_id="test-vantage",
+                max_evidence_age_hours=72,
+            )
+            self.assertTrue(report.published)
+            payload = (root / "subscriptions" / "resilient.receipts.v1.json").read_text()
+            self.assertIn('"latest_source_id": "reviewed-source"', payload)
+            self.assertNotIn("super-secret", payload)
+            self.assertNotIn("private.example", payload)
+            self.assertFalse(
+                publisher.publish(
+                    [config],
+                    tier="tcp-reachable-diverse-v1",
+                    evidence="recent successful TCP reachability",
+                    vantage_id="test-vantage",
+                    max_evidence_age_hours=72,
+                ).published
+            )
 
     def test_status_publisher_writes_public_safe_document(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:

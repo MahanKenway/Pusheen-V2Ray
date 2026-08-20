@@ -63,7 +63,7 @@ class ResilientFeedPublisher:
         reachable = _deduplicate_preserving_order(
             config for config in configs if _is_client_share_uri(config)
         )
-        selected = self._select(reachable)
+        selected = self.select(reachable)
         if not selected:
             return ResilientPublishReport(False, 0, reason="NO_DIVERSE_REACHABLE_CONFIGS")
 
@@ -111,6 +111,11 @@ class ResilientFeedPublisher:
         self.artifact_store.write_atomic("subscriptions/resilient.manifest.v1.json", manifest_bytes)
         self.artifact_store.write_atomic("resilient-latest.txt", f"{snapshot_id}\n".encode("utf-8"))
         return ResilientPublishReport(True, len(selected), snapshot_id=snapshot_id)
+
+    def select(self, configs: Iterable[CanonicalConfig]) -> list[CanonicalConfig]:
+        """Return the deterministic, evidence-backed anti-concentration selection."""
+
+        return self._select(configs)
 
     def _select(self, configs: Iterable[CanonicalConfig]) -> list[CanonicalConfig]:
         selected: list[CanonicalConfig] = []

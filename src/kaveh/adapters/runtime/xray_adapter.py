@@ -31,12 +31,7 @@ class XrayConfigBuilder:
     def build(self, config: CanonicalConfig, socks_port: int) -> dict[str, Any]:
         if not config.identity_hash:
             raise XrayBuildError("Configuration identity is required")
-        proxy_outbound = {
-            "tag": "candidate",
-            "protocol": "hysteria" if config.protocol is Protocol.HYSTERIA2 else config.protocol.value,
-            "settings": self._outbound_settings(config),
-            "streamSettings": self._stream_settings(config),
-        }
+        proxy_outbound = self.build_outbound(config, "candidate")
         return {
             "log": {"loglevel": "warning"},
             "inbounds": [
@@ -58,6 +53,18 @@ class XrayConfigBuilder:
                     {"type": "field", "inboundTag": ["probe-socks"], "outboundTag": "candidate"}
                 ],
             },
+        }
+
+    def build_outbound(self, config: CanonicalConfig, tag: str) -> dict[str, Any]:
+        """Build one client outbound for a validated local runtime profile."""
+
+        if not config.identity_hash:
+            raise XrayBuildError("Configuration identity is required")
+        return {
+            "tag": tag,
+            "protocol": "hysteria" if config.protocol is Protocol.HYSTERIA2 else config.protocol.value,
+            "settings": self._outbound_settings(config),
+            "streamSettings": self._stream_settings(config),
         }
 
     def _outbound_settings(self, config: CanonicalConfig) -> dict[str, Any]:
