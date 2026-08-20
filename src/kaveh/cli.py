@@ -11,7 +11,7 @@ from kaveh.adapters.protocols.registry import ParserRegistry
 from kaveh.adapters.publishers.reachable_publisher import ReachableFeedPublisher
 from kaveh.adapters.publishers.snapshot_publisher import SnapshotPublisher
 from kaveh.adapters.publishers.status_publisher import StatusPublisher
-from kaveh.adapters.runtime.xray_adapter import XrayEndToEndProbe
+from kaveh.adapters.runtime.probe_router import ProtocolRuntimeProbe
 from kaveh.application.commands.ingest_sources import IngestSources
 from kaveh.application.commands.publish_snapshot import PublishSnapshot
 from kaveh.application.commands.validate_batch import ValidateBatch
@@ -149,7 +149,7 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
         supervisor = ValidationSupervisor(
             SchemaProbe(),
             TcpReachabilityProbe(),
-            end_to_end_runner=XrayEndToEndProbe(settings),
+            end_to_end_runner=ProtocolRuntimeProbe(settings),
         )
         validation = ValidateBatch(
             _LimitedRepository(candidates),

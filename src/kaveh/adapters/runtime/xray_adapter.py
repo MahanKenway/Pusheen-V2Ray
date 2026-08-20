@@ -97,7 +97,7 @@ class XrayConfigBuilder:
         if config.protocol is Protocol.HYSTERIA2:
             unsupported = {
                 key
-                for key in ("obfs", "obfs-password", "insecure", "pinSHA256", "ech")
+                for key in ("obfs", "obfs-password")
                 if transport.extra.get(key)
             }
             if unsupported:
@@ -107,8 +107,14 @@ class XrayConfigBuilder:
                 "security": "tls",
                 "hysteriaSettings": {"version": 2, "auth": config.credential},
             }
-            if transport.server_name:
-                settings["tlsSettings"] = _tls_settings(transport.server_name)
+            tls_settings = _tls_settings(transport.server_name)
+            if transport.extra.get("insecure") == "1":
+                tls_settings["allowInsecure"] = True
+            if transport.extra.get("pinSHA256"):
+                tls_settings["pinnedPeerCertSha256"] = transport.extra["pinSHA256"]
+            if transport.extra.get("ech"):
+                tls_settings["echConfigList"] = transport.extra["ech"]
+            settings["tlsSettings"] = tls_settings
             return settings
         settings: dict[str, Any] = {
             "network": transport.network,

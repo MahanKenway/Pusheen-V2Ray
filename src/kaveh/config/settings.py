@@ -23,11 +23,13 @@ class RuntimeSettings:
     vantage_id: str
     probe_fallback_url: str | None = None
     validation_workers: int = 1
+    singbox_binary: Path | None = None
 
     @classmethod
     def from_environment(cls) -> "RuntimeSettings":
         database_url = os.getenv("KAVEH_DATABASE_URL")
         xray_binary = os.getenv("XRAY_BINARY")
+        singbox_binary = os.getenv("SINGBOX_BINARY")
         probe_url = os.getenv("KAVEH_PROBE_URL")
         probe_fallback_url = os.getenv("KAVEH_PROBE_FALLBACK_URL")
         for name, value in (
@@ -44,6 +46,7 @@ class RuntimeSettings:
         return cls(
             database_url=database_url,
             xray_binary=Path(xray_binary) if xray_binary else None,
+            singbox_binary=Path(singbox_binary) if singbox_binary else None,
             probe_url=probe_url,
             probe_fallback_url=probe_fallback_url,
             xray_startup_timeout_seconds=float(os.getenv("XRAY_STARTUP_TIMEOUT_SECONDS", "5")),
@@ -63,6 +66,13 @@ class RuntimeSettings:
         if not self.database_url:
             raise SettingsError("KAVEH_DATABASE_URL is required for PostgreSQL persistence")
         return self.database_url
+
+    def require_singbox_runtime(self) -> tuple[Path, tuple[str, ...]]:
+        if not self.singbox_binary:
+            raise SettingsError("SINGBOX_BINARY is required for TUIC end-to-end validation")
+        if not self.probe_urls:
+            raise SettingsError("KAVEH_PROBE_URL is required for end-to-end validation")
+        return self.singbox_binary, self.probe_urls
 
     def require_xray_runtime(self) -> tuple[Path, tuple[str, ...]]:
         if not self.xray_binary:

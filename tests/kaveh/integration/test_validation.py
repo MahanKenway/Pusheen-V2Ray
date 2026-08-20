@@ -59,6 +59,15 @@ class ValidationBatchTests(unittest.TestCase):
         self.assertEqual(report.qualified_count, 1)
         self.assertTrue(report.scorecards[0].qualified)
 
+    def test_quic_protocol_skips_tcp_reachability_and_runs_end_to_end(self) -> None:
+        config = ParserRegistry().parse("hysteria2://secret@hy.example:8443?sni=cdn.example")
+        reachability = RecordingPassingStage(ProbeStage.REACHABILITY, 42)
+        results = ValidationSupervisor(
+            SchemaProbe(), reachability, end_to_end_runner=PassingStage(ProbeStage.END_TO_END, 120)
+        ).run(config)
+        self.assertEqual([result.stage for result in results], [ProbeStage.SCHEMA, ProbeStage.END_TO_END])
+        self.assertEqual(reachability.thread_ids, set())
+
     def test_parallel_workers_preserve_end_to_end_qualification(self) -> None:
         repository = InMemoryConfigRepository()
         for index in range(4):

@@ -30,7 +30,7 @@ class XrayAdapterTests(unittest.TestCase):
 
     def test_hysteria2_builds_documented_outbound_and_transport(self) -> None:
         config = ParserRegistry().parse(
-            "hysteria2://secret@hy.example:8443?sni=cdn.example#fixture"
+            "hysteria2://secret@hy.example:8443?sni=cdn.example&insecure=1&pinSHA256=abcd#fixture"
         )
         built = XrayConfigBuilder().build(config, 39002)
         outbound = built["outbounds"][0]
@@ -39,6 +39,8 @@ class XrayAdapterTests(unittest.TestCase):
         self.assertEqual(outbound["streamSettings"]["method"], "hysteria")
         self.assertEqual(outbound["streamSettings"]["hysteriaSettings"]["auth"], "secret")
         self.assertEqual(outbound["streamSettings"]["tlsSettings"]["serverName"], "cdn.example")
+        self.assertTrue(outbound["streamSettings"]["tlsSettings"]["allowInsecure"])
+        self.assertEqual(outbound["streamSettings"]["tlsSettings"]["pinnedPeerCertSha256"], "abcd")
 
     def test_runner_returns_safe_configuration_error_without_runtime(self) -> None:
         config = ParserRegistry().parse("trojan://secret@example.com:443?security=tls")

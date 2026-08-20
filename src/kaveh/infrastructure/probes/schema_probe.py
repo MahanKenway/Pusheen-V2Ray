@@ -8,7 +8,7 @@ from kaveh.domain.models import CanonicalConfig, ProbeResult, ProbeStage
 class SchemaProbe:
     """Reject impossible configuration shapes before any network activity."""
 
-    allowed_networks = frozenset({"tcp", "ws", "grpc", "httpupgrade", "h2", "kcp", "quic"})
+    allowed_networks = frozenset({"tcp", "ws", "grpc", "httpupgrade", "h2", "kcp", "quic", "hysteria"})
     allowed_security = frozenset({"none", "tls", "reality", "xtls"})
 
     def run(self, config: CanonicalConfig) -> ProbeResult:

@@ -63,3 +63,23 @@
 
 The TUIC schema described above was validated locally with the official `sing-box` v1.13.19 Linux amd64 release using `sing-box check`. This verifies the isolated SOCKS-inbound, TUIC-outbound and routing shape required for a future adapter; it does not demonstrate connectivity to a real TUIC server and therefore is not publish evidence.
 
+
+## Hysteria 2 source assessment
+
+Two public repositories were reviewed for Hysteria 2 availability. `MatinGhanbari/v2ray-configs` publishes a dedicated `subscriptions/filtered/subs/hysteria2.txt` endpoint and claims frequent refreshes; it is the strongest probationary candidate because the feed is protocol-specific. `ebrasha/free-v2ray-public-list` claims broad multi-protocol coverage but exposes only all-protocol lists in the reviewed README, so it offers less isolation and should not be added until a dedicated Hysteria 2 endpoint is identified.
+
+Candidate URL for a bounded probationary source:
+
+`https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/hysteria2.txt`
+
+The source must still pass the pipeline's HTTPS retrieval, URI parse, TCP reachability and, where compatible, Xray end-to-end validation. README claims about refresh rate, health, or uptime are not treated as validation evidence.
+
+Sources: https://github.com/MatinGhanbari/v2ray-configs and https://github.com/ebrasha/free-v2ray-public-list
+
+
+## TUIC ingestion boundary
+
+The official TUIC v5 specification defines the protocol framing, UUID/password authentication material and QUIC behavior, but it does not define a subscription or share-URI scheme. Therefore a generic `tuic://` parser would be a vendor-specific assumption, not a protocol-standard parser. The safe ingestion contract is a reviewed JSON profile with the documented sing-box TUIC outbound fields, or a separately versioned source adapter for an explicitly documented vendor format.
+
+Source: https://github.com/EAimTY/tuic/blob/dev/SPEC.md
+

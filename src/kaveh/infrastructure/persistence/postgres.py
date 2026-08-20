@@ -302,7 +302,10 @@ class PostgresConfigRepository:
         with self.database.transaction() as connection:
             rows = connection.execute(
                 """
-                SELECT c.*, observation.source_id, reachable.last_success_at, reachable.latest_latency_ms
+                SELECT c.*, observation.source_id, reachable.last_success_at,
+                       reachable.latest_latency_ms, stability.sample_count,
+                       stability.success_count,
+                       (stability.success_count + 2.0) / (stability.sample_count + 4.0) AS stability_score
                 FROM configs AS c
                 JOIN LATERAL (
                     SELECT o.source_id
@@ -319,14 +322,27 @@ class PostgresConfigRepository:
                            p.latency_ms AS latest_latency_ms
                     FROM probe_results AS p
                     WHERE p.identity_hash = c.identity_hash
-                      AND p.stage = 'reachability'
+                      AND p.stage IN ('reachability', 'end_to_end')
                       AND p.outcome = 'pass'
                       AND p.latency_ms IS NOT NULL
                     ORDER BY p.observed_at DESC
                     LIMIT 1
                 ) AS reachable ON TRUE
+                JOIN LATERAL (
+                    SELECT COUNT(*) AS sample_count,
+                           COUNT(*) FILTER (WHERE recent.outcome = 'pass') AS success_count
+                    FROM (
+                        SELECT p.outcome
+                        FROM probe_results AS p
+                        WHERE p.identity_hash = c.identity_hash
+                          AND p.stage IN ('reachability', 'end_to_end')
+                        ORDER BY p.observed_at DESC
+                        LIMIT 8
+                    ) AS recent
+                ) AS stability ON TRUE
                 WHERE reachable.last_success_at >= NOW() - (%s * INTERVAL '1 hour')
-                ORDER BY reachable.latest_latency_ms ASC,
+                ORDER BY (stability.success_count + 2.0) / (stability.sample_count + 4.0) DESC,
+                         reachable.latest_latency_ms ASC,
                          reachable.last_success_at DESC, c.identity_hash
                 """,
                 (max_age_hours,),
