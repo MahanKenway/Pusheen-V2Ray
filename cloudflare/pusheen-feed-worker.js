@@ -8,7 +8,9 @@
  */
 
 const UPSTREAM_ROOT = "https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/";
-const CACHE_SECONDS = 300;
+// Keep origin cache shorter than the 15-minute publisher cadence so a newly
+// published feed is never delayed by a five-minute shared edge entry.
+const CACHE_SECONDS = 60;
 const ARTIFACTS = {
   "all.txt": "subscriptions/all.txt",
   "balanced.txt": "subscriptions/reachable.txt",
