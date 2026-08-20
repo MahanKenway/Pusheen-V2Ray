@@ -22,6 +22,7 @@ class StatusPublisher:
         validation: Mapping[str, Any],
         strict_publication: Mapping[str, Any],
         reachable_publication: Mapping[str, Any],
+        resilient_publication: Mapping[str, Any],
         source_health: tuple[dict[str, Any], ...],
         reachable_max_age_hours: int,
     ) -> None:
@@ -48,6 +49,13 @@ class StatusPublisher:
                     "evidence": "recent TCP reachability only",
                     "max_evidence_age_hours": reachable_max_age_hours,
                     "variants": ["reachable", "reachable-fast", "reachable-vless", "reachable-vmess", "reachable-trojan", "reachable-ss"],
+                },
+                "resilient": {
+                    **dict(resilient_publication),
+                    "path": "subscriptions/resilient.txt",
+                    "evidence": "recent TCP reachability with source, protocol, endpoint, and transport anti-concentration",
+                    "max_evidence_age_hours": reachable_max_age_hours,
+                    "selection_notice": "This is a common-mode-risk reduction policy, not an Iran-availability or end-to-end guarantee.",
                 },
             },
             "ingestion": dict(ingestion),

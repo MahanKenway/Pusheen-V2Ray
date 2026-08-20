@@ -9,6 +9,7 @@ from pathlib import Path
 
 from kaveh.adapters.protocols.registry import ParserRegistry
 from kaveh.adapters.publishers.reachable_publisher import ReachableFeedPublisher
+from kaveh.adapters.publishers.resilient_publisher import ResilientFeedPublisher
 from kaveh.adapters.publishers.snapshot_publisher import SnapshotPublisher
 from kaveh.adapters.publishers.status_publisher import StatusPublisher
 from kaveh.adapters.runtime.probe_router import ProtocolRuntimeProbe
@@ -167,8 +168,12 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
         publication = PublishSnapshot(
             SnapshotPublisher(artifact_store, policy.version)
         ).run(publication_configs, publication_cards, ingestion.source_errors)
+        reachable_inputs = _reachable_publication_inputs(repository)
         reachable_publication = ReachableFeedPublisher(artifact_store).publish(
-            _reachable_publication_inputs(repository), ingestion.source_errors
+            reachable_inputs, ingestion.source_errors
+        )
+        resilient_publication = ResilientFeedPublisher(artifact_store).publish(
+            reachable_inputs, ingestion.source_errors
         )
         StatusPublisher(artifact_store).publish(
             ingestion={
@@ -202,6 +207,12 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
                 "count": reachable_publication.count,
                 "snapshot_id": reachable_publication.snapshot_id,
                 "reason": reachable_publication.reason,
+            },
+            resilient_publication={
+                "published": resilient_publication.published,
+                "count": resilient_publication.count,
+                "snapshot_id": resilient_publication.snapshot_id,
+                "reason": resilient_publication.reason,
             },
             source_health=repository.source_health_snapshot(),
             reachable_max_age_hours=REACHABLE_MAX_AGE_HOURS,
@@ -240,6 +251,12 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
                     "count": reachable_publication.count,
                     "snapshot_id": reachable_publication.snapshot_id,
                     "reason": reachable_publication.reason,
+                },
+                "resilient_publication": {
+                    "published": resilient_publication.published,
+                    "count": resilient_publication.count,
+                    "snapshot_id": resilient_publication.snapshot_id,
+                    "reason": resilient_publication.reason,
                 },
             },
             sort_keys=True,

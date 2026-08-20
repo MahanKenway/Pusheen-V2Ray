@@ -63,6 +63,15 @@
       "allowed_protocols": ["trojan"],
       "max_bytes": 1500000,
       "max_entries": 200
+    },
+    {
+      "id": "iboxz-vless-probationary",
+      "url": "https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/vless.txt",
+      "enabled": true,
+      "trust_weight": 0.35,
+      "allowed_protocols": ["vless"],
+      "max_bytes": 150000,
+      "max_entries": 200
     }
   ]
 }

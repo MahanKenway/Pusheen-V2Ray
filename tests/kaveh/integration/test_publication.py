@@ -7,6 +7,7 @@ from pathlib import Path
 
 from kaveh.adapters.protocols.registry import ParserRegistry
 from kaveh.adapters.publishers.reachable_publisher import ReachableFeedPublisher
+from kaveh.adapters.publishers.resilient_publisher import ResilientFeedPublisher
 from kaveh.adapters.publishers.snapshot_publisher import SnapshotPublisher
 from kaveh.adapters.publishers.status_publisher import StatusPublisher
 from kaveh.domain.models import ScoreCard
@@ -140,6 +141,35 @@ class PublicationTests(unittest.TestCase):
                 (root / "subscriptions" / "all-vless.txt").read_text(), vless.raw_uri + "\n"
             )
 
+    def test_resilient_publisher_limits_common_mode_concentration(self) -> None:
+        configs = [
+            ParserRegistry().parse(
+                f"vless://secret-{index}@vless-{index}.example:443?type=tcp&security=tls#vless-{index}"
+            )
+            for index in range(40)
+        ] + [
+            ParserRegistry().parse(
+                f"trojan://secret-{index}@trojan-{index}.example:443?security=tls#trojan-{index}"
+            )
+            for index in range(30)
+        ]
+        configs = [
+            config.__class__(**{**config.__dict__, "source_id": "same-source"})
+            for config in configs
+        ]
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            report = ResilientFeedPublisher(FileSystemArtifactStore(root)).publish(configs)
+            self.assertTrue(report.published)
+            self.assertEqual(report.count, 30)
+            lines = (root / "subscriptions" / "resilient.txt").read_text().splitlines()
+            self.assertEqual(len(lines), 30)
+            manifest = json.loads((root / "subscriptions" / "resilient.manifest.v1.json").read_text())
+            self.assertEqual(manifest["by_source"], {"same-source": 30})
+            self.assertEqual(manifest["by_protocol"]["vless"], 30)
+            self.assertTrue((root / "subscriptions" / "resilient.base64").exists())
+            self.assertFalse(ResilientFeedPublisher(FileSystemArtifactStore(root)).publish(configs).published)
+
     def test_status_publisher_writes_public_safe_document(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
@@ -148,6 +178,7 @@ class PublicationTests(unittest.TestCase):
                 validation={"candidates": 10, "probe_endpoints": 2},
                 strict_publication={"count": 7, "published": True},
                 reachable_publication={"count": 34, "published": True},
+                resilient_publication={"count": 20, "published": True},
                 source_health=(
                     {
                         "source_id": "reviewed-source",
@@ -166,6 +197,8 @@ class PublicationTests(unittest.TestCase):
             self.assertEqual(payload["feeds"]["primary"]["path"], "subscriptions/all.txt")
             self.assertEqual(payload["feeds"]["primary"]["minimum_target"], 100)
             self.assertEqual(payload["feeds"]["balanced"]["max_evidence_age_hours"], 72)
+            self.assertEqual(payload["feeds"]["resilient"]["count"], 20)
+            self.assertEqual(payload["feeds"]["resilient"]["path"], "subscriptions/resilient.txt")
             self.assertEqual(payload["sources"]["healthy"], 1)
             self.assertNotIn("vless://", json.dumps(payload))
 
