@@ -43,8 +43,12 @@ class EvidenceReceiptPublisher:
         evidence: str,
         vantage_id: str,
         max_evidence_age_hours: int,
+        artifact_name: str = "resilient",
+        inclusion: str = "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
     ) -> EvidenceReceiptPublishReport:
-        receipts = [self._receipt(config) for config in configs if config.identity_hash]
+        if not artifact_name.replace("-", "").replace("_", "").isalnum():
+            raise ValueError("artifact_name must contain only letters, digits, hyphens, or underscores")
+        receipts = [self._receipt(config, inclusion) for config in configs if config.identity_hash]
         document = {
             "schema_version": self.schema_version,
             "tier": tier,
@@ -64,16 +68,16 @@ class EvidenceReceiptPublisher:
         artifact_hash = hashlib.sha256(content).hexdigest()
         read_bytes = getattr(self.artifact_store, "read_bytes", None)
         if callable(read_bytes):
-            existing = read_bytes("subscriptions/resilient.receipts.v1.json")
+            existing = read_bytes(f"subscriptions/{artifact_name}.receipts.v1.json")
             if existing and _equivalent_except_created_at(existing, document):
                 return EvidenceReceiptPublishReport(
                     False, len(receipts), reason="NO_EVIDENCE_RECEIPT_CHANGE"
                 )
-        self.artifact_store.write_atomic("subscriptions/resilient.receipts.v1.json", content)
+        self.artifact_store.write_atomic(f"subscriptions/{artifact_name}.receipts.v1.json", content)
         return EvidenceReceiptPublishReport(True, len(receipts), artifact_hash=artifact_hash)
 
     @staticmethod
-    def _receipt(config: CanonicalConfig) -> dict[str, str]:
+    def _receipt(config: CanonicalConfig, inclusion: str) -> dict[str, str]:
         transport = config.transport
         identity = config.identity_hash or ""
         return {
@@ -83,7 +87,7 @@ class EvidenceReceiptPublisher:
                 (config.protocol.value, transport.network or "unknown", transport.security or "none")
             ),
             "latest_source_id": config.source_id or "unknown",
-            "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
+            "inclusion": inclusion,
         }
 
 

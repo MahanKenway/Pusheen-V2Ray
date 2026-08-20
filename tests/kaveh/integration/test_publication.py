@@ -8,7 +8,10 @@ from pathlib import Path
 from kaveh.adapters.protocols.registry import ParserRegistry
 from kaveh.adapters.publishers.evidence_receipt_publisher import EvidenceReceiptPublisher
 from kaveh.adapters.publishers.reachable_publisher import ReachableFeedPublisher
-from kaveh.adapters.publishers.resilient_publisher import ResilientFeedPublisher
+from kaveh.adapters.publishers.resilient_publisher import (
+    OutageDiverseFeedPublisher,
+    ResilientFeedPublisher,
+)
 from kaveh.adapters.publishers.snapshot_publisher import SnapshotPublisher
 from kaveh.adapters.publishers.status_publisher import StatusPublisher
 from kaveh.adapters.publishers.xray_failover_publisher import XrayFailoverPublisher
@@ -171,6 +174,40 @@ class PublicationTests(unittest.TestCase):
             self.assertEqual(manifest["by_protocol"]["vless"], 30)
             self.assertTrue((root / "subscriptions" / "resilient.base64").exists())
             self.assertFalse(ResilientFeedPublisher(FileSystemArtifactStore(root)).publish(configs).published)
+
+    def test_outage_diverse_feed_caps_source_and_transport_exposure(self) -> None:
+        configs = []
+        for source_index in range(4):
+            source_id = f"source-{source_index}"
+            for index in range(5):
+                configs.extend(
+                    [
+                        ParserRegistry().parse(
+                            f"vless://secret-{source_index}-{index}@tcp-{source_index}-{index}.example:443?type=tcp&security=tls#tcp"
+                        ),
+                        ParserRegistry().parse(
+                            f"vless://secret-ws-{source_index}-{index}@ws-{source_index}-{index}.example:443?type=ws&security=tls#ws"
+                        ),
+                        ParserRegistry().parse(
+                            f"trojan://secret-trojan-{source_index}-{index}@trojan-{source_index}-{index}.example:443?security=tls#trojan"
+                        ),
+                    ]
+                )
+            configs = [
+                item.__class__(**{**item.__dict__, "source_id": source_id})
+                if item.source_id is None
+                else item
+                for item in configs
+            ]
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            report = OutageDiverseFeedPublisher(FileSystemArtifactStore(root)).publish(configs)
+            self.assertTrue(report.published)
+            self.assertLessEqual(report.count, 40)
+            manifest = json.loads((root / "subscriptions" / "outage.manifest.v1.json").read_text())
+            self.assertTrue((root / "subscriptions" / "outage.txt").exists())
+            self.assertLessEqual(max(manifest["by_source"].values()), 10)
+            self.assertLessEqual(max(manifest["by_transport_family"].values()), 14)
 
     def test_xray_failover_profile_uses_only_local_socks_and_block_fallback(self) -> None:
         config = ParserRegistry().parse(

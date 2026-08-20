@@ -25,6 +25,7 @@ class StatusPublisher:
         resilient_publication: Mapping[str, Any],
         source_health: tuple[dict[str, Any], ...],
         reachable_max_age_hours: int,
+        outage_publication: Mapping[str, Any] | None = None,
     ) -> None:
         sources = [_public_source_health(item) for item in source_health]
         document = {
@@ -57,6 +58,19 @@ class StatusPublisher:
                     "max_evidence_age_hours": reachable_max_age_hours,
                     "selection_notice": "This is a common-mode-risk reduction policy, not an Iran-availability or end-to-end guarantee.",
                 },
+                **(
+                    {
+                        "outage_diverse": {
+                            **dict(outage_publication),
+                            "path": "subscriptions/outage.txt",
+                            "evidence": "recent TCP reachability with tighter source, protocol, endpoint, and transport concentration caps",
+                            "max_evidence_age_hours": reachable_max_age_hours,
+                            "selection_notice": "Designed to reduce shared failure modes; not evidence from inside Iran and not a shutdown-availability guarantee.",
+                        }
+                    }
+                    if outage_publication is not None
+                    else {}
+                ),
             },
             "ingestion": dict(ingestion),
             "validation": dict(validation),

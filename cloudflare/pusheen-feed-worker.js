@@ -21,8 +21,11 @@ const ARTIFACTS = {
   "fast.txt": "subscriptions/reachable-fast.txt",
   "strict.txt": "subscriptions/strict.txt",
   "resilient.txt": "subscriptions/resilient.txt",
+  "outage.txt": "subscriptions/outage.txt",
   "resilient.receipts.v1.json": "subscriptions/resilient.receipts.v1.json",
   "resilient.manifest.v1.json": "subscriptions/resilient.manifest.v1.json",
+  "outage.receipts.v1.json": "subscriptions/outage.receipts.v1.json",
+  "outage.manifest.v1.json": "subscriptions/outage.manifest.v1.json",
   "resilient-xray.json": "profiles/resilient-xray.json",
   "resilient-xray.meta.v1.json": "profiles/resilient-xray.meta.v1.json",
   "status.json": "status.json",
@@ -34,8 +37,10 @@ const ARTIFACTS = {
 // last-known-good path for the continuity tier.
 const SCHEDULED_ARTIFACTS = [
   "subscriptions/resilient.txt",
+  "subscriptions/outage.txt",
   "subscriptions/strict.txt",
   "subscriptions/resilient.receipts.v1.json",
+  "subscriptions/outage.receipts.v1.json",
   "profiles/resilient-xray.json",
   "status.json",
 ];

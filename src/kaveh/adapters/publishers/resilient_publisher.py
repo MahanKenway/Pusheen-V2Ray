@@ -47,6 +47,7 @@ class ResilientFeedPublisher:
     """
 
     tier = "tcp-reachable-diverse-v1"
+    feed_name = "resilient"
     limit = 60
     max_source_share = 0.50
     max_protocol_share = 0.70
@@ -70,7 +71,7 @@ class ResilientFeedPublisher:
         content = _content(selected)
         artifact_hash = hashlib.sha256(content).hexdigest()
         read_bytes = getattr(self.artifact_store, "read_bytes", None)
-        if callable(read_bytes) and read_bytes("subscriptions/resilient.txt") == content:
+        if callable(read_bytes) and read_bytes(f"subscriptions/{self.feed_name}.txt") == content:
             return ResilientPublishReport(
                 False,
                 len(selected),
@@ -104,12 +105,16 @@ class ResilientFeedPublisher:
             ),
         }
         manifest_bytes = (json.dumps(manifest, sort_keys=True, indent=2) + "\n").encode("utf-8")
-        snapshot_root = f"snapshots/resilient/{snapshot_id}"
+        snapshot_root = f"snapshots/{self.feed_name}/{snapshot_id}"
         self._write_feed(f"{snapshot_root}/configs", selected)
         self.artifact_store.write_atomic(f"{snapshot_root}/manifest.v1.json", manifest_bytes)
-        self._write_feed("subscriptions/resilient", selected)
-        self.artifact_store.write_atomic("subscriptions/resilient.manifest.v1.json", manifest_bytes)
-        self.artifact_store.write_atomic("resilient-latest.txt", f"{snapshot_id}\n".encode("utf-8"))
+        self._write_feed(f"subscriptions/{self.feed_name}", selected)
+        self.artifact_store.write_atomic(
+            f"subscriptions/{self.feed_name}.manifest.v1.json", manifest_bytes
+        )
+        self.artifact_store.write_atomic(
+            f"{self.feed_name}-latest.txt", f"{snapshot_id}\n".encode("utf-8")
+        )
         return ResilientPublishReport(True, len(selected), snapshot_id=snapshot_id)
 
     def select(self, configs: Iterable[CanonicalConfig]) -> list[CanonicalConfig]:
@@ -149,10 +154,28 @@ class ResilientFeedPublisher:
             transport_counts[transport] += 1
         return selected
 
+
     def _write_feed(self, stem: str, configs: Iterable[CanonicalConfig]) -> None:
         content = _content(configs)
         self.artifact_store.write_atomic(f"{stem}.txt", content)
         self.artifact_store.write_atomic(f"{stem}.base64", base64.b64encode(content))
+
+
+class OutageDiverseFeedPublisher(ResilientFeedPublisher):
+    """Publish a stricter diversity-first continuity tier.
+
+    This tier remains limited to recent TCP evidence from the validator origin.
+    Its purpose is to reduce shared source, protocol, and transport exposure; it
+    intentionally does not claim availability from inside Iran or during a total
+    international shutdown.
+    """
+
+    tier = "tcp-reachable-outage-diverse-v1"
+    feed_name = "outage"
+    limit = 40
+    max_source_share = 0.25
+    max_protocol_share = 0.65
+    max_transport_family_share = 0.35
 
 
 def _cap(limit: int, share: float) -> int:

@@ -11,7 +11,10 @@ from pathlib import Path
 from kaveh.adapters.protocols.registry import ParserRegistry
 from kaveh.adapters.publishers.evidence_receipt_publisher import EvidenceReceiptPublisher
 from kaveh.adapters.publishers.reachable_publisher import ReachableFeedPublisher
-from kaveh.adapters.publishers.resilient_publisher import ResilientFeedPublisher
+from kaveh.adapters.publishers.resilient_publisher import (
+    OutageDiverseFeedPublisher,
+    ResilientFeedPublisher,
+)
 from kaveh.adapters.publishers.snapshot_publisher import SnapshotPublisher
 from kaveh.adapters.publishers.status_publisher import StatusPublisher
 from kaveh.adapters.publishers.xray_failover_publisher import XrayFailoverPublisher
@@ -193,6 +196,21 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
             max_evidence_age_hours=REACHABLE_MAX_AGE_HOURS,
         )
         failover_profile = XrayFailoverPublisher(artifact_store).publish(resilient_inputs)
+        outage_publisher = OutageDiverseFeedPublisher(artifact_store)
+        outage_inputs = outage_publisher.select(reachable_inputs)
+        outage_publication = outage_publisher.publish(reachable_inputs, ingestion.source_errors)
+        outage_receipts = EvidenceReceiptPublisher(artifact_store).publish(
+            outage_inputs,
+            tier="tcp-reachable-outage-diverse-v1",
+            evidence="recent successful TCP reachability with tighter anti-concentration policy",
+            vantage_id=settings.vantage_id,
+            max_evidence_age_hours=REACHABLE_MAX_AGE_HOURS,
+            artifact_name="outage",
+            inclusion=(
+                "selected from recent TCP-reachability evidence after tighter source, "
+                "protocol, endpoint, and transport anti-concentration policy"
+            ),
+        )
         StatusPublisher(artifact_store).publish(
             ingestion={
                 "discovered": ingestion.discovered_count,
@@ -245,6 +263,16 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
             },
             source_health=repository.source_health_snapshot(),
             reachable_max_age_hours=REACHABLE_MAX_AGE_HOURS,
+            outage_publication={
+                "published": outage_publication.published,
+                "count": outage_publication.count,
+                "snapshot_id": outage_publication.snapshot_id,
+                "reason": outage_publication.reason,
+                "receipt_count": outage_receipts.count,
+                "receipt_published": outage_receipts.published,
+                "receipt_reason": outage_receipts.reason,
+                "receipt_path": "subscriptions/outage.receipts.v1.json",
+            },
         )
         history.finish_run()
         _log_validation_progress("publication_complete", started)
@@ -281,6 +309,15 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
                     "count": reachable_publication.count,
                     "snapshot_id": reachable_publication.snapshot_id,
                     "reason": reachable_publication.reason,
+                },
+                "outage_publication": {
+                    "published": outage_publication.published,
+                    "count": outage_publication.count,
+                    "snapshot_id": outage_publication.snapshot_id,
+                    "reason": outage_publication.reason,
+                    "receipt_count": outage_receipts.count,
+                    "receipt_published": outage_receipts.published,
+                    "receipt_reason": outage_receipts.reason,
                 },
                 "resilient_publication": {
                     "published": resilient_publication.published,
