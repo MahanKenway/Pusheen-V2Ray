@@ -99,6 +99,7 @@ class IngestSources:
                         source_rejected += 1
                         rejection_codes[exc.code] = rejection_codes.get(exc.code, 0) + 1
 
+            accepted_configs = []
             for config in configs:
                 try:
                     if config.protocol not in source.allowed_protocols:
@@ -111,7 +112,15 @@ class IngestSources:
                     source_rejected += 1
                     rejection_codes[exc.code] = rejection_codes.get(exc.code, 0) + 1
                     continue
-                if self.repository.upsert(config):
+                accepted_configs.append(config)
+
+            batch_upsert = getattr(self.repository, "upsert_many", None)
+            if callable(batch_upsert):
+                is_new_entries = batch_upsert(accepted_configs)
+            else:
+                is_new_entries = tuple(self.repository.upsert(config) for config in accepted_configs)
+            for is_new in is_new_entries:
+                if is_new:
                     parsed += 1
                     source_parsed += 1
                 else:

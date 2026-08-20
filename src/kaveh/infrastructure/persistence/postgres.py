@@ -257,6 +257,74 @@ class PostgresConfigRepository:
                 )
             return exists is None
 
+    def upsert_many(self, configs: Iterable[CanonicalConfig]) -> tuple[bool, ...]:
+        """Persist one source batch in a single transaction.
+
+        The returned flags preserve the existing ``upsert`` contract: ``True``
+        means a newly discovered identity and ``False`` a duplicate update. This
+        avoids opening a remote database transaction for every URI while keeping
+        observations, credentials, and source provenance atomic per source.
+        """
+
+        batch = tuple(configs)
+        if not batch:
+            return ()
+        if any(not config.identity_hash for config in batch):
+            raise ValueError("CanonicalConfig must have an identity hash")
+        identity_hashes = [config.identity_hash for config in batch]
+        with self.database.transaction() as connection:
+            existing_rows = connection.execute(
+                "SELECT identity_hash FROM configs WHERE identity_hash = ANY(%s)",
+                (identity_hashes,),
+            ).fetchall()
+            existing = {str(row["identity_hash"]) for row in existing_rows}
+            config_rows = [
+                (
+                    config.identity_hash,
+                    config.protocol.value,
+                    config.host,
+                    config.port,
+                    config.credential,
+                    Jsonb(_transport_json(config.transport)),
+                    config.label,
+                    config.raw_uri,
+                )
+                for config in batch
+            ]
+            connection.executemany(
+                """
+                INSERT INTO configs (
+                    identity_hash, protocol, host, port, credential, transport, label, raw_uri
+                ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+                ON CONFLICT (identity_hash) DO UPDATE SET
+                    label = EXCLUDED.label,
+                    raw_uri = EXCLUDED.raw_uri,
+                    last_seen_at = NOW()
+                """,
+                config_rows,
+            )
+            observation_rows = [
+                (
+                    config.identity_hash,
+                    config.source_id,
+                    hashlib.sha256(config.raw_uri.encode("utf-8")).hexdigest(),
+                )
+                for config in batch
+                if config.source_id
+            ]
+            if observation_rows:
+                connection.executemany(
+                    """
+                    INSERT INTO config_observations (identity_hash, source_id, raw_hash)
+                    VALUES (%s, %s, %s)
+                    ON CONFLICT (identity_hash, source_id) DO UPDATE SET
+                        raw_hash = EXCLUDED.raw_hash,
+                        last_seen_at = NOW()
+                    """,
+                    observation_rows,
+                )
+        return tuple(config.identity_hash not in existing for config in batch)
+
     def get(self, identity_hash: str) -> CanonicalConfig | None:
         with self.database.transaction() as connection:
             row = connection.execute(
