@@ -137,6 +137,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "172.67.74.10",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d171491a-9995-46ce-8719-f64463ca3a45"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "sertraline.adaspoloandco.com"
+        },
+        "wsSettings": {
+          "path": "/download.php"
+        }
+      },
+      "tag": "resilient-06496f48094b1db6"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "188.114.97.6",
             "port": 443,
             "users": [
@@ -1077,6 +1106,31 @@
       "settings": {
         "vnext": [
           {
+            "address": "172.66.156.81",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cda9ae20-f69f-4112-be95-90cdfc7a21ae"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-29f5940e14c35228"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "104.26.14.85",
             "port": 443,
             "users": [
@@ -1129,31 +1183,6 @@
         }
       },
       "tag": "resilient-eaf50e138ffcbd5d"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.67.202.17",
-            "port": 2095,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "86c50e3a-5b87-49dd-bd20-03c7f2735e40"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-12aea11f5d6b2cc0"
     },
     {
       "protocol": "trojan",
@@ -1423,31 +1452,6 @@
         }
       },
       "tag": "resilient-b4c77b8362895842"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.66.156.81",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "57f56a3c-0e10-4fb2-ad70-3db23a572b0f"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-2ce33340b87e2b3a"
     },
     {
       "protocol": "vless",
