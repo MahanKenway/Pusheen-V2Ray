@@ -31,8 +31,16 @@ class StatusPublisher:
             "updated_at": datetime.now(UTC).isoformat(),
             "service": "Pusheen V2Ray quality-first subscription pipeline",
             "feeds": {
+                "primary": {
+                    **dict(reachable_publication),
+                    "path": "subscriptions/all.txt",
+                    "evidence": "recent TCP reachability only",
+                    "max_evidence_age_hours": reachable_max_age_hours,
+                    "minimum_target": 100,
+                },
                 "strict": {
                     **dict(strict_publication),
+                    "path": "subscriptions/strict.txt",
                     "evidence": "end-to-end HTTPS probe through Xray",
                 },
                 "balanced": {

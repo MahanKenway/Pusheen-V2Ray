@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import base64
 import json
 from pathlib import Path
 
@@ -162,6 +163,7 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
             candidates, validation.scorecards, repository, history, policy, active_sources
         )
         artifact_store = FileSystemArtifactStore(publish_root)
+        _migrate_legacy_strict_feed(artifact_store)
         publication = PublishSnapshot(
             SnapshotPublisher(artifact_store, policy.version)
         ).run(publication_configs, publication_cards, ingestion.source_errors)
@@ -189,7 +191,7 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
                 "count": (
                     publication.snapshot.config_count
                     if publication.snapshot
-                    else _active_feed_count(artifact_store, "subscriptions/all.txt")
+                    else _active_feed_count(artifact_store, "subscriptions/strict.txt")
                 ),
                 "snapshot_id": publication.snapshot.snapshot_id if publication.snapshot else None,
                 "reason": publication.reason,
@@ -244,6 +246,22 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
         )
     )
     return 0
+
+
+def _migrate_legacy_strict_feed(artifact_store) -> None:  # type: ignore[no-untyped-def]
+    """Preserve the former strict all feed before its high-coverage replacement."""
+
+    read_bytes = getattr(artifact_store, "read_bytes", None)
+    if not callable(read_bytes) or read_bytes("subscriptions/strict.txt"):
+        return
+    legacy_content = read_bytes("subscriptions/all.txt")
+    if not legacy_content:
+        return
+    artifact_store.write_atomic("subscriptions/strict.txt", legacy_content)
+    artifact_store.write_atomic("subscriptions/strict.base64", base64.b64encode(legacy_content))
+    legacy_manifest = read_bytes("subscriptions/manifest.v1.json")
+    if legacy_manifest:
+        artifact_store.write_atomic("subscriptions/strict.manifest.v1.json", legacy_manifest)
 
 
 def _active_feed_count(artifact_store, relative_path: str) -> int:  # type: ignore[no-untyped-def]

@@ -83,10 +83,14 @@ class ReachableFeedPublisher:
             self._write_feed(f"{snapshot_root}/protocols/{protocol}", items)
         self.artifact_store.write_atomic(f"{snapshot_root}/manifest.v1.json", manifest_bytes)
 
+        # ``all`` is the primary high-coverage feed. It has the same bounded,
+        # recent TCP evidence as reachable, while strict keeps its own URL.
+        self._write_feed("subscriptions/all", selected)
         self._write_feed("subscriptions/reachable", selected)
         self._write_feed("subscriptions/reachable-fast", fast)
         for protocol, items in protocol_configs.items():
             self._write_feed(f"subscriptions/reachable-{protocol}", items)
+        self.artifact_store.write_atomic("subscriptions/all.manifest.v1.json", manifest_bytes)
         self.artifact_store.write_atomic("subscriptions/reachable.manifest.v1.json", manifest_bytes)
         self.artifact_store.write_atomic("reachable-latest.txt", f"{snapshot_id}\n".encode("utf-8"))
         return ReachablePublishReport(True, len(selected), snapshot_id=snapshot_id)

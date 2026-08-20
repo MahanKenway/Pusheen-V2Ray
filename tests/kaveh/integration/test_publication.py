@@ -34,9 +34,9 @@ class PublicationTests(unittest.TestCase):
             manifest = root / "snapshots" / snapshot.snapshot_id / "manifest.v1.json"
             self.assertTrue(manifest.exists())
             self.assertNotIn("secret", manifest.read_text())
-            self.assertEqual((root / "subscriptions" / "all.txt").read_text(), config.raw_uri + "\n")
-            self.assertTrue((root / "subscriptions" / "all.base64").exists())
-            self.assertTrue((root / "subscriptions" / "trojan.base64").exists())
+            self.assertEqual((root / "subscriptions" / "strict.txt").read_text(), config.raw_uri + "\n")
+            self.assertTrue((root / "subscriptions" / "strict.base64").exists())
+            self.assertTrue((root / "subscriptions" / "strict-trojan.base64").exists())
 
     def test_publisher_does_not_replace_latest_when_nothing_qualifies(self) -> None:
         config = ParserRegistry().parse("trojan://secret@example.com:443?security=tls#sample")
@@ -80,6 +80,11 @@ class PublicationTests(unittest.TestCase):
             self.assertEqual(report.count, 1)
             self.assertIsNotNone(report.snapshot_id)
             self.assertEqual(
+                (root / "subscriptions" / "all.txt").read_text(),
+                config.raw_uri + "\n",
+            )
+            self.assertTrue((root / "subscriptions" / "all.base64").exists())
+            self.assertEqual(
                 (root / "subscriptions" / "reachable.txt").read_text(),
                 config.raw_uri + "\n",
             )
@@ -115,6 +120,9 @@ class PublicationTests(unittest.TestCase):
             )
             payload = json.loads((root / "status.json").read_text())
             self.assertEqual(payload["feeds"]["strict"]["count"], 7)
+            self.assertEqual(payload["feeds"]["strict"]["path"], "subscriptions/strict.txt")
+            self.assertEqual(payload["feeds"]["primary"]["path"], "subscriptions/all.txt")
+            self.assertEqual(payload["feeds"]["primary"]["minimum_target"], 100)
             self.assertEqual(payload["feeds"]["balanced"]["max_evidence_age_hours"], 72)
             self.assertEqual(payload["sources"]["healthy"], 1)
             self.assertNotIn("vless://", json.dumps(payload))

@@ -16,8 +16,9 @@ class SnapshotPublisher:
     """Publish qualified feeds only after a complete snapshot is assembled.
 
     Each successful publication contains an immutable archive under
-    ``snapshots/`` and stable consumer URLs under ``subscriptions/``. Stable
-    files are updated only when the qualified feed bytes change.
+    ``snapshots/`` and stable consumer URLs under ``subscriptions/``. The
+    end-to-end tier is deliberately published under ``strict`` so ``all`` can
+    remain the high-coverage public feed without misrepresenting its evidence.
     """
 
     def __init__(self, artifact_store: ArtifactStore, policy_version: str) -> None:
@@ -76,13 +77,14 @@ class SnapshotPublisher:
             self.artifact_store.write_atomic(f"{prefix}/protocols/{protocol}.base64", _b64(payload))
         self.artifact_store.write_atomic(f"{prefix}/manifest.v1.json", manifest_content)
 
-        # Stable paths are deliberately simple and safe to cache only briefly.
-        self.artifact_store.write_atomic("subscriptions/all.txt", content)
-        self.artifact_store.write_atomic("subscriptions/all.base64", _b64(content))
+        # Strict stable paths stay separate from the high-coverage all feed.
+        self.artifact_store.write_atomic("subscriptions/strict.txt", content)
+        self.artifact_store.write_atomic("subscriptions/strict.base64", _b64(content))
         for protocol, payload in protocol_content.items():
-            self.artifact_store.write_atomic(f"subscriptions/{protocol}.txt", payload)
-            self.artifact_store.write_atomic(f"subscriptions/{protocol}.base64", _b64(payload))
-        self.artifact_store.write_atomic("subscriptions/manifest.v1.json", manifest_content)
+            self.artifact_store.write_atomic(f"subscriptions/strict-{protocol}.txt", payload)
+            self.artifact_store.write_atomic(f"subscriptions/strict-{protocol}.base64", _b64(payload))
+        self.artifact_store.write_atomic("subscriptions/strict.manifest.v1.json", manifest_content)
+        self.artifact_store.write_atomic("strict-latest.txt", f"{snapshot_id}\n".encode("utf-8"))
         self.artifact_store.switch_latest(snapshot_id)
         return PublicationSnapshot(
             snapshot_id=snapshot_id,
@@ -96,7 +98,7 @@ class SnapshotPublisher:
         read_bytes = getattr(self.artifact_store, "read_bytes", None)
         if not callable(read_bytes):
             return False
-        previous = read_bytes("subscriptions/all.txt")
+        previous = read_bytes("subscriptions/strict.txt")
         return previous == content
 
     def _manifest(
