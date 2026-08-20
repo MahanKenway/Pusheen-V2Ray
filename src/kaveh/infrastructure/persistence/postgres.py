@@ -10,9 +10,9 @@ from __future__ import annotations
 import hashlib
 import json
 import uuid
-from collections.abc import Iterable, Iterator
+from collections.abc import Iterable, Iterator, Mapping
 from contextlib import contextmanager
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 from statistics import median
 from typing import Any
@@ -118,6 +118,101 @@ class PostgresConfigRepository:
                 ),
             )
 
+    def is_source_quarantined(self, source_id: str) -> bool:
+        """Return whether a source is temporarily excluded by runtime evidence."""
+
+        with self.database.transaction() as connection:
+            row = connection.execute(
+                """
+                SELECT quarantine_until > NOW() AS is_quarantined
+                FROM source_health
+                WHERE source_id = %s
+                """,
+                (source_id,),
+            ).fetchone()
+        return bool(row and row["is_quarantined"])
+
+    def record_source_health(self, source_stats: Mapping[str, Any]) -> None:
+        """Persist source fetch/parse evidence and quarantine unhealthy sources.
+
+        A source is quarantined for six hours after either three consecutive fetch
+        failures or an observed parse-rejection ratio of at least 80 percent on a
+        payload containing at least ten entries.  This protects the small Xray
+        candidate budget while allowing a later successful fetch to recover it.
+        """
+
+        if not source_stats:
+            return
+        with self.database.transaction() as connection:
+            for source_id, stats in source_stats.items():
+                discovered = int(getattr(stats, "discovered_count", 0))
+                accepted = int(getattr(stats, "accepted_count", 0))
+                rejected = int(getattr(stats, "rejected_count", 0))
+                error_code = getattr(stats, "error_code", None)
+                parse_failure = discovered >= 10 and rejected / discovered >= 0.80
+                failed = bool(error_code) or parse_failure
+                error = error_code or ("PARSE_FAILURE_RATE_HIGH" if parse_failure else None)
+                previous = connection.execute(
+                    """
+                    SELECT consecutive_failures FROM source_health WHERE source_id = %s
+                    """,
+                    (source_id,),
+                ).fetchone()
+                consecutive = (int(previous["consecutive_failures"]) if previous else 0) + 1 if failed else 0
+                quarantine_until = (
+                    datetime.now(UTC) + timedelta(hours=6)
+                    if parse_failure or consecutive >= 3
+                    else None
+                )
+                connection.execute(
+                    """
+                    INSERT INTO source_health (
+                        source_id, total_runs, successful_runs, consecutive_failures,
+                        last_discovered_count, last_accepted_count, last_error_code,
+                        last_checked_at, quarantine_until
+                    ) VALUES (%s, 1, %s, %s, %s, %s, %s, NOW(), %s)
+                    ON CONFLICT (source_id) DO UPDATE SET
+                        total_runs = source_health.total_runs + 1,
+                        successful_runs = source_health.successful_runs + EXCLUDED.successful_runs,
+                        consecutive_failures = EXCLUDED.consecutive_failures,
+                        last_discovered_count = EXCLUDED.last_discovered_count,
+                        last_accepted_count = EXCLUDED.last_accepted_count,
+                        last_error_code = EXCLUDED.last_error_code,
+                        last_checked_at = NOW(),
+                        quarantine_until = CASE
+                            WHEN EXCLUDED.consecutive_failures = 0 THEN NULL
+                            ELSE COALESCE(EXCLUDED.quarantine_until, source_health.quarantine_until)
+                        END,
+                        updated_at = NOW()
+                    """,
+                    (
+                        source_id,
+                        0 if failed else 1,
+                        consecutive,
+                        discovered,
+                        accepted,
+                        error,
+                        quarantine_until,
+                    ),
+                )
+
+    def source_health_snapshot(self) -> tuple[dict[str, Any], ...]:
+        """Return public-safe, aggregate source health information for status.json."""
+
+        with self.database.transaction() as connection:
+            rows = connection.execute(
+                """
+                SELECT s.source_id, s.enabled, h.total_runs, h.successful_runs,
+                       h.consecutive_failures, h.last_discovered_count,
+                       h.last_accepted_count, h.last_error_code, h.last_checked_at,
+                       h.quarantine_until, (h.quarantine_until > NOW()) AS quarantined
+                FROM sources AS s
+                LEFT JOIN source_health AS h ON h.source_id = s.source_id
+                ORDER BY s.source_id
+                """
+            ).fetchall()
+        return tuple(dict(row) for row in rows)
+
     def upsert(self, config: CanonicalConfig) -> bool:
         if not config.identity_hash:
             raise ValueError("CanonicalConfig must have an identity hash")
@@ -189,7 +284,10 @@ class PostgresConfigRepository:
                     SELECT o.source_id
                     FROM config_observations AS o
                     JOIN sources AS s ON s.source_id = o.source_id
-                    WHERE o.identity_hash = c.identity_hash AND s.enabled
+                    LEFT JOIN source_health AS health ON health.source_id = s.source_id
+                    WHERE o.identity_hash = c.identity_hash
+                      AND s.enabled
+                      AND (health.quarantine_until IS NULL OR health.quarantine_until <= NOW())
                     ORDER BY o.last_seen_at DESC LIMIT 1
                 ) AS observation ON TRUE
                 LEFT JOIN config_status AS status ON status.identity_hash = c.identity_hash
@@ -204,24 +302,29 @@ class PostgresConfigRepository:
         with self.database.transaction() as connection:
             rows = connection.execute(
                 """
-                SELECT c.*, observation.source_id, reachable.last_success_at
+                SELECT c.*, observation.source_id, reachable.last_success_at, reachable.fastest_latency_ms
                 FROM configs AS c
                 JOIN LATERAL (
                     SELECT o.source_id
                     FROM config_observations AS o
                     JOIN sources AS s ON s.source_id = o.source_id
-                    WHERE o.identity_hash = c.identity_hash AND s.enabled
+                    LEFT JOIN source_health AS health ON health.source_id = s.source_id
+                    WHERE o.identity_hash = c.identity_hash
+                      AND s.enabled
+                      AND (health.quarantine_until IS NULL OR health.quarantine_until <= NOW())
                     ORDER BY o.last_seen_at DESC LIMIT 1
                 ) AS observation ON TRUE
                 JOIN LATERAL (
-                    SELECT MAX(p.observed_at) AS last_success_at
+                    SELECT MAX(p.observed_at) AS last_success_at,
+                           MIN(p.latency_ms) FILTER (WHERE p.latency_ms IS NOT NULL) AS fastest_latency_ms
                     FROM probe_results AS p
                     WHERE p.identity_hash = c.identity_hash
                       AND p.stage = 'reachability'
                       AND p.outcome = 'pass'
                 ) AS reachable ON reachable.last_success_at IS NOT NULL
                 WHERE reachable.last_success_at >= NOW() - (%s * INTERVAL '1 hour')
-                ORDER BY reachable.last_success_at DESC, c.identity_hash
+                ORDER BY reachable.fastest_latency_ms ASC NULLS LAST,
+                         reachable.last_success_at DESC, c.identity_hash
                 """,
                 (max_age_hours,),
             ).fetchall()

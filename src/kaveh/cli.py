@@ -9,6 +9,7 @@ from pathlib import Path
 from kaveh.adapters.protocols.registry import ParserRegistry
 from kaveh.adapters.publishers.reachable_publisher import ReachableFeedPublisher
 from kaveh.adapters.publishers.snapshot_publisher import SnapshotPublisher
+from kaveh.adapters.publishers.status_publisher import StatusPublisher
 from kaveh.adapters.runtime.xray_adapter import XrayEndToEndProbe
 from kaveh.application.commands.ingest_sources import IngestSources
 from kaveh.application.commands.publish_snapshot import PublishSnapshot
@@ -113,6 +114,10 @@ def _run_ingest(registry_path: Path) -> int:
     return 0
 
 
+REACHABLE_MAX_AGE_HOURS = 72
+REACHABLE_FEED_LIMIT = 250
+
+
 def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
     if limit < 1:
         raise ValueError("--limit must be at least 1")
@@ -121,14 +126,24 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
     database.migrate("migrations")
     sources = load_sources(registry_path)
     repository = PostgresConfigRepository(database)
+
+    # Register the reviewed registry first, then skip only temporally quarantined
+    # sources. Quarantine state is evidence-driven and never edits the registry.
+    for source in sources:
+        repository.upsert_source(source)
+    active_sources = tuple(
+        source for source in sources if not repository.is_source_quarantined(source.source_id)
+    )
     ingestion = IngestSources(
         BoundedHttpsSourceClient(), ParserRegistry(), repository
-    ).run(sources)
+    ).run(active_sources)
+    repository.record_source_health(ingestion.source_stats)
 
     history = PostgresValidationHistory(database)
     policy = QualificationPolicy()
     history.start_run(policy.version, settings.vantage_id)
     try:
+        # all() prioritizes never-probed then least-recently-probed candidates.
         candidates = repository.all()[:limit]
         supervisor = ValidationSupervisor(
             SchemaProbe(),
@@ -136,17 +151,48 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
             end_to_end_runner=XrayEndToEndProbe(settings),
         )
         validation = ValidateBatch(
-            _LimitedRepository(candidates), supervisor, history, policy, sources
+            _LimitedRepository(candidates), supervisor, history, policy, active_sources
         ).run()
         publication_configs, publication_cards, publication_mode = _publication_inputs(
-            candidates, validation.scorecards, repository, history, policy, sources
+            candidates, validation.scorecards, repository, history, policy, active_sources
         )
         artifact_store = FileSystemArtifactStore(publish_root)
         publication = PublishSnapshot(
             SnapshotPublisher(artifact_store, policy.version)
         ).run(publication_configs, publication_cards, ingestion.source_errors)
         reachable_publication = ReachableFeedPublisher(artifact_store).publish(
-            _reachable_publication_inputs(repository, policy), ingestion.source_errors
+            _reachable_publication_inputs(repository), ingestion.source_errors
+        )
+        StatusPublisher(artifact_store).publish(
+            ingestion={
+                "discovered": ingestion.discovered_count,
+                "parsed": ingestion.parsed_count,
+                "duplicates": ingestion.duplicate_count,
+                "rejected": ingestion.rejected_count,
+                "source_errors": ingestion.source_errors,
+            },
+            validation={
+                "candidates": len(candidates),
+                "validated": validation.validated_count,
+                "end_to_end_verified": validation.end_to_end_verified_count,
+                "qualified": validation.qualified_count,
+                "probe_endpoints": len(settings.probe_urls),
+            },
+            strict_publication={
+                "published": publication.published,
+                "count": publication.snapshot.config_count if publication.snapshot else 0,
+                "snapshot_id": publication.snapshot.snapshot_id if publication.snapshot else None,
+                "reason": publication.reason,
+                "mode": publication_mode,
+            },
+            reachable_publication={
+                "published": reachable_publication.published,
+                "count": reachable_publication.count,
+                "snapshot_id": reachable_publication.snapshot_id,
+                "reason": reachable_publication.reason,
+            },
+            source_health=repository.source_health_snapshot(),
+            reachable_max_age_hours=REACHABLE_MAX_AGE_HOURS,
         )
         history.finish_run()
     except Exception:
@@ -168,6 +214,7 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
                     "validated": validation.validated_count,
                     "end_to_end_verified": validation.end_to_end_verified_count,
                     "qualified": validation.qualified_count,
+                    "probe_endpoints": len(settings.probe_urls),
                 },
                 "publication": {
                     "published": publication.published,
@@ -188,13 +235,13 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
     return 0
 
 
-def _reachable_publication_inputs(repository, policy):  # type: ignore[no-untyped-def]
-    """Return a bounded, fresh TCP-reachable tier without weakening strict feed."""
+def _reachable_publication_inputs(repository):  # type: ignore[no-untyped-def]
+    """Return a broader, bounded TCP-reachable tier without weakening strict."""
 
     recently_reachable = getattr(repository, "recently_reachable", None)
     if not callable(recently_reachable):
         return ()
-    return tuple(recently_reachable(policy.max_staleness_hours))[:100]
+    return tuple(recently_reachable(REACHABLE_MAX_AGE_HOURS))[:REACHABLE_FEED_LIMIT]
 
 
 def _publication_inputs(candidates, scorecards, repository, history, policy, sources):  # type: ignore[no-untyped-def]

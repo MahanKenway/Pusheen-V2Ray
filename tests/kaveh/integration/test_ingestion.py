@@ -30,6 +30,10 @@ class IngestionTests(unittest.TestCase):
         self.assertEqual(report.duplicate_count, 1)
         self.assertEqual(report.rejected_count, 0)
         self.assertEqual(len(repo.all()), 1)
+        stats = report.source_stats["fixture"]
+        self.assertEqual(stats.discovered_count, 2)
+        self.assertEqual(stats.accepted_count, 2)
+        self.assertIsNone(stats.error_code)
 
 
 if __name__ == "__main__":

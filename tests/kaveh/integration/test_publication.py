@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -7,6 +8,7 @@ from pathlib import Path
 from kaveh.adapters.protocols.registry import ParserRegistry
 from kaveh.adapters.publishers.reachable_publisher import ReachableFeedPublisher
 from kaveh.adapters.publishers.snapshot_publisher import SnapshotPublisher
+from kaveh.adapters.publishers.status_publisher import StatusPublisher
 from kaveh.domain.models import ScoreCard
 from kaveh.infrastructure.storage.filesystem_store import FileSystemArtifactStore
 
@@ -82,9 +84,40 @@ class PublicationTests(unittest.TestCase):
                 config.raw_uri + "\n",
             )
             self.assertTrue((root / "subscriptions" / "reachable.base64").exists())
+            self.assertEqual(
+                (root / "subscriptions" / "reachable-vless.txt").read_text(),
+                config.raw_uri + "\n",
+            )
+            self.assertTrue((root / "subscriptions" / "reachable-fast.txt").exists())
             self.assertTrue((root / "subscriptions" / "reachable.manifest.v1.json").exists())
             self.assertTrue((root / "reachable-latest.txt").exists())
             self.assertFalse(publisher.publish([config]).published)
+
+    def test_status_publisher_writes_public_safe_document(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            StatusPublisher(FileSystemArtifactStore(root)).publish(
+                ingestion={"parsed": 12, "source_errors": {}},
+                validation={"candidates": 10, "probe_endpoints": 2},
+                strict_publication={"count": 7, "published": True},
+                reachable_publication={"count": 34, "published": True},
+                source_health=(
+                    {
+                        "source_id": "reviewed-source",
+                        "enabled": True,
+                        "quarantined": False,
+                        "total_runs": 3,
+                        "successful_runs": 3,
+                        "consecutive_failures": 0,
+                    },
+                ),
+                reachable_max_age_hours=72,
+            )
+            payload = json.loads((root / "status.json").read_text())
+            self.assertEqual(payload["feeds"]["strict"]["count"], 7)
+            self.assertEqual(payload["feeds"]["balanced"]["max_evidence_age_hours"], 72)
+            self.assertEqual(payload["sources"]["healthy"], 1)
+            self.assertNotIn("vless://", json.dumps(payload))
 
 
 if __name__ == "__main__":

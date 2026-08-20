@@ -16,7 +16,16 @@
       "enabled": true,
       "trust_weight": 0.9,
       "allowed_protocols": ["vless", "vmess", "trojan", "ss"],
-      "max_bytes": 500000,
+      "max_bytes": 750000,
+      "max_entries": 200
+    },
+    {
+      "id": "configforge-vless",
+      "url": "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/vless.txt",
+      "enabled": true,
+      "trust_weight": 0.5,
+      "allowed_protocols": ["vless"],
+      "max_bytes": 300000,
       "max_entries": 200
     }
   ]

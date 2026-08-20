@@ -18,12 +18,17 @@ The repository is public and publishes consumer-facing feeds under `subscription
 |---|---|---|
 | Strict end-to-end qualified protocols | [all.txt](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/all.txt) | [all.base64](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/all.base64) |
 | Balanced TCP-reachable protocols | [reachable.txt](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable.txt) | [reachable.base64](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable.base64) |
+| Balanced fast subset | [reachable-fast.txt](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable-fast.txt) | [reachable-fast.base64](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable-fast.base64) |
+| Balanced VLESS | [reachable-vless.txt](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable-vless.txt) | [reachable-vless.base64](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable-vless.base64) |
+| Balanced VMess | [reachable-vmess.txt](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable-vmess.txt) | [reachable-vmess.base64](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable-vmess.base64) |
+| Balanced Trojan | [reachable-trojan.txt](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable-trojan.txt) | [reachable-trojan.base64](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable-trojan.base64) |
+| Balanced Shadowsocks | [reachable-ss.txt](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable-ss.txt) | [reachable-ss.base64](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable-ss.base64) |
 | VLESS | `subscriptions/vless.txt` after first qualified VLESS publication | `subscriptions/vless.base64` after first qualified VLESS publication |
 | VMess | `subscriptions/vmess.txt` after first qualified VMess publication | `subscriptions/vmess.base64` after first qualified VMess publication |
 | Trojan | `subscriptions/trojan.txt` after first qualified Trojan publication | `subscriptions/trojan.base64` after first qualified Trojan publication |
 | Shadowsocks | `subscriptions/ss.txt` after first qualified Shadowsocks publication | `subscriptions/ss.base64` after first qualified Shadowsocks publication |
 
-Use [manifest.v1.json](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/manifest.v1.json) for strict-feed metadata and [reachable.manifest.v1.json](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable.manifest.v1.json) for the balanced tier. The balanced feed includes configs that have recently passed schema validation and TCP reachability at the validator origin; it is intentionally broader but is not an end-to-end availability guarantee for every user network.
+Use [manifest.v1.json](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/manifest.v1.json) for strict-feed metadata and [reachable.manifest.v1.json](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable.manifest.v1.json) for the balanced tier. The balanced feed retains up to **72 hours** of TCP-reachability evidence, is capped at 250 entries, and is intentionally broader but is not an end-to-end availability guarantee for every user network. Its `reachable-fast` subset is ordered by the best observed TCP latency. See the public-safe [status.json](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/status.json) for current counts, freshness, and source health; it never exposes subscription URIs or credentials.
 
 ## Quality contract
 
@@ -34,7 +39,7 @@ DISCOVERED → PARSED → POLICY_ACCEPTED → QUEUED
   → REACHABLE → E2E_VERIFIED → QUALIFIED → PUBLISHED
 ```
 
-A successful TCP connection is not enough for the strict feed. Pusheen V2Ray creates a temporary local Xray SOCKS runtime, probes an approved HTTPS endpoint through that runtime, records structured evidence in PostgreSQL, and requires `END_TO_END` success for strict publication. The separately labeled balanced tier retains recent TCP-reachability evidence to offer a broader user-testable set without claiming end-to-end availability.
+A successful TCP connection is not enough for the strict feed. Pusheen V2Ray creates a temporary local Xray SOCKS runtime, probes an approved HTTPS endpoint through that runtime, records structured evidence in PostgreSQL, and requires an `END_TO_END` success for strict publication. A second independent HTTPS endpoint is used when the primary destination is unavailable, reducing target-specific false negatives without weakening the evidence requirement. The separately labeled balanced tier retains recent TCP-reachability evidence to offer a broader user-testable set without claiming end-to-end availability.
 
 | Capability | Status |
 |---|---|
@@ -43,13 +48,15 @@ A successful TCP connection is not enough for the strict feed. Pusheen V2Ray cre
 | Xray runtime configuration and isolated end-to-end probe | Implemented |
 | Persistent PostgreSQL history, status, scorecards, and snapshots | Implemented |
 | Stable raw/Base64 subscription artifacts | Implemented |
-| Scheduled guarded publication | Implemented and enabled; candidate coverage is capped at eight per run |
+| Scheduled guarded publication | Implemented and enabled; fair candidate rotation is capped at ten per run |
+| Source health and automatic quarantine | Implemented; repeated fetch failures or ≥80% parse rejection temporarily quarantine a source |
+| Public operational status | Implemented via `status.json`; aggregate-only and credential-safe |
 
 ## Automation
 
-The guarded subscription workflow targets minutes **07, 22, 37, and 52** of each hour. It permits no overlapping runs, applies a hard timeout, evaluates up to eight candidates per run, uses one pinned Xray binary, and creates a commit only when a published feed changes.
+The guarded subscription workflow targets minutes **07, 22, 37, and 52** of each hour. It permits no overlapping runs, applies a hard timeout, evaluates up to ten candidates per run in least-recently-tested order, uses one pinned Xray binary, and writes current feed/status evidence after successful validation. Sources quarantined by health evidence are excluded from the candidate pool for six hours and recover automatically after a successful later ingestion.
 
-Before enabling it, configure the GitHub secret `KAVEH_DATABASE_URL` and the non-secret variables `KAVEH_PROBE_URL`, `KAVEH_VANTAGE_ID`, and `KAVEH_CANDIDATE_LIMIT`. Set `KAVEH_AUTOMATION_ENABLED=true` only after a manual run succeeds. The legacy `KAVEH_*` names and the internal Python package `kaveh` remain deliberately stable for backwards compatibility.
+Before enabling it, configure the GitHub secret `KAVEH_DATABASE_URL` and the non-secret variables `KAVEH_PROBE_URL`, `KAVEH_VANTAGE_ID`, and `KAVEH_CANDIDATE_LIMIT`. `KAVEH_PROBE_FALLBACK_URL` is optional for local runs; automation uses a reviewed HTTPS fallback by default. Set `KAVEH_AUTOMATION_ENABLED=true` only after a manual run succeeds. The legacy `KAVEH_*` names and the internal Python package `kaveh` remain deliberately stable for backwards compatibility.
 
 ## Architecture
 

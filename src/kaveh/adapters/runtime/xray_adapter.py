@@ -127,7 +127,7 @@ class XrayEndToEndProbe:
     def run(self, config: CanonicalConfig) -> ProbeResult:
         identity = config.identity_hash or "unknown"
         try:
-            binary, probe_url = self.settings.require_xray_runtime()
+            binary, probe_urls = self.settings.require_xray_runtime()
         except SettingsError:
             return ProbeResult.failed(identity, ProbeStage.END_TO_END, "XRAY_RUNTIME_NOT_CONFIGURED", self.settings.vantage_id)
         if not binary.is_file() or not binary.exists():
@@ -155,14 +155,27 @@ class XrayEndToEndProbe:
                 )
                 if not _wait_for_listener(process, socks_port, self.settings.xray_startup_timeout_seconds):
                     return ProbeResult.failed(identity, ProbeStage.RUNTIME_BUILD, "XRAY_STARTUP_FAILED", self.settings.vantage_id)
-                status = _probe_via_socks(probe_url, socks_port, self.settings.xray_probe_timeout_seconds)
-                if status != 204:
-                    return ProbeResult.failed(identity, ProbeStage.END_TO_END, "PROBE_STATUS_INVALID", self.settings.vantage_id)
-                return ProbeResult.passed(
+                probe_statuses = []
+                for probe_url in probe_urls:
+                    try:
+                        status = _probe_via_socks(
+                            probe_url, socks_port, self.settings.xray_probe_timeout_seconds
+                        )
+                        probe_statuses.append(status)
+                        if 200 <= status < 300:
+                            return ProbeResult.passed(
+                                identity,
+                                ProbeStage.END_TO_END,
+                                latency_ms=int((time.perf_counter() - started) * 1000),
+                                vantage_id=self.settings.vantage_id,
+                            )
+                    except (httpx.HTTPError, TimeoutError):
+                        continue
+                return ProbeResult.failed(
                     identity,
                     ProbeStage.END_TO_END,
-                    latency_ms=int((time.perf_counter() - started) * 1000),
-                    vantage_id=self.settings.vantage_id,
+                    "ALL_E2E_PROBES_FAILED" if not probe_statuses else "PROBE_STATUS_INVALID",
+                    self.settings.vantage_id,
                 )
             except (OSError, httpx.HTTPError, TimeoutError):
                 return ProbeResult.failed(identity, ProbeStage.END_TO_END, "E2E_PROBE_FAILED", self.settings.vantage_id)

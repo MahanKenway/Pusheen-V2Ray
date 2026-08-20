@@ -19,8 +19,8 @@ jobs:
     # required secret and variables are configured.
     if: github.event_name == 'workflow_dispatch' || vars.KAVEH_AUTOMATION_ENABLED == 'true'
     runs-on: ubuntu-latest
-    # Eight sequential Xray probes leave headroom for setup, ingest, and commit
-    # inside the 15-minute schedule interval.
+    # Ten sequential Xray probes leave headroom for setup, ingest, and commit
+    # inside the 15-minute schedule interval while improving candidate rotation.
     timeout-minutes: 12
     steps:
       - name: Checkout
@@ -42,6 +42,7 @@ jobs:
         env:
           KAVEH_DATABASE_URL: ${{ secrets.KAVEH_DATABASE_URL }}
           KAVEH_PROBE_URL: ${{ vars.KAVEH_PROBE_URL }}
+          KAVEH_PROBE_FALLBACK_URL: "https://www.cloudflare.com/cdn-cgi/trace"
           KAVEH_VANTAGE_ID: ${{ vars.KAVEH_VANTAGE_ID }}
           KAVEH_CANDIDATE_LIMIT: ${{ vars.KAVEH_CANDIDATE_LIMIT }}
           XRAY_BINARY: ${{ github.workspace }}/.tools/xray/xray
@@ -53,13 +54,13 @@ jobs:
           test -n "${KAVEH_DATABASE_URL}"
           test -n "${KAVEH_PROBE_URL}"
           test -n "${KAVEH_VANTAGE_ID}"
-          # An eight-candidate default broadens coverage while keeping a
-          # worst-case sequential Xray run below the job budget.
-          requested_limit="${KAVEH_CANDIDATE_LIMIT:-8}"
+          # Ten candidates improve fair rotation while retaining a conservative
+          # buffer inside the 15-minute interval, even with a fallback endpoint.
+          requested_limit="${KAVEH_CANDIDATE_LIMIT:-10}"
           limit="${requested_limit}"
-          if [ "${limit}" -gt 8 ] 2>/dev/null; then
-            echo "Capping KAVEH_CANDIDATE_LIMIT at 8 to preserve the 15-minute schedule budget."
-            limit=8
+          if [ "${limit}" -gt 10 ] 2>/dev/null; then
+            echo "Capping KAVEH_CANDIDATE_LIMIT at 10 to preserve the 15-minute schedule budget."
+            limit=10
           fi
           case "${limit}" in
             ''|*[!0-9]*) echo "KAVEH_CANDIDATE_LIMIT must be a positive integer" >&2; exit 1 ;;
@@ -73,6 +74,7 @@ jobs:
         run: |
           set -euo pipefail
           git add -A -- subscriptions
+          git add -- status.json
           if [ -d snapshots ]; then
             git add -A -- snapshots
           fi
@@ -85,5 +87,5 @@ jobs:
           fi
           git config user.name "pusheen-v2ray-bot[bot]"
           git config user.email "pusheen-v2ray-bot[bot]@users.noreply.github.com"
-          git commit -m "chore(subscription): publish qualified feed"
+          git commit -m "chore(subscription): refresh validated feeds and status"
           git push
