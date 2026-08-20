@@ -35,8 +35,9 @@ const ARTIFACTS = {
   "current-release.json": "releases/current-release.json",
 };
 
-// These five artifacts are mirrored by Cron after each publication window.
-// The remaining allowlisted artifacts are mirrored opportunistically on a
+// Continuity artifacts are mirrored by Cron after each publication window.
+// The current-release pointer and its validated immutable manifest are refreshed
+// together. Remaining allowlisted artifacts are mirrored opportunistically on a
 // successful client request, avoiding needless KV writes while retaining a
 // last-known-good path for the continuity tier.
 const SCHEDULED_ARTIFACTS = [
@@ -48,7 +49,6 @@ const SCHEDULED_ARTIFACTS = [
   "profiles/resilient-xray.json",
   "profiles/outage-singbox.json",
   "status.json",
-  "releases/current-release.json",
 ];
 
 addEventListener("fetch", (event) => {
@@ -107,15 +107,45 @@ async function handleRequest(request, ctx) {
 }
 
 async function refreshAllArtifacts() {
-  const results = await Promise.allSettled(
-    SCHEDULED_ARTIFACTS.map(async (artifact) => {
-      const upstream = await fetchUpstream(artifact);
-      const body = await upstream.arrayBuffer();
-      if (body.byteLength === 0) throw new Error("empty_upstream_artifact");
-      await mirrorArtifact(artifact, body);
-    }),
-  );
+  const results = await Promise.allSettled([
+    ...SCHEDULED_ARTIFACTS.map(refreshArtifact),
+    refreshReleasePointerAndManifest(),
+  ]);
   return results.filter((result) => result.status === "fulfilled").length;
+}
+
+async function refreshArtifact(artifact) {
+  const body = await fetchArtifactBody(artifact);
+  await mirrorArtifact(artifact, body);
+}
+
+async function refreshReleasePointerAndManifest() {
+  const pointerArtifact = "releases/current-release.json";
+  const pointerBody = await fetchArtifactBody(pointerArtifact);
+  let pointer;
+  try {
+    pointer = JSON.parse(new TextDecoder().decode(pointerBody));
+  } catch {
+    throw new Error("invalid_current_release_pointer");
+  }
+
+  const manifestArtifact = pointer?.manifest_path;
+  if (typeof manifestArtifact !== "string" || !RELEASE_MANIFEST_PATH.test(manifestArtifact)) {
+    throw new Error("invalid_release_manifest_path");
+  }
+
+  const manifestBody = await fetchArtifactBody(manifestArtifact);
+  await Promise.all([
+    mirrorArtifact(pointerArtifact, pointerBody),
+    mirrorArtifact(manifestArtifact, manifestBody),
+  ]);
+}
+
+async function fetchArtifactBody(artifact) {
+  const upstream = await fetchUpstream(artifact);
+  const body = await upstream.arrayBuffer();
+  if (body.byteLength === 0) throw new Error("empty_upstream_artifact");
+  return body;
 }
 
 async function fetchUpstream(artifact) {
