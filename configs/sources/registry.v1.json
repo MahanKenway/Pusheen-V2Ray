@@ -36,6 +36,33 @@
       "allowed_protocols": ["hysteria2"],
       "max_bytes": 100000,
       "max_entries": 200
+    },
+    {
+      "id": "farid-iran-vless-probationary",
+      "url": "https://raw.githubusercontent.com/Farid-Karimi/Config-Collector/main/vless_iran.txt",
+      "enabled": true,
+      "trust_weight": 0.35,
+      "allowed_protocols": ["vless"],
+      "max_bytes": 700000,
+      "max_entries": 200
+    },
+    {
+      "id": "farid-iran-trojan-probationary",
+      "url": "https://raw.githubusercontent.com/Farid-Karimi/Config-Collector/main/trojan_iran.txt",
+      "enabled": true,
+      "trust_weight": 0.35,
+      "allowed_protocols": ["trojan"],
+      "max_bytes": 120000,
+      "max_entries": 200
+    },
+    {
+      "id": "ebrasha-trojan-probationary",
+      "url": "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/trojan_configs.txt",
+      "enabled": true,
+      "trust_weight": 0.35,
+      "allowed_protocols": ["trojan"],
+      "max_bytes": 1500000,
+      "max_entries": 200
     }
   ]
 }
