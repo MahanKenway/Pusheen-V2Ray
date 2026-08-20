@@ -98,7 +98,7 @@ class PublicationTests(unittest.TestCase):
             self.assertTrue((root / "reachable-latest.txt").exists())
             self.assertFalse(publisher.publish([config]).published)
 
-    def test_primary_feed_prioritizes_vless_then_trojan(self) -> None:
+    def test_primary_feed_preserves_latency_order_and_writes_protocol_variants(self) -> None:
         trojan = ParserRegistry().parse("trojan://secret@trojan.example:443?security=tls#trojan")
         vless = ParserRegistry().parse("vless://secret@vless.example:443?type=tcp&security=tls#vless")
         with tempfile.TemporaryDirectory() as temporary:
@@ -106,7 +106,7 @@ class PublicationTests(unittest.TestCase):
             ReachableFeedPublisher(FileSystemArtifactStore(root)).publish([trojan, vless])
             self.assertEqual(
                 (root / "subscriptions" / "all.txt").read_text().splitlines(),
-                [vless.raw_uri, trojan.raw_uri],
+                [trojan.raw_uri, vless.raw_uri],
             )
             self.assertEqual(
                 (root / "subscriptions" / "reachable.txt").read_text().splitlines(),

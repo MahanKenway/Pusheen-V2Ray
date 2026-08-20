@@ -29,9 +29,8 @@ class ReachableFeedPublisher:
     compact subset while protocol-specific files remain directly consumable.
     """
 
-    tier = "tcp-reachable-v3"
+    tier = "tcp-reachable-v4"
     fast_limit = 50
-    primary_protocol_order = ("vless", "trojan", "vmess", "ss")
 
     def __init__(self, artifact_store: ArtifactStore) -> None:
         self.artifact_store = artifact_store
@@ -45,9 +44,11 @@ class ReachableFeedPublisher:
         if not reachable:
             return ReachablePublishReport(False, 0, reason="NO_RECENT_REACHABLE_CONFIGS")
 
-        # The primary feed favors broadly compatible VLESS first, then Trojan,
-        # while the reachable and fast variants retain evidence/latency ordering.
-        selected = _prioritize_protocols(reachable, self.primary_protocol_order)
+        # The repository supplies recently reachable configs in latency order.
+        # The primary feed deliberately preserves that evidence order so the
+        # fastest observed candidates are always first; protocol-specific feeds
+        # remain available for users who prefer VLESS, Trojan, or VMess.
+        selected = reachable
         content = _content(selected)
         artifact_hash = hashlib.sha256(content).hexdigest()
         read_bytes = getattr(self.artifact_store, "read_bytes", None)
@@ -73,8 +74,7 @@ class ReachableFeedPublisher:
             "artifact_hash": artifact_hash,
             "reachable_count": len(selected),
             "fast_count": len(fast),
-            "ordering": "primary: VLESS, Trojan, VMess, Shadowsocks; within each protocol: best observed TCP latency and recent evidence",
-            "primary_protocol_order": list(self.primary_protocol_order),
+            "ordering": "latest successful TCP latency, then freshness; protocol-specific variants are published separately",
             "by_protocol": {protocol: len(items) for protocol, items in protocol_configs.items()},
             "source_errors": source_errors or {},
             "notice": "TCP-reachable from the validator origin; not an end-to-end availability guarantee.",
@@ -116,20 +116,6 @@ def _deduplicate_preserving_order(configs: Iterable[CanonicalConfig]) -> list[Ca
         seen.add(config.identity_hash)
         selected.append(config)
     return selected
-
-
-def _prioritize_protocols(
-    configs: Iterable[CanonicalConfig], protocol_order: tuple[str, ...]
-) -> list[CanonicalConfig]:
-    priority = {protocol: index for index, protocol in enumerate(protocol_order)}
-    indexed = list(enumerate(configs))
-    return [
-        config
-        for _, config in sorted(
-            indexed,
-            key=lambda item: (priority.get(item[1].protocol.value, len(priority)), item[0]),
-        )
-    ]
 
 
 def _content(configs: Iterable[CanonicalConfig]) -> bytes:

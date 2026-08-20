@@ -18,6 +18,7 @@ class Protocol(str, Enum):
     VMESS = "vmess"
     TROJAN = "trojan"
     SHADOWSOCKS = "ss"
+    HYSTERIA2 = "hysteria2"
 
 
 class ValidationState(str, Enum):

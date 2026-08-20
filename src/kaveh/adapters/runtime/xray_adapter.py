@@ -33,7 +33,7 @@ class XrayConfigBuilder:
             raise XrayBuildError("Configuration identity is required")
         proxy_outbound = {
             "tag": "candidate",
-            "protocol": config.protocol.value,
+            "protocol": "hysteria" if config.protocol is Protocol.HYSTERIA2 else config.protocol.value,
             "settings": self._outbound_settings(config),
             "streamSettings": self._stream_settings(config),
         }
@@ -88,10 +88,28 @@ class XrayConfigBuilder:
             server["method"] = method
             server["password"] = password
             return {"servers": [server]}
+        if config.protocol is Protocol.HYSTERIA2:
+            return {"version": 2, "address": config.host, "port": config.port}
         raise XrayBuildError("Protocol is not enabled in the Xray adapter")
 
     def _stream_settings(self, config: CanonicalConfig) -> dict[str, Any]:
         transport = config.transport
+        if config.protocol is Protocol.HYSTERIA2:
+            unsupported = {
+                key
+                for key in ("obfs", "obfs-password", "insecure", "pinSHA256", "ech")
+                if transport.extra.get(key)
+            }
+            if unsupported:
+                raise XrayBuildError("Unsupported Hysteria2 URI option")
+            settings: dict[str, Any] = {
+                "method": "hysteria",
+                "security": "tls",
+                "hysteriaSettings": {"version": 2, "auth": config.credential},
+            }
+            if transport.server_name:
+                settings["tlsSettings"] = _tls_settings(transport.server_name)
+            return settings
         settings: dict[str, Any] = {
             "network": transport.network,
             "security": transport.security,

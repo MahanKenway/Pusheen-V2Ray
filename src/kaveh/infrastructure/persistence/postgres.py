@@ -302,7 +302,7 @@ class PostgresConfigRepository:
         with self.database.transaction() as connection:
             rows = connection.execute(
                 """
-                SELECT c.*, observation.source_id, reachable.last_success_at, reachable.fastest_latency_ms
+                SELECT c.*, observation.source_id, reachable.last_success_at, reachable.latest_latency_ms
                 FROM configs AS c
                 JOIN LATERAL (
                     SELECT o.source_id
@@ -315,15 +315,18 @@ class PostgresConfigRepository:
                     ORDER BY o.last_seen_at DESC LIMIT 1
                 ) AS observation ON TRUE
                 JOIN LATERAL (
-                    SELECT MAX(p.observed_at) AS last_success_at,
-                           MIN(p.latency_ms) FILTER (WHERE p.latency_ms IS NOT NULL) AS fastest_latency_ms
+                    SELECT p.observed_at AS last_success_at,
+                           p.latency_ms AS latest_latency_ms
                     FROM probe_results AS p
                     WHERE p.identity_hash = c.identity_hash
                       AND p.stage = 'reachability'
                       AND p.outcome = 'pass'
-                ) AS reachable ON reachable.last_success_at IS NOT NULL
+                      AND p.latency_ms IS NOT NULL
+                    ORDER BY p.observed_at DESC
+                    LIMIT 1
+                ) AS reachable ON TRUE
                 WHERE reachable.last_success_at >= NOW() - (%s * INTERVAL '1 hour')
-                ORDER BY reachable.fastest_latency_ms ASC NULLS LAST,
+                ORDER BY reachable.latest_latency_ms ASC,
                          reachable.last_success_at DESC, c.identity_hash
                 """,
                 (max_age_hours,),

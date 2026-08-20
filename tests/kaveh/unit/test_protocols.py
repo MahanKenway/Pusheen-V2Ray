@@ -44,6 +44,17 @@ class ProtocolParserTests(unittest.TestCase):
         self.assertEqual(config.transport.network, "ws")
         self.assertEqual(config.transport.path, "/ws")
 
+    def test_hysteria2_parses_official_uri_and_alias(self) -> None:
+        raw = "hysteria2://secret@hy.example:8443?sni=cdn.example#hy2"
+        config = self.registry.parse(raw)
+        alias = self.registry.parse("hy2://secret@hy.example:8443?sni=cdn.example#hy2")
+        self.assertEqual(config.protocol, Protocol.HYSTERIA2)
+        self.assertEqual(config.host, "hy.example")
+        self.assertEqual(config.port, 8443)
+        self.assertEqual(config.transport.network, "hysteria")
+        self.assertEqual(config.transport.server_name, "cdn.example")
+        self.assertEqual(alias.protocol, Protocol.HYSTERIA2)
+
     def test_identity_ignores_label_and_source(self) -> None:
         first = self.registry.parse("trojan://secret@example.com:443?security=tls#one", "a")
         second = self.registry.parse("trojan://secret@example.com:443?security=tls#two", "b")
