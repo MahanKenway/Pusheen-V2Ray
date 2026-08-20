@@ -1,12 +1,12 @@
 {
   "feeds": {
     "balanced": {
-      "count": 44,
+      "count": 54,
       "evidence": "recent TCP reachability only",
       "max_evidence_age_hours": 72,
       "published": true,
       "reason": null,
-      "snapshot_id": "20260820T005452Z-e7a3dcc648f7",
+      "snapshot_id": "20260820T005946Z-e8d9c4913f48",
       "variants": [
         "reachable",
         "reachable-fast",
@@ -17,7 +17,7 @@
       ]
     },
     "strict": {
-      "count": 0,
+      "count": 7,
       "evidence": "end-to-end HTTPS probe through Xray",
       "mode": "current_run",
       "published": false,
@@ -27,9 +27,9 @@
   },
   "ingestion": {
     "discovered": 600,
-    "duplicates": 330,
-    "parsed": 173,
-    "rejected": 97,
+    "duplicates": 486,
+    "parsed": 18,
+    "rejected": 96,
     "source_errors": {}
   },
   "notice": "Evidence is time- and validator-origin-specific; availability is not guaranteed.",
@@ -42,46 +42,46 @@
         "consecutive_failures": 0,
         "enabled": true,
         "last_accepted_count": 135,
-        "last_checked_at": "2026-08-20T00:54:41.147896+00:00",
+        "last_checked_at": "2026-08-20T00:59:40.373304+00:00",
         "last_discovered_count": 200,
         "last_error_code": null,
         "quarantine_until": null,
         "quarantined": false,
         "source_id": "aggregator-merge",
-        "successful_runs": 1,
-        "total_runs": 1
+        "successful_runs": 2,
+        "total_runs": 2
       },
       {
         "consecutive_failures": 0,
         "enabled": true,
         "last_accepted_count": 200,
-        "last_checked_at": "2026-08-20T00:54:41.147896+00:00",
+        "last_checked_at": "2026-08-20T00:59:40.373304+00:00",
         "last_discovered_count": 200,
         "last_error_code": null,
         "quarantine_until": null,
         "quarantined": false,
         "source_id": "configforge-vless",
-        "successful_runs": 1,
-        "total_runs": 1
+        "successful_runs": 2,
+        "total_runs": 2
       },
       {
         "consecutive_failures": 0,
         "enabled": true,
-        "last_accepted_count": 168,
-        "last_checked_at": "2026-08-20T00:54:41.147896+00:00",
+        "last_accepted_count": 169,
+        "last_checked_at": "2026-08-20T00:59:40.373304+00:00",
         "last_discovered_count": 200,
         "last_error_code": null,
         "quarantine_until": null,
         "quarantined": false,
         "source_id": "raydikal-verified",
-        "successful_runs": 1,
-        "total_runs": 1
+        "successful_runs": 2,
+        "total_runs": 2
       }
     ],
     "quarantined": 0,
     "total": 3
   },
-  "updated_at": "2026-08-20T00:54:53.384647+00:00",
+  "updated_at": "2026-08-20T00:59:46.271527+00:00",
   "validation": {
     "candidates": 10,
     "end_to_end_verified": 0,
