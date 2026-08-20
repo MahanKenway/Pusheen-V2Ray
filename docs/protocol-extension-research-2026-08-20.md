@@ -58,3 +58,8 @@
 7. https://sing-box.sagernet.org/configuration/outbound/tuic/
 8. https://github.com/SagerNet/sing-box
 
+
+## Runtime validation
+
+The TUIC schema described above was validated locally with the official `sing-box` v1.13.19 Linux amd64 release using `sing-box check`. This verifies the isolated SOCKS-inbound, TUIC-outbound and routing shape required for a future adapter; it does not demonstrate connectivity to a real TUIC server and therefore is not publish evidence.
+
