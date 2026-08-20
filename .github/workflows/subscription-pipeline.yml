@@ -19,7 +19,7 @@ jobs:
     # required secret and variables are configured.
     if: github.event_name == 'workflow_dispatch' || vars.KAVEH_AUTOMATION_ENABLED == 'true'
     runs-on: ubuntu-latest
-    # Four sequential Xray probes leave headroom for setup, ingest, and commit
+    # Eight sequential Xray probes leave headroom for setup, ingest, and commit
     # inside the 15-minute schedule interval.
     timeout-minutes: 12
     steps:
@@ -53,13 +53,13 @@ jobs:
           test -n "${KAVEH_DATABASE_URL}"
           test -n "${KAVEH_PROBE_URL}"
           test -n "${KAVEH_VANTAGE_ID}"
-          # A four-candidate default keeps a worst-case sequential Xray run below
-          # the job budget. The repository variable can only lower this safety cap.
-          requested_limit="${KAVEH_CANDIDATE_LIMIT:-4}"
+          # An eight-candidate default broadens coverage while keeping a
+          # worst-case sequential Xray run below the job budget.
+          requested_limit="${KAVEH_CANDIDATE_LIMIT:-8}"
           limit="${requested_limit}"
-          if [ "${limit}" -gt 4 ] 2>/dev/null; then
-            echo "Capping KAVEH_CANDIDATE_LIMIT at 4 to preserve the 15-minute schedule budget."
-            limit=4
+          if [ "${limit}" -gt 8 ] 2>/dev/null; then
+            echo "Capping KAVEH_CANDIDATE_LIMIT at 8 to preserve the 15-minute schedule budget."
+            limit=8
           fi
           case "${limit}" in
             ''|*[!0-9]*) echo "KAVEH_CANDIDATE_LIMIT must be a positive integer" >&2; exit 1 ;;
