@@ -43,6 +43,25 @@
     },
     {
       "network": "tcp",
+      "server": "188.114.97.0",
+      "server_port": 443,
+      "tag": "outage-632d315afaafb21a",
+      "tls": {
+        "enabled": true,
+        "server_name": "tELEGRAM.prOXIe2-TEL.wOrKErS.DEV"
+      },
+      "transport": {
+        "headers": {
+          "Host": "tELEGRAM.prOXIe2-TEL.wOrKErS.DEV"
+        },
+        "path": "/eyJqdW5rIjoidXYyRXNUTXEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "6e16baf3-82cd-4e5e-bfea-5bd4d2253b4f"
+    },
+    {
+      "network": "tcp",
       "server": "172.67.74.10",
       "server_port": 443,
       "tag": "outage-06496f48094b1db6",
@@ -313,6 +332,25 @@
     },
     {
       "network": "tcp",
+      "server": "45.130.125.76",
+      "server_port": 8443,
+      "tag": "outage-3b5060a664ca5998",
+      "tls": {
+        "enabled": true,
+        "server_name": "drrfddgbv.turbooserver.net.tr"
+      },
+      "transport": {
+        "headers": {
+          "Host": "drrfddgbv.turbooserver.net.tr"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "b37be529-83c9-4851-a3cf-73d7d05bf308"
+    },
+    {
+      "network": "tcp",
       "server": "104.26.14.85",
       "server_port": 443,
       "tag": "outage-bd89eac4d9977831",
@@ -352,25 +390,6 @@
       },
       "type": "vless",
       "uuid": "cda9ae20-f69f-4112-be95-90cdfc7a21ae"
-    },
-    {
-      "network": "tcp",
-      "server": "188.114.97.183",
-      "server_port": 2053,
-      "tag": "outage-eaf50e138ffcbd5d",
-      "tls": {
-        "enabled": true,
-        "server_name": "nOCTYq.pAGES.DEV"
-      },
-      "transport": {
-        "headers": {
-          "Host": "nOCTYq.pAGES.DEV"
-        },
-        "path": "/bPJ4mgkJbA7CnY7q?ed=2560",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "eb568786-bb3f-4f02-a25c-7183e800a0ba"
     },
     {
       "network": "tcp",
@@ -521,31 +540,13 @@
       "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40"
     },
     {
-      "network": "tcp",
-      "server": "188.114.97.4",
-      "server_port": 443,
-      "tag": "outage-b4c77b8362895842",
-      "tls": {
-        "enabled": true,
-        "server_name": "rubifen.adaspoloandco.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "rubifen.adaspoloandco.com"
-        },
-        "path": "/GOrbEh",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "cf39fab0-bb85-42cb-9945-2ad69d78e575"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
         "outage-4353aeaef5c3670d",
         "outage-1ff267ae130cec9c",
+        "outage-632d315afaafb21a",
         "outage-06496f48094b1db6",
         "outage-0f98367407056b17",
         "outage-107dab84adebbb4b",
@@ -561,10 +562,10 @@
         "outage-05cd1db3c73baca6",
         "outage-99909b012335b4dd",
         "outage-25654f2adc9c9c9f",
+        "outage-3b5060a664ca5998",
         "outage-bd89eac4d9977831",
         "outage-6ddcb4cfb4747988",
         "outage-29f5940e14c35228",
-        "outage-eaf50e138ffcbd5d",
         "outage-ea9026764e87f710",
         "outage-d35e553bae001534",
         "outage-43d239e3cb104907",
@@ -573,8 +574,7 @@
         "outage-4f72b4f5393bce7f",
         "outage-227a5613c8cafb61",
         "outage-b57b9ce2e344e8ee",
-        "outage-6eb470adb04b9789",
-        "outage-b4c77b8362895842"
+        "outage-6eb470adb04b9789"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
