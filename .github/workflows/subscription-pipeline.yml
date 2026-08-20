@@ -19,8 +19,8 @@ jobs:
     # required secret and variables are configured.
     if: github.event_name == 'workflow_dispatch' || vars.KAVEH_AUTOMATION_ENABLED == 'true'
     runs-on: ubuntu-latest
-    # Ten sequential Xray probes leave headroom for setup, ingest, and commit
-    # inside the 15-minute schedule interval while improving candidate rotation.
+    # Twenty-four candidates are processed with four bounded workers, preserving
+    # end-to-end evidence while leaving headroom inside the 15-minute interval.
     timeout-minutes: 12
     steps:
       - name: Checkout
@@ -45,6 +45,7 @@ jobs:
           KAVEH_PROBE_FALLBACK_URL: "https://www.cloudflare.com/cdn-cgi/trace"
           KAVEH_VANTAGE_ID: ${{ vars.KAVEH_VANTAGE_ID }}
           KAVEH_CANDIDATE_LIMIT: ${{ vars.KAVEH_CANDIDATE_LIMIT }}
+          KAVEH_VALIDATION_WORKERS: "4"
           XRAY_BINARY: ${{ github.workspace }}/.tools/xray/xray
           XRAY_STARTUP_TIMEOUT_SECONDS: "5"
           XRAY_PROBE_TIMEOUT_SECONDS: "8"
@@ -54,13 +55,13 @@ jobs:
           test -n "${KAVEH_DATABASE_URL}"
           test -n "${KAVEH_PROBE_URL}"
           test -n "${KAVEH_VANTAGE_ID}"
-          # Ten candidates improve fair rotation while retaining a conservative
-          # buffer inside the 15-minute interval, even with a fallback endpoint.
-          requested_limit="${KAVEH_CANDIDATE_LIMIT:-10}"
+          # Bounded parallel validation improves strict-feed discovery without
+          # weakening the end-to-end requirement or exceeding the job budget.
+          requested_limit="${KAVEH_CANDIDATE_LIMIT:-24}"
           limit="${requested_limit}"
-          if [ "${limit}" -gt 10 ] 2>/dev/null; then
-            echo "Capping KAVEH_CANDIDATE_LIMIT at 10 to preserve the 15-minute schedule budget."
-            limit=10
+          if [ "${limit}" -gt 24 ] 2>/dev/null; then
+            echo "Capping KAVEH_CANDIDATE_LIMIT at 24 to preserve the 15-minute schedule budget."
+            limit=24
           fi
           case "${limit}" in
             ''|*[!0-9]*) echo "KAVEH_CANDIDATE_LIMIT must be a positive integer" >&2; exit 1 ;;

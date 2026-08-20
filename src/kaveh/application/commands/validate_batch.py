@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from typing import Iterable, Protocol
 
@@ -37,26 +38,38 @@ class ValidateBatch:
         history: ValidationHistory,
         policy: QualificationPolicy,
         sources: Iterable[Source],
+        max_workers: int = 1,
     ) -> None:
         self.repository = repository
         self.supervisor = supervisor
         self.history = history
         self.policy = policy
+        if max_workers < 1 or max_workers > 8:
+            raise ValueError("max_workers must be between 1 and 8")
+        self.max_workers = max_workers
         self.source_weights = {source.source_id: source.trust_weight for source in sources}
 
     def run(self) -> ValidationReport:
         scorecards: list[ScoreCard] = []
         validated = e2e_verified = qualified = 0
-        for config in self.repository.all():
-            if not config.identity_hash:
-                continue
+        configs = tuple(config for config in self.repository.all() if config.identity_hash)
+
+        # Network/Xray work may run concurrently, but persistence and scoring stay
+        # ordered and serial. This retains deterministic evidence handling while
+        # making a higher candidate budget practical inside the scheduled window.
+        if self.max_workers == 1:
+            probe_results = tuple(self.supervisor.run(config) for config in configs)
+        else:
+            with ThreadPoolExecutor(max_workers=self.max_workers) as executor:
+                probe_results = tuple(executor.map(self.supervisor.run, configs))
+
+        for config, results in zip(configs, probe_results, strict=True):
             validated += 1
-            results = self.supervisor.run(config)
             self.history.append(results)
             if not has_end_to_end_success(results):
                 continue
             e2e_verified += 1
-            health = self.history.health_window(config.identity_hash)
+            health = self.history.health_window(config.identity_hash or "")
             scorecard = self.policy.score(
                 health,
                 self.source_weights.get(config.source_id or "", 0.5),

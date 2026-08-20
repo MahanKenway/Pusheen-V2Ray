@@ -151,7 +151,12 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
             end_to_end_runner=XrayEndToEndProbe(settings),
         )
         validation = ValidateBatch(
-            _LimitedRepository(candidates), supervisor, history, policy, active_sources
+            _LimitedRepository(candidates),
+            supervisor,
+            history,
+            policy,
+            active_sources,
+            max_workers=settings.validation_workers,
         ).run()
         publication_configs, publication_cards, publication_mode = _publication_inputs(
             candidates, validation.scorecards, repository, history, policy, active_sources
@@ -177,6 +182,7 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
                 "end_to_end_verified": validation.end_to_end_verified_count,
                 "qualified": validation.qualified_count,
                 "probe_endpoints": len(settings.probe_urls),
+                "validation_workers": settings.validation_workers,
             },
             strict_publication={
                 "published": publication.published,
@@ -219,6 +225,7 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
                     "end_to_end_verified": validation.end_to_end_verified_count,
                     "qualified": validation.qualified_count,
                     "probe_endpoints": len(settings.probe_urls),
+                "validation_workers": settings.validation_workers,
                 },
                 "publication": {
                     "published": publication.published,

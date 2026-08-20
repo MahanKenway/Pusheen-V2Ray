@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import threading
+import time
 import unittest
 
 from kaveh.adapters.protocols.registry import ParserRegistry
@@ -10,6 +12,20 @@ from kaveh.infrastructure.persistence.in_memory import InMemoryConfigRepository
 from kaveh.infrastructure.persistence.in_memory_history import InMemoryValidationHistory
 from kaveh.infrastructure.probes.schema_probe import SchemaProbe
 from kaveh.infrastructure.probes.supervisor import ValidationSupervisor
+
+
+class RecordingPassingStage:
+    def __init__(self, stage: ProbeStage, latency: int | None = None) -> None:
+        self.stage = stage
+        self.latency = latency
+        self.thread_ids: set[int] = set()
+        self._lock = threading.Lock()
+
+    def run(self, config):  # type: ignore[no-untyped-def]
+        with self._lock:
+            self.thread_ids.add(threading.get_ident())
+        time.sleep(0.02)
+        return ProbeResult.passed(config.identity_hash or "", self.stage, self.latency)
 
 
 class PassingStage:
@@ -42,6 +58,28 @@ class ValidationBatchTests(unittest.TestCase):
         self.assertEqual(report.end_to_end_verified_count, 1)
         self.assertEqual(report.qualified_count, 1)
         self.assertTrue(report.scorecards[0].qualified)
+
+    def test_parallel_workers_preserve_end_to_end_qualification(self) -> None:
+        repository = InMemoryConfigRepository()
+        for index in range(4):
+            repository.upsert(
+                ParserRegistry().parse(
+                    f"trojan://secret@example{index}.com:443?security=tls#sample{index}"
+                )
+            )
+        reachability = RecordingPassingStage(ProbeStage.REACHABILITY, 42)
+        end_to_end = RecordingPassingStage(ProbeStage.END_TO_END, 120)
+        report = ValidateBatch(
+            repository,
+            ValidationSupervisor(SchemaProbe(), reachability, end_to_end_runner=end_to_end),
+            InMemoryValidationHistory(),
+            QualificationPolicy(),
+            [Source("source", "https://example.com/sub", trust_weight=0.8)],
+            max_workers=4,
+        ).run()
+        self.assertEqual(report.validated_count, 4)
+        self.assertEqual(report.qualified_count, 4)
+        self.assertGreater(len(end_to_end.thread_ids), 1)
 
 
 if __name__ == "__main__":

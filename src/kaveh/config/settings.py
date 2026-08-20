@@ -22,6 +22,7 @@ class RuntimeSettings:
     xray_work_root: Path
     vantage_id: str
     probe_fallback_url: str | None = None
+    validation_workers: int = 1
 
     @classmethod
     def from_environment(cls) -> "RuntimeSettings":
@@ -37,6 +38,9 @@ class RuntimeSettings:
                 parsed = urlsplit(value)
                 if parsed.scheme != "https" or not parsed.hostname:
                     raise SettingsError(f"{name} must be an absolute HTTPS URL")
+        validation_workers = int(os.getenv("KAVEH_VALIDATION_WORKERS", "1"))
+        if validation_workers < 1 or validation_workers > 8:
+            raise SettingsError("KAVEH_VALIDATION_WORKERS must be between 1 and 8")
         return cls(
             database_url=database_url,
             xray_binary=Path(xray_binary) if xray_binary else None,
@@ -46,6 +50,7 @@ class RuntimeSettings:
             xray_probe_timeout_seconds=float(os.getenv("XRAY_PROBE_TIMEOUT_SECONDS", "8")),
             xray_work_root=Path(os.getenv("XRAY_WORK_ROOT", ".artifacts/xray")),
             vantage_id=os.getenv("KAVEH_VANTAGE_ID", "default"),
+            validation_workers=validation_workers,
         )
 
     @property

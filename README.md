@@ -48,15 +48,15 @@ A successful TCP connection is not enough for the strict feed. Pusheen V2Ray cre
 | Xray runtime configuration and isolated end-to-end probe | Implemented |
 | Persistent PostgreSQL history, status, scorecards, and snapshots | Implemented |
 | Stable raw/Base64 subscription artifacts | Implemented |
-| Scheduled guarded publication | Implemented and enabled; fair candidate rotation is capped at ten per run |
+| Scheduled guarded publication | Implemented and enabled; up to 24 candidates per run with four bounded validation workers |
 | Source health and automatic quarantine | Implemented; repeated fetch failures or ≥80% parse rejection temporarily quarantine a source |
 | Public operational status | Implemented via `status.json`; aggregate-only and credential-safe |
 
 ## Automation
 
-The guarded subscription workflow targets minutes **07, 22, 37, and 52** of each hour. It permits no overlapping runs, applies a hard timeout, evaluates up to ten candidates per run in least-recently-tested order, uses one pinned Xray binary, and writes current feed/status evidence after successful validation. Sources quarantined by health evidence are excluded from the candidate pool for six hours and recover automatically after a successful later ingestion.
+The guarded subscription workflow targets minutes **07, 22, 37, and 52** of each hour. It permits no overlapping runs, applies a hard timeout, evaluates up to **24 candidates per run** in least-recently-tested order, and runs at most **four isolated Xray validations concurrently**. Each strict candidate still requires a successful HTTPS request through its own temporary Xray SOCKS runtime; concurrency only increases throughput and does not weaken the quality criterion. Sources quarantined by health evidence are excluded from the candidate pool for six hours and recover automatically after a successful later ingestion.
 
-Before enabling it, configure the GitHub secret `KAVEH_DATABASE_URL` and the non-secret variables `KAVEH_PROBE_URL`, `KAVEH_VANTAGE_ID`, and `KAVEH_CANDIDATE_LIMIT`. `KAVEH_PROBE_FALLBACK_URL` is optional for local runs; automation uses a reviewed HTTPS fallback by default. Set `KAVEH_AUTOMATION_ENABLED=true` only after a manual run succeeds. The legacy `KAVEH_*` names and the internal Python package `kaveh` remain deliberately stable for backwards compatibility.
+Before enabling it, configure the GitHub secret `KAVEH_DATABASE_URL` and the non-secret variables `KAVEH_PROBE_URL`, `KAVEH_VANTAGE_ID`, and `KAVEH_CANDIDATE_LIMIT`. `KAVEH_PROBE_FALLBACK_URL` is optional for local runs; automation uses a reviewed HTTPS fallback by default. `KAVEH_VALIDATION_WORKERS` accepts 1–8 for controlled local runs; GitHub Actions uses four workers. Set `KAVEH_AUTOMATION_ENABLED=true` only after a manual run succeeds. The legacy `KAVEH_*` names and the internal Python package `kaveh` remain deliberately stable for backwards compatibility.
 
 ## Architecture
 
