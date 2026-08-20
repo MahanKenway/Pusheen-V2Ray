@@ -28,6 +28,8 @@ const ARTIFACTS = {
   "outage.manifest.v1.json": "subscriptions/outage.manifest.v1.json",
   "resilient-xray.json": "profiles/resilient-xray.json",
   "resilient-xray.meta.v1.json": "profiles/resilient-xray.meta.v1.json",
+  "outage-singbox.json": "profiles/outage-singbox.json",
+  "outage-singbox.meta.v1.json": "profiles/outage-singbox.meta.v1.json",
   "status.json": "status.json",
   "current-release.json": "releases/current-release.json",
 };
@@ -43,6 +45,7 @@ const SCHEDULED_ARTIFACTS = [
   "subscriptions/resilient.receipts.v1.json",
   "subscriptions/outage.receipts.v1.json",
   "profiles/resilient-xray.json",
+  "profiles/outage-singbox.json",
   "status.json",
   "releases/current-release.json",
 ];
