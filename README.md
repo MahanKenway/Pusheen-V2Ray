@@ -1,106 +1,108 @@
 # Pusheen V2Ray
 
 <p align="center">
-  <img src="assets/brand/pusheen-playing-bone.jpg" alt="Selected Pusheen brand artwork" width="280">
+  <img src="assets/brand/pusheen-v2ray-header.png" alt="Pusheen V2Ray — گربه‌ای تنبل، اما سریع و مقاوم" width="900">
 </p>
 
-> **Playful branding. Measured routes.**
+<p align="center">
+  <strong>گربه‌ای تنبل، اما مسیرهایی سریع و مقاوم.</strong><br>
+  فیدهای عمومی V2Ray و sing-box برای استفادهٔ ساده‌تر در شرایط ناپایدار اینترنت.
+</p>
 
-**Pusheen V2Ray** is a quality-first proxy feed pipeline. It replaces the opaque pattern of collecting a large list and publishing it immediately with a traceable process: reviewed sources, typed parsing, bounded validation, health history, transparent scoring, and immutable publications.
+<p align="center">
+  <a href="README.en.md">English README</a> ·
+  <a href="https://github.com/MahanKenway/Pusheen-V2Ray/actions">وضعیت اجرای خودکار</a> ·
+  <a href="https://pusheen-feed-gateway.mahankenway.workers.dev/status.json">وضعیت زندهٔ فیدها</a>
+</p>
 
-Pusheen V2Ray is an independent project that began from the public Freedom-V2Ray codebase under its MIT license. Its product direction, architecture, release process, and automation are independent; `upstream` remains configured only as an optional reference.
+> Pusheen V2Ray یک پروژهٔ عمومی و رایگان برای انتشار فیدهای بررسی‌شده است. هیچ فیدی تضمین اتصال در همهٔ شبکه‌ها یا زمان‌ها نیست؛ قبل از استفاده، چند لینک را در کلاینت خود آزمایش کنید.
 
-## Subscription links
+## از کدام لینک استفاده کنم؟
 
-The repository is public and publishes consumer-facing feeds under `subscriptions/`. Stable URLs change their contents only after the corresponding feed itself changes.
+برای **اختلال شدید و کاهش ریسک خرابی مشترک**، ابتدا `outage.txt` را امتحان کنید. این فید کوچک‌تر است، اما با تنوع بیشتر در source، پروتکل و transport انتخاب می‌شود. اگر تعداد بیشتری می‌خواهید، `resilient.txt` گزینهٔ دوم است. فیدهای `all.txt` و `balanced.txt` تعداد بیشتری دارند، اما گسترده‌ترند و الزاماً برای اختلال شدید بهینه نشده‌اند.
 
-| Feed | Raw URI list | Base64 subscription |
-|---|---|---|
-| Primary high-coverage feed (recent TCP-reachable; target: ≥100) | [all.txt](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/all.txt) | [all.base64](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/all.base64) |
-| Strict end-to-end qualified feed | [strict.txt](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/strict.txt) | [strict.base64](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/strict.base64) |
-| Primary VLESS | [all-vless.txt](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/all-vless.txt) | [all-vless.base64](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/all-vless.base64) |
-| Primary Trojan | [all-trojan.txt](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/all-trojan.txt) | [all-trojan.base64](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/all-trojan.base64) |
-| Primary VMess | [all-vmess.txt](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/all-vmess.txt) | [all-vmess.base64](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/all-vmess.base64) |
-| Primary Hysteria 2 | `subscriptions/all-hysteria2.txt` when recent evidence exists | `subscriptions/all-hysteria2.base64` when recent evidence exists |
-| Balanced TCP-reachable protocols | [reachable.txt](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable.txt) | [reachable.base64](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable.base64) |
-| Balanced fast subset | [reachable-fast.txt](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable-fast.txt) | [reachable-fast.base64](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable-fast.base64) |
-| Balanced VLESS | [reachable-vless.txt](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable-vless.txt) | [reachable-vless.base64](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable-vless.base64) |
-| Balanced VMess | [reachable-vmess.txt](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable-vmess.txt) | [reachable-vmess.base64](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable-vmess.base64) |
-| Balanced Trojan | [reachable-trojan.txt](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable-trojan.txt) | [reachable-trojan.base64](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable-trojan.base64) |
-| Balanced Shadowsocks | [reachable-ss.txt](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable-ss.txt) | [reachable-ss.base64](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable-ss.base64) |
-| Resilient anti-concentration feed (recent TCP-reachable) | [resilient.txt](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/resilient.txt) | [resilient.base64](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/resilient.base64) |
-| Strict VLESS | `subscriptions/strict-vless.txt` after first qualified VLESS publication | `subscriptions/strict-vless.base64` after first qualified VLESS publication |
-| Strict VMess | `subscriptions/strict-vmess.txt` after first qualified VMess publication | `subscriptions/strict-vmess.base64` after first qualified VMess publication |
-| Strict Trojan | `subscriptions/strict-trojan.txt` after first qualified Trojan publication | `subscriptions/strict-trojan.base64` after first qualified Trojan publication |
-| Strict Shadowsocks | `subscriptions/strict-ss.txt` after first qualified Shadowsocks publication | `subscriptions/strict-ss.base64` after first qualified Shadowsocks publication |
+| اولویت | فید پیشنهادی | تعداد فعلی | مناسب برای | لینک پایدار مستقل از GitHub |
+|---:|---|---:|---|---|
+| 1 | Outage-diverse | 33 | شروع در اختلال شدید؛ کاهش تمرکز روی مسیرهای مشابه | [outage.txt](https://pusheen-feed-gateway.mahankenway.workers.dev/outage.txt) |
+| 2 | Resilient | 53 | گزینهٔ وسیع‌تر با تنوع منبع، پروتکل و endpoint | [resilient.txt](https://pusheen-feed-gateway.mahankenway.workers.dev/resilient.txt) |
+| 3 | Balanced | 250 | تعداد زیاد و انتخاب دستی بیشتر | [balanced.txt](https://pusheen-feed-gateway.mahankenway.workers.dev/balanced.txt) |
+| 4 | Primary | 250 | بیشترین پوشش عمومی | [all.txt](https://pusheen-feed-gateway.mahankenway.workers.dev/all.txt) |
+| 5 | Strict | 7 | نودهایی با evidence قوی‌تر؛ تعداد کمتر | [strict.txt](https://pusheen-feed-gateway.mahankenway.workers.dev/strict.txt) |
 
-Use [all.manifest.v1.json](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/all.manifest.v1.json) for the primary high-coverage feed and [strict.manifest.v1.json](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/strict.manifest.v1.json) for end-to-end strict metadata. The primary feed retains up to **72 hours** of TCP-reachability evidence, is capped at 250 entries, targets at least 100 entries, and is intentionally broader but is not an end-to-end availability guarantee for every user network. Its ordering follows the **latest successful TCP handshake latency**, then freshness, so the lowest observed latency from the validator vantage is first. Protocol-specific variants remain available for VLESS, Trojan, VMess, and Hysteria 2 when evidence exists. See the public-safe [status.json](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/status.json) for current counts, freshness, and source health; it never exposes subscription URIs or credentials.
+### لینک‌های جایگزین GitHub Raw
 
-### Independent delivery and outage-safe artifacts
+اگر Gateway برای شما باز نشد، می‌توانید از نسخهٔ Raw استفاده کنید: [outage](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/outage.txt)، [resilient](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/resilient.txt)، [balanced](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/reachable.txt)، [all](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/all.txt) و [strict](https://raw.githubusercontent.com/MahanKenway/Pusheen-V2Ray/main/subscriptions/strict.txt).
 
-If a client cannot reach GitHub content directly, use the **Cloudflare delivery gateway**: [all](https://pusheen-feed-gateway.mahankenway.workers.dev/all.txt), [balanced](https://pusheen-feed-gateway.mahankenway.workers.dev/balanced.txt), [strict](https://pusheen-feed-gateway.mahankenway.workers.dev/strict.txt), [resilient](https://pusheen-feed-gateway.mahankenway.workers.dev/resilient.txt), and [public status](https://pusheen-feed-gateway.mahankenway.workers.dev/status.json). The gateway allowlists a small public artifact set, serves it from the Cloudflare edge, and retains a short edge cache for upstream outages. It is an independent **delivery origin**, not a guarantee that Cloudflare, international connectivity, or any proxy transport will remain reachable during a total shutdown.
+## لینک مخصوص sing-box و Hiddify
 
-The resilient feed applies source, endpoint, protocol, and transport-family concentration limits to the same recent TCP-evidence pool. Its [credential-free evidence receipts](https://pusheen-feed-gateway.mahankenway.workers.dev/resilient.receipts.v1.json) describe each selected member by truncated identity, protocol, transport family, source lineage, evidence contract, and validator vantage without publishing a hostname or credential. Its [Xray failover profile](https://pusheen-feed-gateway.mahankenway.workers.dev/resilient-xray.json) requires **Xray Core 26.3.27+**, listens only on local SOCKS `127.0.0.1:10808`, uses the local `leastPing` observer every five minutes, and deliberately blocks traffic if no observed outbound remains rather than falling back to direct traffic. Review the matching [profile metadata](https://pusheen-feed-gateway.mahankenway.workers.dev/resilient-xray.meta.v1.json) before use.
+برای کلاینتی که **profile کامل sing-box** را می‌پذیرد، از [outage-singbox.json](https://pusheen-feed-gateway.mahankenway.workers.dev/outage-singbox.json) استفاده کنید. این فایل با URLTest و fallback محلی منتشر می‌شود. در Hiddify، اگر import فایل JSON به‌عنوان profile کامل در نسخهٔ شما پشتیبانی نشد، از [outage.txt](https://pusheen-feed-gateway.mahankenway.workers.dev/outage.txt) به‌عنوان subscription معمولی استفاده کنید؛ این سازگارترین گزینه است.
 
-## Quality contract
+## وضعیت و زمان به‌روزرسانی
 
-A candidate progresses through this lifecycle:
+<p align="center">
+  <a href="https://github.com/MahanKenway/Pusheen-V2Ray/actions/workflows/subscription-pipeline.yml"><img src="https://github.com/MahanKenway/Pusheen-V2Ray/actions/workflows/subscription-pipeline.yml/badge.svg" alt="Subscription pipeline status"></a>
+  <a href="https://github.com/MahanKenway/Pusheen-V2Ray/actions/workflows/beta-compatibility.yml"><img src="https://github.com/MahanKenway/Pusheen-V2Ray/actions/workflows/beta-compatibility.yml/badge.svg" alt="Beta compatibility status"></a>
+</p>
 
-```text
-DISCOVERED → PARSED → POLICY_ACCEPTED → QUEUED
-  → REACHABLE → E2E_VERIFIED → QUALIFIED → PUBLISHED
-```
+**🚀 برنامهٔ انتشار:** پایپلاین در دقیقه‌های **۰۷، ۲۲، ۳۷ و ۵۲ هر ساعت** اجرا می‌شود؛ یعنی حداکثر فاصلهٔ اسمی بین دو پنجرهٔ به‌روزرسانی ۱۵ دقیقه است. زمان واقعی انتشار به نتیجهٔ ingestion و validation همان اجرا بستگی دارد. برای مشاهدهٔ snapshot، تعداد فیدها و تازگی evidence، [status.json](https://pusheen-feed-gateway.mahankenway.workers.dev/status.json) را ببینید.
 
-A successful TCP connection is not enough for the strict feed. Pusheen V2Ray creates a temporary local Xray SOCKS runtime, probes an approved HTTPS endpoint through that runtime, records structured evidence in PostgreSQL, and requires an `END_TO_END` success for strict publication. A second independent HTTPS endpoint is used when the primary destination is unavailable, reducing target-specific false negatives without weakening the evidence requirement. The separately labeled balanced tier retains recent TCP-reachability evidence to offer a broader user-testable set without claiming end-to-end availability.
-
-| Capability | Status |
+| وضعیت | لینک |
 |---|---|
-| Versioned source registry, typed parsing, and canonical deduplication | Implemented |
-| Bounded HTTPS ingestion and reviewable source policy | Implemented |
-| Xray runtime configuration and isolated end-to-end probe | Implemented |
-| Persistent PostgreSQL history, status, scorecards, and snapshots | Implemented |
-| Stable raw/Base64 subscription artifacts | Implemented |
-| Scheduled guarded publication | Implemented and enabled; up to 8 candidates per run with four bounded validation workers |
-| Independent Cloudflare delivery origin | Implemented; short cache, stale-on-upstream-error behavior, and strict public allowlist |
-| Resilient anti-concentration tier and evidence receipts | Implemented; TCP-evidence only, credential-free receipts, no Iran-specific availability claim |
-| Xray local least-ping failover profile | Implemented; generated only from resilient members and schema-checked with pinned Xray |
-| Source health and automatic quarantine | Implemented; repeated fetch failures or ≥80% parse rejection temporarily quarantine a source |
-| Public operational status | Implemented via `status.json`; aggregate-only and credential-safe |
+| آخرین وضعیت عمومی | [status.json](https://pusheen-feed-gateway.mahankenway.workers.dev/status.json) |
+| release pointer | [current-release.json](https://pusheen-feed-gateway.mahankenway.workers.dev/current-release.json) |
+| manifest نسخه‌دار | [current manifest](https://pusheen-feed-gateway.mahankenway.workers.dev/current-release.json) |
+| صفحهٔ اجرای pipeline | [GitHub Actions](https://github.com/MahanKenway/Pusheen-V2Ray/actions) |
+| بررسی beta sing-box | [Beta Compatibility](https://github.com/MahanKenway/Pusheen-V2Ray/actions/workflows/beta-compatibility.yml) |
 
-## Automation
+## آموزش استفاده در کلاینت‌ها
 
-The guarded subscription workflow targets minutes **07, 22, 37, and 52** of each hour. It permits no overlapping runs, applies a hard timeout, evaluates up to **8 candidates per run** in least-recently-tested order, and runs at most **four isolated Xray validations concurrently**. Each strict candidate still requires a successful HTTPS request through its own temporary Xray SOCKS runtime; concurrency only increases throughput and does not weaken the quality criterion. Sources quarantined by health evidence are excluded from the candidate pool for six hours and recover automatically after a successful later ingestion.
+آموزش‌های زیر تصویری و کوتاه هستند. لینک‌ها را از بخش بالا کپی کنید و در کلاینت خود به‌عنوان subscription وارد کنید. اگر یک فید به‌سرعت متصل نشد، ابتدا update بزنید و سپس نود دیگری را با delay کمتر انتخاب کنید.
 
-Before enabling it, configure the GitHub secret `KAVEH_DATABASE_URL` and the non-secret variables `KAVEH_PROBE_URL`, `KAVEH_VANTAGE_ID`, and `KAVEH_CANDIDATE_LIMIT`. `KAVEH_PROBE_FALLBACK_URL` is optional for local runs; automation uses a reviewed HTTPS fallback by default. `KAVEH_VALIDATION_WORKERS` accepts 1–8 for controlled local runs; GitHub Actions uses four workers. Set `KAVEH_AUTOMATION_ENABLED=true` only after a manual run succeeds. The legacy `KAVEH_*` names and the internal Python package `kaveh` remain deliberately stable for backwards compatibility.
+### Hiddify — پیشنهاد اول برای استفادهٔ عمومی
 
-## Architecture
+در Hiddify از مسیر **Home → + → Add manually** بروید، لینک `outage.txt` یا `resilient.txt` را در URL قرار دهید، ذخیره کنید و سپس Update و delay test را اجرا کنید. Hiddify از subscriptionهای V2Ray و profileهای sing-box پشتیبانی می‌کند؛ برای profile کامل، [outage-singbox.json](https://pusheen-feed-gateway.mahankenway.workers.dev/outage-singbox.json) را فقط در نسخه‌ای وارد کنید که import فایل JSON را قبول می‌کند. راهنمای رسمی را در [Hiddify App documentation](https://hiddify.com/app/How-to-use-Hiddify-app/) بخوانید.
 
-```text
-Source Registry → Fetcher → Container Normalizer → Protocol Parsers
-    → Canonical Identity & Dedupe → Validation Queue
-    → Schema / Reachability / Runtime / End-to-End evidence
-    → PostgreSQL History & Scoring → Immutable Snapshot Publisher
-```
+<p align="center"><img src="docs/images/hiddify-import.svg" alt="راهنمای تصویری افزودن فید Pusheen به Hiddify" width="900"></p>
 
-The source tree follows a modular-monolith design. The `domain` package has no dependency on HTTP, database, process, or framework code. Infrastructure implements ports; application commands coordinate workflows; runtime adapters create isolated Xray configurations.
+### v2rayNG — اندروید
 
-## Quick start
+در v2rayNG بخش subscription groups را باز کنید، یک group جدید بسازید، لینک `outage.txt` یا `resilient.txt` را وارد کنید، Update را بزنید و بعد یک نود را انتخاب کنید. برای پروژه و نسخه‌های رسمی، [مخزن v2rayNG](https://github.com/2dust/v2rayNG) را ببینید.
 
-```bash
-python3 -m venv .venv
-. .venv/bin/activate
-pip install -e .
-cp configs/sources/registry.v1.example.json configs/sources/registry.v1.json
-# Review the registry, add only approved HTTPS sources, then explicitly enable them.
-python -m kaveh ingest --registry configs/sources/registry.v1.json
-```
+<p align="center"><img src="docs/images/v2rayng-import.svg" alt="راهنمای تصویری افزودن فید Pusheen به v2rayNG" width="900"></p>
 
-For PostgreSQL and Xray validation, see [the runbook](docs/postgres-xray-runbook.md). For scheduled subscription automation, see [the automation guide](docs/subscription-automation.md).
+### NekoBox — اندروید
 
-## Brand asset and attribution
+در NekoBox به بخش Groups بروید، group جدید بسازید، URL فید را وارد کنید و update بزنید. برای شروع در اختلال شدید، `outage.txt` را انتخاب کنید. راهنمای رسمی مرتبط را در [NekoBox tutorial](https://hiddify.com/manager/client-software-on-android/Tutorial-for-Nekobox-app/) و کد پروژه را در [NekoBoxForAndroid](https://github.com/MatsuriDayo/NekoBoxForAndroid) ببینید.
 
-The brand image at [`assets/brand/pusheen-playing-bone.jpg`](assets/brand/pusheen-playing-bone.jpg) was selected by the project owner from [Pusheen’s official artwork](https://pusheen.com/). Pusheen artwork and marks are associated with Pusheen Corp.; this repository does not claim ownership of them. Any public use remains subject to the relevant rights and permissions. The project owner may replace the image with licensed or original artwork at any time.
+<p align="center"><img src="docs/images/nekobox-import.svg" alt="راهنمای تصویری افزودن فید Pusheen به NekoBox" width="900"></p>
 
-## License and source attribution
+### sing-box — profile کامل
 
-The code is distributed under this repository’s [MIT License](LICENSE). The project originated from [Freedom-V2Ray](https://github.com/MahanKenway/Freedom-V2Ray); original copyright and license notices are retained.
+برای کلاینتی که profile کامل sing-box می‌پذیرد، فایل [outage-singbox.json](https://pusheen-feed-gateway.mahankenway.workers.dev/outage-singbox.json) را دانلود کنید، از گزینهٔ Import/Open file وارد کنید و URLTest را اجرا کنید. برای مستندات اصلی، [sing-box documentation](https://sing-box.sagernet.org/) را ببینید.
+
+<p align="center"><img src="docs/images/singbox-import.svg" alt="راهنمای تصویری import profile کامل sing-box" width="900"></p>
+
+## نکات مهم اتصال
+
+در اختلال شدید، یک فید واحد را معیار قطعی ندانید. ابتدا `outage.txt`، سپس `resilient.txt` و در نهایت `balanced.txt` را امتحان کنید. بعد از هر update، چند نود را با delay test بررسی کنید؛ delay پایین به‌تنهایی تضمین عبور از فیلترینگ یا پایداری طولانی‌مدت نیست.
+
+فیدهای Pusheen بر اساس evidence زمان‌مند و وابسته به vantage اعتبارسنجی ساخته می‌شوند. تعداد بیشتر به معنی کارکرد تضمینی همهٔ نودها نیست و در خاموشی کامل اینترنت، هیچ لینک عمومی نمی‌تواند دسترسی را تضمین کند.
+
+## مانیتورینگ و لینک‌های پروژه
+
+| مورد | لینک |
+|---|---|
+| مخزن اصلی | [MahanKenway/Pusheen-V2Ray](https://github.com/MahanKenway/Pusheen-V2Ray) |
+| Issues و گزارش خطا | [Issues](https://github.com/MahanKenway/Pusheen-V2Ray/issues) |
+| Releaseهای versioned | [Releases](https://github.com/MahanKenway/Pusheen-V2Ray/releases) |
+| تاریخچهٔ workflowها | [Actions](https://github.com/MahanKenway/Pusheen-V2Ray/actions) |
+| Gateway health | [health](https://pusheen-feed-gateway.mahankenway.workers.dev/health) |
+| وضعیت عمومی فیدها | [status.json](https://pusheen-feed-gateway.mahankenway.workers.dev/status.json) |
+
+## English
+
+برای نسخهٔ انگلیسی همین راهنما به [README.en.md](README.en.md) بروید.
+
+## نسبت و مجوز
+
+این پروژه تحت [MIT License](LICENSE) منتشر می‌شود. تصویر هدر توسط صاحب پروژه ارائه شده و برای هویت بصری همین مخزن استفاده می‌شود. نام و آثار Pusheen ممکن است متعلق به صاحبان حقوق مربوطه باشد؛ این مخزن ادعای مالکیت آن‌ها را ندارد.
