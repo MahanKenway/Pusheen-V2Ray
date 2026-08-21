@@ -137,6 +137,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "45.130.125.96",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "fc965ad9-bdd7-4815-ad71-b39ec5972dc1"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "octopusss4.com"
+        },
+        "wsSettings": {
+          "path": "/tsghdws"
+        }
+      },
+      "tag": "resilient-d3fabcb8f794ac78"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "188.114.97.0",
             "port": 443,
             "users": [
@@ -1193,6 +1222,31 @@
       "settings": {
         "vnext": [
           {
+            "address": "172.64.150.28",
+            "port": 2082,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/fp"
+        }
+      },
+      "tag": "resilient-01b85d5046a402d3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "199.232.78.159",
             "port": 443,
             "users": [
@@ -1216,64 +1270,6 @@
         }
       },
       "tag": "resilient-554cfefa19afe35d"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.16.79.73",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "83afd88f-200f-4d89-bfc7-66eff160c1d8"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "josni.hoyes.cloudns.ch"
-        },
-        "wsSettings": {
-          "path": "musiclovers85?ed=512"
-        }
-      },
-      "tag": "resilient-843144ebf2f246e3"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.130.125.76",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "b37be529-83c9-4851-a3cf-73d7d05bf308"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "drrfddgbv.turbooserver.net.tr"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-3b5060a664ca5998"
     },
     {
       "protocol": "trojan",

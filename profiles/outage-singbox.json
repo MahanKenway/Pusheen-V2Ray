@@ -43,6 +43,25 @@
     },
     {
       "network": "tcp",
+      "server": "45.130.125.96",
+      "server_port": 443,
+      "tag": "outage-d3fabcb8f794ac78",
+      "tls": {
+        "enabled": true,
+        "server_name": "octopusss4.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "octopusss4.com"
+        },
+        "path": "/tsghdws",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "fc965ad9-bdd7-4815-ad71-b39ec5972dc1"
+    },
+    {
+      "network": "tcp",
       "server": "188.114.97.0",
       "server_port": 443,
       "tag": "outage-632d315afaafb21a",
@@ -378,6 +397,21 @@
     },
     {
       "network": "tcp",
+      "server": "172.64.150.28",
+      "server_port": 2082,
+      "tag": "outage-01b85d5046a402d3",
+      "transport": {
+        "headers": {
+          "Host": "hhlfy.twiladaphne.ndjp.net"
+        },
+        "path": "/fp",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+    },
+    {
+      "network": "tcp",
       "server": "104.26.14.85",
       "server_port": 443,
       "tag": "outage-bd89eac4d9977831",
@@ -533,27 +567,13 @@
       "uuid": "4b5e4565-322f-4223-a891-78a84f189726"
     },
     {
-      "network": "tcp",
-      "server": "104.18.42.163",
-      "server_port": 2095,
-      "tag": "outage-6eb470adb04b9789",
-      "transport": {
-        "headers": {
-          "Host": "download.pusytroller.gq"
-        },
-        "path": "/?telegram-marambashi_marambashi_marambashi_marambashi_marambashi?ed=512",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
         "outage-4353aeaef5c3670d",
         "outage-1ff267ae130cec9c",
+        "outage-d3fabcb8f794ac78",
         "outage-632d315afaafb21a",
         "outage-06496f48094b1db6",
         "outage-0f98367407056b17",
@@ -573,6 +593,7 @@
         "outage-91d8b6009afb400f",
         "outage-99909b012335b4dd",
         "outage-25654f2adc9c9c9f",
+        "outage-01b85d5046a402d3",
         "outage-bd89eac4d9977831",
         "outage-29f5940e14c35228",
         "outage-ea9026764e87f710",
@@ -582,8 +603,7 @@
         "outage-a17d8298b4c22b93",
         "outage-4f72b4f5393bce7f",
         "outage-227a5613c8cafb61",
-        "outage-b57b9ce2e344e8ee",
-        "outage-6eb470adb04b9789"
+        "outage-b57b9ce2e344e8ee"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
