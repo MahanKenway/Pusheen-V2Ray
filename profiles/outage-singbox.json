@@ -370,6 +370,44 @@
     },
     {
       "network": "tcp",
+      "password": ":bC5^lakx>$d",
+      "server": "172.66.45.9",
+      "server_port": 443,
+      "tag": "outage-2d5ccae8dd73c458",
+      "tls": {
+        "enabled": true,
+        "server_name": "fk31LnDm4W8uj0yP1dRwLTDTdKo6Y-cu.pAGES.dEv"
+      },
+      "transport": {
+        "headers": {
+          "Host": "fk31LnDm4W8uj0yP1dRwLTDTdKo6Y-cu.pAGES.dEv"
+        },
+        "path": "/trNs9G5VJ2vI0PxgP2",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
+      "server": "141.193.213.21",
+      "server_port": 443,
+      "tag": "outage-1e04bb2723d0e4ee",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmloud.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.calmloud.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "$_qP4V4U26sb{04A",
       "server": "172.66.44.115",
       "server_port": 2083,
@@ -474,21 +512,6 @@
       "tag": "outage-bd89eac4d9977831",
       "type": "vless",
       "uuid": "cf39fab0-bb85-42cb-9945-2ad69d78e575"
-    },
-    {
-      "network": "tcp",
-      "server": "172.67.202.17",
-      "server_port": 2095,
-      "tag": "outage-12aea11f5d6b2cc0",
-      "transport": {
-        "headers": {
-          "Host": "fuckfangbinxing.pusytroller.gq"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40"
     },
     {
       "network": "tcp",
@@ -643,21 +666,6 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "server": "185.146.173.200",
-      "server_port": 8880,
-      "tag": "outage-d18cd7006827d5ab",
-      "transport": {
-        "headers": {
-          "Host": "www.speedtest.net.kkkkklllkokowkfwofkfkfekojg.ir"
-        },
-        "path": "/-LiV2ry@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6?ed=2048",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "edb6337e-ffca-45b9-954f-518551d1adc3"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -682,6 +690,8 @@
         "outage-05cd1db3c73baca6",
         "outage-99909b012335b4dd",
         "outage-25654f2adc9c9c9f",
+        "outage-2d5ccae8dd73c458",
+        "outage-1e04bb2723d0e4ee",
         "outage-ba6caf6b51cebdb2",
         "outage-f65c48aac02898ee",
         "outage-977a1b201ad68e07",
@@ -689,7 +699,6 @@
         "outage-019fd71da07bdf94",
         "outage-01b85d5046a402d3",
         "outage-bd89eac4d9977831",
-        "outage-12aea11f5d6b2cc0",
         "outage-ea9026764e87f710",
         "outage-d35e553bae001534",
         "outage-43d239e3cb104907",
@@ -698,8 +707,7 @@
         "outage-4f72b4f5393bce7f",
         "outage-227a5613c8cafb61",
         "outage-b57b9ce2e344e8ee",
-        "outage-860a0adf5e66c7c7",
-        "outage-d18cd7006827d5ab"
+        "outage-860a0adf5e66c7c7"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
