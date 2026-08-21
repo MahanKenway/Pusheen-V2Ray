@@ -1222,37 +1222,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.64.150.28",
-            "port": 2082,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/fp"
-        }
-      },
-      "tag": "resilient-01b85d5046a402d3"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.159",
+            "address": "104.16.72.101",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "b813cbc9-dc15-4348-9765-b99dc76d4422"
+                "id": "14b59caf-a196-4ec2-8c70-c7b388062f5b"
               }
             ]
           }
@@ -1263,13 +1238,42 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "default.ssl.fastly.net"
+          "serverName": "vangoghhh.info"
         },
         "wsSettings": {
-          "path": "/"
+          "path": "/rdfgtws"
         }
       },
-      "tag": "resilient-554cfefa19afe35d"
+      "tag": "resilient-cb8d09b26e0be0d0"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.16.117.43",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "josni.hoyes.cloudns.ch"
+        },
+        "wsSettings": {
+          "path": "musiclovers85?ed=512"
+        }
+      },
+      "tag": "resilient-167e3f2f2cf19679"
     },
     {
       "protocol": "trojan",
