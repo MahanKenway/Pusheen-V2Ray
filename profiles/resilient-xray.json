@@ -1193,6 +1193,64 @@
       "settings": {
         "vnext": [
           {
+            "address": "69.84.182.128",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "a13df940-020c-465f-bc89-ee5279b5cd6a"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "hki.ylks.link"
+        },
+        "wsSettings": {
+          "path": "/?proxyip"
+        }
+      },
+      "tag": "resilient-5be447ac25368292"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.27.66.214",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "f798a2c4-c51b-409d-b349-ca8455b36796"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "chopin.adaspoloandco.com"
+        },
+        "wsSettings": {
+          "path": "/download.php"
+        }
+      },
+      "tag": "resilient-cbcc29fd6c3f73b3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "104.21.94.168",
             "port": 8080,
             "users": [
@@ -1212,64 +1270,6 @@
         }
       },
       "tag": "resilient-019fd71da07bdf94"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.16.72.101",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "14b59caf-a196-4ec2-8c70-c7b388062f5b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "vangoghhh.info"
-        },
-        "wsSettings": {
-          "path": "/rdfgtws"
-        }
-      },
-      "tag": "resilient-cb8d09b26e0be0d0"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.16.117.43",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "83afd88f-200f-4d89-bfc7-66eff160c1d8"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "josni.hoyes.cloudns.ch"
-        },
-        "wsSettings": {
-          "path": "musiclovers85?ed=512"
-        }
-      },
-      "tag": "resilient-167e3f2f2cf19679"
     },
     {
       "protocol": "trojan",
