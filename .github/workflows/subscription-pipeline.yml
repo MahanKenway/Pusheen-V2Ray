@@ -116,7 +116,13 @@ jobs:
           fi
           git config user.name "pusheen-v2ray-bot[bot]"
           git config user.email "pusheen-v2ray-bot[bot]@users.noreply.github.com"
-          git commit -m "chore(subscription): refresh validated feeds and status"
+          update_tehran="$(TZ=Asia/Tehran date '+%Y-%m-%d %H:%M %Z')"
+          update_utc="$(date -u '+%Y-%m-%d %H:%M UTC')"
+          git commit \
+            -m "🐾 Pusheen feeds updated • ${update_tehran}" \
+            -m "🚀 Scheduled validation published qualified artifacts." \
+            -m "⏱️ UTC: ${update_utc}" \
+            -m "🔒 No credential-bearing configuration is committed."
           # A manual code change may land while validation is running. Rebase the
           # generated artifact commit before publication instead of losing it to
           # a non-fast-forward push rejection.
