@@ -28,6 +28,7 @@ class StatusPublisher:
         outage_publication: Mapping[str, Any] | None = None,
     ) -> None:
         sources = [_public_source_health(item) for item in source_health]
+        existing = _existing_operational_status(self.artifact_store)
         document = {
             "schema_version": 1,
             "updated_at": datetime.now(UTC).isoformat(),
@@ -80,10 +81,30 @@ class StatusPublisher:
                 "quarantined": sum(1 for item in sources if item["quarantined"]),
                 "items": sources,
             },
+            **existing,
             "notice": "Evidence is time- and validator-origin-specific; availability is not guaranteed.",
         }
         content = (json.dumps(document, sort_keys=True, indent=2, default=_json_default) + "\n").encode("utf-8")
         self.artifact_store.write_atomic("status.json", content)
+
+
+def _existing_operational_status(artifact_store: ArtifactStore) -> dict[str, Any]:
+    """Preserve public delivery telemetry written by the independent monitor."""
+
+    read_bytes = getattr(artifact_store, "read_bytes", None)
+    if not callable(read_bytes):
+        return {}
+    try:
+        current = json.loads(read_bytes("status.json") or b"{}")
+    except (TypeError, ValueError, json.JSONDecodeError):
+        return {}
+    if not isinstance(current, dict):
+        return {}
+    return {
+        key: current[key]
+        for key in ("delivery_monitor", "slo")
+        if isinstance(current.get(key), dict)
+    }
 
 
 def _public_source_health(item: Mapping[str, Any]) -> dict[str, Any]:

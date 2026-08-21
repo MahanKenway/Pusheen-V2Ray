@@ -1,0 +1,70 @@
+name: Pusheen Gateway Delivery SLO
+
+on:
+  schedule:
+    - cron: "3,33 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: pusheen-v2ray-delivery-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor-public-delivery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.11"
+      - name: Measure public Gateway delivery
+        run: |
+          set -euo pipefail
+          python scripts/monitor_gateway_delivery.py --root .
+      - name: Commit public delivery artifacts
+        id: publish
+        run: |
+          set -euo pipefail
+          git add monitoring/delivery-status.v1.json monitoring/slo-status.v1.json status.json
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No monitor artifact change; no commit created."
+            exit 0
+          fi
+          git config user.name "pusheen-v2ray-monitor[bot]"
+          git config user.email "pusheen-v2ray-monitor[bot]@users.noreply.github.com"
+          update_tehran="$(TZ=Asia/Tehran date '+%Y-%m-%d %H:%M %Z')"
+          git commit -m "📡 Pusheen delivery monitor • ${update_tehran}" \
+            -m "🧭 Sampled public Gateway delivery and evaluated public-safe SLO checks."
+          git pull --rebase origin main
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Open one deduplicated alert issue when SLO is degraded
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          mkdir -p .artifacts
+          jq -r '.alerts[]?.message' monitoring/slo-status.v1.json > .artifacts/slo_alert.txt
+          if [ ! -s .artifacts/slo_alert.txt ]; then
+            echo "SLO healthy; no alert issue required."
+            exit 0
+          fi
+          if gh issue list --repo "$REPOSITORY" --state open --label "monitoring-alert" --limit 1 --json number --jq 'length > 0' | grep -qx true; then
+            echo "An open monitoring alert already exists; suppressing duplicate issue."
+            exit 0
+          fi
+          gh label create "monitoring-alert" --repo "$REPOSITORY" --color "D73A4A" --description "Automated public delivery SLO alert" --force
+          gh issue create --repo "$REPOSITORY" --label "monitoring-alert" \
+            --title "🚨 Pusheen public delivery SLO alert" \
+            --body "Automated public Gateway delivery monitoring detected a degraded SLO state.\n\n$(cat .artifacts/slo_alert.txt)\n\nDashboard: https://pusheen-feed-gateway.mahankenway.workers.dev/dashboard\nRun: $RUN_URL\n\nThis alert concerns public feed delivery only; it does not claim proxy endpoint availability."

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pusheen V2Ray · Delivery SLO</title>
+  <style>
+    :root { color-scheme: dark; --bg:#171313; --panel:#261f1d; --line:#4c3b36; --text:#f8eee7; --muted:#cdbab0; --ok:#78c796; --warn:#f2bf69; --bad:#f28e98; --pink:#ed94ab; }
+    * { box-sizing:border-box; } body { margin:0; font:16px/1.5 system-ui,sans-serif; color:var(--text); background:radial-gradient(circle at top right,#442a34,transparent 38%),var(--bg); }
+    main { width:min(1120px,92vw); margin:0 auto; padding:44px 0 64px; } h1 { margin:0; font-size:clamp(2rem,6vw,3.7rem); } h1 span{color:var(--pink)} p { color:var(--muted); } a { color:#ffc0d0; } .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin:28px 0; }
+    .card,section { background:color-mix(in srgb,var(--panel) 93%,transparent); border:1px solid var(--line); border-radius:18px; padding:18px; } .card b { display:block; font-size:1.25rem; margin-top:8px; } .label { color:var(--muted); font-size:.84rem; text-transform:uppercase; letter-spacing:.08em; } .ok{color:var(--ok)} .warning{color:var(--warn)} .fail,.degraded{color:var(--bad)}
+    section { margin-top:16px; overflow:auto; } table{width:100%; border-collapse:collapse; min-width:560px;} th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line);} th{color:var(--muted);font-size:.8rem;text-transform:uppercase;} code{font-size:.85rem;color:#f3c6cf;} #error{display:none;color:var(--bad);} .updated{font-size:.88rem;}
+  </style>
+</head>
+<body>
+  <main>
+    <p class="label">Public delivery monitor</p>
+    <h1>Pusheen <span>V2Ray</span> SLO</h1>
+    <p>This dashboard measures only public Gateway delivery. It does not test, list, or expose proxy endpoints inside feeds.</p>
+    <p id="error"></p>
+    <div class="grid" id="summary"></div>
+    <section><h2>Sampled delivery regions</h2><table><thead><tr><th>Target</th><th>Country</th><th>HTTP</th><th>Latency</th><th>Probe status</th></tr></thead><tbody id="regions"></tbody></table></section>
+    <section><h2>SLO checks</h2><table><thead><tr><th>Check</th><th>Status</th><th>Details</th></tr></thead><tbody id="checks"></tbody></table></section>
+    <p class="updated" id="updated">Loading public status…</p>
+    <p><a href="/status.json">status.json</a> · <a href="/delivery-status.v1.json">delivery artifact</a> · <a href="/slo-status.v1.json">SLO artifact</a> · <a href="/health">Gateway health</a></p>
+  </main>
+  <script>
+    const get = async path => { const r = await fetch(path,{cache:'no-store'}); if(!r.ok) throw new Error(`${path}: HTTP ${r.status}`); return r.json(); };
+    const statusClass = value => String(value||'').toLowerCase().replace(/[^a-z]+/g,'-');
+    const card = (label,value,klass='') => `<div class="card"><span class="label">${label}</span><b class="${klass}">${value}</b></div>`;
+    const show = async () => {
+      try {
+        const [status,delivery,slo] = await Promise.all([get('/status.json'),get('/delivery-status.v1.json'),get('/slo-status.v1.json')]);
+        const sum = delivery.summary || {}, sloSum = slo.summary || {}, strict = (status.feeds||{}).strict||{};
+        document.querySelector('#summary').innerHTML = [
+          card('SLO state',sloSum.status||'unknown',statusClass(sloSum.status)),
+          card('Iran sampled delivery',sum.iran_delivery||'not_measured',statusClass(sum.iran_delivery)),
+          card('HTTP 200 samples',sum.successful_http_200_count??'—','ok'),
+          card('Strict feed entries',strict.count??'—',strict.count>0?'ok':'fail'),
+          card('Active alerts',sloSum.alert_count??'—',(sloSum.alert_count||0)>0?'warning':'ok')
+        ].join('');
+        const rows=[]; for(const measure of delivery.measurements||[]) for(const item of measure.results||[]) rows.push(`<tr><td><code>${measure.target||'—'}</code></td><td>${item.country||'—'}</td><td>${item.http_status??'—'}</td><td>${item.total_ms==null?'—':item.total_ms+' ms'}</td><td class="${statusClass(item.status)}">${item.status||'—'}</td></tr>`);
+        document.querySelector('#regions').innerHTML=rows.join('')||'<tr><td colspan="5">No sampled result yet.</td></tr>';
+        document.querySelector('#checks').innerHTML=Object.entries(slo.checks||{}).map(([name,check])=>`<tr><td><code>${name}</code></td><td class="${statusClass(check.status)}">${check.status||'unknown'}</td><td><code>${JSON.stringify(Object.fromEntries(Object.entries(check).filter(([key])=>key!=='status')))}</code></td></tr>`).join('')||'<tr><td colspan="3">No SLO artifact yet.</td></tr>';
+        document.querySelector('#updated').textContent=`Monitor updated: ${delivery.updated_at||'unknown'} · Feed status updated: ${status.updated_at||'unknown'}`;
+      } catch (error) { const el=document.querySelector('#error'); el.textContent=`Dashboard data is temporarily unavailable: ${error.message}`; el.style.display='block'; }
+    };
+    show();
+  </script>
+</body>
+</html>

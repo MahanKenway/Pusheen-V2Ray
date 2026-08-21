@@ -21,6 +21,7 @@ import psycopg
 from psycopg.rows import dict_row
 from psycopg.types.json import Jsonb
 
+from kaveh.domain.services.source_yield_allocator import SourceYieldMetric
 from kaveh.domain.models import (
     CanonicalConfig,
     HealthWindow,
@@ -212,6 +213,74 @@ class PostgresConfigRepository:
                 """
             ).fetchall()
         return tuple(dict(row) for row in rows)
+
+    def source_yield_metrics(self) -> tuple[SourceYieldMetric, ...]:
+        """Return aggregate source/protocol yield without reading configuration content."""
+
+        with self.database.transaction() as connection:
+            rows = connection.execute(
+                """
+                SELECT source_id, protocol, validation_samples,
+                       end_to_end_successes, qualified_count
+                FROM source_yield_metrics
+                ORDER BY source_id, protocol
+                """
+            ).fetchall()
+        return tuple(
+            SourceYieldMetric(
+                source_id=str(row["source_id"]),
+                protocol=str(row["protocol"]),
+                validation_samples=int(row["validation_samples"]),
+                end_to_end_successes=int(row["end_to_end_successes"]),
+                qualified_count=int(row["qualified_count"]),
+            )
+            for row in rows
+        )
+
+    def record_source_yield(
+        self,
+        candidates: Iterable[CanonicalConfig],
+        scorecards: Iterable[ScoreCard],
+    ) -> None:
+        """Accumulate the actual validation outcome for each source/protocol pair.
+
+        A scorecard exists only after an end-to-end success, so the counter keeps
+        the distinction between selected work, E2E success, and qualification.
+        """
+
+        cards = {card.identity_hash: card for card in scorecards}
+        aggregates: dict[tuple[str, str], list[int]] = {}
+        for candidate in candidates:
+            if not candidate.source_id or not candidate.identity_hash:
+                continue
+            key = (candidate.source_id, candidate.protocol.value)
+            values = aggregates.setdefault(key, [0, 0, 0])
+            values[0] += 1
+            card = cards.get(candidate.identity_hash)
+            if card is not None:
+                values[1] += 1
+                values[2] += int(card.qualified)
+        if not aggregates:
+            return
+        with self.database.transaction() as connection:
+            for (source_id, protocol), (samples, e2e_successes, qualified) in aggregates.items():
+                connection.execute(
+                    """
+                    INSERT INTO source_yield_metrics (
+                        source_id, protocol, validation_samples,
+                        end_to_end_successes, qualified_count, last_observed_at
+                    ) VALUES (%s, %s, %s, %s, %s, NOW())
+                    ON CONFLICT (source_id, protocol) DO UPDATE SET
+                        validation_samples = source_yield_metrics.validation_samples
+                            + EXCLUDED.validation_samples,
+                        end_to_end_successes = source_yield_metrics.end_to_end_successes
+                            + EXCLUDED.end_to_end_successes,
+                        qualified_count = source_yield_metrics.qualified_count
+                            + EXCLUDED.qualified_count,
+                        last_observed_at = NOW()
+                    """,
+                    (source_id, protocol, samples, e2e_successes, qualified),
+                )
 
     def upsert(self, config: CanonicalConfig) -> bool:
         if not config.identity_hash:

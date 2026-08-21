@@ -27,6 +27,7 @@ from kaveh.application.commands.validate_batch import ValidateBatch
 from kaveh.config.settings import RuntimeSettings
 from kaveh.config.source_registry import load_sources
 from kaveh.domain.services.qualification import QualificationPolicy
+from kaveh.domain.services.source_yield_allocator import allocate_validation_candidates
 from kaveh.infrastructure.http.http_source_client import BoundedHttpsSourceClient
 from kaveh.infrastructure.persistence.in_memory import InMemoryConfigRepository
 from kaveh.infrastructure.persistence.postgres import (
@@ -156,9 +157,21 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
     policy = QualificationPolicy()
     history.start_run(policy.version, settings.vantage_id)
     try:
-        # all() prioritizes never-probed then least-recently-probed candidates.
-        candidates = repository.all()[:limit]
-        _log_validation_progress("candidates_selected", started, count=len(candidates))
+        # The allocator preserves the fixed budget while balancing proven sources,
+        # provisional exploration, and the repository's never/least-recent order.
+        allocation = allocate_validation_candidates(
+            repository.all(), repository.source_yield_metrics(), limit
+        )
+        candidates = allocation.selected
+        _log_validation_progress(
+            "candidates_selected",
+            started,
+            count=len(candidates),
+            high_yield=allocation.high_yield_selected,
+            provisional=allocation.provisional_selected,
+            exploration=allocation.exploration_selected,
+            fallback=allocation.fallback_selected,
+        )
         supervisor = ValidationSupervisor(
             SchemaProbe(),
             TcpReachabilityProbe(),
@@ -173,6 +186,7 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
             max_workers=settings.validation_workers,
         ).run()
         _log_validation_progress("runtime_validation_complete", started, count=validation.validated_count)
+        repository.record_source_yield(candidates, validation.scorecards)
         publication_configs, publication_cards, publication_mode = _publication_inputs(
             candidates, validation.scorecards, repository, history, policy, active_sources
         )
@@ -229,6 +243,17 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
                 "qualified": validation.qualified_count,
                 "probe_endpoints": len(settings.probe_urls),
                 "validation_workers": settings.validation_workers,
+                "allocator": {
+                    "policy": "source-yield-balanced-v1",
+                    "high_yield_budget": allocation.high_yield_budget,
+                    "provisional_budget": allocation.provisional_budget,
+                    "exploration_budget": allocation.exploration_budget,
+                    "high_yield_selected": allocation.high_yield_selected,
+                    "provisional_selected": allocation.provisional_selected,
+                    "exploration_selected": allocation.exploration_selected,
+                    "fallback_selected": allocation.fallback_selected,
+                    "notice": "Allocation changes validation order only; every selected candidate still requires the same end-to-end evidence.",
+                },
             },
             strict_publication={
                 "published": publication.published,
@@ -308,8 +333,19 @@ def _run_validate(registry_path: Path, limit: int, publish_root: Path) -> int:
                     "end_to_end_verified": validation.end_to_end_verified_count,
                     "qualified": validation.qualified_count,
                     "probe_endpoints": len(settings.probe_urls),
-                "validation_workers": settings.validation_workers,
+                    "validation_workers": settings.validation_workers,
+                    "allocator": {
+                        "policy": "source-yield-balanced-v1",
+                        "high_yield_budget": allocation.high_yield_budget,
+                        "provisional_budget": allocation.provisional_budget,
+                        "exploration_budget": allocation.exploration_budget,
+                        "high_yield_selected": allocation.high_yield_selected,
+                        "provisional_selected": allocation.provisional_selected,
+                        "exploration_selected": allocation.exploration_selected,
+                        "fallback_selected": allocation.fallback_selected,
+                    },
                 },
+
                 "publication": {
                     "published": publication.published,
                     "snapshot_id": publication.snapshot.snapshot_id if publication.snapshot else None,

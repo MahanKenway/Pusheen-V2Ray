@@ -33,6 +33,9 @@ const ARTIFACTS = {
   "outage-singbox.meta.v1.json": "profiles/outage-singbox.meta.v1.json",
   "status.json": "status.json",
   "current-release.json": "releases/current-release.json",
+  "delivery-status.v1.json": "monitoring/delivery-status.v1.json",
+  "slo-status.v1.json": "monitoring/slo-status.v1.json",
+  "dashboard": "monitoring/dashboard.html",
 };
 
 // Continuity artifacts are mirrored by Cron after each publication window.
@@ -49,6 +52,8 @@ const SCHEDULED_ARTIFACTS = [
   "profiles/resilient-xray.json",
   "profiles/outage-singbox.json",
   "status.json",
+  "monitoring/delivery-status.v1.json",
+  "monitoring/slo-status.v1.json",
 ];
 
 addEventListener("fetch", (event) => {
@@ -65,12 +70,14 @@ async function handleRequest(request, ctx) {
     return new Response("method not allowed", { status: 405, headers: { Allow: "GET, HEAD" } });
   }
   if (url.pathname === "/health") {
+    const mirror = await mirrorHealthSummary();
     return jsonResponse({
       service: "Pusheen V2Ray delivery gateway",
-      schema_version: 2,
+      schema_version: 3,
       artifacts: Object.keys(ARTIFACTS),
       cache_seconds: CACHE_SECONDS,
       delivery: "fresh GitHub origin with Cloudflare KV last-known-good fallback",
+      mirror,
       notice: "Independent of the GitHub request path; not an availability guarantee during an international shutdown.",
     });
   }
@@ -178,6 +185,33 @@ async function mirrorArtifact(artifact, body) {
   ]);
 }
 
+async function mirrorHealthSummary() {
+  if (typeof PUSHEEN_FEEDS === "undefined") return { state: "not_configured" };
+  const criticalArtifacts = [
+    "subscriptions/resilient.txt",
+    "subscriptions/outage.txt",
+    "subscriptions/strict.txt",
+    "releases/current-release.json",
+  ];
+  const metadata = await Promise.all(
+    criticalArtifacts.map((artifact) => PUSHEEN_FEEDS.get(KV_METADATA_PREFIX + artifact, "json"))
+  );
+  const timestamps = metadata
+    .map((item) => item?.mirrored_at)
+    .filter((value) => typeof value === "string")
+    .map((value) => Date.parse(value))
+    .filter((value) => Number.isFinite(value));
+  if (timestamps.length === 0) {
+    return { state: "empty", critical_artifact_count: criticalArtifacts.length };
+  }
+  return {
+    state: "available",
+    critical_artifact_count: criticalArtifacts.length,
+    mirrored_critical_artifact_count: timestamps.length,
+    critical_oldest_age_seconds: Math.max(0, Math.floor((Date.now() - Math.min(...timestamps)) / 1000)),
+  };
+}
+
 async function readMirroredArtifact(artifact) {
   if (typeof PUSHEEN_FEEDS === "undefined") return null;
   const [body, metadata] = await Promise.all([
@@ -194,9 +228,9 @@ function artifactResponse(body, artifact, delivery, metadata) {
 }
 
 function contentTypeFor(artifact) {
-  return artifact.endsWith(".json")
-    ? "application/json; charset=utf-8"
-    : "text/plain; charset=utf-8";
+  if (artifact.endsWith(".json")) return "application/json; charset=utf-8";
+  if (artifact.endsWith(".html")) return "text/html; charset=utf-8";
+  return "text/plain; charset=utf-8";
 }
 
 function safeHeaders(contentType, artifact, delivery, metadata) {
