@@ -1,0 +1,39 @@
+{
+  "alerts": [],
+  "checks": {
+    "gateway_delivery": {
+      "consecutive_5xx_runs": 0,
+      "status": "pass",
+      "threshold_runs": 2
+    },
+    "kv_mirror_age": {
+      "age_seconds": null,
+      "reason": "not_observable",
+      "status": "warning",
+      "threshold_seconds": 2700
+    },
+    "publication_freshness": {
+      "age_seconds": 537,
+      "observed_at": "2026-08-21T19:32:52.912327+00:00",
+      "status": "pass",
+      "threshold_seconds": 2100
+    },
+    "source_health": {
+      "quarantined": 0,
+      "status": "pass",
+      "total": 8
+    },
+    "strict_feed": {
+      "count": 7,
+      "manifest_hash_matches": true,
+      "status": "pass"
+    }
+  },
+  "schema_version": 1,
+  "scope": "public-safe delivery SLO; not a proxy endpoint availability claim",
+  "summary": {
+    "alert_count": 0,
+    "status": "healthy"
+  },
+  "updated_at": "2026-08-21T19:41:50.686419+00:00"
+}

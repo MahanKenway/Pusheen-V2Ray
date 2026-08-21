@@ -1,4 +1,11 @@
 {
+  "delivery_monitor": {
+    "failed_probe_count": 0,
+    "gateway_5xx_streak": 0,
+    "iran_delivery": "reachable_from_sampled_probe",
+    "sampled_probe_count": 8,
+    "successful_http_200_count": 8
+  },
   "feeds": {
     "balanced": {
       "count": 250,
@@ -89,6 +96,10 @@
   "notice": "Evidence is time- and validator-origin-specific; availability is not guaranteed.",
   "schema_version": 1,
   "service": "Pusheen V2Ray quality-first subscription pipeline",
+  "slo": {
+    "alert_count": 0,
+    "status": "healthy"
+  },
   "sources": {
     "healthy": 8,
     "items": [
