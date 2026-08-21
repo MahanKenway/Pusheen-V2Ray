@@ -1102,35 +1102,6 @@
       "tag": "resilient-073b6bc00ecc1eea"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.64.155.209",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "4ff70740-8c80-48ae-985f-2afe4924e908"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "pubb.clnahanpnln.workers.dev"
-        },
-        "wsSettings": {
-          "path": "/sync"
-        }
-      },
-      "tag": "resilient-2f6f80b898615097"
-    },
-    {
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -1270,6 +1241,35 @@
         }
       },
       "tag": "resilient-019fd71da07bdf94"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.16.72.101",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "14b59caf-a196-4ec2-8c70-c7b388062f5b"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "vangoghhh.info"
+        },
+        "wsSettings": {
+          "path": "/rdfgtws"
+        }
+      },
+      "tag": "resilient-cb8d09b26e0be0d0"
     },
     {
       "protocol": "trojan",
