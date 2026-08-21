@@ -39,29 +39,17 @@ const ARTIFACTS = {
 };
 
 // Continuity artifacts are mirrored only by bounded Cron refreshes, never by
-// client traffic. With a 30-minute Cron cadence, the 18 explicit artifacts plus
-// the release pointer and current immutable manifest cap worst-case KV writes at
-// 960 per day, below the free-plan daily limit. The current-release pointer and
-// its validated immutable manifest are refreshed together.
+// client traffic. The two-hour Cron mirrors only the delivery-critical paths:
+// Primary, Strict, Resilient, Outage, the outage sing-box profile, and the
+// current release pointer plus its immutable manifest. This caps worst-case KV
+// writes at 84 per day (seven entries × twelve runs), while GitHub origin still
+// serves every allowlisted artifact fresh on normal requests.
 const SCHEDULED_ARTIFACTS = [
   "subscriptions/all.txt",
-  "subscriptions/reachable.txt",
-  "subscriptions/reachable-fast.txt",
   "subscriptions/strict.txt",
   "subscriptions/resilient.txt",
   "subscriptions/outage.txt",
-  "subscriptions/resilient.receipts.v1.json",
-  "subscriptions/resilient.manifest.v1.json",
-  "subscriptions/outage.receipts.v1.json",
-  "subscriptions/outage.manifest.v1.json",
-  "profiles/resilient-xray.json",
-  "profiles/resilient-xray.meta.v1.json",
   "profiles/outage-singbox.json",
-  "profiles/outage-singbox.meta.v1.json",
-  "status.json",
-  "monitoring/delivery-status.v1.json",
-  "monitoring/slo-status.v1.json",
-  "monitoring/dashboard.html",
 ];
 
 addEventListener("fetch", (event) => {
@@ -207,6 +195,7 @@ async function sha256Hex(body) {
 async function mirrorHealthSummary() {
   if (typeof PUSHEEN_FEEDS === "undefined") return { state: "not_configured" };
   const criticalArtifacts = [
+    "subscriptions/all.txt",
     "subscriptions/resilient.txt",
     "subscriptions/outage.txt",
     "subscriptions/strict.txt",
