@@ -13,7 +13,7 @@ const UPSTREAM_ROOT = "https://raw.githubusercontent.com/MahanKenway/Pusheen-V2R
 const CACHE_SECONDS = 60;
 const UPSTREAM_TIMEOUT_MS = 12_000;
 const KV_ARTIFACT_PREFIX = "artifact:";
-const KV_METADATA_PREFIX = "metadata:";
+const LEGACY_KV_METADATA_PREFIX = "metadata:";
 const RELEASE_MANIFEST_PATH = /^releases\/\d{8}T\d{6}Z-[a-f0-9]{12}\/manifest\.v2\.json$/;
 
 const ARTIFACTS = {
@@ -172,17 +172,28 @@ async function fetchUpstream(artifact) {
 }
 
 async function mirrorArtifact(artifact, body) {
-  if (typeof PUSHEEN_FEEDS === "undefined") return;
+  if (typeof PUSHEEN_FEEDS === "undefined") return { mirrored: false, reason: "not_configured" };
+  const key = KV_ARTIFACT_PREFIX + artifact;
+  const contentSha256 = await sha256Hex(body);
+  const existing = await PUSHEEN_FEEDS.getWithMetadata(key, "arrayBuffer");
+  const existingHash = existing?.metadata?.content_sha256;
+  if (existingHash === contentSha256 && existing?.value?.byteLength === body.byteLength) {
+    return { mirrored: false, reason: "unchanged" };
+  }
   const metadata = {
     mirrored_at: new Date().toISOString(),
     artifact,
     byte_length: body.byteLength,
+    content_sha256: contentSha256,
     origin: "github-raw",
   };
-  await Promise.all([
-    PUSHEEN_FEEDS.put(KV_ARTIFACT_PREFIX + artifact, body),
-    PUSHEEN_FEEDS.put(KV_METADATA_PREFIX + artifact, JSON.stringify(metadata)),
-  ]);
+  await PUSHEEN_FEEDS.put(key, body, { metadata });
+  return { mirrored: true, reason: existing?.value ? "changed" : "new" };
+}
+
+async function sha256Hex(body) {
+  const digest = await crypto.subtle.digest("SHA-256", body);
+  return Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, "0")).join("");
 }
 
 async function mirrorHealthSummary() {
@@ -194,7 +205,10 @@ async function mirrorHealthSummary() {
     "releases/current-release.json",
   ];
   const metadata = await Promise.all(
-    criticalArtifacts.map((artifact) => PUSHEEN_FEEDS.get(KV_METADATA_PREFIX + artifact, "json"))
+    criticalArtifacts.map(async (artifact) => {
+      const stored = await PUSHEEN_FEEDS.getWithMetadata(KV_ARTIFACT_PREFIX + artifact, "arrayBuffer");
+      return stored?.metadata || PUSHEEN_FEEDS.get(LEGACY_KV_METADATA_PREFIX + artifact, "json");
+    })
   );
   const timestamps = metadata
     .map((item) => item?.mirrored_at)
@@ -214,12 +228,10 @@ async function mirrorHealthSummary() {
 
 async function readMirroredArtifact(artifact) {
   if (typeof PUSHEEN_FEEDS === "undefined") return null;
-  const [body, metadata] = await Promise.all([
-    PUSHEEN_FEEDS.get(KV_ARTIFACT_PREFIX + artifact, "arrayBuffer"),
-    PUSHEEN_FEEDS.get(KV_METADATA_PREFIX + artifact, "json"),
-  ]);
-  if (!body || body.byteLength === 0) return null;
-  return { body, metadata };
+  const stored = await PUSHEEN_FEEDS.getWithMetadata(KV_ARTIFACT_PREFIX + artifact, "arrayBuffer");
+  if (!stored?.value || stored.value.byteLength === 0) return null;
+  const metadata = stored.metadata || await PUSHEEN_FEEDS.get(LEGACY_KV_METADATA_PREFIX + artifact, "json");
+  return { body: stored.value, metadata };
 }
 
 function artifactResponse(body, artifact, delivery, metadata) {
