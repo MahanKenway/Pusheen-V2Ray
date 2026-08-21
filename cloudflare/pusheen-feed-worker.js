@@ -38,22 +38,30 @@ const ARTIFACTS = {
   "dashboard": "monitoring/dashboard.html",
 };
 
-// Continuity artifacts are mirrored by Cron after each publication window.
-// The current-release pointer and its validated immutable manifest are refreshed
-// together. Remaining allowlisted artifacts are mirrored opportunistically on a
-// successful client request, avoiding needless KV writes while retaining a
-// last-known-good path for the continuity tier.
+// Continuity artifacts are mirrored only by bounded Cron refreshes, never by
+// client traffic. With a 30-minute Cron cadence, the 18 explicit artifacts plus
+// the release pointer and current immutable manifest cap worst-case KV writes at
+// 960 per day, below the free-plan daily limit. The current-release pointer and
+// its validated immutable manifest are refreshed together.
 const SCHEDULED_ARTIFACTS = [
+  "subscriptions/all.txt",
+  "subscriptions/reachable.txt",
+  "subscriptions/reachable-fast.txt",
+  "subscriptions/strict.txt",
   "subscriptions/resilient.txt",
   "subscriptions/outage.txt",
-  "subscriptions/strict.txt",
   "subscriptions/resilient.receipts.v1.json",
+  "subscriptions/resilient.manifest.v1.json",
   "subscriptions/outage.receipts.v1.json",
+  "subscriptions/outage.manifest.v1.json",
   "profiles/resilient-xray.json",
+  "profiles/resilient-xray.meta.v1.json",
   "profiles/outage-singbox.json",
+  "profiles/outage-singbox.meta.v1.json",
   "status.json",
   "monitoring/delivery-status.v1.json",
   "monitoring/slo-status.v1.json",
+  "monitoring/dashboard.html",
 ];
 
 addEventListener("fetch", (event) => {
@@ -97,7 +105,7 @@ async function handleRequest(request, ctx) {
     const body = await upstream.arrayBuffer();
     if (body.byteLength === 0) throw new Error("empty_upstream_artifact");
     const response = artifactResponse(body, artifact, "fresh-origin");
-    ctx.waitUntil(Promise.all([cache.put(cacheKey, response.clone()), mirrorArtifact(artifact, body)]));
+    ctx.waitUntil(cache.put(cacheKey, response.clone()));
     return request.method === "HEAD" ? headResponse(response) : response;
   } catch (error) {
     const mirrored = await readMirroredArtifact(artifact);
