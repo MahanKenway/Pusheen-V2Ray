@@ -1188,6 +1188,51 @@
       "settings": {
         "servers": [
           {
+            "address": "172.66.44.115",
+            "password": "$_qP4V4U26sb{04A",
+            "port": 2083
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "do-itfORYOU.PAGEs.deV"
+        }
+      },
+      "tag": "resilient-ba6caf6b51cebdb2"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.19.2.175",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.calmloud.com"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-f65c48aac02898ee"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "141.101.90.101",
             "password": "humanity",
             "port": 443
@@ -1533,6 +1578,30 @@
         }
       },
       "tag": "resilient-b57b9ce2e344e8ee"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "172.66.47.69",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.creationlong.org"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-860a0adf5e66c7c7"
     },
     {
       "protocol": "blackhole",

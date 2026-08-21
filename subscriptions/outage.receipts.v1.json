@@ -1,11 +1,11 @@
 {
   "by_protocol": {
-    "trojan": 4,
+    "trojan": 7,
     "vless": 24,
     "vmess": 9
   },
-  "count": 37,
-  "created_at": "2026-08-21T19:52:07.995790+00:00",
+  "count": 40,
+  "created_at": "2026-08-21T20:03:09.746230+00:00",
   "evidence": "recent successful TCP reachability with tighter anti-concentration policy",
   "max_evidence_age_hours": 72,
   "notice": "A receipt records why the item is eligible for this tier at publication time. It does not disclose hostnames, credentials, raw URIs, or guarantee availability from another network.",
@@ -165,6 +165,20 @@
       "transport_family": "vmess:ws:tls"
     },
     {
+      "id": "ba6caf6b51cebdb2",
+      "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
+      "latest_source_id": "ebrasha-trojan-probationary",
+      "protocol": "trojan",
+      "transport_family": "trojan:tcp:tls"
+    },
+    {
+      "id": "f65c48aac02898ee",
+      "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
+      "latest_source_id": "farid-iran-trojan-probationary",
+      "protocol": "trojan",
+      "transport_family": "trojan:ws:tls"
+    },
+    {
       "id": "977a1b201ad68e07",
       "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
       "latest_source_id": "farid-iran-trojan-probationary",
@@ -261,6 +275,13 @@
       "latest_source_id": "aggregator-merge",
       "protocol": "vmess",
       "transport_family": "vmess:ws:none"
+    },
+    {
+      "id": "860a0adf5e66c7c7",
+      "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
+      "latest_source_id": "farid-iran-trojan-probationary",
+      "protocol": "trojan",
+      "transport_family": "trojan:ws:tls"
     },
     {
       "id": "d18cd7006827d5ab",
