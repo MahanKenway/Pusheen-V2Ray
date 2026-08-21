@@ -12,7 +12,8 @@
 <p align="center">
   <a href="README.md">نسخهٔ فارسی</a> ·
   <a href="https://github.com/MahanKenway/Pusheen-V2Ray/actions">Automation status</a> ·
-  <a href="https://pusheen-feed-gateway.mahankenway.workers.dev/status.json">Live feed status</a>
+  <a href="https://pusheen-feed-gateway.mahankenway.workers.dev/status.json">Live feed status</a> ·
+  <a href="https://pusheen-feed-gateway.mahankenway.workers.dev/dashboard">SLO dashboard</a>
 </p>
 
 > Pusheen V2Ray is a free public project for publishing reviewed feeds. No feed guarantees connectivity on every network or at every time; test several entries in your client before relying on one.
@@ -98,6 +99,9 @@ Pusheen feeds are based on time-bound evidence from a specific validation vantag
 | Workflow history | [Actions](https://github.com/MahanKenway/Pusheen-V2Ray/actions) |
 | Gateway health | [health](https://pusheen-feed-gateway.mahankenway.workers.dev/health) |
 | Public feed status | [status.json](https://pusheen-feed-gateway.mahankenway.workers.dev/status.json) |
+| Delivery and SLO dashboard | [dashboard](https://pusheen-feed-gateway.mahankenway.workers.dev/dashboard) |
+| Sampled delivery data | [delivery-status.v1.json](https://pusheen-feed-gateway.mahankenway.workers.dev/delivery-status.v1.json) |
+| Public SLO and alert state | [slo-status.v1.json](https://pusheen-feed-gateway.mahankenway.workers.dev/slo-status.v1.json) |
 
 ## License and attribution
 

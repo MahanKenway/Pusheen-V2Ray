@@ -12,7 +12,8 @@
 <p align="center">
   <a href="README.en.md">English README</a> ·
   <a href="https://github.com/MahanKenway/Pusheen-V2Ray/actions">وضعیت اجرای خودکار</a> ·
-  <a href="https://pusheen-feed-gateway.mahankenway.workers.dev/status.json">وضعیت زندهٔ فیدها</a>
+  <a href="https://pusheen-feed-gateway.mahankenway.workers.dev/status.json">وضعیت زندهٔ فیدها</a> ·
+  <a href="https://pusheen-feed-gateway.mahankenway.workers.dev/dashboard">داشبورد SLO</a>
 </p>
 
 > Pusheen V2Ray یک پروژهٔ عمومی و رایگان برای انتشار فیدهای بررسی‌شده است. هیچ فیدی تضمین اتصال در همهٔ شبکه‌ها یا زمان‌ها نیست؛ قبل از استفاده، چند لینک را در کلاینت خود آزمایش کنید.
@@ -98,6 +99,9 @@
 | تاریخچهٔ workflowها | [Actions](https://github.com/MahanKenway/Pusheen-V2Ray/actions) |
 | Gateway health | [health](https://pusheen-feed-gateway.mahankenway.workers.dev/health) |
 | وضعیت عمومی فیدها | [status.json](https://pusheen-feed-gateway.mahankenway.workers.dev/status.json) |
+| داشبورد delivery و SLO | [dashboard](https://pusheen-feed-gateway.mahankenway.workers.dev/dashboard) |
+| دادهٔ sampled delivery | [delivery-status.v1.json](https://pusheen-feed-gateway.mahankenway.workers.dev/delivery-status.v1.json) |
+| وضعیت SLO و alertهای عمومی | [slo-status.v1.json](https://pusheen-feed-gateway.mahankenway.workers.dev/slo-status.v1.json) |
 
 ## English
 
