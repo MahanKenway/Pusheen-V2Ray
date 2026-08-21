@@ -420,6 +420,21 @@
     },
     {
       "network": "tcp",
+      "server": "172.67.202.17",
+      "server_port": 2095,
+      "tag": "outage-12aea11f5d6b2cc0",
+      "transport": {
+        "headers": {
+          "Host": "fuckfangbinxing.pusytroller.gq"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40"
+    },
+    {
+      "network": "tcp",
       "password": "Aimer",
       "server": "167.68.4.199",
       "server_port": 2053,
@@ -552,21 +567,6 @@
       "uuid": "4b5e4565-322f-4223-a891-78a84f189726"
     },
     {
-      "network": "tcp",
-      "server": "104.16.72.21",
-      "server_port": 8880,
-      "tag": "outage-4670839c89bb967c",
-      "transport": {
-        "headers": {
-          "Host": "royal-shape-3771.93-728.workers.dev"
-        },
-        "path": "/pyip",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "26fb53e4-fd49-4b34-b605-b6cc1b1a06a8"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -595,6 +595,7 @@
         "outage-019fd71da07bdf94",
         "outage-01b85d5046a402d3",
         "outage-bd89eac4d9977831",
+        "outage-12aea11f5d6b2cc0",
         "outage-ea9026764e87f710",
         "outage-d35e553bae001534",
         "outage-43d239e3cb104907",
@@ -602,8 +603,7 @@
         "outage-a17d8298b4c22b93",
         "outage-4f72b4f5393bce7f",
         "outage-227a5613c8cafb61",
-        "outage-b57b9ce2e344e8ee",
-        "outage-4670839c89bb967c"
+        "outage-b57b9ce2e344e8ee"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
