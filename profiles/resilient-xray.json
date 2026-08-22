@@ -137,6 +137,60 @@
       "settings": {
         "vnext": [
           {
+            "address": "162.159.129.17",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "7a5a4624-df8d-4955-bccc-b3fa6161411f"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/T,E,L,E,G,R,A,M,X,V,2,R,A,Y?ed=2560"
+        }
+      },
+      "tag": "resilient-cfbd7a84f7496a61"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.18.37.228",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "josni.hoyes.cloudns.ch"
+        },
+        "wsSettings": {
+          "path": "/?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512"
+        }
+      },
+      "tag": "resilient-1f115a81e4142280"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "216.24.57.40",
             "port": 8880,
             "users": [
@@ -301,35 +355,6 @@
         }
       },
       "tag": "resilient-cca228fef78b24c9"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.18.37.228",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "hhlfy.twiladaphne.ndjp.net"
-        },
-        "wsSettings": {
-          "path": "?ed=512"
-        }
-      },
-      "tag": "resilient-e1b2bf6dff05b3f0"
     },
     {
       "protocol": "vless",
@@ -1421,35 +1446,6 @@
       "tag": "resilient-073b6bc00ecc1eea"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.64.155.209",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "4ff70740-8c80-48ae-985f-2afe4924e908"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "pubb.clnahanpnln.workers.dev"
-        },
-        "wsSettings": {
-          "path": "/sync"
-        }
-      },
-      "tag": "resilient-2f6f80b898615097"
-    },
-    {
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -1506,6 +1502,30 @@
         }
       },
       "tag": "resilient-25654f2adc9c9c9f"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.16.174.44",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.ignitelimit.com"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-9b1a8f05d9537365"
     },
     {
       "protocol": "trojan",
@@ -1602,30 +1622,6 @@
         }
       },
       "tag": "resilient-fce290bc714c2b3b"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.18.12.149",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.calmlunch.com"
-        },
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-c46197941b353fae"
     },
     {
       "protocol": "blackhole",
