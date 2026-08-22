@@ -43,6 +43,36 @@
     },
     {
       "network": "tcp",
+      "server": "216.24.57.40",
+      "server_port": 8880,
+      "tag": "outage-7a9c7b3fb773270a",
+      "transport": {
+        "headers": {
+          "Host": "vms.lifetime28.workers.dev"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    },
+    {
+      "network": "tcp",
+      "server": "172.67.137.11",
+      "server_port": 2082,
+      "tag": "outage-8668b625eadcb0f8",
+      "transport": {
+        "headers": {
+          "Host": "PbDpGsCo6.HaMeCi-dSsTeMaNe.oRg"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "416f18ec-11f3-4648-9693-8c6480d0662d"
+    },
+    {
+      "network": "tcp",
       "password": "humanity",
       "server": "104.18.32.47",
       "server_port": 443,
@@ -553,21 +583,6 @@
     },
     {
       "network": "tcp",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "tag": "outage-eb18f69f676d2cc9",
-      "transport": {
-        "headers": {
-          "Host": "josni.hoyes.cloudns.ch"
-        },
-        "path": "musiclovers85_musiclovers85?ed=512",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "83afd88f-200f-4d89-bfc7-66eff160c1d8"
-    },
-    {
-      "network": "tcp",
       "server": "162.159.138.232",
       "server_port": 80,
       "tag": "outage-f0135aa56648578b",
@@ -614,21 +629,6 @@
     },
     {
       "network": "tcp",
-      "server": "172.67.202.17",
-      "server_port": 2095,
-      "tag": "outage-12aea11f5d6b2cc0",
-      "transport": {
-        "headers": {
-          "Host": "fuckfangbinxing.pusytroller.gq"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40"
-    },
-    {
-      "network": "tcp",
       "password": "Aimer",
       "server": "167.68.4.199",
       "server_port": 2053,
@@ -643,12 +643,31 @@
       "type": "trojan"
     },
     {
+      "alter_id": 0,
+      "network": "tcp",
+      "security": "auto",
+      "server": "104.17.101.35",
+      "server_port": 443,
+      "tag": "outage-d35e553bae001534",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "path": "/wss13889",
+        "type": "ws"
+      },
+      "type": "vmess",
+      "uuid": "824c58b1-65ba-4680-a609-663a000dbb92"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
         "outage-4353aeaef5c3670d",
         "outage-1ff267ae130cec9c",
+        "outage-7a9c7b3fb773270a",
+        "outage-8668b625eadcb0f8",
         "outage-2cf32a90dd247779",
         "outage-641240d156aa2558",
         "outage-f81899cdec297444",
@@ -677,12 +696,11 @@
         "outage-1634e2ff5d67077a",
         "outage-99909b012335b4dd",
         "outage-25654f2adc9c9c9f",
-        "outage-eb18f69f676d2cc9",
         "outage-f0135aa56648578b",
         "outage-2d5ccae8dd73c458",
         "outage-ba6caf6b51cebdb2",
-        "outage-12aea11f5d6b2cc0",
-        "outage-ea9026764e87f710"
+        "outage-ea9026764e87f710",
+        "outage-d35e553bae001534"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
