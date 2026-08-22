@@ -1184,6 +1184,54 @@
       "tag": "resilient-25654f2adc9c9c9f"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.18.152.225",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.ignitelimit.com"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-2354f1901e09ae70"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.16.174.121",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.ignitelimit.com"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-141cb3ca0f83a485"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1590,59 +1638,6 @@
         }
       },
       "tag": "resilient-bc474c6fb5ad22a2"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.16.183.101",
-            "password": "a0514d9b-d109-47fd-b173-1e7f83268f21",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "tws23.kallepache.store"
-        },
-        "wsSettings": {
-          "path": "/update"
-        }
-      },
-      "tag": "resilient-a17d8298b4c22b93"
-    },
-    {
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.16.180.79",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "id": "43AE625A-F929-4B61-97AD-7CA94C1BCAC0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false
-        },
-        "wsSettings": {
-          "path": "/speedtest"
-        }
-      },
-      "tag": "resilient-4f72b4f5393bce7f"
     },
     {
       "protocol": "blackhole",
