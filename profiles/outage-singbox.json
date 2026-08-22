@@ -544,9 +544,24 @@
     },
     {
       "network": "tcp",
-      "server": "104.16.72.50",
+      "server": "188.114.98.0",
+      "server_port": 2082,
+      "tag": "outage-1ae4279cbbd2f187",
+      "transport": {
+        "headers": {
+          "Host": "DOFF.mehrsazi.ir"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "f0ff4425-8c26-4d81-8662-f34593060c8d"
+    },
+    {
+      "network": "tcp",
+      "server": "45.130.125.207",
       "server_port": 443,
-      "tag": "outage-012ff4242a402d63",
+      "tag": "outage-0672049f54f4a57b",
       "tls": {
         "enabled": true,
         "server_name": "t1s1.rittbo.kdns.fr"
@@ -563,22 +578,22 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.159",
+      "server": "104.16.72.50",
       "server_port": 443,
-      "tag": "outage-fd593ca6d3be97f6",
+      "tag": "outage-012ff4242a402d63",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com"
+        "server_name": "t1s1.rittbo.kdns.fr"
       },
       "transport": {
         "headers": {
-          "Host": "ssl.fastly.com"
+          "Host": "t1s1.rittbo.kdns.fr"
         },
-        "path": "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER",
+        "path": "/fp",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "fe4ca690-6fd9-4471-9a9f-94528084d180"
+      "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59"
     },
     {
       "network": "tcp",
@@ -642,18 +657,6 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "!d8jYnLU)",
-      "server": "172.66.46.215",
-      "server_port": 8443,
-      "tag": "outage-c927c9121b49a902",
-      "tls": {
-        "enabled": true,
-        "server_name": "K2ZFG80-8-0jEH9h-5wTKt43R92VJi0P.pageS.dEV"
-      },
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -688,13 +691,13 @@
         "outage-d1244412c1798a64",
         "outage-9f5f58f64211a2c8",
         "outage-05cd1db3c73baca6",
+        "outage-1ae4279cbbd2f187",
+        "outage-0672049f54f4a57b",
         "outage-012ff4242a402d63",
-        "outage-fd593ca6d3be97f6",
         "outage-f0135aa56648578b",
         "outage-2d5ccae8dd73c458",
         "outage-ba6caf6b51cebdb2",
-        "outage-ea9026764e87f710",
-        "outage-c927c9121b49a902"
+        "outage-ea9026764e87f710"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
