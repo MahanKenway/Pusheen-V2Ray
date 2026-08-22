@@ -384,6 +384,25 @@
     },
     {
       "network": "tcp",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "tag": "outage-0f98367407056b17",
+      "tls": {
+        "enabled": true,
+        "server_name": "zaintest.vuclip.com.cyylr.eu.cc"
+      },
+      "transport": {
+        "headers": {
+          "Host": "zaintest.vuclip.com.cyylr.eu.cc"
+        },
+        "path": "/in-do",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "559ab675-567f-4d61-a742-877bfd51d87c"
+    },
+    {
+      "network": "tcp",
       "server": "8.35.211.43",
       "server_port": 2053,
       "tag": "outage-b8716e36ea6f5561",
@@ -522,18 +541,6 @@
       },
       "type": "vless",
       "uuid": "2acde116-5949-48d8-a1e6-60a1d2547deb"
-    },
-    {
-      "network": "tcp",
-      "server": "172.67.211.177",
-      "server_port": 8880,
-      "tag": "outage-1634e2ff5d67077a",
-      "transport": {
-        "path": "/pyip=ProxyIP.US.CMLiussss.net",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "ef770523-8eb5-403f-9e95-06b328719c87"
     },
     {
       "alter_id": 0,
@@ -679,6 +686,7 @@
         "outage-d3fabcb8f794ac78",
         "outage-632d315afaafb21a",
         "outage-06496f48094b1db6",
+        "outage-0f98367407056b17",
         "outage-b8716e36ea6f5561",
         "outage-bac132a941275d8f",
         "outage-affb9bb827bd0c7e",
@@ -687,7 +695,6 @@
         "outage-d1244412c1798a64",
         "outage-9f5f58f64211a2c8",
         "outage-05cd1db3c73baca6",
-        "outage-1634e2ff5d67077a",
         "outage-99909b012335b4dd",
         "outage-25654f2adc9c9c9f",
         "outage-012ff4242a402d63",
