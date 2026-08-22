@@ -305,6 +305,25 @@
     },
     {
       "network": "tcp",
+      "server": "172.64.150.28",
+      "server_port": 443,
+      "tag": "outage-9f5f58f64211a2c8",
+      "tls": {
+        "enabled": true,
+        "server_name": "hhlfy.twiladaphne.ndjp.net"
+      },
+      "transport": {
+        "headers": {
+          "Host": "hhlfy.twiladaphne.ndjp.net"
+        },
+        "path": "/fp",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+    },
+    {
+      "network": "tcp",
       "server": "104.16.106.213",
       "server_port": 8880,
       "tag": "outage-91d8b6009afb400f",
@@ -351,6 +370,40 @@
       },
       "type": "vmess",
       "uuid": "b3a21def-5fcc-47a8-a6a0-a34e29d5288a"
+    },
+    {
+      "network": "tcp",
+      "server": "185.176.26.2",
+      "server_port": 443,
+      "tag": "outage-cbfbb175699a5339",
+      "tls": {
+        "enabled": true,
+        "server_name": "support.zoom.us.yxls.eu.cc"
+      },
+      "transport": {
+        "headers": {
+          "Host": "support.zoom.us.yxls.eu.cc"
+        },
+        "path": "/sg-amz",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "Telegram\ud83c\udde8\ud83c\uddf3@WangCai2"
+    },
+    {
+      "network": "tcp",
+      "server": "104.18.1.125",
+      "server_port": 2082,
+      "tag": "outage-d05806837a747e55",
+      "transport": {
+        "headers": {
+          "Host": "PbDpGsCo6.HaMeCi-dSsTeMaNe.oRg"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "416f18ec-11f3-4648-9693-8c6480d0662d"
     },
     {
       "network": "tcp",
@@ -499,44 +552,6 @@
     },
     {
       "network": "tcp",
-      "server": "69.84.182.128",
-      "server_port": 443,
-      "tag": "outage-5be447ac25368292",
-      "tls": {
-        "enabled": true,
-        "server_name": "hki.ylks.link"
-      },
-      "transport": {
-        "headers": {
-          "Host": "hki.ylks.link"
-        },
-        "path": "/?proxyip",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a"
-    },
-    {
-      "network": "tcp",
-      "server": "104.27.66.214",
-      "server_port": 8443,
-      "tag": "outage-cbcc29fd6c3f73b3",
-      "tls": {
-        "enabled": true,
-        "server_name": "chopin.adaspoloandco.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "chopin.adaspoloandco.com"
-        },
-        "path": "/download.php",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "f798a2c4-c51b-409d-b349-ca8455b36796"
-    },
-    {
-      "network": "tcp",
       "server": "104.21.94.168",
       "server_port": 8080,
       "tag": "outage-019fd71da07bdf94",
@@ -668,23 +683,6 @@
       "uuid": "43AE625A-F929-4B61-97AD-7CA94C1BCAC0"
     },
     {
-      "alter_id": 0,
-      "network": "tcp",
-      "security": "auto",
-      "server": "104.16.176.44",
-      "server_port": 443,
-      "tag": "outage-227a5613c8cafb61",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "path": "/vmess",
-        "type": "ws"
-      },
-      "type": "vmess",
-      "uuid": "2cd39102-0799-4c61-abb6-2e7a258f0397"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -705,9 +703,12 @@
         "outage-1e59a5c7653d8e63",
         "outage-97a71dad047a6370",
         "outage-d1244412c1798a64",
+        "outage-9f5f58f64211a2c8",
         "outage-91d8b6009afb400f",
         "outage-99909b012335b4dd",
         "outage-25654f2adc9c9c9f",
+        "outage-cbfbb175699a5339",
+        "outage-d05806837a747e55",
         "outage-aacf2f73a203abde",
         "outage-2d2c6fbad7cbd874",
         "outage-785cd3a0fbd5e8f2",
@@ -716,8 +717,6 @@
         "outage-ba6caf6b51cebdb2",
         "outage-f65c48aac02898ee",
         "outage-977a1b201ad68e07",
-        "outage-5be447ac25368292",
-        "outage-cbcc29fd6c3f73b3",
         "outage-019fd71da07bdf94",
         "outage-01b85d5046a402d3",
         "outage-ea9026764e87f710",
@@ -725,8 +724,7 @@
         "outage-43d239e3cb104907",
         "outage-bc474c6fb5ad22a2",
         "outage-a17d8298b4c22b93",
-        "outage-4f72b4f5393bce7f",
-        "outage-227a5613c8cafb61"
+        "outage-4f72b4f5393bce7f"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
