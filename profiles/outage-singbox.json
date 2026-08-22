@@ -44,6 +44,63 @@
     {
       "network": "tcp",
       "password": "humanity",
+      "server": "188.114.96.3",
+      "server_port": 443,
+      "tag": "outage-256dae30b3ac0ec7",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.multiplydose.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.multiplydose.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "mitivpn",
+      "server": "27.50.48.49",
+      "server_port": 443,
+      "tag": "outage-d12cda71f7533a84",
+      "tls": {
+        "enabled": true,
+        "server_name": "gamingdll.ir"
+      },
+      "transport": {
+        "headers": {
+          "Host": "gamingdll.ir"
+        },
+        "path": "/index.html/ed=mitivpn",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
+      "server": "45.130.125.32",
+      "server_port": 443,
+      "tag": "outage-0e1011adb0943ea8",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmloud.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.calmloud.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
       "server": "172.67.149.60",
       "server_port": 443,
       "tag": "outage-dbdadc1defc27395",
@@ -354,6 +411,25 @@
     },
     {
       "network": "tcp",
+      "password": "f922fa0f-3311-4368-85ff-cf65e727c854",
+      "server": "104.16.72.41",
+      "server_port": 443,
+      "tag": "outage-1cbb0413ae508117",
+      "tls": {
+        "enabled": true,
+        "server_name": "space.byu.id.yxls.eu.cc"
+      },
+      "transport": {
+        "headers": {
+          "Host": "space.byu.id.yxls.eu.cc"
+        },
+        "path": "/br-orcl",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "humanity",
       "server": "104.18.152.225",
       "server_port": 443,
@@ -502,25 +578,6 @@
     },
     {
       "network": "tcp",
-      "password": "humanity",
-      "server": "141.193.213.21",
-      "server_port": 443,
-      "tag": "outage-1e04bb2723d0e4ee",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmloud.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.calmloud.com"
-        },
-        "path": "/assignment",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": "$_qP4V4U26sb{04A",
       "server": "172.66.44.115",
       "server_port": 2083,
@@ -528,44 +585,6 @@
       "tls": {
         "enabled": true,
         "server_name": "do-itfORYOU.PAGEs.deV"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "humanity",
-      "server": "104.19.2.175",
-      "server_port": 443,
-      "tag": "outage-f65c48aac02898ee",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmloud.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.calmloud.com"
-        },
-        "path": "/assignment",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "humanity",
-      "server": "141.101.90.101",
-      "server_port": 443,
-      "tag": "outage-977a1b201ad68e07",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.ignitelimit.com"
-        },
-        "path": "/assignment",
-        "type": "ws"
       },
       "type": "trojan"
     },
@@ -670,31 +689,15 @@
       "uuid": "824c58b1-65ba-4680-a609-663a000dbb92"
     },
     {
-      "network": "tcp",
-      "password": "a0514d9b-d109-47fd-b173-1e7f83268f21",
-      "server": "104.16.183.101",
-      "server_port": 443,
-      "tag": "outage-a17d8298b4c22b93",
-      "tls": {
-        "enabled": true,
-        "server_name": "tws23.kallepache.store"
-      },
-      "transport": {
-        "headers": {
-          "Host": "tws23.kallepache.store"
-        },
-        "path": "/update",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
         "outage-4353aeaef5c3670d",
         "outage-1ff267ae130cec9c",
+        "outage-256dae30b3ac0ec7",
+        "outage-d12cda71f7533a84",
+        "outage-0e1011adb0943ea8",
         "outage-dbdadc1defc27395",
         "outage-d3fabcb8f794ac78",
         "outage-632d315afaafb21a",
@@ -712,6 +715,7 @@
         "outage-91d8b6009afb400f",
         "outage-99909b012335b4dd",
         "outage-25654f2adc9c9c9f",
+        "outage-1cbb0413ae508117",
         "outage-2354f1901e09ae70",
         "outage-141cb3ca0f83a485",
         "outage-cbfbb175699a5339",
@@ -720,17 +724,13 @@
         "outage-2d2c6fbad7cbd874",
         "outage-785cd3a0fbd5e8f2",
         "outage-2d5ccae8dd73c458",
-        "outage-1e04bb2723d0e4ee",
         "outage-ba6caf6b51cebdb2",
-        "outage-f65c48aac02898ee",
-        "outage-977a1b201ad68e07",
         "outage-5be447ac25368292",
         "outage-019fd71da07bdf94",
         "outage-ea9026764e87f710",
         "outage-d35e553bae001534",
         "outage-43d239e3cb104907",
-        "outage-bc474c6fb5ad22a2",
-        "outage-a17d8298b4c22b93"
+        "outage-bc474c6fb5ad22a2"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
