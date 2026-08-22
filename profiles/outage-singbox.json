@@ -355,6 +355,25 @@
     {
       "network": "tcp",
       "password": "humanity",
+      "server": "130.250.137.171",
+      "server_port": 443,
+      "tag": "outage-aacf2f73a203abde",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.ignitelimit.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
       "server": "104.26.14.137",
       "server_port": 443,
       "tag": "outage-2d2c6fbad7cbd874",
@@ -666,20 +685,6 @@
       "uuid": "2cd39102-0799-4c61-abb6-2e7a258f0397"
     },
     {
-      "alter_id": 0,
-      "network": "tcp",
-      "security": "auto",
-      "server": "104.16.108.100",
-      "server_port": 8880,
-      "tag": "outage-b57b9ce2e344e8ee",
-      "transport": {
-        "path": "/RpT6kZjkw45EenmTcDYWs",
-        "type": "ws"
-      },
-      "type": "vmess",
-      "uuid": "4b5e4565-322f-4223-a891-78a84f189726"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -703,6 +708,7 @@
         "outage-91d8b6009afb400f",
         "outage-99909b012335b4dd",
         "outage-25654f2adc9c9c9f",
+        "outage-aacf2f73a203abde",
         "outage-2d2c6fbad7cbd874",
         "outage-785cd3a0fbd5e8f2",
         "outage-2d5ccae8dd73c458",
@@ -720,8 +726,7 @@
         "outage-bc474c6fb5ad22a2",
         "outage-a17d8298b4c22b93",
         "outage-4f72b4f5393bce7f",
-        "outage-227a5613c8cafb61",
-        "outage-b57b9ce2e344e8ee"
+        "outage-227a5613c8cafb61"
       ],
       "tag": "outage-auto",
       "tolerance": 200,

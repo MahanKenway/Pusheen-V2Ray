@@ -1134,6 +1134,30 @@
       "settings": {
         "servers": [
           {
+            "address": "130.250.137.171",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.ignitelimit.com"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-aacf2f73a203abde"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "104.26.14.137",
             "password": "humanity",
             "port": 443
@@ -1619,35 +1643,6 @@
         }
       },
       "tag": "resilient-4f72b4f5393bce7f"
-    },
-    {
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.16.176.44",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "id": "2cd39102-0799-4c61-abb6-2e7a258f0397",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false
-        },
-        "wsSettings": {
-          "path": "/vmess"
-        }
-      },
-      "tag": "resilient-227a5613c8cafb61"
     },
     {
       "protocol": "blackhole",
