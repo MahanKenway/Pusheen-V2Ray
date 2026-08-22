@@ -44,6 +44,44 @@
     {
       "network": "tcp",
       "password": "humanity",
+      "server": "104.18.32.47",
+      "server_port": 443,
+      "tag": "outage-2cf32a90dd247779",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.gossipglove.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.gossipglove.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "bpb-trojan",
+      "server": "185.176.24.2",
+      "server_port": 443,
+      "tag": "outage-641240d156aa2558",
+      "tls": {
+        "enabled": true,
+        "server_name": "403B3611-99bc-43B7-88d7-26ed5d0825a9-3.PaGes.deV"
+      },
+      "transport": {
+        "headers": {
+          "Host": "403B3611-99bc-43B7-88d7-26ed5d0825a9-3.PaGes.deV"
+        },
+        "path": "/tr9vfP2lflALkJrNsQ?ed=2560",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
       "server": "45.130.125.75",
       "server_port": 443,
       "tag": "outage-f81899cdec297444",
@@ -515,44 +553,6 @@
     },
     {
       "network": "tcp",
-      "password": "humanity",
-      "server": "104.18.12.149",
-      "server_port": 443,
-      "tag": "outage-c46197941b353fae",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.calmlunch.com"
-        },
-        "path": "/assignment",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "humanity",
-      "server": "45.80.111.7",
-      "server_port": 443,
-      "tag": "outage-57a8fb397baaab42",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.calmlunch.com"
-        },
-        "path": "/assignment",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "server": "188.114.97.6",
       "server_port": 8080,
       "tag": "outage-eb18f69f676d2cc9",
@@ -649,6 +649,8 @@
       "outbounds": [
         "outage-4353aeaef5c3670d",
         "outage-1ff267ae130cec9c",
+        "outage-2cf32a90dd247779",
+        "outage-641240d156aa2558",
         "outage-f81899cdec297444",
         "outage-cca228fef78b24c9",
         "outage-e1b2bf6dff05b3f0",
@@ -675,8 +677,6 @@
         "outage-1634e2ff5d67077a",
         "outage-99909b012335b4dd",
         "outage-25654f2adc9c9c9f",
-        "outage-c46197941b353fae",
-        "outage-57a8fb397baaab42",
         "outage-eb18f69f676d2cc9",
         "outage-f0135aa56648578b",
         "outage-2d5ccae8dd73c458",
