@@ -304,6 +304,21 @@
       "uuid": "58c1b245-2ea0-40b9-b512-bd2bbe3cbe3f"
     },
     {
+      "network": "tcp",
+      "server": "104.16.106.213",
+      "server_port": 8880,
+      "tag": "outage-91d8b6009afb400f",
+      "transport": {
+        "headers": {
+          "Host": "autumn-snow-735a.175-9d9.workers.dev"
+        },
+        "path": "/pyip=ProxyIP.US.CMLiussss.net",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "e43ca713-a646-4406-a4d5-1e7bad20e7da"
+    },
+    {
       "alter_id": 0,
       "network": "tcp",
       "security": "auto",
@@ -665,18 +680,6 @@
       "uuid": "4b5e4565-322f-4223-a891-78a84f189726"
     },
     {
-      "network": "tcp",
-      "password": "!d8jYnLU)",
-      "server": "172.66.46.215",
-      "server_port": 8443,
-      "tag": "outage-c927c9121b49a902",
-      "tls": {
-        "enabled": true,
-        "server_name": "K2ZFG80-8-0jEH9h-5wTKt43R92VJi0P.pageS.dEV"
-      },
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -697,6 +700,7 @@
         "outage-1e59a5c7653d8e63",
         "outage-97a71dad047a6370",
         "outage-d1244412c1798a64",
+        "outage-91d8b6009afb400f",
         "outage-99909b012335b4dd",
         "outage-25654f2adc9c9c9f",
         "outage-2d2c6fbad7cbd874",
@@ -717,8 +721,7 @@
         "outage-a17d8298b4c22b93",
         "outage-4f72b4f5393bce7f",
         "outage-227a5613c8cafb61",
-        "outage-b57b9ce2e344e8ee",
-        "outage-c927c9121b49a902"
+        "outage-b57b9ce2e344e8ee"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
