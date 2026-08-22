@@ -43,6 +43,36 @@
     },
     {
       "network": "tcp",
+      "server": "104.17.27.204",
+      "server_port": 80,
+      "tag": "outage-01744dfe10efeacf",
+      "transport": {
+        "headers": {
+          "Host": "us3.rtacg.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a"
+    },
+    {
+      "network": "tcp",
+      "server": "104.16.247.115",
+      "server_port": 80,
+      "tag": "outage-58c418f2b2ed2b32",
+      "transport": {
+        "headers": {
+          "Host": "us3.rtacg.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a"
+    },
+    {
+      "network": "tcp",
       "server": "162.159.129.17",
       "server_port": 80,
       "tag": "outage-cfbd7a84f7496a61",
@@ -354,44 +384,6 @@
     },
     {
       "network": "tcp",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "tag": "outage-0f98367407056b17",
-      "tls": {
-        "enabled": true,
-        "server_name": "zaintest.vuclip.com.cyylr.eu.cc"
-      },
-      "transport": {
-        "headers": {
-          "Host": "zaintest.vuclip.com.cyylr.eu.cc"
-        },
-        "path": "/in-do",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "559ab675-567f-4d61-a742-877bfd51d87c"
-    },
-    {
-      "network": "tcp",
-      "server": "172.66.44.97",
-      "server_port": 443,
-      "tag": "outage-107dab84adebbb4b",
-      "tls": {
-        "enabled": true,
-        "server_name": "josni.hoyes.cloudns.ch"
-      },
-      "transport": {
-        "headers": {
-          "Host": "josni.hoyes.cloudns.ch"
-        },
-        "path": "musiclovers85_musiclovers85?ed=512",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "83afd88f-200f-4d89-bfc7-66eff160c1d8"
-    },
-    {
-      "network": "tcp",
       "server": "8.35.211.43",
       "server_port": 2053,
       "tag": "outage-b8716e36ea6f5561",
@@ -598,6 +590,25 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "tag": "outage-fd593ca6d3be97f6",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "fe4ca690-6fd9-4471-9a9f-94528084d180"
+    },
+    {
+      "network": "tcp",
       "server": "162.159.138.232",
       "server_port": 80,
       "tag": "outage-f0135aa56648578b",
@@ -643,27 +654,14 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "Aimer",
-      "server": "167.68.4.199",
-      "server_port": 2053,
-      "tag": "outage-ea9026764e87f710",
-      "transport": {
-        "headers": {
-          "Host": "epge.muarua.filegear-sg.me"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
         "outage-4353aeaef5c3670d",
         "outage-1ff267ae130cec9c",
+        "outage-01744dfe10efeacf",
+        "outage-58c418f2b2ed2b32",
         "outage-cfbd7a84f7496a61",
         "outage-1f115a81e4142280",
         "outage-7a9c7b3fb773270a",
@@ -681,8 +679,6 @@
         "outage-d3fabcb8f794ac78",
         "outage-632d315afaafb21a",
         "outage-06496f48094b1db6",
-        "outage-0f98367407056b17",
-        "outage-107dab84adebbb4b",
         "outage-b8716e36ea6f5561",
         "outage-bac132a941275d8f",
         "outage-affb9bb827bd0c7e",
@@ -695,10 +691,10 @@
         "outage-99909b012335b4dd",
         "outage-25654f2adc9c9c9f",
         "outage-012ff4242a402d63",
+        "outage-fd593ca6d3be97f6",
         "outage-f0135aa56648578b",
         "outage-2d5ccae8dd73c458",
-        "outage-ba6caf6b51cebdb2",
-        "outage-ea9026764e87f710"
+        "outage-ba6caf6b51cebdb2"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
