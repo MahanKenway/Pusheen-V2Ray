@@ -43,6 +43,25 @@
     },
     {
       "network": "tcp",
+      "password": "ZJU29smXwp",
+      "server": "172.67.68.87",
+      "server_port": 2053,
+      "tag": "outage-c055f20fbfd71b00",
+      "tls": {
+        "enabled": true,
+        "server_name": "Web2.teama.tk"
+      },
+      "transport": {
+        "headers": {
+          "Host": "Web2.teama.tk"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "humanity",
       "server": "188.114.96.3",
       "server_port": 443,
@@ -411,6 +430,21 @@
     },
     {
       "network": "tcp",
+      "server": "162.159.138.232",
+      "server_port": 80,
+      "tag": "outage-f0135aa56648578b",
+      "transport": {
+        "headers": {
+          "Host": "zula.irsnappfood.irdgkala.comdivar.irvarzesh313.ir.shopshirvan.ir"
+        },
+        "path": "/gra",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "fc486fd2-b9fd-4d12-b878-11e27785e300"
+    },
+    {
+      "network": "tcp",
       "password": "f922fa0f-3311-4368-85ff-cf65e727c854",
       "server": "104.16.72.41",
       "server_port": 443,
@@ -540,25 +574,6 @@
     },
     {
       "network": "tcp",
-      "password": "dns68",
-      "server": "199.68.156.69",
-      "server_port": 443,
-      "tag": "outage-785cd3a0fbd5e8f2",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.putata.us.kg"
-      },
-      "transport": {
-        "headers": {
-          "Host": "trojan.putata.us.kg"
-        },
-        "path": "/?ed=2560",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": ":bC5^lakx>$d",
       "server": "172.66.45.9",
       "server_port": 443,
@@ -672,29 +687,13 @@
       "uuid": "824c58b1-65ba-4680-a609-663a000dbb92"
     },
     {
-      "alter_id": 0,
-      "network": "tcp",
-      "security": "auto",
-      "server": "104.16.219.230",
-      "server_port": 443,
-      "tag": "outage-bc474c6fb5ad22a2",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "path": "/wss13889",
-        "type": "ws"
-      },
-      "type": "vmess",
-      "uuid": "824c58b1-65ba-4680-a609-663a000dbb92"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
         "outage-4353aeaef5c3670d",
         "outage-1ff267ae130cec9c",
+        "outage-c055f20fbfd71b00",
         "outage-256dae30b3ac0ec7",
         "outage-d12cda71f7533a84",
         "outage-0e1011adb0943ea8",
@@ -715,6 +714,7 @@
         "outage-91d8b6009afb400f",
         "outage-99909b012335b4dd",
         "outage-25654f2adc9c9c9f",
+        "outage-f0135aa56648578b",
         "outage-1cbb0413ae508117",
         "outage-2354f1901e09ae70",
         "outage-141cb3ca0f83a485",
@@ -722,15 +722,13 @@
         "outage-d05806837a747e55",
         "outage-aacf2f73a203abde",
         "outage-2d2c6fbad7cbd874",
-        "outage-785cd3a0fbd5e8f2",
         "outage-2d5ccae8dd73c458",
         "outage-ba6caf6b51cebdb2",
         "outage-5be447ac25368292",
         "outage-019fd71da07bdf94",
         "outage-ea9026764e87f710",
         "outage-d35e553bae001534",
-        "outage-43d239e3cb104907",
-        "outage-bc474c6fb5ad22a2"
+        "outage-43d239e3cb104907"
       ],
       "tag": "outage-auto",
       "tolerance": 200,

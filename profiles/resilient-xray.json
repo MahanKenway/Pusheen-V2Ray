@@ -137,6 +137,30 @@
       "settings": {
         "servers": [
           {
+            "address": "172.67.68.87",
+            "password": "ZJU29smXwp",
+            "port": 2053
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "Web2.teama.tk"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-c055f20fbfd71b00"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "188.114.96.3",
             "password": "humanity",
             "port": 443
@@ -1202,6 +1226,31 @@
       "tag": "resilient-25654f2adc9c9c9f"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "162.159.138.232",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "fc486fd2-b9fd-4d12-b878-11e27785e300"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/gra"
+        }
+      },
+      "tag": "resilient-f0135aa56648578b"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1573,60 +1622,6 @@
         }
       },
       "tag": "resilient-cbcc29fd6c3f73b3"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.21.94.168",
-            "port": 8080,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "78c28b24-01f0-4ab3-9e1d-d7634c52beea"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "SHHPROXY?ed=8080"
-        }
-      },
-      "tag": "resilient-019fd71da07bdf94"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.16.72.101",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "14b59caf-a196-4ec2-8c70-c7b388062f5b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "vangoghhh.info"
-        },
-        "wsSettings": {
-          "path": "/rdfgtws"
-        }
-      },
-      "tag": "resilient-cb8d09b26e0be0d0"
     },
     {
       "protocol": "blackhole",
