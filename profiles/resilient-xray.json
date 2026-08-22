@@ -1442,64 +1442,6 @@
       "tag": "resilient-603b72e69953a153"
     },
     {
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.16.91.78",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "id": "F3E36B53-E75E-48C0-B9F1-F918F397E996",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false
-        },
-        "wsSettings": {
-          "path": "/speedtest"
-        }
-      },
-      "tag": "resilient-99909b012335b4dd"
-    },
-    {
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.16.8.3",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "id": "b3a21def-5fcc-47a8-a6a0-a34e29d5288a",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false
-        },
-        "wsSettings": {
-          "path": "/wss51068"
-        }
-      },
-      "tag": "resilient-25654f2adc9c9c9f"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1618,6 +1560,54 @@
         }
       },
       "tag": "resilient-8bd3952de6fc3930"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.18.11.110",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.multiplydose.com"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-0853e289af765ba5"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.20.6.134",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.calmlunch.com"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-fce290bc714c2b3b"
     },
     {
       "protocol": "blackhole",
