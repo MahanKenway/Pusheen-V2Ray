@@ -1504,6 +1504,30 @@
       "settings": {
         "servers": [
           {
+            "address": "172.64.152.23",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.calmlunch.com"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-e4abfe05a73e5166"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "165.215.250.14",
             "password": "humanity",
             "port": 443
@@ -1546,30 +1570,6 @@
         }
       },
       "tag": "resilient-9b1a8f05d9537365"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "172.64.152.23",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.gossipglove.com"
-        },
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-a62d59b58037b1cf"
     },
     {
       "protocol": "trojan",
