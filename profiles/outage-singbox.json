@@ -667,6 +667,25 @@
       "uuid": "f4e91fac-25eb-4d26-a14c-c82c3778a0e4"
     },
     {
+      "network": "tcp",
+      "password": ":Z#%3cdIG'c*;*O}",
+      "server": "172.66.47.83",
+      "server_port": 443,
+      "tag": "outage-f5473b0f1c6f3346",
+      "tls": {
+        "enabled": true,
+        "server_name": "JoinmAhDiSeRvER-csn.PaGeS.DEv"
+      },
+      "transport": {
+        "headers": {
+          "Host": "JoinmAhDiSeRvER-csn.PaGeS.DEv"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -708,7 +727,8 @@
         "outage-2d5ccae8dd73c458",
         "outage-ba6caf6b51cebdb2",
         "outage-c927c9121b49a902",
-        "outage-5e43f155fa15894d"
+        "outage-5e43f155fa15894d",
+        "outage-f5473b0f1c6f3346"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
