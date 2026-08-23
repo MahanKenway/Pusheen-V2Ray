@@ -621,6 +621,64 @@
       "settings": {
         "vnext": [
           {
+            "address": "104.26.14.85",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "f798a2c4-c51b-409d-b349-ca8455b36796"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "chopin.adaspoloandco.com"
+        },
+        "wsSettings": {
+          "path": "/download.php"
+        }
+      },
+      "tag": "resilient-eac040166f1c175c"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.66.44.97",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "josni.hoyes.cloudns.ch"
+        },
+        "wsSettings": {
+          "path": "/?ed=2560"
+        }
+      },
+      "tag": "resilient-5661a14ff4b4bbb1"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "104.17.150.48",
             "port": 80,
             "users": [
@@ -801,35 +859,6 @@
         }
       },
       "tag": "resilient-167f237068a292da"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.26.14.85",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "f798a2c4-c51b-409d-b349-ca8455b36796"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "chopin.adaspoloandco.com"
-        },
-        "wsSettings": {
-          "path": "/download.php#telegram-proxy_mtm?ed=2048"
-        }
-      },
-      "tag": "resilient-48958a341f8fa869"
     },
     {
       "protocol": "vless",
@@ -1567,35 +1596,6 @@
         }
       },
       "tag": "resilient-141cb3ca0f83a485"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.176.26.2",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "Telegram\ud83c\udde8\ud83c\uddf3@WangCai2"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "support.zoom.us.yxls.eu.cc"
-        },
-        "wsSettings": {
-          "path": "/sg-amz"
-        }
-      },
-      "tag": "resilient-cbfbb175699a5339"
     },
     {
       "protocol": "blackhole",
