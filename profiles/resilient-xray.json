@@ -1420,6 +1420,30 @@
       "settings": {
         "servers": [
           {
+            "address": "104.18.152.233",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.ignitelimit.com"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-d798073999258196"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "104.18.12.149",
             "password": "humanity",
             "port": 443
@@ -1582,30 +1606,6 @@
         }
       },
       "tag": "resilient-fce290bc714c2b3b"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.16.72.41",
-            "password": "f922fa0f-3311-4368-85ff-cf65e727c854",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "space.byu.id.yxls.eu.cc"
-        },
-        "wsSettings": {
-          "path": "/br-orcl"
-        }
-      },
-      "tag": "resilient-1cbb0413ae508117"
     },
     {
       "protocol": "blackhole",
