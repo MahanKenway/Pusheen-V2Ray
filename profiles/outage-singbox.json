@@ -14,21 +14,6 @@
   "outbounds": [
     {
       "network": "tcp",
-      "server": "104.16.8.66",
-      "server_port": 8880,
-      "tag": "outage-1ff267ae130cec9c",
-      "transport": {
-        "headers": {
-          "Host": "rapid-base-6c9e.45-d79.workers.dev"
-        },
-        "path": "/pyip=ProxyIP.SG.CMLiussss.net",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "725c66a2-2bce-4a24-ba52-b4e2e7047076"
-    },
-    {
-      "network": "tcp",
       "server": "102.177.176.151",
       "server_port": 2096,
       "tag": "outage-b774c79faafff75d",
@@ -545,6 +530,18 @@
     },
     {
       "network": "tcp",
+      "server": "172.67.211.177",
+      "server_port": 8880,
+      "tag": "outage-1634e2ff5d67077a",
+      "transport": {
+        "path": "/pyip=ProxyIP.US.CMLiussss.net",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "ef770523-8eb5-403f-9e95-06b328719c87"
+    },
+    {
+      "network": "tcp",
       "server": "45.130.125.207",
       "server_port": 8443,
       "tag": "outage-50a76d4a4c3bec58",
@@ -656,25 +653,24 @@
     },
     {
       "network": "tcp",
-      "server": "104.16.98.215",
-      "server_port": 8880,
-      "tag": "outage-c409ce902453edf7",
+      "server": "91.193.59.151",
+      "server_port": 80,
+      "tag": "outage-5e43f155fa15894d",
       "transport": {
         "headers": {
-          "Host": "silent-cloud-aa63.324-7d8.workers.dev"
+          "Host": "s5gydl.936.us.ci"
         },
-        "path": "/pyip=telegram\ud83c\udde8\ud83c\uddf3 @wangcai2",
+        "path": "Telegram\ud83c\udde8\ud83c\uddf3+@WangCai2",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "f7ed4770-81f4-47a1-9490-8b8cd684c97e"
+      "uuid": "f4e91fac-25eb-4d26-a14c-c82c3778a0e4"
     },
     {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
-        "outage-1ff267ae130cec9c",
         "outage-b774c79faafff75d",
         "outage-a2d95592e8c87f16",
         "outage-8f2fa8b66a601ad6",
@@ -704,6 +700,7 @@
         "outage-d1244412c1798a64",
         "outage-9f5f58f64211a2c8",
         "outage-05cd1db3c73baca6",
+        "outage-1634e2ff5d67077a",
         "outage-50a76d4a4c3bec58",
         "outage-ba11b238efae6b6e",
         "outage-1ae4279cbbd2f187",
@@ -711,7 +708,7 @@
         "outage-2d5ccae8dd73c458",
         "outage-ba6caf6b51cebdb2",
         "outage-c927c9121b49a902",
-        "outage-c409ce902453edf7"
+        "outage-5e43f155fa15894d"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
