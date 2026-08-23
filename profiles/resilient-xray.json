@@ -53,6 +53,60 @@
       "settings": {
         "vnext": [
           {
+            "address": "188.114.98.215",
+            "port": 2086,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d028eaf5-c5ef-49a0-85c6-4f4816af8053"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/eyJqdW5rIjoiZUJZR2pXVFByVyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjEwOS4xMjAuMTU4LjE0OSJdfQ==?ed=2560"
+        }
+      },
+      "tag": "resilient-a2d95592e8c87f16"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "199.232.78.160",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "XpnTeam-27"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-8f2fa8b66a601ad6"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "156.243.83.167",
             "port": 443,
             "users": [
@@ -1356,60 +1410,6 @@
         }
       },
       "tag": "resilient-99c778286259b2df"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "173.245.49.39",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "cf39fab0-bb85-42cb-9945-2ad69d78e575"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "rubifen.adaspoloandco.com"
-        },
-        "wsSettings": {
-          "path": "/GOrbEh"
-        }
-      },
-      "tag": "resilient-603b72e69953a153"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.64.88.168",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "6f876b28-1b3e-4088-85c0-d299e56bfccd"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/pyip=ProxyIP.JP.CMLiussss.net"
-        }
-      },
-      "tag": "resilient-f7e8ce2eb305128a"
     },
     {
       "protocol": "trojan",
