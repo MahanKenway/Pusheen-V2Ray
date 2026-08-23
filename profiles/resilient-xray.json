@@ -617,6 +617,85 @@
       "tag": "resilient-d3fabcb8f794ac78"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.150.48",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "435bda4c-fe5e-42c9-a3ad-15334943b38a"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-1b4705375547268c"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.97.4",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "fec70375-29cf-46cf-b314-536c74feee94"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ratatouille.adaspoloandco.com"
+        },
+        "wsSettings": {
+          "path": "/admin.php"
+        }
+      },
+      "tag": "resilient-cd6f32b532da1b7d"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.66.43.45",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "435bda4c-fe5e-42c9-a3ad-15334943b38a"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-2fdd1f2b5b93e7fd"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1517,79 +1596,6 @@
         }
       },
       "tag": "resilient-cbfbb175699a5339"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.18.1.125",
-            "port": 2082,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "416f18ec-11f3-4648-9693-8c6480d0662d"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-d05806837a747e55"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "130.250.137.171",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.ignitelimit.com"
-        },
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-aacf2f73a203abde"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.26.14.137",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.ignitelimit.com"
-        },
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-2d2c6fbad7cbd874"
     },
     {
       "protocol": "blackhole",
