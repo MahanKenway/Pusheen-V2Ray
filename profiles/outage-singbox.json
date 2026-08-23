@@ -29,6 +29,25 @@
     },
     {
       "network": "tcp",
+      "server": "102.177.176.151",
+      "server_port": 2096,
+      "tag": "outage-b774c79faafff75d",
+      "tls": {
+        "enabled": true,
+        "server_name": "De13.SiMaNsAnAt.Ir."
+      },
+      "transport": {
+        "headers": {
+          "Host": "De13.SiMaNsAnAt.Ir."
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "1149be91-5a4f-47de-995f-66f8d7d64498"
+    },
+    {
+      "network": "tcp",
       "server": "188.114.98.215",
       "server_port": 2086,
       "tag": "outage-a2d95592e8c87f16",
@@ -385,25 +404,6 @@
     },
     {
       "network": "tcp",
-      "server": "188.114.97.0",
-      "server_port": 443,
-      "tag": "outage-632d315afaafb21a",
-      "tls": {
-        "enabled": true,
-        "server_name": "tELEGRAM.prOXIe2-TEL.wOrKErS.DEV"
-      },
-      "transport": {
-        "headers": {
-          "Host": "tELEGRAM.prOXIe2-TEL.wOrKErS.DEV"
-        },
-        "path": "/eyJqdW5rIjoidXYyRXNUTXEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "6e16baf3-82cd-4e5e-bfea-5bd4d2253b4f"
-    },
-    {
-      "network": "tcp",
       "server": "8.35.211.43",
       "server_port": 2053,
       "tag": "outage-b8716e36ea6f5561",
@@ -545,9 +545,9 @@
     },
     {
       "network": "tcp",
-      "server": "162.159.38.119",
+      "server": "45.130.125.207",
       "server_port": 8443,
-      "tag": "outage-ba11b238efae6b6e",
+      "tag": "outage-50a76d4a4c3bec58",
       "tls": {
         "enabled": true,
         "server_name": "t1s1.rittbo.kdns.fr"
@@ -564,9 +564,9 @@
     },
     {
       "network": "tcp",
-      "server": "172.66.45.6",
-      "server_port": 443,
-      "tag": "outage-e8736444df5c1b7e",
+      "server": "162.159.38.119",
+      "server_port": 8443,
+      "tag": "outage-ba11b238efae6b6e",
       "tls": {
         "enabled": true,
         "server_name": "t1s1.rittbo.kdns.fr"
@@ -575,7 +575,7 @@
         "headers": {
           "Host": "t1s1.rittbo.kdns.fr"
         },
-        "path": "/?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed",
+        "path": "/",
         "type": "ws"
       },
       "type": "vless",
@@ -660,6 +660,7 @@
       "interval": "10m",
       "outbounds": [
         "outage-1ff267ae130cec9c",
+        "outage-b774c79faafff75d",
         "outage-a2d95592e8c87f16",
         "outage-8f2fa8b66a601ad6",
         "outage-2c42e9a4ffaee362",
@@ -680,7 +681,6 @@
         "outage-0e1011adb0943ea8",
         "outage-dbdadc1defc27395",
         "outage-d3fabcb8f794ac78",
-        "outage-632d315afaafb21a",
         "outage-b8716e36ea6f5561",
         "outage-bac132a941275d8f",
         "outage-affb9bb827bd0c7e",
@@ -689,8 +689,8 @@
         "outage-d1244412c1798a64",
         "outage-9f5f58f64211a2c8",
         "outage-05cd1db3c73baca6",
+        "outage-50a76d4a4c3bec58",
         "outage-ba11b238efae6b6e",
-        "outage-e8736444df5c1b7e",
         "outage-1ae4279cbbd2f187",
         "outage-f0135aa56648578b",
         "outage-2d5ccae8dd73c458",

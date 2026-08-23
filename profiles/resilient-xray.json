@@ -53,6 +53,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "102.177.176.151",
+            "port": 2096,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "1149be91-5a4f-47de-995f-66f8d7d64498"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "De13.SiMaNsAnAt.Ir."
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-b774c79faafff75d"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "188.114.98.215",
             "port": 2086,
             "users": [
@@ -1385,31 +1414,6 @@
         }
       },
       "tag": "resilient-03e4746ca98ed43c"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "91.193.58.166",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "d566d849-ab28-4695-b01f-dcd284b67f5c"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/pyip=Telegram\ud83c\udde8\ud83c\uddf3+@WangCai2"
-        }
-      },
-      "tag": "resilient-99c778286259b2df"
     },
     {
       "protocol": "trojan",
