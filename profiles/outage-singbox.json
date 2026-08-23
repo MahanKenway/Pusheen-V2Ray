@@ -655,6 +655,21 @@
       "type": "trojan"
     },
     {
+      "network": "tcp",
+      "server": "104.16.98.215",
+      "server_port": 8880,
+      "tag": "outage-c409ce902453edf7",
+      "transport": {
+        "headers": {
+          "Host": "silent-cloud-aa63.324-7d8.workers.dev"
+        },
+        "path": "/pyip=telegram\ud83c\udde8\ud83c\uddf3 @wangcai2",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "f7ed4770-81f4-47a1-9490-8b8cd684c97e"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -695,7 +710,8 @@
         "outage-f0135aa56648578b",
         "outage-2d5ccae8dd73c458",
         "outage-ba6caf6b51cebdb2",
-        "outage-c927c9121b49a902"
+        "outage-c927c9121b49a902",
+        "outage-c409ce902453edf7"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
