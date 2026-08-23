@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "tag": "outage-2f5cf03d941a287d",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "XpnTeam-29"
+    },
+    {
+      "network": "tcp",
       "server": "108.162.198.43",
       "server_port": 8443,
       "tag": "outage-3a30cc7aa6a60b33",
@@ -64,25 +83,6 @@
       },
       "type": "vless",
       "uuid": "d028eaf5-c5ef-49a0-85c6-4f4816af8053"
-    },
-    {
-      "network": "tcp",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "tag": "outage-8f2fa8b66a601ad6",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ssl.fastly.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "XpnTeam-27"
     },
     {
       "network": "tcp",
@@ -621,10 +621,10 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-2f5cf03d941a287d",
         "outage-3a30cc7aa6a60b33",
         "outage-b774c79faafff75d",
         "outage-a2d95592e8c87f16",
-        "outage-8f2fa8b66a601ad6",
         "outage-2c42e9a4ffaee362",
         "outage-01744dfe10efeacf",
         "outage-58c418f2b2ed2b32",
