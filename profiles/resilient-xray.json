@@ -679,6 +679,64 @@
       "settings": {
         "vnext": [
           {
+            "address": "104.17.19.109",
+            "port": 2083,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "fdb12587-1c15-4883-8d7a-9894641e183c"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "nova-mango-vault-2e63.wolf-fbi-red.workers.dev"
+        },
+        "wsSettings": {
+          "path": "/?u=3e3fff3b5b"
+        }
+      },
+      "tag": "resilient-453f90aa45ed3aed"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.227.134",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "eeb6823c-b926-4ea2-866a-5542edd26e59"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "t1s1.rittbo.kdns.fr"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-167f237068a292da"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "104.26.14.85",
             "port": 8443,
             "users": [
@@ -1541,54 +1599,6 @@
         }
       },
       "tag": "resilient-2d2c6fbad7cbd874"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "199.68.156.69",
-            "password": "dns68",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "trojan.putata.us.kg"
-        },
-        "wsSettings": {
-          "path": "/?ed=2560"
-        }
-      },
-      "tag": "resilient-785cd3a0fbd5e8f2"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "172.66.45.9",
-            "password": ":bC5^lakx>$d",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "fk31LnDm4W8uj0yP1dRwLTDTdKo6Y-cu.pAGES.dEv"
-        },
-        "wsSettings": {
-          "path": "/trNs9G5VJ2vI0PxgP2"
-        }
-      },
-      "tag": "resilient-2d5ccae8dd73c458"
     },
     {
       "protocol": "blackhole",
