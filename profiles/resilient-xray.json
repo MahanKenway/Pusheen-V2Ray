@@ -24,32 +24,6 @@
   },
   "outbounds": [
     {
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "74.48.28.190",
-            "port": 80,
-            "users": [
-              {
-                "alterId": 0,
-                "id": "4ed58974-48cd-472e-c818-fb847b8c551f",
-                "security": "aes-128-gcm"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/cctv13.m3u8"
-        }
-      },
-      "tag": "resilient-4353aeaef5c3670d"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1604,6 +1578,30 @@
         }
       },
       "tag": "resilient-fce290bc714c2b3b"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.16.72.41",
+            "password": "f922fa0f-3311-4368-85ff-cf65e727c854",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "space.byu.id.yxls.eu.cc"
+        },
+        "wsSettings": {
+          "path": "/br-orcl"
+        }
+      },
+      "tag": "resilient-1cbb0413ae508117"
     },
     {
       "protocol": "blackhole",

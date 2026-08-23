@@ -13,20 +13,6 @@
   },
   "outbounds": [
     {
-      "alter_id": 0,
-      "network": "tcp",
-      "security": "aes-128-gcm",
-      "server": "74.48.28.190",
-      "server_port": 80,
-      "tag": "outage-4353aeaef5c3670d",
-      "transport": {
-        "path": "/cctv13.m3u8",
-        "type": "ws"
-      },
-      "type": "vmess",
-      "uuid": "4ed58974-48cd-472e-c818-fb847b8c551f"
-    },
-    {
       "network": "tcp",
       "server": "104.16.8.66",
       "server_port": 8880,
@@ -643,36 +629,6 @@
     },
     {
       "network": "tcp",
-      "server": "172.67.202.17",
-      "server_port": 2095,
-      "tag": "outage-12aea11f5d6b2cc0",
-      "transport": {
-        "headers": {
-          "Host": "fuckfangbinxing.pusytroller.gq"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40"
-    },
-    {
-      "network": "tcp",
-      "password": "Aimer",
-      "server": "167.68.4.199",
-      "server_port": 2053,
-      "tag": "outage-ea9026764e87f710",
-      "transport": {
-        "headers": {
-          "Host": "epge.muarua.filegear-sg.me"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": "!d8jYnLU)",
       "server": "172.66.46.215",
       "server_port": 8443,
@@ -688,7 +644,6 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
-        "outage-4353aeaef5c3670d",
         "outage-1ff267ae130cec9c",
         "outage-01744dfe10efeacf",
         "outage-58c418f2b2ed2b32",
@@ -724,8 +679,6 @@
         "outage-f0135aa56648578b",
         "outage-2d5ccae8dd73c458",
         "outage-ba6caf6b51cebdb2",
-        "outage-12aea11f5d6b2cc0",
-        "outage-ea9026764e87f710",
         "outage-c927c9121b49a902"
       ],
       "tag": "outage-auto",
