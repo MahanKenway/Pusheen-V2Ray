@@ -703,6 +703,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "45.130.125.114",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "srv10.perfectbulk.info"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-af5c5f45c9e76d40"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "199.232.78.159",
             "port": 443,
             "users": [
@@ -1301,35 +1330,6 @@
         }
       },
       "tag": "resilient-fd7e156c67e34874"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.130.125.114",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "srv75.perfectbulk.info"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-1dfd8ba464eefa7d"
     },
     {
       "protocol": "vless",
