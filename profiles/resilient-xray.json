@@ -732,6 +732,31 @@
       "settings": {
         "vnext": [
           {
+            "address": "104.17.125.172",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "435bda4c-fe5e-42c9-a3ad-15334943b38a"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-1a907eee8a07b40a"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "188.114.97.6",
             "port": 8080,
             "users": [
@@ -1510,35 +1535,6 @@
         }
       },
       "tag": "resilient-74d0a04d757692d0"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.16.75.76",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "1cc5e727-62f2-469e-963e-20af8cbf1bf5"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "arvan2.dearhossein-taktaz.ir"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-ce9ed1a7d9837191"
     },
     {
       "protocol": "trojan",
