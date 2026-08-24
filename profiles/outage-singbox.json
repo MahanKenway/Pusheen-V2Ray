@@ -14,6 +14,36 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "104.21.71.238",
+      "server_port": 443,
+      "tag": "outage-e700123a6f16d7b8",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "path": "/GOrbEh",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "cf39fab0-bb85-42cb-9945-2ad69d78e575"
+    },
+    {
+      "network": "tcp",
+      "server": "162.159.81.104",
+      "server_port": 80,
+      "tag": "outage-3ca8159b63c79fa1",
+      "transport": {
+        "headers": {
+          "Host": "icy-darkness-8ff1.farzambia12mo.workers.dev"
+        },
+        "path": "/eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "4b00d726-e072-429b-997e-f07affea3b7f"
+    },
+    {
+      "network": "tcp",
       "server": "151.101.56.7",
       "server_port": 443,
       "tag": "outage-8089e20f028d9a93",
@@ -203,21 +233,6 @@
     },
     {
       "network": "tcp",
-      "server": "172.67.137.11",
-      "server_port": 2082,
-      "tag": "outage-8668b625eadcb0f8",
-      "transport": {
-        "headers": {
-          "Host": "PbDpGsCo6.HaMeCi-dSsTeMaNe.oRg"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "416f18ec-11f3-4648-9693-8c6480d0662d"
-    },
-    {
-      "network": "tcp",
       "password": "humanity",
       "server": "104.18.32.47",
       "server_port": 443,
@@ -291,25 +306,6 @@
         "type": "ws"
       },
       "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "172.64.53.74",
-      "server_port": 443,
-      "tag": "outage-e8f0538294e988e4",
-      "tls": {
-        "enabled": true,
-        "server_name": "fgnix832fx.fx6hsv0.ccwu.cc"
-      },
-      "transport": {
-        "headers": {
-          "Host": "fgnix832fx.fx6hsv0.ccwu.cc"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
     },
     {
       "network": "tcp",
@@ -556,21 +552,6 @@
     },
     {
       "network": "tcp",
-      "server": "188.114.98.0",
-      "server_port": 2082,
-      "tag": "outage-1ae4279cbbd2f187",
-      "transport": {
-        "headers": {
-          "Host": "DOFF.mehrsazi.ir"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "f0ff4425-8c26-4d81-8662-f34593060c8d"
-    },
-    {
-      "network": "tcp",
       "password": ":bC5^lakx>$d",
       "server": "172.66.45.9",
       "server_port": 443,
@@ -632,6 +613,8 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-e700123a6f16d7b8",
+        "outage-3ca8159b63c79fa1",
         "outage-8089e20f028d9a93",
         "outage-2f5cf03d941a287d",
         "outage-3a30cc7aa6a60b33",
@@ -643,12 +626,10 @@
         "outage-cfbd7a84f7496a61",
         "outage-1f115a81e4142280",
         "outage-7a9c7b3fb773270a",
-        "outage-8668b625eadcb0f8",
         "outage-2cf32a90dd247779",
         "outage-641240d156aa2558",
         "outage-f81899cdec297444",
         "outage-cca228fef78b24c9",
-        "outage-e8f0538294e988e4",
         "outage-c055f20fbfd71b00",
         "outage-256dae30b3ac0ec7",
         "outage-d12cda71f7533a84",
@@ -662,7 +643,6 @@
         "outage-cd6f32b532da1b7d",
         "outage-453f90aa45ed3aed",
         "outage-50a76d4a4c3bec58",
-        "outage-1ae4279cbbd2f187",
         "outage-2d5ccae8dd73c458",
         "outage-ba6caf6b51cebdb2",
         "outage-c927c9121b49a902",
