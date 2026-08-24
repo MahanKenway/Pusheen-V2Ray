@@ -408,6 +408,25 @@
     },
     {
       "network": "tcp",
+      "server": "104.26.14.85",
+      "server_port": 8443,
+      "tag": "outage-ad343caa371c3347",
+      "tls": {
+        "enabled": true,
+        "server_name": "chopin.adaspoloandco.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "chopin.adaspoloandco.com"
+        },
+        "path": "/download.php#TELEGRAM-TOOTFFARANGI?ed=512",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "f798a2c4-c51b-409d-b349-ca8455b36796"
+    },
+    {
+      "network": "tcp",
       "server": "45.130.125.114",
       "server_port": 8443,
       "tag": "outage-af5c5f45c9e76d40",
@@ -481,25 +500,6 @@
       },
       "type": "vless",
       "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59"
-    },
-    {
-      "network": "tcp",
-      "server": "104.26.14.85",
-      "server_port": 8443,
-      "tag": "outage-5f480bef332fdb86",
-      "tls": {
-        "enabled": true,
-        "server_name": "chopin.adaspoloandco.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "chopin.adaspoloandco.com"
-        },
-        "path": "/download.php#TELEGRAM-TOOTFFARANGI?ed=2560",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "f798a2c4-c51b-409d-b349-ca8455b36796"
     },
     {
       "network": "tcp",
@@ -635,11 +635,11 @@
         "outage-d12cda71f7533a84",
         "outage-0e1011adb0943ea8",
         "outage-dbdadc1defc27395",
+        "outage-ad343caa371c3347",
         "outage-af5c5f45c9e76d40",
         "outage-5812c2f4b0f2baa0",
         "outage-533d7c3697e30d49",
         "outage-ee0f91582f26af38",
-        "outage-5f480bef332fdb86",
         "outage-418582d4fa5cd079",
         "outage-cd6f32b532da1b7d",
         "outage-1ae4279cbbd2f187",
