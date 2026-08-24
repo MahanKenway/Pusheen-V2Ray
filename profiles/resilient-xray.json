@@ -28,6 +28,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "151.101.56.7",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e779febb-83c0-4696-a07e-ba291b3f37a6"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-8089e20f028d9a93"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "199.232.78.160",
             "port": 443,
             "users": [
@@ -592,6 +621,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "199.232.78.159",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d0b812f3-a74a-45f5-ac3a-24bcc21b44ea"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-747f8389694dfc0c"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "162.159.249.112",
             "port": 443,
             "users": [
@@ -996,35 +1054,6 @@
         }
       },
       "tag": "resilient-453f90aa45ed3aed"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "151.101.56.7",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "da6ece67-aff5-4f94-94f3-08e87ca8cd51"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-252eb86c00f07310"
     },
     {
       "protocol": "trojan",
@@ -1578,35 +1607,6 @@
         }
       },
       "tag": "resilient-012ff4242a402d63"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.159",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "fe4ca690-6fd9-4471-9a9f-94528084d180"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER"
-        }
-      },
-      "tag": "resilient-fd593ca6d3be97f6"
     },
     {
       "protocol": "blackhole",

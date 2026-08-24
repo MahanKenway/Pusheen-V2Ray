@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "151.101.56.7",
+      "server_port": 443,
+      "tag": "outage-8089e20f028d9a93",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "e779febb-83c0-4696-a07e-ba291b3f37a6"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
       "tag": "outage-2f5cf03d941a287d",
@@ -389,25 +408,6 @@
     },
     {
       "network": "tcp",
-      "server": "162.159.249.112",
-      "server_port": 443,
-      "tag": "outage-391bc14d1740c9cb",
-      "tls": {
-        "enabled": true,
-        "server_name": "EA6530e9.nXZu-61iuaN-xD.PageS.DEV"
-      },
-      "transport": {
-        "headers": {
-          "Host": "EA6530e9.nXZu-61iuaN-xD.PageS.DEV"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9"
-    },
-    {
-      "network": "tcp",
       "server": "188.114.97.6",
       "server_port": 8443,
       "tag": "outage-5812c2f4b0f2baa0",
@@ -651,6 +651,7 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-8089e20f028d9a93",
         "outage-2f5cf03d941a287d",
         "outage-3a30cc7aa6a60b33",
         "outage-b774c79faafff75d",
@@ -672,7 +673,6 @@
         "outage-d12cda71f7533a84",
         "outage-0e1011adb0943ea8",
         "outage-dbdadc1defc27395",
-        "outage-391bc14d1740c9cb",
         "outage-5812c2f4b0f2baa0",
         "outage-533d7c3697e30d49",
         "outage-ee0f91582f26af38",
