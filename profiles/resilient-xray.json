@@ -728,6 +728,35 @@
       "tag": "resilient-dbdadc1defc27395"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.66.45.32",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "a8a09765-7681-47ba-9ea0-e0ae79d51088"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "t-netplus-4vx.pages.dev"
+        },
+        "wsSettings": {
+          "path": "/TELEGRAM-MARAMBASHI-MARAMBASHI/?ed=2048"
+        }
+      },
+      "tag": "resilient-cae429dd131c9f7d"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1458,35 +1487,6 @@
         }
       },
       "tag": "resilient-1ae4279cbbd2f187"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.130.125.207",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "eeb6823c-b926-4ea2-866a-5542edd26e59"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "t1s1.rittbo.kdns.fr"
-        },
-        "wsSettings": {
-          "path": "/fp"
-        }
-      },
-      "tag": "resilient-0672049f54f4a57b"
     },
     {
       "protocol": "trojan",
