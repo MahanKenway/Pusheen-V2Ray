@@ -758,6 +758,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "188.114.97.4",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "f798a2c4-c51b-409d-b349-ca8455b36796"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "chopin.adaspoloandco.com"
+        },
+        "wsSettings": {
+          "path": "/download.php"
+        }
+      },
+      "tag": "resilient-5475829455858b74"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "104.26.14.85",
             "port": 8443,
             "users": [
@@ -1248,35 +1277,6 @@
         }
       },
       "tag": "resilient-1b4705375547268c"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.114.97.4",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "fec70375-29cf-46cf-b314-536c74feee94"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ratatouille.adaspoloandco.com"
-        },
-        "wsSettings": {
-          "path": "/admin.php"
-        }
-      },
-      "tag": "resilient-cd6f32b532da1b7d"
     },
     {
       "protocol": "vless",
