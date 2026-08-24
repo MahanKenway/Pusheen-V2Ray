@@ -592,6 +592,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "104.21.78.92",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "49c0ae46-767c-47d1-9703-8740e0c4b15a"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "FLAT-night-EDD0.hOsEin9saLEAZhuongOoYeH87.wOrkerS.DeV"
+        },
+        "wsSettings": {
+          "path": "/eyJqdW5rIjoiZU1pQlVqNTBYVmpTeDlCIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19"
+        }
+      },
+      "tag": "resilient-533d7c3697e30d49"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "104.21.227.134",
             "port": 443,
             "users": [
@@ -1569,30 +1598,6 @@
         }
       },
       "tag": "resilient-1cbb0413ae508117"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.18.152.225",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.ignitelimit.com"
-        },
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-2354f1901e09ae70"
     },
     {
       "protocol": "blackhole",
