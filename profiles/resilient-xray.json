@@ -28,6 +28,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "188.114.97.6",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "6680846a-8a57-4dfd-9a0e-63209cfc8535"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "support.zoom.us.yxls.eu.cc"
+        },
+        "wsSettings": {
+          "path": "/sg-amz"
+        }
+      },
+      "tag": "resilient-b0d3015d2ff5c487"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "104.21.71.238",
             "port": 443,
             "users": [
@@ -697,6 +726,31 @@
         }
       },
       "tag": "resilient-dbdadc1defc27395"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.97.6",
+            "port": 8080,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "1078d418-b4e0-4668-9018-dc90c2042d61"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-4b634aecca5e535c"
     },
     {
       "protocol": "vless",
@@ -1434,31 +1488,6 @@
       "tag": "resilient-e4abfe05a73e5166"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.114.97.6",
-            "port": 8080,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "83afd88f-200f-4d89-bfc7-66eff160c1d8"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512"
-        }
-      },
-      "tag": "resilient-a2b2f383c62c53da"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1582,30 +1611,6 @@
         }
       },
       "tag": "resilient-0853e289af765ba5"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.20.6.134",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.calmlunch.com"
-        },
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-fce290bc714c2b3b"
     },
     {
       "protocol": "blackhole",

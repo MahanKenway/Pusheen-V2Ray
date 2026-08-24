@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "tag": "outage-b0d3015d2ff5c487",
+      "tls": {
+        "enabled": true,
+        "server_name": "support.zoom.us.yxls.eu.cc"
+      },
+      "transport": {
+        "headers": {
+          "Host": "support.zoom.us.yxls.eu.cc"
+        },
+        "path": "/sg-amz",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "6680846a-8a57-4dfd-9a0e-63209cfc8535"
+    },
+    {
+      "network": "tcp",
       "server": "104.21.71.238",
       "server_port": 443,
       "tag": "outage-e700123a6f16d7b8",
@@ -215,21 +234,6 @@
       },
       "type": "vless",
       "uuid": "83afd88f-200f-4d89-bfc7-66eff160c1d8"
-    },
-    {
-      "network": "tcp",
-      "server": "216.24.57.40",
-      "server_port": 8880,
-      "tag": "outage-7a9c7b3fb773270a",
-      "transport": {
-        "headers": {
-          "Host": "vms.lifetime28.workers.dev"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d"
     },
     {
       "network": "tcp",
@@ -533,22 +537,18 @@
     },
     {
       "network": "tcp",
-      "server": "104.17.19.109",
-      "server_port": 2083,
-      "tag": "outage-453f90aa45ed3aed",
-      "tls": {
-        "enabled": true,
-        "server_name": "nova-mango-vault-2e63.wolf-fbi-red.workers.dev"
-      },
+      "server": "188.114.98.0",
+      "server_port": 2082,
+      "tag": "outage-1ae4279cbbd2f187",
       "transport": {
         "headers": {
-          "Host": "nova-mango-vault-2e63.wolf-fbi-red.workers.dev"
+          "Host": "DOFF.mehrsazi.ir"
         },
-        "path": "/?u=3e3fff3b5b",
+        "path": "/",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "fdb12587-1c15-4883-8d7a-9894641e183c"
+      "uuid": "f0ff4425-8c26-4d81-8662-f34593060c8d"
     },
     {
       "network": "tcp",
@@ -613,6 +613,7 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-b0d3015d2ff5c487",
         "outage-e700123a6f16d7b8",
         "outage-3ca8159b63c79fa1",
         "outage-8089e20f028d9a93",
@@ -625,7 +626,6 @@
         "outage-58c418f2b2ed2b32",
         "outage-cfbd7a84f7496a61",
         "outage-1f115a81e4142280",
-        "outage-7a9c7b3fb773270a",
         "outage-2cf32a90dd247779",
         "outage-641240d156aa2558",
         "outage-f81899cdec297444",
@@ -642,7 +642,7 @@
         "outage-5f480bef332fdb86",
         "outage-418582d4fa5cd079",
         "outage-cd6f32b532da1b7d",
-        "outage-453f90aa45ed3aed",
+        "outage-1ae4279cbbd2f187",
         "outage-2d5ccae8dd73c458",
         "outage-ba6caf6b51cebdb2",
         "outage-c927c9121b49a902",
