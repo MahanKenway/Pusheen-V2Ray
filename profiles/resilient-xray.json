@@ -28,6 +28,56 @@
       "settings": {
         "vnext": [
           {
+            "address": "172.67.173.224",
+            "port": 8080,
+            "users": [
+              {
+                "encryption": "mlkem768x25519plus.native.0rtt.xv7sk1D2Us-JXkjuqIRno-kcLA8kqeKy6seL9gXGB2M",
+                "id": "c164613c-ab89-4b34-a1d7-d526fadcd5b6"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "path": "/play"
+        },
+        "network": "httpupgrade",
+        "security": "none"
+      },
+      "tag": "resilient-ac67f04177858d10"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.97.6",
+            "port": 8080,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/?TELEGRAM-MARAMBASHI_MARAMBASHI?ed"
+        }
+      },
+      "tag": "resilient-f360b1fa96c1a6cc"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "188.114.97.6",
             "port": 443,
             "users": [
@@ -704,13 +754,18 @@
       "tag": "resilient-0e1011adb0943ea8"
     },
     {
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "172.67.149.60",
-            "password": "humanity",
-            "port": 443
+            "address": "104.16.72.20",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "eeb6823c-b926-4ea2-866a-5542edd26e59"
+              }
+            ]
           }
         ]
       },
@@ -719,13 +774,42 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "www.ignitelimit.com"
+          "serverName": "t1s1.rittbo.kdns.fr"
         },
         "wsSettings": {
-          "path": "/assignment"
+          "path": "/"
         }
       },
-      "tag": "resilient-dbdadc1defc27395"
+      "tag": "resilient-ed12bbb77dc8972a"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.16.79.73",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "josni.hoyes.cloudns.ch"
+        },
+        "wsSettings": {
+          "path": "/?TELEGRAM-MARAMBASHI?ed=2560"
+        }
+      },
+      "tag": "resilient-cf6078e3d05e262c"
     },
     {
       "protocol": "vless",
@@ -857,31 +941,6 @@
         }
       },
       "tag": "resilient-1a907eee8a07b40a"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.114.97.6",
-            "port": 8080,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "1078d418-b4e0-4668-9018-dc90c2042d61"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-4b634aecca5e535c"
     },
     {
       "protocol": "vless",
@@ -1406,89 +1465,6 @@
       "tag": "resilient-bdda0b7b77a4c699"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.66.45.6",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "eeb6823c-b926-4ea2-866a-5542edd26e59"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "t1s1.rittbo.kdns.fr"
-        },
-        "wsSettings": {
-          "path": "/?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed"
-        }
-      },
-      "tag": "resilient-e8736444df5c1b7e"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "173.245.58.76",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "eeb6823c-b926-4ea2-866a-5542edd26e59"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "t1s1.rittbo.kdns.fr"
-        },
-        "wsSettings": {
-          "path": "/fp"
-        }
-      },
-      "tag": "resilient-fd7e156c67e34874"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.114.98.0",
-            "port": 2082,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "f0ff4425-8c26-4d81-8662-f34593060c8d"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-1ae4279cbbd2f187"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1607,6 +1583,30 @@
         }
       },
       "tag": "resilient-8bd3952de6fc3930"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.18.11.110",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.multiplydose.com"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-0853e289af765ba5"
     },
     {
       "protocol": "blackhole",
