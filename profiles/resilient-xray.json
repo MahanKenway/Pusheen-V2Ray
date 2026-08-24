@@ -592,6 +592,64 @@
       "settings": {
         "vnext": [
           {
+            "address": "162.159.249.112",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "89b3cbba-e6ac-485a-9481-976a0415eab9"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "EA6530e9.nXZu-61iuaN-xD.PageS.DEV"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-391bc14d1740c9cb"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.97.6",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "eeb6823c-b926-4ea2-866a-5542edd26e59"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "t1s1.rittbo.kdns.fr"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-5812c2f4b0f2baa0"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "104.21.78.92",
             "port": 443,
             "users": [
@@ -1549,55 +1607,6 @@
         }
       },
       "tag": "resilient-fd593ca6d3be97f6"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "162.159.138.232",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "fc486fd2-b9fd-4d12-b878-11e27785e300"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/gra"
-        }
-      },
-      "tag": "resilient-f0135aa56648578b"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.16.72.41",
-            "password": "f922fa0f-3311-4368-85ff-cf65e727c854",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "space.byu.id.yxls.eu.cc"
-        },
-        "wsSettings": {
-          "path": "/br-orcl"
-        }
-      },
-      "tag": "resilient-1cbb0413ae508117"
     },
     {
       "protocol": "blackhole",
