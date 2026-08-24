@@ -758,6 +758,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "104.26.14.85",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "f798a2c4-c51b-409d-b349-ca8455b36796"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "chopin.adaspoloandco.com"
+        },
+        "wsSettings": {
+          "path": "/download.php#TELEGRAM-PROXY_MTM?ed=2048"
+        }
+      },
+      "tag": "resilient-543f2ce5feb1d10a"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "104.16.72.20",
             "port": 8443,
             "users": [
@@ -863,35 +892,6 @@
         }
       },
       "tag": "resilient-d1275c8006f1aa2a"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.26.14.85",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "f798a2c4-c51b-409d-b349-ca8455b36796"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "chopin.adaspoloandco.com"
-        },
-        "wsSettings": {
-          "path": "/download.php#TELEGRAM-TOOTFFARANGI?ed=512"
-        }
-      },
-      "tag": "resilient-ad343caa371c3347"
     },
     {
       "protocol": "trojan",

@@ -370,6 +370,25 @@
     },
     {
       "network": "tcp",
+      "server": "104.26.14.85",
+      "server_port": 8443,
+      "tag": "outage-543f2ce5feb1d10a",
+      "tls": {
+        "enabled": true,
+        "server_name": "chopin.adaspoloandco.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "chopin.adaspoloandco.com"
+        },
+        "path": "/download.php#TELEGRAM-PROXY_MTM?ed=2048",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "f798a2c4-c51b-409d-b349-ca8455b36796"
+    },
+    {
+      "network": "tcp",
       "server": "104.16.72.20",
       "server_port": 8443,
       "tag": "outage-ed12bbb77dc8972a",
@@ -405,25 +424,6 @@
         "type": "ws"
       },
       "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "104.26.14.85",
-      "server_port": 8443,
-      "tag": "outage-ad343caa371c3347",
-      "tls": {
-        "enabled": true,
-        "server_name": "chopin.adaspoloandco.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "chopin.adaspoloandco.com"
-        },
-        "path": "/download.php#TELEGRAM-TOOTFFARANGI?ed=512",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "f798a2c4-c51b-409d-b349-ca8455b36796"
     },
     {
       "network": "tcp",
@@ -582,21 +582,6 @@
       "uuid": "56c673ba-865a-48ec-8dc0-fd7133a7ecfd"
     },
     {
-      "network": "tcp",
-      "server": "104.17.82.158",
-      "server_port": 80,
-      "tag": "outage-b550722233a454ce",
-      "transport": {
-        "headers": {
-          "Host": "us3.rtacg.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -621,9 +606,9 @@
         "outage-256dae30b3ac0ec7",
         "outage-d12cda71f7533a84",
         "outage-0e1011adb0943ea8",
+        "outage-543f2ce5feb1d10a",
         "outage-ed12bbb77dc8972a",
         "outage-d1275c8006f1aa2a",
-        "outage-ad343caa371c3347",
         "outage-af5c5f45c9e76d40",
         "outage-5812c2f4b0f2baa0",
         "outage-533d7c3697e30d49",
@@ -632,8 +617,7 @@
         "outage-cd6f32b532da1b7d",
         "outage-2d5ccae8dd73c458",
         "outage-c927c9121b49a902",
-        "outage-59c13833c15955ce",
-        "outage-b550722233a454ce"
+        "outage-59c13833c15955ce"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
