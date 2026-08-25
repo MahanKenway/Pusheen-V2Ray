@@ -562,6 +562,21 @@
     },
     {
       "network": "tcp",
+      "server": "104.21.74.214",
+      "server_port": 8880,
+      "tag": "outage-88e204c077a3b9b3",
+      "transport": {
+        "headers": {
+          "Host": "weathered-lake-e883.35-bc4.workers.dev"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "d7ec3e31-a9c4-4bdf-a2d8-7f75a8381035"
+    },
+    {
+      "network": "tcp",
       "server": "188.114.97.6",
       "server_port": 8880,
       "tag": "outage-c15c3fc435ac156a",
@@ -589,21 +604,6 @@
       },
       "type": "vless",
       "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    },
-    {
-      "network": "tcp",
-      "server": "172.67.179.98",
-      "server_port": 8880,
-      "tag": "outage-59c13833c15955ce",
-      "transport": {
-        "headers": {
-          "Host": "curly-surf-4401.75-08c.workers.dev"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "56c673ba-865a-48ec-8dc0-fd7133a7ecfd"
     },
     {
       "idle_timeout": "30m",
@@ -641,9 +641,9 @@
         "outage-cd6f32b532da1b7d",
         "outage-e24021acf612681a",
         "outage-5ed9cd2dbaca1391",
+        "outage-88e204c077a3b9b3",
         "outage-c15c3fc435ac156a",
-        "outage-fb400493e62aa22b",
-        "outage-59c13833c15955ce"
+        "outage-fb400493e62aa22b"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
