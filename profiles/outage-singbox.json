@@ -480,25 +480,6 @@
     },
     {
       "network": "tcp",
-      "password": "humanity",
-      "server": "172.64.152.23",
-      "server_port": 443,
-      "tag": "outage-e4abfe05a73e5166",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.calmlunch.com"
-        },
-        "path": "/assignment",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "server": "104.21.88.129",
       "server_port": 8880,
       "tag": "outage-136540cb9ecebc98",
@@ -618,6 +599,25 @@
       "type": "trojan"
     },
     {
+      "network": "tcp",
+      "password": "Telegram_healer_config",
+      "server": "172.67.218.38",
+      "server_port": 443,
+      "tag": "outage-bfca1159f88d047f",
+      "tls": {
+        "enabled": true,
+        "server_name": "1v95V6tjywCyTBAhl7f7lX8B27G.l4495eycQmSE9he0YVoemJfc4IBYf-4.wORkerS.dEV"
+      },
+      "transport": {
+        "headers": {
+          "Host": "1v95V6tjywCyTBAhl7f7lX8B27G.l4495eycQmSE9he0YVoemJfc4IBYf-4.wORkerS.dEV"
+        },
+        "path": "/tr/dxyX388XOtyAjF3A?ed=2560",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -648,7 +648,6 @@
         "outage-d798073999258196",
         "outage-1ae4279cbbd2f187",
         "outage-98197690b533334a",
-        "outage-e4abfe05a73e5166",
         "outage-136540cb9ecebc98",
         "outage-06525e311afefa6f",
         "outage-e24021acf612681a",
@@ -656,7 +655,8 @@
         "outage-b130a03f0189a63f",
         "outage-fa7f5eca2c87a6cc",
         "outage-6cfe715bab95d18f",
-        "outage-f8651458f1ae20d8"
+        "outage-f8651458f1ae20d8",
+        "outage-bfca1159f88d047f"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
