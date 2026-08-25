@@ -687,30 +687,6 @@
       "tag": "resilient-e8f0538294e988e4"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "172.67.68.87",
-            "password": "ZJU29smXwp",
-            "port": 2053
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "Web2.teama.tk"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-c055f20fbfd71b00"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1607,6 +1583,30 @@
         "security": "none"
       },
       "tag": "resilient-e24021acf612681a"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "45.130.125.32",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.calmloud.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-6cfe715bab95d18f"
     },
     {
       "protocol": "blackhole",
