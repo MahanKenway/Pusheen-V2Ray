@@ -14,6 +14,14 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "104.17.28.89",
+      "server_port": 443,
+      "tag": "outage-790f72e603893c5e",
+      "type": "vless",
+      "uuid": "1078d418-b4e0-4668-9018-dc90c2042d61"
+    },
+    {
+      "network": "tcp",
       "server": "172.67.74.10",
       "server_port": 443,
       "tag": "outage-11e094cd1ad51fd1",
@@ -173,25 +181,6 @@
     },
     {
       "network": "tcp",
-      "server": "102.177.176.151",
-      "server_port": 2096,
-      "tag": "outage-b774c79faafff75d",
-      "tls": {
-        "enabled": true,
-        "server_name": "De13.SiMaNsAnAt.Ir."
-      },
-      "transport": {
-        "headers": {
-          "Host": "De13.SiMaNsAnAt.Ir."
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "1149be91-5a4f-47de-995f-66f8d7d64498"
-    },
-    {
-      "network": "tcp",
       "server": "156.243.83.167",
       "server_port": 443,
       "tag": "outage-2c42e9a4ffaee362",
@@ -208,6 +197,21 @@
       },
       "type": "vless",
       "uuid": "telegram-id-Arfilter"
+    },
+    {
+      "network": "tcp",
+      "server": "172.66.47.186",
+      "server_port": 80,
+      "tag": "outage-2e8985352567b1d5",
+      "transport": {
+        "headers": {
+          "Host": "us3.rtacg.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a"
     },
     {
       "network": "tcp",
@@ -374,6 +378,25 @@
     },
     {
       "network": "tcp",
+      "server": "188.114.97.4",
+      "server_port": 8443,
+      "tag": "outage-5475829455858b74",
+      "tls": {
+        "enabled": true,
+        "server_name": "chopin.adaspoloandco.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "chopin.adaspoloandco.com"
+        },
+        "path": "/download.php",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "f798a2c4-c51b-409d-b349-ca8455b36796"
+    },
+    {
+      "network": "tcp",
       "password": "humanity",
       "server": "212.183.88.136",
       "server_port": 443,
@@ -532,36 +555,6 @@
     },
     {
       "network": "tcp",
-      "server": "185.146.173.231",
-      "server_port": 8880,
-      "tag": "outage-b130a03f0189a63f",
-      "transport": {
-        "headers": {
-          "Host": "xn---ndu.ntjdjpdb--a-9wl9jqtr75a136V2raya8b97ajdk44yjwac23607hkhja2.My-Archive69.Site."
-        },
-        "path": "/FreeV2ray-FreeV2ray-@Alfred_Config-@Alfred_Config",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "f4d17f64-6c83-491c-92aa-ec28940f2ff7"
-    },
-    {
-      "network": "tcp",
-      "server": "188.114.98.224",
-      "server_port": 8080,
-      "tag": "outage-fa7f5eca2c87a6cc",
-      "transport": {
-        "headers": {
-          "Host": "unlimiteddev-vpn.unlimiteddev.Community."
-        },
-        "path": "/Telegram:@UnlimitedDev-Telegram:@UnlimitedDev",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "faf5e40d-ded5-4939-9e35-d105f7ec9281"
-    },
-    {
-      "network": "tcp",
       "password": "humanity",
       "server": "104.19.229.21",
       "server_port": 443,
@@ -622,6 +615,7 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-790f72e603893c5e",
         "outage-11e094cd1ad51fd1",
         "outage-df3f02a0913f5203",
         "outage-f360b1fa96c1a6cc",
@@ -631,8 +625,8 @@
         "outage-8089e20f028d9a93",
         "outage-2f5cf03d941a287d",
         "outage-3a30cc7aa6a60b33",
-        "outage-b774c79faafff75d",
         "outage-2c42e9a4ffaee362",
+        "outage-2e8985352567b1d5",
         "outage-1901118c4dc767e9",
         "outage-0701f386bf6d6a65",
         "outage-b5c48af1b11c4f28",
@@ -642,6 +636,7 @@
         "outage-b8ebf9191b51049c",
         "outage-9da04183220947a6",
         "outage-f562940bb6dfedf6",
+        "outage-5475829455858b74",
         "outage-d1275c8006f1aa2a",
         "outage-1fabe9b9196c8f0a",
         "outage-1f118b1652206462",
@@ -652,8 +647,6 @@
         "outage-06525e311afefa6f",
         "outage-e24021acf612681a",
         "outage-06aa7968ada68f9e",
-        "outage-b130a03f0189a63f",
-        "outage-fa7f5eca2c87a6cc",
         "outage-f8651458f1ae20d8",
         "outage-bfca1159f88d047f",
         "outage-f2516bfe5a8e0023"

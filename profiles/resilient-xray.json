@@ -28,6 +28,28 @@
       "settings": {
         "vnext": [
           {
+            "address": "104.17.28.89",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "1078d418-b4e0-4668-9018-dc90c2042d61"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-790f72e603893c5e"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "172.67.74.10",
             "port": 443,
             "users": [
@@ -411,6 +433,31 @@
         }
       },
       "tag": "resilient-2c42e9a4ffaee362"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.66.47.186",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "435bda4c-fe5e-42c9-a3ad-15334943b38a"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-2e8985352567b1d5"
     },
     {
       "protocol": "trojan",
@@ -1254,60 +1301,6 @@
         }
       },
       "tag": "resilient-ee0f91582f26af38"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.16.254.49",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "435bda4c-fe5e-42c9-a3ad-15334943b38a"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-649965cd900176ae"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.16.117.43",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "83afd88f-200f-4d89-bfc7-66eff160c1d8"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "josni.hoyes.cloudns.ch"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-a49ccca64d05e784"
     },
     {
       "protocol": "trojan",
