@@ -463,60 +463,6 @@
       "tag": "resilient-58c418f2b2ed2b32"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "162.159.129.17",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "7a5a4624-df8d-4955-bccc-b3fa6161411f"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/T,E,L,E,G,R,A,M,X,V,2,R,A,Y?ed=2560"
-        }
-      },
-      "tag": "resilient-cfbd7a84f7496a61"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.18.37.228",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "83afd88f-200f-4d89-bfc7-66eff160c1d8"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "josni.hoyes.cloudns.ch"
-        },
-        "wsSettings": {
-          "path": "/?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512"
-        }
-      },
-      "tag": "resilient-1f115a81e4142280"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1137,6 +1083,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "104.18.37.228",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "josni.hoyes.cloudns.ch"
+        },
+        "wsSettings": {
+          "path": "/?TELEGRAM-ICV2RAY?ed=512"
+        }
+      },
+      "tag": "resilient-879f672203697fb9"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "45.130.125.114",
             "port": 8443,
             "users": [
@@ -1276,6 +1251,35 @@
         }
       },
       "tag": "resilient-533d7c3697e30d49"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.227.134",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "eeb6823c-b926-4ea2-866a-5542edd26e59"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "t1s1.rittbo.kdns.fr"
+        },
+        "wsSettings": {
+          "path": "/@NebulaVPNx"
+        }
+      },
+      "tag": "resilient-ee0f91582f26af38"
     },
     {
       "protocol": "trojan",
