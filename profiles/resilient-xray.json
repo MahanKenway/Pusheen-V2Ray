@@ -643,6 +643,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "104.16.57.85",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d342d11e-d424-4583-b36e-524ab1f0afa4"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "edtunnel-csc.pages.dev"
+        },
+        "wsSettings": {
+          "path": "/?ed=2048"
+        }
+      },
+      "tag": "resilient-0b12c48bbac69cd7"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "104.21.74.214",
             "port": 8880,
             "users": [
@@ -1287,35 +1316,6 @@
         }
       },
       "tag": "resilient-391bc14d1740c9cb"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.114.97.6",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "eeb6823c-b926-4ea2-866a-5542edd26e59"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "t1s1.rittbo.kdns.fr"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-5812c2f4b0f2baa0"
     },
     {
       "protocol": "trojan",
