@@ -562,6 +562,21 @@
     },
     {
       "network": "tcp",
+      "server": "104.17.147.22",
+      "server_port": 2052,
+      "tag": "outage-ca063313dcf22dac",
+      "transport": {
+        "headers": {
+          "Host": "7x70yyvt7eqotx-iq9n3rjt1xn1jwkh9.asdfsafdsaf.workers.dev"
+        },
+        "path": "/eyJqdW5rIjoiZUV1OVVaQ2xSWiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "401d950d-4f5c-45c7-bf44-8b69acf35f6f"
+    },
+    {
+      "network": "tcp",
       "server": "104.21.88.129",
       "server_port": 8880,
       "tag": "outage-ebaf3fd34bae753a",
@@ -589,21 +604,6 @@
       },
       "type": "vless",
       "uuid": "5659b42c-636f-4563-ac41-87d565d0dd1e"
-    },
-    {
-      "network": "tcp",
-      "server": "104.21.74.214",
-      "server_port": 8880,
-      "tag": "outage-88e204c077a3b9b3",
-      "transport": {
-        "headers": {
-          "Host": "weathered-lake-e883.35-bc4.workers.dev"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "d7ec3e31-a9c4-4bdf-a2d8-7f75a8381035"
     },
     {
       "idle_timeout": "30m",
@@ -641,9 +641,9 @@
         "outage-1ae4279cbbd2f187",
         "outage-f0135aa56648578b",
         "outage-e24021acf612681a",
+        "outage-ca063313dcf22dac",
         "outage-ebaf3fd34bae753a",
-        "outage-5ed9cd2dbaca1391",
-        "outage-88e204c077a3b9b3"
+        "outage-5ed9cd2dbaca1391"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
