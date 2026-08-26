@@ -211,6 +211,25 @@
     },
     {
       "network": "tcp",
+      "server": "185.18.250.212",
+      "server_port": 443,
+      "tag": "outage-9d1944cb94f05fe8",
+      "tls": {
+        "enabled": true,
+        "server_name": "cfed.tgzdyz2.top"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cfed.tgzdyz2.top"
+        },
+        "path": "tg@zdyz2",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5"
+    },
+    {
+      "network": "tcp",
       "server": "104.16.72.41",
       "server_port": 8880,
       "tag": "outage-4e6b5e2af1586df2",
@@ -495,25 +514,6 @@
     },
     {
       "network": "tcp",
-      "server": "45.130.125.114",
-      "server_port": 8443,
-      "tag": "outage-af5c5f45c9e76d40",
-      "tls": {
-        "enabled": true,
-        "server_name": "srv10.perfectbulk.info"
-      },
-      "transport": {
-        "headers": {
-          "Host": "srv10.perfectbulk.info"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93"
-    },
-    {
-      "network": "tcp",
       "password": "humanity",
       "server": "104.18.152.246",
       "server_port": 443,
@@ -644,6 +644,7 @@
         "outage-b0d3015d2ff5c487",
         "outage-e700123a6f16d7b8",
         "outage-3ca8159b63c79fa1",
+        "outage-9d1944cb94f05fe8",
         "outage-4e6b5e2af1586df2",
         "outage-9efce4198cef25dc",
         "outage-01d4e17551eed3f4",
@@ -660,7 +661,6 @@
         "outage-d1275c8006f1aa2a",
         "outage-1fabe9b9196c8f0a",
         "outage-1f118b1652206462",
-        "outage-af5c5f45c9e76d40",
         "outage-06525e311afefa6f",
         "outage-e24021acf612681a",
         "outage-f8651458f1ae20d8",
