@@ -366,6 +366,21 @@
     },
     {
       "network": "tcp",
+      "server": "172.67.157.183",
+      "server_port": 8080,
+      "tag": "outage-90119429dd106045",
+      "transport": {
+        "headers": {
+          "Host": "7x70yyvt7eqotx-iq9n3rjt1xn1jwkh9.asdfsafdsaf.workers.dev"
+        },
+        "path": "/eyJqdW5rIjoiV3NqWVRNQlpFSVVwWmsiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "401d950d-4f5c-45c7-bf44-8b69acf35f6f"
+    },
+    {
+      "network": "tcp",
       "password": "humanity",
       "server": "104.16.174.44",
       "server_port": 443,
@@ -499,21 +514,6 @@
     },
     {
       "network": "tcp",
-      "server": "104.16.107.139",
-      "server_port": 8880,
-      "tag": "outage-418582d4fa5cd079",
-      "transport": {
-        "headers": {
-          "Host": "steep-frost-8b18.350-c77.workers.dev"
-        },
-        "path": "/pyip=proxyip.us.cmliussss.net",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "f5c01a38-a92a-46a1-8968-a0582f4e2f2a"
-    },
-    {
-      "network": "tcp",
       "password": "humanity",
       "server": "104.18.152.246",
       "server_port": 443,
@@ -599,25 +599,6 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "Watashi_VPN",
-      "server": "104.17.148.22",
-      "server_port": 443,
-      "tag": "outage-19549cce3a5fef31",
-      "tls": {
-        "enabled": true,
-        "server_name": "t-watashi-r-jacket-o-people-jan.watashi-java.ir"
-      },
-      "transport": {
-        "headers": {
-          "Host": "t-watashi-r-jacket-o-people-jan.watashi-java.ir"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
       "alter_id": 0,
       "network": "tcp",
       "security": "auto",
@@ -626,6 +607,25 @@
       "tag": "outage-0d4115652154699c",
       "type": "vmess",
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
+      "server": "104.18.152.219",
+      "server_port": 443,
+      "tag": "outage-c3fdbcc6f6b59a44",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.ignitelimit.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
     },
     {
       "idle_timeout": "30m",
@@ -653,6 +653,7 @@
         "outage-0396f2af584129ba",
         "outage-1004777024bf9492",
         "outage-48360b674d0aaca9",
+        "outage-90119429dd106045",
         "outage-0701f386bf6d6a65",
         "outage-5475829455858b74",
         "outage-543f2ce5feb1d10a",
@@ -660,14 +661,13 @@
         "outage-d1275c8006f1aa2a",
         "outage-1fabe9b9196c8f0a",
         "outage-1f118b1652206462",
-        "outage-418582d4fa5cd079",
         "outage-06525e311afefa6f",
         "outage-e24021acf612681a",
         "outage-f8651458f1ae20d8",
         "outage-bfca1159f88d047f",
         "outage-f2516bfe5a8e0023",
-        "outage-19549cce3a5fef31",
-        "outage-0d4115652154699c"
+        "outage-0d4115652154699c",
+        "outage-c3fdbcc6f6b59a44"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
