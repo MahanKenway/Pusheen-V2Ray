@@ -419,6 +419,21 @@
     },
     {
       "network": "tcp",
+      "server": "104.21.74.214",
+      "server_port": 8880,
+      "tag": "outage-b5c48af1b11c4f28",
+      "transport": {
+        "headers": {
+          "Host": "late-boat-fbd7.152-de6.workers.dev"
+        },
+        "path": "/pyip",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "8ddedcc7-6c4e-4df3-a190-ac40926f6694"
+    },
+    {
+      "network": "tcp",
       "server": "188.114.97.4",
       "server_port": 8443,
       "tag": "outage-5475829455858b74",
@@ -454,25 +469,6 @@
       },
       "type": "vless",
       "uuid": "f798a2c4-c51b-409d-b349-ca8455b36796"
-    },
-    {
-      "network": "tcp",
-      "server": "104.16.72.20",
-      "server_port": 8443,
-      "tag": "outage-ed12bbb77dc8972a",
-      "tls": {
-        "enabled": true,
-        "server_name": "t1s1.rittbo.kdns.fr"
-      },
-      "transport": {
-        "headers": {
-          "Host": "t1s1.rittbo.kdns.fr"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59"
     },
     {
       "network": "tcp",
@@ -675,9 +671,9 @@
         "outage-2e8985352567b1d5",
         "outage-1901118c4dc767e9",
         "outage-0701f386bf6d6a65",
+        "outage-b5c48af1b11c4f28",
         "outage-5475829455858b74",
         "outage-543f2ce5feb1d10a",
-        "outage-ed12bbb77dc8972a",
         "outage-d1275c8006f1aa2a",
         "outage-1fabe9b9196c8f0a",
         "outage-1f118b1652206462",
