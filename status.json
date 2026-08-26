@@ -1,10 +1,10 @@
 {
   "delivery_monitor": {
-    "failed_probe_count": 2,
+    "failed_probe_count": 1,
     "gateway_5xx_streak": 0,
-    "iran_delivery": "failed_from_sampled_probe",
+    "iran_delivery": "reachable_from_sampled_probe",
     "sampled_probe_count": 8,
-    "successful_http_200_count": 6
+    "successful_http_200_count": 7
   },
   "feeds": {
     "balanced": {
@@ -97,8 +97,8 @@
   "schema_version": 1,
   "service": "Pusheen V2Ray quality-first subscription pipeline",
   "slo": {
-    "alert_count": 1,
-    "status": "degraded"
+    "alert_count": 0,
+    "status": "healthy"
   },
   "sources": {
     "healthy": 8,
