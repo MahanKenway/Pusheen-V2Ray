@@ -464,35 +464,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "102.177.176.151",
-            "port": 2096,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "1149be91-5a4f-47de-995f-66f8d7d64498"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "De13.SiMaNsAnAt.Ir."
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-b774c79faafff75d"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "104.17.178.154",
             "port": 8880,
             "users": [
@@ -1309,6 +1280,35 @@
         }
       },
       "tag": "resilient-1a907eee8a07b40a"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.18.37.228",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "josni.hoyes.cloudns.ch"
+        },
+        "wsSettings": {
+          "path": "/?TELEGRAM-ICV2RAY?ed=512"
+        }
+      },
+      "tag": "resilient-879f672203697fb9"
     },
     {
       "protocol": "trojan",
