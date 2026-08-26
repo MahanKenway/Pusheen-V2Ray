@@ -493,6 +493,60 @@
       "settings": {
         "vnext": [
           {
+            "address": "172.64.145.202",
+            "port": 2087,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-0396f2af584129ba"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.18.185.26",
+            "port": 8880,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "5659b42c-636f-4563-ac41-87d565d0dd1e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/pyip=ProxyIP.JP.autumniussss.net"
+        }
+      },
+      "tag": "resilient-1004777024bf9492"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "104.17.147.22",
             "port": 443,
             "users": [
@@ -1235,64 +1289,6 @@
         }
       },
       "tag": "resilient-879f672203697fb9"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.130.125.114",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "srv10.perfectbulk.info"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-af5c5f45c9e76d40"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.159",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "d0b812f3-a74a-45f5-ac3a-24bcc21b44ea"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-747f8389694dfc0c"
     },
     {
       "protocol": "trojan",

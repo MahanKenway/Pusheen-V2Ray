@@ -234,6 +234,40 @@
     },
     {
       "network": "tcp",
+      "server": "172.64.145.202",
+      "server_port": 2087,
+      "tag": "outage-0396f2af584129ba",
+      "tls": {
+        "enabled": true,
+        "server_name": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+      },
+      "transport": {
+        "headers": {
+          "Host": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+    },
+    {
+      "network": "tcp",
+      "server": "104.18.185.26",
+      "server_port": 8880,
+      "tag": "outage-1004777024bf9492",
+      "transport": {
+        "headers": {
+          "Host": "autumn-base-0eb9.116-d25.workers.dev"
+        },
+        "path": "/pyip=ProxyIP.JP.autumniussss.net",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "5659b42c-636f-4563-ac41-87d565d0dd1e"
+    },
+    {
+      "network": "tcp",
       "server": "104.17.147.22",
       "server_port": 443,
       "tag": "outage-48360b674d0aaca9",
@@ -370,44 +404,6 @@
     },
     {
       "network": "tcp",
-      "server": "172.67.219.21",
-      "server_port": 443,
-      "tag": "outage-09b80b31b74b8faa",
-      "tls": {
-        "enabled": true,
-        "server_name": "FLAT-night-EDD0.hOsEin9saLEAZhuongOoYeH87.wOrkerS.DeV"
-      },
-      "transport": {
-        "headers": {
-          "Host": "FLAT-night-EDD0.hOsEin9saLEAZhuongOoYeH87.wOrkerS.DeV"
-        },
-        "path": "/eyJqdW5rIjoiZU1pQlVqNTBYVmpTeDlCIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "49c0ae46-767c-47d1-9703-8740e0c4b15a"
-    },
-    {
-      "network": "tcp",
-      "server": "151.101.56.6",
-      "server_port": 443,
-      "tag": "outage-b8ebf9191b51049c",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ssl.fastly.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "bbde90cd-b6a9-49ba-cab0-71ae12738502"
-    },
-    {
-      "network": "tcp",
       "server": "188.114.97.4",
       "server_port": 8443,
       "tag": "outage-5475829455858b74",
@@ -420,6 +416,25 @@
           "Host": "chopin.adaspoloandco.com"
         },
         "path": "/download.php",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "f798a2c4-c51b-409d-b349-ca8455b36796"
+    },
+    {
+      "network": "tcp",
+      "server": "104.26.14.85",
+      "server_port": 8443,
+      "tag": "outage-543f2ce5feb1d10a",
+      "tls": {
+        "enabled": true,
+        "server_name": "chopin.adaspoloandco.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "chopin.adaspoloandco.com"
+        },
+        "path": "/download.php#TELEGRAM-PROXY_MTM?ed=2048",
         "type": "ws"
       },
       "type": "vless",
@@ -547,14 +562,6 @@
     },
     {
       "network": "tcp",
-      "server": "185.146.173.200",
-      "server_port": 8080,
-      "tag": "outage-06aa7968ada68f9e",
-      "type": "vless",
-      "uuid": "faf5e40d-ded5-4939-9e35-d105f7ec9281"
-    },
-    {
-      "network": "tcp",
       "password": "humanity",
       "server": "104.19.229.21",
       "server_port": 443,
@@ -647,6 +654,8 @@
         "outage-2f5cf03d941a287d",
         "outage-3a30cc7aa6a60b33",
         "outage-2c42e9a4ffaee362",
+        "outage-0396f2af584129ba",
+        "outage-1004777024bf9492",
         "outage-48360b674d0aaca9",
         "outage-90119429dd106045",
         "outage-2e8985352567b1d5",
@@ -655,9 +664,8 @@
         "outage-b5c48af1b11c4f28",
         "outage-b892673e0e1179e4",
         "outage-568f028999be9d7d",
-        "outage-09b80b31b74b8faa",
-        "outage-b8ebf9191b51049c",
         "outage-5475829455858b74",
+        "outage-543f2ce5feb1d10a",
         "outage-d1275c8006f1aa2a",
         "outage-1fabe9b9196c8f0a",
         "outage-1f118b1652206462",
@@ -665,7 +673,6 @@
         "outage-d798073999258196",
         "outage-06525e311afefa6f",
         "outage-e24021acf612681a",
-        "outage-06aa7968ada68f9e",
         "outage-f8651458f1ae20d8",
         "outage-bfca1159f88d047f",
         "outage-f2516bfe5a8e0023",
