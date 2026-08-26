@@ -402,18 +402,13 @@
       "tag": "resilient-9acfdfe2e75a1283"
     },
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "199.232.78.160",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "XpnTeam-29"
-              }
-            ]
+            "address": "104.21.69.44",
+            "password": "00ad4330-8d40-11ee-8d1a-1239d0255272",
+            "port": 443
           }
         ]
       },
@@ -422,13 +417,37 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
+          "serverName": "us1.test3.net"
         },
         "wsSettings": {
-          "path": "/"
+          "path": "/howdy"
         }
       },
-      "tag": "resilient-2f5cf03d941a287d"
+      "tag": "resilient-154ba27ec3274049"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "108.162.198.99",
+            "password": "ba19c9d6-3fc0-4085-9f47-465c5d7cceef",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ajp.hyas.space"
+        },
+        "wsSettings": {
+          "path": "/x7f9k2m4p8"
+        }
+      },
+      "tag": "resilient-96107966a97d6bac"
     },
     {
       "protocol": "vless",
@@ -754,6 +773,30 @@
       "settings": {
         "servers": [
           {
+            "address": "140.248.185.253",
+            "password": "MiTiVPN",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/s-w@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1"
+        }
+      },
+      "tag": "resilient-1901118c4dc767e9"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "104.16.174.44",
             "password": "humanity",
             "port": 443
@@ -772,6 +815,35 @@
         }
       },
       "tag": "resilient-0701f386bf6d6a65"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "199.232.78.160",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "XpnTeam-37"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-5ecd625b4f16f09b"
     },
     {
       "protocol": "vless",
