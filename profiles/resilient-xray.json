@@ -493,6 +493,55 @@
       "settings": {
         "vnext": [
           {
+            "address": "104.17.178.154",
+            "port": 8880,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "f6e14309-5cff-4f5d-bce1-06a260159bbe"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/pyip"
+        }
+      },
+      "tag": "resilient-01d4e17551eed3f4"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "151.101.56.6",
+            "password": "Mitivpn",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/slowdns"
+        }
+      },
+      "tag": "resilient-369b36d3cb117771"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "45.130.125.126",
             "port": 443,
             "users": [
@@ -885,35 +934,6 @@
         }
       },
       "tag": "resilient-09b80b31b74b8faa"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "151.101.56.6",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "bbde90cd-b6a9-49ba-cab0-71ae12738502"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-b8ebf9191b51049c"
     },
     {
       "protocol": "vless",

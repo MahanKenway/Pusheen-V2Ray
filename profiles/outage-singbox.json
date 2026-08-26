@@ -215,6 +215,40 @@
     },
     {
       "network": "tcp",
+      "server": "104.17.178.154",
+      "server_port": 8880,
+      "tag": "outage-01d4e17551eed3f4",
+      "transport": {
+        "headers": {
+          "Host": "steep-bread-32f0.92-d12.workers.dev"
+        },
+        "path": "/pyip",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "f6e14309-5cff-4f5d-bce1-06a260159bbe"
+    },
+    {
+      "network": "tcp",
+      "password": "Mitivpn",
+      "server": "151.101.56.6",
+      "server_port": 443,
+      "tag": "outage-369b36d3cb117771",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/slowdns",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "45.130.125.126",
       "server_port": 443,
       "tag": "outage-a6ecccd138319154",
@@ -547,14 +581,6 @@
     },
     {
       "network": "tcp",
-      "server": "185.146.173.200",
-      "server_port": 8080,
-      "tag": "outage-06aa7968ada68f9e",
-      "type": "vless",
-      "uuid": "faf5e40d-ded5-4939-9e35-d105f7ec9281"
-    },
-    {
-      "network": "tcp",
       "password": "humanity",
       "server": "104.19.229.21",
       "server_port": 443,
@@ -611,25 +637,6 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "Watashi_VPN",
-      "server": "104.17.148.22",
-      "server_port": 443,
-      "tag": "outage-19549cce3a5fef31",
-      "tls": {
-        "enabled": true,
-        "server_name": "t-watashi-r-jacket-o-people-jan.watashi-java.ir"
-      },
-      "transport": {
-        "headers": {
-          "Host": "t-watashi-r-jacket-o-people-jan.watashi-java.ir"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
       "alter_id": 0,
       "network": "tcp",
       "security": "auto",
@@ -656,6 +663,8 @@
         "outage-b0d3015d2ff5c487",
         "outage-e700123a6f16d7b8",
         "outage-3a30cc7aa6a60b33",
+        "outage-01d4e17551eed3f4",
+        "outage-369b36d3cb117771",
         "outage-a6ecccd138319154",
         "outage-0396f2af584129ba",
         "outage-1004777024bf9492",
@@ -675,11 +684,9 @@
         "outage-d798073999258196",
         "outage-06525e311afefa6f",
         "outage-e24021acf612681a",
-        "outage-06aa7968ada68f9e",
         "outage-f8651458f1ae20d8",
         "outage-bfca1159f88d047f",
         "outage-f2516bfe5a8e0023",
-        "outage-19549cce3a5fef31",
         "outage-0d4115652154699c"
       ],
       "tag": "outage-auto",
