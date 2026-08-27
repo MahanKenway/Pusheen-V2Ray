@@ -619,6 +619,25 @@
     },
     {
       "network": "tcp",
+      "password": "humanity",
+      "server": "172.67.221.242",
+      "server_port": 443,
+      "tag": "outage-76d7d52ca0f1352a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.ignitelimit.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "Telegram_healer_config",
       "server": "172.67.218.38",
       "server_port": 443,
@@ -632,25 +651,6 @@
           "Host": "1v95V6tjywCyTBAhl7f7lX8B27G.l4495eycQmSE9he0YVoemJfc4IBYf-4.wORkerS.dEV"
         },
         "path": "/tr/dxyX388XOtyAjF3A?ed=2560",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "Telegram_healer_config",
-      "server": "188.114.96.3",
-      "server_port": 443,
-      "tag": "outage-f2516bfe5a8e0023",
-      "tls": {
-        "enabled": true,
-        "server_name": "6M1RGYiecLMrX9HEf1.z6-0hLNuBjIBWzPa85.wOrkers.DEv"
-      },
-      "transport": {
-        "headers": {
-          "Host": "6M1RGYiecLMrX9HEf1.z6-0hLNuBjIBWzPa85.wOrkers.DEv"
-        },
-        "path": "/tr/N61UxT346epoPVmA9xFM6H00?ed=2560",
         "type": "ws"
       },
       "type": "trojan"
@@ -705,8 +705,8 @@
         "outage-06525e311afefa6f",
         "outage-e24021acf612681a",
         "outage-f8651458f1ae20d8",
+        "outage-76d7d52ca0f1352a",
         "outage-bfca1159f88d047f",
-        "outage-f2516bfe5a8e0023",
         "outage-0d4115652154699c"
       ],
       "tag": "outage-auto",

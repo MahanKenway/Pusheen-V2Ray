@@ -1430,6 +1430,30 @@
       "settings": {
         "servers": [
           {
+            "address": "172.67.221.242",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.ignitelimit.com"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-76d7d52ca0f1352a"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "172.67.218.38",
             "password": "Telegram_healer_config",
             "port": 443
@@ -1519,6 +1543,49 @@
         }
       },
       "tag": "resilient-c3fdbcc6f6b59a44"
+    },
+    {
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "216.106.183.35",
+            "port": 22324,
+            "users": [
+              {
+                "alterId": 0,
+                "id": "04621bae-ab36-11ec-b909-0242ac120002",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-de14d62c64a595ee"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "saj2000e.pacemakere.com",
+            "password": "c857562678594197",
+            "port": 20063
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false
+        }
+      },
+      "tag": "resilient-f0061681ad96bbf3"
     },
     {
       "protocol": "blackhole",
