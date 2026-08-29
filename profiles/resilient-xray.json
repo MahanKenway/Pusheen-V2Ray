@@ -403,60 +403,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.16.129.18",
-            "port": 8080,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "fc1c4134-ad91-4947-a526-4ad3d5dad626"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/Telegram:@"
-        }
-      },
-      "tag": "resilient-98a5369cdb8f01da"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "69.46.46.26",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "a09315ec-97b2-e8b6-a72d-e5a09585d140"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "hidden-harbor-2872-production.up.railway.app"
-        },
-        "wsSettings": {
-          "path": "/ws/a09315ec-97b2-e8b6-a72d-e5a09585d140"
-        }
-      },
-      "tag": "resilient-309f4ce81b0631db"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "prisonvpnc-production.up.railway.app",
             "port": 443,
             "users": [
@@ -486,12 +432,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.98.9",
-            "port": 8080,
+            "address": "69.46.46.26",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "f2bf488a-72fc-420f-bd5e-35a5884f55b0"
+                "id": "f78ecba6-f0dd-2a9b-f4ff-8c7cc610138e"
               }
             ]
           }
@@ -499,12 +445,16 @@
       },
       "streamSettings": {
         "network": "ws",
-        "security": "none",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "willow-voyager-5a0a-production.up.railway.app"
+        },
         "wsSettings": {
-          "path": "/"
+          "path": "/ws/f78ecba6-f0dd-2a9b-f4ff-8c7cc610138e"
         }
       },
-      "tag": "resilient-09751bac3757934d"
+      "tag": "resilient-78e3f9877cc697ae"
     },
     {
       "protocol": "trojan",
@@ -704,28 +654,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "157.137.236.160",
-            "port": 62145,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "8fb65472-5957-4f64-ba2d-b5812b2f155a"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-273b2a0b100b9d8a"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "93.123.85.218",
             "port": 52,
             "users": [
@@ -794,6 +722,23 @@
           {
             "address": "us01.duotg.top",
             "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
+            "port": 20065
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-b24a743cf5ea9dff"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "us01.duotg.top",
+            "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
             "port": 43022
           }
         ]
@@ -803,35 +748,6 @@
         "security": "none"
       },
       "tag": "resilient-34cf5e801c949ac3"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "162.35.231.127",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI",
-          "serverName": "savesafe.co",
-          "shortId": "f63805c3ecc7a483"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-316037206fa457a7"
     },
     {
       "protocol": "trojan",
@@ -938,6 +854,36 @@
       "settings": {
         "vnext": [
           {
+            "address": "31.76.64.248",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "0a322246-8c1a-47cd-9865-cccebbb2e5c1"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "9OV_GN4lgwY_4llPfYCGev-PPXLMj-hfYnveKF4tjws",
+          "serverName": "blog.api.www.cloudflare.com",
+          "shortId": "f8",
+          "spiderX": "/9a51181547531a2"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-63f7c0f1419c96d4"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "83.168.111.66",
             "port": 443,
             "users": [
@@ -961,6 +907,34 @@
         "security": "reality"
       },
       "tag": "resilient-c050d0c0d063a185"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "54.38.138.175",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "b2e8f455-3bd9-477c-b8f0-a3198f601565"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "LrDYMSt1pt2h6n-7YnHpcUAb_IG7QsQ0rfXz8RqkfCY",
+          "serverName": "play.google.com",
+          "shortId": "9e0fac51cc19d2"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-1b0be9f185a1e2f4"
     },
     {
       "protocol": "vless",
@@ -1222,12 +1196,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "usvip.soundfiy.ir",
-            "port": 3389,
+            "address": "kz.alertyagency.com",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "aaab254f-a9bf-4c57-96a0-50f4269ab784"
+                "flow": "xtls-rprx-vision",
+                "id": "a704443d-655e-4d9f-8ce6-12eeb17a9a08"
               }
             ]
           }
@@ -1237,13 +1212,13 @@
         "network": "tcp",
         "realitySettings": {
           "fingerprint": "firefox",
-          "publicKey": "fJgfoeTonZ3FfIXETWnn65nJeuioFkRcwlqFzwlAlwU",
-          "serverName": "amp-api-edge.apps.apple.com",
-          "shortId": "25e1eaeece23a4ca"
+          "publicKey": "vsDwubDjDjfLpWAHRNFGVfmC8hLiXDablO1iOOXdUhQ",
+          "serverName": "api-maps.yandex.ru",
+          "shortId": "01e4de88"
         },
         "security": "reality"
       },
-      "tag": "resilient-f34e2d1c035d9860"
+      "tag": "resilient-6228c998731ff1a3"
     },
     {
       "protocol": "blackhole",
