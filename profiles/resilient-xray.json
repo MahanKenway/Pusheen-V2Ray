@@ -77,6 +77,26 @@
       "tag": "resilient-93e2fbfa407980b3"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "172.67.176.157",
+            "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/trojan"
+        }
+      },
+      "tag": "resilient-29eea448c5f6e613"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1251,6 +1271,23 @@
         }
       },
       "tag": "resilient-700be99832dda93f"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "42.51.25.69",
+            "password": "002023c45d18bca3eba2757bb683309a",
+            "port": 59443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-fc25d01721c9bbf8"
     },
     {
       "protocol": "trojan",

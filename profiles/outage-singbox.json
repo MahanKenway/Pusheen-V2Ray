@@ -52,6 +52,21 @@
     },
     {
       "network": "tcp",
+      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+      "server": "172.67.176.157",
+      "server_port": 443,
+      "tag": "outage-29eea448c5f6e613",
+      "transport": {
+        "headers": {
+          "Host": "id1.nathaya.web.id"
+        },
+        "path": "/trojan",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "104.21.29.41",
       "server_port": 2082,
       "tag": "outage-791e5bb1abe3b893",
@@ -280,24 +295,13 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
-      "server": "us01.duotg.top",
-      "server_port": 46292,
-      "tag": "outage-a6510798667270c9",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com"
-      },
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
         "outage-f47c88ee7b4e6c02",
         "outage-93e2fbfa407980b3",
+        "outage-29eea448c5f6e613",
         "outage-791e5bb1abe3b893",
         "outage-b3927d737e1f31d2",
         "outage-7701254437452381",
@@ -313,8 +317,7 @@
         "outage-b6bdd98f746d8e69",
         "outage-c1a9156a8a0ab842",
         "outage-f8e3135ad3ef01a4",
-        "outage-db8fcdb119c04432",
-        "outage-a6510798667270c9"
+        "outage-db8fcdb119c04432"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
