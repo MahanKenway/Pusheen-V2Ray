@@ -14,57 +14,41 @@
   "outbounds": [
     {
       "network": "tcp",
-      "password": "MiTiVPN",
-      "server": "104.18.152.229",
+      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+      "server": "104.21.70.21",
       "server_port": 443,
-      "tag": "outage-47746167cec1f7af",
+      "tag": "outage-f47c88ee7b4e6c02",
+      "tls": {
+        "enabled": true,
+        "server_name": "id1.nathaya.web.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "id1.nathaya.web.id"
+        },
+        "path": "/trojan",
+        "type": "ws"
+      },
       "type": "trojan"
     },
     {
       "network": "tcp",
-      "server": "188.114.96.0",
+      "server": "162.159.197.1",
       "server_port": 443,
-      "tag": "outage-9e07e740c3897d5f",
+      "tag": "outage-93e2fbfa407980b3",
       "tls": {
         "enabled": true,
-        "server_name": "creaMbAbay.paGEs.dEV"
+        "server_name": "grc.ccwu.cc"
       },
       "transport": {
         "headers": {
-          "Host": "creaMbAbay.paGEs.dEV"
+          "Host": "grc.ccwu.cc"
         },
-        "path": "/vl/sw3njMWg41aR6H1DDXba?ed=2560",
+        "path": "/?ed=2560",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "431d9fd7-b32d-4838-b281-f34604c56e77"
-    },
-    {
-      "network": "tcp",
-      "password": "MiTiVPN",
-      "server": "104.18.6.178",
-      "server_port": 2087,
-      "tag": "outage-318c2c57c775a0a5",
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "104.18.1.1",
-      "server_port": 443,
-      "tag": "outage-b3781ea2dbe5ac14",
-      "tls": {
-        "enabled": true,
-        "server_name": "sErVER15.PEeKCOnF1-741.wOrkErs.Dev."
-      },
-      "transport": {
-        "headers": {
-          "Host": "sErVER15.PEeKCOnF1-741.wOrkErs.Dev."
-        },
-        "path": "/eyJqdW5rIjoiOUZIcXVMV3FlbnoiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iLCJbMjYwMjpmYzU5OjExOjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "78b9ac78-ebdf-4e51-8114-f6b0cd6d2169"
+      "uuid": "a30a3f37-1ab2-46bd-8c6b-a26d7c775f2a"
     },
     {
       "network": "tcp",
@@ -208,6 +192,25 @@
     },
     {
       "network": "tcp",
+      "server": "69.46.46.26",
+      "server_port": 443,
+      "tag": "outage-78e3f9877cc697ae",
+      "tls": {
+        "enabled": true,
+        "server_name": "willow-voyager-5a0a-production.up.railway.app"
+      },
+      "transport": {
+        "headers": {
+          "Host": "willow-voyager-5a0a-production.up.railway.app"
+        },
+        "path": "/ws/f78ecba6-f0dd-2a9b-f4ff-8c7cc610138e",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "f78ecba6-f0dd-2a9b-f4ff-8c7cc610138e"
+    },
+    {
+      "network": "tcp",
       "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
       "server": "edu.ruangguru.com",
       "server_port": 443,
@@ -267,6 +270,17 @@
     },
     {
       "network": "tcp",
+      "password": "010bd080-2133-11f0-a064-1239d0255272",
+      "server": "51.38.65.155",
+      "server_port": 443,
+      "tag": "outage-db8fcdb119c04432",
+      "tls": {
+        "enabled": true
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
       "server": "us01.duotg.top",
       "server_port": 46292,
@@ -278,26 +292,12 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "server": "94.183.209.59",
-      "server_port": 443,
-      "tag": "outage-ae38e6172c0c5273",
-      "transport": {
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "d23cb516-40db-4aa4-8142-6b45ff882f90"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
-        "outage-47746167cec1f7af",
-        "outage-9e07e740c3897d5f",
-        "outage-318c2c57c775a0a5",
-        "outage-b3781ea2dbe5ac14",
+        "outage-f47c88ee7b4e6c02",
+        "outage-93e2fbfa407980b3",
         "outage-791e5bb1abe3b893",
         "outage-b3927d737e1f31d2",
         "outage-7701254437452381",
@@ -306,14 +306,15 @@
         "outage-2dba5a32373f8642",
         "outage-93feca956ac34493",
         "outage-51af6381b3e846e2",
+        "outage-78e3f9877cc697ae",
         "outage-593cb511b35a17bd",
         "outage-c8aea0316fad2918",
         "outage-e94bdcac689549bb",
         "outage-b6bdd98f746d8e69",
         "outage-c1a9156a8a0ab842",
         "outage-f8e3135ad3ef01a4",
-        "outage-a6510798667270c9",
-        "outage-ae38e6172c0c5273"
+        "outage-db8fcdb119c04432",
+        "outage-a6510798667270c9"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
