@@ -117,6 +117,25 @@
     },
     {
       "network": "tcp",
+      "server": "104.21.17.120",
+      "server_port": 443,
+      "tag": "outage-a014aca032e025ed",
+      "tls": {
+        "enabled": true,
+        "server_name": "myclashes.top"
+      },
+      "transport": {
+        "headers": {
+          "Host": "myclashes.top"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "b2c43c2d-01fb-48ee-9a1c-8f1ee3227e10"
+    },
+    {
+      "network": "tcp",
       "server": "172.64.154.8",
       "server_port": 2095,
       "tag": "outage-3b346ab6c2095c28",
@@ -186,25 +205,6 @@
       },
       "type": "vless",
       "uuid": "46582dc2-9d6e-83c7-069e-82bfb39fb3d9"
-    },
-    {
-      "network": "tcp",
-      "server": "69.46.46.26",
-      "server_port": 443,
-      "tag": "outage-78e3f9877cc697ae",
-      "tls": {
-        "enabled": true,
-        "server_name": "willow-voyager-5a0a-production.up.railway.app"
-      },
-      "transport": {
-        "headers": {
-          "Host": "willow-voyager-5a0a-production.up.railway.app"
-        },
-        "path": "/ws/f78ecba6-f0dd-2a9b-f4ff-8c7cc610138e",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "f78ecba6-f0dd-2a9b-f4ff-8c7cc610138e"
     },
     {
       "network": "tcp",
@@ -301,11 +301,11 @@
         "outage-791e5bb1abe3b893",
         "outage-b3927d737e1f31d2",
         "outage-7701254437452381",
+        "outage-a014aca032e025ed",
         "outage-3b346ab6c2095c28",
         "outage-2dba5a32373f8642",
         "outage-93feca956ac34493",
         "outage-51af6381b3e846e2",
-        "outage-78e3f9877cc697ae",
         "outage-593cb511b35a17bd",
         "outage-c8aea0316fad2918",
         "outage-e94bdcac689549bb",

@@ -199,6 +199,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "104.21.17.120",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "b2c43c2d-01fb-48ee-9a1c-8f1ee3227e10"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "myclashes.top"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-a014aca032e025ed"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "172.64.154.8",
             "port": 2095,
             "users": [
@@ -479,6 +508,35 @@
         "security": "none"
       },
       "tag": "resilient-c1a9156a8a0ab842"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "173.230.155.55",
+            "port": 50900,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "2c082e78-bd9d-4960-b9f3-cde0040cb4f3"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "vdE4t2bYhYun6fZ9Weu_f6MXtsmq8iJ7XQBUj62scR0",
+          "serverName": "www.amd.com",
+          "shortId": "12fa394e28d52011"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-df658d2611498fbb"
     },
     {
       "protocol": "trojan",
@@ -930,6 +988,40 @@
       "tag": "resilient-63f7c0f1419c96d4"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "49.212.204.123",
+            "password": "!str18844",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-023cfa396052fcd0"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "49.212.193.129",
+            "password": "!str18844",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-dd2f539e00d01005"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1130,66 +1222,6 @@
         "security": "reality"
       },
       "tag": "resilient-33fe26c1b8517abc"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "shop.jarorobo.ir",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "062ab170-2592-4915-a352-0e92eabfae54"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "random",
-          "publicKey": "9LyZjKAQkh2_FwDS21QVW05gfBRR77KjatFS8EtRyU4",
-          "serverName": "www.github.com",
-          "shortId": "651585174f4da130",
-          "spiderX": "/dcbf13be9552c2a"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-736a0fc0d47e5bf4"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "bg1.univesalsrv.com",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "2f35965a-9a9b-45fd-ba32-987296dfb6be"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "gw.v1.StreamService"
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "vCxac528c27GggqKBDwXVYvnzyI_BIlc7eqRTo8xqEY",
-          "serverName": "bg1.univesalsrv.com",
-          "shortId": "954891aec4fe0be9"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-e354a59c7c1a655c"
     },
     {
       "protocol": "trojan",
