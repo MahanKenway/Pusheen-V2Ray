@@ -326,6 +326,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "k2.cloud--vpn.site",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d0ee468a-084b-411d-b2be-b886a61065d1"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-93feca956ac34493"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "prisonvpnc-production.up.railway.app",
             "port": 443,
             "users": [
@@ -501,35 +530,6 @@
       "tag": "resilient-c1a9156a8a0ab842"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "k2.cloud--vpn.site",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "d0ee468a-084b-411d-b2be-b886a61065d1"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-2a7d398379f9db8e"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -566,6 +566,57 @@
         }
       },
       "tag": "resilient-a6510798667270c9"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "5.152.223.192",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "5bd820f0-69cb-4d6a-b42d-c0dfe2edffcd"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY",
+          "serverName": "strapi.io",
+          "shortId": "fd55b698ee8c3629"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-8ab2696c706477a7"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.110.189.172",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "mlkem768x25519plus.native.0rtt.-0MXXOstBc09cB1tSeGN1pwYBzVEiVW__njsxK2hd14",
+                "id": "d70e525c-67bd-4261-b7f5-96589be5b3b0"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-f331f09dea332fd5"
     },
     {
       "protocol": "vless",
@@ -610,6 +661,35 @@
         "security": "none"
       },
       "tag": "resilient-c1e07a888a615100"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "5.45.117.125",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "c7e9c591-2764-423a-afca-efbd010fd396"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "freeuse.firta.ru"
+        },
+        "wsSettings": {
+          "path": "/?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512"
+        }
+      },
+      "tag": "resilient-52bcae1f98aa6d0e"
     },
     {
       "protocol": "trojan",
@@ -1124,88 +1204,6 @@
         "security": "none"
       },
       "tag": "resilient-1bd895628aa56751"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "go.lumen.com",
-            "port": 2095,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "282f68bd-d803-4136-9ff1-b8604587c42c"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "download"
-        }
-      },
-      "tag": "resilient-c03312272e104fa3"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ger3.orangesms.ir",
-            "port": 1824,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "56c82857-c0f9-42c4-9696-f0cfc5ae9e47"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "JIv_D-Lpo1cosiCUgu-qzGSJwOCGciyXSZ8ucNn6aBo",
-          "serverName": "amp-api-edge.apps.apple.com",
-          "shortId": "8390ee7a5996648b"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-fbdc1982dea95e4c"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "kz.alertyagency.com",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "a704443d-655e-4d9f-8ce6-12eeb17a9a08"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "vsDwubDjDjfLpWAHRNFGVfmC8hLiXDablO1iOOXdUhQ",
-          "serverName": "api-maps.yandex.ru",
-          "shortId": "01e4de88"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-6228c998731ff1a3"
     },
     {
       "protocol": "blackhole",

@@ -185,6 +185,25 @@
     },
     {
       "network": "tcp",
+      "server": "k2.cloud--vpn.site",
+      "server_port": 443,
+      "tag": "outage-93feca956ac34493",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "d0ee468a-084b-411d-b2be-b886a61065d1"
+    },
+    {
+      "network": "tcp",
       "server": "prisonvpnc-production.up.railway.app",
       "server_port": 443,
       "tag": "outage-51af6381b3e846e2",
@@ -201,25 +220,6 @@
       },
       "type": "vless",
       "uuid": "46582dc2-9d6e-83c7-069e-82bfb39fb3d9"
-    },
-    {
-      "network": "tcp",
-      "server": "69.46.46.26",
-      "server_port": 443,
-      "tag": "outage-78e3f9877cc697ae",
-      "tls": {
-        "enabled": true,
-        "server_name": "willow-voyager-5a0a-production.up.railway.app"
-      },
-      "transport": {
-        "headers": {
-          "Host": "willow-voyager-5a0a-production.up.railway.app"
-        },
-        "path": "/ws/f78ecba6-f0dd-2a9b-f4ff-8c7cc610138e",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "f78ecba6-f0dd-2a9b-f4ff-8c7cc610138e"
     },
     {
       "network": "tcp",
@@ -320,8 +320,8 @@
         "outage-76d7d52ca0f1352a",
         "outage-3b346ab6c2095c28",
         "outage-2dba5a32373f8642",
+        "outage-93feca956ac34493",
         "outage-51af6381b3e846e2",
-        "outage-78e3f9877cc697ae",
         "outage-593cb511b35a17bd",
         "outage-c8aea0316fad2918",
         "outage-e94bdcac689549bb",
