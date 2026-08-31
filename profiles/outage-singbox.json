@@ -33,6 +33,21 @@
     },
     {
       "network": "tcp",
+      "server": "104.17.214.146",
+      "server_port": 2095,
+      "tag": "outage-0f8488bf26523afc",
+      "transport": {
+        "headers": {
+          "Host": "worker3.farapav827.workers.dev"
+        },
+        "path": "/JVSZzd53GDDsUAKJ",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "07ce9daf-8a17-404e-bd7a-07753ae29237"
+    },
+    {
+      "network": "tcp",
       "server": "162.159.197.1",
       "server_port": 443,
       "tag": "outage-93e2fbfa407980b3",
@@ -280,6 +295,14 @@
     },
     {
       "network": "tcp",
+      "password": "r49gssuondznyu2eex83",
+      "server": "14.1.28.76",
+      "server_port": 50740,
+      "tag": "outage-09cf8b3af46906df",
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
       "server": "107.150.105.84",
       "server_port": 46292,
@@ -292,6 +315,7 @@
       "interval": "10m",
       "outbounds": [
         "outage-f47c88ee7b4e6c02",
+        "outage-0f8488bf26523afc",
         "outage-93e2fbfa407980b3",
         "outage-29eea448c5f6e613",
         "outage-791e5bb1abe3b893",
@@ -308,6 +332,7 @@
         "outage-c8aea0316fad2918",
         "outage-e94bdcac689549bb",
         "outage-b6bdd98f746d8e69",
+        "outage-09cf8b3af46906df",
         "outage-c1a9156a8a0ab842"
       ],
       "tag": "outage-auto",
