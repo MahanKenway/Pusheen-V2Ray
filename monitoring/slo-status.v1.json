@@ -1,5 +1,11 @@
 {
-  "alerts": [],
+  "alerts": [
+    {
+      "code": "PUBLICATION_STALE",
+      "message": "Publication is older than 35 minutes.",
+      "severity": "warning"
+    }
+  ],
   "checks": {
     "gateway_delivery": {
       "consecutive_5xx_runs": 0,
@@ -13,9 +19,9 @@
       "threshold_seconds": 2700
     },
     "publication_freshness": {
-      "age_seconds": 1494,
-      "observed_at": "2026-08-31T00:55:20.727684+00:00",
-      "status": "pass",
+      "age_seconds": 2106,
+      "observed_at": "2026-08-31T06:57:02.268516+00:00",
+      "status": "fail",
       "threshold_seconds": 2100
     },
     "source_health": {
@@ -32,8 +38,8 @@
   "schema_version": 1,
   "scope": "public-safe delivery SLO; not a proxy endpoint availability claim",
   "summary": {
-    "alert_count": 0,
-    "status": "healthy"
+    "alert_count": 1,
+    "status": "degraded"
   },
-  "updated_at": "2026-08-31T01:20:15.313383+00:00"
+  "updated_at": "2026-08-31T07:32:09.107013+00:00"
 }
