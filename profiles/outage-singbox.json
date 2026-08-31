@@ -116,6 +116,36 @@
     },
     {
       "network": "tcp",
+      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+      "server": "104.21.83.135",
+      "server_port": 443,
+      "tag": "outage-2e4bb2661d53819a",
+      "transport": {
+        "headers": {
+          "Host": "id1.nathaya.web.id"
+        },
+        "path": "/trojan",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "tag": "outage-5d3d659ae0ae8deb",
+      "transport": {
+        "headers": {
+          "Host": "id1.nathaya.web.id"
+        },
+        "path": "/trojan",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "104.21.17.120",
       "server_port": 443,
       "tag": "outage-a014aca032e025ed",
@@ -188,25 +218,6 @@
     },
     {
       "network": "tcp",
-      "server": "prisonvpnc-production.up.railway.app",
-      "server_port": 443,
-      "tag": "outage-51af6381b3e846e2",
-      "tls": {
-        "enabled": true,
-        "server_name": "prisonvpnc-production.up.railway.app"
-      },
-      "transport": {
-        "headers": {
-          "Host": "prisonvpnc-production.up.railway.app"
-        },
-        "path": "/ws/46582dc2-9d6e-83c7-069e-82bfb39fb3d9",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "46582dc2-9d6e-83c7-069e-82bfb39fb3d9"
-    },
-    {
-      "network": "tcp",
       "server": "69.46.46.26",
       "server_port": 443,
       "tag": "outage-78e3f9877cc697ae",
@@ -276,25 +287,6 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
-      "server": "us01.duotg.top",
-      "server_port": 54657,
-      "tag": "outage-f8e3135ad3ef01a4",
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "010bd080-2133-11f0-a064-1239d0255272",
-      "server": "51.38.65.155",
-      "server_port": 443,
-      "tag": "outage-db8fcdb119c04432",
-      "tls": {
-        "enabled": true
-      },
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -305,19 +297,18 @@
         "outage-791e5bb1abe3b893",
         "outage-b3927d737e1f31d2",
         "outage-7701254437452381",
+        "outage-2e4bb2661d53819a",
+        "outage-5d3d659ae0ae8deb",
         "outage-a014aca032e025ed",
         "outage-3b346ab6c2095c28",
         "outage-2dba5a32373f8642",
         "outage-93feca956ac34493",
-        "outage-51af6381b3e846e2",
         "outage-78e3f9877cc697ae",
         "outage-593cb511b35a17bd",
         "outage-c8aea0316fad2918",
         "outage-e94bdcac689549bb",
         "outage-b6bdd98f746d8e69",
-        "outage-c1a9156a8a0ab842",
-        "outage-f8e3135ad3ef01a4",
-        "outage-db8fcdb119c04432"
+        "outage-c1a9156a8a0ab842"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
