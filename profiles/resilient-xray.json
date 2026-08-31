@@ -274,55 +274,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.64.154.8",
-            "port": 2095,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/?ed=2560security=tls"
-        }
-      },
-      "tag": "resilient-3b346ab6c2095c28"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "188.114.98.0",
-            "password": "01596265-168b-46a7-bcb7-25662c7a9546",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "fYn1ncaQMA1foaK1hpquM"
-        },
-        "network": "grpc",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "hdfy7c1.foriran2.eu.org"
-        }
-      },
-      "tag": "resilient-f85898281d6d48e8"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "69.84.182.212",
             "port": 443,
             "users": [
@@ -406,13 +357,18 @@
       "tag": "resilient-78e3f9877cc697ae"
     },
     {
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "edu.ruangguru.com",
-            "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-            "port": 443
+            "address": "69.46.46.105",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "79baa896-97b3-19a1-0520-68c90f08e53b"
+              }
+            ]
           }
         ]
       },
@@ -421,13 +377,34 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "id1.nathaya.web.id"
+          "serverName": "ivory-compass-17b5-production.up.railway.app"
         },
         "wsSettings": {
-          "path": "/trojan"
+          "path": "/ws/79baa896-97b3-19a1-0520-68c90f08e53b"
         }
       },
-      "tag": "resilient-593cb511b35a17bd"
+      "tag": "resilient-2153065a17806493"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "107.150.105.84",
+            "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
+            "port": 20065
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.microsoft.com"
+        }
+      },
+      "tag": "resilient-d2c6ec37be70e87c"
     },
     {
       "protocol": "trojan",
@@ -474,23 +451,6 @@
         "security": "reality"
       },
       "tag": "resilient-a5fa622cd595eeed"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "107.150.105.84",
-            "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
-            "port": 20065
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-e94bdcac689549bb"
     },
     {
       "protocol": "vless",
@@ -825,50 +785,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "46.226.162.172",
-            "port": 64584,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "035225a9-5d27-4288-b12e-7e13d6d321ce"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-55fbf5faef0b3909"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "178.104.129.39",
-            "port": 14726,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "aebf0af6-7890-45ec-adf9-e6f502f2303e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-c1e07a888a615100"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "144.31.1.201",
             "port": 8090,
             "users": [
@@ -987,6 +903,27 @@
       "settings": {
         "servers": [
           {
+            "address": "163.172.211.74",
+            "password": "02975af0-c36b-11ed-8e27-1239d0255272",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "yahoo.com"
+        }
+      },
+      "tag": "resilient-58d6af8641689c97"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "us01.duotg.top",
             "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
             "port": 20065
@@ -1044,6 +981,37 @@
         "security": "reality"
       },
       "tag": "resilient-42668ff796329b45"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "81.18.48.97",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "60e2a548-96aa-4850-a279-1edab743c39b"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": "remnagrpc"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "5_kjhGPcPUiUNJ0Mt4-YoRjphhDz3Hfvx1YCdbBRUA0",
+          "serverName": "finanzfluss.de",
+          "shortId": "8b71da690c3d5d03"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-bc2ff89f76b369f3"
     },
     {
       "protocol": "trojan",
@@ -1217,6 +1185,37 @@
         }
       },
       "tag": "resilient-643c89709da3167a"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "201.24.54.210",
+            "port": 2083,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "7ab9fe4f-6699-427f-a828-9fcf2496d714"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": "a8a08a507c"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "GYGRmooJbciRJqgRyAhyuY4taALwvAGNN721zIKA4g0",
+          "serverName": "www.cloudflare.com",
+          "shortId": "d2f6787eda1b6fa0"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-2c9a837b2bf38e12"
     },
     {
       "protocol": "trojan",

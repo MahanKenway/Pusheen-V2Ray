@@ -180,21 +180,6 @@
     },
     {
       "network": "tcp",
-      "server": "172.64.154.8",
-      "server_port": 2095,
-      "tag": "outage-3b346ab6c2095c28",
-      "transport": {
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        },
-        "path": "/?ed=2560security=tls",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-    },
-    {
-      "network": "tcp",
       "server": "69.84.182.212",
       "server_port": 443,
       "tag": "outage-2dba5a32373f8642",
@@ -252,20 +237,32 @@
     },
     {
       "network": "tcp",
-      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-      "server": "edu.ruangguru.com",
+      "server": "69.46.46.105",
       "server_port": 443,
-      "tag": "outage-593cb511b35a17bd",
+      "tag": "outage-2153065a17806493",
       "tls": {
         "enabled": true,
-        "server_name": "id1.nathaya.web.id"
+        "server_name": "ivory-compass-17b5-production.up.railway.app"
       },
       "transport": {
         "headers": {
-          "Host": "id1.nathaya.web.id"
+          "Host": "ivory-compass-17b5-production.up.railway.app"
         },
-        "path": "/trojan",
+        "path": "/ws/79baa896-97b3-19a1-0520-68c90f08e53b",
         "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "79baa896-97b3-19a1-0520-68c90f08e53b"
+    },
+    {
+      "network": "tcp",
+      "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
+      "server": "107.150.105.84",
+      "server_port": 20065,
+      "tag": "outage-d2c6ec37be70e87c",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com"
       },
       "type": "trojan"
     },
@@ -275,14 +272,6 @@
       "server": "107.150.105.84",
       "server_port": 54657,
       "tag": "outage-c8aea0316fad2918",
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
-      "server": "107.150.105.84",
-      "server_port": 20065,
-      "tag": "outage-e94bdcac689549bb",
       "type": "trojan"
     },
     {
@@ -310,6 +299,25 @@
       "type": "trojan"
     },
     {
+      "network": "tcp",
+      "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
+      "server": "us01.duotg.top",
+      "server_port": 54657,
+      "tag": "outage-f8e3135ad3ef01a4",
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "010bd080-2133-11f0-a064-1239d0255272",
+      "server": "51.38.65.155",
+      "server_port": 443,
+      "tag": "outage-db8fcdb119c04432",
+      "tls": {
+        "enabled": true
+      },
+      "type": "trojan"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -324,16 +332,17 @@
         "outage-2e4bb2661d53819a",
         "outage-5d3d659ae0ae8deb",
         "outage-a014aca032e025ed",
-        "outage-3b346ab6c2095c28",
         "outage-2dba5a32373f8642",
         "outage-93feca956ac34493",
         "outage-78e3f9877cc697ae",
-        "outage-593cb511b35a17bd",
+        "outage-2153065a17806493",
+        "outage-d2c6ec37be70e87c",
         "outage-c8aea0316fad2918",
-        "outage-e94bdcac689549bb",
         "outage-b6bdd98f746d8e69",
         "outage-09cf8b3af46906df",
-        "outage-c1a9156a8a0ab842"
+        "outage-c1a9156a8a0ab842",
+        "outage-f8e3135ad3ef01a4",
+        "outage-db8fcdb119c04432"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
