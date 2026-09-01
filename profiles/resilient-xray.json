@@ -52,6 +52,31 @@
       "settings": {
         "vnext": [
           {
+            "address": "104.16.11.111",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "4f4012b1-45e9-48bc-a4e2-d04b0c72eeff"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-9fbf6041b4cc4807"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "104.17.214.146",
             "port": 2095,
             "users": [
@@ -325,35 +350,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "69.84.182.212",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "a13df940-020c-465f-bc89-ee5279b5cd6a"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "hkg.ylks.link"
-        },
-        "wsSettings": {
-          "path": "/blue"
-        }
-      },
-      "tag": "resilient-2dba5a32373f8642"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "k2.cloud--vpn.site",
             "port": 443,
             "users": [
@@ -557,23 +553,6 @@
       "settings": {
         "servers": [
           {
-            "address": "107.150.105.84",
-            "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
-            "port": 59385
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-b6bdd98f746d8e69"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
             "address": "14.1.28.76",
             "password": "r49gssuondznyu2eex83",
             "port": 50740
@@ -582,9 +561,12 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false
+        }
       },
-      "tag": "resilient-09cf8b3af46906df"
+      "tag": "resilient-274f022b4f4f31e9"
     },
     {
       "protocol": "trojan",
@@ -1347,23 +1329,6 @@
         "security": "none"
       },
       "tag": "resilient-fc25d01721c9bbf8"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "us01.duotg.top",
-            "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
-            "port": 59385
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-e941a0db35e2cbf6"
     },
     {
       "protocol": "blackhole",

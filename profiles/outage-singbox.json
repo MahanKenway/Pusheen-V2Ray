@@ -33,6 +33,21 @@
     },
     {
       "network": "tcp",
+      "server": "104.16.11.111",
+      "server_port": 80,
+      "tag": "outage-9fbf6041b4cc4807",
+      "transport": {
+        "headers": {
+          "Host": "speedtest.net.xn--ghbe0oqh.pinocchio1.ir."
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "4f4012b1-45e9-48bc-a4e2-d04b0c72eeff"
+    },
+    {
+      "network": "tcp",
       "server": "104.17.214.146",
       "server_port": 2095,
       "tag": "outage-0f8488bf26523afc",
@@ -226,25 +241,6 @@
     },
     {
       "network": "tcp",
-      "server": "69.84.182.212",
-      "server_port": 443,
-      "tag": "outage-2dba5a32373f8642",
-      "tls": {
-        "enabled": true,
-        "server_name": "hkg.ylks.link"
-      },
-      "transport": {
-        "headers": {
-          "Host": "hkg.ylks.link"
-        },
-        "path": "/blue",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a"
-    },
-    {
-      "network": "tcp",
       "server": "k2.cloud--vpn.site",
       "server_port": 443,
       "tag": "outage-93feca956ac34493",
@@ -335,22 +331,6 @@
       "network": "tcp",
       "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
       "server": "107.150.105.84",
-      "server_port": 59385,
-      "tag": "outage-b6bdd98f746d8e69",
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "r49gssuondznyu2eex83",
-      "server": "14.1.28.76",
-      "server_port": 50740,
-      "tag": "outage-09cf8b3af46906df",
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
-      "server": "107.150.105.84",
       "server_port": 46292,
       "tag": "outage-c1a9156a8a0ab842",
       "type": "trojan"
@@ -367,11 +347,23 @@
       "type": "trojan"
     },
     {
+      "network": "tcp",
+      "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
+      "server": "us01.duotg.top",
+      "server_port": 46292,
+      "tag": "outage-26ecc003c69c4731",
+      "tls": {
+        "enabled": true
+      },
+      "type": "trojan"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
         "outage-f47c88ee7b4e6c02",
+        "outage-9fbf6041b4cc4807",
         "outage-0f8488bf26523afc",
         "outage-93e2fbfa407980b3",
         "outage-3812f35941076743",
@@ -383,17 +375,15 @@
         "outage-2e4bb2661d53819a",
         "outage-5d3d659ae0ae8deb",
         "outage-a014aca032e025ed",
-        "outage-2dba5a32373f8642",
         "outage-93feca956ac34493",
         "outage-78e3f9877cc697ae",
         "outage-2153065a17806493",
         "outage-d2c6ec37be70e87c",
         "outage-c8aea0316fad2918",
         "outage-cbf220c5562113fb",
-        "outage-b6bdd98f746d8e69",
-        "outage-09cf8b3af46906df",
         "outage-c1a9156a8a0ab842",
-        "outage-db8fcdb119c04432"
+        "outage-db8fcdb119c04432",
+        "outage-26ecc003c69c4731"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
