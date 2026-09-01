@@ -320,6 +320,17 @@
       "network": "tcp",
       "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
       "server": "107.150.105.84",
+      "server_port": 38261,
+      "tag": "outage-cbf220c5562113fb",
+      "tls": {
+        "enabled": true
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
+      "server": "107.150.105.84",
       "server_port": 59385,
       "tag": "outage-b6bdd98f746d8e69",
       "type": "trojan"
@@ -349,17 +360,6 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "010bd080-2133-11f0-a064-1239d0255272",
-      "server": "51.38.65.155",
-      "server_port": 443,
-      "tag": "outage-db8fcdb119c04432",
-      "tls": {
-        "enabled": true
-      },
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -382,11 +382,11 @@
         "outage-2153065a17806493",
         "outage-d2c6ec37be70e87c",
         "outage-c8aea0316fad2918",
+        "outage-cbf220c5562113fb",
         "outage-b6bdd98f746d8e69",
         "outage-09cf8b3af46906df",
         "outage-c1a9156a8a0ab842",
-        "outage-f8e3135ad3ef01a4",
-        "outage-db8fcdb119c04432"
+        "outage-f8e3135ad3ef01a4"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
