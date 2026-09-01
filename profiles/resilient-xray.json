@@ -375,33 +375,24 @@
       "tag": "resilient-93feca956ac34493"
     },
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "69.46.46.26",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "f78ecba6-f0dd-2a9b-f4ff-8c7cc610138e"
-              }
-            ]
+            "address": "107.150.105.84",
+            "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
+            "port": 20065
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "willow-voyager-5a0a-production.up.railway.app"
-        },
-        "wsSettings": {
-          "path": "/ws/f78ecba6-f0dd-2a9b-f4ff-8c7cc610138e"
+          "allowInsecure": false
         }
       },
-      "tag": "resilient-78e3f9877cc697ae"
+      "tag": "resilient-89dee32b53b43983"
     },
     {
       "protocol": "vless",
@@ -433,25 +424,33 @@
       "tag": "resilient-2153065a17806493"
     },
     {
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "107.150.105.84",
-            "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
-            "port": 20065
+            "address": "69.46.46.26",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "3eb1c85a-a0bc-1c6e-bd80-ada5fb05ae48"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "www.microsoft.com"
+          "serverName": "cobalt-prairie-172d-production.up.railway.app"
+        },
+        "wsSettings": {
+          "path": "/ws/3eb1c85a-a0bc-1c6e-bd80-ada5fb05ae48"
         }
       },
-      "tag": "resilient-d2c6ec37be70e87c"
+      "tag": "resilient-e5cb28fcb0084542"
     },
     {
       "protocol": "trojan",
@@ -569,23 +568,6 @@
       "tag": "resilient-274f022b4f4f31e9"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "107.150.105.84",
-            "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
-            "port": 46292
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-c1a9156a8a0ab842"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -613,6 +595,26 @@
         "security": "reality"
       },
       "tag": "resilient-df658d2611498fbb"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "107.150.105.84",
+            "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
+            "port": 46292
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false
+        }
+      },
+      "tag": "resilient-2ac6deb02385aca1"
     },
     {
       "protocol": "trojan",

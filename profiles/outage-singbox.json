@@ -260,22 +260,14 @@
     },
     {
       "network": "tcp",
-      "server": "69.46.46.26",
-      "server_port": 443,
-      "tag": "outage-78e3f9877cc697ae",
+      "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
+      "server": "107.150.105.84",
+      "server_port": 20065,
+      "tag": "outage-89dee32b53b43983",
       "tls": {
-        "enabled": true,
-        "server_name": "willow-voyager-5a0a-production.up.railway.app"
+        "enabled": true
       },
-      "transport": {
-        "headers": {
-          "Host": "willow-voyager-5a0a-production.up.railway.app"
-        },
-        "path": "/ws/f78ecba6-f0dd-2a9b-f4ff-8c7cc610138e",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "f78ecba6-f0dd-2a9b-f4ff-8c7cc610138e"
+      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -298,15 +290,22 @@
     },
     {
       "network": "tcp",
-      "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
-      "server": "107.150.105.84",
-      "server_port": 20065,
-      "tag": "outage-d2c6ec37be70e87c",
+      "server": "69.46.46.26",
+      "server_port": 443,
+      "tag": "outage-e5cb28fcb0084542",
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com"
+        "server_name": "cobalt-prairie-172d-production.up.railway.app"
       },
-      "type": "trojan"
+      "transport": {
+        "headers": {
+          "Host": "cobalt-prairie-172d-production.up.railway.app"
+        },
+        "path": "/ws/3eb1c85a-a0bc-1c6e-bd80-ada5fb05ae48",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "3eb1c85a-a0bc-1c6e-bd80-ada5fb05ae48"
     },
     {
       "network": "tcp",
@@ -332,7 +331,10 @@
       "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
       "server": "107.150.105.84",
       "server_port": 46292,
-      "tag": "outage-c1a9156a8a0ab842",
+      "tag": "outage-2ac6deb02385aca1",
+      "tls": {
+        "enabled": true
+      },
       "type": "trojan"
     },
     {
@@ -376,12 +378,12 @@
         "outage-5d3d659ae0ae8deb",
         "outage-a014aca032e025ed",
         "outage-93feca956ac34493",
-        "outage-78e3f9877cc697ae",
+        "outage-89dee32b53b43983",
         "outage-2153065a17806493",
-        "outage-d2c6ec37be70e87c",
+        "outage-e5cb28fcb0084542",
         "outage-c8aea0316fad2918",
         "outage-cbf220c5562113fb",
-        "outage-c1a9156a8a0ab842",
+        "outage-2ac6deb02385aca1",
         "outage-db8fcdb119c04432",
         "outage-26ecc003c69c4731"
       ],
