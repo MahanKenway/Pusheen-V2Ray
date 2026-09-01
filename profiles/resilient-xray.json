@@ -1070,6 +1070,35 @@
       "tag": "resilient-9838b1a7c9ee7057"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.144.28.39",
+            "port": 2083,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": "grpc"
+        },
+        "network": "grpc",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "usejh2.neobo-tooth.ru"
+        }
+      },
+      "tag": "resilient-b48b0b4aa5353444"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1240,37 +1269,6 @@
         "security": "reality"
       },
       "tag": "resilient-c1dc663008bc1f0e"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "150.40.126.22",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "2f35965a-9a9b-45fd-ba32-987296dfb6be"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "media.v1.StreamService"
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs",
-          "serverName": "rs4.univesalsrv.com",
-          "shortId": "861ac7d66953e55f"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-873ecb144ce8413c"
     },
     {
       "protocol": "trojan",
