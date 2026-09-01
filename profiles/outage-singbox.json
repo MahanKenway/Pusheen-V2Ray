@@ -33,6 +33,44 @@
     },
     {
       "network": "tcp",
+      "password": "MiTiVPN",
+      "server": "188.114.96.3",
+      "server_port": 443,
+      "tag": "outage-0f04de384e03e241",
+      "tls": {
+        "enabled": true,
+        "server_name": "Nl1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe"
+      },
+      "transport": {
+        "headers": {
+          "Host": "Nl1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe"
+        },
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NL---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "103.169.142.38",
+      "server_port": 443,
+      "tag": "outage-1017dd943f5d5b4f",
+      "tls": {
+        "enabled": true,
+        "server_name": "kkg.ylks.link"
+      },
+      "transport": {
+        "headers": {
+          "Host": "kkg.ylks.link"
+        },
+        "path": "/blue",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a"
+    },
+    {
+      "network": "tcp",
       "server": "104.16.11.111",
       "server_port": 80,
       "tag": "outage-9fbf6041b4cc4807",
@@ -271,6 +309,44 @@
     },
     {
       "network": "tcp",
+      "server": "soskeynets-meadow-af5b.woowoorrrkk.workers.dev",
+      "server_port": 443,
+      "tag": "outage-5cc32e54e083a149",
+      "tls": {
+        "enabled": true,
+        "server_name": "summer-meadow-af5b.woowoorrrkk.workers.dev"
+      },
+      "transport": {
+        "headers": {
+          "Host": "summer-meadow-af5b.woowoorrrkk.workers.dev"
+        },
+        "path": "/sync",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "a8890c1b-3622-3106-c4be-d8671be32d2b"
+    },
+    {
+      "network": "tcp",
+      "server": "ez-1bc8ab.sekiro-c18.workers.dev",
+      "server_port": 443,
+      "tag": "outage-615265aecb86ed63",
+      "tls": {
+        "enabled": true,
+        "server_name": "ez-1bc8ab.sekiro-c18.workers.dev"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ez-1bc8ab.sekiro-c18.workers.dev"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "7da33b25-cdd6-e481-afcf-c5d532361a70"
+    },
+    {
+      "network": "tcp",
       "server": "69.46.46.105",
       "server_port": 443,
       "tag": "outage-2153065a17806493",
@@ -287,25 +363,6 @@
       },
       "type": "vless",
       "uuid": "79baa896-97b3-19a1-0520-68c90f08e53b"
-    },
-    {
-      "network": "tcp",
-      "server": "69.46.46.26",
-      "server_port": 443,
-      "tag": "outage-e5cb28fcb0084542",
-      "tls": {
-        "enabled": true,
-        "server_name": "cobalt-prairie-172d-production.up.railway.app"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cobalt-prairie-172d-production.up.railway.app"
-        },
-        "path": "/ws/3eb1c85a-a0bc-1c6e-bd80-ada5fb05ae48",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "3eb1c85a-a0bc-1c6e-bd80-ada5fb05ae48"
     },
     {
       "network": "tcp",
@@ -365,6 +422,8 @@
       "interval": "10m",
       "outbounds": [
         "outage-f47c88ee7b4e6c02",
+        "outage-0f04de384e03e241",
+        "outage-1017dd943f5d5b4f",
         "outage-9fbf6041b4cc4807",
         "outage-0f8488bf26523afc",
         "outage-93e2fbfa407980b3",
@@ -379,8 +438,9 @@
         "outage-a014aca032e025ed",
         "outage-93feca956ac34493",
         "outage-89dee32b53b43983",
+        "outage-5cc32e54e083a149",
+        "outage-615265aecb86ed63",
         "outage-2153065a17806493",
-        "outage-e5cb28fcb0084542",
         "outage-c8aea0316fad2918",
         "outage-cbf220c5562113fb",
         "outage-2ac6deb02385aca1",
