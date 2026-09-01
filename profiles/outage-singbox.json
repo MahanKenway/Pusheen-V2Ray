@@ -67,6 +67,25 @@
     },
     {
       "network": "tcp",
+      "password": "MiTiVPN",
+      "server": "91.193.58.201",
+      "server_port": 443,
+      "tag": "outage-3812f35941076743",
+      "tls": {
+        "enabled": true,
+        "server_name": "95r.ir"
+      },
+      "transport": {
+        "headers": {
+          "Host": "95r.ir"
+        },
+        "path": "/MiTiVPN=NL",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "69.46.46.20",
       "server_port": 443,
       "tag": "outage-5f5937cea5dc5d8c",
@@ -98,21 +117,6 @@
         "type": "ws"
       },
       "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "104.21.65.16",
-      "server_port": 80,
-      "tag": "outage-7701254437452381",
-      "transport": {
-        "headers": {
-          "Host": "us3.rtacg.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a"
     },
     {
       "network": "tcp",
@@ -353,10 +357,13 @@
     },
     {
       "network": "tcp",
-      "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
-      "server": "us01.duotg.top",
-      "server_port": 54657,
-      "tag": "outage-f8e3135ad3ef01a4",
+      "password": "010bd080-2133-11f0-a064-1239d0255272",
+      "server": "51.38.65.155",
+      "server_port": 443,
+      "tag": "outage-db8fcdb119c04432",
+      "tls": {
+        "enabled": true
+      },
       "type": "trojan"
     },
     {
@@ -367,9 +374,9 @@
         "outage-f47c88ee7b4e6c02",
         "outage-0f8488bf26523afc",
         "outage-93e2fbfa407980b3",
+        "outage-3812f35941076743",
         "outage-5f5937cea5dc5d8c",
         "outage-29eea448c5f6e613",
-        "outage-7701254437452381",
         "outage-af23e32e5d190790",
         "outage-5b8b5ce643b4759f",
         "outage-479723874d3268ed",
@@ -386,7 +393,7 @@
         "outage-b6bdd98f746d8e69",
         "outage-09cf8b3af46906df",
         "outage-c1a9156a8a0ab842",
-        "outage-f8e3135ad3ef01a4"
+        "outage-db8fcdb119c04432"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
