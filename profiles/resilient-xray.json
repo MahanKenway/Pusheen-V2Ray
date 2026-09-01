@@ -102,6 +102,35 @@
       "tag": "resilient-93e2fbfa407980b3"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "69.46.46.20",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "533895c1-c9c4-a99a-51f8-68137bc8b24a"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "cedar-lantern-d4f0-production.up.railway.app"
+        },
+        "wsSettings": {
+          "path": "/ws/533895c1-c9c4-a99a-51f8-68137bc8b24a"
+        }
+      },
+      "tag": "resilient-5f5937cea5dc5d8c"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -120,60 +149,6 @@
         }
       },
       "tag": "resilient-29eea448c5f6e613"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.21.29.41",
-            "port": 2082,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "ba6016d9-cd7a-467f-9589-3e29708b11a1"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "TG@juzibaipiao-\u6a58\u5b50\u5206\u4eab"
-        }
-      },
-      "tag": "resilient-791e5bb1abe3b893"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.64.80.125",
-            "port": 2096,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "04c28ab4-4997-4a73-9bd4-7cc6c9f6bcba"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "panel.berzulo.ir"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-b3927d737e1f31d2"
     },
     {
       "protocol": "vless",
@@ -730,6 +705,28 @@
       "settings": {
         "vnext": [
           {
+            "address": "16.61.111.198",
+            "port": 22223,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-9d2be1ed4d55be67"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "go.lumen.com",
             "port": 2052,
             "users": [
@@ -834,6 +831,36 @@
         "security": "reality"
       },
       "tag": "resilient-d810f0e5c833cce7"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "91.99.81.222",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "766b0dd4-907d-42fb-8ea8-58868e7dcfb4"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "dYsy51W78tzZf26ql7Fh0Db65VlRSjGp6EH9nsAIRgo",
+          "serverName": "amp-api-edge.apps.apple.com",
+          "shortId": "0b",
+          "spiderX": "/nfHjFIePnqzfy2c"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-3e250a73440aa034"
     },
     {
       "protocol": "vless",
@@ -1014,23 +1041,6 @@
       "tag": "resilient-b24a743cf5ea9dff"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "us01.duotg.top",
-            "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
-            "port": 43022
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-34cf5e801c949ac3"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1058,6 +1068,34 @@
         "security": "reality"
       },
       "tag": "resilient-42668ff796329b45"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "31.77.140.186",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "65329316-aca9-4825-8118-f85786865f0f"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "random",
+          "publicKey": "LnqXh7T2HqjVkKahlPGiHyCMwkZeK1ox56K9GZTdyAc",
+          "serverName": "ads.x5.ru"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-6cf091d663f7d85e"
     },
     {
       "protocol": "vless",
@@ -1195,35 +1233,6 @@
         "security": "reality"
       },
       "tag": "resilient-d271359577717499"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "18.177.61.231",
-            "port": 30203,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "0346a35f-8e11-4b33-852d-00fa9c642878"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "dsJ2WwzENgTAgd8okJPXLpwzdsDjU67mBEnhUhgvvTk",
-          "serverName": "www.sony.com",
-          "shortId": "40150721499a92"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-5839326d7bcc47fc"
     },
     {
       "protocol": "trojan",

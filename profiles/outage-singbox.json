@@ -67,6 +67,25 @@
     },
     {
       "network": "tcp",
+      "server": "69.46.46.20",
+      "server_port": 443,
+      "tag": "outage-5f5937cea5dc5d8c",
+      "tls": {
+        "enabled": true,
+        "server_name": "cedar-lantern-d4f0-production.up.railway.app"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cedar-lantern-d4f0-production.up.railway.app"
+        },
+        "path": "/ws/533895c1-c9c4-a99a-51f8-68137bc8b24a",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "533895c1-c9c4-a99a-51f8-68137bc8b24a"
+    },
+    {
+      "network": "tcp",
       "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
       "server": "172.67.176.157",
       "server_port": 443,
@@ -79,40 +98,6 @@
         "type": "ws"
       },
       "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "104.21.29.41",
-      "server_port": 2082,
-      "tag": "outage-791e5bb1abe3b893",
-      "transport": {
-        "headers": {
-          "Host": "Se1.vless.site."
-        },
-        "path": "TG@juzibaipiao-\u6a58\u5b50\u5206\u4eab",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "ba6016d9-cd7a-467f-9589-3e29708b11a1"
-    },
-    {
-      "network": "tcp",
-      "server": "172.64.80.125",
-      "server_port": 2096,
-      "tag": "outage-b3927d737e1f31d2",
-      "tls": {
-        "enabled": true,
-        "server_name": "panel.berzulo.ir"
-      },
-      "transport": {
-        "headers": {
-          "Host": "panel.berzulo.ir"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "04c28ab4-4997-4a73-9bd4-7cc6c9f6bcba"
     },
     {
       "network": "tcp",
@@ -294,6 +279,25 @@
     },
     {
       "network": "tcp",
+      "server": "69.46.46.105",
+      "server_port": 443,
+      "tag": "outage-2153065a17806493",
+      "tls": {
+        "enabled": true,
+        "server_name": "ivory-compass-17b5-production.up.railway.app"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ivory-compass-17b5-production.up.railway.app"
+        },
+        "path": "/ws/79baa896-97b3-19a1-0520-68c90f08e53b",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "79baa896-97b3-19a1-0520-68c90f08e53b"
+    },
+    {
+      "network": "tcp",
       "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
       "server": "107.150.105.84",
       "server_port": 20065,
@@ -363,9 +367,8 @@
         "outage-f47c88ee7b4e6c02",
         "outage-0f8488bf26523afc",
         "outage-93e2fbfa407980b3",
+        "outage-5f5937cea5dc5d8c",
         "outage-29eea448c5f6e613",
-        "outage-791e5bb1abe3b893",
-        "outage-b3927d737e1f31d2",
         "outage-7701254437452381",
         "outage-af23e32e5d190790",
         "outage-5b8b5ce643b4759f",
@@ -376,6 +379,7 @@
         "outage-2dba5a32373f8642",
         "outage-93feca956ac34493",
         "outage-78e3f9877cc697ae",
+        "outage-2153065a17806493",
         "outage-d2c6ec37be70e87c",
         "outage-c8aea0316fad2918",
         "outage-b6bdd98f746d8e69",
