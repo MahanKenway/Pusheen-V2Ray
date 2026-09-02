@@ -204,6 +204,35 @@
       "tag": "resilient-0f8488bf26523afc"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "199.232.78.160",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "XpnTeam-50"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-9d37d849cffda13b"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -627,6 +656,35 @@
       "tag": "resilient-615265aecb86ed63"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.97.6",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "91875754-7fcc-5ba9-9573-5a43215dfd0f"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "node-8966333989-b9acc5.dsjvhbsdcjy.workers.dev"
+        },
+        "wsSettings": {
+          "path": "/sync"
+        }
+      },
+      "tag": "resilient-4f7caa0fde42e968"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -831,6 +889,23 @@
       "settings": {
         "servers": [
           {
+            "address": "www.speedtest.net",
+            "password": "-wb.oDfOeHifTGMVEf",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-b0fb6805511192c2"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "107.150.105.84",
             "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
             "port": 46292
@@ -845,6 +920,30 @@
         }
       },
       "tag": "resilient-2ac6deb02385aca1"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "c0yr9j09y2l9g0td8wa5.2whbrirhjgslm43zjcqei.workers.dev",
+            "password": "-wb.oDfOeHifTGMVEf",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "c0YR9J09y2l9G0Td8WA5.2whBRirhjgsLm43ZJcqei.WoRKers.DEv"
+        },
+        "wsSettings": {
+          "path": "/tr/CRGrZTTVLMALBJkE4?ed=2560"
+        }
+      },
+      "tag": "resilient-9dba977e2ed1a644"
     },
     {
       "protocol": "vless",
@@ -1190,35 +1289,6 @@
       "tag": "resilient-f90f748daceb097e"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "147.45.226.155",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "9ffaf9f7-a2ad-47ef-9256-f607b3b3c6cc"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "vk.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-33f4777cd1e4e580"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1265,35 +1335,6 @@
         "security": "reality"
       },
       "tag": "resilient-8ac6fccefede476a"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "95.154.196.63",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "bae47c97-9bc1-48f6-a133-a383ee71c12e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "o3OWFYnKad6q2C-eo6-rA74OCbjQoZfaUFYZsNqJJz0",
-          "serverName": "foodnetwork.com",
-          "shortId": "1e977d0b52eab755"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-9838b1a7c9ee7057"
     },
     {
       "protocol": "vless",
