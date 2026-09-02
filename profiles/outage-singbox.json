@@ -328,6 +328,44 @@
     },
     {
       "network": "tcp",
+      "password": "MiTiVPN",
+      "server": "104.21.18.41",
+      "server_port": 443,
+      "tag": "outage-4e30296f010f334d",
+      "tls": {
+        "enabled": true,
+        "server_name": "linkkon-w.ir"
+      },
+      "transport": {
+        "headers": {
+          "Host": "linkkon-w.ir"
+        },
+        "path": "/cdn=mitivpn",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "Mitivpn",
+      "server": "151.101.56.6",
+      "server_port": 443,
+      "tag": "outage-3363105e11576325",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/fast-speed",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "ez-1bc8ab.sekiro-c18.workers.dev",
       "server_port": 443,
       "tag": "outage-615265aecb86ed63",
@@ -347,37 +385,21 @@
     },
     {
       "network": "tcp",
-      "server": "69.46.46.105",
-      "server_port": 443,
-      "tag": "outage-2153065a17806493",
-      "tls": {
-        "enabled": true,
-        "server_name": "ivory-compass-17b5-production.up.railway.app"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ivory-compass-17b5-production.up.railway.app"
-        },
-        "path": "/ws/79baa896-97b3-19a1-0520-68c90f08e53b",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "79baa896-97b3-19a1-0520-68c90f08e53b"
-    },
-    {
-      "network": "tcp",
       "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
       "server": "107.150.105.84",
-      "server_port": 54657,
-      "tag": "outage-c8aea0316fad2918",
+      "server_port": 38261,
+      "tag": "outage-cbf220c5562113fb",
+      "tls": {
+        "enabled": true
+      },
       "type": "trojan"
     },
     {
       "network": "tcp",
       "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
       "server": "107.150.105.84",
-      "server_port": 38261,
-      "tag": "outage-cbf220c5562113fb",
+      "server_port": 54657,
+      "tag": "outage-656ae86abd8e70e0",
       "tls": {
         "enabled": true
       },
@@ -439,10 +461,11 @@
         "outage-93feca956ac34493",
         "outage-89dee32b53b43983",
         "outage-5cc32e54e083a149",
+        "outage-4e30296f010f334d",
+        "outage-3363105e11576325",
         "outage-615265aecb86ed63",
-        "outage-2153065a17806493",
-        "outage-c8aea0316fad2918",
         "outage-cbf220c5562113fb",
+        "outage-656ae86abd8e70e0",
         "outage-2ac6deb02385aca1",
         "outage-db8fcdb119c04432",
         "outage-26ecc003c69c4731"
