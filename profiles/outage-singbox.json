@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "password": "Mitivpn",
+      "server": "151.101.56.6",
+      "server_port": 443,
+      "tag": "outage-3b9afcc652fc8e0d",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/de=mitivpn",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
       "server": "104.21.70.21",
       "server_port": 443,
@@ -30,6 +49,25 @@
         "type": "ws"
       },
       "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "69.46.46.25",
+      "server_port": 443,
+      "tag": "outage-734ca40110380cce",
+      "tls": {
+        "enabled": true,
+        "server_name": "quiet-beacon-dc8a-production.up.railway.app"
+      },
+      "transport": {
+        "headers": {
+          "Host": "quiet-beacon-dc8a-production.up.railway.app"
+        },
+        "path": "/ws/9dace41d-b1ca-e093-0546-079bb98a7ae0",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "9dace41d-b1ca-e093-0546-079bb98a7ae0"
     },
     {
       "network": "tcp",
@@ -279,22 +317,22 @@
     },
     {
       "network": "tcp",
-      "server": "k2.cloud--vpn.site",
+      "server": "69.46.46.10",
       "server_port": 443,
-      "tag": "outage-93feca956ac34493",
+      "tag": "outage-81d44b1ce97440bc",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com"
+        "server_name": "golden-grove-39ee-production.up.railway.app"
       },
       "transport": {
         "headers": {
-          "Host": "ssl.fastly.com"
+          "Host": "golden-grove-39ee-production.up.railway.app"
         },
-        "path": "/",
+        "path": "/ws/15e9c884-4541-f430-cf55-66401979319d",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "d0ee468a-084b-411d-b2be-b886a61065d1"
+      "uuid": "15e9c884-4541-f430-cf55-66401979319d"
     },
     {
       "network": "tcp",
@@ -347,44 +385,6 @@
     },
     {
       "network": "tcp",
-      "password": "Mitivpn",
-      "server": "151.101.56.6",
-      "server_port": 443,
-      "tag": "outage-3363105e11576325",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ssl.fastly.com"
-        },
-        "path": "/fast-speed",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "ez-1bc8ab.sekiro-c18.workers.dev",
-      "server_port": 443,
-      "tag": "outage-615265aecb86ed63",
-      "tls": {
-        "enabled": true,
-        "server_name": "ez-1bc8ab.sekiro-c18.workers.dev"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ez-1bc8ab.sekiro-c18.workers.dev"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "7da33b25-cdd6-e481-afcf-c5d532361a70"
-    },
-    {
-      "network": "tcp",
       "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
       "server": "107.150.105.84",
       "server_port": 38261,
@@ -429,10 +429,10 @@
     },
     {
       "network": "tcp",
-      "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
-      "server": "us01.duotg.top",
-      "server_port": 46292,
-      "tag": "outage-26ecc003c69c4731",
+      "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
+      "server": "132.145.51.172",
+      "server_port": 443,
+      "tag": "outage-be9615a207f2188a",
       "tls": {
         "enabled": true
       },
@@ -443,7 +443,9 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-3b9afcc652fc8e0d",
         "outage-f47c88ee7b4e6c02",
+        "outage-734ca40110380cce",
         "outage-0f04de384e03e241",
         "outage-1017dd943f5d5b4f",
         "outage-9fbf6041b4cc4807",
@@ -458,17 +460,15 @@
         "outage-2e4bb2661d53819a",
         "outage-5d3d659ae0ae8deb",
         "outage-a014aca032e025ed",
-        "outage-93feca956ac34493",
+        "outage-81d44b1ce97440bc",
         "outage-89dee32b53b43983",
         "outage-5cc32e54e083a149",
         "outage-4e30296f010f334d",
-        "outage-3363105e11576325",
-        "outage-615265aecb86ed63",
         "outage-cbf220c5562113fb",
         "outage-656ae86abd8e70e0",
         "outage-2ac6deb02385aca1",
         "outage-db8fcdb119c04432",
-        "outage-26ecc003c69c4731"
+        "outage-be9615a207f2188a"
       ],
       "tag": "outage-auto",
       "tolerance": 200,

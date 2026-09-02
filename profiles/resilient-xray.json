@@ -28,6 +28,30 @@
       "settings": {
         "servers": [
           {
+            "address": "151.101.56.6",
+            "password": "Mitivpn",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/de=mitivpn"
+        }
+      },
+      "tag": "resilient-3b9afcc652fc8e0d"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "104.21.70.21",
             "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
             "port": 443
@@ -46,6 +70,35 @@
         }
       },
       "tag": "resilient-f47c88ee7b4e6c02"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "69.46.46.25",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "9dace41d-b1ca-e093-0546-079bb98a7ae0"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "quiet-beacon-dc8a-production.up.railway.app"
+        },
+        "wsSettings": {
+          "path": "/ws/9dace41d-b1ca-e093-0546-079bb98a7ae0"
+        }
+      },
+      "tag": "resilient-734ca40110380cce"
     },
     {
       "protocol": "trojan",
@@ -253,6 +306,30 @@
       "tag": "resilient-29eea448c5f6e613"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.18.32.47",
+            "password": "MiTiVPN",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "fls-bbg--MiTiVPN---MiTiVPN-u.aPp-cLoud.IR"
+        },
+        "wsSettings": {
+          "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/F-ls"
+        }
+      },
+      "tag": "resilient-206b655c89189047"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -403,12 +480,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "k2.cloud--vpn.site",
+            "address": "69.46.46.10",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "d0ee468a-084b-411d-b2be-b886a61065d1"
+                "id": "15e9c884-4541-f430-cf55-66401979319d"
               }
             ]
           }
@@ -419,13 +496,13 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
+          "serverName": "golden-grove-39ee-production.up.railway.app"
         },
         "wsSettings": {
-          "path": "/"
+          "path": "/ws/15e9c884-4541-f430-cf55-66401979319d"
         }
       },
-      "tag": "resilient-93feca956ac34493"
+      "tag": "resilient-81d44b1ce97440bc"
     },
     {
       "protocol": "trojan",
@@ -499,30 +576,6 @@
         }
       },
       "tag": "resilient-4e30296f010f334d"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "151.101.56.6",
-            "password": "Mitivpn",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/fast-speed"
-        }
-      },
-      "tag": "resilient-3363105e11576325"
     },
     {
       "protocol": "vless",
@@ -832,35 +885,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.152.223.192",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "5bd820f0-69cb-4d6a-b42d-c0dfe2edffcd"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY",
-          "serverName": "strapi.io",
-          "shortId": "fd55b698ee8c3629"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-8ab2696c706477a7"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "16.61.111.198",
             "port": 22223,
             "users": [
@@ -879,24 +903,33 @@
       "tag": "resilient-9d2be1ed4d55be67"
     },
     {
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "us01.duotg.top",
-            "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
-            "port": 46292
+            "address": "64.188.59.203",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "ae2009b9-76cb-4d18-8612-7515b2b84398"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "security": "tls",
         "tlsSettings": {
-          "allowInsecure": false
+          "allowInsecure": false,
+          "serverName": "tg1.wba-pn.ru"
+        },
+        "wsSettings": {
+          "path": "/"
         }
       },
-      "tag": "resilient-26ecc003c69c4731"
+      "tag": "resilient-cd8bc8b5cf910048"
     },
     {
       "protocol": "vless",
@@ -1048,7 +1081,7 @@
             "users": [
               {
                 "encryption": "mlkem768x25519plus.native.0rtt.-0MXXOstBc09cB1tSeGN1pwYBzVEiVW__njsxK2hd14",
-                "id": "d70e525c-67bd-4261-b7f5-96589be5b3b0"
+                "id": "fb9b7935-e1d8-4342-b26c-d71c439fa29d"
               }
             ]
           }
@@ -1058,7 +1091,36 @@
         "network": "tcp",
         "security": "none"
       },
-      "tag": "resilient-f331f09dea332fd5"
+      "tag": "resilient-a7474f7d8aa64afe"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "151.242.168.69",
+            "port": 335,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "10000025-9781-8800-f000-5faeabc7a020"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "qq",
+          "publicKey": "XJhq5Vpqo6j5Xsd56EMAK8--8EWBZWc3tjf-WFnInio",
+          "serverName": "onlineraceentry.co.uk",
+          "shortId": "ec2213ae33d5b43f"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-2f8ee78b0996147b"
     },
     {
       "protocol": "vless",
@@ -1209,35 +1271,6 @@
       "tag": "resilient-33f4777cd1e4e580"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "5.45.117.125",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "c7e9c591-2764-423a-afca-efbd010fd396"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "freeuse.firta.ru"
-        },
-        "wsSettings": {
-          "path": "/?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512"
-        }
-      },
-      "tag": "resilient-52bcae1f98aa6d0e"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1256,34 +1289,6 @@
         }
       },
       "tag": "resilient-be9615a207f2188a"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "108.61.123.188",
-            "port": 32855,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "8c96a2a4-5fc0-47c9-a2ca-33b179b4acc7"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "fRtTW1zQqje-Yh1DqPAHA8nWOMsX983pZUxy58FaY10",
-          "serverName": "amp-api-edge.apps.apple.com",
-          "shortId": "deb7a9e5a6e1d41a"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-8ac6fccefede476a"
     },
     {
       "protocol": "trojan",
