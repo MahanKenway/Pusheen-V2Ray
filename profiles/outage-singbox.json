@@ -52,6 +52,25 @@
     },
     {
       "network": "tcp",
+      "password": "MiTiVPN",
+      "server": "151.101.56.7",
+      "server_port": 443,
+      "tag": "outage-a3178c8ad6c27181",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "69.46.46.25",
       "server_port": 443,
       "tag": "outage-734ca40110380cce",
@@ -317,25 +336,6 @@
     },
     {
       "network": "tcp",
-      "server": "104.21.17.120",
-      "server_port": 443,
-      "tag": "outage-a014aca032e025ed",
-      "tls": {
-        "enabled": true,
-        "server_name": "myclashes.top"
-      },
-      "transport": {
-        "headers": {
-          "Host": "myclashes.top"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "b2c43c2d-01fb-48ee-9a1c-8f1ee3227e10"
-    },
-    {
-      "network": "tcp",
       "server": "69.46.46.10",
       "server_port": 443,
       "tag": "outage-81d44b1ce97440bc",
@@ -366,6 +366,25 @@
     },
     {
       "network": "tcp",
+      "server": "soskeynets-meadow-af5b.woowoorrrkk.workers.dev",
+      "server_port": 443,
+      "tag": "outage-5cc32e54e083a149",
+      "tls": {
+        "enabled": true,
+        "server_name": "summer-meadow-af5b.woowoorrrkk.workers.dev"
+      },
+      "transport": {
+        "headers": {
+          "Host": "summer-meadow-af5b.woowoorrrkk.workers.dev"
+        },
+        "path": "/sync",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "a8890c1b-3622-3106-c4be-d8671be32d2b"
+    },
+    {
+      "network": "tcp",
       "password": "MiTiVPN",
       "server": "104.21.18.41",
       "server_port": 443,
@@ -382,6 +401,21 @@
         "type": "ws"
       },
       "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "tag": "outage-f4a52d6495416c4d",
+      "transport": {
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        },
+        "path": "/?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
     },
     {
       "network": "tcp",
@@ -445,6 +479,7 @@
       "outbounds": [
         "outage-3b9afcc652fc8e0d",
         "outage-f47c88ee7b4e6c02",
+        "outage-a3178c8ad6c27181",
         "outage-734ca40110380cce",
         "outage-0f04de384e03e241",
         "outage-1017dd943f5d5b4f",
@@ -460,10 +495,11 @@
         "outage-479723874d3268ed",
         "outage-2e4bb2661d53819a",
         "outage-5d3d659ae0ae8deb",
-        "outage-a014aca032e025ed",
         "outage-81d44b1ce97440bc",
         "outage-89dee32b53b43983",
+        "outage-5cc32e54e083a149",
         "outage-4e30296f010f334d",
+        "outage-f4a52d6495416c4d",
         "outage-cbf220c5562113fb",
         "outage-656ae86abd8e70e0",
         "outage-2ac6deb02385aca1",

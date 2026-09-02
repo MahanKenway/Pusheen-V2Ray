@@ -72,6 +72,30 @@
       "tag": "resilient-f47c88ee7b4e6c02"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "151.101.56.7",
+            "password": "MiTiVPN",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+        }
+      },
+      "tag": "resilient-a3178c8ad6c27181"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -480,35 +504,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.17.120",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "b2c43c2d-01fb-48ee-9a1c-8f1ee3227e10"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "myclashes.top"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-a014aca032e025ed"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "69.46.46.10",
             "port": 443,
             "users": [
@@ -605,6 +600,31 @@
         }
       },
       "tag": "resilient-4e30296f010f334d"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.97.6",
+            "port": 8080,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/?ed=2560"
+        }
+      },
+      "tag": "resilient-f4a52d6495416c4d"
     },
     {
       "protocol": "vless",
@@ -810,35 +830,6 @@
         }
       },
       "tag": "resilient-656ae86abd8e70e0"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "173.230.155.55",
-            "port": 50900,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "2c082e78-bd9d-4960-b9f3-cde0040cb4f3"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "vdE4t2bYhYun6fZ9Weu_f6MXtsmq8iJ7XQBUj62scR0",
-          "serverName": "www.amd.com",
-          "shortId": "12fa394e28d52011"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-df658d2611498fbb"
     },
     {
       "protocol": "trojan",
@@ -1105,28 +1096,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.110.189.172",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "mlkem768x25519plus.native.0rtt.-0MXXOstBc09cB1tSeGN1pwYBzVEiVW__njsxK2hd14",
-                "id": "fb9b7935-e1d8-4342-b26c-d71c439fa29d"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-a7474f7d8aa64afe"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "151.242.168.69",
             "port": 335,
             "users": [
@@ -1271,6 +1240,35 @@
       "tag": "resilient-f90f748daceb097e"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "147.45.226.155",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "9ffaf9f7-a2ad-47ef-9256-f607b3b3c6cc"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "vk.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-33f4777cd1e4e580"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1289,6 +1287,63 @@
         }
       },
       "tag": "resilient-be9615a207f2188a"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "108.61.123.188",
+            "port": 32855,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "8c96a2a4-5fc0-47c9-a2ca-33b179b4acc7"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "fRtTW1zQqje-Yh1DqPAHA8nWOMsX983pZUxy58FaY10",
+          "serverName": "amp-api-edge.apps.apple.com",
+          "shortId": "deb7a9e5a6e1d41a"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-8ac6fccefede476a"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.154.196.63",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "bae47c97-9bc1-48f6-a133-a383ee71c12e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "o3OWFYnKad6q2C-eo6-rA74OCbjQoZfaUFYZsNqJJz0",
+          "serverName": "foodnetwork.com",
+          "shortId": "1e977d0b52eab755"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-9838b1a7c9ee7057"
     },
     {
       "protocol": "trojan",
@@ -1331,40 +1386,6 @@
         }
       },
       "tag": "resilient-f8e74c6254ffcceb"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "49.212.204.123",
-            "password": "!str18844",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-023cfa396052fcd0"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "49.212.193.129",
-            "password": "!str18844",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-dd2f539e00d01005"
     },
     {
       "protocol": "trojan",
