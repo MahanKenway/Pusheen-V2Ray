@@ -211,6 +211,25 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "tag": "outage-99aba8f2f3b3371e",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "a64ae61d-4c20-4072-930b-7c23c8687031"
+    },
+    {
+      "network": "tcp",
       "server": "104.19.214.98",
       "server_port": 2087,
       "tag": "outage-af23e32e5d190790",
@@ -347,25 +366,6 @@
     },
     {
       "network": "tcp",
-      "server": "soskeynets-meadow-af5b.woowoorrrkk.workers.dev",
-      "server_port": 443,
-      "tag": "outage-5cc32e54e083a149",
-      "tls": {
-        "enabled": true,
-        "server_name": "summer-meadow-af5b.woowoorrrkk.workers.dev"
-      },
-      "transport": {
-        "headers": {
-          "Host": "summer-meadow-af5b.woowoorrrkk.workers.dev"
-        },
-        "path": "/sync",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "a8890c1b-3622-3106-c4be-d8671be32d2b"
-    },
-    {
-      "network": "tcp",
       "password": "MiTiVPN",
       "server": "104.21.18.41",
       "server_port": 443,
@@ -454,6 +454,7 @@
         "outage-3812f35941076743",
         "outage-5f5937cea5dc5d8c",
         "outage-29eea448c5f6e613",
+        "outage-99aba8f2f3b3371e",
         "outage-af23e32e5d190790",
         "outage-5b8b5ce643b4759f",
         "outage-479723874d3268ed",
@@ -462,7 +463,6 @@
         "outage-a014aca032e025ed",
         "outage-81d44b1ce97440bc",
         "outage-89dee32b53b43983",
-        "outage-5cc32e54e083a149",
         "outage-4e30296f010f334d",
         "outage-cbf220c5562113fb",
         "outage-656ae86abd8e70e0",

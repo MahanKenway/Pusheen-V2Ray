@@ -334,6 +334,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "199.232.78.159",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "a64ae61d-4c20-4072-930b-7c23c8687031"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-99aba8f2f3b3371e"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "104.19.214.98",
             "port": 2087,
             "users": [
@@ -1242,35 +1271,6 @@
       "tag": "resilient-f90f748daceb097e"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "147.45.226.155",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "9ffaf9f7-a2ad-47ef-9256-f607b3b3c6cc"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "vk.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-33f4777cd1e4e580"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1316,34 +1316,21 @@
       "settings": {
         "servers": [
           {
-            "address": "202.78.163.100",
-            "password": "\u5bb9\u89e3\u6790\u9519\u8beftrojan",
-            "port": 443
+            "address": "us01.duotg.top",
+            "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
+            "port": 27732
           }
         ]
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.microsoft.com"
+        }
       },
-      "tag": "resilient-84c36d8a3c60980a"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "49.212.203.7",
-            "password": "!str18844",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-204d23ef4482fb47"
+      "tag": "resilient-f8e74c6254ffcceb"
     },
     {
       "protocol": "trojan",
