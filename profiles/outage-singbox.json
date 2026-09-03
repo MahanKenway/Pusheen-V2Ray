@@ -33,6 +33,25 @@
     },
     {
       "network": "tcp",
+      "server": "104.21.78.9",
+      "server_port": 443,
+      "tag": "outage-59fcf190711bff90",
+      "tls": {
+        "enabled": true,
+        "server_name": "summer-meadow-af5b.woowoorrrkk.workers.dev"
+      },
+      "transport": {
+        "headers": {
+          "Host": "summer-meadow-af5b.woowoorrrkk.workers.dev"
+        },
+        "path": "/sync",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "a8890c1b-3622-3106-c4be-d8671be32d2b"
+    },
+    {
+      "network": "tcp",
       "password": "MiTiVPN",
       "server": "151.101.56.7",
       "server_port": 443,
@@ -291,36 +310,6 @@
     },
     {
       "network": "tcp",
-      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-      "server": "104.21.83.135",
-      "server_port": 443,
-      "tag": "outage-2e4bb2661d53819a",
-      "transport": {
-        "headers": {
-          "Host": "id1.nathaya.web.id"
-        },
-        "path": "/trojan",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-      "server": "104.21.70.21",
-      "server_port": 8080,
-      "tag": "outage-5d3d659ae0ae8deb",
-      "transport": {
-        "headers": {
-          "Host": "id1.nathaya.web.id"
-        },
-        "path": "/trojan",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "server": "172.64.146.211",
       "server_port": 2087,
       "tag": "outage-c1df6da5d94f4939",
@@ -389,22 +378,22 @@
     },
     {
       "network": "tcp",
-      "server": "soskeynets-meadow-af5b.woowoorrrkk.workers.dev",
+      "password": "-wb.oDfOeHifTGMVEf",
+      "server": "c0yr9j09y2l9g0td8wa5.2whbrirhjgslm43zjcqei.workers.dev",
       "server_port": 443,
-      "tag": "outage-5cc32e54e083a149",
+      "tag": "outage-b23f810a6efae17e",
       "tls": {
         "enabled": true,
-        "server_name": "summer-meadow-af5b.woowoorrrkk.workers.dev"
+        "server_name": "c0YR9J09y2l9G0Td8WA5.2whBRirhjgsLm43ZJcqei.WoRKers.DEv"
       },
       "transport": {
         "headers": {
-          "Host": "summer-meadow-af5b.woowoorrrkk.workers.dev"
+          "Host": "c0YR9J09y2l9G0Td8WA5.2whBRirhjgsLm43ZJcqei.WoRKers.DEv"
         },
-        "path": "/sync",
+        "path": "/tr/CRGrZTTVLMALBJkE4?ed=2560",
         "type": "ws"
       },
-      "type": "vless",
-      "uuid": "a8890c1b-3622-3106-c4be-d8671be32d2b"
+      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -509,11 +498,23 @@
       "type": "trojan"
     },
     {
+      "network": "tcp",
+      "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
+      "server": "107.150.105.84",
+      "server_port": 46292,
+      "tag": "outage-2ac6deb02385aca1",
+      "tls": {
+        "enabled": true
+      },
+      "type": "trojan"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
         "outage-3b9afcc652fc8e0d",
+        "outage-59fcf190711bff90",
         "outage-a3178c8ad6c27181",
         "outage-734ca40110380cce",
         "outage-0f04de384e03e241",
@@ -528,20 +529,19 @@
         "outage-af23e32e5d190790",
         "outage-5b8b5ce643b4759f",
         "outage-479723874d3268ed",
-        "outage-2e4bb2661d53819a",
-        "outage-5d3d659ae0ae8deb",
         "outage-c1df6da5d94f4939",
         "outage-81d44b1ce97440bc",
         "outage-89dee32b53b43983",
         "outage-52eeb2c7442f946b",
-        "outage-5cc32e54e083a149",
+        "outage-b23f810a6efae17e",
         "outage-4e30296f010f334d",
         "outage-2721542a8cbae705",
         "outage-f4a52d6495416c4d",
         "outage-daad917228ace05e",
         "outage-cbf220c5562113fb",
         "outage-656ae86abd8e70e0",
-        "outage-b0fb6805511192c2"
+        "outage-b0fb6805511192c2",
+        "outage-2ac6deb02385aca1"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
