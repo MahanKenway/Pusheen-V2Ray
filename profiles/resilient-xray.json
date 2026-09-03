@@ -531,6 +531,31 @@
       "settings": {
         "vnext": [
           {
+            "address": "185.207.197.12",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "080fad7c-ff4b-499f-ab5d-52d69ea5745a"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/pyip"
+        }
+      },
+      "tag": "resilient-48c53be245333813"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "69.46.46.26",
             "port": 443,
             "users": [
@@ -1283,6 +1308,28 @@
       "tag": "resilient-6b75074965d5af3c"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "35.179.45.135",
+            "port": 22222,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-efbc3e5f71cf4a03"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1329,63 +1376,6 @@
         "security": "reality"
       },
       "tag": "resilient-8ac6fccefede476a"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "193.148.59.178",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE",
-          "serverName": "www.apple.com",
-          "shortId": "e3daad69"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-b875ae4286a6d7d7"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "159.195.137.29",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "2ae1bbd2-dd81-4737-bbec-6a8c1c74e8f1"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "sellflow.org"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-9cb8c325966b7c70"
     },
     {
       "protocol": "trojan",
