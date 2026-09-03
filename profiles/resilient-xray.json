@@ -446,83 +446,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.19.214.98",
-            "port": 2087,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
-        },
-        "wsSettings": {
-          "path": "/?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512"
-        }
-      },
-      "tag": "resilient-af23e32e5d190790"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "45.131.4.118",
-            "password": "MiTiVPN",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "linkkon-w.ir"
-        },
-        "wsSettings": {
-          "path": "/ed=mitivpn"
-        }
-      },
-      "tag": "resilient-5b8b5ce643b4759f"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "140.248.185.253",
-            "password": "MiTiVPN",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/s-w@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
-        }
-      },
-      "tag": "resilient-479723874d3268ed"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "172.67.217.240",
             "port": 443,
             "users": [
@@ -1006,6 +929,56 @@
       "settings": {
         "vnext": [
           {
+            "address": "151.101.56.9",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d8b3f1c4-94c7-423e-a03a-bfa7f6af0ea1"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/ws"
+        }
+      },
+      "tag": "resilient-a1443b899c24a023"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "chatgpt.com",
+            "port": 2082,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "035c8a3d-1cec-43e2-369d-f98593af1d9a"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "path": "/tfufdfute5wydh"
+        },
+        "network": "httpupgrade",
+        "security": "none"
+      },
+      "tag": "resilient-d7de5aa43ee4985d"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "104.17.3.81",
             "port": 8443,
             "users": [
@@ -1421,35 +1394,6 @@
       "tag": "resilient-efa901d7d81b1139"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "tg1.wba-pn.ru",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "ae2009b9-76cb-4d18-8612-7515b2b84398"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "tg1.wba-pn.ru"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-6b75074965d5af3c"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1513,6 +1457,35 @@
         }
       },
       "tag": "resilient-f8e74c6254ffcceb"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.140.12.160",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "6RshLCSAs31qGRa_tWi63KClbh2Kzj9ooXpdaPJKbjs",
+          "serverName": "vk.ru",
+          "shortId": "a6bbc4aecf5d961f"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-373a3c0ab978a0d8"
     },
     {
       "protocol": "trojan",
