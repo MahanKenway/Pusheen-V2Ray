@@ -24,6 +24,30 @@
   },
   "outbounds": [
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "151.101.110.219",
+            "password": "Mitivpn",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/boost"
+        }
+      },
+      "tag": "resilient-32b228cd33c28f3a"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -812,6 +836,26 @@
       "settings": {
         "servers": [
           {
+            "address": "waysi.waysi6688.workers.dev",
+            "password": "eabf1999fefbb7d2",
+            "port": 2087
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/tr/sMpzOZ0eWEt6jbZ1jjN3BaM7LLoQ"
+        }
+      },
+      "tag": "resilient-d3dd7c0d2640c13b"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "c0yr9j09y2l9g0td8wa5.2whbrirhjgslm43zjcqei.workers.dev",
             "password": "-wb.oDfOeHifTGMVEf",
             "port": 443
@@ -1377,6 +1421,35 @@
       "tag": "resilient-efa901d7d81b1139"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "tg1.wba-pn.ru",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "ae2009b9-76cb-4d18-8612-7515b2b84398"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "tg1.wba-pn.ru"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-6b75074965d5af3c"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1395,27 +1468,6 @@
         }
       },
       "tag": "resilient-be9615a207f2188a"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "163.172.211.74",
-            "password": "02975af0-c36b-11ed-8e27-1239d0255272",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "yahoo.com"
-        }
-      },
-      "tag": "resilient-58d6af8641689c97"
     },
     {
       "protocol": "trojan",

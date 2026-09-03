@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "password": "Mitivpn",
+      "server": "151.101.110.219",
+      "server_port": 443,
+      "tag": "outage-32b228cd33c28f3a",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/boost",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
       "tag": "outage-169a8b68e97a7876",
@@ -349,6 +368,25 @@
     },
     {
       "network": "tcp",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "tag": "outage-1f8d95a3b89b4f19",
+      "tls": {
+        "enabled": true,
+        "server_name": "xwrivr.pages.dev"
+      },
+      "transport": {
+        "headers": {
+          "Host": "xwrivr.pages.dev"
+        },
+        "path": "/?ed=2048",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "0f0b7f69-78e1-4e9e-8b35-0986444613e4"
+    },
+    {
+      "network": "tcp",
       "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
       "server": "107.150.105.84",
       "server_port": 20065,
@@ -373,6 +411,21 @@
           "Host": "c0yR9J09Y2l9G0td8wA5.2wHbrirHJgSlM43zJcqeI.WoRkERS.dEv"
         },
         "path": "/tr/DUxfWnCsYjSEOWSUGmnz?ed=2560",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "eabf1999fefbb7d2",
+      "server": "waysi.waysi6688.workers.dev",
+      "server_port": 2087,
+      "tag": "outage-d3dd7c0d2640c13b",
+      "transport": {
+        "headers": {
+          "Host": "WaYSi.wAYsI6688.WOrkeRS.deV"
+        },
+        "path": "/tr/sMpzOZ0eWEt6jbZ1jjN3BaM7LLoQ",
         "type": "ws"
       },
       "type": "trojan"
@@ -495,6 +548,7 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-32b228cd33c28f3a",
         "outage-169a8b68e97a7876",
         "outage-3b9afcc652fc8e0d",
         "outage-d5ee654392d5779c",
@@ -514,8 +568,10 @@
         "outage-479723874d3268ed",
         "outage-a062b12de628fc9a",
         "outage-4b925296e04687a3",
+        "outage-1f8d95a3b89b4f19",
         "outage-89dee32b53b43983",
         "outage-52eeb2c7442f946b",
+        "outage-d3dd7c0d2640c13b",
         "outage-b23f810a6efae17e",
         "outage-4e30296f010f334d",
         "outage-f4a52d6495416c4d",
