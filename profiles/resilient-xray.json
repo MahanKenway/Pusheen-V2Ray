@@ -334,31 +334,6 @@
       "tag": "resilient-1017dd943f5d5b4f"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.16.11.111",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "4f4012b1-45e9-48bc-a4e2-d04b0c72eeff"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-9fbf6041b4cc4807"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1047,6 +1022,30 @@
       "tag": "resilient-615265aecb86ed63"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "172.67.187.87",
+            "password": "Telegram_healer_config",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "bKtF381b04NcHTXkN8TidEzQgF.TCNTH9s31mg1j4TNxLAD62O1s2o.wOrKErS.DEV"
+        },
+        "wsSettings": {
+          "path": "/tr/JIPAVWGHbaGJWIcEUAFGZIxrVCPW?ed=2560"
+        }
+      },
+      "tag": "resilient-82b483b9da938818"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1281,26 +1280,6 @@
       "tag": "resilient-561d074e3997752c"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "14.1.28.76",
-            "password": "r49gssuondznyu2eex83",
-            "port": 50740
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false
-        }
-      },
-      "tag": "resilient-274f022b4f4f31e9"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1475,6 +1454,35 @@
         "security": "reality"
       },
       "tag": "resilient-c43fd9b44e1ca411"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "151.242.168.69",
+            "port": 335,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "10000025-9781-8800-f000-5faeabc7a020"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "qq",
+          "publicKey": "XJhq5Vpqo6j5Xsd56EMAK8--8EWBZWc3tjf-WFnInio",
+          "serverName": "onlineraceentry.co.uk",
+          "shortId": "ec2213ae33d5b43f"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-2f8ee78b0996147b"
     },
     {
       "protocol": "trojan",
