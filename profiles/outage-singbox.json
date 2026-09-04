@@ -71,6 +71,40 @@
     },
     {
       "network": "tcp",
+      "password": "humanity",
+      "server": "45.130.125.160",
+      "server_port": 443,
+      "tag": "outage-41b501c21a3d8349",
+      "transport": {
+        "headers": {
+          "Host": "www.calmlunch.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+      "server": "104.21.33.59",
+      "server_port": 443,
+      "tag": "outage-03f264ce924cad0d",
+      "tls": {
+        "enabled": true,
+        "server_name": "id1.nathaya.web.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "id1.nathaya.web.id"
+        },
+        "path": "/trojan",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "104.18.39.218",
       "server_port": 80,
       "tag": "outage-d5ee654392d5779c",
@@ -533,14 +567,6 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "-wb.oDfOeHifTGMVEf",
-      "server": "www.speedtest.net",
-      "server_port": 443,
-      "tag": "outage-b0fb6805511192c2",
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -548,6 +574,8 @@
         "outage-32b228cd33c28f3a",
         "outage-169a8b68e97a7876",
         "outage-3b9afcc652fc8e0d",
+        "outage-41b501c21a3d8349",
+        "outage-03f264ce924cad0d",
         "outage-d5ee654392d5779c",
         "outage-fdfd2263729c2780",
         "outage-59fcf190711bff90",
@@ -574,8 +602,7 @@
         "outage-f4a52d6495416c4d",
         "outage-fdcf326d04961710",
         "outage-daad917228ace05e",
-        "outage-656ae86abd8e70e0",
-        "outage-b0fb6805511192c2"
+        "outage-656ae86abd8e70e0"
       ],
       "tag": "outage-auto",
       "tolerance": 200,

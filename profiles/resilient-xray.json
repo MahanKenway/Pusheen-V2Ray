@@ -101,6 +101,50 @@
       "tag": "resilient-3b9afcc652fc8e0d"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "45.130.125.160",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-41b501c21a3d8349"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.33.59",
+            "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "id1.nathaya.web.id"
+        },
+        "wsSettings": {
+          "path": "/trojan"
+        }
+      },
+      "tag": "resilient-03f264ce924cad0d"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1512,51 +1556,6 @@
         "security": "reality"
       },
       "tag": "resilient-373a3c0ab978a0d8"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "78.17.186.154",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "8535e46f-4c0b-4b02-9369-d4d553c9a892"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "ho99K9SlOhJxolr4nVfw8SV4Z1yI22KaKaxUfk2o8jE",
-          "serverName": "www.nokia.com"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-d98564f7e036db9c"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "xn--1ugy405pdua.gayvibe.dpdns.org",
-            "password": "tripitropa444",
-            "port": 2174
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-a4c88599c3a3e7ab"
     },
     {
       "protocol": "blackhole",
