@@ -774,26 +774,6 @@
       "tag": "resilient-7da2024487ae8203"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "107.150.105.84",
-            "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
-            "port": 20065
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false
-        }
-      },
-      "tag": "resilient-89dee32b53b43983"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1313,6 +1293,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "k2.cloud--vpn.site",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "08ffff12-93bb-42eb-8c83-6489644a1d04"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-3824c2f8d42f7ddb"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "15.204.97.195",
             "port": 23576,
             "users": [
@@ -1429,60 +1438,25 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.34.90.68",
-            "port": 8443,
+            "address": "178.95.170.83",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "id": "fe8e2ffb-8796-408c-af5b-0d4774215e00"
+                "id": "bf443e4a-aa9e-4509-abf0-d0f6828d57be"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "grpc"
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "dTdncizxtVTqDZDkQoYdRTkf2Mn6XuKtkzg8vZhrkzA",
-          "serverName": "360.yandex.ru",
-          "shortId": "6ba85179e30d4fc2"
-        },
-        "security": "reality"
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/4bc027a44532"
+        }
       },
-      "tag": "resilient-c43fd9b44e1ca411"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "151.242.168.69",
-            "port": 335,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "10000025-9781-8800-f000-5faeabc7a020"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "qq",
-          "publicKey": "XJhq5Vpqo6j5Xsd56EMAK8--8EWBZWc3tjf-WFnInio",
-          "serverName": "onlineraceentry.co.uk",
-          "shortId": "ec2213ae33d5b43f"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-2f8ee78b0996147b"
+      "tag": "resilient-7b2b5af6535d948f"
     },
     {
       "protocol": "trojan",
@@ -1562,6 +1536,35 @@
         "security": "none"
       },
       "tag": "resilient-7a7cac957df1582f"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.140.12.160",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "6RshLCSAs31qGRa_tWi63KClbh2Kzj9ooXpdaPJKbjs",
+          "serverName": "vk.ru",
+          "shortId": "a6bbc4aecf5d961f"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-373a3c0ab978a0d8"
     },
     {
       "protocol": "blackhole",
