@@ -421,6 +421,25 @@
     },
     {
       "network": "tcp",
+      "server": "69.46.46.10",
+      "server_port": 443,
+      "tag": "outage-81d44b1ce97440bc",
+      "tls": {
+        "enabled": true,
+        "server_name": "golden-grove-39ee-production.up.railway.app"
+      },
+      "transport": {
+        "headers": {
+          "Host": "golden-grove-39ee-production.up.railway.app"
+        },
+        "path": "/ws/15e9c884-4541-f430-cf55-66401979319d",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "15e9c884-4541-f430-cf55-66401979319d"
+    },
+    {
+      "network": "tcp",
       "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
       "server": "107.150.105.84",
       "server_port": 20065,
@@ -567,6 +586,21 @@
       "type": "trojan"
     },
     {
+      "network": "tcp",
+      "server": "185.143.233.5",
+      "server_port": 80,
+      "tag": "outage-83c18c77ca2b826c",
+      "transport": {
+        "headers": {
+          "Host": "fox-a9e04bb07a-test.apps.ir-central1.arvancaas.ir"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "38dd06a1-e1cb-492b-bb87-218ce05d0d67"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -594,6 +628,7 @@
         "outage-4b925296e04687a3",
         "outage-1f8d95a3b89b4f19",
         "outage-c1df6da5d94f4939",
+        "outage-81d44b1ce97440bc",
         "outage-89dee32b53b43983",
         "outage-52eeb2c7442f946b",
         "outage-d3dd7c0d2640c13b",
@@ -602,7 +637,8 @@
         "outage-f4a52d6495416c4d",
         "outage-fdcf326d04961710",
         "outage-daad917228ace05e",
-        "outage-656ae86abd8e70e0"
+        "outage-656ae86abd8e70e0",
+        "outage-83c18c77ca2b826c"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
