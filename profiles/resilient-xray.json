@@ -1135,26 +1135,6 @@
       "settings": {
         "servers": [
           {
-            "address": "107.150.105.84",
-            "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
-            "port": 38261
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false
-        }
-      },
-      "tag": "resilient-cbf220c5562113fb"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
             "address": "14.1.28.76",
             "password": "r49gssuondznyu2eex83",
             "port": 50740
@@ -1282,6 +1262,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "adheres-scruple.quick-cdn.net",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "566e98ad-4a56-4c1d-9dbc-83987079731b"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "adheres-scruple.quick-cdn.net"
+        },
+        "wsSettings": {
+          "path": "/ws"
+        }
+      },
+      "tag": "resilient-3560f85392e10633"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "89.34.90.68",
             "port": 8443,
             "users": [
@@ -1397,54 +1406,6 @@
       "tag": "resilient-75ba39d6a1deea66"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "5.255.126.104",
-            "port": 46142,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "255386a8-aec5-4425-bfe7-ca49b7448deb"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "l-OE7EwER1Z_jAifGE_UZ3FqHDMGzaR0jQHFYj5RNAk",
-          "serverName": "www.yahoo.com",
-          "shortId": "39feeba3085c"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-efa901d7d81b1139"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "132.145.51.172",
-            "password": "02e653c9-7c93-46a9-999d-11834bd0c577",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false
-        }
-      },
-      "tag": "resilient-be9615a207f2188a"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1551,6 +1512,51 @@
         "security": "reality"
       },
       "tag": "resilient-373a3c0ab978a0d8"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "78.17.186.154",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "8535e46f-4c0b-4b02-9369-d4d553c9a892"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "ho99K9SlOhJxolr4nVfw8SV4Z1yI22KaKaxUfk2o8jE",
+          "serverName": "www.nokia.com"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-d98564f7e036db9c"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "xn--1ugy405pdua.gayvibe.dpdns.org",
+            "password": "tripitropa444",
+            "port": 2174
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-a4c88599c3a3e7ab"
     },
     {
       "protocol": "blackhole",
