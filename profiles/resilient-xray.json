@@ -719,6 +719,64 @@
       "settings": {
         "vnext": [
           {
+            "address": "208.103.161.1",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "903bb12e-ac86-414c-adf1-b9c41e213da8"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": "grpc"
+        },
+        "network": "grpc",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "viju.allomroll.org"
+        }
+      },
+      "tag": "resilient-11891fcb27f24c72"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.64.53.60",
+            "port": 2083,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-68fa345d94b3be15"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "185.207.197.12",
             "port": 80,
             "users": [
@@ -967,30 +1025,6 @@
       "settings": {
         "servers": [
           {
-            "address": "45.130.125.112",
-            "password": "MITIVPN",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ikk---7-MiTiVPN----o.Maqror.ir"
-        },
-        "wsSettings": {
-          "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de"
-        }
-      },
-      "tag": "resilient-e91c3b2911c23821"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
             "address": "104.18.9.83",
             "password": "humanity",
             "port": 443
@@ -1115,13 +1149,18 @@
       "tag": "resilient-d7de5aa43ee4985d"
     },
     {
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "172.67.176.157",
-            "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-            "port": 443
+            "address": "69.46.46.109",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "a0e4f9cd-2602-b061-9c64-00115f6f7fc7"
+              }
+            ]
           }
         ]
       },
@@ -1130,13 +1169,13 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "id1.nathaya.web.id"
+          "serverName": "cedar-meadow-acc4-production.up.railway.app"
         },
         "wsSettings": {
-          "path": "/trojan"
+          "path": "/ws/a0e4f9cd-2602-b061-9c64-00115f6f7fc7"
         }
       },
-      "tag": "resilient-daad917228ace05e"
+      "tag": "resilient-fc7586ed58de7ffe"
     },
     {
       "protocol": "vless",
@@ -1317,86 +1356,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "93.123.85.32",
-            "port": 41809,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "87e26a6f-e243-4c8d-9bf6-362b0adee4f2"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-95e69512a10b3d58"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "194.110.207.146",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "9c3d8e77-82ca-48d5-9981-dfce97b20ab1"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY",
-          "serverName": "kibi-institut.de",
-          "shortId": "fd55b698ee8c3629"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-7db2c6afa778ff83"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "3.166.17.55",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "2b262080-f68a-4108-9ac3-d89140faaf6f"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "d2757rhm6iotvq.cloudfront.net"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-62d42d78a6d407c3"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "178.95.170.83",
             "port": 2087,
             "users": [
@@ -1533,29 +1492,21 @@
       "tag": "resilient-d98564f7e036db9c"
     },
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "185.143.233.5",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "38dd06a1-e1cb-492b-bb87-218ce05d0d67"
-              }
-            ]
+            "address": "xn--1ugy405pdua.gayvibe.dpdns.org",
+            "password": "tripitropa444",
+            "port": 2174
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/"
-        }
+        "network": "tcp",
+        "security": "none"
       },
-      "tag": "resilient-83c18c77ca2b826c"
+      "tag": "resilient-a4c88599c3a3e7ab"
     },
     {
       "protocol": "blackhole",
