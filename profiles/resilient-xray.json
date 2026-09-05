@@ -411,6 +411,55 @@
       "settings": {
         "servers": [
           {
+            "address": "104.21.70.21",
+            "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "id1.nathaya.web.id"
+        },
+        "wsSettings": {
+          "path": "/trojan"
+        }
+      },
+      "tag": "resilient-81c038914573525a"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.26.15.16",
+            "port": 8080,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "8fb03657-2100-4067-9bcd-1ae0904e5a8e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit?ed=2048"
+        }
+      },
+      "tag": "resilient-fe5bce01a075fdc4"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "151.101.56.230",
             "password": "MiTiVPN",
             "port": 443
@@ -841,31 +890,6 @@
       "tag": "resilient-b23f810a6efae17e"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.114.97.6",
-            "port": 8080,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/?ed=2560"
-        }
-      },
-      "tag": "resilient-f4a52d6495416c4d"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1093,23 +1117,6 @@
         }
       },
       "tag": "resilient-561d074e3997752c"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.21.70.21",
-            "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-15471124d92c668a"
     },
     {
       "protocol": "vless",
@@ -1372,35 +1379,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "132.243.235.53",
-            "port": 2096,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "60e2a548-96aa-4850-a279-1edab743c39b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "0XSgK4OAEjNPsjYdhNBV5xl5mCCRRzYucSQ9LIO0Gkg",
-          "serverName": "dhlparcel.nl",
-          "shortId": "3dad96f8693ea653"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-49e8a1bc3500778e"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "178.95.170.83",
             "port": 2087,
             "users": [
@@ -1541,12 +1519,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.220.67.181",
-            "port": 2087,
+            "address": "185.143.233.5",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
-                "id": "90da514d-8888-4a53-912e-ac2981c8c6ee"
+                "id": "38dd06a1-e1cb-492b-bb87-218ce05d0d67"
               }
             ]
           }
@@ -1556,10 +1534,27 @@
         "network": "ws",
         "security": "none",
         "wsSettings": {
-          "path": "/8f2690e2d016"
+          "path": "/"
         }
       },
-      "tag": "resilient-8e7fb4529a297b06"
+      "tag": "resilient-83c18c77ca2b826c"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "xn--1ugy405pdua.gayvibe.dpdns.org",
+            "password": "tripitropa444",
+            "port": 2174
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-a4c88599c3a3e7ab"
     },
     {
       "protocol": "blackhole",
