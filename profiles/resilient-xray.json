@@ -1356,6 +1356,45 @@
       "settings": {
         "vnext": [
           {
+            "address": "93.123.85.32",
+            "port": 41809,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "87e26a6f-e243-4c8d-9bf6-362b0adee4f2"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-95e69512a10b3d58"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "45.85.88.194",
+            "password": "tripitropa994825",
+            "port": 2234
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-a9556db673ba54b0"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "178.95.170.83",
             "port": 2087,
             "users": [
