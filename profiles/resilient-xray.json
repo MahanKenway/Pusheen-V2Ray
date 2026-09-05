@@ -24,6 +24,55 @@
   },
   "outbounds": [
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.131.208.4",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "424fa201-3f94-479e-b533-d5257cf9a207"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/pyip=Telegram\ud83c\udde8\ud83c\uddf3 @WangCai2"
+        }
+      },
+      "tag": "resilient-916e2633feb731d2"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "199.232.78.160",
+            "password": "MiTiVPN",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI"
+        }
+      },
+      "tag": "resilient-61dd84eee394f14b"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -46,35 +95,6 @@
         }
       },
       "tag": "resilient-32b228cd33c28f3a"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.160",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "XpnTeam-52"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-169a8b68e97a7876"
     },
     {
       "protocol": "trojan",
@@ -871,30 +891,6 @@
       "tag": "resilient-b23f810a6efae17e"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.21.18.41",
-            "password": "MiTiVPN",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "linkkon-w.ir"
-        },
-        "wsSettings": {
-          "path": "/cdn=mitivpn"
-        }
-      },
-      "tag": "resilient-4e30296f010f334d"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1094,35 +1090,6 @@
         "security": "none"
       },
       "tag": "resilient-d7de5aa43ee4985d"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.17.3.81",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e1b81abf-2c98-487a-9b4d-e678f718f4b9"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "Tiny-ShADow-2432.QuillYPaNeL26.woRKers.dev"
-        },
-        "wsSettings": {
-          "path": "/eyJqdW5rIjoiSVIwdkdQSmhrT0xRNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzJhMDI6ODk4OjE0Njo2NDo6XSJdfQ==?ed=2560"
-        }
-      },
-      "tag": "resilient-293bb51002e21dac"
     },
     {
       "protocol": "trojan",
@@ -1410,6 +1377,35 @@
         "security": "reality"
       },
       "tag": "resilient-49e8a1bc3500778e"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "151.242.168.69",
+            "port": 335,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "10000025-9781-8800-f000-5faeabc7a020"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "qq",
+          "publicKey": "XJhq5Vpqo6j5Xsd56EMAK8--8EWBZWc3tjf-WFnInio",
+          "serverName": "onlineraceentry.co.uk",
+          "shortId": "ec2213ae33d5b43f"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-2f8ee78b0996147b"
     },
     {
       "protocol": "vless",

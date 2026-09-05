@@ -14,6 +14,40 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "45.131.208.4",
+      "server_port": 80,
+      "tag": "outage-916e2633feb731d2",
+      "transport": {
+        "headers": {
+          "Host": "floral-thunder-10d3.82-67d.workers.dev"
+        },
+        "path": "/pyip=Telegram\ud83c\udde8\ud83c\uddf3 @WangCai2",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "424fa201-3f94-479e-b533-d5257cf9a207"
+    },
+    {
+      "network": "tcp",
+      "password": "MiTiVPN",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "tag": "outage-61dd84eee394f14b",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "Mitivpn",
       "server": "151.101.110.219",
       "server_port": 443,
@@ -30,25 +64,6 @@
         "type": "ws"
       },
       "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "tag": "outage-169a8b68e97a7876",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ssl.fastly.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "XpnTeam-52"
     },
     {
       "network": "tcp",
@@ -474,25 +489,6 @@
     },
     {
       "network": "tcp",
-      "password": "MiTiVPN",
-      "server": "104.21.18.41",
-      "server_port": 443,
-      "tag": "outage-4e30296f010f334d",
-      "tls": {
-        "enabled": true,
-        "server_name": "linkkon-w.ir"
-      },
-      "transport": {
-        "headers": {
-          "Host": "linkkon-w.ir"
-        },
-        "path": "/cdn=mitivpn",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "server": "188.114.97.6",
       "server_port": 8080,
       "tag": "outage-f4a52d6495416c4d",
@@ -604,8 +600,9 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-916e2633feb731d2",
+        "outage-61dd84eee394f14b",
         "outage-32b228cd33c28f3a",
-        "outage-169a8b68e97a7876",
         "outage-3b9afcc652fc8e0d",
         "outage-0073662eb2f9e95e",
         "outage-cac78bee295ef74c",
@@ -630,7 +627,6 @@
         "outage-52eeb2c7442f946b",
         "outage-d3dd7c0d2640c13b",
         "outage-b23f810a6efae17e",
-        "outage-4e30296f010f334d",
         "outage-f4a52d6495416c4d",
         "outage-82b483b9da938818",
         "outage-fdcf326d04961710",
