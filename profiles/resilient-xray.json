@@ -125,6 +125,59 @@
       "settings": {
         "vnext": [
           {
+            "address": "172.67.204.84",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "b91b3053-9602-4a60-b848-ec0eafea8443"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "SvA6YRW81Y5ufirm5YaUbLbEtWl4DOcz8qePEbyzewnRqxLxYRNICZsezLr.pAgeS-dEV.site"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-c50e538c1281e481"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.114.96.7",
+            "password": "Telegram_healer_config",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "BjSa2yGFITzjtHo8ucZe29xf2m2q9C.G3FIAJpF0Erm9k3x6WW-YeGzl2.workeRs.dEV"
+        },
+        "wsSettings": {
+          "path": "/tr/J6IJuAAWkqyiEt8UkeRnVdLlkLIGukLr?ed=2560"
+        }
+      },
+      "tag": "resilient-82f1dadf1b6cca04"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "199.232.78.159",
             "port": 443,
             "users": [
@@ -352,27 +405,6 @@
         }
       },
       "tag": "resilient-d00f665b056aac6b"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.21.70.21",
-            "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "id1.nat"
-        }
-      },
-      "tag": "resilient-92f07dc8ce20c80b"
     },
     {
       "protocol": "trojan",
@@ -1063,6 +1095,23 @@
       "tag": "resilient-561d074e3997752c"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.70.21",
+            "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-15471124d92c668a"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1352,37 +1401,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "91.92.33.95",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "0dd9cfaa-cebd-4444-8778-70cb22737944"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "grpc-tunnel"
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "HFTFARa1OS53m4HWnjwtZ0J3lu7aoKkE7OujIyM62QI",
-          "serverName": "dl.google.com",
-          "shortId": "2a236a7fcbe0ce61"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-6ece71ca2b5385f0"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "178.95.170.83",
             "port": 2087,
             "users": [
@@ -1426,27 +1444,6 @@
         }
       },
       "tag": "resilient-b8f9cddbf3818e8d"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "us01.duotg.top",
-            "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
-            "port": 27732
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.microsoft.com"
-        }
-      },
-      "tag": "resilient-f8e74c6254ffcceb"
     },
     {
       "protocol": "trojan",
