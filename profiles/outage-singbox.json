@@ -97,6 +97,44 @@
     },
     {
       "network": "tcp",
+      "password": "humanity",
+      "server": "216.24.57.7",
+      "server_port": 443,
+      "tag": "outage-f178c2da37c83a62",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.ignitelimit.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
+      "server": "185.18.250.252",
+      "server_port": 443,
+      "tag": "outage-3097326a92e6858d",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.calmlunch.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "172.66.47.54",
       "server_port": 443,
       "tag": "outage-5b0d7dc63520b970",
@@ -404,34 +442,6 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "tripitropa994825",
-      "server": "45.85.88.194",
-      "server_port": 2234,
-      "tag": "outage-a9556db673ba54b0",
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "178.95.170.83",
-      "server_port": 2087,
-      "tag": "outage-7b2b5af6535d948f",
-      "transport": {
-        "path": "/4bc027a44532",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "bf443e4a-aa9e-4509-abf0-d0f6828d57be"
-    },
-    {
-      "network": "tcp",
-      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
-      "server": "109.206.241.10",
-      "server_port": 449,
-      "tag": "outage-e827fa23f9e23b69",
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -441,6 +451,8 @@
         "outage-aa4ddf01eb411ab9",
         "outage-24ecfcd5e4e8b287",
         "outage-916e2633feb731d2",
+        "outage-f178c2da37c83a62",
+        "outage-3097326a92e6858d",
         "outage-5b0d7dc63520b970",
         "outage-b007a8fef3b6d377",
         "outage-c50e538c1281e481",
@@ -458,10 +470,7 @@
         "outage-532c94e759396b48",
         "outage-82b483b9da938818",
         "outage-6e20f5464c45fffd",
-        "outage-f1a34096dfcd021d",
-        "outage-a9556db673ba54b0",
-        "outage-7b2b5af6535d948f",
-        "outage-e827fa23f9e23b69"
+        "outage-f1a34096dfcd021d"
       ],
       "tag": "outage-auto",
       "tolerance": 200,

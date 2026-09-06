@@ -152,6 +152,54 @@
       "tag": "resilient-916e2633feb731d2"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "216.24.57.7",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.ignitelimit.com"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-f178c2da37c83a62"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.18.250.252",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.calmlunch.com"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-3097326a92e6858d"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -925,31 +973,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "151.101.56.9",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "d8b3f1c4-94c7-423e-a03a-bfa7f6af0ea1"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/ws"
-        }
-      },
-      "tag": "resilient-a1443b899c24a023"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "172.64.53.74",
             "port": 2096,
             "users": [
@@ -973,31 +996,6 @@
         }
       },
       "tag": "resilient-e13dc95a9e6cb1c4"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "chatgpt.com",
-            "port": 2082,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "035c8a3d-1cec-43e2-369d-f98593af1d9a"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "httpupgradeSettings": {
-          "path": "/tfufdfute5wydh"
-        },
-        "network": "httpupgrade",
-        "security": "none"
-      },
-      "tag": "resilient-d7de5aa43ee4985d"
     },
     {
       "protocol": "vless",
@@ -1162,6 +1160,64 @@
       "tag": "resilient-27d2f5e13bf363e3"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "djdjsj-production.up.railway.app",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "5ff8e256-cb7e-41fc-8ed2-14a46fd46e4e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "djdjsj-production.up.railway.app"
+        },
+        "wsSettings": {
+          "path": "/ws/vless/5ff8e256-cb7e-41fc-8ed2-14a46fd46e4e?ed"
+        }
+      },
+      "tag": "resilient-181412412ac1b7e2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "adheres-scruple.quick-cdn.net",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "566e98ad-4a56-4c1d-9dbc-83987079731b"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "adheres-scruple.quick-cdn.net"
+        },
+        "wsSettings": {
+          "path": "/ws"
+        }
+      },
+      "tag": "resilient-3560f85392e10633"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1177,31 +1233,6 @@
         "security": "none"
       },
       "tag": "resilient-a9556db673ba54b0"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "178.95.170.83",
-            "port": 2087,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "bf443e4a-aa9e-4509-abf0-d0f6828d57be"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/4bc027a44532"
-        }
-      },
-      "tag": "resilient-7b2b5af6535d948f"
     },
     {
       "protocol": "vless",
