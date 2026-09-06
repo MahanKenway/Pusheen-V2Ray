@@ -152,6 +152,35 @@
       "tag": "resilient-916e2633feb731d2"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.66.47.54",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cc771b27-27ad-4bf3-bc42-f42cd673edbe"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ircp-617.pages.dev."
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-5b0d7dc63520b970"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1131,35 +1160,6 @@
         "security": "reality"
       },
       "tag": "resilient-27d2f5e13bf363e3"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "djdjsj-production.up.railway.app",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "5ff8e256-cb7e-41fc-8ed2-14a46fd46e4e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "djdjsj-production.up.railway.app"
-        },
-        "wsSettings": {
-          "path": "/ws/vless/5ff8e256-cb7e-41fc-8ed2-14a46fd46e4e?ed"
-        }
-      },
-      "tag": "resilient-181412412ac1b7e2"
     },
     {
       "protocol": "trojan",

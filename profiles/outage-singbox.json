@@ -97,6 +97,25 @@
     },
     {
       "network": "tcp",
+      "server": "172.66.47.54",
+      "server_port": 443,
+      "tag": "outage-5b0d7dc63520b970",
+      "tls": {
+        "enabled": true,
+        "server_name": "ircp-617.pages.dev."
+      },
+      "transport": {
+        "headers": {
+          "Host": "ircp-617.pages.dev."
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "cc771b27-27ad-4bf3-bc42-f42cd673edbe"
+    },
+    {
+      "network": "tcp",
       "password": "humanity",
       "server": "188.42.145.180",
       "server_port": 443,
@@ -306,21 +325,6 @@
     },
     {
       "network": "tcp",
-      "server": "104.26.15.16",
-      "server_port": 8080,
-      "tag": "outage-fe5bce01a075fdc4",
-      "transport": {
-        "headers": {
-          "Host": "10-156-sbbbBbbbedfvbgdxfvbsdfbdsvsdswrhefh10-545hjtrfg.mralpha-vpn.COM."
-        },
-        "path": "/Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit?ed=2048",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "8fb03657-2100-4067-9bcd-1ae0904e5a8e"
-    },
-    {
-      "network": "tcp",
       "password": "MiTiVPN",
       "server": "151.101.56.230",
       "server_port": 443,
@@ -437,6 +441,7 @@
         "outage-aa4ddf01eb411ab9",
         "outage-24ecfcd5e4e8b287",
         "outage-916e2633feb731d2",
+        "outage-5b0d7dc63520b970",
         "outage-b007a8fef3b6d377",
         "outage-c50e538c1281e481",
         "outage-82f1dadf1b6cca04",
@@ -449,7 +454,6 @@
         "outage-d00f665b056aac6b",
         "outage-422ce1a3d289beb9",
         "outage-81c038914573525a",
-        "outage-fe5bce01a075fdc4",
         "outage-5ae0927d68c1b457",
         "outage-532c94e759396b48",
         "outage-82b483b9da938818",
