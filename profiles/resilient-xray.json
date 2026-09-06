@@ -28,6 +28,60 @@
       "settings": {
         "vnext": [
           {
+            "address": "104.25.19.43",
+            "port": 8080,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "406d0357-ecd8-46ce-afa8-22b0e139348c"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/Telegram:@vmessorg-Telegram:@vmessorg-Telegram:@vmessorg?ed=8080"
+        }
+      },
+      "tag": "resilient-799a9fccc615e35a"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "199.232.78.160",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "XpnTeam-62"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-76942a155c0cedc4"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "199.232.78.159",
             "port": 80,
             "users": [
@@ -96,30 +150,6 @@
         }
       },
       "tag": "resilient-916e2633feb731d2"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "199.232.78.160",
-            "password": "MiTiVPN",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI"
-        }
-      },
-      "tag": "resilient-61dd84eee394f14b"
     },
     {
       "protocol": "trojan",
@@ -1310,35 +1340,6 @@
       "tag": "resilient-181412412ac1b7e2"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "adheres-scruple.quick-cdn.net",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "566e98ad-4a56-4c1d-9dbc-83987079731b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "adheres-scruple.quick-cdn.net"
-        },
-        "wsSettings": {
-          "path": "/ws"
-        }
-      },
-      "tag": "resilient-3560f85392e10633"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1496,6 +1497,30 @@
       "settings": {
         "servers": [
           {
+            "address": "212.227.144.37",
+            "password": "humanity",
+            "port": 8443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.calmlunch.com"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-da3dc4a3196d5c99"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "www.speedtest.net",
             "password": "humanity",
             "port": 443
@@ -1510,23 +1535,6 @@
         }
       },
       "tag": "resilient-f3217a66bc5f4c1c"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "xn--1ugy405pdua.gayvibe.dpdns.org",
-            "password": "tripitropa444",
-            "port": 2174
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-a4c88599c3a3e7ab"
     },
     {
       "protocol": "blackhole",
