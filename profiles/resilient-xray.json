@@ -378,60 +378,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.39.218",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/?ed=2560security=tls"
-        }
-      },
-      "tag": "resilient-d5ee654392d5779c"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "69.46.46.105",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "03746754-100d-565e-11bf-def7f5522759"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "cobalt-delta-8e5d-production.up.railway.app"
-        },
-        "wsSettings": {
-          "path": "/ws/03746754-100d-565e-11bf-def7f5522759"
-        }
-      },
-      "tag": "resilient-fdfd2263729c2780"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "188.114.97.6",
             "port": 2086,
             "users": [
@@ -480,6 +426,28 @@
         }
       },
       "tag": "resilient-d00f665b056aac6b"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.24.197.20",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "0bf1eafb-8866-499e-a054-6a0592937288"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-422ce1a3d289beb9"
     },
     {
       "protocol": "trojan",
@@ -890,30 +858,6 @@
       "tag": "resilient-67075f2d718733cc"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.21.83.135",
-            "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "id1.nathaya.web.id"
-        },
-        "wsSettings": {
-          "path": "/trojan"
-        }
-      },
-      "tag": "resilient-fdcf326d04961710"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1254,31 +1198,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "82.24.203.174",
-            "port": 2083,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "f2616bce-337a-4d13-8c58-1b5e71986569"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "chat.deepseek.com"
-        },
-        "network": "grpc",
-        "security": "none"
-      },
-      "tag": "resilient-5972857e559f735a"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "178.95.170.83",
             "port": 2087,
             "users": [
@@ -1298,30 +1217,6 @@
         }
       },
       "tag": "resilient-7b2b5af6535d948f"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.21.24.145",
-            "password": "-wb.oDfOeHifTGMVEf",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "c0YR9J09y2l9G0Td8WA5.2whBRirhjgsLm43ZJcqei.WoRKers.DEv"
-        },
-        "wsSettings": {
-          "path": "/tr/CRGrZTTVLMALBJkE4?ed=2560"
-        }
-      },
-      "tag": "resilient-b8f9cddbf3818e8d"
     },
     {
       "protocol": "trojan",
