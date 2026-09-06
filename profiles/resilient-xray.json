@@ -28,6 +28,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "199.232.78.160",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "XpnTeam-66"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-5564d63aff5f6d71"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "104.25.19.43",
             "port": 8080,
             "users": [
@@ -47,35 +76,6 @@
         }
       },
       "tag": "resilient-799a9fccc615e35a"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.160",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "XpnTeam-62"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-76942a155c0cedc4"
     },
     {
       "protocol": "vless",
@@ -150,30 +150,6 @@
         }
       },
       "tag": "resilient-916e2633feb731d2"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "151.101.110.219",
-            "password": "Mitivpn",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/boost"
-        }
-      },
-      "tag": "resilient-32b228cd33c28f3a"
     },
     {
       "protocol": "trojan",
@@ -767,26 +743,6 @@
       "tag": "resilient-ccc71e6e684cf145"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "waysi.waysi6688.workers.dev",
-            "password": "eabf1999fefbb7d2",
-            "port": 2087
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/tr/sMpzOZ0eWEt6jbZ1jjN3BaM7LLoQ"
-        }
-      },
-      "tag": "resilient-d3dd7c0d2640c13b"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1177,6 +1133,35 @@
       "tag": "resilient-27d2f5e13bf363e3"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "djdjsj-production.up.railway.app",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "5ff8e256-cb7e-41fc-8ed2-14a46fd46e4e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "djdjsj-production.up.railway.app"
+        },
+        "wsSettings": {
+          "path": "/ws/vless/5ff8e256-cb7e-41fc-8ed2-14a46fd46e4e?ed"
+        }
+      },
+      "tag": "resilient-181412412ac1b7e2"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1217,6 +1202,35 @@
         }
       },
       "tag": "resilient-7b2b5af6535d948f"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "109.169.76.39",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "0fcbc45d-acdc-40cf-9a66-961c00f5b4a5"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY",
+          "serverName": "slashdot.org",
+          "shortId": "fd55b698ee8c3629"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-8136281d9460d92e"
     },
     {
       "protocol": "trojan",
