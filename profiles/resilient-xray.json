@@ -878,6 +878,31 @@
       "settings": {
         "vnext": [
           {
+            "address": "188.114.98.224",
+            "port": 8080,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "6f42d454-ba41-4d87-943b-a21227b21a7a"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/Telegram:@UnlimitedDev-Telegram:@UnlimitedDev"
+        }
+      },
+      "tag": "resilient-5f7f0e043b07a2b1"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "137.184.218.169",
             "port": 36925,
             "users": [
@@ -906,25 +931,29 @@
       "settings": {
         "vnext": [
           {
-            "address": "chatgpt.com",
-            "port": 8880,
+            "address": "188.114.97.6",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "035c8a3d-1cec-43e2-369d-f98593af1d9a"
+                "id": "7893b302-3882-4c38-9ab6-6313f1575d1a"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "httpupgradeSettings": {
-          "path": "/iehofiue"
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "cf.udpid.org"
         },
-        "network": "httpupgrade",
-        "security": "none"
+        "wsSettings": {
+          "path": "/@zyzzzoao"
+        }
       },
-      "tag": "resilient-ccc71e6e684cf145"
+      "tag": "resilient-dfb0b85e835e3947"
     },
     {
       "protocol": "vless",
@@ -1084,6 +1113,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "69.46.46.99",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "db58f95b-c9f4-9776-3e32-d664f0b9f733"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "still-compass-8eeb-production.up.railway.app"
+        },
+        "wsSettings": {
+          "path": "/ws/db58f95b-c9f4-9776-3e32-d664f0b9f733"
+        }
+      },
+      "tag": "resilient-5aae714863e443df"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "69.46.46.109",
             "port": 443,
             "users": [
@@ -1184,64 +1242,6 @@
       "tag": "resilient-3824c2f8d42f7ddb"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "15.204.97.195",
-            "port": 23576,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "serverName": "fuck.rkn",
-          "shortId": "01"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-27d2f5e13bf363e3"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "adheres-scruple.quick-cdn.net",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "566e98ad-4a56-4c1d-9dbc-83987079731b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "adheres-scruple.quick-cdn.net"
-        },
-        "wsSettings": {
-          "path": "/ws"
-        }
-      },
-      "tag": "resilient-3560f85392e10633"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1286,23 +1286,6 @@
         "security": "reality"
       },
       "tag": "resilient-8136281d9460d92e"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "109.206.241.10",
-            "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
-            "port": 449
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-e827fa23f9e23b69"
     },
     {
       "protocol": "trojan",
