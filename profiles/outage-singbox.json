@@ -16,7 +16,7 @@
       "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
-      "tag": "outage-5564d63aff5f6d71",
+      "tag": "outage-b6731fba5467842e",
       "tls": {
         "enabled": true,
         "server_name": "ssl.fastly.com"
@@ -29,7 +29,7 @@
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "XpnTeam-66"
+      "uuid": "XpnTeam-68"
     },
     {
       "network": "tcp",
@@ -94,6 +94,44 @@
       },
       "type": "vless",
       "uuid": "424fa201-3f94-479e-b533-d5257cf9a207"
+    },
+    {
+      "network": "tcp",
+      "server": "185.207.198.186",
+      "server_port": 2087,
+      "tag": "outage-b17642ac454d14af",
+      "tls": {
+        "enabled": true,
+        "server_name": "film.dearhossein-taktaz.ir"
+      },
+      "transport": {
+        "headers": {
+          "Host": "film.dearhossein-taktaz.ir"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "174622e3-2d1d-47ab-bf74-aef54996ec46"
+    },
+    {
+      "network": "tcp",
+      "server": "104.24.34.193",
+      "server_port": 443,
+      "tag": "outage-db2cf61384ef6da6",
+      "tls": {
+        "enabled": true,
+        "server_name": "dry-butterfly-8eb9.tmpgnacio83.workers.dev"
+      },
+      "transport": {
+        "headers": {
+          "Host": "dry-butterfly-8eb9.tmpgnacio83.workers.dev"
+        },
+        "path": "ws",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "d042a74a-c305-4eec-a89f-39a348022c92"
     },
     {
       "network": "tcp",
@@ -269,70 +307,21 @@
     {
       "network": "tcp",
       "password": "humanity",
-      "server": "45.130.125.160",
+      "server": "104.21.33.59",
       "server_port": 443,
-      "tag": "outage-41b501c21a3d8349",
+      "tag": "outage-7a8763334bbd051c",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org"
+      },
       "transport": {
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "www.pleadcourt.org"
         },
         "path": "/assignment",
         "type": "ws"
       },
       "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-      "server": "104.21.33.59",
-      "server_port": 443,
-      "tag": "outage-03f264ce924cad0d",
-      "tls": {
-        "enabled": true,
-        "server_name": "id1.nathaya.web.id"
-      },
-      "transport": {
-        "headers": {
-          "Host": "id1.nathaya.web.id"
-        },
-        "path": "/trojan",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "188.114.97.6",
-      "server_port": 2086,
-      "tag": "outage-f5f92c4eb5964c56",
-      "transport": {
-        "headers": {
-          "Host": "holy-glitter-39f9.wwewee2dasdds.workers.dev"
-        },
-        "path": "/eyJqdW5rIjoiRHF6VWU4SmYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "98b6cb05-b5ab-4c82-8683-07de28f796a9"
-    },
-    {
-      "network": "tcp",
-      "server": "104.18.42.54",
-      "server_port": 2087,
-      "tag": "outage-d00f665b056aac6b",
-      "tls": {
-        "enabled": true,
-        "server_name": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
-      },
-      "transport": {
-        "headers": {
-          "Host": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
-        },
-        "path": "/fp=chrome",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
     },
     {
       "network": "tcp",
@@ -404,6 +393,25 @@
     },
     {
       "network": "tcp",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "tag": "outage-dfb0b85e835e3947",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf.udpid.org"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cf.udpid.org"
+        },
+        "path": "/@zyzzzoao",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "7893b302-3882-4c38-9ab6-6313f1575d1a"
+    },
+    {
+      "network": "tcp",
       "password": "Telegram_healer_config",
       "server": "172.67.187.87",
       "server_port": 443,
@@ -445,11 +453,13 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
-        "outage-5564d63aff5f6d71",
+        "outage-b6731fba5467842e",
         "outage-799a9fccc615e35a",
         "outage-aa4ddf01eb411ab9",
         "outage-24ecfcd5e4e8b287",
         "outage-916e2633feb731d2",
+        "outage-b17642ac454d14af",
+        "outage-db2cf61384ef6da6",
         "outage-f178c2da37c83a62",
         "outage-3097326a92e6858d",
         "outage-5b0d7dc63520b970",
@@ -459,14 +469,12 @@
         "outage-871e4a7ecb2270a8",
         "outage-0073662eb2f9e95e",
         "outage-cac78bee295ef74c",
-        "outage-41b501c21a3d8349",
-        "outage-03f264ce924cad0d",
-        "outage-f5f92c4eb5964c56",
-        "outage-d00f665b056aac6b",
+        "outage-7a8763334bbd051c",
         "outage-9bad4697edb97e51",
         "outage-81c038914573525a",
         "outage-5ae0927d68c1b457",
         "outage-532c94e759396b48",
+        "outage-dfb0b85e835e3947",
         "outage-82b483b9da938818",
         "outage-6e20f5464c45fffd"
       ],
