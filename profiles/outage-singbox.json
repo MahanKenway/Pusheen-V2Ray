@@ -336,11 +336,18 @@
     },
     {
       "network": "tcp",
-      "server": "104.24.197.20",
+      "password": "humanity",
+      "server": "45.205.0.6",
       "server_port": 443,
-      "tag": "outage-422ce1a3d289beb9",
-      "type": "vless",
-      "uuid": "0bf1eafb-8866-499e-a054-6a0592937288"
+      "tag": "outage-9bad4697edb97e51",
+      "transport": {
+        "headers": {
+          "Host": "www.calmlunch.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -434,14 +441,6 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "kkzh2prsyr2ik47as615",
-      "server": "64.94.95.117",
-      "server_port": 57142,
-      "tag": "outage-f1a34096dfcd021d",
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -464,13 +463,12 @@
         "outage-03f264ce924cad0d",
         "outage-f5f92c4eb5964c56",
         "outage-d00f665b056aac6b",
-        "outage-422ce1a3d289beb9",
+        "outage-9bad4697edb97e51",
         "outage-81c038914573525a",
         "outage-5ae0927d68c1b457",
         "outage-532c94e759396b48",
         "outage-82b483b9da938818",
-        "outage-6e20f5464c45fffd",
-        "outage-f1a34096dfcd021d"
+        "outage-6e20f5464c45fffd"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
