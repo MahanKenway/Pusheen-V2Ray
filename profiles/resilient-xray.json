@@ -730,67 +730,9 @@
       "settings": {
         "servers": [
           {
-            "address": "151.101.56.230",
-            "password": "MiTiVPN",
+            "address": "8.47.69.0",
+            "password": "humanity",
             "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
-        }
-      },
-      "tag": "resilient-5ae0927d68c1b457"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "152.53.90.42",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "23578a2c-2493-41f0-89ef-d7d3a7b85252"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "usa1.pad-service.com"
-        },
-        "wsSettings": {
-          "path": "/USA1"
-        }
-      },
-      "tag": "resilient-49340be4e497c331"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "162.159.48.32",
-            "port": 2052,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-              }
-            ]
           }
         ]
       },
@@ -798,10 +740,10 @@
         "network": "ws",
         "security": "none",
         "wsSettings": {
-          "path": "/"
+          "path": "/assignment"
         }
       },
-      "tag": "resilient-f7a3224b907e57f1"
+      "tag": "resilient-3c2452d8400aafcd"
     },
     {
       "protocol": "vless",
@@ -991,34 +933,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "137.184.218.169",
-            "port": 36925,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "c9fd0fb1-8251-4106-b09a-f4b426736f67"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0",
-          "serverName": "www.cloudflare.com"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-f892e9b49210b6b0"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "188.114.97.6",
             "port": 443,
             "users": [
@@ -1064,6 +978,31 @@
         "security": "none"
       },
       "tag": "resilient-56632dad40107ece"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "162.159.38.127",
+            "port": 2095,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/?ed=2560security=tls"
+        }
+      },
+      "tag": "resilient-101559a856c053dc"
     },
     {
       "protocol": "trojan",
@@ -1166,6 +1105,35 @@
         }
       },
       "tag": "resilient-36e04475e9c869ce"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.92.193",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "8a2ae83c-0327-4703-a847-535a972bc636"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "2-m23.PattAya-2.KDNs.FR"
+        },
+        "wsSettings": {
+          "path": "/kXHZ0iPM96r8UDUAsTH2scSHpeWN"
+        }
+      },
+      "tag": "resilient-7bb05a80c4d2a870"
     },
     {
       "protocol": "vless",
