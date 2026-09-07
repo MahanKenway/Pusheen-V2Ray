@@ -941,6 +941,27 @@
       "tag": "resilient-bd599d237a9de669"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.16.174.44",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.ignitelimit.com"
+        }
+      },
+      "tag": "resilient-6d4497c7ea14fb29"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [

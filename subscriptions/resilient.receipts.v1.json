@@ -1,10 +1,10 @@
 {
   "by_protocol": {
-    "trojan": 18,
+    "trojan": 19,
     "vless": 34
   },
-  "count": 52,
-  "created_at": "2026-09-07T10:08:46.525153+00:00",
+  "count": 53,
+  "created_at": "2026-09-07T15:55:11.544740+00:00",
   "evidence": "recent successful TCP reachability",
   "max_evidence_age_hours": 72,
   "notice": "A receipt records why the item is eligible for this tier at publication time. It does not disclose hostnames, credentials, raw URIs, or guarantee availability from another network.",
@@ -253,6 +253,13 @@
       "latest_source_id": "iboxz-vless-probationary",
       "protocol": "vless",
       "transport_family": "vless:ws:tls"
+    },
+    {
+      "id": "6d4497c7ea14fb29",
+      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
+      "latest_source_id": "farid-iran-trojan-probationary",
+      "protocol": "trojan",
+      "transport_family": "trojan:tcp:tls"
     },
     {
       "id": "5f7f0e043b07a2b1",
