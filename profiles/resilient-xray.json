@@ -107,6 +107,64 @@
       "settings": {
         "vnext": [
           {
+            "address": "69.46.46.109",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "f820088c-061a-662d-065d-056e0ee54274"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "azure-ember-6199-production.up.railway.app"
+        },
+        "wsSettings": {
+          "path": "/ws/f820088c-061a-662d-065d-056e0ee54274"
+        }
+      },
+      "tag": "resilient-819038336c1dccf0"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.64.53.42",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-fe9afa54eb535d7a"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "104.17.108.59",
             "port": 443,
             "users": [
@@ -291,41 +349,12 @@
       "tag": "resilient-b007a8fef3b6d377"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.67.204.84",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "b91b3053-9602-4a60-b848-ec0eafea8443"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "SvA6YRW81Y5ufirm5YaUbLbEtWl4DOcz8qePEbyzewnRqxLxYRNICZsezLr.pAgeS-dEV.site"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-c50e538c1281e481"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "188.114.96.7",
-            "password": "Telegram_healer_config",
+            "address": "162.159.36.20",
+            "password": "humanity",
             "port": 443
           }
         ]
@@ -335,13 +364,13 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "BjSa2yGFITzjtHo8ucZe29xf2m2q9C.G3FIAJpF0Erm9k3x6WW-YeGzl2.workeRs.dEV"
+          "serverName": "www.calmlunch.com"
         },
         "wsSettings": {
-          "path": "/tr/J6IJuAAWkqyiEt8UkeRnVdLlkLIGukLr?ed=2560"
+          "path": "/assignment"
         }
       },
-      "tag": "resilient-82f1dadf1b6cca04"
+      "tag": "resilient-90ad18d299053a17"
     },
     {
       "protocol": "vless",
@@ -1133,35 +1162,6 @@
       "tag": "resilient-5aae714863e443df"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "69.46.46.109",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "a0e4f9cd-2602-b061-9c64-00115f6f7fc7"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "cedar-meadow-acc4-production.up.railway.app"
-        },
-        "wsSettings": {
-          "path": "/ws/a0e4f9cd-2602-b061-9c64-00115f6f7fc7"
-        }
-      },
-      "tag": "resilient-fc7586ed58de7ffe"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1377,6 +1377,23 @@
         }
       },
       "tag": "resilient-d43927a41a849718"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "109.206.241.10",
+            "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
+            "port": 449
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-efb11e2c95319ee4"
     },
     {
       "protocol": "blackhole",
