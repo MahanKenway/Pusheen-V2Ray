@@ -103,30 +103,6 @@
       "tag": "resilient-aa4ddf01eb411ab9"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "151.101.56.6",
-            "password": "Mitivpn",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-24ecfcd5e4e8b287"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -372,35 +348,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "199.232.78.159",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "da6ece67-aff5-4f94-94f3-08e87ca8cd51"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512"
-        }
-      },
-      "tag": "resilient-871e4a7ecb2270a8"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "188.114.97.6",
             "port": 2086,
             "users": [
@@ -619,6 +566,55 @@
       "tag": "resilient-81c038914573525a"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.18.8.83",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.calmlunch.com"
+        },
+        "wsSettings": {
+          "path": "//assignment"
+        }
+      },
+      "tag": "resilient-a22c01083b56ae46"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "198.41.208.231",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "435bda4c-fe5e-42c9-a3ad-15334943b38a"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-99ced1b5c73e0a8a"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -662,6 +658,35 @@
         }
       },
       "tag": "resilient-4a72292943827e64"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "199.232.78.159",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "efd9cf32-2a2f-4d05-abe4-d63eb002e483"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-231bafd83e2a25a0"
     },
     {
       "protocol": "trojan",
@@ -1179,26 +1204,24 @@
       "tag": "resilient-3ef01d2607b3512c"
     },
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "13.36.74.87",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
+            "address": "edu.ruangguru.com",
+            "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none"
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/trojan"
+        }
       },
-      "tag": "resilient-b4de86961a308fce"
+      "tag": "resilient-7ff762d7e0822d35"
     },
     {
       "protocol": "trojan",
