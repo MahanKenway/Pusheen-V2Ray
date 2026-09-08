@@ -575,30 +575,6 @@
       "settings": {
         "servers": [
           {
-            "address": "104.21.70.21",
-            "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "id1.nathaya.web.id"
-        },
-        "wsSettings": {
-          "path": "/trojan"
-        }
-      },
-      "tag": "resilient-81c038914573525a"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
             "address": "104.18.8.83",
             "password": "humanity",
             "port": 443
@@ -642,31 +618,6 @@
         }
       },
       "tag": "resilient-99ced1b5c73e0a8a"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.26.15.16",
-            "port": 8080,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "8fb03657-2100-4067-9bcd-1ae0904e5a8e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit,Telegram-MainSecurit?ed=2048"
-        }
-      },
-      "tag": "resilient-fe5bce01a075fdc4"
     },
     {
       "protocol": "trojan",
@@ -786,6 +737,30 @@
         }
       },
       "tag": "resilient-532c94e759396b48"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.70.21",
+            "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "id1.nathaya.web.id"
+        },
+        "wsSettings": {
+          "path": "/trojan"
+        }
+      },
+      "tag": "resilient-6578cd2ca9f39b7b"
     },
     {
       "protocol": "vless",
@@ -943,6 +918,26 @@
       "tag": "resilient-56632dad40107ece"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "151.101.56.7",
+            "password": "MiTiVPN",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false
+        }
+      },
+      "tag": "resilient-81f1ae51a8b2f11f"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -966,6 +961,26 @@
         }
       },
       "tag": "resilient-101559a856c053dc"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "151.101.56.230",
+            "password": "MiTiVPN",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false
+        }
+      },
+      "tag": "resilient-00badacc8ccd3255"
     },
     {
       "protocol": "vless",
@@ -995,55 +1010,6 @@
         }
       },
       "tag": "resilient-c615fa28885de62b"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.18.9.83",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.calmlunch.com"
-        },
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-6e20f5464c45fffd"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.17.148.178",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "435bda4c-fe5e-42c9-a3ad-15334943b38a"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-36e04475e9c869ce"
     },
     {
       "protocol": "vless",
@@ -1162,6 +1128,35 @@
       "tag": "resilient-5aae714863e443df"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "47.89.186.170",
+            "port": 55861,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "d51ed55c-d6dd-400b-aaf6-017c33969bfe"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "t2ndf6SeVxinFCo5bcemnW_ZZhAtmHWiAkllks5qPWs",
+          "serverName": "www.intel.com",
+          "shortId": "7551ed1b"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-cbfc78cda21c12ee"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1202,6 +1197,28 @@
         }
       },
       "tag": "resilient-3ef01d2607b3512c"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "13.39.171.238",
+            "port": 22223,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-57746b5c5b7c76b3"
     },
     {
       "protocol": "trojan",
@@ -1292,26 +1309,6 @@
         }
       },
       "tag": "resilient-da3dc4a3196d5c99"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "www.speedtest.net",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-f3217a66bc5f4c1c"
     },
     {
       "protocol": "trojan",
