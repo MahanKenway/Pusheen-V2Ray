@@ -1,16 +1,19 @@
 {
-  "artifact_hash": "74cee5c8c7f4f32018aed6a7dbcf1e1ec771494cbf4019edc85605bcdcb3121a",
+  "artifact_hash": "c0129a24ecfc58f58db174c2a716386dec36061f5d21e508bb4e37e0454439cd",
   "by_protocol": {
-    "trojan": 26,
-    "vless": 100
+    "trojan": 24,
+    "vless": 103
   },
-  "created_at": "2026-09-08T00:30:34.719293+00:00",
+  "created_at": "2026-09-08T05:08:12.583719+00:00",
   "fast_count": 50,
   "notice": "TCP-reachable from the validator origin; not an end-to-end availability guarantee.",
   "ordering": "latest successful TCP latency, then freshness; protocol-specific variants are published separately",
-  "reachable_count": 126,
+  "reachable_count": 127,
   "schema_version": 3,
-  "snapshot_id": "20260908T003034Z-74cee5c8c7f4",
-  "source_errors": {},
+  "snapshot_id": "20260908T050812Z-c0129a24ecfc",
+  "source_errors": {
+    "configforge-vless": "SOURCE_TOO_LARGE",
+    "farid-iran-vless-probationary": "SOURCE_TOO_LARGE"
+  },
   "tier": "tcp-reachable-v4"
 }

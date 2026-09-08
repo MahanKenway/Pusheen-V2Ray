@@ -131,31 +131,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.131.208.4",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "424fa201-3f94-479e-b533-d5257cf9a207"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/pyip=Telegram\ud83c\udde8\ud83c\uddf3 @WangCai2"
-        }
-      },
-      "tag": "resilient-916e2633feb731d2"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "104.17.108.59",
             "port": 443,
             "users": [
@@ -1073,6 +1048,35 @@
         }
       },
       "tag": "resilient-9696cec90470fdec"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "k2.cloud--vpn.site",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "daee66b7-3f5e-46d7-83c1-4d93a5fb33c3"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-bfefbcb9e0358307"
     },
     {
       "protocol": "vless",
