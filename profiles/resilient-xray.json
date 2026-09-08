@@ -398,30 +398,6 @@
       "tag": "resilient-f5f92c4eb5964c56"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.21.33.59",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.pleadcourt.org"
-        },
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-7a8763334bbd051c"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1152,6 +1128,35 @@
       "tag": "resilient-cbfc78cda21c12ee"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.104.150",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "50414e45-4c5f-5a45-5553-00b2a392a159"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "9fzcxlewuixs.goodarzev.workers.dev"
+        },
+        "wsSettings": {
+          "path": "/stream/PANEL_ZEUS/00b2a392a159"
+        }
+      },
+      "tag": "resilient-975db14d26964367"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1240,28 +1245,6 @@
       "tag": "resilient-57746b5c5b7c76b3"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "13.36.74.87",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-b4de86961a308fce"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1305,23 +1288,6 @@
         }
       },
       "tag": "resilient-bce3a7209a95ce3a"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "45.85.88.194",
-            "password": "tripitropa994825",
-            "port": 2234
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-a9556db673ba54b0"
     },
     {
       "protocol": "vless",
@@ -1457,6 +1423,23 @@
         "security": "none"
       },
       "tag": "resilient-efb11e2c95319ee4"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "ww12.levikogjgfdd.ir",
+            "password": "pvZE3UfT0ziK1omVLlsjINBqeqqwab1M",
+            "port": 50573
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-435d665c5cc91300"
     },
     {
       "protocol": "blackhole",
