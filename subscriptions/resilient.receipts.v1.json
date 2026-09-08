@@ -1,10 +1,10 @@
 {
   "by_protocol": {
-    "trojan": 22,
-    "vless": 33
+    "trojan": 24,
+    "vless": 34
   },
-  "count": 55,
-  "created_at": "2026-09-08T17:53:08.731217+00:00",
+  "count": 58,
+  "created_at": "2026-09-08T21:04:27.946910+00:00",
   "evidence": "recent successful TCP reachability",
   "max_evidence_age_hours": 72,
   "notice": "A receipt records why the item is eligible for this tier at publication time. It does not disclose hostnames, credentials, raw URIs, or guarantee availability from another network.",
@@ -185,6 +185,13 @@
       "transport_family": "vless:ws:tls"
     },
     {
+      "id": "6243c12f4273f192",
+      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
+      "latest_source_id": "iboxz-vless-probationary",
+      "protocol": "vless",
+      "transport_family": "vless:ws:tls"
+    },
+    {
       "id": "3c2452d8400aafcd",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "farid-iran-trojan-probationary",
@@ -213,20 +220,6 @@
       "transport_family": "trojan:ws:tls"
     },
     {
-      "id": "11891fcb27f24c72",
-      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
-      "latest_source_id": "iboxz-vless-probationary",
-      "protocol": "vless",
-      "transport_family": "vless:grpc:tls"
-    },
-    {
-      "id": "68fa345d94b3be15",
-      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
-      "latest_source_id": "iboxz-vless-probationary",
-      "protocol": "vless",
-      "transport_family": "vless:ws:tls"
-    },
-    {
       "id": "6d4497c7ea14fb29",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "farid-iran-trojan-probationary",
@@ -253,6 +246,13 @@
       "latest_source_id": "iboxz-vless-probationary",
       "protocol": "vless",
       "transport_family": "vless:tcp:none"
+    },
+    {
+      "id": "f3511e3dbf0b17fb",
+      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
+      "latest_source_id": "farid-iran-trojan-probationary",
+      "protocol": "trojan",
+      "transport_family": "trojan:ws:tls"
     },
     {
       "id": "81f1ae51a8b2f11f",
@@ -332,7 +332,21 @@
       "transport_family": "vless:ws:none"
     },
     {
+      "id": "dfb14d2bab2cb046",
+      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
+      "latest_source_id": "farid-iran-trojan-probationary",
+      "protocol": "trojan",
+      "transport_family": "trojan:ws:tls"
+    },
+    {
       "id": "57746b5c5b7c76b3",
+      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
+      "latest_source_id": "iboxz-vless-probationary",
+      "protocol": "vless",
+      "transport_family": "vless:tcp:none"
+    },
+    {
+      "id": "b4de86961a308fce",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "iboxz-vless-probationary",
       "protocol": "vless",
@@ -344,6 +358,13 @@
       "latest_source_id": "ebrasha-trojan-probationary",
       "protocol": "trojan",
       "transport_family": "trojan:ws:none"
+    },
+    {
+      "id": "bce3a7209a95ce3a",
+      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
+      "latest_source_id": "configforge-vless",
+      "protocol": "vless",
+      "transport_family": "vless:ws:none"
     },
     {
       "id": "a9556db673ba54b0",
