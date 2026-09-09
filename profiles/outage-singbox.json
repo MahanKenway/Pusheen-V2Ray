@@ -33,6 +33,40 @@
     },
     {
       "network": "tcp",
+      "server": "69.46.46.127",
+      "server_port": 443,
+      "tag": "outage-6c882b7e5dfc3b0c",
+      "tls": {
+        "enabled": true,
+        "server_name": "iwishiwasspecial.up.railway.app"
+      },
+      "transport": {
+        "headers": {
+          "Host": "iwishiwasspecial.up.railway.app"
+        },
+        "path": "/ws/5314cc8c-77ff-4f91-957e-47e0559672f3",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "5314cc8c-77ff-4f91-957e-47e0559672f3"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
+      "server": "188.42.145.180",
+      "server_port": 443,
+      "tag": "outage-4ca7f6a0099abcfb",
+      "transport": {
+        "headers": {
+          "Host": "www.volumeroot.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "69.46.46.109",
       "server_port": 443,
       "tag": "outage-819038336c1dccf0",
@@ -166,18 +200,22 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.159",
-      "server_port": 80,
-      "tag": "outage-07879d5c1fcb06d4",
+      "password": "humanity",
+      "server": "8.47.69.0",
+      "server_port": 443,
+      "tag": "outage-850143abc4b2d449",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org"
+      },
       "transport": {
         "headers": {
-          "Host": "yaSharClass.global.ssl.fastly.net"
+          "Host": "www.pleadcourt.org"
         },
-        "path": "/",
+        "path": "/assignment",
         "type": "ws"
       },
-      "type": "vless",
-      "uuid": "a3558ef4-b843-4b05-8456-495815234c95"
+      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -197,25 +235,6 @@
         "type": "ws"
       },
       "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "172.64.53.140",
-      "server_port": 443,
-      "tag": "outage-937a42796f1428f5",
-      "tls": {
-        "enabled": true,
-        "server_name": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
-      },
-      "transport": {
-        "headers": {
-          "Host": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
     },
     {
       "network": "tcp",
@@ -284,55 +303,6 @@
     {
       "network": "tcp",
       "password": "humanity",
-      "server": "8.47.69.0",
-      "server_port": 443,
-      "tag": "outage-3c2452d8400aafcd",
-      "transport": {
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        },
-        "path": "/assignment",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "172.64.150.28",
-      "server_port": 2082,
-      "tag": "outage-532c94e759396b48",
-      "transport": {
-        "headers": {
-          "Host": "hhlfy.twiladaphne.ndjp.net"
-        },
-        "path": "/fp",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
-    },
-    {
-      "network": "tcp",
-      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-      "server": "104.21.70.21",
-      "server_port": 443,
-      "tag": "outage-6578cd2ca9f39b7b",
-      "tls": {
-        "enabled": true,
-        "server_name": "id1.nathaya.web.id"
-      },
-      "transport": {
-        "headers": {
-          "Host": "id1.nathaya.web.id"
-        },
-        "path": "/trojan",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "humanity",
       "server": "104.16.174.44",
       "server_port": 443,
       "tag": "outage-6d4497c7ea14fb29",
@@ -360,25 +330,6 @@
       },
       "type": "vless",
       "uuid": "7893b302-3882-4c38-9ab6-6313f1575d1a"
-    },
-    {
-      "network": "tcp",
-      "password": "humanity",
-      "server": "172.67.149.60",
-      "server_port": 443,
-      "tag": "outage-f3511e3dbf0b17fb",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.ignitelimit.com"
-        },
-        "path": "/assignment",
-        "type": "ws"
-      },
-      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -443,6 +394,8 @@
       "interval": "10m",
       "outbounds": [
         "outage-b6731fba5467842e",
+        "outage-6c882b7e5dfc3b0c",
+        "outage-4ca7f6a0099abcfb",
         "outage-819038336c1dccf0",
         "outage-fe9afa54eb535d7a",
         "outage-b17642ac454d14af",
@@ -450,19 +403,14 @@
         "outage-f178c2da37c83a62",
         "outage-3097326a92e6858d",
         "outage-5b0d7dc63520b970",
-        "outage-07879d5c1fcb06d4",
+        "outage-850143abc4b2d449",
         "outage-90ad18d299053a17",
-        "outage-937a42796f1428f5",
         "outage-9bad4697edb97e51",
         "outage-7fb1e289a828ab2c",
         "outage-a22c01083b56ae46",
         "outage-4a72292943827e64",
-        "outage-3c2452d8400aafcd",
-        "outage-532c94e759396b48",
-        "outage-6578cd2ca9f39b7b",
         "outage-6d4497c7ea14fb29",
         "outage-dfb0b85e835e3947",
-        "outage-f3511e3dbf0b17fb",
         "outage-81f1ae51a8b2f11f",
         "outage-00badacc8ccd3255",
         "outage-7ff762d7e0822d35",
