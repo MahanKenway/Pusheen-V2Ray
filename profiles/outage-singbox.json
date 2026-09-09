@@ -33,21 +33,6 @@
     },
     {
       "network": "tcp",
-      "server": "104.25.19.43",
-      "server_port": 8080,
-      "tag": "outage-799a9fccc615e35a",
-      "transport": {
-        "headers": {
-          "Host": "join-to.vmessorg.Community."
-        },
-        "path": "/Telegram:@vmessorg-Telegram:@vmessorg-Telegram:@vmessorg?ed=8080",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "406d0357-ecd8-46ce-afa8-22b0e139348c"
-    },
-    {
-      "network": "tcp",
       "server": "69.46.46.109",
       "server_port": 443,
       "tag": "outage-819038336c1dccf0",
@@ -212,6 +197,25 @@
         "type": "ws"
       },
       "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "172.64.53.140",
+      "server_port": 443,
+      "tag": "outage-937a42796f1428f5",
+      "tls": {
+        "enabled": true,
+        "server_name": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+      },
+      "transport": {
+        "headers": {
+          "Host": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
     },
     {
       "network": "tcp",
@@ -439,7 +443,6 @@
       "interval": "10m",
       "outbounds": [
         "outage-b6731fba5467842e",
-        "outage-799a9fccc615e35a",
         "outage-819038336c1dccf0",
         "outage-fe9afa54eb535d7a",
         "outage-b17642ac454d14af",
@@ -449,6 +452,7 @@
         "outage-5b0d7dc63520b970",
         "outage-07879d5c1fcb06d4",
         "outage-90ad18d299053a17",
+        "outage-937a42796f1428f5",
         "outage-9bad4697edb97e51",
         "outage-7fb1e289a828ab2c",
         "outage-a22c01083b56ae46",

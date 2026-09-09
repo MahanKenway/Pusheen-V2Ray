@@ -57,31 +57,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.25.19.43",
-            "port": 8080,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "406d0357-ecd8-46ce-afa8-22b0e139348c"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/Telegram:@vmessorg-Telegram:@vmessorg-Telegram:@vmessorg?ed=8080"
-        }
-      },
-      "tag": "resilient-799a9fccc615e35a"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "69.46.46.109",
             "port": 443,
             "users": [
@@ -777,6 +752,35 @@
       "tag": "resilient-019bbe25db405e39"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.18.42.163",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "fx3h2kf8xn.fx6hsv0.ccwu.cc"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-5ab45a0dfd6abb4e"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1299,6 +1303,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "62.210.91.2",
+            "port": 23576,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "serverName": "fuck.rkn",
+          "shortId": "01"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-bd4e5328694e8bd0"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "109.169.76.39",
             "port": 443,
             "users": [
@@ -1322,30 +1355,6 @@
         "security": "reality"
       },
       "tag": "resilient-8136281d9460d92e"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "212.227.144.37",
-            "password": "humanity",
-            "port": 8443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.calmlunch.com"
-        },
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-da3dc4a3196d5c99"
     },
     {
       "protocol": "trojan",
