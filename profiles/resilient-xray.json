@@ -512,48 +512,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.24.197.20",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "0bf1eafb-8866-499e-a054-6a0592937288"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-422ce1a3d289beb9"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "213.182.199.137",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-7fb1e289a828ab2c"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "104.16.150.130",
             "port": 2087,
             "users": [
@@ -675,6 +633,35 @@
         }
       },
       "tag": "resilient-231bafd83e2a25a0"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "63.141.128.108",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "a13df940-020c-465f-bc89-ee5279b5cd6a"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "hka.ylks.link"
+        },
+        "wsSettings": {
+          "path": "/?proxyip"
+        }
+      },
+      "tag": "resilient-4a8aa8ab37b8c289"
     },
     {
       "protocol": "vless",
@@ -1196,6 +1183,69 @@
       "tag": "resilient-dfb14d2bab2cb046"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "107.150.105.84",
+            "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
+            "port": 43022
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-ac80cb6531d5c756"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "107.150.105.84",
+            "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
+            "port": 38261
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-ce8df76f73cb72bd"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "87.117.234.19",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "4d583b2c-2f5a-47d0-8181-e95217fe8cd9"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY",
+          "serverName": "strapi.io",
+          "shortId": "fd55b698ee8c3629"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-ae3377fc3e78a840"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1216,28 +1266,6 @@
         "security": "none"
       },
       "tag": "resilient-57746b5c5b7c76b3"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "13.36.74.87",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-b4de86961a308fce"
     },
     {
       "protocol": "trojan",
