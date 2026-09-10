@@ -14,22 +14,18 @@
   "outbounds": [
     {
       "network": "tcp",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "tag": "outage-b6731fba5467842e",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
+      "server": "188.114.97.6",
+      "server_port": 80,
+      "tag": "outage-7634ed35272e6238",
       "transport": {
         "headers": {
-          "Host": "ssl.fastly.com"
+          "Host": "silent-feather-8539.sddadad2233122eew.workers.dev"
         },
-        "path": "/",
+        "path": "/eyJqdW5rIjoiRURaNEp6YUhMbVlqdzQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "XpnTeam-68"
+      "uuid": "57bd62cf-5550-4075-8fa3-d4519aae8df0"
     },
     {
       "network": "tcp",
@@ -102,44 +98,6 @@
       },
       "type": "vless",
       "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
-    },
-    {
-      "network": "tcp",
-      "server": "185.207.198.186",
-      "server_port": 2087,
-      "tag": "outage-b17642ac454d14af",
-      "tls": {
-        "enabled": true,
-        "server_name": "film.dearhossein-taktaz.ir"
-      },
-      "transport": {
-        "headers": {
-          "Host": "film.dearhossein-taktaz.ir"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "174622e3-2d1d-47ab-bf74-aef54996ec46"
-    },
-    {
-      "network": "tcp",
-      "server": "104.24.34.193",
-      "server_port": 443,
-      "tag": "outage-db2cf61384ef6da6",
-      "tls": {
-        "enabled": true,
-        "server_name": "dry-butterfly-8eb9.tmpgnacio83.workers.dev"
-      },
-      "transport": {
-        "headers": {
-          "Host": "dry-butterfly-8eb9.tmpgnacio83.workers.dev"
-        },
-        "path": "ws",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "d042a74a-c305-4eec-a89f-39a348022c92"
     },
     {
       "network": "tcp",
@@ -234,6 +192,25 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "tag": "outage-9f8606afa2f20199",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "XpnTeam-7"
+    },
+    {
+      "network": "tcp",
       "password": "humanity",
       "server": "45.130.125.75",
       "server_port": 443,
@@ -284,6 +261,44 @@
         "type": "ws"
       },
       "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "188.114.97.6",
+      "server_port": 2087,
+      "tag": "outage-1c31bcdea5b72fd6",
+      "tls": {
+        "enabled": true,
+        "server_name": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+      },
+      "transport": {
+        "headers": {
+          "Host": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+    },
+    {
+      "network": "tcp",
+      "server": "63.141.128.108",
+      "server_port": 443,
+      "tag": "outage-4a8aa8ab37b8c289",
+      "tls": {
+        "enabled": true,
+        "server_name": "hka.ylks.link"
+      },
+      "transport": {
+        "headers": {
+          "Host": "hka.ylks.link"
+        },
+        "path": "/?proxyip",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a"
     },
     {
       "network": "tcp",
@@ -376,6 +391,21 @@
           "Host": "www.ignitelimit.com"
         },
         "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "-wb.oDfOeHifTGMVEf",
+      "server": "c0yr9j09y2l9g0td8wa5.2whbrirhjgslm43zjcqei.workers.dev",
+      "server_port": 443,
+      "tag": "outage-d41f8ae86dd03dfc",
+      "transport": {
+        "headers": {
+          "Host": "c0YR9J09y2l9G0Td8WA5.2whBRirhjgsLm43ZJcqei.WoRKers.DEv"
+        },
+        "path": "/tr/CRGrZTTVLMALBJkE4?ed=2560",
         "type": "ws"
       },
       "type": "trojan"
@@ -497,27 +527,29 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
-        "outage-b6731fba5467842e",
+        "outage-7634ed35272e6238",
         "outage-6c882b7e5dfc3b0c",
         "outage-4ca7f6a0099abcfb",
         "outage-819038336c1dccf0",
         "outage-fe9afa54eb535d7a",
-        "outage-b17642ac454d14af",
-        "outage-db2cf61384ef6da6",
         "outage-850143abc4b2d449",
         "outage-90ad18d299053a17",
         "outage-345cfbd1cbcd5827",
         "outage-a22c01083b56ae46",
         "outage-99ced1b5c73e0a8a",
+        "outage-9f8606afa2f20199",
         "outage-4a72292943827e64",
         "outage-231bafd83e2a25a0",
         "outage-b78c3f1abf574aeb",
+        "outage-1c31bcdea5b72fd6",
+        "outage-4a8aa8ab37b8c289",
         "outage-2ed2ac2a8d8ca7d6",
         "outage-6d4497c7ea14fb29",
         "outage-2cbb92d7195c99ff",
         "outage-f3511e3dbf0b17fb",
         "outage-81f1ae51a8b2f11f",
         "outage-d31805d327c26692",
+        "outage-d41f8ae86dd03dfc",
         "outage-00badacc8ccd3255",
         "outage-f44566c46dadb00f",
         "outage-bc7c8efb5d02aa38",
