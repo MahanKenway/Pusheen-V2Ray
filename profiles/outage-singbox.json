@@ -279,6 +279,25 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "tag": "outage-1960c174289213fa",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "caeabeee-7413-4d13-a2b4-5f35dd3d03d3"
+    },
+    {
+      "network": "tcp",
       "password": "humanity",
       "server": "188.114.97.7",
       "server_port": 443,
@@ -295,25 +314,6 @@
         "type": "ws"
       },
       "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "63.141.128.108",
-      "server_port": 443,
-      "tag": "outage-4a8aa8ab37b8c289",
-      "tls": {
-        "enabled": true,
-        "server_name": "hka.ylks.link"
-      },
-      "transport": {
-        "headers": {
-          "Host": "hka.ylks.link"
-        },
-        "path": "/?proxyip",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a"
     },
     {
       "network": "tcp",
@@ -343,6 +343,25 @@
       "transport": {
         "headers": {
           "Host": "www.calmlunch.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
+      "server": "104.16.174.34",
+      "server_port": 443,
+      "tag": "outage-8b73e654f4ce83c5",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.ignitelimit.com"
         },
         "path": "/assignment",
         "type": "ws"
@@ -446,25 +465,6 @@
     },
     {
       "network": "tcp",
-      "password": "humanity",
-      "server": "render.com",
-      "server_port": 443,
-      "tag": "outage-dfb14d2bab2cb046",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.ignitelimit.com"
-        },
-        "path": "/assignment",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
       "server": "107.150.105.84",
       "server_port": 38261,
@@ -541,10 +541,11 @@
         "outage-4a72292943827e64",
         "outage-b78c3f1abf574aeb",
         "outage-1c31bcdea5b72fd6",
+        "outage-1960c174289213fa",
         "outage-23b1915c20eb35b1",
-        "outage-4a8aa8ab37b8c289",
         "outage-3a54e4dfa721850e",
         "outage-7f9b70eb5dfb74e8",
+        "outage-8b73e654f4ce83c5",
         "outage-2cbb92d7195c99ff",
         "outage-f3511e3dbf0b17fb",
         "outage-81f1ae51a8b2f11f",
@@ -553,7 +554,6 @@
         "outage-f44566c46dadb00f",
         "outage-bc7c8efb5d02aa38",
         "outage-9980616157f39e6d",
-        "outage-dfb14d2bab2cb046",
         "outage-ce8df76f73cb72bd",
         "outage-7ff762d7e0822d35",
         "outage-bce3a7209a95ce3a",
