@@ -1247,6 +1247,37 @@
       "settings": {
         "vnext": [
           {
+            "address": "217.179.220.67",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "f885cecc-a6ea-4e9b-87da-c7dc4b745348"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": "grpc-yandex"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg",
+          "serverName": "avatars.mds.yandex.net",
+          "shortId": "844352756c1fabba"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-92ea9aa2f119d67e"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "178.95.170.98",
             "port": 2087,
             "users": [
@@ -1412,28 +1443,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.37.73.8",
-            "port": 22222,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-c60256aa49ac67ff"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "94.183.209.58",
             "port": 443,
             "users": [
@@ -1459,33 +1468,9 @@
       "settings": {
         "servers": [
           {
-            "address": "5.181.187.58",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.calmlunch.com"
-        },
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-ace28a14caa09519"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "91.107.174.133",
-            "password": "@Cooonfig@",
-            "port": 14639
+            "address": "109.206.241.10",
+            "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
+            "port": 449
           }
         ]
       },
@@ -1493,7 +1478,24 @@
         "network": "tcp",
         "security": "none"
       },
-      "tag": "resilient-c15ea7b4ea526d7b"
+      "tag": "resilient-efb11e2c95319ee4"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "ww12.levikogjgfdd.ir",
+            "password": "pvZE3UfT0ziK1omVLlsjINBqeqqwab1M",
+            "port": 50573
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-435d665c5cc91300"
     },
     {
       "protocol": "blackhole",
