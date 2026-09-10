@@ -385,35 +385,6 @@
       "tag": "resilient-4a72292943827e64"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.159",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "efd9cf32-2a2f-4d05-abe4-d63eb002e483"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-231bafd83e2a25a0"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -570,7 +541,27 @@
           "path": "/assignment"
         }
       },
-      "tag": "resilient-2ed2ac2a8d8ca7d6"
+      "tag": "resilient-3a54e4dfa721850e"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.18.250.245",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-7f9b70eb5dfb74e8"
     },
     {
       "protocol": "vless",
@@ -600,27 +591,6 @@
         }
       },
       "tag": "resilient-5ab45a0dfd6abb4e"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.16.174.44",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.ignitelimit.com"
-        }
-      },
-      "tag": "resilient-6d4497c7ea14fb29"
     },
     {
       "protocol": "vless",
@@ -947,31 +917,6 @@
         }
       },
       "tag": "resilient-975db14d26964367"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "weathered-hat-64c5.50-47f.workers.dev",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "f77a1ad9-5ffa-4684-ba91-82f0df247eef"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-3ef01d2607b3512c"
     },
     {
       "protocol": "trojan",
@@ -1409,6 +1354,59 @@
         "security": "reality"
       },
       "tag": "resilient-bd4e5328694e8bd0"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "35.181.64.150",
+            "port": 22223,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-e2188763ddea42db"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.9.156.27",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "2f35965a-9a9b-45fd-ba32-987296dfb6be"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": "home.v1.ApiService"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "XBfCioniAKXgKYBUVnvBXu80AIaIa4SpAB3w8qeF7Gk",
+          "serverName": "bg3.univesalsrv.com",
+          "shortId": "1be1bd931c98c84a"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-feb342fdf1123e97"
     },
     {
       "protocol": "vless",

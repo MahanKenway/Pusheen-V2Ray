@@ -241,25 +241,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.159",
-      "server_port": 443,
-      "tag": "outage-231bafd83e2a25a0",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ssl.fastly.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "efd9cf32-2a2f-4d05-abe4-d63eb002e483"
-    },
-    {
-      "network": "tcp",
       "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
       "server": "172.67.217.240",
       "server_port": 443,
@@ -317,10 +298,29 @@
     },
     {
       "network": "tcp",
+      "server": "63.141.128.108",
+      "server_port": 443,
+      "tag": "outage-4a8aa8ab37b8c289",
+      "tls": {
+        "enabled": true,
+        "server_name": "hka.ylks.link"
+      },
+      "transport": {
+        "headers": {
+          "Host": "hka.ylks.link"
+        },
+        "path": "/?proxyip",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a"
+    },
+    {
+      "network": "tcp",
       "password": "humanity",
       "server": "216.24.57.7",
       "server_port": 443,
-      "tag": "outage-2ed2ac2a8d8ca7d6",
+      "tag": "outage-3a54e4dfa721850e",
       "tls": {
         "enabled": true,
         "server_name": "www.ignitelimit.com"
@@ -337,12 +337,15 @@
     {
       "network": "tcp",
       "password": "humanity",
-      "server": "104.16.174.44",
+      "server": "185.18.250.245",
       "server_port": 443,
-      "tag": "outage-6d4497c7ea14fb29",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com"
+      "tag": "outage-7f9b70eb5dfb74e8",
+      "transport": {
+        "headers": {
+          "Host": "www.calmlunch.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
       },
       "type": "trojan"
     },
@@ -536,12 +539,12 @@
         "outage-a22c01083b56ae46",
         "outage-99ced1b5c73e0a8a",
         "outage-4a72292943827e64",
-        "outage-231bafd83e2a25a0",
         "outage-b78c3f1abf574aeb",
         "outage-1c31bcdea5b72fd6",
         "outage-23b1915c20eb35b1",
-        "outage-2ed2ac2a8d8ca7d6",
-        "outage-6d4497c7ea14fb29",
+        "outage-4a8aa8ab37b8c289",
+        "outage-3a54e4dfa721850e",
+        "outage-7f9b70eb5dfb74e8",
         "outage-2cbb92d7195c99ff",
         "outage-f3511e3dbf0b17fb",
         "outage-81f1ae51a8b2f11f",
