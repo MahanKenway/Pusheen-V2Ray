@@ -29,6 +29,40 @@
     },
     {
       "network": "tcp",
+      "server": "185.146.173.237",
+      "server_port": 8880,
+      "tag": "outage-c99061590b464a93",
+      "transport": {
+        "headers": {
+          "Host": "github-_-_-_-_-_-vpn_proxy66_marg_bar_khamenei.proxy66.shop."
+        },
+        "path": "/VPN_PROXY66.VPN_PROXY66",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "82fdc77c-5def-4930-89a6-afb5cc609d4b"
+    },
+    {
+      "network": "tcp",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "tag": "outage-446cc298eaee37cf",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "XpnTeam-9"
+    },
+    {
+      "network": "tcp",
       "server": "69.46.46.127",
       "server_port": 443,
       "tag": "outage-6c882b7e5dfc3b0c",
@@ -192,25 +226,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "tag": "outage-9f8606afa2f20199",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ssl.fastly.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "XpnTeam-7"
-    },
-    {
-      "network": "tcp",
       "password": "humanity",
       "server": "45.130.125.75",
       "server_port": 443,
@@ -283,22 +298,22 @@
     },
     {
       "network": "tcp",
-      "server": "63.141.128.108",
+      "password": "humanity",
+      "server": "188.114.97.7",
       "server_port": 443,
-      "tag": "outage-4a8aa8ab37b8c289",
+      "tag": "outage-23b1915c20eb35b1",
       "tls": {
         "enabled": true,
-        "server_name": "hka.ylks.link"
+        "server_name": "www.ignitelimit.com"
       },
       "transport": {
         "headers": {
-          "Host": "hka.ylks.link"
+          "Host": "www.ignitelimit.com"
         },
-        "path": "/?proxyip",
+        "path": "/assignment",
         "type": "ws"
       },
-      "type": "vless",
-      "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a"
+      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -373,25 +388,6 @@
       "tag": "outage-81f1ae51a8b2f11f",
       "tls": {
         "enabled": true
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "humanity",
-      "server": "188.114.97.7",
-      "server_port": 443,
-      "tag": "outage-d31805d327c26692",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.ignitelimit.com"
-        },
-        "path": "/assignment",
-        "type": "ws"
       },
       "type": "trojan"
     },
@@ -528,6 +524,8 @@
       "interval": "10m",
       "outbounds": [
         "outage-7634ed35272e6238",
+        "outage-c99061590b464a93",
+        "outage-446cc298eaee37cf",
         "outage-6c882b7e5dfc3b0c",
         "outage-4ca7f6a0099abcfb",
         "outage-819038336c1dccf0",
@@ -537,18 +535,16 @@
         "outage-345cfbd1cbcd5827",
         "outage-a22c01083b56ae46",
         "outage-99ced1b5c73e0a8a",
-        "outage-9f8606afa2f20199",
         "outage-4a72292943827e64",
         "outage-231bafd83e2a25a0",
         "outage-b78c3f1abf574aeb",
         "outage-1c31bcdea5b72fd6",
-        "outage-4a8aa8ab37b8c289",
+        "outage-23b1915c20eb35b1",
         "outage-2ed2ac2a8d8ca7d6",
         "outage-6d4497c7ea14fb29",
         "outage-2cbb92d7195c99ff",
         "outage-f3511e3dbf0b17fb",
         "outage-81f1ae51a8b2f11f",
-        "outage-d31805d327c26692",
         "outage-d41f8ae86dd03dfc",
         "outage-00badacc8ccd3255",
         "outage-f44566c46dadb00f",

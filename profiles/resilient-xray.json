@@ -53,6 +53,60 @@
       "settings": {
         "vnext": [
           {
+            "address": "185.146.173.237",
+            "port": 8880,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "82fdc77c-5def-4930-89a6-afb5cc609d4b"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/VPN_PROXY66.VPN_PROXY66"
+        }
+      },
+      "tag": "resilient-c99061590b464a93"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "199.232.78.160",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "XpnTeam-9"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-446cc298eaee37cf"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "69.46.46.127",
             "port": 443,
             "users": [
@@ -311,35 +365,6 @@
       "tag": "resilient-99ced1b5c73e0a8a"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.160",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "XpnTeam-7"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-9f8606afa2f20199"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -440,6 +465,30 @@
         }
       },
       "tag": "resilient-1c31bcdea5b72fd6"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.114.97.7",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.ignitelimit.com"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-23b1915c20eb35b1"
     },
     {
       "protocol": "vless",
@@ -666,30 +715,6 @@
         }
       },
       "tag": "resilient-101559a856c053dc"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "188.114.97.7",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.ignitelimit.com"
-        },
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-d31805d327c26692"
     },
     {
       "protocol": "vless",
@@ -1084,6 +1109,31 @@
       "settings": {
         "vnext": [
           {
+            "address": "66.90.105.210",
+            "port": 2083,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": "vless"
+        },
+        "network": "grpc",
+        "security": "none"
+      },
+      "tag": "resilient-73eba0842990e0c0"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "35.180.170.215",
             "port": 22222,
             "users": [
@@ -1225,6 +1275,30 @@
       "tag": "resilient-cedba7870b906542"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "www.speedtest.net",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.ignitelimit.com"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-2be2f82ca79ba2b9"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1341,59 +1415,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "35.181.64.150",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-e2188763ddea42db"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.9.156.27",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "2f35965a-9a9b-45fd-ba32-987296dfb6be"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "home.v1.ApiService"
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "XBfCioniAKXgKYBUVnvBXu80AIaIa4SpAB3w8qeF7Gk",
-          "serverName": "bg3.univesalsrv.com",
-          "shortId": "1be1bd931c98c84a"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-feb342fdf1123e97"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "94.183.209.58",
             "port": 443,
             "users": [
@@ -1413,30 +1434,6 @@
         }
       },
       "tag": "resilient-b0f0729beb8e0483"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "www.speedtest.net",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.calmlunch.com"
-        },
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-5212849fecab7308"
     },
     {
       "protocol": "trojan",
