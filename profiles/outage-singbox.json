@@ -29,6 +29,25 @@
     },
     {
       "network": "tcp",
+      "password": "humanity",
+      "server": "104.18.152.207",
+      "server_port": 443,
+      "tag": "outage-9fc8a9cf71bc1e23",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.ignitelimit.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "185.146.173.237",
       "server_port": 8880,
       "tag": "outage-c99061590b464a93",
@@ -94,6 +113,21 @@
         "type": "ws"
       },
       "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "104.21.14.24",
+      "server_port": 80,
+      "tag": "outage-91ea98c2dba2e2a2",
+      "transport": {
+        "headers": {
+          "Host": "fn.webodeww.ir"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "949a0655-357a-47c8-9ba1-6dd6940614a3"
     },
     {
       "network": "tcp",
@@ -220,25 +254,6 @@
       },
       "type": "vless",
       "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
-    },
-    {
-      "network": "tcp",
-      "server": "199.232.78.159",
-      "server_port": 443,
-      "tag": "outage-1960c174289213fa",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ssl.fastly.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "caeabeee-7413-4d13-a2b4-5f35dd3d03d3"
     },
     {
       "network": "tcp",
@@ -477,22 +492,6 @@
     },
     {
       "network": "tcp",
-      "password": "kkzh2prsyr2ik47as615",
-      "server": "64.94.95.117",
-      "server_port": 57142,
-      "tag": "outage-121a5c29b56bc148",
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
-      "server": "107.150.105.84",
-      "server_port": 38261,
-      "tag": "outage-ce8df76f73cb72bd",
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "server": "94.183.209.58",
       "server_port": 443,
       "tag": "outage-b0f0729beb8e0483",
@@ -512,10 +511,12 @@
       "interval": "10m",
       "outbounds": [
         "outage-7634ed35272e6238",
+        "outage-9fc8a9cf71bc1e23",
         "outage-c99061590b464a93",
         "outage-446cc298eaee37cf",
         "outage-6c882b7e5dfc3b0c",
         "outage-4ca7f6a0099abcfb",
+        "outage-91ea98c2dba2e2a2",
         "outage-850143abc4b2d449",
         "outage-20af86d9e96f6edc",
         "outage-e86b0b5a88eb2af6",
@@ -523,7 +524,6 @@
         "outage-345cfbd1cbcd5827",
         "outage-b78c3f1abf574aeb",
         "outage-1c31bcdea5b72fd6",
-        "outage-1960c174289213fa",
         "outage-23b1915c20eb35b1",
         "outage-3a54e4dfa721850e",
         "outage-7f9b70eb5dfb74e8",
@@ -540,8 +540,6 @@
         "outage-f44566c46dadb00f",
         "outage-bc7c8efb5d02aa38",
         "outage-9980616157f39e6d",
-        "outage-121a5c29b56bc148",
-        "outage-ce8df76f73cb72bd",
         "outage-b0f0729beb8e0483"
       ],
       "tag": "outage-auto",
