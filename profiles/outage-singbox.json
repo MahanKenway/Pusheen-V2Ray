@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "tag": "outage-f7bd18cfa46f19ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "XpnTeam-13"
+    },
+    {
+      "network": "tcp",
       "server": "188.114.97.6",
       "server_port": 80,
       "tag": "outage-7634ed35272e6238",
@@ -60,25 +79,6 @@
       },
       "type": "vless",
       "uuid": "82fdc77c-5def-4930-89a6-afb5cc609d4b"
-    },
-    {
-      "network": "tcp",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "tag": "outage-446cc298eaee37cf",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ssl.fastly.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "XpnTeam-9"
     },
     {
       "network": "tcp",
@@ -363,17 +363,6 @@
     },
     {
       "network": "tcp",
-      "password": "MiTiVPN",
-      "server": "151.101.56.7",
-      "server_port": 443,
-      "tag": "outage-81f1ae51a8b2f11f",
-      "tls": {
-        "enabled": true
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": "-wb.oDfOeHifTGMVEf",
       "server": "188.114.97.8",
       "server_port": 443,
@@ -457,17 +446,6 @@
     },
     {
       "network": "tcp",
-      "password": "MiTiVPN",
-      "server": "151.101.56.230",
-      "server_port": 443,
-      "tag": "outage-00badacc8ccd3255",
-      "tls": {
-        "enabled": true
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
       "server": "107.150.105.84",
       "server_port": 43022,
@@ -492,28 +470,21 @@
     },
     {
       "network": "tcp",
-      "server": "94.183.209.58",
-      "server_port": 443,
-      "tag": "outage-b0f0729beb8e0483",
-      "transport": {
-        "headers": {
-          "Host": "pl2.lckdwn.ru"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "78791f9e-fe09-4d4f-88ec-895764bae0d6"
+      "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
+      "server": "107.150.105.84",
+      "server_port": 38261,
+      "tag": "outage-ce8df76f73cb72bd",
+      "type": "trojan"
     },
     {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-f7bd18cfa46f19ca",
         "outage-7634ed35272e6238",
         "outage-9fc8a9cf71bc1e23",
         "outage-c99061590b464a93",
-        "outage-446cc298eaee37cf",
         "outage-6c882b7e5dfc3b0c",
         "outage-4ca7f6a0099abcfb",
         "outage-91ea98c2dba2e2a2",
@@ -530,17 +501,15 @@
         "outage-8b73e654f4ce83c5",
         "outage-2cbb92d7195c99ff",
         "outage-f3511e3dbf0b17fb",
-        "outage-81f1ae51a8b2f11f",
         "outage-3e351be22a5f78df",
         "outage-a1070c1c16783c7d",
         "outage-9228086736d6c6a0",
         "outage-71594be20d92ca4c",
         "outage-d41f8ae86dd03dfc",
-        "outage-00badacc8ccd3255",
         "outage-f44566c46dadb00f",
         "outage-bc7c8efb5d02aa38",
         "outage-9980616157f39e6d",
-        "outage-b0f0729beb8e0483"
+        "outage-ce8df76f73cb72bd"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
