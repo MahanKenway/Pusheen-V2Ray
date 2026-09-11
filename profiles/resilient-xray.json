@@ -501,18 +501,13 @@
       "tag": "resilient-4a8aa8ab37b8c289"
     },
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "104.20.45.4",
-            "port": 2083,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6"
-              }
-            ]
+            "address": "104.26.15.137",
+            "password": "humanity",
+            "port": 443
           }
         ]
       },
@@ -521,13 +516,13 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "shopki.dearhossein-taktaz.ir"
+          "serverName": "www.ignitelimit.com"
         },
         "wsSettings": {
-          "path": "/"
+          "path": "/assignment"
         }
       },
-      "tag": "resilient-6243c12f4273f192"
+      "tag": "resilient-38d7d4e8bcda4077"
     },
     {
       "protocol": "trojan",
@@ -679,30 +674,6 @@
         }
       },
       "tag": "resilient-2cbb92d7195c99ff"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "172.67.149.60",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.ignitelimit.com"
-        },
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-f3511e3dbf0b17fb"
     },
     {
       "protocol": "vless",
@@ -925,6 +896,30 @@
       "tag": "resilient-d41f8ae86dd03dfc"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "172.67.149.60",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.ignitelimit.com"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-4cf248500641f762"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1115,7 +1110,7 @@
           "serverName": "us01.duotg.top"
         }
       },
-      "tag": "resilient-a784a310416b0512"
+      "tag": "resilient-fb5782926693adb0"
     },
     {
       "protocol": "vless",
@@ -1145,30 +1140,6 @@
         "security": "reality"
       },
       "tag": "resilient-9b97aa3bddb25eea"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "render.com",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.ignitelimit.com"
-        },
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-dfb14d2bab2cb046"
     },
     {
       "protocol": "trojan",
@@ -1398,6 +1369,37 @@
         "security": "none"
       },
       "tag": "resilient-715818a0ca8cffe3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "217.179.220.67",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "f885cecc-a6ea-4e9b-87da-c7dc4b745348"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": "grpc-yandex"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg",
+          "serverName": "avatars.mds.yandex.net",
+          "shortId": "844352756c1fabba"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-92ea9aa2f119d67e"
     },
     {
       "protocol": "vless",

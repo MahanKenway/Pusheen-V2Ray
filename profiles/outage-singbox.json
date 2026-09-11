@@ -277,6 +277,25 @@
     {
       "network": "tcp",
       "password": "humanity",
+      "server": "104.26.15.137",
+      "server_port": 443,
+      "tag": "outage-38d7d4e8bcda4077",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.ignitelimit.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
       "server": "216.24.57.7",
       "server_port": 443,
       "tag": "outage-3a54e4dfa721850e",
@@ -341,25 +360,6 @@
       },
       "type": "vless",
       "uuid": "942bdcfc-e522-44f1-b899-3bd8db7c5ae2"
-    },
-    {
-      "network": "tcp",
-      "password": "humanity",
-      "server": "172.67.149.60",
-      "server_port": 443,
-      "tag": "outage-f3511e3dbf0b17fb",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.ignitelimit.com"
-        },
-        "path": "/assignment",
-        "type": "ws"
-      },
-      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -472,6 +472,18 @@
       "network": "tcp",
       "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
       "server": "107.150.105.84",
+      "server_port": 54657,
+      "tag": "outage-fb5782926693adb0",
+      "tls": {
+        "enabled": true,
+        "server_name": "us01.duotg.top"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
+      "server": "107.150.105.84",
       "server_port": 38261,
       "tag": "outage-ce8df76f73cb72bd",
       "type": "trojan"
@@ -496,11 +508,11 @@
         "outage-b78c3f1abf574aeb",
         "outage-1c31bcdea5b72fd6",
         "outage-23b1915c20eb35b1",
+        "outage-38d7d4e8bcda4077",
         "outage-3a54e4dfa721850e",
         "outage-7f9b70eb5dfb74e8",
         "outage-8b73e654f4ce83c5",
         "outage-2cbb92d7195c99ff",
-        "outage-f3511e3dbf0b17fb",
         "outage-3e351be22a5f78df",
         "outage-a1070c1c16783c7d",
         "outage-9228086736d6c6a0",
@@ -509,6 +521,7 @@
         "outage-f44566c46dadb00f",
         "outage-bc7c8efb5d02aa38",
         "outage-9980616157f39e6d",
+        "outage-fb5782926693adb0",
         "outage-ce8df76f73cb72bd"
       ],
       "tag": "outage-auto",
