@@ -132,6 +132,33 @@
     },
     {
       "network": "tcp",
+      "server": "172.67.137.224",
+      "server_port": 443,
+      "tag": "outage-cc07bd0a7892aedf",
+      "tls": {
+        "enabled": true,
+        "server_name": "mahdiserver.msebexj.workers.dev"
+      },
+      "transport": {
+        "headers": {
+          "Host": "mahdiserver.msebexj.workers.dev"
+        },
+        "path": "/?ed=2048",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "b35352a6-a251-4bf5-bfc4-14f255f02888"
+    },
+    {
+      "network": "tcp",
+      "password": "MiTiVPN",
+      "server": "167.82.76.7",
+      "server_port": 443,
+      "tag": "outage-8679c8956b0ac75a",
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "104.25.248.101",
       "server_port": 2087,
       "tag": "outage-20af86d9e96f6edc",
@@ -148,6 +175,14 @@
       },
       "type": "vless",
       "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+    },
+    {
+      "network": "tcp",
+      "password": "MiTiVPN",
+      "server": "199.232.78.101",
+      "server_port": 443,
+      "tag": "outage-3eeca001fdf726af",
+      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -217,44 +252,6 @@
       },
       "type": "vless",
       "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
-    },
-    {
-      "network": "tcp",
-      "server": "199.232.78.170",
-      "server_port": 443,
-      "tag": "outage-5d4994ee1c44f239",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ssl.fastly.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "XpnTeam-20"
-    },
-    {
-      "network": "tcp",
-      "server": "104.26.0.113",
-      "server_port": 2053,
-      "tag": "outage-fb7c0d05bd1fd5ba",
-      "tls": {
-        "enabled": true,
-        "server_name": "mianfei-73q.pages.dev"
-      },
-      "transport": {
-        "headers": {
-          "Host": "mianfei-73q.pages.dev"
-        },
-        "path": "/proxyip=154.3.33.43",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "8666ab45-8e3d-4988-841b-2561d91e32d5"
     },
     {
       "network": "tcp",
@@ -466,22 +463,6 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
-      "server": "107.150.105.84",
-      "server_port": 27732,
-      "tag": "outage-bc7c8efb5d02aa38",
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
-      "server": "107.150.105.84",
-      "server_port": 20065,
-      "tag": "outage-9980616157f39e6d",
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -494,13 +475,14 @@
         "outage-c99061590b464a93",
         "outage-b5a33e908fc6b5e5",
         "outage-91ea98c2dba2e2a2",
+        "outage-cc07bd0a7892aedf",
+        "outage-8679c8956b0ac75a",
         "outage-20af86d9e96f6edc",
+        "outage-3eeca001fdf726af",
         "outage-e86b0b5a88eb2af6",
         "outage-6937ae6682e8ddb1",
         "outage-b78c3f1abf574aeb",
         "outage-1c31bcdea5b72fd6",
-        "outage-5d4994ee1c44f239",
-        "outage-fb7c0d05bd1fd5ba",
         "outage-4908e625c9245f18",
         "outage-23b1915c20eb35b1",
         "outage-38d7d4e8bcda4077",
@@ -513,9 +495,7 @@
         "outage-3e351be22a5f78df",
         "outage-a1070c1c16783c7d",
         "outage-d41f8ae86dd03dfc",
-        "outage-f44566c46dadb00f",
-        "outage-bc7c8efb5d02aa38",
-        "outage-9980616157f39e6d"
+        "outage-f44566c46dadb00f"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
