@@ -390,6 +390,25 @@
     },
     {
       "network": "tcp",
+      "password": "humanity",
+      "server": "130.250.137.171",
+      "server_port": 443,
+      "tag": "outage-fe1f0b65235e5f34",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.ignitelimit.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "-wb.oDfOeHifTGMVEf",
       "server": "188.114.97.8",
       "server_port": 443,
@@ -414,25 +433,6 @@
           "Host": "c0yR9J09Y2l9G0td8wA5.2wHbrirHJgSlM43zJcqeI.WoRkERS.dEv"
         },
         "path": "/tr/DUxfWnCsYjSEOWSUGmnz?ed=2560",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "humanity",
-      "server": "104.18.152.233",
-      "server_port": 443,
-      "tag": "outage-9228086736d6c6a0",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.ignitelimit.com"
-        },
-        "path": "/assignment",
         "type": "ws"
       },
       "type": "trojan"
@@ -523,9 +523,9 @@
         "outage-7f9b70eb5dfb74e8",
         "outage-8b73e654f4ce83c5",
         "outage-2cbb92d7195c99ff",
+        "outage-fe1f0b65235e5f34",
         "outage-3e351be22a5f78df",
         "outage-a1070c1c16783c7d",
-        "outage-9228086736d6c6a0",
         "outage-d41f8ae86dd03dfc",
         "outage-f44566c46dadb00f",
         "outage-bc7c8efb5d02aa38",
