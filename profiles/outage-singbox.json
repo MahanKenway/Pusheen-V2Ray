@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "password": "humanity",
+      "server": "104.18.152.143",
+      "server_port": 443,
+      "tag": "outage-6a679d3fb499ff54",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.ignitelimit.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
       "tag": "outage-f7bd18cfa46f19ca",
@@ -392,25 +411,6 @@
     },
     {
       "network": "tcp",
-      "password": "humanity",
-      "server": "8.47.69.0",
-      "server_port": 443,
-      "tag": "outage-09ea01f8fa21ff3e",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        },
-        "path": "/assignment",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": "-wb.oDfOeHifTGMVEf",
       "server": "188.114.97.8",
       "server_port": 443,
@@ -467,6 +467,7 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-6a679d3fb499ff54",
         "outage-f7bd18cfa46f19ca",
         "outage-7634ed35272e6238",
         "outage-c7d019eb5d5b21ea",
@@ -491,7 +492,6 @@
         "outage-5ef48ce06ae12758",
         "outage-8b73e654f4ce83c5",
         "outage-723646aeaa991df3",
-        "outage-09ea01f8fa21ff3e",
         "outage-3e351be22a5f78df",
         "outage-a1070c1c16783c7d",
         "outage-d41f8ae86dd03dfc",
