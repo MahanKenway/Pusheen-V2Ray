@@ -448,6 +448,30 @@
       "tag": "resilient-1c31bcdea5b72fd6"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "141.101.90.101",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.ignitelimit.com"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-4908e625c9245f18"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -649,35 +673,6 @@
         }
       },
       "tag": "resilient-8b73e654f4ce83c5"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.18.42.163",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "fx3h2kf8xn.fx6hsv0.ccwu.cc"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-5ab45a0dfd6abb4e"
     },
     {
       "protocol": "trojan",
