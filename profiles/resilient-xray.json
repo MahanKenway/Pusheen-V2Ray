@@ -82,6 +82,47 @@
       "settings": {
         "servers": [
           {
+            "address": "188.114.96.3",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.calmlunch.com"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-c7d019eb5d5b21ea"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.70.21",
+            "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-dcbe5f78e9b2607e"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "104.18.152.207",
             "password": "humanity",
             "port": 443
@@ -1046,35 +1087,6 @@
       "tag": "resilient-9980616157f39e6d"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.21.104.150",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "50414e45-4c5f-5a45-5553-00b2a392a159"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "9fzcxlewuixs.goodarzev.workers.dev"
-        },
-        "wsSettings": {
-          "path": "/stream/PANEL_ZEUS/00b2a392a159"
-        }
-      },
-      "tag": "resilient-975db14d26964367"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1174,6 +1186,28 @@
         "security": "none"
       },
       "tag": "resilient-d5ab0e97b9ac646c"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "85.9.194.75",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "mlkem768x25519plus.native.0rtt.axhmyvi6WAeIVHyKYLuHz7cMMow5FBwwSjs9-TIWxRY",
+                "id": "awlix_ir"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-cb858908aa446fe0"
     },
     {
       "protocol": "vless",
@@ -1453,43 +1487,6 @@
         }
       },
       "tag": "resilient-578bd713df6b58e3"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "78.47.146.151",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-6c6ecdb731c18170"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "ww12.levikogjgfdd.ir",
-            "password": "pvZE3UfT0ziK1omVLlsjINBqeqqwab1M",
-            "port": 50573
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-435d665c5cc91300"
     },
     {
       "protocol": "blackhole",

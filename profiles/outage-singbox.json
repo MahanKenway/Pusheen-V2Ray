@@ -49,6 +49,33 @@
     {
       "network": "tcp",
       "password": "humanity",
+      "server": "188.114.96.3",
+      "server_port": 443,
+      "tag": "outage-c7d019eb5d5b21ea",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.calmlunch.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+      "server": "104.21.70.21",
+      "server_port": 443,
+      "tag": "outage-dcbe5f78e9b2607e",
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
       "server": "104.18.152.207",
       "server_port": 443,
       "tag": "outage-9fc8a9cf71bc1e23",
@@ -412,25 +439,6 @@
     },
     {
       "network": "tcp",
-      "password": "humanity",
-      "server": "104.16.7.70",
-      "server_port": 443,
-      "tag": "outage-71594be20d92ca4c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.ignitelimit.com"
-        },
-        "path": "/assignment",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": "-wb.oDfOeHifTGMVEf",
       "server": "c0yr9j09y2l9g0td8wa5.2whbrirhjgslm43zjcqei.workers.dev",
       "server_port": 443,
@@ -495,6 +503,8 @@
       "outbounds": [
         "outage-f7bd18cfa46f19ca",
         "outage-7634ed35272e6238",
+        "outage-c7d019eb5d5b21ea",
+        "outage-dcbe5f78e9b2607e",
         "outage-9fc8a9cf71bc1e23",
         "outage-c99061590b464a93",
         "outage-6c882b7e5dfc3b0c",
@@ -516,7 +526,6 @@
         "outage-3e351be22a5f78df",
         "outage-a1070c1c16783c7d",
         "outage-9228086736d6c6a0",
-        "outage-71594be20d92ca4c",
         "outage-d41f8ae86dd03dfc",
         "outage-f44566c46dadb00f",
         "outage-bc7c8efb5d02aa38",
