@@ -24,6 +24,31 @@
   },
   "outbounds": [
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.98.224",
+            "port": 2095,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "2f264012-6b8c-4b79-b8c9-a6b7b4b7fc43"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-34989c85cd4afd94"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -75,6 +100,35 @@
         }
       },
       "tag": "resilient-f7bd18cfa46f19ca"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.16.72.251",
+            "port": 2096,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "12af43c3-84b4-4248-878b-b75f35835487"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": "network"
+        },
+        "network": "grpc",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "decdn.ramlike.ir"
+        }
+      },
+      "tag": "resilient-61a8710c5c8b0881"
     },
     {
       "protocol": "trojan",
@@ -231,6 +285,31 @@
         }
       },
       "tag": "resilient-91ea98c2dba2e2a2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "chatgpt.com",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "122b8a33-d923-48a6-8f1b-e721cf842864"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "path": "/?ed=2560"
+        },
+        "network": "httpupgrade",
+        "security": "none"
+      },
+      "tag": "resilient-ed67455387b5e328"
     },
     {
       "protocol": "trojan",
@@ -640,30 +719,6 @@
       "tag": "resilient-38d7d4e8bcda4077"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "216.24.57.7",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.ignitelimit.com"
-        },
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-3a54e4dfa721850e"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -691,26 +746,6 @@
         }
       },
       "tag": "resilient-b464467a25992e8b"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "185.18.250.245",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-7f9b70eb5dfb74e8"
     },
     {
       "protocol": "trojan",
@@ -1374,28 +1409,6 @@
       "tag": "resilient-003281e6252b64d0"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "87.58.159.20",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "mlkem768x25519plus.native.0rtt.CCIZgZeeCX8na60UXi9II-iduj3OFxtj-fuh_4AWiUU",
-                "id": "awlix_ir"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-dd0c9977fe10144c"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1420,28 +1433,6 @@
       "tag": "resilient-8f5aefb94703a2c4"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "15.236.172.122",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-8518c0cc08136717"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1462,26 +1453,52 @@
       "tag": "resilient-28a59a5edd30de38"
     },
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "193.148.253.210",
-            "port": 48130,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "4878b80d-7602-499c-b742-b09ac4355e0b"
-              }
-            ]
+            "address": "ip.myip2.qzz.io",
+            "password": "humanity",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none"
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.ignitelimit.com"
+        },
+        "wsSettings": {
+          "path": "/assignment#US\u7f8e\u56fd(ProxyGo\u514d\u8d39\u8282\u70b9\u5206\u4eab)"
+        }
       },
-      "tag": "resilient-715818a0ca8cffe3"
+      "tag": "resilient-3f5577ac85a69eb8"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "193.148.253.210",
+            "password": "iqroboyc82nkec6h",
+            "port": 2053
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "193.148.253.210"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-578bd713df6b58e3"
     },
     {
       "protocol": "blackhole",

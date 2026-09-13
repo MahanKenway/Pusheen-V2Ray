@@ -14,6 +14,21 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "188.114.98.224",
+      "server_port": 2095,
+      "tag": "outage-34989c85cd4afd94",
+      "transport": {
+        "headers": {
+          "Host": "V2ray-_-_-_-_-_-_-_-_-ShhProxy.TelegramChannelJoinBede.com."
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "2f264012-6b8c-4b79-b8c9-a6b7b4b7fc43"
+    },
+    {
+      "network": "tcp",
       "password": "humanity",
       "server": "104.18.152.143",
       "server_port": 443,
@@ -262,37 +277,6 @@
     },
     {
       "network": "tcp",
-      "server": "206.238.237.232",
-      "server_port": 443,
-      "tag": "outage-e86b0b5a88eb2af6",
-      "tls": {
-        "enabled": true,
-        "server_name": "xind.ylks.link"
-      },
-      "transport": {
-        "headers": {
-          "Host": "xind.ylks.link"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "48198295-b7ba-4b5c-8d85-085d55a6c869"
-    },
-    {
-      "network": "tcp",
-      "server": "172.67.152.224",
-      "server_port": 443,
-      "tag": "outage-6937ae6682e8ddb1",
-      "transport": {
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "0e2c8b65-02b3-4fbe-8078-69d8c0e2bc9c"
-    },
-    {
-      "network": "tcp",
       "password": "humanity",
       "server": "8.47.69.0",
       "server_port": 443,
@@ -347,16 +331,16 @@
     {
       "network": "tcp",
       "password": "humanity",
-      "server": "216.24.57.7",
+      "server": "172.67.200.219",
       "server_port": 443,
-      "tag": "outage-3a54e4dfa721850e",
+      "tag": "outage-5ef48ce06ae12758",
       "tls": {
         "enabled": true,
-        "server_name": "www.ignitelimit.com"
+        "server_name": "www.calmlunch.com"
       },
       "transport": {
         "headers": {
-          "Host": "www.ignitelimit.com"
+          "Host": "www.calmlunch.com"
         },
         "path": "/assignment",
         "type": "ws"
@@ -366,12 +350,16 @@
     {
       "network": "tcp",
       "password": "humanity",
-      "server": "185.18.250.245",
+      "server": "104.16.174.34",
       "server_port": 443,
-      "tag": "outage-7f9b70eb5dfb74e8",
+      "tag": "outage-8b73e654f4ce83c5",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com"
+      },
       "transport": {
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "www.ignitelimit.com"
         },
         "path": "/assignment",
         "type": "ws"
@@ -433,6 +421,7 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-34989c85cd4afd94",
         "outage-6a679d3fb499ff54",
         "outage-f7bd18cfa46f19ca",
         "outage-2a7f72ec4ebbef93",
@@ -449,13 +438,11 @@
         "outage-6e7fa892c9a9fa0a",
         "outage-68608c04957fa28c",
         "outage-3eeca001fdf726af",
-        "outage-e86b0b5a88eb2af6",
-        "outage-6937ae6682e8ddb1",
         "outage-b78ef3dba9f0813c",
         "outage-4908e625c9245f18",
         "outage-38d7d4e8bcda4077",
-        "outage-3a54e4dfa721850e",
-        "outage-7f9b70eb5dfb74e8",
+        "outage-5ef48ce06ae12758",
+        "outage-8b73e654f4ce83c5",
         "outage-723646aeaa991df3",
         "outage-3e351be22a5f78df",
         "outage-a1070c1c16783c7d",
