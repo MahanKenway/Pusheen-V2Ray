@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "199.232.78.170",
+      "server_port": 443,
+      "tag": "outage-e590ab189316802a",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "XpnTeam-23"
+    },
+    {
+      "network": "tcp",
       "server": "188.114.98.224",
       "server_port": 2095,
       "tag": "outage-34989c85cd4afd94",
@@ -64,6 +83,25 @@
       },
       "type": "vless",
       "uuid": "XpnTeam-13"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
+      "server": "104.25.109.237",
+      "server_port": 443,
+      "tag": "outage-5b8831006edcdf4a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.calmlunch.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -250,25 +288,6 @@
     },
     {
       "network": "tcp",
-      "server": "104.17.159.237",
-      "server_port": 2083,
-      "tag": "outage-68608c04957fa28c",
-      "tls": {
-        "enabled": true,
-        "server_name": "mianfei-73q.pages.dev"
-      },
-      "transport": {
-        "headers": {
-          "Host": "mianfei-73q.pages.dev"
-        },
-        "path": "/proxyip=154.3.33.43",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "8666ab45-8e3d-4988-841b-2561d91e32d5"
-    },
-    {
-      "network": "tcp",
       "password": "MiTiVPN",
       "server": "199.232.78.101",
       "server_port": 443,
@@ -350,25 +369,6 @@
     {
       "network": "tcp",
       "password": "humanity",
-      "server": "104.16.174.34",
-      "server_port": 443,
-      "tag": "outage-8b73e654f4ce83c5",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.ignitelimit.com"
-        },
-        "path": "/assignment",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "humanity",
       "server": "render.com",
       "server_port": 443,
       "tag": "outage-723646aeaa991df3",
@@ -421,9 +421,11 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-e590ab189316802a",
         "outage-34989c85cd4afd94",
         "outage-6a679d3fb499ff54",
         "outage-f7bd18cfa46f19ca",
+        "outage-5b8831006edcdf4a",
         "outage-2a7f72ec4ebbef93",
         "outage-ea986d06f2d6e5a2",
         "outage-c7d019eb5d5b21ea",
@@ -436,13 +438,11 @@
         "outage-8679c8956b0ac75a",
         "outage-20af86d9e96f6edc",
         "outage-6e7fa892c9a9fa0a",
-        "outage-68608c04957fa28c",
         "outage-3eeca001fdf726af",
         "outage-b78ef3dba9f0813c",
         "outage-4908e625c9245f18",
         "outage-38d7d4e8bcda4077",
         "outage-5ef48ce06ae12758",
-        "outage-8b73e654f4ce83c5",
         "outage-723646aeaa991df3",
         "outage-3e351be22a5f78df",
         "outage-a1070c1c16783c7d",
