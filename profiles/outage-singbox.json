@@ -151,6 +151,25 @@
     },
     {
       "network": "tcp",
+      "password": "humanity",
+      "server": "104.18.12.149",
+      "server_port": 443,
+      "tag": "outage-05e63c542e75ee33",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.calmlunch.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "172.67.137.224",
       "server_port": 443,
       "tag": "outage-cc07bd0a7892aedf",
@@ -385,25 +404,6 @@
     {
       "network": "tcp",
       "password": "humanity",
-      "server": "104.16.174.34",
-      "server_port": 443,
-      "tag": "outage-8b73e654f4ce83c5",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.ignitelimit.com"
-        },
-        "path": "/assignment",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "humanity",
       "server": "render.com",
       "server_port": 443,
       "tag": "outage-723646aeaa991df3",
@@ -458,8 +458,12 @@
       "network": "tcp",
       "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
       "server": "107.150.105.84",
-      "server_port": 43022,
-      "tag": "outage-f44566c46dadb00f",
+      "server_port": 54657,
+      "tag": "outage-fb5782926693adb0",
+      "tls": {
+        "enabled": true,
+        "server_name": "us01.duotg.top"
+      },
       "type": "trojan"
     },
     {
@@ -476,6 +480,7 @@
         "outage-c99061590b464a93",
         "outage-b5a33e908fc6b5e5",
         "outage-91ea98c2dba2e2a2",
+        "outage-05e63c542e75ee33",
         "outage-cc07bd0a7892aedf",
         "outage-8679c8956b0ac75a",
         "outage-20af86d9e96f6edc",
@@ -490,12 +495,11 @@
         "outage-3a54e4dfa721850e",
         "outage-7f9b70eb5dfb74e8",
         "outage-5ef48ce06ae12758",
-        "outage-8b73e654f4ce83c5",
         "outage-723646aeaa991df3",
         "outage-3e351be22a5f78df",
         "outage-a1070c1c16783c7d",
         "outage-d41f8ae86dd03dfc",
-        "outage-f44566c46dadb00f"
+        "outage-fb5782926693adb0"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
