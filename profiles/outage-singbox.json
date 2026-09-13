@@ -52,18 +52,18 @@
     },
     {
       "network": "tcp",
-      "server": "188.114.97.6",
-      "server_port": 80,
-      "tag": "outage-7634ed35272e6238",
+      "password": "humanity",
+      "server": "213.182.199.137",
+      "server_port": 443,
+      "tag": "outage-2a7f72ec4ebbef93",
       "transport": {
         "headers": {
-          "Host": "silent-feather-8539.sddadad2233122eew.workers.dev"
+          "Host": "www.pleadcourt.org"
         },
-        "path": "/eyJqdW5rIjoiRURaNEp6YUhMbVlqdzQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0",
+        "path": "/assignment",
         "type": "ws"
       },
-      "type": "vless",
-      "uuid": "57bd62cf-5550-4075-8fa3-d4519aae8df0"
+      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -274,6 +274,25 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.78.170",
+      "server_port": 443,
+      "tag": "outage-5d4994ee1c44f239",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "XpnTeam-20"
+    },
+    {
+      "network": "tcp",
       "password": "humanity",
       "server": "141.101.90.101",
       "server_port": 443,
@@ -366,25 +385,6 @@
     {
       "network": "tcp",
       "password": "humanity",
-      "server": "172.67.200.219",
-      "server_port": 443,
-      "tag": "outage-5ef48ce06ae12758",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.calmlunch.com"
-        },
-        "path": "/assignment",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "humanity",
       "server": "render.com",
       "server_port": 443,
       "tag": "outage-723646aeaa991df3",
@@ -422,21 +422,6 @@
     },
     {
       "network": "tcp",
-      "password": "-wb.oDfOeHifTGMVEf",
-      "server": "c0yr9j09y2l9g0td8wa5.2whbrirhjgslm43zjcqei.workers.dev",
-      "server_port": 443,
-      "tag": "outage-d41f8ae86dd03dfc",
-      "transport": {
-        "headers": {
-          "Host": "c0YR9J09y2l9G0Td8WA5.2whBRirhjgsLm43ZJcqei.WoRKers.DEv"
-        },
-        "path": "/tr/CRGrZTTVLMALBJkE4?ed=2560",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
       "server": "107.150.105.84",
       "server_port": 54657,
@@ -454,7 +439,7 @@
       "outbounds": [
         "outage-6a679d3fb499ff54",
         "outage-f7bd18cfa46f19ca",
-        "outage-7634ed35272e6238",
+        "outage-2a7f72ec4ebbef93",
         "outage-ea986d06f2d6e5a2",
         "outage-c7d019eb5d5b21ea",
         "outage-dcbe5f78e9b2607e",
@@ -469,16 +454,15 @@
         "outage-3eeca001fdf726af",
         "outage-e86b0b5a88eb2af6",
         "outage-6937ae6682e8ddb1",
+        "outage-5d4994ee1c44f239",
         "outage-4908e625c9245f18",
         "outage-23b1915c20eb35b1",
         "outage-38d7d4e8bcda4077",
         "outage-3a54e4dfa721850e",
         "outage-7f9b70eb5dfb74e8",
-        "outage-5ef48ce06ae12758",
         "outage-723646aeaa991df3",
         "outage-3e351be22a5f78df",
         "outage-a1070c1c16783c7d",
-        "outage-d41f8ae86dd03dfc",
         "outage-fb5782926693adb0"
       ],
       "tag": "outage-auto",
