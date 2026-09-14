@@ -135,6 +135,26 @@
       "settings": {
         "servers": [
           {
+            "address": "212.183.88.136",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-111bfc483b214127"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "104.25.109.237",
             "password": "humanity",
             "port": 443
@@ -1099,35 +1119,6 @@
         }
       },
       "tag": "resilient-83777b6a9382f3a6"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.17.217.1",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "7327168e-4da6-4104-82ab-d52dd7128c47"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "nova-mango-cloud-c883.nova-5dd64d.workers.dev"
-        },
-        "wsSettings": {
-          "path": "/?u=ommkkobot"
-        }
-      },
-      "tag": "resilient-e92291ccf57c459a"
     },
     {
       "protocol": "vless",
