@@ -182,6 +182,25 @@
     {
       "network": "tcp",
       "password": "humanity",
+      "server": "104.18.8.83",
+      "server_port": 443,
+      "tag": "outage-3bd5f745c7c19e13",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.calmlunch.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
       "server": "172.67.149.60",
       "server_port": 443,
       "tag": "outage-b5a33e908fc6b5e5",
@@ -326,21 +345,6 @@
     },
     {
       "network": "tcp",
-      "password": "f18d6149-e214-8554-e737-f7523c8b2eea",
-      "server": "89.116.180.49",
-      "server_port": 443,
-      "tag": "outage-eed3c4df80ad2123",
-      "transport": {
-        "headers": {
-          "Host": "0403.infinityconfig4.workers.dev"
-        },
-        "path": "/sync",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": "humanity",
       "server": "render.com",
       "server_port": 443,
@@ -361,18 +365,6 @@
       },
       "type": "vless",
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-    },
-    {
-      "network": "tcp",
-      "password": "02cd3bac-2a78-4dbb-82b9-6b64084ddd8e",
-      "server": "107.150.105.84",
-      "server_port": 54657,
-      "tag": "outage-fb5782926693adb0",
-      "tls": {
-        "enabled": true,
-        "server_name": "us01.duotg.top"
-      },
-      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -412,6 +404,7 @@
         "outage-ea986d06f2d6e5a2",
         "outage-c7d019eb5d5b21ea",
         "outage-dcbe5f78e9b2607e",
+        "outage-3bd5f745c7c19e13",
         "outage-b5a33e908fc6b5e5",
         "outage-05e63c542e75ee33",
         "outage-38796a1018bee293",
@@ -422,10 +415,8 @@
         "outage-68608c04957fa28c",
         "outage-3eeca001fdf726af",
         "outage-b78ef3dba9f0813c",
-        "outage-eed3c4df80ad2123",
         "outage-723646aeaa991df3",
         "outage-f751385d7ae52367",
-        "outage-fb5782926693adb0",
         "outage-1a5a0eceeb4a8586",
         "outage-f055b0c626d2b027"
       ],
