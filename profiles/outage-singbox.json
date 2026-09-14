@@ -227,6 +227,40 @@
     },
     {
       "network": "tcp",
+      "password": "humanity",
+      "server": "104.18.152.208",
+      "server_port": 443,
+      "tag": "outage-38796a1018bee293",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.ignitelimit.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "f18d6149-e214-8554-e737-f7523c8b2eea",
+      "server": "45.131.4.118",
+      "server_port": 443,
+      "tag": "outage-78d79bf195e5a381",
+      "transport": {
+        "headers": {
+          "Host": "0403.infinityconfig4.workers.dev"
+        },
+        "path": "/sync",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "172.67.137.224",
       "server_port": 443,
       "tag": "outage-cc07bd0a7892aedf",
@@ -331,44 +365,6 @@
     {
       "network": "tcp",
       "password": "humanity",
-      "server": "104.26.15.137",
-      "server_port": 443,
-      "tag": "outage-38d7d4e8bcda4077",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.ignitelimit.com"
-        },
-        "path": "/assignment",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "humanity",
-      "server": "172.67.200.219",
-      "server_port": 443,
-      "tag": "outage-5ef48ce06ae12758",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.calmlunch.com"
-        },
-        "path": "/assignment",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "humanity",
       "server": "render.com",
       "server_port": 443,
       "tag": "outage-723646aeaa991df3",
@@ -434,6 +430,8 @@
         "outage-b5a33e908fc6b5e5",
         "outage-91ea98c2dba2e2a2",
         "outage-05e63c542e75ee33",
+        "outage-38796a1018bee293",
+        "outage-78d79bf195e5a381",
         "outage-cc07bd0a7892aedf",
         "outage-8679c8956b0ac75a",
         "outage-20af86d9e96f6edc",
@@ -441,8 +439,6 @@
         "outage-3eeca001fdf726af",
         "outage-b78ef3dba9f0813c",
         "outage-4908e625c9245f18",
-        "outage-38d7d4e8bcda4077",
-        "outage-5ef48ce06ae12758",
         "outage-723646aeaa991df3",
         "outage-3e351be22a5f78df",
         "outage-a1070c1c16783c7d",
