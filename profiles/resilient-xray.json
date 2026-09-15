@@ -416,6 +416,30 @@
       "tag": "resilient-8679c8956b0ac75a"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "172.64.152.23",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.calmlunch.com"
+        },
+        "wsSettings": {
+          "path": "/%2f%2fassignment"
+        }
+      },
+      "tag": "resilient-45564e4a49d95c50"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -744,7 +768,7 @@
       "settings": {
         "servers": [
           {
-            "address": "172.67.200.219",
+            "address": "162.159.244.91",
             "password": "humanity",
             "port": 443
           }
@@ -761,7 +785,7 @@
           "path": "/assignment"
         }
       },
-      "tag": "resilient-5ef48ce06ae12758"
+      "tag": "resilient-949cfa0e9a39aa08"
     },
     {
       "protocol": "trojan",
@@ -988,6 +1012,35 @@
         "security": "reality"
       },
       "tag": "resilient-c0c5c73a0af69d59"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "m2-production-2516.up.railway.app",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "ec43c5d5-b6f9-4077-95cf-1450abf48441"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "m2-production-2516.up.railway.app"
+        },
+        "wsSettings": {
+          "path": "/vless"
+        }
+      },
+      "tag": "resilient-bcfc89e3ab0dcea4"
     },
     {
       "protocol": "trojan",
@@ -1312,6 +1365,28 @@
       "settings": {
         "vnext": [
           {
+            "address": "13.39.134.201",
+            "port": 22222,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-6c45a692a748685f"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "144.31.5.64",
             "port": 443,
             "users": [
@@ -1333,6 +1408,37 @@
         }
       },
       "tag": "resilient-dfb88b3bf3a0247d"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.181.162.80",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e9a6734a-d030-4b6a-a8e7-e7d668e34c19"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": "xyz"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "JhcbkKehZk28bnMxyDeAgki8RYaYSkJCaF552vml61s",
+          "serverName": "au2-images.shop.samsung.com",
+          "shortId": "ac082a10"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-5eaf4a724b1a7758"
     },
     {
       "protocol": "vless",
@@ -1362,116 +1468,6 @@
         "security": "reality"
       },
       "tag": "resilient-84f4be007600b530"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "2.26.89.16",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "a71ad164-3b29-4dbe-aa66-24d095ca7b6d"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "NA5eMfdHkl_L80S75uxQwUirS9nvZ80V2u1s71KeXkc",
-          "serverName": "assets-ms-35.ecom-ai-solutions.com",
-          "shortId": "2de63d3fd7261b7e"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-60720c6ec173dac8"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "194.55.189.249",
-            "port": 40443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "8212a50b-25bf-4739-bba1-aaffb5ffc84c"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo",
-          "serverName": "deepl.com",
-          "shortId": "aae8"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-c9ff98d87cf966a7"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "2.27.201.10",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "ef3595fb-72f4-430d-9bf8-fff90327903a"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "l8vhMtOhGEsduzrsXfFg2tq3eiKVBHRQLIm0VtbUJDs",
-          "serverName": "nl-1.lunoa.ru",
-          "shortId": "277201d753225a01"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-6c1c4e39c8c62c89"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "ip.myip2.qzz.io",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.ignitelimit.com"
-        },
-        "wsSettings": {
-          "path": "/assignment#US\u7f8e\u56fd(ProxyGo\u514d\u8d39\u8282\u70b9\u5206\u4eab)"
-        }
-      },
-      "tag": "resilient-3f5577ac85a69eb8"
     },
     {
       "protocol": "vless",

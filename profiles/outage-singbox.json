@@ -253,6 +253,25 @@
     },
     {
       "network": "tcp",
+      "password": "humanity",
+      "server": "172.64.152.23",
+      "server_port": 443,
+      "tag": "outage-45564e4a49d95c50",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.calmlunch.com"
+        },
+        "path": "/%2f%2fassignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "104.16.240.214",
       "server_port": 80,
       "tag": "outage-6e7fa892c9a9fa0a",
@@ -304,21 +323,6 @@
           "Host": "www.pleadcourt.org"
         },
         "path": "/assignment",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "f18d6149-e214-8554-e737-f7523c8b2eea",
-      "server": "89.116.180.49",
-      "server_port": 443,
-      "tag": "outage-eed3c4df80ad2123",
-      "transport": {
-        "headers": {
-          "Host": "0403.infinityconfig4.workers.dev"
-        },
-        "path": "/sync",
         "type": "ws"
       },
       "type": "trojan"
@@ -414,11 +418,11 @@
         "outage-78d79bf195e5a381",
         "outage-cc07bd0a7892aedf",
         "outage-8679c8956b0ac75a",
+        "outage-45564e4a49d95c50",
         "outage-6e7fa892c9a9fa0a",
         "outage-68608c04957fa28c",
         "outage-3eeca001fdf726af",
         "outage-b78ef3dba9f0813c",
-        "outage-eed3c4df80ad2123",
         "outage-f751385d7ae52367",
         "outage-918cd0a57546eab2",
         "outage-921d4f3e9934e41a",
