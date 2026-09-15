@@ -277,23 +277,6 @@
       "tag": "resilient-3bd5f745c7c19e13"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "172.67.149.60",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-b5a33e908fc6b5e5"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -550,6 +533,31 @@
         }
       },
       "tag": "resilient-b78ef3dba9f0813c"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.170.79",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "435bda4c-fe5e-42c9-a3ad-15334943b38a"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-9dbeb5fac830715d"
     },
     {
       "protocol": "vless",
@@ -833,23 +841,6 @@
       "tag": "resilient-3f32cc322399d5ea"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "render.com",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-723646aeaa991df3"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -926,6 +917,31 @@
         }
       },
       "tag": "resilient-ae36fa963d0e0c75"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.18.1.125",
+            "port": 8880,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "416f18ec-11f3-4648-9693-8c6480d0662d"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-d59b15f63461ff2e"
     },
     {
       "protocol": "vless",
@@ -1025,35 +1041,6 @@
         "security": "reality"
       },
       "tag": "resilient-c0c5c73a0af69d59"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "novantunnel.tech",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "05b1737c-c92e-41cd-af4f-b4b8c6150e7b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "novantunnel.tech"
-        },
-        "wsSettings": {
-          "path": "/Novan-AE8"
-        }
-      },
-      "tag": "resilient-e59f6c6b8dca6687"
     },
     {
       "protocol": "vless",
@@ -1289,28 +1276,6 @@
       "tag": "resilient-64dd2790e079ee62"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "15.236.172.122",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-8518c0cc08136717"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1494,31 +1459,81 @@
       "settings": {
         "vnext": [
           {
-            "address": "150.40.126.22",
-            "port": 443,
+            "address": "35.180.221.118",
+            "port": 22222,
             "users": [
               {
                 "encryption": "none",
-                "id": "2f35965a-9a9b-45fd-ba32-987296dfb6be"
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "media.v1.StreamService"
-        },
-        "network": "grpc",
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-e24b9d03a75f49bf"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "201.51.10.240",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "01a21e01-6098-4c3b-a6fd-1a04d64d0c7f"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
         "realitySettings": {
           "fingerprint": "firefox",
-          "publicKey": "sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs",
-          "serverName": "rs4.univesalsrv.com",
-          "shortId": "861ac7d66953e55f"
+          "publicKey": "VWDBW2RS3o-oFBrSNdpncoaVVU8KixbPNHoj4-Wy7lM",
+          "serverName": "cdn6.goonars.com",
+          "shortId": "04a69fc6",
+          "spiderX": "/"
         },
         "security": "reality"
       },
-      "tag": "resilient-a5f645d08377e121"
+      "tag": "resilient-06f02423293f13dd"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.158.206.80",
+            "port": 23576,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "serverName": "fuck.rkn",
+          "shortId": "01"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-06bf908c82321ca6"
     },
     {
       "protocol": "blackhole",
