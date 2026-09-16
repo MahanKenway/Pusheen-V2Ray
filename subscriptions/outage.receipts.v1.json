@@ -1,10 +1,10 @@
 {
   "by_protocol": {
-    "trojan": 11,
+    "trojan": 12,
     "vless": 18
   },
-  "count": 29,
-  "created_at": "2026-09-15T22:57:07.936376+00:00",
+  "count": 30,
+  "created_at": "2026-09-16T01:19:52.588453+00:00",
   "evidence": "recent successful TCP reachability with tighter anti-concentration policy",
   "max_evidence_age_hours": 72,
   "notice": "A receipt records why the item is eligible for this tier at publication time. It does not disclose hostnames, credentials, raw URIs, or guarantee availability from another network.",
@@ -24,11 +24,11 @@
       "transport_family": "vless:ws:none"
     },
     {
-      "id": "6a679d3fb499ff54",
+      "id": "8ba3e5b5db207bb4",
       "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
       "latest_source_id": "farid-iran-trojan-probationary",
       "protocol": "trojan",
-      "transport_family": "trojan:ws:tls"
+      "transport_family": "trojan:httpupgrade:tls"
     },
     {
       "id": "111bfc483b214127",
@@ -87,13 +87,6 @@
       "transport_family": "vless:httpupgrade:none"
     },
     {
-      "id": "05e63c542e75ee33",
-      "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
-      "latest_source_id": "farid-iran-trojan-probationary",
-      "protocol": "trojan",
-      "transport_family": "trojan:ws:tls"
-    },
-    {
       "id": "38796a1018bee293",
       "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
       "latest_source_id": "farid-iran-trojan-probationary",
@@ -150,6 +143,13 @@
       "transport_family": "vless:ws:tls"
     },
     {
+      "id": "eed3c4df80ad2123",
+      "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
+      "latest_source_id": "farid-iran-trojan-probationary",
+      "protocol": "trojan",
+      "transport_family": "trojan:ws:none"
+    },
+    {
       "id": "f751385d7ae52367",
       "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
       "latest_source_id": "configforge-vless",
@@ -162,6 +162,13 @@
       "latest_source_id": "raydikal-verified",
       "protocol": "vless",
       "transport_family": "vless:tcp:reality"
+    },
+    {
+      "id": "45c1ae46f518f103",
+      "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
+      "latest_source_id": "ebrasha-trojan-probationary",
+      "protocol": "trojan",
+      "transport_family": "trojan:ws:tls"
     },
     {
       "id": "918cd0a57546eab2",
