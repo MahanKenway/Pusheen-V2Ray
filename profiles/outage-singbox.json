@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "104.19.54.82",
+      "server_port": 443,
+      "tag": "outage-14febd6ea732fb83",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        },
+        "path": "/jp/videos?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.170",
       "server_port": 443,
       "tag": "outage-e590ab189316802a",
@@ -222,21 +241,6 @@
     },
     {
       "network": "tcp",
-      "password": "humanity",
-      "server": "8.47.69.0",
-      "server_port": 443,
-      "tag": "outage-b78ef3dba9f0813c",
-      "transport": {
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        },
-        "path": "/assignment",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "server": "104.17.170.79",
       "server_port": 80,
       "tag": "outage-9dbeb5fac830715d",
@@ -268,21 +272,6 @@
       },
       "type": "vless",
       "uuid": "97ae62fd-e140-43e6-adbe-d776fa91ceea"
-    },
-    {
-      "network": "tcp",
-      "password": "f18d6149-e214-8554-e737-f7523c8b2eea",
-      "server": "89.116.180.49",
-      "server_port": 443,
-      "tag": "outage-eed3c4df80ad2123",
-      "transport": {
-        "headers": {
-          "Host": "0403.infinityconfig4.workers.dev"
-        },
-        "path": "/sync",
-        "type": "ws"
-      },
-      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -380,6 +369,7 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-14febd6ea732fb83",
         "outage-e590ab189316802a",
         "outage-34989c85cd4afd94",
         "outage-111bfc483b214127",
@@ -392,10 +382,8 @@
         "outage-45564e4a49d95c50",
         "outage-6e7fa892c9a9fa0a",
         "outage-68608c04957fa28c",
-        "outage-b78ef3dba9f0813c",
         "outage-9dbeb5fac830715d",
         "outage-5b06625f66e7e9cb",
-        "outage-eed3c4df80ad2123",
         "outage-f751385d7ae52367",
         "outage-45c1ae46f518f103",
         "outage-918cd0a57546eab2",

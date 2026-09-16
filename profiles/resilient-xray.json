@@ -28,6 +28,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "104.19.54.82",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d342d11e-d424-4583-b36e-524ab1f0afa4"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "cdn8848.776676.xyz"
+        },
+        "wsSettings": {
+          "path": "/jp/videos?ed=2560"
+        }
+      },
+      "tag": "resilient-14febd6ea732fb83"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "199.232.78.170",
             "port": 443,
             "users": [
@@ -76,6 +105,54 @@
         }
       },
       "tag": "resilient-34989c85cd4afd94"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.114.96.4",
+            "password": "nzrc4ma4087c1ukr",
+            "port": 2083
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "path": "/WWEiIlL225IiiILl"
+        },
+        "network": "httpupgrade",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "dl2.rahetejarat.com"
+        }
+      },
+      "tag": "resilient-aba678a38c25a0a6"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.114.96.5",
+            "password": "nzrc4ma4087c1ukr",
+            "port": 2083
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "path": "/WWEiIlL225IiiILl"
+        },
+        "network": "httpupgrade",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "dl2.rahetejarat.com"
+        }
+      },
+      "tag": "resilient-f0e9cdc3dd2d45e6"
     },
     {
       "protocol": "trojan",
@@ -751,30 +828,6 @@
       "tag": "resilient-2509e75dd77d9e92"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.16.73.213",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.ignitelimit.com"
-        },
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-3f32cc322399d5ea"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1380,68 +1433,6 @@
         }
       },
       "tag": "resilient-dfb88b3bf3a0247d"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "195.189.97.12",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "01a21e01-6098-4c3b-a6fd-1a04d64d0c7f"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "BookCatalog"
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "SiyX5MHMfE_232cYFpidAhU4eBxaoNphSSnNbVc1xnc",
-          "serverName": "reg.jarbook.net",
-          "shortId": "085f6d90"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-cfaf2695fa5e52ef"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.223.57.10",
-            "port": 33743,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "b3a11068-1a7e-4643-85de-7c82cce46943"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "TunService"
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
-          "serverName": "www.google.com",
-          "spiderX": "/"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-4d9cc5ff15b217a6"
     },
     {
       "protocol": "trojan",
