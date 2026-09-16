@@ -1,10 +1,10 @@
 {
   "by_protocol": {
     "trojan": 12,
-    "vless": 17
+    "vless": 18
   },
-  "count": 29,
-  "created_at": "2026-09-16T11:47:49.708128+00:00",
+  "count": 30,
+  "created_at": "2026-09-16T15:35:12.724590+00:00",
   "evidence": "recent successful TCP reachability with tighter anti-concentration policy",
   "max_evidence_age_hours": 72,
   "notice": "A receipt records why the item is eligible for this tier at publication time. It does not disclose hostnames, credentials, raw URIs, or guarantee availability from another network.",
@@ -80,13 +80,6 @@
       "transport_family": "vless:grpc:tls"
     },
     {
-      "id": "2a7f72ec4ebbef93",
-      "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
-      "latest_source_id": "farid-iran-trojan-probationary",
-      "protocol": "trojan",
-      "transport_family": "trojan:ws:none"
-    },
-    {
       "id": "3bd5f745c7c19e13",
       "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
       "latest_source_id": "farid-iran-trojan-probationary",
@@ -136,6 +129,13 @@
       "transport_family": "vless:ws:tls"
     },
     {
+      "id": "b78ef3dba9f0813c",
+      "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
+      "latest_source_id": "farid-iran-trojan-probationary",
+      "protocol": "trojan",
+      "transport_family": "trojan:ws:none"
+    },
+    {
       "id": "9dbeb5fac830715d",
       "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
       "latest_source_id": "iboxz-vless-probationary",
@@ -183,6 +183,13 @@
       "latest_source_id": "configforge-vless",
       "protocol": "vless",
       "transport_family": "vless:ws:tls"
+    },
+    {
+      "id": "58ec60f2659d1f04",
+      "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
+      "latest_source_id": "configforge-vless",
+      "protocol": "vless",
+      "transport_family": "vless:grpc:reality"
     },
     {
       "id": "06f02423293f13dd",

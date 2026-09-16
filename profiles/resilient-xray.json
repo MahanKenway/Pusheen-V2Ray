@@ -285,26 +285,6 @@
       "settings": {
         "servers": [
           {
-            "address": "213.182.199.137",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-2a7f72ec4ebbef93"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
             "address": "104.18.8.83",
             "password": "humanity",
             "port": 443
@@ -955,35 +935,6 @@
       "tag": "resilient-d59b15f63461ff2e"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "k2.cloud--vpn.site",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "88b44962-7f99-4846-9113-6b0624b5a6a4"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-d08e37ad3c30ab4b"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1006,6 +957,31 @@
         }
       },
       "tag": "resilient-3bc3b66ad48df5fc"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "freesocks.work",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "c2e317b0-0847-4579-9b78-7b678634ffc4"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/@BlueKnight_net--@BlueKnight_net"
+        }
+      },
+      "tag": "resilient-783ca9a2f0048fad"
     },
     {
       "protocol": "vless",
@@ -1453,6 +1429,37 @@
         }
       },
       "tag": "resilient-14d2b499c4193a0d"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "89.35.14.30",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "2f35965a-9a9b-45fd-ba32-987296dfb6be"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": "hub.v1.RelayService"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY",
+          "serverName": "md1.univesalsrv.com",
+          "shortId": "221ba6174224ca5b"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-58ec60f2659d1f04"
     },
     {
       "protocol": "vless",
