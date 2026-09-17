@@ -169,6 +169,31 @@
       "tag": "resilient-3bd5f745c7c19e13"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "89.117.112.30",
+            "port": 8880,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "6202b230-417c-4d8e-b624-0f71afa9c75d"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-6ffb693e04abe679"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -191,6 +216,30 @@
         }
       },
       "tag": "resilient-45564e4a49d95c50"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.114.97.6",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.pleadcourt.org"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-2eca03d1e81a262f"
     },
     {
       "protocol": "vless",
@@ -423,18 +472,13 @@
       "tag": "resilient-949cfa0e9a39aa08"
     },
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "188.114.97.6",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "44eae030-290b-4083-8102-6f8bab05701b"
-              }
-            ]
+            "address": "104.21.8.107",
+            "password": "humanity",
+            "port": 443
           }
         ]
       },
@@ -443,13 +487,13 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "cfvvv-ev1.pages.dev"
+          "serverName": "www.ignitelimit.com"
         },
         "wsSettings": {
-          "path": "/"
+          "path": "/assignment"
         }
       },
-      "tag": "resilient-2509e75dd77d9e92"
+      "tag": "resilient-8adc693f515ff5d2"
     },
     {
       "protocol": "vless",
@@ -1219,6 +1263,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "170.101.109.37",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "bf645ffe-a3cc-4480-8e4c-9bcd1af41052"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "rTnh7Y8RsSA5HSvFf-pWT49x8va6U6XHMRgNiMuwB0A",
+          "serverName": "www.cloudflare.com",
+          "shortId": "ab88d256"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-c487169bb53824b5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "51.158.206.86",
             "port": 23576,
             "users": [
@@ -1293,37 +1366,6 @@
         }
       },
       "tag": "resilient-14d2b499c4193a0d"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "95.181.162.80",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e9a6734a-d030-4b6a-a8e7-e7d668e34c19"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "xyz"
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "JhcbkKehZk28bnMxyDeAgki8RYaYSkJCaF552vml61s",
-          "serverName": "au2-images.shop.samsung.com",
-          "shortId": "ac082a10"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-5eaf4a724b1a7758"
     },
     {
       "protocol": "trojan",

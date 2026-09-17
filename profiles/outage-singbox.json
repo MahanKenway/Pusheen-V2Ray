@@ -67,6 +67,21 @@
     },
     {
       "network": "tcp",
+      "server": "89.117.112.30",
+      "server_port": 8880,
+      "tag": "outage-6ffb693e04abe679",
+      "transport": {
+        "headers": {
+          "Host": "vms.lifetime11.workers.dev"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    },
+    {
+      "network": "tcp",
       "password": "humanity",
       "server": "172.64.152.23",
       "server_port": 443,
@@ -80,6 +95,25 @@
           "Host": "www.calmlunch.com"
         },
         "path": "/%2f%2fassignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "tag": "outage-2eca03d1e81a262f",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        },
+        "path": "/assignment",
         "type": "ws"
       },
       "type": "trojan"
@@ -222,25 +256,6 @@
     },
     {
       "network": "tcp",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "tag": "outage-2509e75dd77d9e92",
-      "tls": {
-        "enabled": true,
-        "server_name": "cfvvv-ev1.pages.dev"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cfvvv-ev1.pages.dev"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "44eae030-290b-4083-8102-6f8bab05701b"
-    },
-    {
-      "network": "tcp",
       "server": "104.21.83.140",
       "server_port": 443,
       "tag": "outage-0e0484d9a6223ec4",
@@ -272,25 +287,6 @@
       },
       "type": "vless",
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-    },
-    {
-      "network": "tcp",
-      "password": "humanity",
-      "server": "45.205.0.6",
-      "server_port": 443,
-      "tag": "outage-afcd8b1d8882fc56",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.calmlunch.com"
-        },
-        "path": "/assignment",
-        "type": "ws"
-      },
-      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -395,7 +391,9 @@
         "outage-14febd6ea732fb83",
         "outage-111bfc483b214127",
         "outage-3bd5f745c7c19e13",
+        "outage-6ffb693e04abe679",
         "outage-45564e4a49d95c50",
+        "outage-2eca03d1e81a262f",
         "outage-5f2eb028b708c93b",
         "outage-9dbeb5fac830715d",
         "outage-5b06625f66e7e9cb",
@@ -404,10 +402,8 @@
         "outage-eb51215bb0fbc336",
         "outage-255db5237d042ff8",
         "outage-949cfa0e9a39aa08",
-        "outage-2509e75dd77d9e92",
         "outage-0e0484d9a6223ec4",
         "outage-f751385d7ae52367",
-        "outage-afcd8b1d8882fc56",
         "outage-9fb86e02e5785ce7",
         "outage-45c1ae46f518f103",
         "outage-918cd0a57546eab2",
