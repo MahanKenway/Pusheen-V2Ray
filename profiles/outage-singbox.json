@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "tag": "outage-874dd565295fa9c2",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "XpnTeam-2"
+    },
+    {
+      "network": "tcp",
       "server": "104.19.54.82",
       "server_port": 443,
       "tag": "outage-14febd6ea732fb83",
@@ -30,6 +49,33 @@
       },
       "type": "vless",
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
+      "server": "188.114.97.7",
+      "server_port": 443,
+      "tag": "outage-2521c9469bd73ec1",
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "69.46.46.109",
+      "server_port": 443,
+      "tag": "outage-064c91df83c35938",
+      "tls": {
+        "enabled": true,
+        "server_name": "net-05b215-358e1e-production.up.railway.app"
+      },
+      "transport": {
+        "headers": {
+          "Host": "net-05b215-358e1e-production.up.railway.app"
+        },
+        "path": "/ws/Default",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "10c3b62f-59da-55cb-b24f-2072ecb4348c"
     },
     {
       "network": "tcp",
@@ -306,25 +352,6 @@
     },
     {
       "network": "tcp",
-      "server": "172.64.53.87",
-      "server_port": 2087,
-      "tag": "outage-0afe92e256cd8dbf",
-      "tls": {
-        "enabled": true,
-        "server_name": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
-      },
-      "transport": {
-        "headers": {
-          "Host": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
-        },
-        "path": "/fp=chrome",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
-    },
-    {
-      "network": "tcp",
       "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
       "server": "edu.ruangguru.com",
       "server_port": 443,
@@ -377,34 +404,14 @@
       "uuid": "cf39fab0-bb85-42cb-9945-2ad69d78e575"
     },
     {
-      "network": "tcp",
-      "password": "@Cooonfig@@@",
-      "server": "91.107.155.9",
-      "server_port": 29792,
-      "tag": "outage-1a5a0eceeb4a8586",
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "57.129.41.216",
-      "server_port": 80,
-      "tag": "outage-f055b0c626d2b027",
-      "transport": {
-        "headers": {
-          "Host": "OV-Germany1.09vpn.com"
-        },
-        "path": "/vless/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "7d74eae4-8a06-4306-a923-ad686f30bf26"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-874dd565295fa9c2",
         "outage-14febd6ea732fb83",
+        "outage-2521c9469bd73ec1",
+        "outage-064c91df83c35938",
         "outage-3bd5f745c7c19e13",
         "outage-6ffb693e04abe679",
         "outage-45564e4a49d95c50",
@@ -420,12 +427,9 @@
         "outage-afcd8b1d8882fc56",
         "outage-56dff323821df24f",
         "outage-9fb86e02e5785ce7",
-        "outage-0afe92e256cd8dbf",
         "outage-45c1ae46f518f103",
         "outage-918cd0a57546eab2",
-        "outage-921d4f3e9934e41a",
-        "outage-1a5a0eceeb4a8586",
-        "outage-f055b0c626d2b027"
+        "outage-921d4f3e9934e41a"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
