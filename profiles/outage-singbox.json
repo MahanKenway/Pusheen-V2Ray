@@ -14,6 +14,40 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "tag": "outage-6edc1d07f63f8094",
+      "tls": {
+        "enabled": true,
+        "server_name": "vip.868068.xyz"
+      },
+      "transport": {
+        "headers": {
+          "Host": "vip.868068.xyz"
+        },
+        "path": "/proxyip=us.xiabibi.cf",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "8102891d-7b37-4dc5-8261-9474b59b5c63"
+    },
+    {
+      "network": "tcp",
+      "server": "104.21.23.72",
+      "server_port": 8880,
+      "tag": "outage-fc28c61f59c6325c",
+      "transport": {
+        "headers": {
+          "Host": "flat-sun-b8d3.225-154.workers.dev"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "bf667068-11cb-4c37-a867-4a2b03b45555"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
       "tag": "outage-874dd565295fa9c2",
@@ -79,6 +113,25 @@
     },
     {
       "network": "tcp",
+      "server": "45.130.125.229",
+      "server_port": 443,
+      "tag": "outage-c97c61628d341172",
+      "tls": {
+        "enabled": true,
+        "server_name": "octopusss5.info"
+      },
+      "transport": {
+        "headers": {
+          "Host": "octopusss5.info"
+        },
+        "path": "/udfyfws",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "c35050ce-01ab-45a9-91b8-54cec637d0a8"
+    },
+    {
+      "network": "tcp",
       "server": "104.21.70.21",
       "server_port": 443,
       "tag": "outage-bf554f389ef31e7e",
@@ -136,25 +189,6 @@
     },
     {
       "network": "tcp",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "tag": "outage-4457d314de7f461d",
-      "tls": {
-        "enabled": true,
-        "server_name": "xi.tbv.ccwu.cc"
-      },
-      "transport": {
-        "headers": {
-          "Host": "xi.tbv.ccwu.cc"
-        },
-        "path": "/proxyip=us.xiabibi.cf",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "b2593749-691c-428c-9481-14979cba3446"
-    },
-    {
-      "network": "tcp",
       "server": "139.64.235.117",
       "server_port": 443,
       "tag": "outage-1381a0ea56b99c5c",
@@ -174,40 +208,6 @@
     },
     {
       "network": "tcp",
-      "server": "104.24.0.184",
-      "server_port": 443,
-      "tag": "outage-14d8f74efd6b2a59",
-      "tls": {
-        "enabled": true,
-        "server_name": "cfvvv-ev1.pages.dev"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cfvvv-ev1.pages.dev"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "44eae030-290b-4083-8102-6f8bab05701b"
-    },
-    {
-      "network": "tcp",
-      "server": "89.117.112.30",
-      "server_port": 8880,
-      "tag": "outage-6ffb693e04abe679",
-      "transport": {
-        "headers": {
-          "Host": "vms.lifetime11.workers.dev"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    },
-    {
-      "network": "tcp",
       "password": "humanity",
       "server": "172.64.152.23",
       "server_port": 443,
@@ -221,6 +221,25 @@
           "Host": "www.calmlunch.com"
         },
         "path": "/%2f%2fassignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "047c5913-4618-010c-6a52-bb584d71d8b6",
+      "server": "solipor-production-7697.up.railway.app",
+      "server_port": 443,
+      "tag": "outage-8a2cef33a22616b4",
+      "tls": {
+        "enabled": true,
+        "server_name": "solipor-production-7697.up.railway.app"
+      },
+      "transport": {
+        "headers": {
+          "Host": "solipor-production-7697.up.railway.app"
+        },
+        "path": "/trojan-ws",
         "type": "ws"
       },
       "type": "trojan"
@@ -303,18 +322,6 @@
     },
     {
       "network": "tcp",
-      "password": "047c5913-4618-010c-6a52-bb584d71d8b6",
-      "server": "solipor-production-7697.up.railway.app",
-      "server_port": 443,
-      "tag": "outage-7c376d557b5b484f",
-      "tls": {
-        "enabled": true,
-        "server_name": "solipor-production-7697.up.railway.app"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": "03c93f49-d573-4889-a4bb-187047c5a314",
       "server": "104.21.71.83",
       "server_port": 443,
@@ -390,31 +397,40 @@
       "type": "trojan"
     },
     {
+      "network": "tcp",
+      "password": "0010996f-3eab-4804-9b3a-3a889d6767fc",
+      "server": "krhtybay.catcat321.com",
+      "server_port": 20095,
+      "tag": "outage-74443c71fa5676f2",
+      "type": "trojan"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-6edc1d07f63f8094",
+        "outage-fc28c61f59c6325c",
         "outage-874dd565295fa9c2",
         "outage-14febd6ea732fb83",
         "outage-2521c9469bd73ec1",
         "outage-064c91df83c35938",
+        "outage-c97c61628d341172",
         "outage-bf554f389ef31e7e",
         "outage-0a009c82e8530001",
         "outage-5f4b642c81beb0e5",
-        "outage-4457d314de7f461d",
         "outage-1381a0ea56b99c5c",
-        "outage-14d8f74efd6b2a59",
-        "outage-6ffb693e04abe679",
         "outage-45564e4a49d95c50",
+        "outage-8a2cef33a22616b4",
         "outage-7a15c8634258730b",
         "outage-949cfa0e9a39aa08",
         "outage-8adc693f515ff5d2",
         "outage-0e0484d9a6223ec4",
-        "outage-7c376d557b5b484f",
         "outage-b4b390fdde5398d6",
         "outage-afcd8b1d8882fc56",
         "outage-55567b40b4e372f8",
-        "outage-45c1ae46f518f103"
+        "outage-45c1ae46f518f103",
+        "outage-74443c71fa5676f2"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
