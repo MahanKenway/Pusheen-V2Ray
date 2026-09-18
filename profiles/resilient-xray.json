@@ -288,6 +288,31 @@
         "vnext": [
           {
             "address": "104.21.70.21",
+            "port": 8080,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "33918b20-9e02-4dc6-8b30-79b2d4b2e0e6"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/eyJqdW5rIjoiUjJBU3JkVlRwSWtnciIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0"
+        }
+      },
+      "tag": "resilient-2892717887cf6f16"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.70.21",
             "port": 443,
             "users": [
               {
@@ -457,30 +482,6 @@
       "settings": {
         "servers": [
           {
-            "address": "172.64.152.23",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.calmlunch.com"
-        },
-        "wsSettings": {
-          "path": "/%2f%2fassignment"
-        }
-      },
-      "tag": "resilient-45564e4a49d95c50"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
             "address": "solipor-production-7697.up.railway.app",
             "password": "047c5913-4618-010c-6a52-bb584d71d8b6",
             "port": 443
@@ -631,30 +632,6 @@
         }
       },
       "tag": "resilient-255db5237d042ff8"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "162.159.244.91",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.calmlunch.com"
-        },
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-949cfa0e9a39aa08"
     },
     {
       "protocol": "trojan",
@@ -1091,35 +1068,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "m2-production-2516.up.railway.app",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "ec43c5d5-b6f9-4077-95cf-1450abf48441"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "m2-production-2516.up.railway.app"
-        },
-        "wsSettings": {
-          "path": "/vless"
-        }
-      },
-      "tag": "resilient-bcfc89e3ab0dcea4"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "51.158.206.34",
             "port": 23576,
             "users": [
@@ -1178,6 +1126,57 @@
       "settings": {
         "vnext": [
           {
+            "address": "31.76.39.153",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "c5694dc5-39fd-4a92-8430-3837baa522a3"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw",
+          "serverName": "gb.superbuba.top",
+          "shortId": "4fa44664f6a566d3"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-86a4812eb303ab04"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "13.39.230.204",
+            "port": 22222,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-9884941781fbd6e4"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "13.36.35.121",
             "port": 22223,
             "users": [
@@ -1196,26 +1195,28 @@
       "tag": "resilient-9b274451d03572dd"
     },
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "52.47.142.19",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
+            "address": "www.speedtest.net",
+            "password": "04ac3ce8-6512-4170-96d3-da6bffe84c1e",
+            "port": 2083
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none"
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "FreemnM.paNOtosu.StORe"
+        },
+        "wsSettings": {
+          "path": "/trLb3dWHIEtHE7MPUs/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ="
+        }
       },
-      "tag": "resilient-9b31e64d421b55f7"
+      "tag": "resilient-0e8050b10db08f99"
     },
     {
       "protocol": "vless",

@@ -133,6 +133,21 @@
     {
       "network": "tcp",
       "server": "104.21.70.21",
+      "server_port": 8080,
+      "tag": "outage-2892717887cf6f16",
+      "transport": {
+        "headers": {
+          "Host": "auto-scale-238b2b.infra-core-1630dd.workers.dev"
+        },
+        "path": "/eyJqdW5rIjoiUjJBU3JkVlRwSWtnciIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "33918b20-9e02-4dc6-8b30-79b2d4b2e0e6"
+    },
+    {
+      "network": "tcp",
+      "server": "104.21.70.21",
       "server_port": 443,
       "tag": "outage-bf554f389ef31e7e",
       "tls": {
@@ -208,25 +223,6 @@
     },
     {
       "network": "tcp",
-      "password": "humanity",
-      "server": "172.64.152.23",
-      "server_port": 443,
-      "tag": "outage-45564e4a49d95c50",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.calmlunch.com"
-        },
-        "path": "/%2f%2fassignment",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": "047c5913-4618-010c-6a52-bb584d71d8b6",
       "server": "solipor-production-7697.up.railway.app",
       "server_port": 443,
@@ -250,25 +246,6 @@
       "server": "104.18.12.149",
       "server_port": 443,
       "tag": "outage-7a15c8634258730b",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.calmlunch.com"
-        },
-        "path": "/assignment",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "humanity",
-      "server": "162.159.244.91",
-      "server_port": 443,
-      "tag": "outage-949cfa0e9a39aa08",
       "tls": {
         "enabled": true,
         "server_name": "www.calmlunch.com"
@@ -398,6 +375,55 @@
     },
     {
       "network": "tcp",
+      "password": "04ac3ce8-6512-4170-96d3-da6bffe84c1e",
+      "server": "www.speedtest.net",
+      "server_port": 2083,
+      "tag": "outage-0e8050b10db08f99",
+      "tls": {
+        "enabled": true,
+        "server_name": "FreemnM.paNOtosu.StORe"
+      },
+      "transport": {
+        "headers": {
+          "Host": "FreemnM.paNOtosu.StORe"
+        },
+        "path": "/trLb3dWHIEtHE7MPUs/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
+      "server": "185.114.72.31",
+      "server_port": 2053,
+      "tag": "outage-48ef70318a528e76",
+      "transport": {
+        "headers": {
+          "Host": "www.calmlunch.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
+      "server": "185.220.100.168",
+      "server_port": 443,
+      "tag": "outage-14d2b499c4193a0d",
+      "transport": {
+        "headers": {
+          "Host": "www.calmlunch.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "0010996f-3eab-4804-9b3a-3a889d6767fc",
       "server": "krhtybay.catcat321.com",
       "server_port": 20095,
@@ -416,20 +442,22 @@
         "outage-2521c9469bd73ec1",
         "outage-064c91df83c35938",
         "outage-c97c61628d341172",
+        "outage-2892717887cf6f16",
         "outage-bf554f389ef31e7e",
         "outage-0a009c82e8530001",
         "outage-5f4b642c81beb0e5",
         "outage-1381a0ea56b99c5c",
-        "outage-45564e4a49d95c50",
         "outage-8a2cef33a22616b4",
         "outage-7a15c8634258730b",
-        "outage-949cfa0e9a39aa08",
         "outage-8adc693f515ff5d2",
         "outage-0e0484d9a6223ec4",
         "outage-b4b390fdde5398d6",
         "outage-afcd8b1d8882fc56",
         "outage-55567b40b4e372f8",
         "outage-45c1ae46f518f103",
+        "outage-0e8050b10db08f99",
+        "outage-48ef70318a528e76",
+        "outage-14d2b499c4193a0d",
         "outage-74443c71fa5676f2"
       ],
       "tag": "outage-auto",
