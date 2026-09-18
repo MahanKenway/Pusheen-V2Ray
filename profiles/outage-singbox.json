@@ -79,6 +79,63 @@
     },
     {
       "network": "tcp",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "tag": "outage-4457d314de7f461d",
+      "tls": {
+        "enabled": true,
+        "server_name": "xi.tbv.ccwu.cc"
+      },
+      "transport": {
+        "headers": {
+          "Host": "xi.tbv.ccwu.cc"
+        },
+        "path": "/proxyip=us.xiabibi.cf",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "b2593749-691c-428c-9481-14979cba3446"
+    },
+    {
+      "network": "tcp",
+      "server": "139.64.235.117",
+      "server_port": 443,
+      "tag": "outage-1381a0ea56b99c5c",
+      "tls": {
+        "enabled": true,
+        "server_name": "nb.lovecf.ggff.net"
+      },
+      "transport": {
+        "headers": {
+          "Host": "nb.lovecf.ggff.net"
+        },
+        "path": "/proxyip=us.xiabibi.cf",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    },
+    {
+      "network": "tcp",
+      "server": "104.24.0.184",
+      "server_port": 443,
+      "tag": "outage-14d8f74efd6b2a59",
+      "tls": {
+        "enabled": true,
+        "server_name": "cfvvv-ev1.pages.dev"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cfvvv-ev1.pages.dev"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "44eae030-290b-4083-8102-6f8bab05701b"
+    },
+    {
+      "network": "tcp",
       "server": "89.117.112.30",
       "server_port": 8880,
       "tag": "outage-6ffb693e04abe679",
@@ -107,25 +164,6 @@
           "Host": "www.calmlunch.com"
         },
         "path": "/%2f%2fassignment",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "humanity",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "tag": "outage-2eca03d1e81a262f",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        },
-        "path": "/assignment",
         "type": "ws"
       },
       "type": "trojan"
@@ -197,21 +235,6 @@
         "type": "ws"
       },
       "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "104.17.98.178",
-      "server_port": 80,
-      "tag": "outage-255db5237d042ff8",
-      "transport": {
-        "headers": {
-          "Host": "kr1.175852.xyz"
-        },
-        "path": "/abcde",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "7d96f544-c496-41cf-dd61-337f0aff062a"
     },
     {
       "network": "tcp",
@@ -310,22 +333,22 @@
     },
     {
       "network": "tcp",
-      "server": "104.21.63.28",
+      "password": "humanity",
+      "server": "172.67.188.109",
       "server_port": 443,
-      "tag": "outage-56dff323821df24f",
+      "tag": "outage-55567b40b4e372f8",
       "tls": {
         "enabled": true,
-        "server_name": "cfvvv-ev1.pages.dev"
+        "server_name": "www.ignitelimit.com"
       },
       "transport": {
         "headers": {
-          "Host": "cfvvv-ev1.pages.dev"
+          "Host": "www.ignitelimit.com"
         },
-        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512",
+        "path": "/assignment",
         "type": "ws"
       },
-      "type": "vless",
-      "uuid": "44eae030-290b-4083-8102-6f8bab05701b"
+      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -362,25 +385,6 @@
       "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
     },
     {
-      "network": "tcp",
-      "server": "51.38.127.93",
-      "server_port": 443,
-      "tag": "outage-921d4f3e9934e41a",
-      "tls": {
-        "enabled": true,
-        "server_name": "rubifen.adaspoloandco.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "rubifen.adaspoloandco.com"
-        },
-        "path": "/GOrbEh",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "cf39fab0-bb85-42cb-9945-2ad69d78e575"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -389,23 +393,23 @@
         "outage-14febd6ea732fb83",
         "outage-2521c9469bd73ec1",
         "outage-064c91df83c35938",
+        "outage-4457d314de7f461d",
+        "outage-1381a0ea56b99c5c",
+        "outage-14d8f74efd6b2a59",
         "outage-6ffb693e04abe679",
         "outage-45564e4a49d95c50",
-        "outage-2eca03d1e81a262f",
         "outage-5f2eb028b708c93b",
         "outage-9dbeb5fac830715d",
         "outage-35f3db897e6272a8",
         "outage-7a15c8634258730b",
-        "outage-255db5237d042ff8",
         "outage-949cfa0e9a39aa08",
         "outage-8adc693f515ff5d2",
         "outage-0e0484d9a6223ec4",
         "outage-b4b390fdde5398d6",
         "outage-afcd8b1d8882fc56",
-        "outage-56dff323821df24f",
+        "outage-55567b40b4e372f8",
         "outage-45c1ae46f518f103",
-        "outage-918cd0a57546eab2",
-        "outage-921d4f3e9934e41a"
+        "outage-918cd0a57546eab2"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
