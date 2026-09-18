@@ -200,30 +200,6 @@
       "tag": "resilient-8ba3e5b5db207bb4"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.18.8.83",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "www.calmlunch.com"
-        },
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-3bd5f745c7c19e13"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -349,6 +325,31 @@
         }
       },
       "tag": "resilient-9dbeb5fac830715d"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.18.10.118",
+            "port": 8880,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "8b9986f7-889c-4213-bc64-fafe012fabd6"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-35f3db897e6272a8"
     },
     {
       "protocol": "vless",
@@ -1331,31 +1332,6 @@
         "security": "reality"
       },
       "tag": "resilient-4d9cc5ff15b217a6"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "2.27.205.59",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "c21631d5-36c9-4664-b575-97eca17456be"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-863089fb3158f228"
     },
     {
       "protocol": "trojan",
