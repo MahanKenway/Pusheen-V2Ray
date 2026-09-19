@@ -207,6 +207,109 @@
       "tag": "resilient-2892717887cf6f16"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "151.101.56.7",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "8abb648a-b004-42a4-aa05-49cdc2f94d4e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "global.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-d8f6cd6085262e31"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.84.242",
+            "password": "03e92910-34b1-4245-ac63-04a865f43cd5",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "3ERt.4444916.XyZ"
+        }
+      },
+      "tag": "resilient-2d207605840e2f9c"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "162.159.192.125",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "44eae030-290b-4083-8102-6f8bab05701b"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "cfvvv-ev1.pages.dev"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-96e685d0ae81afa9"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.24.172",
+            "password": "049b291e-5752-448c-9b9d-92c7ea45611f",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "xsdcfrty.852224.dpdns.org"
+        },
+        "wsSettings": {
+          "path": "/81bnG0PX0s30mLz663"
+        }
+      },
+      "tag": "resilient-e6437e6ba13e3029"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1159,35 +1262,6 @@
       "tag": "resilient-9b31e64d421b55f7"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "cz-1.bnc-gt.co.uk",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "f6b58665-c524-4c60-a939-d8f27123e079"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "grpc"
-        },
-        "network": "grpc",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "b.cz-1.bnc-gt.co.uk"
-        }
-      },
-      "tag": "resilient-0901d899dadc599d"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1206,31 +1280,6 @@
         }
       },
       "tag": "resilient-48ef70318a528e76"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "2.27.205.59",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "c21631d5-36c9-4664-b575-97eca17456be"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-863089fb3158f228"
     },
     {
       "protocol": "vless",
