@@ -836,12 +836,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "freesocks.work",
-            "port": 2052,
+            "address": "ahbpanel-production.up.railway.app",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "c2e317b0-0847-4579-9b78-7b678634ffc4"
+                "id": "1d46f4c6-2c5c-c28e-f333-39ece5ebaab7"
               }
             ]
           }
@@ -849,12 +849,16 @@
       },
       "streamSettings": {
         "network": "ws",
-        "security": "none",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ahbpanel-production.up.railway.app"
+        },
         "wsSettings": {
-          "path": "/@BlueKnight_net--@BlueKnight_net"
+          "path": "/ws/1d46f4c6-2c5c-c28e-f333-39ece5ebaab7"
         }
       },
-      "tag": "resilient-783ca9a2f0048fad"
+      "tag": "resilient-4bcb2916cb9d492f"
     },
     {
       "protocol": "vless",
@@ -1079,6 +1083,34 @@
         "security": "none"
       },
       "tag": "resilient-9884941781fbd6e4"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "62.210.91.2",
+            "port": 23576,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "serverName": "fuck.rkn"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-8982ba2e03561432"
     },
     {
       "protocol": "trojan",
