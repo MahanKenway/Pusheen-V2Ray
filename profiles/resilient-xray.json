@@ -848,30 +848,6 @@
       "tag": "resilient-783ca9a2f0048fad"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "edu.ruangguru.com",
-            "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "id1.nathaya.web.id"
-        },
-        "wsSettings": {
-          "path": "/trojan"
-        }
-      },
-      "tag": "resilient-45c1ae46f518f103"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -927,6 +903,35 @@
         }
       },
       "tag": "resilient-0c1684bc69b756d6"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "162.159.160.139",
+            "port": 2083,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "44eae030-290b-4083-8102-6f8bab05701b"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "cfvvv-ev1.pages.dev"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-09a078fcc3d4727f"
     },
     {
       "protocol": "vless",
@@ -1016,6 +1021,28 @@
       "tag": "resilient-86a4812eb303ab04"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "13.39.230.204",
+            "port": 22222,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-9884941781fbd6e4"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1067,37 +1094,6 @@
         "security": "reality"
       },
       "tag": "resilient-37fd71a6d9bb90b3"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "89.35.14.30",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "2f35965a-9a9b-45fd-ba32-987296dfb6be"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "hub.v1.RelayService"
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY",
-          "serverName": "md1.univesalsrv.com",
-          "shortId": "221ba6174224ca5b"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-58ec60f2659d1f04"
     },
     {
       "protocol": "trojan",
