@@ -401,25 +401,6 @@
       "uuid": "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
     },
     {
-      "network": "tcp",
-      "server": "104.24.0.184",
-      "server_port": 443,
-      "tag": "outage-14d8f74efd6b2a59",
-      "tls": {
-        "enabled": true,
-        "server_name": "cfvvv-ev1.pages.dev"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cfvvv-ev1.pages.dev"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "44eae030-290b-4083-8102-6f8bab05701b"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -445,8 +426,7 @@
         "outage-e6437e6ba13e3029",
         "outage-b9afdebbd4bf7590",
         "outage-dab33145bb13f862",
-        "outage-1381a0ea56b99c5c",
-        "outage-14d8f74efd6b2a59"
+        "outage-1381a0ea56b99c5c"
       ],
       "tag": "outage-auto",
       "tolerance": 200,

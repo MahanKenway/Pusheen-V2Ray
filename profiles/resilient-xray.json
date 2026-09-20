@@ -1037,6 +1037,34 @@
       "settings": {
         "vnext": [
           {
+            "address": "47.253.226.114",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+          "serverName": "www.cloudflare.com"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-28b45523092d442b"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "ahbpanel-production.up.railway.app",
             "port": 443,
             "users": [
