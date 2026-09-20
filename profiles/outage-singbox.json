@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "31.43.179.200",
+      "server_port": 443,
+      "tag": "outage-919d20eda2a9bca1",
+      "tls": {
+        "enabled": true,
+        "server_name": "xi.tbv.ccwu.cc"
+      },
+      "transport": {
+        "headers": {
+          "Host": "xi.tbv.ccwu.cc"
+        },
+        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "b2593749-691c-428c-9481-14979cba3446"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.237.79",
       "server_port": 443,
       "tag": "outage-cd743b5f1cd3b47b",
@@ -83,6 +102,25 @@
       },
       "type": "vless",
       "uuid": "XpnTeam-2"
+    },
+    {
+      "network": "tcp",
+      "server": "45.130.125.126",
+      "server_port": 443,
+      "tag": "outage-12446cd7f50e0ba4",
+      "tls": {
+        "enabled": true,
+        "server_name": "BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv"
+      },
+      "transport": {
+        "headers": {
+          "Host": "BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv"
+        },
+        "path": "/eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9"
     },
     {
       "network": "tcp",
@@ -219,25 +257,6 @@
     },
     {
       "network": "tcp",
-      "server": "151.101.56.7",
-      "server_port": 443,
-      "tag": "outage-d8f6cd6085262e31",
-      "tls": {
-        "enabled": true,
-        "server_name": "global.fastly.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "global.fastly.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "8abb648a-b004-42a4-aa05-49cdc2f94d4e"
-    },
-    {
-      "network": "tcp",
       "password": "03e92910-34b1-4245-ac63-04a865f43cd5",
       "server": "104.21.84.242",
       "server_port": 443,
@@ -360,25 +379,6 @@
     },
     {
       "network": "tcp",
-      "server": "104.21.83.140",
-      "server_port": 443,
-      "tag": "outage-0e0484d9a6223ec4",
-      "tls": {
-        "enabled": true,
-        "server_name": "0-m16.ChIANG-maI2032.kdNS.fr"
-      },
-      "transport": {
-        "headers": {
-          "Host": "0-m16.ChIANG-maI2032.kdNS.fr"
-        },
-        "path": "/JRr6VGcSLFc034DC6sDbwyWJLbB",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba"
-    },
-    {
-      "network": "tcp",
       "password": "03c93f49-d573-4889-a4bb-187047c5a314",
       "server": "104.21.71.83",
       "server_port": 443,
@@ -420,10 +420,12 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-919d20eda2a9bca1",
         "outage-cd743b5f1cd3b47b",
         "outage-6edc1d07f63f8094",
         "outage-fc28c61f59c6325c",
         "outage-874dd565295fa9c2",
+        "outage-12446cd7f50e0ba4",
         "outage-84f432a4e1c6de45",
         "outage-ff2253ca98c5cb70",
         "outage-5a982b7e3abc18a3",
@@ -432,7 +434,6 @@
         "outage-52121dddda09b1c3",
         "outage-c97c61628d341172",
         "outage-2892717887cf6f16",
-        "outage-d8f6cd6085262e31",
         "outage-2d207605840e2f9c",
         "outage-77355aea9f1207fb",
         "outage-e6437e6ba13e3029",
@@ -440,7 +441,6 @@
         "outage-dab33145bb13f862",
         "outage-1381a0ea56b99c5c",
         "outage-8a2cef33a22616b4",
-        "outage-0e0484d9a6223ec4",
         "outage-b4b390fdde5398d6",
         "outage-56dff323821df24f"
       ],
