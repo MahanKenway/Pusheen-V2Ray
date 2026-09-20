@@ -124,6 +124,82 @@
     },
     {
       "network": "tcp",
+      "server": "162.159.192.125",
+      "server_port": 443,
+      "tag": "outage-73e07039270c730d",
+      "tls": {
+        "enabled": true,
+        "server_name": "xi.tbv.ccwu.cc"
+      },
+      "transport": {
+        "headers": {
+          "Host": "xi.tbv.ccwu.cc"
+        },
+        "path": "/proxyip=us.xiabibi.cf",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "b2593749-691c-428c-9481-14979cba3446"
+    },
+    {
+      "network": "tcp",
+      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+      "server": "172.67.217.240",
+      "server_port": 443,
+      "tag": "outage-1900f2fe00aea8c7",
+      "tls": {
+        "enabled": true,
+        "server_name": "id1.nathaya.web.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "id1.nathaya.web.id"
+        },
+        "path": "/trojan",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+      "server": "104.21.83.135",
+      "server_port": 443,
+      "tag": "outage-9550fce9a1012f77",
+      "tls": {
+        "enabled": true,
+        "server_name": "id1.nathaya.web.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "id1.nathaya.web.id"
+        },
+        "path": "/trojan",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "199.232.78.170",
+      "server_port": 443,
+      "tag": "outage-71103f4c8170f4f8",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "XpnTeam-12"
+    },
+    {
+      "network": "tcp",
       "server": "45.130.125.126",
       "server_port": 443,
       "tag": "outage-12446cd7f50e0ba4",
@@ -220,44 +296,6 @@
       },
       "type": "vless",
       "uuid": "10c3b62f-59da-55cb-b24f-2072ecb4348c"
-    },
-    {
-      "network": "tcp",
-      "server": "104.24.0.184",
-      "server_port": 443,
-      "tag": "outage-52121dddda09b1c3",
-      "tls": {
-        "enabled": true,
-        "server_name": "cfvvv-ev1.pages.dev"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cfvvv-ev1.pages.dev"
-        },
-        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "44eae030-290b-4083-8102-6f8bab05701b"
-    },
-    {
-      "network": "tcp",
-      "server": "45.130.125.229",
-      "server_port": 443,
-      "tag": "outage-c97c61628d341172",
-      "tls": {
-        "enabled": true,
-        "server_name": "octopusss5.info"
-      },
-      "transport": {
-        "headers": {
-          "Host": "octopusss5.info"
-        },
-        "path": "/udfyfws",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "c35050ce-01ab-45a9-91b8-54cec637d0a8"
     },
     {
       "network": "tcp",
@@ -364,30 +402,22 @@
     },
     {
       "network": "tcp",
-      "password": "047c5913-4618-010c-6a52-bb584d71d8b6",
-      "server": "solipor-production-7697.up.railway.app",
+      "server": "104.24.0.184",
       "server_port": 443,
-      "tag": "outage-8a2cef33a22616b4",
+      "tag": "outage-14d8f74efd6b2a59",
       "tls": {
         "enabled": true,
-        "server_name": "solipor-production-7697.up.railway.app"
+        "server_name": "cfvvv-ev1.pages.dev"
       },
       "transport": {
         "headers": {
-          "Host": "solipor-production-7697.up.railway.app"
+          "Host": "cfvvv-ev1.pages.dev"
         },
-        "path": "/trojan-ws",
+        "path": "/",
         "type": "ws"
       },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-      "server": "104.21.83.135",
-      "server_port": 443,
-      "tag": "outage-3f4014abb05e099b",
-      "type": "trojan"
+      "type": "vless",
+      "uuid": "44eae030-290b-4083-8102-6f8bab05701b"
     },
     {
       "network": "tcp",
@@ -419,22 +449,23 @@
         "outage-6edc1d07f63f8094",
         "outage-fc28c61f59c6325c",
         "outage-874dd565295fa9c2",
+        "outage-73e07039270c730d",
+        "outage-1900f2fe00aea8c7",
+        "outage-9550fce9a1012f77",
+        "outage-71103f4c8170f4f8",
         "outage-12446cd7f50e0ba4",
         "outage-84f432a4e1c6de45",
         "outage-ff2253ca98c5cb70",
         "outage-5a982b7e3abc18a3",
         "outage-2521c9469bd73ec1",
         "outage-064c91df83c35938",
-        "outage-52121dddda09b1c3",
-        "outage-c97c61628d341172",
         "outage-2d207605840e2f9c",
         "outage-77355aea9f1207fb",
         "outage-e6437e6ba13e3029",
         "outage-b9afdebbd4bf7590",
         "outage-dab33145bb13f862",
         "outage-1381a0ea56b99c5c",
-        "outage-8a2cef33a22616b4",
-        "outage-3f4014abb05e099b",
+        "outage-14d8f74efd6b2a59",
         "outage-56dff323821df24f"
       ],
       "tag": "outage-auto",
