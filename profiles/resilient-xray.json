@@ -28,6 +28,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "151.101.56.6",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "9503e890-3702-4847-af0a-2bceac2f0da0"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI"
+        }
+      },
+      "tag": "resilient-2e10e72a3d8f675f"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "31.43.179.200",
             "port": 443,
             "users": [
@@ -710,31 +739,6 @@
         }
       },
       "tag": "resilient-1381a0ea56b99c5c"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "89.117.112.30",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "6202b230-417c-4d8e-b624-0f71afa9c75d"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-6ffb693e04abe679"
     },
     {
       "protocol": "trojan",

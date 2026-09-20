@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "151.101.56.6",
+      "server_port": 443,
+      "tag": "outage-2e10e72a3d8f675f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "9503e890-3702-4847-af0a-2bceac2f0da0"
+    },
+    {
+      "network": "tcp",
       "server": "31.43.179.200",
       "server_port": 443,
       "tag": "outage-919d20eda2a9bca1",
@@ -242,21 +261,6 @@
     },
     {
       "network": "tcp",
-      "server": "104.21.70.21",
-      "server_port": 8080,
-      "tag": "outage-2892717887cf6f16",
-      "transport": {
-        "headers": {
-          "Host": "auto-scale-238b2b.infra-core-1630dd.workers.dev"
-        },
-        "path": "/eyJqdW5rIjoiUjJBU3JkVlRwSWtnciIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "33918b20-9e02-4dc6-8b30-79b2d4b2e0e6"
-    },
-    {
-      "network": "tcp",
       "password": "03e92910-34b1-4245-ac63-04a865f43cd5",
       "server": "104.21.84.242",
       "server_port": 443,
@@ -420,6 +424,7 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-2e10e72a3d8f675f",
         "outage-919d20eda2a9bca1",
         "outage-cd743b5f1cd3b47b",
         "outage-6edc1d07f63f8094",
@@ -433,7 +438,6 @@
         "outage-064c91df83c35938",
         "outage-52121dddda09b1c3",
         "outage-c97c61628d341172",
-        "outage-2892717887cf6f16",
         "outage-2d207605840e2f9c",
         "outage-77355aea9f1207fb",
         "outage-e6437e6ba13e3029",
