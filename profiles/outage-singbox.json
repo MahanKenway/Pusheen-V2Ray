@@ -14,6 +14,44 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "69.46.46.46",
+      "server_port": 443,
+      "tag": "outage-56a2dd2fcd2db3e7",
+      "tls": {
+        "enabled": true,
+        "server_name": "ezaccess1-slv-ezaccess1-810d.up.railway.app"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ezaccess1-slv-ezaccess1-810d.up.railway.app"
+        },
+        "path": "/ws/vless/Default?ed=2048",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "Default"
+    },
+    {
+      "network": "tcp",
+      "password": "mitivpn",
+      "server": "199.232.78.101",
+      "server_port": 443,
+      "tag": "outage-81b2e96bf75098fc",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "151.101.56.6",
       "server_port": 443,
       "tag": "outage-2e10e72a3d8f675f",
@@ -105,22 +143,34 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.160",
+      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+      "server": "172.67.217.240",
       "server_port": 443,
-      "tag": "outage-874dd565295fa9c2",
+      "tag": "outage-abc00ef3d2b9b6d6",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com"
+        "server_name": "id1.nathaya.web.id"
       },
       "transport": {
         "headers": {
-          "Host": "ssl.fastly.com"
+          "Host": "id1.nathaya.web.id"
         },
+        "path": "/trojan",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "66.33.22.226",
+      "server_port": 20610,
+      "tag": "outage-b886b00505435932",
+      "transport": {
         "path": "/",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "XpnTeam-2"
+      "uuid": "bea9e85d-505c-47f0-a86e-42151c03637c"
     },
     {
       "network": "tcp",
@@ -140,25 +190,6 @@
       },
       "type": "vless",
       "uuid": "b2593749-691c-428c-9481-14979cba3446"
-    },
-    {
-      "network": "tcp",
-      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-      "server": "172.67.217.240",
-      "server_port": 443,
-      "tag": "outage-1900f2fe00aea8c7",
-      "tls": {
-        "enabled": true,
-        "server_name": "id1.nathaya.web.id"
-      },
-      "transport": {
-        "headers": {
-          "Host": "id1.nathaya.web.id"
-        },
-        "path": "/trojan",
-        "type": "ws"
-      },
-      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -272,33 +303,6 @@
     },
     {
       "network": "tcp",
-      "password": "humanity",
-      "server": "188.114.97.7",
-      "server_port": 443,
-      "tag": "outage-2521c9469bd73ec1",
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "69.46.46.109",
-      "server_port": 443,
-      "tag": "outage-064c91df83c35938",
-      "tls": {
-        "enabled": true,
-        "server_name": "net-05b215-358e1e-production.up.railway.app"
-      },
-      "transport": {
-        "headers": {
-          "Host": "net-05b215-358e1e-production.up.railway.app"
-        },
-        "path": "/ws/Default",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "10c3b62f-59da-55cb-b24f-2072ecb4348c"
-    },
-    {
-      "network": "tcp",
       "password": "03e92910-34b1-4245-ac63-04a865f43cd5",
       "server": "104.21.84.242",
       "server_port": 443,
@@ -401,32 +405,52 @@
       "uuid": "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
     },
     {
+      "network": "tcp",
+      "password": "047c5913-4618-010c-6a52-bb584d71d8b6",
+      "server": "solipor-production-7697.up.railway.app",
+      "server_port": 443,
+      "tag": "outage-8a2cef33a22616b4",
+      "tls": {
+        "enabled": true,
+        "server_name": "solipor-production-7697.up.railway.app"
+      },
+      "transport": {
+        "headers": {
+          "Host": "solipor-production-7697.up.railway.app"
+        },
+        "path": "/trojan-ws",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-56a2dd2fcd2db3e7",
+        "outage-81b2e96bf75098fc",
         "outage-2e10e72a3d8f675f",
         "outage-919d20eda2a9bca1",
         "outage-cd743b5f1cd3b47b",
         "outage-6edc1d07f63f8094",
         "outage-fc28c61f59c6325c",
-        "outage-874dd565295fa9c2",
+        "outage-abc00ef3d2b9b6d6",
+        "outage-b886b00505435932",
         "outage-73e07039270c730d",
-        "outage-1900f2fe00aea8c7",
         "outage-9550fce9a1012f77",
         "outage-71103f4c8170f4f8",
         "outage-12446cd7f50e0ba4",
         "outage-84f432a4e1c6de45",
         "outage-ff2253ca98c5cb70",
         "outage-5a982b7e3abc18a3",
-        "outage-2521c9469bd73ec1",
-        "outage-064c91df83c35938",
         "outage-2d207605840e2f9c",
         "outage-77355aea9f1207fb",
         "outage-e6437e6ba13e3029",
         "outage-b9afdebbd4bf7590",
         "outage-dab33145bb13f862",
-        "outage-1381a0ea56b99c5c"
+        "outage-1381a0ea56b99c5c",
+        "outage-8a2cef33a22616b4"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
