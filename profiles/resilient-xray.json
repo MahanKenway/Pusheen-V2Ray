@@ -164,6 +164,31 @@
       "tag": "resilient-cd743b5f1cd3b47b"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.23.72",
+            "port": 8880,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "1742863c-ce4b-4bb7-b807-80da29cbec86"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-7b9b8e2ebecd1ada"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1030,6 +1055,30 @@
       "tag": "resilient-28b45523092d442b"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "www.visa.com.sg",
+            "password": "0F22D008-24D4-4DFE-947B-8D2FD64CD24C",
+            "port": 2053
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "t.hongkong6.qzz.io"
+        },
+        "wsSettings": {
+          "path": "/?ed=2560"
+        }
+      },
+      "tag": "resilient-c78d64179e50772e"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1182,35 +1231,6 @@
         }
       },
       "tag": "resilient-09a078fcc3d4727f"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "us-1.bnc-gt.co.uk",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "f6b58665-c524-4c60-a939-d8f27123e079"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "CegqLjzOImUmYD9ZdpOOG65UgNTGeQfRmpIni8iraB0",
-          "serverName": "b.us-1.bnc-gt.co.uk",
-          "shortId": "7be1e9c243451b14"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-8d0c18cd0472c4c2"
     },
     {
       "protocol": "trojan",

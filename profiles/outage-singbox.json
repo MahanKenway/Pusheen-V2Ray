@@ -109,6 +109,21 @@
     },
     {
       "network": "tcp",
+      "server": "104.21.23.72",
+      "server_port": 8880,
+      "tag": "outage-7b9b8e2ebecd1ada",
+      "transport": {
+        "headers": {
+          "Host": "icy-fog-9a41.70-a39.workers.dev"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "1742863c-ce4b-4bb7-b807-80da29cbec86"
+    },
+    {
+      "network": "tcp",
       "password": "072f4db4-d89d-420d-9d9e-045ed8d5c9cc",
       "server": "104.21.86.44",
       "server_port": 443,
@@ -307,21 +322,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.159",
-      "server_port": 80,
-      "tag": "outage-5a982b7e3abc18a3",
-      "transport": {
-        "headers": {
-          "Host": "BlackGod.global.ssl.fastly.net"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "1eccf0b8-b7a6-4169-88f8-c83a89fec448"
-    },
-    {
-      "network": "tcp",
       "password": "03e92910-34b1-4245-ac63-04a865f43cd5",
       "server": "104.21.84.242",
       "server_port": 443,
@@ -444,6 +444,7 @@
         "outage-2e10e72a3d8f675f",
         "outage-919d20eda2a9bca1",
         "outage-cd743b5f1cd3b47b",
+        "outage-7b9b8e2ebecd1ada",
         "outage-aa0035b8ce1fd6a1",
         "outage-75a58280bd6b844f",
         "outage-abc00ef3d2b9b6d6",
@@ -455,7 +456,6 @@
         "outage-12446cd7f50e0ba4",
         "outage-84f432a4e1c6de45",
         "outage-ff2253ca98c5cb70",
-        "outage-5a982b7e3abc18a3",
         "outage-2d207605840e2f9c",
         "outage-77355aea9f1207fb",
         "outage-e6437e6ba13e3029",
