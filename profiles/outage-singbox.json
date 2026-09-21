@@ -387,25 +387,6 @@
     },
     {
       "network": "tcp",
-      "server": "139.64.235.117",
-      "server_port": 443,
-      "tag": "outage-1381a0ea56b99c5c",
-      "tls": {
-        "enabled": true,
-        "server_name": "nb.lovecf.ggff.net"
-      },
-      "transport": {
-        "headers": {
-          "Host": "nb.lovecf.ggff.net"
-        },
-        "path": "/proxyip=us.xiabibi.cf",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
-    },
-    {
-      "network": "tcp",
       "password": "047c5913-4618-010c-6a52-bb584d71d8b6",
       "server": "solipor-production-7697.up.railway.app",
       "server_port": 443,
@@ -419,6 +400,36 @@
           "Host": "solipor-production-7697.up.railway.app"
         },
         "path": "/trojan-ws",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "mitivpn",
+      "server": "151.101.56.7",
+      "server_port": 443,
+      "tag": "outage-a57f8bc52f090df1",
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/D-e2@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
+      "server": "8.47.69.0",
+      "server_port": 443,
+      "tag": "outage-6f5619cb5323fea5",
+      "transport": {
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        },
+        "path": "/assignment",
         "type": "ws"
       },
       "type": "trojan"
@@ -449,8 +460,9 @@
         "outage-e6437e6ba13e3029",
         "outage-b9afdebbd4bf7590",
         "outage-dab33145bb13f862",
-        "outage-1381a0ea56b99c5c",
-        "outage-8a2cef33a22616b4"
+        "outage-8a2cef33a22616b4",
+        "outage-a57f8bc52f090df1",
+        "outage-6f5619cb5323fea5"
       ],
       "tag": "outage-auto",
       "tolerance": 200,

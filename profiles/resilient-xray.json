@@ -796,35 +796,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "139.64.235.117",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "nb.lovecf.ggff.net"
-        },
-        "wsSettings": {
-          "path": "/proxyip=us.xiabibi.cf"
-        }
-      },
-      "tag": "resilient-1381a0ea56b99c5c"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "69.46.46.121",
             "port": 443,
             "users": [
@@ -936,12 +907,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.10.118",
-            "port": 8880,
+            "address": "195.85.23.111",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "8b9986f7-889c-4213-bc64-fafe012fabd6"
+                "id": "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
               }
             ]
           }
@@ -949,12 +920,16 @@
       },
       "streamSettings": {
         "network": "ws",
-        "security": "none",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "nb.lovecf.ggff.net"
+        },
         "wsSettings": {
-          "path": "/"
+          "path": "/proxyip=us.xiabibi.cf"
         }
       },
-      "tag": "resilient-35f3db897e6272a8"
+      "tag": "resilient-2ed19542ce4c252a"
     },
     {
       "protocol": "vless",
@@ -980,6 +955,26 @@
         }
       },
       "tag": "resilient-8f01eaf7a86c5211"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "8.47.69.0",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-6f5619cb5323fea5"
     },
     {
       "protocol": "vless",
@@ -1250,35 +1245,6 @@
         "security": "reality"
       },
       "tag": "resilient-3059334a0db175bd"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.158.206.103",
-            "port": 23576,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "serverName": "fuck.rkn",
-          "shortId": "01"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-37fd71a6d9bb90b3"
     },
     {
       "protocol": "trojan",
