@@ -1161,6 +1161,65 @@
       "tag": "resilient-4bcb2916cb9d492f"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.58.126.92",
+            "port": 8444,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "ad297a2b-ae17-4d2d-8fce-e2eafb89b145"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "OyUyHy3-04xKvFMvAzUbiVf7tkWX2a_gC2E_sEHGVw8",
+          "serverName": "nbcnews.com",
+          "shortId": "08"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-aa73ed8ef182f209"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "5.78.28.48",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "2be98d5e-6eed-445d-aef4-9c776fdd03af"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "u42o3SnK9nE0nEUNd1JREM03dsT7N_c-m2rECXFCCHg",
+          "serverName": "5.78.159.97",
+          "shortId": "ed87fb8386bbbbe5",
+          "spiderX": "/"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-e47d5cb63d1a1523"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1204,88 +1263,24 @@
       "tag": "resilient-c8c586122291f489"
     },
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "66.33.22.226",
-            "port": 37200,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "99d52e86-fb2d-4e08-9c69-d7a27179a095"
-              }
-            ]
+            "address": "usa.test3.net",
+            "password": "157bbeb0-489f-11f0-ab40-1239d0255272",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-92e81d2eeacc2406"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "162.159.160.139",
-            "port": 2083,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "44eae030-290b-4083-8102-6f8bab05701b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
+        "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "cfvvv-ev1.pages.dev"
-        },
-        "wsSettings": {
-          "path": "/"
+          "allowInsecure": false
         }
       },
-      "tag": "resilient-09a078fcc3d4727f"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "176.108.246.110",
-            "port": 9830,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "grpc-tunnel"
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
-          "serverName": "dl.google.com"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-3059334a0db175bd"
+      "tag": "resilient-d6414f0f2fbf863b"
     },
     {
       "protocol": "trojan",
@@ -1330,6 +1325,26 @@
         }
       },
       "tag": "resilient-11e78cbb8fd7a18a"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "sg4.6n6.net",
+            "password": "16132fb0-4945-11f0-a95e-1239d0255272",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false
+        }
+      },
+      "tag": "resilient-72f859b3d4758fee"
     },
     {
       "protocol": "blackhole",
