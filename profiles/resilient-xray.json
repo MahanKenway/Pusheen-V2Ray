@@ -967,6 +967,27 @@
       "tag": "resilient-ee12f44e1988f86d"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.29.205",
+            "password": "11dd4a95-fd4f-4f08-8def-e950aa2c1766",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "4444444446.222560.xyz"
+        }
+      },
+      "tag": "resilient-559e54aa4fa1e684"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1077,35 +1098,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "ahbpanel-production.up.railway.app",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "1d46f4c6-2c5c-c28e-f333-39ece5ebaab7"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ahbpanel-production.up.railway.app"
-        },
-        "wsSettings": {
-          "path": "/ws/1d46f4c6-2c5c-c28e-f333-39ece5ebaab7"
-        }
-      },
-      "tag": "resilient-4bcb2916cb9d492f"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "45.58.126.92",
             "port": 8444,
             "users": [
@@ -1182,6 +1174,28 @@
       "tag": "resilient-7f735bbc5e38e6c8"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "138.124.60.146",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "bbfd1f68-ec64-452f-8404-9e2bcf1df951"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-c8c586122291f489"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1223,7 +1237,7 @@
           "path": "/43xf5zgeApzDAfhOHq"
         }
       },
-      "tag": "resilient-7f828b6fdd1b2d24"
+      "tag": "resilient-f167a97797496460"
     },
     {
       "protocol": "trojan",
