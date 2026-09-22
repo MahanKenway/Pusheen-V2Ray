@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "199.232.78.170",
+      "server_port": 443,
+      "tag": "outage-11030a2b2fb35890",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "XpnTeam-15"
+    },
+    {
+      "network": "tcp",
       "server": "69.46.46.46",
       "server_port": 443,
       "tag": "outage-56a2dd2fcd2db3e7",
@@ -106,6 +125,21 @@
       },
       "type": "vless",
       "uuid": "turboo-server"
+    },
+    {
+      "network": "tcp",
+      "server": "172.67.152.71",
+      "server_port": 8880,
+      "tag": "outage-e842b35ed5d58719",
+      "transport": {
+        "headers": {
+          "Host": "lively-dream-d892.262.workers.dev"
+        },
+        "path": "/pyip=ProxyIP.US.CMLiussss.net",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "f7ebef03-3c34-4769-bfe4-66e3c92ed665"
     },
     {
       "network": "tcp",
@@ -208,25 +242,6 @@
     },
     {
       "network": "tcp",
-      "server": "162.159.192.125",
-      "server_port": 443,
-      "tag": "outage-73e07039270c730d",
-      "tls": {
-        "enabled": true,
-        "server_name": "xi.tbv.ccwu.cc"
-      },
-      "transport": {
-        "headers": {
-          "Host": "xi.tbv.ccwu.cc"
-        },
-        "path": "/proxyip=us.xiabibi.cf",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "b2593749-691c-428c-9481-14979cba3446"
-    },
-    {
-      "network": "tcp",
       "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
       "server": "104.21.83.135",
       "server_port": 443,
@@ -243,25 +258,6 @@
         "type": "ws"
       },
       "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "199.232.78.170",
-      "server_port": 443,
-      "tag": "outage-71103f4c8170f4f8",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ssl.fastly.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "XpnTeam-12"
     },
     {
       "network": "tcp",
@@ -316,6 +312,25 @@
           "Host": "T.taipEi108.Dpdns.Org"
         },
         "path": "/Dmby2AKiZKvMo1YauoQwY5",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "13e26f64-2e0c-4461-92cd-d83294cc18f0",
+      "server": "104.21.76.21",
+      "server_port": 443,
+      "tag": "outage-aa94b5e45b636ccd",
+      "tls": {
+        "enabled": true,
+        "server_name": "WwwDe.00890604.XyZ"
+      },
+      "transport": {
+        "headers": {
+          "Host": "WwwDe.00890604.XyZ"
+        },
+        "path": "/TDUxZUop9k44oPiit2OdWk0KwirdY",
         "type": "ws"
       },
       "type": "trojan"
@@ -391,21 +406,6 @@
     },
     {
       "network": "tcp",
-      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-      "server": "104.25.82.149",
-      "server_port": 443,
-      "tag": "outage-dab33145bb13f862",
-      "transport": {
-        "headers": {
-          "Host": "id1.nathaya.web.id"
-        },
-        "path": "/trojan",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": "mitivpn",
       "server": "151.101.56.7",
       "server_port": 443,
@@ -439,28 +439,28 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-11030a2b2fb35890",
         "outage-56a2dd2fcd2db3e7",
         "outage-81b2e96bf75098fc",
         "outage-2e10e72a3d8f675f",
         "outage-919d20eda2a9bca1",
         "outage-cd743b5f1cd3b47b",
+        "outage-e842b35ed5d58719",
         "outage-7b9b8e2ebecd1ada",
         "outage-aa0035b8ce1fd6a1",
         "outage-75a58280bd6b844f",
         "outage-abc00ef3d2b9b6d6",
         "outage-b886b00505435932",
         "outage-a2a55c7e9f2e1604",
-        "outage-73e07039270c730d",
         "outage-9550fce9a1012f77",
-        "outage-71103f4c8170f4f8",
         "outage-12446cd7f50e0ba4",
         "outage-84f432a4e1c6de45",
         "outage-ff2253ca98c5cb70",
+        "outage-aa94b5e45b636ccd",
         "outage-2d207605840e2f9c",
         "outage-77355aea9f1207fb",
         "outage-e6437e6ba13e3029",
         "outage-b9afdebbd4bf7590",
-        "outage-dab33145bb13f862",
         "outage-a57f8bc52f090df1",
         "outage-6f5619cb5323fea5"
       ],
