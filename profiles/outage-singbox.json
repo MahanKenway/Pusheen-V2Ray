@@ -14,6 +14,44 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "tag": "outage-2ca65b47caf92e03",
+      "tls": {
+        "enabled": true,
+        "server_name": "shuma.ccwu.cc"
+      },
+      "transport": {
+        "headers": {
+          "Host": "shuma.ccwu.cc"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64"
+    },
+    {
+      "network": "tcp",
+      "server": "216.205.52.222",
+      "server_port": 443,
+      "tag": "outage-43676ce3ac452d03",
+      "tls": {
+        "enabled": true,
+        "server_name": "xi.tbv.ccwu.cc"
+      },
+      "transport": {
+        "headers": {
+          "Host": "xi.tbv.ccwu.cc"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "b2593749-691c-428c-9481-14979cba3446"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.170",
       "server_port": 443,
       "tag": "outage-11030a2b2fb35890",
@@ -109,22 +147,15 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.237.79",
+      "password": "0ad5e311-7189-4124-ac8f-f828b681f10e",
+      "server": "172.67.196.38",
       "server_port": 443,
-      "tag": "outage-cd743b5f1cd3b47b",
+      "tag": "outage-c43afa7a44a0b9fc",
       "tls": {
         "enabled": true,
-        "server_name": "turboo-server-telegram.com"
+        "server_name": "c5mt.cdncisco.org"
       },
-      "transport": {
-        "headers": {
-          "Host": "turboo-server-telegram.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "turboo-server"
+      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -227,21 +258,6 @@
     },
     {
       "network": "tcp",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "tag": "outage-a2a55c7e9f2e1604",
-      "transport": {
-        "headers": {
-          "Host": "cfvvv-ev1.pages.dev"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "44eae030-290b-4083-8102-6f8bab05701b"
-    },
-    {
-      "network": "tcp",
       "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
       "server": "104.21.83.135",
       "server_port": 443,
@@ -277,44 +293,6 @@
       },
       "type": "vless",
       "uuid": "b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9"
-    },
-    {
-      "network": "tcp",
-      "password": "072f4db4-d89d-420d-9d9e-045ed8d5c9cc",
-      "server": "104.21.57.88",
-      "server_port": 443,
-      "tag": "outage-84f432a4e1c6de45",
-      "tls": {
-        "enabled": true,
-        "server_name": "10tyu.iran.pp.ua"
-      },
-      "transport": {
-        "headers": {
-          "Host": "10tyu.iran.pp.ua"
-        },
-        "path": "/VEP415T5mby2DulPWRIwOavJd",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "061ec9d5-ba40-428a-8be0-1947b10b5cfc",
-      "server": "172.67.207.27",
-      "server_port": 443,
-      "tag": "outage-ff2253ca98c5cb70",
-      "tls": {
-        "enabled": true,
-        "server_name": "T.taipEi108.Dpdns.Org"
-      },
-      "transport": {
-        "headers": {
-          "Host": "T.taipEi108.Dpdns.Org"
-        },
-        "path": "/Dmby2AKiZKvMo1YauoQwY5",
-        "type": "ws"
-      },
-      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -428,34 +406,45 @@
       "type": "trojan"
     },
     {
+      "network": "tcp",
+      "password": "157bbeb0-489f-11f0-ab40-1239d0255272",
+      "server": "usa.test3.net",
+      "server_port": 443,
+      "tag": "outage-d6414f0f2fbf863b",
+      "tls": {
+        "enabled": true
+      },
+      "type": "trojan"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-2ca65b47caf92e03",
+        "outage-43676ce3ac452d03",
         "outage-11030a2b2fb35890",
         "outage-56a2dd2fcd2db3e7",
         "outage-81b2e96bf75098fc",
         "outage-2e10e72a3d8f675f",
         "outage-919d20eda2a9bca1",
-        "outage-cd743b5f1cd3b47b",
+        "outage-c43afa7a44a0b9fc",
         "outage-e842b35ed5d58719",
         "outage-7b9b8e2ebecd1ada",
         "outage-aa0035b8ce1fd6a1",
         "outage-75a58280bd6b844f",
         "outage-abc00ef3d2b9b6d6",
         "outage-b886b00505435932",
-        "outage-a2a55c7e9f2e1604",
         "outage-9550fce9a1012f77",
         "outage-12446cd7f50e0ba4",
-        "outage-84f432a4e1c6de45",
-        "outage-ff2253ca98c5cb70",
         "outage-aa94b5e45b636ccd",
         "outage-77355aea9f1207fb",
         "outage-a57f8bc52f090df1",
         "outage-6f5619cb5323fea5",
         "outage-559e54aa4fa1e684",
         "outage-c78d64179e50772e",
-        "outage-7f735bbc5e38e6c8"
+        "outage-7f735bbc5e38e6c8",
+        "outage-d6414f0f2fbf863b"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
