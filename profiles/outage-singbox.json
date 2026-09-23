@@ -109,6 +109,25 @@
     },
     {
       "network": "tcp",
+      "server": "172.64.53.240",
+      "server_port": 2087,
+      "tag": "outage-a89b56a9813a1ca4",
+      "tls": {
+        "enabled": true,
+        "server_name": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+      },
+      "transport": {
+        "headers": {
+          "Host": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+        },
+        "path": "?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+    },
+    {
+      "network": "tcp",
       "server": "151.101.56.6",
       "server_port": 443,
       "tag": "outage-e43af1b9ed2a321b",
@@ -221,25 +240,6 @@
         "type": "ws"
       },
       "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "104.17.146.118",
-      "server_port": 2096,
-      "tag": "outage-75a58280bd6b844f",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        },
-        "path": "/links/shows",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4"
     },
     {
       "network": "tcp",
@@ -389,6 +389,7 @@
         "outage-11030a2b2fb35890",
         "outage-56a2dd2fcd2db3e7",
         "outage-81b2e96bf75098fc",
+        "outage-a89b56a9813a1ca4",
         "outage-e43af1b9ed2a321b",
         "outage-b33cad4842ee05d3",
         "outage-4bf8736605f9505f",
@@ -397,7 +398,6 @@
         "outage-e842b35ed5d58719",
         "outage-7b9b8e2ebecd1ada",
         "outage-aa0035b8ce1fd6a1",
-        "outage-75a58280bd6b844f",
         "outage-abc00ef3d2b9b6d6",
         "outage-aa94b5e45b636ccd",
         "outage-a57f8bc52f090df1",
