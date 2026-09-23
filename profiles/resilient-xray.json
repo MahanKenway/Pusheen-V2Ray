@@ -164,35 +164,6 @@
       "tag": "resilient-81b2e96bf75098fc"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "151.101.56.6",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "9503e890-3702-4847-af0a-2bceac2f0da0"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI"
-        }
-      },
-      "tag": "resilient-2e10e72a3d8f675f"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1149,6 +1120,37 @@
       "settings": {
         "vnext": [
           {
+            "address": "88.216.220.88",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "a8e3155b-ceb1-4fcb-bc0c-2e77ec005401"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": "api.v1.StreamService"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "q3kOYHdjmqWLLYj8oikvna1bTjofk45ktegGaJE611g",
+          "serverName": "files.noneok.com",
+          "shortId": "d3b394558cfe0266"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-e0c5c06616318651"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "31.57.18.56",
             "port": 443,
             "users": [
@@ -1198,29 +1200,25 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.158.206.29",
-            "port": 23576,
+            "address": "82.24.203.20",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+                "id": "5fcdc9b7-e70f-4a5c-85c3-e018ad818326"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "serverName": "fuck.rkn",
-          "shortId": "01"
-        },
-        "security": "reality"
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/fd5ba98a3970"
+        }
       },
-      "tag": "resilient-8a684fb24d8693b1"
+      "tag": "resilient-88f245d6bc623968"
     },
     {
       "protocol": "vless",
