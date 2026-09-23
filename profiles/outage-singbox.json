@@ -109,6 +109,40 @@
     },
     {
       "network": "tcp",
+      "server": "151.101.56.6",
+      "server_port": 443,
+      "tag": "outage-e43af1b9ed2a321b",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "1fac5e18-2ca8-4626-c299-1f3f21c6b55e"
+    },
+    {
+      "network": "tcp",
+      "server": "199.232.78.159",
+      "server_port": 80,
+      "tag": "outage-b33cad4842ee05d3",
+      "transport": {
+        "headers": {
+          "Host": "yaSharClass.global.ssl.fastly.net"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "6261bc9c-128d-446a-9e16-7b340c7544e6"
+    },
+    {
+      "network": "tcp",
       "server": "172.67.130.159",
       "server_port": 2096,
       "tag": "outage-4bf8736605f9505f",
@@ -213,56 +247,6 @@
       "server": "172.67.217.240",
       "server_port": 443,
       "tag": "outage-abc00ef3d2b9b6d6",
-      "tls": {
-        "enabled": true,
-        "server_name": "id1.nathaya.web.id"
-      },
-      "transport": {
-        "headers": {
-          "Host": "id1.nathaya.web.id"
-        },
-        "path": "/trojan",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "66.33.22.226",
-      "server_port": 20610,
-      "tag": "outage-b886b00505435932",
-      "transport": {
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "bea9e85d-505c-47f0-a86e-42151c03637c"
-    },
-    {
-      "network": "tcp",
-      "server": "162.159.192.125",
-      "server_port": 443,
-      "tag": "outage-73e07039270c730d",
-      "tls": {
-        "enabled": true,
-        "server_name": "xi.tbv.ccwu.cc"
-      },
-      "transport": {
-        "headers": {
-          "Host": "xi.tbv.ccwu.cc"
-        },
-        "path": "/proxyip=us.xiabibi.cf",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "b2593749-691c-428c-9481-14979cba3446"
-    },
-    {
-      "network": "tcp",
-      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-      "server": "104.21.83.135",
-      "server_port": 443,
-      "tag": "outage-9550fce9a1012f77",
       "tls": {
         "enabled": true,
         "server_name": "id1.nathaya.web.id"
@@ -384,6 +368,18 @@
       "type": "trojan"
     },
     {
+      "network": "tcp",
+      "password": "0b65bb06-6b28-487a-8e3c-820dda51e977",
+      "server": "172.67.131.245",
+      "server_port": 443,
+      "tag": "outage-7f735bbc5e38e6c8",
+      "tls": {
+        "enabled": true,
+        "server_name": "series-v1.samanehha.co"
+      },
+      "type": "trojan"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -393,6 +389,8 @@
         "outage-11030a2b2fb35890",
         "outage-56a2dd2fcd2db3e7",
         "outage-81b2e96bf75098fc",
+        "outage-e43af1b9ed2a321b",
+        "outage-b33cad4842ee05d3",
         "outage-4bf8736605f9505f",
         "outage-ced5ccd6513f1a94",
         "outage-c43afa7a44a0b9fc",
@@ -401,16 +399,14 @@
         "outage-aa0035b8ce1fd6a1",
         "outage-75a58280bd6b844f",
         "outage-abc00ef3d2b9b6d6",
-        "outage-b886b00505435932",
-        "outage-73e07039270c730d",
-        "outage-9550fce9a1012f77",
         "outage-aa94b5e45b636ccd",
         "outage-a57f8bc52f090df1",
         "outage-6f5619cb5323fea5",
         "outage-559e54aa4fa1e684",
         "outage-f6b9edf527649cc9",
         "outage-c78d64179e50772e",
-        "outage-3999de839491ff35"
+        "outage-3999de839491ff35",
+        "outage-7f735bbc5e38e6c8"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
