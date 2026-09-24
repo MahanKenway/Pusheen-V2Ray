@@ -239,6 +239,25 @@
     },
     {
       "network": "tcp",
+      "password": "0b65bb06-6b28-487a-8e3c-820dda51e977",
+      "server": "104.21.12.87",
+      "server_port": 443,
+      "tag": "outage-dcca155b7fa77b34",
+      "tls": {
+        "enabled": true,
+        "server_name": "series-v1.samanehha.co"
+      },
+      "transport": {
+        "headers": {
+          "Host": "series-v1.samanehha.co"
+        },
+        "path": "/43xf5zgeApzDAfhOHq",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "11dd4a95-fd4f-4f08-8def-e950aa2c1766",
       "server": "104.21.29.205",
       "server_port": 443,
@@ -307,18 +326,6 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "075b9690-f1cc-4d0c-aa1e-f80f07f09815",
-      "server": "104.21.69.50",
-      "server_port": 443,
-      "tag": "outage-27c764161f151cc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "4o.191292.xyz"
-      },
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -337,12 +344,12 @@
         "outage-7b9b8e2ebecd1ada",
         "outage-aa94b5e45b636ccd",
         "outage-c4dcffc730861ee2",
+        "outage-dcca155b7fa77b34",
         "outage-559e54aa4fa1e684",
         "outage-f6b9edf527649cc9",
         "outage-c78d64179e50772e",
         "outage-3999de839491ff35",
-        "outage-d6414f0f2fbf863b",
-        "outage-27c764161f151cc9"
+        "outage-d6414f0f2fbf863b"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
