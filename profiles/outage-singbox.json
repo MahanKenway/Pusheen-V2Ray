@@ -186,44 +186,6 @@
     },
     {
       "network": "tcp",
-      "password": "072f4db4-d89d-420d-9d9e-045ed8d5c9cc",
-      "server": "104.21.86.44",
-      "server_port": 443,
-      "tag": "outage-aa0035b8ce1fd6a1",
-      "tls": {
-        "enabled": true,
-        "server_name": "10xcvb.he2022.filegear-sg.me"
-      },
-      "transport": {
-        "headers": {
-          "Host": "10xcvb.he2022.filegear-sg.me"
-        },
-        "path": "/VEP415T5mby2DulPWRIwOavJd",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "104.17.146.118",
-      "server_port": 2096,
-      "tag": "outage-75a58280bd6b844f",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        },
-        "path": "/links/shows",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4"
-    },
-    {
-      "network": "tcp",
       "password": "13e26f64-2e0c-4461-92cd-d83294cc18f0",
       "server": "104.21.76.21",
       "server_port": 443,
@@ -240,6 +202,21 @@
         "type": "ws"
       },
       "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "104.18.30.170",
+      "server_port": 8880,
+      "tag": "outage-cf0451657fc72d51",
+      "transport": {
+        "headers": {
+          "Host": "young-dust-b8d9.31-8ba.workers.dev"
+        },
+        "path": "/pyip",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "b85c8be2-3109-4b8a-aa82-f0d8fe06f5ae"
     },
     {
       "network": "tcp",
@@ -323,6 +300,18 @@
       "type": "trojan"
     },
     {
+      "network": "tcp",
+      "password": "075b9690-f1cc-4d0c-aa1e-f80f07f09815",
+      "server": "104.21.69.50",
+      "server_port": 443,
+      "tag": "outage-27c764161f151cc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "4o.191292.xyz"
+      },
+      "type": "trojan"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -338,15 +327,15 @@
         "outage-c43afa7a44a0b9fc",
         "outage-e842b35ed5d58719",
         "outage-7b9b8e2ebecd1ada",
-        "outage-aa0035b8ce1fd6a1",
-        "outage-75a58280bd6b844f",
         "outage-aa94b5e45b636ccd",
+        "outage-cf0451657fc72d51",
         "outage-559e54aa4fa1e684",
         "outage-f6b9edf527649cc9",
         "outage-c78d64179e50772e",
         "outage-3999de839491ff35",
         "outage-7f735bbc5e38e6c8",
-        "outage-d6414f0f2fbf863b"
+        "outage-d6414f0f2fbf863b",
+        "outage-27c764161f151cc9"
       ],
       "tag": "outage-auto",
       "tolerance": 200,

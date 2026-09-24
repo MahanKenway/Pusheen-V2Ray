@@ -312,59 +312,6 @@
       "settings": {
         "servers": [
           {
-            "address": "104.21.86.44",
-            "password": "072f4db4-d89d-420d-9d9e-045ed8d5c9cc",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "10xcvb.he2022.filegear-sg.me"
-        },
-        "wsSettings": {
-          "path": "/VEP415T5mby2DulPWRIwOavJd"
-        }
-      },
-      "tag": "resilient-aa0035b8ce1fd6a1"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.17.146.118",
-            "port": 2096,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "d342d11e-d424-4583-b36e-524ab1f0afa4"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "cdn8848.776676.xyz"
-        },
-        "wsSettings": {
-          "path": "/links/shows"
-        }
-      },
-      "tag": "resilient-75a58280bd6b844f"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
             "address": "104.21.76.21",
             "password": "13e26f64-2e0c-4461-92cd-d83294cc18f0",
             "port": 443
@@ -1127,6 +1074,35 @@
         }
       },
       "tag": "resilient-88f245d6bc623968"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.158.206.29",
+            "port": 23576,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "serverName": "fuck.rkn",
+          "shortId": "01"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-8a684fb24d8693b1"
     },
     {
       "protocol": "vless",
