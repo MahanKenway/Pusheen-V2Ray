@@ -28,6 +28,64 @@
       "settings": {
         "vnext": [
           {
+            "address": "199.232.78.170",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "XpnTeam-27"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-c8bfbba6e8e875e7"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.67.216.37",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "b7483fbf-94f6-4d6c-add6-ec3df4fb8015"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "swz.yandex-api.store"
+        },
+        "wsSettings": {
+          "path": "/assets"
+        }
+      },
+      "tag": "resilient-5eee29b8be255598"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "188.114.97.6",
             "port": 443,
             "users": [
@@ -82,18 +140,13 @@
       "tag": "resilient-43676ce3ac452d03"
     },
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "199.232.78.170",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "XpnTeam-15"
-              }
-            ]
+            "address": "104.21.94.69",
+            "password": "13e26f64-2e0c-4461-92cd-d83294cc18f0",
+            "port": 443
           }
         ]
       },
@@ -102,13 +155,13 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
+          "serverName": "dddDvvbHY7.000890604.XyZ"
         },
         "wsSettings": {
-          "path": "/"
+          "path": "/TDUxZUop9k44oPiit2OdWk0KwirdY"
         }
       },
-      "tag": "resilient-11030a2b2fb35890"
+      "tag": "resilient-e6f1f7fdb39a9ecf"
     },
     {
       "protocol": "trojan",
@@ -311,12 +364,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.23.72",
-            "port": 8880,
+            "address": "162.159.82.123",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
-                "id": "1742863c-ce4b-4bb7-b807-80da29cbec86"
+                "id": "ac4bf92d-2dfc-4202-9f90-c5daec804a06"
               }
             ]
           }
@@ -324,12 +377,16 @@
       },
       "streamSettings": {
         "network": "ws",
-        "security": "none",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "du.roomode.ir"
+        },
         "wsSettings": {
           "path": "/"
         }
       },
-      "tag": "resilient-7b9b8e2ebecd1ada"
+      "tag": "resilient-1d3312edf696b554"
     },
     {
       "protocol": "trojan",
@@ -729,30 +786,6 @@
       "tag": "resilient-b45dd9687c0fa4c2"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "www.visa.com.sg",
-            "password": "0F22D008-24D4-4DFE-947B-8D2FD64CD24C",
-            "port": 2053
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "t.hongkong6.qzz.io"
-        },
-        "wsSettings": {
-          "path": "/?ed=2560"
-        }
-      },
-      "tag": "resilient-c78d64179e50772e"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -996,35 +1029,6 @@
       "tag": "resilient-e0c5c06616318651"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "31.57.18.56",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "4f8a1d19-4d21-47f5-816e-a8f475fbd3f7"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "qPgl3LmKAKs5K-KzGNRJyr5KTO0KoRNN5m2PTCMscXU",
-          "serverName": "srv-waw.kintecolas.com",
-          "shortId": "22f534c530d37170"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-5f57afc61ab4cf29"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1126,6 +1130,34 @@
         }
       },
       "tag": "resilient-88f245d6bc623968"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.79.29.205",
+            "port": 10103,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "f6c29358-4b06-445a-bf01-360a418aca1e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "BEbRvaOBf0Vm-HovuysfKge6jHMgK4AGl4U0kA7w8QI",
+          "serverName": "play-apps-features.googleusercontent.com"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-38b7b68ae5c63ac5"
     },
     {
       "protocol": "trojan",
