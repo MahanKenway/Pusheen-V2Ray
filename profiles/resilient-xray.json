@@ -389,6 +389,31 @@
       "settings": {
         "vnext": [
           {
+            "address": "104.18.30.170",
+            "port": 8880,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "b85c8be2-3109-4b8a-aa82-f0d8fe06f5ae"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/pyip"
+        }
+      },
+      "tag": "resilient-cf0451657fc72d51"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "195.26.229.235",
             "port": 443,
             "users": [
@@ -412,6 +437,35 @@
         }
       },
       "tag": "resilient-a9c38000d2f0fdf2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "199.232.237.79",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "eb423e4e-d09c-4e28-b074-e30f090cfcc6"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "turboo-server-fastly.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-1c01b171d8d5f07a"
     },
     {
       "protocol": "vless",
@@ -501,55 +555,6 @@
       "tag": "resilient-d2c32fff27ed787d"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "151.101.56.7",
-            "password": "mitivpn",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/D-e2@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1"
-        }
-      },
-      "tag": "resilient-a57f8bc52f090df1"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "195.85.23.111",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "nb.lovecf.ggff.net"
-        },
-        "wsSettings": {
-          "path": "/proxyip=us.xiabibi.cf"
-        }
-      },
-      "tag": "resilient-2ed19542ce4c252a"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -573,26 +578,6 @@
         }
       },
       "tag": "resilient-1170e501c2744637"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "8.47.69.0",
-            "password": "humanity",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/assignment"
-        }
-      },
-      "tag": "resilient-6f5619cb5323fea5"
     },
     {
       "protocol": "trojan",
@@ -1142,35 +1127,6 @@
         }
       },
       "tag": "resilient-88f245d6bc623968"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.158.206.29",
-            "port": 23576,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "serverName": "fuck.rkn",
-          "shortId": "01"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-8a684fb24d8693b1"
     },
     {
       "protocol": "vless",
