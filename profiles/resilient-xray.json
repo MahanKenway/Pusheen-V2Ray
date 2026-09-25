@@ -24,6 +24,30 @@
   },
   "outbounds": [
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.75.120",
+            "password": "13253e6e-a1f7-4090-801f-a8dc2b083bef",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "inviNcIble.fafa20.ShOp"
+        },
+        "wsSettings": {
+          "path": "/tr7PXHQRn4VPwGA2zY/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=?ed=2560"
+        }
+      },
+      "tag": "resilient-b6a5eeca01a46f30"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -138,6 +162,30 @@
         }
       },
       "tag": "resilient-43676ce3ac452d03"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.95.229",
+            "password": "13253e6e-a1f7-4090-801f-a8dc2b083bef",
+            "port": 2083
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "INvincIBLE.fafA20.Shop"
+        },
+        "wsSettings": {
+          "path": "/trYStgfIRQtOjkkxCQ/MTI5LjE1OS44NC43MQ==?ed=2560"
+        }
+      },
+      "tag": "resilient-e87b80378f554a1a"
     },
     {
       "protocol": "trojan",
@@ -554,12 +602,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "66.235.200.242",
+            "address": "69.46.46.63",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "b2593749-691c-428c-9481-14979cba3446"
+                "id": "6fda20dc-ef11-4889-a4d3-3e889418d893"
               }
             ]
           }
@@ -570,13 +618,13 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "xi.tbv.ccwu.cc"
+          "serverName": "soli-production-108a.up.railway.app"
         },
         "wsSettings": {
-          "path": "/proxyip=us.xiabibi.cf"
+          "path": "/SideRail/ws-zzU4KLWG"
         }
       },
-      "tag": "resilient-36b8bf3c2e4c63e9"
+      "tag": "resilient-79b9923292d1d97c"
     },
     {
       "protocol": "vless",
