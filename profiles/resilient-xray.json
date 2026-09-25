@@ -818,35 +818,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.58.126.92",
-            "port": 8444,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "ad297a2b-ae17-4d2d-8fce-e2eafb89b145"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "OyUyHy3-04xKvFMvAzUbiVf7tkWX2a_gC2E_sEHGVw8",
-          "serverName": "nbcnews.com",
-          "shortId": "08"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-aa73ed8ef182f209"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "iriguchi.proxy.rlwy.net",
             "port": 25156,
             "users": [
@@ -866,36 +837,6 @@
         }
       },
       "tag": "resilient-2f3f910f719d482b"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "5.78.28.48",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "2be98d5e-6eed-445d-aef4-9c776fdd03af"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "u42o3SnK9nE0nEUNd1JREM03dsT7N_c-m2rECXFCCHg",
-          "serverName": "5.78.159.97",
-          "shortId": "ed87fb8386bbbbe5",
-          "spiderX": "/"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-e47d5cb63d1a1523"
     },
     {
       "protocol": "trojan",
@@ -979,6 +920,31 @@
       "settings": {
         "vnext": [
           {
+            "address": "66.90.104.42",
+            "port": 2083,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": "vless"
+        },
+        "network": "grpc",
+        "security": "none"
+      },
+      "tag": "resilient-1d12551ab5e6536d"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "88.216.220.88",
             "port": 443,
             "users": [
@@ -1006,24 +972,33 @@
       "tag": "resilient-e0c5c06616318651"
     },
     {
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "usa.test3.net",
-            "password": "157bbeb0-489f-11f0-ab40-1239d0255272",
-            "port": 443
+            "address": "212.46.33.90",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "c5694dc5-39fd-4a92-8430-3837baa522a3"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false
-        }
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo",
+          "serverName": "slowkd.sadiepinki.com",
+          "shortId": "9c2378562188c3cb"
+        },
+        "security": "reality"
       },
-      "tag": "resilient-d6414f0f2fbf863b"
+      "tag": "resilient-cc2fb92d76a6c7fc"
     },
     {
       "protocol": "vless",
@@ -1113,34 +1088,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.79.29.205",
-            "port": 10103,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "f6c29358-4b06-445a-bf01-360a418aca1e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "BEbRvaOBf0Vm-HovuysfKge6jHMgK4AGl4U0kA7w8QI",
-          "serverName": "play-apps-features.googleusercontent.com"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-38b7b68ae5c63ac5"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "23.137.249.110",
             "port": 20365,
             "users": [
@@ -1178,28 +1125,6 @@
         }
       },
       "tag": "resilient-27c764161f151cc9"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "13.36.152.170",
-            "port": 22222,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-57edf47649ef1a26"
     },
     {
       "protocol": "trojan",
@@ -1397,26 +1322,6 @@
         "security": "reality"
       },
       "tag": "resilient-a842bfb845232621"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "sg4.6n6.net",
-            "password": "16132fb0-4945-11f0-a95e-1239d0255272",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false
-        }
-      },
-      "tag": "resilient-72f859b3d4758fee"
     },
     {
       "protocol": "trojan",
