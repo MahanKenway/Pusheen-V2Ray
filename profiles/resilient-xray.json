@@ -164,6 +164,57 @@
       "tag": "resilient-43676ce3ac452d03"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "199.232.78.160",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "XpnTeam-31"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-f68bca1d234dcbe5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.18.26.90",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-665b0e5aaf2d9097"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -582,35 +633,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "199.232.78.160",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "XpnTeam-20"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-d2c32fff27ed787d"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "188.114.97.6",
             "port": 8080,
             "users": [
@@ -675,6 +697,27 @@
         }
       },
       "tag": "resilient-559e54aa4fa1e684"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "172.67.204.120",
+            "password": "0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "Us6-05.890603.XYZ"
+        }
+      },
+      "tag": "resilient-f5ede8cd143ef89d"
     },
     {
       "protocol": "trojan",
@@ -754,35 +797,6 @@
         }
       },
       "tag": "resilient-b51f40c418d89dc9"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "vodiwalkerpanel-production-d01c.up.railway.app",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "9b474d5f-9387-32a6-aaf8-ddc626b4012f"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "vodiwalkerpanel-production-d01c.up.railway.app"
-        },
-        "wsSettings": {
-          "path": "/ws/9b474d5f-9387-32a6-aaf8-ddc626b4012f"
-        }
-      },
-      "tag": "resilient-b45dd9687c0fa4c2"
     },
     {
       "protocol": "vless",
@@ -1261,37 +1275,6 @@
         }
       },
       "tag": "resilient-33c9c75798197d8c"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "152.228.139.33",
-            "port": 51671,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "75cc7568-abb0-46a8-88be-8137d3c647d4"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "grpc_common3"
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "-5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU",
-          "serverName": "www.sony.com",
-          "shortId": "2fed44d8c59f7e71"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-027dd10fc42df19d"
     },
     {
       "protocol": "vless",
