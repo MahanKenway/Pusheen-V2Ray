@@ -251,21 +251,6 @@
     },
     {
       "network": "tcp",
-      "server": "172.67.152.71",
-      "server_port": 8880,
-      "tag": "outage-e842b35ed5d58719",
-      "transport": {
-        "headers": {
-          "Host": "lively-dream-d892.262.workers.dev"
-        },
-        "path": "/pyip=ProxyIP.US.CMLiussss.net",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "f7ebef03-3c34-4769-bfe4-66e3c92ed665"
-    },
-    {
-      "network": "tcp",
       "server": "162.159.82.123",
       "server_port": 2053,
       "tag": "outage-1d3312edf696b554",
@@ -285,22 +270,18 @@
     },
     {
       "network": "tcp",
-      "password": "13e26f64-2e0c-4461-92cd-d83294cc18f0",
-      "server": "104.21.76.21",
-      "server_port": 443,
-      "tag": "outage-aa94b5e45b636ccd",
-      "tls": {
-        "enabled": true,
-        "server_name": "WwwDe.00890604.XyZ"
-      },
+      "server": "104.18.11.118",
+      "server_port": 8880,
+      "tag": "outage-c4dcffc730861ee2",
       "transport": {
         "headers": {
-          "Host": "WwwDe.00890604.XyZ"
+          "Host": "black-wildflower-dd92.72-1e8.workers.dev"
         },
-        "path": "/TDUxZUop9k44oPiit2OdWk0KwirdY",
+        "path": "/pyip=ProxyIP.KR.CMLiussss.net",
         "type": "ws"
       },
-      "type": "trojan"
+      "type": "vless",
+      "uuid": "17b2ed22-5fd0-47ad-b5f0-658379379ced"
     },
     {
       "network": "tcp",
@@ -346,6 +327,21 @@
       "type": "trojan"
     },
     {
+      "network": "tcp",
+      "password": "0b5fa773-6f37-4134-87d4-0c349742b6f6",
+      "server": "app-538961.user-y0o4gm.workers.dev",
+      "server_port": 443,
+      "tag": "outage-3999de839491ff35",
+      "transport": {
+        "headers": {
+          "Host": "app-538961.user-y0o4gm.workers.dev"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -364,12 +360,12 @@
         "outage-4bf8736605f9505f",
         "outage-ced5ccd6513f1a94",
         "outage-c43afa7a44a0b9fc",
-        "outage-e842b35ed5d58719",
         "outage-1d3312edf696b554",
-        "outage-aa94b5e45b636ccd",
+        "outage-c4dcffc730861ee2",
         "outage-dcca155b7fa77b34",
         "outage-559e54aa4fa1e684",
-        "outage-f6b9edf527649cc9"
+        "outage-f6b9edf527649cc9",
+        "outage-3999de839491ff35"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
