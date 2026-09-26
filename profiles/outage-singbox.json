@@ -90,6 +90,25 @@
     },
     {
       "network": "tcp",
+      "password": "15153c1d-fc81-4b2a-9689-7b4e4a72dce5",
+      "server": "172.67.188.77",
+      "server_port": 443,
+      "tag": "outage-2946e8550b9a3620",
+      "tls": {
+        "enabled": true,
+        "server_name": "edfr4.890604.dpdns.org"
+      },
+      "transport": {
+        "headers": {
+          "Host": "edfr4.890604.dpdns.org"
+        },
+        "path": "/l6lvY4hFZriQDBimbKYmPIggy",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "188.114.97.6",
       "server_port": 80,
       "tag": "outage-786e8541b096c487",
@@ -323,25 +342,6 @@
     },
     {
       "network": "tcp",
-      "password": "0hbl*0RB4T,LSk;JK",
-      "server": "104.21.72.201",
-      "server_port": 2096,
-      "tag": "outage-4cdba71db7b16353",
-      "tls": {
-        "enabled": true,
-        "server_name": "14SW2KRBEO0wv7GZ32H3BnJ.HalABiA061.workeRs.DEv"
-      },
-      "transport": {
-        "headers": {
-          "Host": "14SW2KRBEO0wv7GZ32H3BnJ.HalABiA061.workeRs.DEv"
-        },
-        "path": "/tr/d2y5re8Z9iqkUtWNtSR",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "server": "15.224.68.85",
       "server_port": 22223,
       "tag": "outage-1fea0a2ebe6ab9d7",
@@ -357,6 +357,7 @@
         "outage-b6a5eeca01a46f30",
         "outage-c8bfbba6e8e875e7",
         "outage-5eee29b8be255598",
+        "outage-2946e8550b9a3620",
         "outage-786e8541b096c487",
         "outage-0c18e8666e1083eb",
         "outage-b6dc073376cc9364",
@@ -372,7 +373,6 @@
         "outage-1d3312edf696b554",
         "outage-58dbd8678ef59112",
         "outage-dcca155b7fa77b34",
-        "outage-4cdba71db7b16353",
         "outage-1fea0a2ebe6ab9d7"
       ],
       "tag": "outage-auto",

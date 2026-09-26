@@ -1,10 +1,10 @@
 {
   "by_protocol": {
-    "trojan": 15,
+    "trojan": 16,
     "vless": 31
   },
-  "count": 46,
-  "created_at": "2026-09-26T12:24:13.176787+00:00",
+  "count": 47,
+  "created_at": "2026-09-26T16:43:05.682800+00:00",
   "evidence": "recent successful TCP reachability",
   "max_evidence_age_hours": 72,
   "notice": "A receipt records why the item is eligible for this tier at publication time. It does not disclose hostnames, credentials, raw URIs, or guarantee availability from another network.",
@@ -36,6 +36,13 @@
       "latest_source_id": "iboxz-vless-probationary",
       "protocol": "vless",
       "transport_family": "vless:ws:tls"
+    },
+    {
+      "id": "2946e8550b9a3620",
+      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
+      "latest_source_id": "ebrasha-trojan-probationary",
+      "protocol": "trojan",
+      "transport_family": "trojan:ws:tls"
     },
     {
       "id": "786e8541b096c487",
@@ -199,6 +206,13 @@
       "transport_family": "vless:ws:tls"
     },
     {
+      "id": "289f62685e77e7c0",
+      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
+      "latest_source_id": "iboxz-vless-probationary",
+      "protocol": "vless",
+      "transport_family": "vless:tcp:reality"
+    },
+    {
       "id": "b51f40c418d89dc9",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "iboxz-vless-probationary",
@@ -283,18 +297,11 @@
       "transport_family": "vless:tcp:reality"
     },
     {
-      "id": "57edf47649ef1a26",
+      "id": "b2d9537b74a7ba9d",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "iboxz-vless-probationary",
       "protocol": "vless",
       "transport_family": "vless:tcp:none"
-    },
-    {
-      "id": "2ecf59bae0c77df7",
-      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
-      "latest_source_id": "iboxz-vless-probationary",
-      "protocol": "vless",
-      "transport_family": "vless:tcp:reality"
     },
     {
       "id": "1fea0a2ebe6ab9d7",

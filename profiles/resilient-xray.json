@@ -135,6 +135,30 @@
       "tag": "resilient-5eee29b8be255598"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "172.67.188.77",
+            "password": "15153c1d-fc81-4b2a-9689-7b4e4a72dce5",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "edfr4.890604.dpdns.org"
+        },
+        "wsSettings": {
+          "path": "/l6lvY4hFZriQDBimbKYmPIggy"
+        }
+      },
+      "tag": "resilient-2946e8550b9a3620"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -709,6 +733,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "158.69.112.254",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "661f395d-b153-4199-a04b-693f5fe7f261"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y",
+          "serverName": "www.speedtest.net",
+          "shortId": "3d3c1e645f763ee3"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-289f62685e77e7c0"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "ez-abcc2c.igunsjgjnfgn.workers.dev",
             "port": 2087,
             "users": [
@@ -1033,7 +1086,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.36.152.170",
+            "address": "35.181.245.210",
             "port": 22222,
             "users": [
               {
@@ -1048,35 +1101,7 @@
         "network": "tcp",
         "security": "none"
       },
-      "tag": "resilient-57edf47649ef1a26"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "171.22.114.98",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "d929e993-8053-488a-8a22-0ae09f706a2e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "3Qh9roHIRJtLEM-gV_hudQrY6wPK_Dc3ePVtWLGqYho",
-          "serverName": "www.goo.gl",
-          "shortId": "ef7db38f625526f5"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-2ecf59bae0c77df7"
+      "tag": "resilient-b2d9537b74a7ba9d"
     },
     {
       "protocol": "vless",
