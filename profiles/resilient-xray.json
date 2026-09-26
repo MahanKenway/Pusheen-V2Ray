@@ -615,6 +615,30 @@
       "settings": {
         "servers": [
           {
+            "address": "104.21.72.201",
+            "password": "0hbl*0RB4T,LSk;JK",
+            "port": 2096
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "14SW2KRBEO0wv7GZ32H3BnJ.HalABiA061.workeRs.DEv"
+        },
+        "wsSettings": {
+          "path": "/tr/d2y5re8Z9iqkUtWNtSR"
+        }
+      },
+      "tag": "resilient-4cdba71db7b16353"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "172.67.204.120",
             "password": "0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01",
             "port": 443
@@ -709,35 +733,6 @@
         }
       },
       "tag": "resilient-b51f40c418d89dc9"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "k2.cloud--vpn.site",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "1fac5e18-2ca8-4626-c299-1f3f21c6b55e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-60a39e82f5e2fd20"
     },
     {
       "protocol": "vless",
@@ -1006,6 +1001,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "194.150.166.228",
+            "port": 9443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "ff6d2dda-7b90-404e-9951-34b3124bfdfa"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "safari",
+          "publicKey": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
+          "serverName": "storage.yandexcloud.net",
+          "shortId": "ad20d2ba"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-0b5365db4537c27a"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "212.46.33.5",
             "port": 443,
             "users": [
@@ -1099,27 +1123,6 @@
         }
       },
       "tag": "resilient-41142cc128140bd6"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "37.48.65.144",
-            "password": "0cb2cd1f-870b-485c-914a-60aba39eed39",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "tt6.tjvpn.top"
-        }
-      },
-      "tag": "resilient-035852ee6150f846"
     },
     {
       "protocol": "trojan",
