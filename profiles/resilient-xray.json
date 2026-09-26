@@ -156,6 +156,31 @@
       "settings": {
         "vnext": [
           {
+            "address": "172.67.160.192",
+            "port": 2086,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "Mahanvpn-vip1"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/internet,?ed=2560"
+        }
+      },
+      "tag": "resilient-cc39e9f032281692"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "188.114.97.6",
             "port": 8080,
             "users": [
@@ -394,60 +419,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "151.101.56.6",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "1fac5e18-2ca8-4626-c299-1f3f21c6b55e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512"
-        }
-      },
-      "tag": "resilient-e43af1b9ed2a321b"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.159",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "6261bc9c-128d-446a-9e16-7b340c7544e6"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-b33cad4842ee05d3"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "162.159.82.123",
             "port": 2053,
             "users": [
@@ -496,6 +467,31 @@
         }
       },
       "tag": "resilient-c4dcffc730861ee2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "chatgpt.com",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "db45b571-47cc-44ef-bbf6-dfd3d411f2d8"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/CooonfigCooonfigCooonfigCooonfigCooonfig"
+        }
+      },
+      "tag": "resilient-df464942647d0d67"
     },
     {
       "protocol": "vless",
@@ -811,6 +807,49 @@
       "tag": "resilient-2f3f910f719d482b"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "www.visa.com.sg",
+            "password": "0F22D008-24D4-4DFE-947B-8D2FD64CD24C",
+            "port": 2053
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "t.hongkong6.qzz.io"
+        }
+      },
+      "tag": "resilient-7aaa9cf8b637811a"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "23.137.249.110",
+            "port": 20365,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "1a524663-4a74-4aad-b530-8618a540d857"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-bbfe6186ebc7f5c6"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -890,6 +929,35 @@
         "security": "reality"
       },
       "tag": "resilient-cc2fb92d76a6c7fc"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "31.77.161.15",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "random",
+          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "serverName": "nvidia.com",
+          "shortId": "db04ce8bdb8900f1"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-cf389f1e3b2b8bcd"
     },
     {
       "protocol": "vless",
@@ -1049,50 +1117,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "35.181.245.210",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-cb56e5da118057ef"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "13.36.152.170",
-            "port": 22222,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-57edf47649ef1a26"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "15.224.68.85",
             "port": 22223,
             "users": [
@@ -1129,48 +1153,6 @@
         }
       },
       "tag": "resilient-41142cc128140bd6"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "153.121.52.154",
-            "password": "18844@zxcvbn",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "tk-tr-4.cats22.net"
-        }
-      },
-      "tag": "resilient-beb62e5e7ef9fc03"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "49.212.178.155",
-            "password": "18844@zxcvbn",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "os13.cats22.net"
-        }
-      },
-      "tag": "resilient-33c9c75798197d8c"
     },
     {
       "protocol": "trojan",
