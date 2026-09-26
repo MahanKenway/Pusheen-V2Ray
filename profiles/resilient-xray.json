@@ -558,6 +558,26 @@
       "tag": "resilient-1c01b171d8d5f07a"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "172.67.177.105",
+            "password": "0b5fa773-6f37-4134-87d4-0c349742b6f6",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/cmh"
+        }
+      },
+      "tag": "resilient-58dbd8678ef59112"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -718,6 +738,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "47.253.144.114",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "a4c6bab6-bd83-4b72-8c78-99e96f40cde3"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "yEpPLsSy8aCXkQ4wzc9t38gQACipc_k54upD9fJj5y4",
+          "serverName": "www.apple.com",
+          "shortId": "4679f07417e9feb4"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-0b6ace8a7e686af4"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "iriguchi.proxy.rlwy.net",
             "port": 25156,
             "users": [
@@ -789,37 +838,6 @@
         "security": "none"
       },
       "tag": "resilient-1d12551ab5e6536d"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "88.216.220.88",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "a8e3155b-ceb1-4fcb-bc0c-2e77ec005401"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "api.v1.StreamService"
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "q3kOYHdjmqWLLYj8oikvna1bTjofk45ktegGaJE611g",
-          "serverName": "files.noneok.com",
-          "shortId": "d3b394558cfe0266"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-e0c5c06616318651"
     },
     {
       "protocol": "vless",
@@ -913,31 +931,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "82.24.203.20",
-            "port": 2087,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "5fcdc9b7-e70f-4a5c-85c3-e018ad818326"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/fd5ba98a3970"
-        }
-      },
-      "tag": "resilient-88f245d6bc623968"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "23.137.249.110",
             "port": 20365,
             "users": [
@@ -954,6 +947,28 @@
         "security": "none"
       },
       "tag": "resilient-c2343ee3c353cbb6"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "16.60.17.14",
+            "port": 22223,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-eae9d8a349694a84"
     },
     {
       "protocol": "vless",
@@ -1062,6 +1077,28 @@
         "security": "reality"
       },
       "tag": "resilient-2ecf59bae0c77df7"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "15.224.68.85",
+            "port": 22223,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-1fea0a2ebe6ab9d7"
     },
     {
       "protocol": "trojan",

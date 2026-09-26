@@ -289,6 +289,21 @@
     },
     {
       "network": "tcp",
+      "password": "0b5fa773-6f37-4134-87d4-0c349742b6f6",
+      "server": "172.67.177.105",
+      "server_port": 443,
+      "tag": "outage-58dbd8678ef59112",
+      "transport": {
+        "headers": {
+          "Host": "app-538961.user-y0o4gm.workers.dev"
+        },
+        "path": "/cmh",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "0b65bb06-6b28-487a-8e3c-820dda51e977",
       "server": "104.21.12.87",
       "server_port": 443,
@@ -327,15 +342,11 @@
     },
     {
       "network": "tcp",
-      "password": "0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01",
-      "server": "172.67.204.120",
-      "server_port": 443,
-      "tag": "outage-f5ede8cd143ef89d",
-      "tls": {
-        "enabled": true,
-        "server_name": "Us6-05.890603.XYZ"
-      },
-      "type": "trojan"
+      "server": "15.224.68.85",
+      "server_port": 22223,
+      "tag": "outage-1fea0a2ebe6ab9d7",
+      "type": "vless",
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
     },
     {
       "idle_timeout": "30m",
@@ -359,9 +370,10 @@
         "outage-4bf8736605f9505f",
         "outage-ced5ccd6513f1a94",
         "outage-1d3312edf696b554",
+        "outage-58dbd8678ef59112",
         "outage-dcca155b7fa77b34",
         "outage-4cdba71db7b16353",
-        "outage-f5ede8cd143ef89d"
+        "outage-1fea0a2ebe6ab9d7"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
