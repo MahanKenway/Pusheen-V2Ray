@@ -14,6 +14,14 @@
   "outbounds": [
     {
       "network": "tcp",
+      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+      "server": "104.18.32.87",
+      "server_port": 443,
+      "tag": "outage-ea30bc98c1a8c7a4",
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
       "tag": "outage-b904c2d1573946a2",
@@ -90,6 +98,40 @@
     },
     {
       "network": "tcp",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "tag": "outage-97d6610ab2ac92e6",
+      "transport": {
+        "headers": {
+          "Host": "morning-feather-dc98.136-25b.workers.dev"
+        },
+        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "e1bd06de-a075-4ad5-b73f-b54587368cc7"
+    },
+    {
+      "network": "tcp",
+      "password": "1884f180-94eb-11ee-8c46-1239d0255272",
+      "server": "104.16.123.175",
+      "server_port": 443,
+      "tag": "outage-3efd8f99249b15b9",
+      "tls": {
+        "enabled": true,
+        "server_name": "de1.test3.net"
+      },
+      "transport": {
+        "headers": {
+          "Host": "de1.test3.net"
+        },
+        "path": "/howdy",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "15153c1d-fc81-4b2a-9689-7b4e4a72dce5",
       "server": "172.67.188.77",
       "server_port": 443,
@@ -128,25 +170,6 @@
       "server": "172.67.159.13",
       "server_port": 443,
       "tag": "outage-0c18e8666e1083eb",
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-      "server": "104.18.32.87",
-      "server_port": 443,
-      "tag": "outage-b6dc073376cc9364",
-      "tls": {
-        "enabled": true,
-        "server_name": "id1.nathaya.web.id"
-      },
-      "transport": {
-        "headers": {
-          "Host": "id1.nathaya.web.id"
-        },
-        "path": "/trojan",
-        "type": "ws"
-      },
       "type": "trojan"
     },
     {
@@ -269,26 +292,6 @@
     },
     {
       "network": "tcp",
-      "server": "172.67.130.159",
-      "server_port": 2096,
-      "tag": "outage-4bf8736605f9505f",
-      "type": "vless",
-      "uuid": "1d54a125-8f1e-46bb-9a23-0ecf4ac92db8"
-    },
-    {
-      "network": "tcp",
-      "password": "0q'76Evm32qz@Q'(",
-      "server": "172.66.47.30",
-      "server_port": 2087,
-      "tag": "outage-ced5ccd6513f1a94",
-      "tls": {
-        "enabled": true,
-        "server_name": "JOInMahdiserver-11R.PaGES.dEv"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "server": "162.159.82.123",
       "server_port": 2053,
       "tag": "outage-1d3312edf696b554",
@@ -353,14 +356,16 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-ea30bc98c1a8c7a4",
         "outage-b904c2d1573946a2",
         "outage-b6a5eeca01a46f30",
         "outage-c8bfbba6e8e875e7",
         "outage-5eee29b8be255598",
+        "outage-97d6610ab2ac92e6",
+        "outage-3efd8f99249b15b9",
         "outage-2946e8550b9a3620",
         "outage-786e8541b096c487",
         "outage-0c18e8666e1083eb",
-        "outage-b6dc073376cc9364",
         "outage-665b0e5aaf2d9097",
         "outage-e87b80378f554a1a",
         "outage-e6f1f7fdb39a9ecf",
@@ -368,8 +373,6 @@
         "outage-a89b56a9813a1ca4",
         "outage-e43af1b9ed2a321b",
         "outage-b33cad4842ee05d3",
-        "outage-4bf8736605f9505f",
-        "outage-ced5ccd6513f1a94",
         "outage-1d3312edf696b554",
         "outage-58dbd8678ef59112",
         "outage-dcca155b7fa77b34",
