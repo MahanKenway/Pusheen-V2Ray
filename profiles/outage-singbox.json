@@ -117,6 +117,21 @@
     },
     {
       "network": "tcp",
+      "server": "162.159.45.19",
+      "server_port": 80,
+      "tag": "outage-278880dabce50d51",
+      "transport": {
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        },
+        "path": "/?ed=2560security=tls",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
+    },
+    {
+      "network": "tcp",
       "password": "123456",
       "server": "104.25.165.83",
       "server_port": 8443,
@@ -326,25 +341,6 @@
     },
     {
       "network": "tcp",
-      "server": "162.159.82.123",
-      "server_port": 2053,
-      "tag": "outage-1d3312edf696b554",
-      "tls": {
-        "enabled": true,
-        "server_name": "du.roomode.ir"
-      },
-      "transport": {
-        "headers": {
-          "Host": "du.roomode.ir"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "ac4bf92d-2dfc-4202-9f90-c5daec804a06"
-    },
-    {
-      "network": "tcp",
       "server": "15.224.68.85",
       "server_port": 22223,
       "tag": "outage-1fea0a2ebe6ab9d7",
@@ -362,6 +358,7 @@
         "outage-b6a5eeca01a46f30",
         "outage-c8bfbba6e8e875e7",
         "outage-5eee29b8be255598",
+        "outage-278880dabce50d51",
         "outage-c38bd02e8a06368c",
         "outage-c78e407fda48906f",
         "outage-1927612324fbf433",
@@ -375,7 +372,6 @@
         "outage-e87b80378f554a1a",
         "outage-e6f1f7fdb39a9ecf",
         "outage-8843c5518cd3c989",
-        "outage-1d3312edf696b554",
         "outage-1fea0a2ebe6ab9d7"
       ],
       "tag": "outage-auto",
