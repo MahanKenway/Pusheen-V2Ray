@@ -24,23 +24,6 @@
   },
   "outbounds": [
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.18.32.87",
-            "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-ea30bc98c1a8c7a4"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -50,7 +33,7 @@
             "users": [
               {
                 "encryption": "none",
-                "id": "XpnTeam-34"
+                "id": "XpnTeam-38"
               }
             ]
           }
@@ -67,7 +50,24 @@
           "path": "/"
         }
       },
-      "tag": "resilient-b904c2d1573946a2"
+      "tag": "resilient-ddfee55e292c11cb"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.18.32.87",
+            "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-ea30bc98c1a8c7a4"
     },
     {
       "protocol": "trojan",
@@ -150,6 +150,55 @@
         }
       },
       "tag": "resilient-5eee29b8be255598"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "66.235.200.40",
+            "port": 8880,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "6202b230-417c-4d8e-b624-0f71afa9c75d"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-c78e407fda48906f"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.17.147.11",
+            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "jobscareerfortoday.com"
+        },
+        "wsSettings": {
+          "path": "/6b777a91"
+        }
+      },
+      "tag": "resilient-1927612324fbf433"
     },
     {
       "protocol": "vless",
@@ -390,35 +439,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.64.53.240",
-            "port": 2087,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
-        },
-        "wsSettings": {
-          "path": "?ed=2560"
-        }
-      },
-      "tag": "resilient-a89b56a9813a1ca4"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "162.159.82.123",
             "port": 2053,
             "users": [
@@ -442,6 +462,35 @@
         }
       },
       "tag": "resilient-1d3312edf696b554"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "chatgpt.com",
+            "port": 2083,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "8fd67ae5-47af-24bb-4338-a8fb00000078"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "aged-sky-bad0.hivdai.workers.dev"
+        },
+        "wsSettings": {
+          "path": "/sub"
+        }
+      },
+      "tag": "resilient-3b518d4623ccbb4f"
     },
     {
       "protocol": "vless",
@@ -854,33 +903,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "162.19.10.99",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "e8b1500b-e9e8-5492-8312-f4eadf7d0767"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "nasnet-162191099-direct.mbghalibaf.com"
-        }
-      },
-      "tag": "resilient-ff8853c82f268e01"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "66.90.104.42",
             "port": 2083,
             "users": [
@@ -964,13 +986,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "213.193.255.188",
+            "address": "136.148.71.151",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "xtls-rprx-vision",
-                "id": "e0fc8dbc-d564-459f-b565-33074732c102"
+                "id": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce"
               }
             ]
           }
@@ -979,14 +1001,13 @@
       "streamSettings": {
         "network": "tcp",
         "realitySettings": {
-          "fingerprint": "safari",
-          "publicKey": "_p24twNlnUIdoSiWlNoxSlu95PfQAoLIrxKQU4IBsU4",
-          "serverName": "only-cur1.voxicheck.com",
-          "shortId": "abcd1234"
+          "fingerprint": "firefox",
+          "publicKey": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
+          "serverName": "germa12.ggisopi.su"
         },
         "security": "reality"
       },
-      "tag": "resilient-9a78f435362a6ffd"
+      "tag": "resilient-cb7053ebc1a8fc78"
     },
     {
       "protocol": "vless",
@@ -1140,7 +1161,7 @@
         "servers": [
           {
             "address": "uk1.test3.net",
-            "password": "0ff2ecf0-4684-11f0-b33e-1239d0255272",
+            "password": "0e17b420-48a2-11f0-8c4d-1239d0255272",
             "port": 443
           }
         ]
@@ -1152,7 +1173,7 @@
           "allowInsecure": false
         }
       },
-      "tag": "resilient-41142cc128140bd6"
+      "tag": "resilient-460d5ca881555baf"
     },
     {
       "protocol": "trojan",
