@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "tag": "outage-6673dee3cdbe1e13",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "6c0c6fc2-1092-4b66-982b-320f49f95bc3"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
       "tag": "outage-ddfee55e292c11cb",
@@ -95,6 +114,25 @@
       },
       "type": "vless",
       "uuid": "b7483fbf-94f6-4d6c-add6-ec3df4fb8015"
+    },
+    {
+      "network": "tcp",
+      "password": "123456",
+      "server": "104.25.165.83",
+      "server_port": 8443,
+      "tag": "outage-c38bd02e8a06368c",
+      "tls": {
+        "enabled": true,
+        "server_name": "top-azx.pages.dev"
+      },
+      "transport": {
+        "headers": {
+          "Host": "top-azx.pages.dev"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -307,40 +345,6 @@
     },
     {
       "network": "tcp",
-      "server": "chatgpt.com",
-      "server_port": 2083,
-      "tag": "outage-3b518d4623ccbb4f",
-      "tls": {
-        "enabled": true,
-        "server_name": "aged-sky-bad0.hivdai.workers.dev"
-      },
-      "transport": {
-        "headers": {
-          "Host": "aged-sky-bad0.hivdai.workers.dev"
-        },
-        "path": "/sub",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "8fd67ae5-47af-24bb-4338-a8fb00000078"
-    },
-    {
-      "network": "tcp",
-      "password": "0b5fa773-6f37-4134-87d4-0c349742b6f6",
-      "server": "172.67.177.105",
-      "server_port": 443,
-      "tag": "outage-58dbd8678ef59112",
-      "transport": {
-        "headers": {
-          "Host": "app-538961.user-y0o4gm.workers.dev"
-        },
-        "path": "/cmh",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "server": "15.224.68.85",
       "server_port": 22223,
       "tag": "outage-1fea0a2ebe6ab9d7",
@@ -352,11 +356,13 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-6673dee3cdbe1e13",
         "outage-ddfee55e292c11cb",
         "outage-ea30bc98c1a8c7a4",
         "outage-b6a5eeca01a46f30",
         "outage-c8bfbba6e8e875e7",
         "outage-5eee29b8be255598",
+        "outage-c38bd02e8a06368c",
         "outage-c78e407fda48906f",
         "outage-1927612324fbf433",
         "outage-cc39e9f032281692",
@@ -370,8 +376,6 @@
         "outage-e6f1f7fdb39a9ecf",
         "outage-8843c5518cd3c989",
         "outage-1d3312edf696b554",
-        "outage-3b518d4623ccbb4f",
-        "outage-58dbd8678ef59112",
         "outage-1fea0a2ebe6ab9d7"
       ],
       "tag": "outage-auto",
