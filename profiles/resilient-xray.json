@@ -482,6 +482,34 @@
       "settings": {
         "vnext": [
           {
+            "address": "78.111.89.171",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "0370b162-baff-4757-86cc-cce4bf07f6f1"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "lYcMPEgf6ePmF_d8RXR5fsVorycW37v_ECl-fz_H6w4",
+          "serverName": "www.cloudflare.com",
+          "shortId": "cfe08c23a85f24"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-1997211f89658cef"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "188.114.97.6",
             "port": 443,
             "users": [
@@ -799,6 +827,28 @@
       "settings": {
         "vnext": [
           {
+            "address": "51.200.11.115",
+            "port": 22222,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-3863a3890104d61e"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "18.171.3.214",
             "port": 22222,
             "users": [
@@ -865,6 +915,28 @@
       "settings": {
         "vnext": [
           {
+            "address": "52.47.137.22",
+            "port": 22222,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-0e7f9474f5338e73"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "13.37.167.120",
             "port": 22223,
             "users": [
@@ -881,60 +953,6 @@
         "security": "none"
       },
       "tag": "resilient-138116507de25f9b"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "66.90.104.42",
-            "port": 2083,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "vless"
-        },
-        "network": "grpc",
-        "security": "none"
-      },
-      "tag": "resilient-1d12551ab5e6536d"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "212.46.33.90",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "c5694dc5-39fd-4a92-8430-3837baa522a3"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo",
-          "serverName": "slowkd.sadiepinki.com",
-          "shortId": "9c2378562188c3cb"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-cc2fb92d76a6c7fc"
     },
     {
       "protocol": "vless",
@@ -1045,6 +1063,27 @@
         }
       },
       "tag": "resilient-848af21177c75b99"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "217.79.184.18",
+            "password": "0dd0ae16-4081-4530-a925-c3c34ca07d57",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "download.xn--mes358a9urctx.com"
+        }
+      },
+      "tag": "resilient-16a2bc32d3770166"
     },
     {
       "protocol": "vless",
@@ -1190,26 +1229,6 @@
         }
       },
       "tag": "resilient-fba16d9486e8ec40"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "uk1.test3.net",
-            "password": "0e17b420-48a2-11f0-8c4d-1239d0255272",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false
-        }
-      },
-      "tag": "resilient-460d5ca881555baf"
     },
     {
       "protocol": "trojan",
