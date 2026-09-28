@@ -337,26 +337,28 @@
       "tag": "resilient-0c18e8666e1083eb"
     },
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "104.18.26.90",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46"
-              }
-            ]
+            "address": "104.18.32.47",
+            "password": "15f34214-d8de-41e9-ba72-93daeafc59ef",
+            "port": 2087
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none"
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "subhiddify.mmdv2.host"
+        },
+        "wsSettings": {
+          "path": "/Telegram@V2ray_Alpha/?ed=2560"
+        }
       },
-      "tag": "resilient-665b0e5aaf2d9097"
+      "tag": "resilient-2267fe479ae474dd"
     },
     {
       "protocol": "trojan",
@@ -555,6 +557,31 @@
       "tag": "resilient-b332cc1577e0f6b6"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.98.0",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "3bb1ea3c-8bb6-488d-855b-bd5acb20f0b9"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/CooonfigCooonfigCooonfigCooonfigCooonfig"
+        }
+      },
+      "tag": "resilient-9aa8fd1d683491b3"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -577,27 +604,6 @@
         }
       },
       "tag": "resilient-4cdba71db7b16353"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "172.67.204.120",
-            "password": "0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "Us6-05.890603.XYZ"
-        }
-      },
-      "tag": "resilient-f5ede8cd143ef89d"
     },
     {
       "protocol": "trojan",
