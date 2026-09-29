@@ -280,40 +280,6 @@
     },
     {
       "network": "tcp",
-      "password": "0b5fa773-6f37-4134-87d4-0c349742b6f6",
-      "server": "172.67.177.105",
-      "server_port": 443,
-      "tag": "outage-58dbd8678ef59112",
-      "transport": {
-        "headers": {
-          "Host": "app-538961.user-y0o4gm.workers.dev"
-        },
-        "path": "/cmh",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "tag": "outage-2d3a4e2a198efeea",
-      "tls": {
-        "enabled": true,
-        "server_name": "llm-api.sofurry.dpdns.org"
-      },
-      "transport": {
-        "headers": {
-          "Host": "llm-api.sofurry.dpdns.org"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40"
-    },
-    {
-      "network": "tcp",
       "password": "Telegram_healer_config",
       "server": "188.114.96.8",
       "server_port": 443,
@@ -339,6 +305,21 @@
       "uuid": "3bb1ea3c-8bb6-488d-855b-bd5acb20f0b9"
     },
     {
+      "network": "tcp",
+      "password": "0b5fa773-6f37-4134-87d4-0c349742b6f6",
+      "server": "104.21.43.90",
+      "server_port": 443,
+      "tag": "outage-b46e65f48f5af931",
+      "transport": {
+        "headers": {
+          "Host": "app-538961.user-y0o4gm.workers.dev"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -359,10 +340,9 @@
         "outage-3b518d4623ccbb4f",
         "outage-b97559a56bcd91ab",
         "outage-df464942647d0d67",
-        "outage-58dbd8678ef59112",
-        "outage-2d3a4e2a198efeea",
         "outage-b332cc1577e0f6b6",
-        "outage-9aa8fd1d683491b3"
+        "outage-9aa8fd1d683491b3",
+        "outage-b46e65f48f5af931"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
