@@ -196,29 +196,6 @@
     },
     {
       "network": "tcp",
-      "server": "188.114.97.6",
-      "server_port": 80,
-      "tag": "outage-786e8541b096c487",
-      "transport": {
-        "headers": {
-          "Host": "msjsi.azazilvpn.sbs."
-        },
-        "path": "/CooonfigCooonfigCooonfigCooonfigCooonfig",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "866b08ab-1786-4769-b364-d76b22daa7e2"
-    },
-    {
-      "network": "tcp",
-      "password": "0b971bb0-f0af-11ee-8f57-1239d0255272",
-      "server": "172.67.159.13",
-      "server_port": 443,
-      "tag": "outage-0c18e8666e1083eb",
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": "15f34214-d8de-41e9-ba72-93daeafc59ef",
       "server": "104.18.32.47",
       "server_port": 2087,
@@ -337,6 +314,32 @@
     },
     {
       "network": "tcp",
+      "password": "Telegram_healer_config",
+      "server": "188.114.96.8",
+      "server_port": 443,
+      "tag": "outage-b332cc1577e0f6b6",
+      "tls": {
+        "enabled": true
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "188.114.98.0",
+      "server_port": 80,
+      "tag": "outage-9aa8fd1d683491b3",
+      "transport": {
+        "headers": {
+          "Host": "msjsi.azazilvpn.sbs."
+        },
+        "path": "/CooonfigCooonfigCooonfigCooonfigCooonfig",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "3bb1ea3c-8bb6-488d-855b-bd5acb20f0b9"
+    },
+    {
+      "network": "tcp",
       "server": "15.224.68.85",
       "server_port": 22223,
       "tag": "outage-1fea0a2ebe6ab9d7",
@@ -359,8 +362,6 @@
         "outage-97d6610ab2ac92e6",
         "outage-3efd8f99249b15b9",
         "outage-2946e8550b9a3620",
-        "outage-786e8541b096c487",
-        "outage-0c18e8666e1083eb",
         "outage-2267fe479ae474dd",
         "outage-ec7b89354c0128e9",
         "outage-3b518d4623ccbb4f",
@@ -368,6 +369,8 @@
         "outage-df464942647d0d67",
         "outage-58dbd8678ef59112",
         "outage-2d3a4e2a198efeea",
+        "outage-b332cc1577e0f6b6",
+        "outage-9aa8fd1d683491b3",
         "outage-1fea0a2ebe6ab9d7"
       ],
       "tag": "outage-auto",

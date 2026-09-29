@@ -295,48 +295,6 @@
       "tag": "resilient-2946e8550b9a3620"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.114.97.6",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "866b08ab-1786-4769-b364-d76b22daa7e2"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/CooonfigCooonfigCooonfigCooonfigCooonfig"
-        }
-      },
-      "tag": "resilient-786e8541b096c487"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "172.67.159.13",
-            "password": "0b971bb0-f0af-11ee-8f57-1239d0255272",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-0c18e8666e1083eb"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1192,6 +1150,70 @@
         "security": "reality"
       },
       "tag": "resilient-0b5365db4537c27a"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "35.181.245.210",
+            "port": 22222,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-b2d9537b74a7ba9d"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "35.181.245.210",
+            "port": 22223,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-cb56e5da118057ef"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "49.212.204.123",
+            "password": "18844@zxcvbn",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false
+        }
+      },
+      "tag": "resilient-a22620ca10db4d20"
     },
     {
       "protocol": "vless",
