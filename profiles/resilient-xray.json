@@ -24,33 +24,24 @@
   },
   "outbounds": [
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "199.232.78.159",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "9e9fd625-e4d7-4944-ae7e-4145342fa5db"
-              }
-            ]
+            "address": "104.18.32.87",
+            "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/"
+          "allowInsecure": false
         }
       },
-      "tag": "resilient-b1f09d87cd90ad49"
+      "tag": "resilient-271ad2f2c9936f4b"
     },
     {
       "protocol": "vless",
@@ -82,6 +73,35 @@
       "tag": "resilient-0c41baeef009553e"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "199.232.78.159",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d6962b1a-4701-4456-ba61-deb28c913a66"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-3a61d938b6d4b580"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -104,27 +124,6 @@
         }
       },
       "tag": "resilient-2267fe479ae474dd"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.16.192.146",
-            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "jobscareertoday.com"
-        }
-      },
-      "tag": "resilient-ec7b89354c0128e9"
     },
     {
       "protocol": "vless",
@@ -291,35 +290,6 @@
       "tag": "resilient-1997211f89658cef"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.160",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "XpnTeam-40"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-49961b9e69961ba2"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -339,26 +309,6 @@
         }
       },
       "tag": "resilient-39f5e9b31cd3b647"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "188.114.96.8",
-            "password": "Telegram_healer_config",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false
-        }
-      },
-      "tag": "resilient-b332cc1577e0f6b6"
     },
     {
       "protocol": "vless",
@@ -788,30 +738,6 @@
       "tag": "resilient-eaad5a6fdfb7c11f"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "ubu.okaoclax.me",
-            "password": "13c169be-8592-4eaa-94cb-69c859e7d987",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ubu.okaoclax.me"
-        },
-        "wsSettings": {
-          "path": "/trojan-ws"
-        }
-      },
-      "tag": "resilient-848af21177c75b99"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1126,6 +1052,50 @@
         "security": "reality"
       },
       "tag": "resilient-56c2b4fbf96c9ab7"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "13.135.60.15",
+            "port": 22222,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-eebdfe3c7ce9f26d"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.44.118.124",
+            "port": 22222,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-48faa278f1124076"
     },
     {
       "protocol": "trojan",

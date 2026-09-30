@@ -14,22 +14,14 @@
   "outbounds": [
     {
       "network": "tcp",
-      "server": "199.232.78.159",
+      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+      "server": "104.18.32.87",
       "server_port": 443,
-      "tag": "outage-b1f09d87cd90ad49",
+      "tag": "outage-271ad2f2c9936f4b",
       "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
+        "enabled": true
       },
-      "transport": {
-        "headers": {
-          "Host": "ssl.fastly.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "9e9fd625-e4d7-4944-ae7e-4145342fa5db"
+      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -52,6 +44,25 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "tag": "outage-3a61d938b6d4b580",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "d6962b1a-4701-4456-ba61-deb28c913a66"
+    },
+    {
+      "network": "tcp",
       "password": "15f34214-d8de-41e9-ba72-93daeafc59ef",
       "server": "104.18.32.47",
       "server_port": 2087,
@@ -66,18 +77,6 @@
         },
         "path": "/Telegram@V2ray_Alpha/?ed=2560",
         "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "server": "104.16.192.146",
-      "server_port": 443,
-      "tag": "outage-ec7b89354c0128e9",
-      "tls": {
-        "enabled": true,
-        "server_name": "jobscareertoday.com"
       },
       "type": "trojan"
     },
@@ -155,25 +154,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "tag": "outage-49961b9e69961ba2",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ssl.fastly.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "XpnTeam-40"
-    },
-    {
-      "network": "tcp",
       "password": "072f4db4-d89d-420d-9d9e-045ed8d5c9cc",
       "server": "172.67.215.15",
       "server_port": 443,
@@ -181,17 +161,6 @@
       "tls": {
         "enabled": true,
         "server_name": "10xcvb.he2022.filegear-sg.me"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "Telegram_healer_config",
-      "server": "188.114.96.8",
-      "server_port": 443,
-      "tag": "outage-b332cc1577e0f6b6",
-      "tls": {
-        "enabled": true
       },
       "type": "trojan"
     },
@@ -258,22 +227,22 @@
     },
     {
       "network": "tcp",
-      "password": "13c169be-8592-4eaa-94cb-69c859e7d987",
-      "server": "ubu.okaoclax.me",
+      "server": "sfghfdh75-production.up.railway.app",
       "server_port": 443,
-      "tag": "outage-848af21177c75b99",
+      "tag": "outage-d76d4c7777fd4cd9",
       "tls": {
         "enabled": true,
-        "server_name": "ubu.okaoclax.me"
+        "server_name": "sfghfdh75-production.up.railway.app"
       },
       "transport": {
         "headers": {
-          "Host": "ubu.okaoclax.me"
+          "Host": "sfghfdh75-production.up.railway.app"
         },
-        "path": "/trojan-ws",
+        "path": "/ws/3515991a-d6cd-4c93-a1c1-d39a77aad058",
         "type": "ws"
       },
-      "type": "trojan"
+      "type": "vless",
+      "uuid": "3515991a-d6cd-4c93-a1c1-d39a77aad058"
     },
     {
       "network": "tcp",
@@ -288,27 +257,50 @@
       "type": "trojan"
     },
     {
+      "network": "tcp",
+      "password": "18844@zxcvbn",
+      "server": "49.212.204.123",
+      "server_port": 443,
+      "tag": "outage-a22620ca10db4d20",
+      "tls": {
+        "enabled": true
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "0f5e6d9a-49af-4bc0-b04b-503102382144",
+      "server": "51.195.219.173",
+      "server_port": 443,
+      "tag": "outage-fba16d9486e8ec40",
+      "tls": {
+        "enabled": true,
+        "server_name": "ukt1.sshocean.net"
+      },
+      "type": "trojan"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
-        "outage-b1f09d87cd90ad49",
+        "outage-271ad2f2c9936f4b",
         "outage-0c41baeef009553e",
+        "outage-3a61d938b6d4b580",
         "outage-2267fe479ae474dd",
-        "outage-ec7b89354c0128e9",
         "outage-295214dcc007a643",
         "outage-b97559a56bcd91ab",
         "outage-47aaef91f52560d0",
         "outage-82bf7bf6730e910a",
-        "outage-49961b9e69961ba2",
         "outage-39f5e9b31cd3b647",
-        "outage-b332cc1577e0f6b6",
         "outage-9aa8fd1d683491b3",
         "outage-b46e65f48f5af931",
         "outage-3bc31b7887b55bba",
         "outage-68ca004ddb7910ca",
-        "outage-848af21177c75b99",
-        "outage-16a2bc32d3770166"
+        "outage-d76d4c7777fd4cd9",
+        "outage-16a2bc32d3770166",
+        "outage-a22620ca10db4d20",
+        "outage-fba16d9486e8ec40"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
