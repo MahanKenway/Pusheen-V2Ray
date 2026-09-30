@@ -33,43 +33,9 @@
     },
     {
       "network": "tcp",
-      "server": "162.159.45.19",
-      "server_port": 80,
-      "tag": "outage-278880dabce50d51",
-      "transport": {
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        },
-        "path": "/?ed=2560security=tls",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-    },
-    {
-      "network": "tcp",
-      "password": "123456",
-      "server": "104.25.165.83",
-      "server_port": 8443,
-      "tag": "outage-c38bd02e8a06368c",
-      "tls": {
-        "enabled": true,
-        "server_name": "top-azx.pages.dev"
-      },
-      "transport": {
-        "headers": {
-          "Host": "top-azx.pages.dev"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "server": "188.114.97.6",
       "server_port": 443,
-      "tag": "outage-a13422c14f731a0a",
+      "tag": "outage-0c41baeef009553e",
       "tls": {
         "enabled": true,
         "server_name": "edgetunnel-4uw.pages.dev"
@@ -83,6 +49,21 @@
       },
       "type": "vless",
       "uuid": "fdc48be3-a615-41ac-8bd1-ed844c931048"
+    },
+    {
+      "network": "tcp",
+      "server": "162.159.45.19",
+      "server_port": 80,
+      "tag": "outage-278880dabce50d51",
+      "transport": {
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        },
+        "path": "/?ed=2560security=tls",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
     },
     {
       "network": "tcp",
@@ -310,14 +291,25 @@
       "type": "trojan"
     },
     {
+      "network": "tcp",
+      "password": "0dd0ae16-4081-4530-a925-c3c34ca07d57",
+      "server": "217.79.184.18",
+      "server_port": 443,
+      "tag": "outage-16a2bc32d3770166",
+      "tls": {
+        "enabled": true,
+        "server_name": "download.xn--mes358a9urctx.com"
+      },
+      "type": "trojan"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
         "outage-b1f09d87cd90ad49",
+        "outage-0c41baeef009553e",
         "outage-278880dabce50d51",
-        "outage-c38bd02e8a06368c",
-        "outage-a13422c14f731a0a",
         "outage-2267fe479ae474dd",
         "outage-ec7b89354c0128e9",
         "outage-295214dcc007a643",
@@ -331,7 +323,8 @@
         "outage-6b5448435e2f4506",
         "outage-3bc31b7887b55bba",
         "outage-68ca004ddb7910ca",
-        "outage-848af21177c75b99"
+        "outage-848af21177c75b99",
+        "outage-16a2bc32d3770166"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
