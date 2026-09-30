@@ -52,21 +52,6 @@
     },
     {
       "network": "tcp",
-      "server": "162.159.45.19",
-      "server_port": 80,
-      "tag": "outage-278880dabce50d51",
-      "transport": {
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        },
-        "path": "/?ed=2560security=tls",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-    },
-    {
-      "network": "tcp",
       "password": "15f34214-d8de-41e9-ba72-93daeafc59ef",
       "server": "104.18.32.47",
       "server_port": 2087,
@@ -133,6 +118,25 @@
         "type": "ws"
       },
       "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "104.20.30.10",
+      "server_port": 443,
+      "tag": "outage-47aaef91f52560d0",
+      "tls": {
+        "enabled": true,
+        "server_name": "us9.69lover.my"
+      },
+      "transport": {
+        "headers": {
+          "Host": "us9.69lover.my"
+        },
+        "path": "/api/v2/63e9687fa53e441c/stream",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "91d28760-ecf1-450b-9170-d310111a0e6d"
     },
     {
       "network": "tcp",
@@ -223,25 +227,6 @@
     },
     {
       "network": "tcp",
-      "server": "channel.t-me-sh4dow-vpn.workers.dev",
-      "server_port": 443,
-      "tag": "outage-6b5448435e2f4506",
-      "tls": {
-        "enabled": true,
-        "server_name": "channel.t-me-sh4dow-vpn.workers.dev"
-      },
-      "transport": {
-        "headers": {
-          "Host": "channel.t-me-sh4dow-vpn.workers.dev"
-        },
-        "path": "/eyJqdW5rIjoiWlNHcnk5RHUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iXX0=",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "9ec16323-954c-4b09-aec9-367e18844fa8"
-    },
-    {
-      "network": "tcp",
       "password": "13253e6e-a1f7-4090-801f-a8dc2b083bef",
       "server": "104.21.78.206",
       "server_port": 2083,
@@ -309,18 +294,17 @@
       "outbounds": [
         "outage-b1f09d87cd90ad49",
         "outage-0c41baeef009553e",
-        "outage-278880dabce50d51",
         "outage-2267fe479ae474dd",
         "outage-ec7b89354c0128e9",
         "outage-295214dcc007a643",
         "outage-b97559a56bcd91ab",
+        "outage-47aaef91f52560d0",
         "outage-82bf7bf6730e910a",
         "outage-49961b9e69961ba2",
         "outage-39f5e9b31cd3b647",
         "outage-b332cc1577e0f6b6",
         "outage-9aa8fd1d683491b3",
         "outage-b46e65f48f5af931",
-        "outage-6b5448435e2f4506",
         "outage-3bc31b7887b55bba",
         "outage-68ca004ddb7910ca",
         "outage-848af21177c75b99",

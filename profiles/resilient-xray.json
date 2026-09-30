@@ -82,31 +82,6 @@
       "tag": "resilient-0c41baeef009553e"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "162.159.45.19",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/?ed=2560security=tls"
-        }
-      },
-      "tag": "resilient-278880dabce50d51"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -203,6 +178,35 @@
         }
       },
       "tag": "resilient-b97559a56bcd91ab"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.20.30.10",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "91d28760-ecf1-450b-9170-d310111a0e6d"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "us9.69lover.my"
+        },
+        "wsSettings": {
+          "path": "/api/v2/63e9687fa53e441c/stream"
+        }
+      },
+      "tag": "resilient-47aaef91f52560d0"
     },
     {
       "protocol": "vless",
@@ -431,35 +435,6 @@
       "tag": "resilient-465d5dde1f63b140"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "channel.t-me-sh4dow-vpn.workers.dev",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "9ec16323-954c-4b09-aec9-367e18844fa8"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "channel.t-me-sh4dow-vpn.workers.dev"
-        },
-        "wsSettings": {
-          "path": "/eyJqdW5rIjoiWlNHcnk5RHUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iXX0="
-        }
-      },
-      "tag": "resilient-6b5448435e2f4506"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -561,50 +536,6 @@
         "security": "reality"
       },
       "tag": "resilient-18b0d5c9bbe476e9"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "18.133.172.254",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-16d5e552a496724e"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "18.171.3.214",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-d443fd4ac0a3c91f"
     },
     {
       "protocol": "vless",
@@ -1122,6 +1053,31 @@
       "tag": "resilient-a22620ca10db4d20"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "163.8.195.241",
+            "port": 2087,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "56ba5d34-ef22-4ba6-8090-4188b807df54"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/29c8fed7ca22"
+        }
+      },
+      "tag": "resilient-b13b7a26eb3bfa24"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1141,6 +1097,56 @@
         }
       },
       "tag": "resilient-fba16d9486e8ec40"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "159.195.112.171",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "dbe7df9a-c846-4305-9bbf-771c1b2f0520"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "auZrfyobgU8l8-4_WKsupJVeZMxRJPkXT6ams3na6l0",
+          "serverName": "stream.jugoslavija.uk",
+          "shortId": "a0f54666d5e6fb80"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-56c2b4fbf96c9ab7"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "194.233.88.109",
+            "password": "123456",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "194.233.88.109"
+        }
+      },
+      "tag": "resilient-126dbeec2204974a"
     },
     {
       "protocol": "trojan",
