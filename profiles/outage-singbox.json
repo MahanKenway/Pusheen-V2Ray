@@ -67,6 +67,25 @@
     },
     {
       "network": "tcp",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "tag": "outage-a13422c14f731a0a",
+      "tls": {
+        "enabled": true,
+        "server_name": "edgetunnel-4uw.pages.dev"
+      },
+      "transport": {
+        "headers": {
+          "Host": "edgetunnel-4uw.pages.dev"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "fdc48be3-a615-41ac-8bd1-ed844c931048"
+    },
+    {
+      "network": "tcp",
       "password": "15f34214-d8de-41e9-ba72-93daeafc59ef",
       "server": "104.18.32.47",
       "server_port": 2087,
@@ -179,25 +198,6 @@
         "server_name": "10xcvb.he2022.filegear-sg.me"
       },
       "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "tag": "outage-353135ee34de7e9c",
-      "tls": {
-        "enabled": true,
-        "server_name": "shephe.dpdns.org"
-      },
-      "transport": {
-        "headers": {
-          "Host": "shephe.dpdns.org"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "9e3132b8-b595-444a-833a-2de44789f9d7"
     },
     {
       "network": "tcp",
@@ -317,6 +317,7 @@
         "outage-b1f09d87cd90ad49",
         "outage-278880dabce50d51",
         "outage-c38bd02e8a06368c",
+        "outage-a13422c14f731a0a",
         "outage-2267fe479ae474dd",
         "outage-ec7b89354c0128e9",
         "outage-295214dcc007a643",
@@ -324,7 +325,6 @@
         "outage-82bf7bf6730e910a",
         "outage-49961b9e69961ba2",
         "outage-39f5e9b31cd3b647",
-        "outage-353135ee34de7e9c",
         "outage-b332cc1577e0f6b6",
         "outage-9aa8fd1d683491b3",
         "outage-b46e65f48f5af931",
