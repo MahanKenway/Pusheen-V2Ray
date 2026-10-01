@@ -24,6 +24,35 @@
   },
   "outbounds": [
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "199.232.78.160",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "XpnTeam-55"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-76162ec22b46f024"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -153,30 +182,6 @@
         }
       },
       "tag": "resilient-295214dcc007a643"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.16.122.175",
-            "password": "1884f180-94eb-11ee-8c46-1239d0255272",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "de1.test3.net"
-        },
-        "wsSettings": {
-          "path": "/howdy"
-        }
-      },
-      "tag": "resilient-b97559a56bcd91ab"
     },
     {
       "protocol": "vless",
@@ -434,29 +439,29 @@
       "settings": {
         "vnext": [
           {
-            "address": "sfghfdh75-production.up.railway.app",
+            "address": "169.40.42.75",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "3515991a-d6cd-4c93-a1c1-d39a77aad058"
+                "flow": "xtls-rprx-vision",
+                "id": "d65cc14c-f53f-4fe2-b262-97856601319c"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "sfghfdh75-production.up.railway.app"
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "serverName": "yahoo.com",
+          "shortId": "c39cc7310a"
         },
-        "wsSettings": {
-          "path": "/ws/3515991a-d6cd-4c93-a1c1-d39a77aad058"
-        }
+        "security": "reality"
       },
-      "tag": "resilient-d76d4c7777fd4cd9"
+      "tag": "resilient-8d3b84bc1bd76d26"
     },
     {
       "protocol": "vless",
@@ -1074,28 +1079,6 @@
         "security": "none"
       },
       "tag": "resilient-eebdfe3c7ce9f26d"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.44.118.124",
-            "port": 22222,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-48faa278f1124076"
     },
     {
       "protocol": "trojan",
