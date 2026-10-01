@@ -196,6 +196,25 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.78.170",
+      "server_port": 443,
+      "tag": "outage-1925e18566f51be5",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "XpnTeam-54"
+    },
+    {
+      "network": "tcp",
       "password": "13253e6e-a1f7-4090-801f-a8dc2b083bef",
       "server": "104.21.78.206",
       "server_port": 2083,
@@ -227,24 +246,31 @@
     },
     {
       "network": "tcp",
-      "password": "0dd0ae16-4081-4530-a925-c3c34ca07d57",
-      "server": "217.79.184.18",
-      "server_port": 443,
-      "tag": "outage-16a2bc32d3770166",
-      "tls": {
-        "enabled": true,
-        "server_name": "download.xn--mes358a9urctx.com"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": "18844@zxcvbn",
       "server": "49.212.204.123",
       "server_port": 443,
       "tag": "outage-a22620ca10db4d20",
       "tls": {
         "enabled": true
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "!UZD9HzsOBszoEcZzX",
+      "server": "www.speedtest.net",
+      "server_port": 443,
+      "tag": "outage-9bbfac22d629e8f3",
+      "tls": {
+        "enabled": true,
+        "server_name": "Qt8yC7mw67evrZEa6bRPttmB.PROdArsalan808.WORkers.DEV"
+      },
+      "transport": {
+        "headers": {
+          "Host": "Qt8yC7mw67evrZEa6bRPttmB.PROdArsalan808.WORkers.DEV"
+        },
+        "path": "/tr/Q63b8pdzuoNSzAaGiDAwodSjzPtRTO",
+        "type": "ws"
       },
       "type": "trojan"
     },
@@ -262,12 +288,20 @@
     },
     {
       "network": "tcp",
-      "password": "14bdba6dede262387ebdebaa706e1c90",
-      "server": "trs12.bolab.net",
+      "password": "!UZD9HzsOBszoEcZzX",
+      "server": "qt8yc7mw67evrzea6brpttmb.prodarsalan808.workers.dev",
       "server_port": 443,
-      "tag": "outage-92bc4362c6a85eb2",
+      "tag": "outage-de2e66181ade06a8",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "qT8YC7mW67EVrzEa6BrPttmb.pRODARSaLAN808.wORkERS.deV"
+      },
+      "transport": {
+        "headers": {
+          "Host": "qT8YC7mW67EVrzEa6BrPttmb.pRODARSaLAN808.wORkERS.deV"
+        },
+        "path": "/tr/dpZSuttSOuRRiNhud",
+        "type": "ws"
       },
       "type": "trojan"
     },
@@ -287,12 +321,13 @@
         "outage-39f5e9b31cd3b647",
         "outage-a5288c20c7a49c2a",
         "outage-9aa8fd1d683491b3",
+        "outage-1925e18566f51be5",
         "outage-3bc31b7887b55bba",
         "outage-68ca004ddb7910ca",
-        "outage-16a2bc32d3770166",
         "outage-a22620ca10db4d20",
+        "outage-9bbfac22d629e8f3",
         "outage-126dbeec2204974a",
-        "outage-92bc4362c6a85eb2"
+        "outage-de2e66181ade06a8"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
