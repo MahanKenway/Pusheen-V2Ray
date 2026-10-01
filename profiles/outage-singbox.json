@@ -166,6 +166,25 @@
     },
     {
       "network": "tcp",
+      "server": "162.159.193.4",
+      "server_port": 443,
+      "tag": "outage-4d081da540c4f81f",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.trustpacket.ir"
+      },
+      "transport": {
+        "headers": {
+          "Host": "api.trustpacket.ir"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "c635f33d-e390-4964-abac-99f1a4fc41d4"
+    },
+    {
+      "network": "tcp",
       "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
       "server": "172.67.217.240",
       "server_port": 443,
@@ -319,6 +338,7 @@
         "outage-47aaef91f52560d0",
         "outage-82bf7bf6730e910a",
         "outage-39f5e9b31cd3b647",
+        "outage-4d081da540c4f81f",
         "outage-a5288c20c7a49c2a",
         "outage-9aa8fd1d683491b3",
         "outage-1925e18566f51be5",
