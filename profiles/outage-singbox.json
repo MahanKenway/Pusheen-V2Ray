@@ -166,6 +166,21 @@
     },
     {
       "network": "tcp",
+      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+      "server": "172.67.217.240",
+      "server_port": 443,
+      "tag": "outage-a5288c20c7a49c2a",
+      "transport": {
+        "headers": {
+          "Host": "id1.nathaya.web.id"
+        },
+        "path": "/trojan",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "188.114.98.0",
       "server_port": 80,
       "tag": "outage-9aa8fd1d683491b3",
@@ -178,21 +193,6 @@
       },
       "type": "vless",
       "uuid": "3bb1ea3c-8bb6-488d-855b-bd5acb20f0b9"
-    },
-    {
-      "network": "tcp",
-      "password": "0b5fa773-6f37-4134-87d4-0c349742b6f6",
-      "server": "104.21.43.90",
-      "server_port": 443,
-      "tag": "outage-b46e65f48f5af931",
-      "transport": {
-        "headers": {
-          "Host": "app-538961.user-y0o4gm.workers.dev"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -250,18 +250,6 @@
     },
     {
       "network": "tcp",
-      "password": "0f5e6d9a-49af-4bc0-b04b-503102382144",
-      "server": "51.195.219.173",
-      "server_port": 443,
-      "tag": "outage-fba16d9486e8ec40",
-      "tls": {
-        "enabled": true,
-        "server_name": "ukt1.sshocean.net"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": "123456",
       "server": "194.233.88.109",
       "server_port": 443,
@@ -269,6 +257,17 @@
       "tls": {
         "enabled": true,
         "server_name": "194.233.88.109"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "14bdba6dede262387ebdebaa706e1c90",
+      "server": "trs12.bolab.net",
+      "server_port": 443,
+      "tag": "outage-92bc4362c6a85eb2",
+      "tls": {
+        "enabled": true
       },
       "type": "trojan"
     },
@@ -286,14 +285,14 @@
         "outage-47aaef91f52560d0",
         "outage-82bf7bf6730e910a",
         "outage-39f5e9b31cd3b647",
+        "outage-a5288c20c7a49c2a",
         "outage-9aa8fd1d683491b3",
-        "outage-b46e65f48f5af931",
         "outage-3bc31b7887b55bba",
         "outage-68ca004ddb7910ca",
         "outage-16a2bc32d3770166",
         "outage-a22620ca10db4d20",
-        "outage-fba16d9486e8ec40",
-        "outage-126dbeec2204974a"
+        "outage-126dbeec2204974a",
+        "outage-92bc4362c6a85eb2"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
