@@ -131,30 +131,6 @@
       "tag": "resilient-3a61d938b6d4b580"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.18.32.47",
-            "password": "15f34214-d8de-41e9-ba72-93daeafc59ef",
-            "port": 2087
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "subhiddify.mmdv2.host"
-        },
-        "wsSettings": {
-          "path": "/Telegram@V2ray_Alpha/?ed=2560"
-        }
-      },
-      "tag": "resilient-2267fe479ae474dd"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -236,6 +212,64 @@
         }
       },
       "tag": "resilient-82bf7bf6730e910a"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.91.244",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "fdc48be3-a615-41ac-8bd1-ed844c931048"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "edgetunnel-4uw.pages.dev"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-4061aa8ff1cb260d"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.96.37",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "3804296d-167f-4c1b-8734-147f80473590"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "TeLegrAm.FREEPErSiANland1.woRKERS.DEv"
+        },
+        "wsSettings": {
+          "path": "/eyJqdW5rIjoiU29DZFZoZzF6RG8iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iLCJbMjYwMjpmYzU5OjExOjY0OjpdIl19"
+        }
+      },
+      "tag": "resilient-7e63934dd60eaa5f"
     },
     {
       "protocol": "vless",
@@ -335,31 +369,6 @@
         }
       },
       "tag": "resilient-a5288c20c7a49c2a"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.114.98.0",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "3bb1ea3c-8bb6-488d-855b-bd5acb20f0b9"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/CooonfigCooonfigCooonfigCooonfigCooonfig"
-        }
-      },
-      "tag": "resilient-9aa8fd1d683491b3"
     },
     {
       "protocol": "vless",

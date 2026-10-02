@@ -82,25 +82,6 @@
     },
     {
       "network": "tcp",
-      "password": "15f34214-d8de-41e9-ba72-93daeafc59ef",
-      "server": "104.18.32.47",
-      "server_port": 2087,
-      "tag": "outage-2267fe479ae474dd",
-      "tls": {
-        "enabled": true,
-        "server_name": "subhiddify.mmdv2.host"
-      },
-      "transport": {
-        "headers": {
-          "Host": "subhiddify.mmdv2.host"
-        },
-        "path": "/Telegram@V2ray_Alpha/?ed=2560",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "server": "104.21.224.188",
       "server_port": 8443,
       "tag": "outage-295214dcc007a643",
@@ -154,6 +135,44 @@
     },
     {
       "network": "tcp",
+      "server": "104.21.91.244",
+      "server_port": 443,
+      "tag": "outage-4061aa8ff1cb260d",
+      "tls": {
+        "enabled": true,
+        "server_name": "edgetunnel-4uw.pages.dev"
+      },
+      "transport": {
+        "headers": {
+          "Host": "edgetunnel-4uw.pages.dev"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "fdc48be3-a615-41ac-8bd1-ed844c931048"
+    },
+    {
+      "network": "tcp",
+      "server": "188.114.96.37",
+      "server_port": 443,
+      "tag": "outage-7e63934dd60eaa5f",
+      "tls": {
+        "enabled": true,
+        "server_name": "TeLegrAm.FREEPErSiANland1.woRKERS.DEv"
+      },
+      "transport": {
+        "headers": {
+          "Host": "TeLegrAm.FREEPErSiANland1.woRKERS.DEv"
+        },
+        "path": "/eyJqdW5rIjoiU29DZFZoZzF6RG8iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iLCJbMjYwMjpmYzU5OjExOjY0OjpdIl19",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "3804296d-167f-4c1b-8734-147f80473590"
+    },
+    {
+      "network": "tcp",
       "password": "072f4db4-d89d-420d-9d9e-045ed8d5c9cc",
       "server": "172.67.215.15",
       "server_port": 443,
@@ -197,21 +216,6 @@
         "type": "ws"
       },
       "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "188.114.98.0",
-      "server_port": 80,
-      "tag": "outage-9aa8fd1d683491b3",
-      "transport": {
-        "headers": {
-          "Host": "msjsi.azazilvpn.sbs."
-        },
-        "path": "/CooonfigCooonfigCooonfigCooonfigCooonfig",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "3bb1ea3c-8bb6-488d-855b-bd5acb20f0b9"
     },
     {
       "network": "tcp",
@@ -325,6 +329,17 @@
       "type": "trojan"
     },
     {
+      "network": "tcp",
+      "password": "14bdba6dede262387ebdebaa706e1c90",
+      "server": "trs12.bolab.net",
+      "server_port": 443,
+      "tag": "outage-92bc4362c6a85eb2",
+      "tls": {
+        "enabled": true
+      },
+      "type": "trojan"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -333,21 +348,22 @@
         "outage-271ad2f2c9936f4b",
         "outage-0c41baeef009553e",
         "outage-3a61d938b6d4b580",
-        "outage-2267fe479ae474dd",
         "outage-295214dcc007a643",
         "outage-47aaef91f52560d0",
         "outage-82bf7bf6730e910a",
+        "outage-4061aa8ff1cb260d",
+        "outage-7e63934dd60eaa5f",
         "outage-39f5e9b31cd3b647",
         "outage-4d081da540c4f81f",
         "outage-a5288c20c7a49c2a",
-        "outage-9aa8fd1d683491b3",
         "outage-1925e18566f51be5",
         "outage-3bc31b7887b55bba",
         "outage-68ca004ddb7910ca",
         "outage-a22620ca10db4d20",
         "outage-9bbfac22d629e8f3",
         "outage-126dbeec2204974a",
-        "outage-de2e66181ade06a8"
+        "outage-de2e66181ade06a8",
+        "outage-92bc4362c6a85eb2"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
