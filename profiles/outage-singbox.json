@@ -173,6 +173,44 @@
     },
     {
       "network": "tcp",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "server": "104.16.192.1",
+      "server_port": 443,
+      "tag": "outage-4ff4170e58026ebc",
+      "tls": {
+        "enabled": true,
+        "server_name": "sherasheba.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "sherasheba.com"
+        },
+        "path": "/6b777a91",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "69.46.46.146",
+      "server_port": 443,
+      "tag": "outage-6ba329cc8b18afab",
+      "tls": {
+        "enabled": true,
+        "server_name": "app-ysgsu34-iehe737-ddf-3d08d6-production.up.railway.app"
+      },
+      "transport": {
+        "headers": {
+          "Host": "app-ysgsu34-iehe737-ddf-3d08d6-production.up.railway.app"
+        },
+        "path": "/ws/Default",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "10c3b62f-59da-55cb-b24f-2072ecb4348c"
+    },
+    {
+      "network": "tcp",
       "password": "072f4db4-d89d-420d-9d9e-045ed8d5c9cc",
       "server": "172.67.215.15",
       "server_port": 443,
@@ -269,17 +307,6 @@
     },
     {
       "network": "tcp",
-      "password": "18844@zxcvbn",
-      "server": "49.212.204.123",
-      "server_port": 443,
-      "tag": "outage-a22620ca10db4d20",
-      "tls": {
-        "enabled": true
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": "!UZD9HzsOBszoEcZzX",
       "server": "www.speedtest.net",
       "server_port": 443,
@@ -353,13 +380,14 @@
         "outage-82bf7bf6730e910a",
         "outage-4061aa8ff1cb260d",
         "outage-7e63934dd60eaa5f",
+        "outage-4ff4170e58026ebc",
+        "outage-6ba329cc8b18afab",
         "outage-39f5e9b31cd3b647",
         "outage-4d081da540c4f81f",
         "outage-a5288c20c7a49c2a",
         "outage-1925e18566f51be5",
         "outage-3bc31b7887b55bba",
         "outage-68ca004ddb7910ca",
-        "outage-a22620ca10db4d20",
         "outage-9bbfac22d629e8f3",
         "outage-126dbeec2204974a",
         "outage-de2e66181ade06a8",

@@ -305,6 +305,59 @@
       "settings": {
         "servers": [
           {
+            "address": "104.16.192.1",
+            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "sherasheba.com"
+        },
+        "wsSettings": {
+          "path": "/6b777a91"
+        }
+      },
+      "tag": "resilient-4ff4170e58026ebc"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "69.46.46.146",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "10c3b62f-59da-55cb-b24f-2072ecb4348c"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "app-ysgsu34-iehe737-ddf-3d08d6-production.up.railway.app"
+        },
+        "wsSettings": {
+          "path": "/ws/Default"
+        }
+      },
+      "tag": "resilient-6ba329cc8b18afab"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "172.67.215.15",
             "password": "072f4db4-d89d-420d-9d9e-045ed8d5c9cc",
             "port": 443
@@ -427,6 +480,31 @@
         "security": "reality"
       },
       "tag": "resilient-465d5dde1f63b140"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "fbc3ad3047dbf786.ultradns.space",
+            "port": 2082,
+            "users": [
+              {
+                "encryption": "mlkem768x25519plus.native.0rtt.hX1UbVNzjsRBvJzAkTzQmgdCeYrtU3s-yLHLba16SQc",
+                "id": "7eb360e0-3bf4-4e9b-9192-ca25a2f54b73"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "path": "/phpMyAdmin?q=\u4e00\u4f4d\u8655\u5973\u5728\u5b6b\u5148\u751f\u7684\u8fb2\u5834\u5de5\u4f5c\u3002"
+        },
+        "network": "httpupgrade",
+        "security": "none"
+      },
+      "tag": "resilient-f24c253204e8a57f"
     },
     {
       "protocol": "trojan",
@@ -909,26 +987,6 @@
       "tag": "resilient-4c40f1634050d700"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "49.212.204.123",
-            "password": "18844@zxcvbn",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false
-        }
-      },
-      "tag": "resilient-a22620ca10db4d20"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1024,63 +1082,6 @@
         "security": "reality"
       },
       "tag": "resilient-2d969e69a945f472"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "178.105.248.88",
-            "port": 10001,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "fc40ce64-3c90-4d32-8e2f-ed456a0553fd"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "UOa0v_JpSPRPMO6ABMM7tIir-GclotOVfnbI2WqJGVE",
-          "serverName": "play.googleapis.com",
-          "shortId": "9791feaccc1ca4d8"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-79506ec34570d0df"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "159.195.112.171",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "dbe7df9a-c846-4305-9bbf-771c1b2f0520"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "auZrfyobgU8l8-4_WKsupJVeZMxRJPkXT6ams3na6l0",
-          "serverName": "stream.jugoslavija.uk",
-          "shortId": "a0f54666d5e6fb80"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-56c2b4fbf96c9ab7"
     },
     {
       "protocol": "trojan",
