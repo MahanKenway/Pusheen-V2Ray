@@ -41,6 +41,18 @@
     },
     {
       "network": "tcp",
+      "password": "075b9690-f1cc-4d0c-aa1e-f80f07f09815",
+      "server": "172.67.204.177",
+      "server_port": 443,
+      "tag": "outage-77faabc99d1ad19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "4o.191292.xyz"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
       "tag": "outage-76162ec22b46f024",
@@ -265,22 +277,22 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.170",
+      "server": "piracy-android.video-streams.org",
       "server_port": 443,
-      "tag": "outage-1925e18566f51be5",
+      "tag": "outage-bd75388dce79f310",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com"
+        "server_name": "piracy-android.video-streams.org"
       },
       "transport": {
         "headers": {
-          "Host": "ssl.fastly.com"
+          "Host": "piracy-android.video-streams.org"
         },
-        "path": "/",
+        "path": "/ws",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "XpnTeam-54"
+      "uuid": "476bdb75-0d9b-49f2-a492-4cd68f594d32"
     },
     {
       "network": "tcp",
@@ -330,31 +342,13 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "!UZD9HzsOBszoEcZzX",
-      "server": "www.speedtest.net",
-      "server_port": 443,
-      "tag": "outage-9bbfac22d629e8f3",
-      "tls": {
-        "enabled": true,
-        "server_name": "Qt8yC7mw67evrZEa6bRPttmB.PROdArsalan808.WORkers.DEV"
-      },
-      "transport": {
-        "headers": {
-          "Host": "Qt8yC7mw67evrZEa6bRPttmB.PROdArsalan808.WORkers.DEV"
-        },
-        "path": "/tr/Q63b8pdzuoNSzAaGiDAwodSjzPtRTO",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
         "outage-a4059820abba3df5",
         "outage-1bf7d87d2c61a9cc",
+        "outage-77faabc99d1ad19a",
         "outage-76162ec22b46f024",
         "outage-271ad2f2c9936f4b",
         "outage-0c41baeef009553e",
@@ -368,12 +362,11 @@
         "outage-39f5e9b31cd3b647",
         "outage-4d081da540c4f81f",
         "outage-a5288c20c7a49c2a",
-        "outage-1925e18566f51be5",
+        "outage-bd75388dce79f310",
         "outage-ebc8d8f876d77ad9",
         "outage-3bc31b7887b55bba",
         "outage-4b1659d5e3b99264",
-        "outage-68ca004ddb7910ca",
-        "outage-9bbfac22d629e8f3"
+        "outage-68ca004ddb7910ca"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
