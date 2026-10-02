@@ -14,6 +14,14 @@
   "outbounds": [
     {
       "network": "tcp",
+      "password": "mitivpn",
+      "server": "167.82.76.7",
+      "server_port": 443,
+      "tag": "outage-1bf7d87d2c61a9cc",
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
       "tag": "outage-76162ec22b46f024",
@@ -356,21 +364,11 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "14bdba6dede262387ebdebaa706e1c90",
-      "server": "trs12.bolab.net",
-      "server_port": 443,
-      "tag": "outage-92bc4362c6a85eb2",
-      "tls": {
-        "enabled": true
-      },
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-1bf7d87d2c61a9cc",
         "outage-76162ec22b46f024",
         "outage-271ad2f2c9936f4b",
         "outage-0c41baeef009553e",
@@ -390,8 +388,7 @@
         "outage-68ca004ddb7910ca",
         "outage-9bbfac22d629e8f3",
         "outage-126dbeec2204974a",
-        "outage-de2e66181ade06a8",
-        "outage-92bc4362c6a85eb2"
+        "outage-de2e66181ade06a8"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
