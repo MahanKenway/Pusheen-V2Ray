@@ -602,6 +602,31 @@
       "tag": "resilient-1925e18566f51be5"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "162.159.152.4",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "NN"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/CooonfigCooonfigCooonfigCooonfigCooonfig"
+        }
+      },
+      "tag": "resilient-93d82303c4a9e373"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -617,6 +642,35 @@
         "security": "none"
       },
       "tag": "resilient-ebc8d8f876d77ad9"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "15.204.97.219",
+            "port": 23576,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "serverName": "fuck.rkn",
+          "shortId": "01"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-5aa14570c35962e6"
     },
     {
       "protocol": "vless",
@@ -819,6 +873,31 @@
         "security": "reality"
       },
       "tag": "resilient-08800b4233bafe57"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "autorack.proxy.rlwy.net",
+            "port": 12717,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cd0e3ada-a06f-4581-8672-5e134101ff76"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "path": "/"
+        },
+        "network": "httpupgrade",
+        "security": "none"
+      },
+      "tag": "resilient-c3ec8c7d32b06178"
     },
     {
       "protocol": "vless",
@@ -1090,35 +1169,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.37.148.21",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-0e1395a4a098f91c"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "50.7.36.30",
+            "address": "176.65.144.84",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "xtls-rprx-vision",
-                "id": "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+                "id": "0f4081e7-612b-425f-8def-eebf144aedba"
               }
             ]
           }
@@ -1126,13 +1183,15 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ekb.eg"
-        }
+        "realitySettings": {
+          "fingerprint": "safari",
+          "publicKey": "ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM",
+          "serverName": "indigo.clouderiux.com",
+          "shortId": "9e15546f267baa64"
+        },
+        "security": "reality"
       },
-      "tag": "resilient-55b8d19baf0aa78e"
+      "tag": "resilient-d2a7db3b8ce2bb55"
     },
     {
       "protocol": "trojan",
@@ -1238,6 +1297,35 @@
         "security": "reality"
       },
       "tag": "resilient-69429d6b91d47ca4"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "146.235.16.130",
+            "port": 19825,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "2d1ad594-80a4-4bfb-87a6-038e39701f51"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI",
+          "serverName": "sg2-8sb.6121999.dpdns.org",
+          "shortId": "6ba85179e30d4fc2"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-52bb1f766be4e217"
     },
     {
       "protocol": "trojan",
