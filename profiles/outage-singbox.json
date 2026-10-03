@@ -41,6 +41,25 @@
     },
     {
       "network": "tcp",
+      "password": "13253e6e-a1f7-4090-801f-a8dc2b083bef",
+      "server": "172.67.175.148",
+      "server_port": 443,
+      "tag": "outage-15f2c77e459b048e",
+      "tls": {
+        "enabled": true,
+        "server_name": "inviNcIble.fafa20.ShOp"
+      },
+      "transport": {
+        "headers": {
+          "Host": "inviNcIble.fafa20.ShOp"
+        },
+        "path": "/tr7PXHQRn4VPwGA2zY/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=?ed=2560",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "075b9690-f1cc-4d0c-aa1e-f80f07f09815",
       "server": "172.67.204.177",
       "server_port": 443,
@@ -314,20 +333,13 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "06e4425e-a8cb-4b63-929f-2105604ab0a9",
-      "server": "whatismyipaddress.com",
-      "server_port": 443,
-      "tag": "outage-4b1659d5e3b99264",
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
         "outage-a4059820abba3df5",
         "outage-1bf7d87d2c61a9cc",
+        "outage-15f2c77e459b048e",
         "outage-77faabc99d1ad19a",
         "outage-76162ec22b46f024",
         "outage-271ad2f2c9936f4b",
@@ -344,8 +356,7 @@
         "outage-f5b91c957d89e9a7",
         "outage-4bd602bbfcf6c0b6",
         "outage-ebc8d8f876d77ad9",
-        "outage-fa98f61ec31c3fdc",
-        "outage-4b1659d5e3b99264"
+        "outage-fa98f61ec31c3fdc"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
