@@ -16,20 +16,9 @@
       "network": "tcp",
       "server": "199.232.78.159",
       "server_port": 443,
-      "tag": "outage-a4059820abba3df5",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ssl.fastly.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
+      "tag": "outage-59940ba5cfeaf375",
       "type": "vless",
-      "uuid": "ebeb7358-9fc0-4222-a0e5-d8bc274a8856"
+      "uuid": "8453bdb7-dd58-419d-b002-9456dd2e73d7"
     },
     {
       "network": "tcp",
@@ -38,6 +27,25 @@
       "server_port": 443,
       "tag": "outage-1bf7d87d2c61a9cc",
       "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "173.245.49.173",
+      "server_port": 443,
+      "tag": "outage-a87c9044a2f86e94",
+      "tls": {
+        "enabled": true,
+        "server_name": "sOFt-WoOd-79F6.UzTMldzdSlCeGqSs.WorkErs.DeV"
+      },
+      "transport": {
+        "headers": {
+          "Host": "sOFt-WoOd-79F6.UzTMldzdSlCeGqSs.WorkErs.DeV"
+        },
+        "path": "/eyJqdW5rIjoidTdQdXU3Q0xwckV6UyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "5253738e-0450-4d4a-b89d-48ffbe14d8ed"
     },
     {
       "network": "tcp",
@@ -102,25 +110,6 @@
     },
     {
       "network": "tcp",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "tag": "outage-0c41baeef009553e",
-      "tls": {
-        "enabled": true,
-        "server_name": "edgetunnel-4uw.pages.dev"
-      },
-      "transport": {
-        "headers": {
-          "Host": "edgetunnel-4uw.pages.dev"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "fdc48be3-a615-41ac-8bd1-ed844c931048"
-    },
-    {
-      "network": "tcp",
       "password": "0b5fa773-6f37-4134-87d4-0c349742b6f6",
       "server": "172.64.80.1",
       "server_port": 443,
@@ -130,6 +119,25 @@
           "Host": "app-538961.user-y0o4gm.workers.dev"
         },
         "path": "/cmh",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "0oA8mLmVNA",
+      "server": "discord.com",
+      "server_port": 2083,
+      "tag": "outage-1d56ec98ad7fb924",
+      "tls": {
+        "enabled": true,
+        "server_name": "hit68pHiha.pouriya.cf"
+      },
+      "transport": {
+        "headers": {
+          "Host": "hit68pHiha.pouriya.cf"
+        },
+        "path": "/Amsterdam",
         "type": "ws"
       },
       "type": "trojan"
@@ -250,6 +258,25 @@
     },
     {
       "network": "tcp",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "tag": "outage-d87e09b21b425f55",
+      "tls": {
+        "enabled": true,
+        "server_name": "edgetunnel-4uw.pages.dev"
+      },
+      "transport": {
+        "headers": {
+          "Host": "edgetunnel-4uw.pages.dev"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "fdc48be3-a615-41ac-8bd1-ed844c931048"
+    },
+    {
+      "network": "tcp",
       "server": "162.159.193.4",
       "server_port": 443,
       "tag": "outage-4d081da540c4f81f",
@@ -299,14 +326,6 @@
     },
     {
       "network": "tcp",
-      "server": "chatgpt.com",
-      "server_port": 443,
-      "tag": "outage-4bd602bbfcf6c0b6",
-      "type": "vless",
-      "uuid": "a9a3278d-cdd1-40ac-83bc-adb53ff9be3d"
-    },
-    {
-      "network": "tcp",
       "password": "06e4425e-a8cb-4b63-929f-2105604ab0a9",
       "server": "ip.sb",
       "server_port": 443,
@@ -314,49 +333,30 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "0y7hid61k3k2vuy1",
-      "server": "uwu.blueknightnet.qzz.io",
-      "server_port": 2087,
-      "tag": "outage-fa98f61ec31c3fdc",
-      "tls": {
-        "enabled": true,
-        "server_name": "uwu.dianaw.cc.cd"
-      },
-      "transport": {
-        "headers": {
-          "Host": "uwu.dianaw.cc.cd"
-        },
-        "path": "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
-        "outage-a4059820abba3df5",
+        "outage-59940ba5cfeaf375",
         "outage-1bf7d87d2c61a9cc",
+        "outage-a87c9044a2f86e94",
         "outage-15f2c77e459b048e",
         "outage-77faabc99d1ad19a",
         "outage-76162ec22b46f024",
         "outage-271ad2f2c9936f4b",
-        "outage-0c41baeef009553e",
         "outage-6b52dfb5090e3e37",
+        "outage-1d56ec98ad7fb924",
         "outage-47aaef91f52560d0",
         "outage-4061aa8ff1cb260d",
         "outage-7e63934dd60eaa5f",
         "outage-b6b21bb88e5cc572",
         "outage-4ff4170e58026ebc",
         "outage-6ba329cc8b18afab",
+        "outage-d87e09b21b425f55",
         "outage-4d081da540c4f81f",
         "outage-a5288c20c7a49c2a",
         "outage-f5b91c957d89e9a7",
-        "outage-4bd602bbfcf6c0b6",
-        "outage-ebc8d8f876d77ad9",
-        "outage-fa98f61ec31c3fdc"
+        "outage-ebc8d8f876d77ad9"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
