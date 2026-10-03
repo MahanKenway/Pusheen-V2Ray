@@ -28,6 +28,31 @@
       "settings": {
         "vnext": [
           {
+            "address": "66.33.22.234",
+            "port": 26452,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e98595be-6464-410d-9404-eed1979fe2c8"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "path": "/"
+        },
+        "network": "httpupgrade",
+        "security": "none"
+      },
+      "tag": "resilient-ff92f7228efd1ad2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "199.232.78.159",
             "port": 443,
             "users": [
@@ -167,6 +192,26 @@
         }
       },
       "tag": "resilient-0c41baeef009553e"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "172.64.80.1",
+            "password": "0b5fa773-6f37-4134-87d4-0c349742b6f6",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/cmh"
+        }
+      },
+      "tag": "resilient-6b52dfb5090e3e37"
     },
     {
       "protocol": "vless",
@@ -533,9 +578,9 @@
       "settings": {
         "servers": [
           {
-            "address": "104.21.78.206",
-            "password": "13253e6e-a1f7-4090-801f-a8dc2b083bef",
-            "port": 2083
+            "address": "uwu.blueknightnet.qzz.io",
+            "password": "0y7hid61k3k2vuy1",
+            "port": 2087
           }
         ]
       },
@@ -544,13 +589,13 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "inVIncibLE.fAfA20.shoP"
+          "serverName": "uwu.dianaw.cc.cd"
         },
         "wsSettings": {
-          "path": "/trxSsuyYmFFPA4woIq/NzguNDYuNTYuNDI=?ed=2560"
+          "path": "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net"
         }
       },
-      "tag": "resilient-3bc31b7887b55bba"
+      "tag": "resilient-fa98f61ec31c3fdc"
     },
     {
       "protocol": "trojan",
@@ -568,27 +613,6 @@
         "security": "none"
       },
       "tag": "resilient-4b1659d5e3b99264"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "172.67.150.132",
-            "password": "0f7070cd-c91d-4532-a51f-56da4f0e94be",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "eeddcvfgt6.444682.xyz"
-        }
-      },
-      "tag": "resilient-68ca004ddb7910ca"
     },
     {
       "protocol": "vless",
@@ -1055,28 +1079,6 @@
         }
       },
       "tag": "resilient-55b8d19baf0aa78e"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.44.118.124",
-            "port": 22222,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-48faa278f1124076"
     },
     {
       "protocol": "trojan",
