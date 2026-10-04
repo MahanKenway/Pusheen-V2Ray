@@ -16,9 +16,35 @@
       "network": "tcp",
       "server": "199.232.78.159",
       "server_port": 443,
-      "tag": "outage-59940ba5cfeaf375",
+      "tag": "outage-78cd96fc215473e5",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
       "type": "vless",
       "uuid": "8453bdb7-dd58-419d-b002-9456dd2e73d7"
+    },
+    {
+      "network": "tcp",
+      "server": "151.101.65.57",
+      "server_port": 80,
+      "tag": "outage-c85f69a4710fb360",
+      "transport": {
+        "headers": {
+          "Host": "simorghtrr.global.ssl.fastly.net"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "83021686-64bf-4a68-9fba-1f8addb07e18"
     },
     {
       "network": "tcp",
@@ -27,6 +53,33 @@
       "server_port": 443,
       "tag": "outage-1bf7d87d2c61a9cc",
       "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "114ad614-fe6c-4422-b0af-be6161190d7a",
+      "server": "172.67.211.136",
+      "server_port": 443,
+      "tag": "outage-5310a83ede69c4da",
+      "tls": {
+        "enabled": true,
+        "server_name": "DDrt.191266.Xyz"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "151.101.1.194",
+      "server_port": 80,
+      "tag": "outage-05d4cc8b6affa2f3",
+      "transport": {
+        "headers": {
+          "Host": "simorghfr.global.ssl.fastly.net"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "83021686-64bf-4a68-9fba-1f8addb07e18"
     },
     {
       "network": "tcp",
@@ -278,69 +331,15 @@
       "uuid": "3804296d-167f-4c1b-8734-147f80473590"
     },
     {
-      "network": "tcp",
-      "password": "017c6dee-3fba-4c5e-b148-e651d6b249b3",
-      "server": "45.85.118.241",
-      "server_port": 443,
-      "tag": "outage-b6b21bb88e5cc572",
-      "tls": {
-        "enabled": true,
-        "server_name": "join-to-oxnet-ch-network-mozzzc.userargo1723.cf"
-      },
-      "transport": {
-        "headers": {
-          "Host": "join-to-oxnet-ch-network-mozzzc.userargo1723.cf"
-        },
-        "path": "/tTcZC0WxEj/trojanws",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "69.46.46.146",
-      "server_port": 443,
-      "tag": "outage-6ba329cc8b18afab",
-      "tls": {
-        "enabled": true,
-        "server_name": "app-ysgsu34-iehe737-ddf-3d08d6-production.up.railway.app"
-      },
-      "transport": {
-        "headers": {
-          "Host": "app-ysgsu34-iehe737-ddf-3d08d6-production.up.railway.app"
-        },
-        "path": "/ws/Default",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "10c3b62f-59da-55cb-b24f-2072ecb4348c"
-    },
-    {
-      "network": "tcp",
-      "server": "162.159.193.4",
-      "server_port": 443,
-      "tag": "outage-4d081da540c4f81f",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.trustpacket.ir"
-      },
-      "transport": {
-        "headers": {
-          "Host": "api.trustpacket.ir"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "c635f33d-e390-4964-abac-99f1a4fc41d4"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
-        "outage-59940ba5cfeaf375",
+        "outage-78cd96fc215473e5",
+        "outage-c85f69a4710fb360",
         "outage-1bf7d87d2c61a9cc",
+        "outage-5310a83ede69c4da",
+        "outage-05d4cc8b6affa2f3",
         "outage-a87c9044a2f86e94",
         "outage-15f2c77e459b048e",
         "outage-77faabc99d1ad19a",
@@ -355,10 +354,7 @@
         "outage-2c1d57bd6bd06f01",
         "outage-7c39e0630616fbd4",
         "outage-4061aa8ff1cb260d",
-        "outage-7e63934dd60eaa5f",
-        "outage-b6b21bb88e5cc572",
-        "outage-6ba329cc8b18afab",
-        "outage-4d081da540c4f81f"
+        "outage-7e63934dd60eaa5f"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
