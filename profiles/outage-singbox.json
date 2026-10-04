@@ -99,12 +99,39 @@
     },
     {
       "network": "tcp",
-      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-      "server": "104.18.32.87",
+      "server": "188.114.97.6",
       "server_port": 443,
-      "tag": "outage-271ad2f2c9936f4b",
+      "tag": "outage-401f37a434da4650",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "jp3.yohototo.top"
+      },
+      "transport": {
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        },
+        "path": "/tyxyws",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4"
+    },
+    {
+      "network": "tcp",
+      "password": "13561080-8b99-11ee-8d87-1239d0255272",
+      "server": "162.159.137.232",
+      "server_port": 443,
+      "tag": "outage-3c391bdbc48e557b",
+      "tls": {
+        "enabled": true,
+        "server_name": "de1.test3.net"
+      },
+      "transport": {
+        "headers": {
+          "Host": "de1.test3.net"
+        },
+        "path": "/howdy",
+        "type": "ws"
       },
       "type": "trojan"
     },
@@ -308,25 +335,6 @@
       "uuid": "10c3b62f-59da-55cb-b24f-2072ecb4348c"
     },
     {
-      "network": "tcp",
-      "server": "162.159.193.4",
-      "server_port": 443,
-      "tag": "outage-4d081da540c4f81f",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.trustpacket.ir"
-      },
-      "transport": {
-        "headers": {
-          "Host": "api.trustpacket.ir"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "c635f33d-e390-4964-abac-99f1a4fc41d4"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -337,7 +345,8 @@
         "outage-15f2c77e459b048e",
         "outage-77faabc99d1ad19a",
         "outage-76162ec22b46f024",
-        "outage-271ad2f2c9936f4b",
+        "outage-401f37a434da4650",
+        "outage-3c391bdbc48e557b",
         "outage-6b52dfb5090e3e37",
         "outage-9b0d24b6c1ae94fa",
         "outage-510f97cf22b3bdc3",
@@ -349,8 +358,7 @@
         "outage-7e63934dd60eaa5f",
         "outage-b6b21bb88e5cc572",
         "outage-4ff4170e58026ebc",
-        "outage-6ba329cc8b18afab",
-        "outage-4d081da540c4f81f"
+        "outage-6ba329cc8b18afab"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
