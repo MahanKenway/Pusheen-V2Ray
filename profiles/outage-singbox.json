@@ -210,6 +210,25 @@
     },
     {
       "network": "tcp",
+      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+      "server": "104.21.70.21",
+      "server_port": 443,
+      "tag": "outage-2c1d57bd6bd06f01",
+      "tls": {
+        "enabled": true,
+        "server_name": "id1.nathaya.web.id"
+      },
+      "transport": {
+        "headers": {
+          "Host": "id1.nathaya.web.id"
+        },
+        "path": "/trojan",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "0bc8c688-e142-4a64-8885-f8c7498f8a90",
       "server": "172.67.68.8",
       "server_port": 443,
@@ -279,25 +298,6 @@
     },
     {
       "network": "tcp",
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "server": "104.16.192.1",
-      "server_port": 443,
-      "tag": "outage-4ff4170e58026ebc",
-      "tls": {
-        "enabled": true,
-        "server_name": "sherasheba.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "sherasheba.com"
-        },
-        "path": "/6b777a91",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "server": "69.46.46.146",
       "server_port": 443,
       "tag": "outage-6ba329cc8b18afab",
@@ -317,22 +317,22 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.160",
+      "server": "162.159.193.4",
       "server_port": 443,
-      "tag": "outage-bfe0ccf4ea185ff7",
+      "tag": "outage-4d081da540c4f81f",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com"
+        "server_name": "api.trustpacket.ir"
       },
       "transport": {
         "headers": {
-          "Host": "ssl.fastly.com"
+          "Host": "api.trustpacket.ir"
         },
         "path": "/",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "XpnTeam-51"
+      "uuid": "c635f33d-e390-4964-abac-99f1a4fc41d4"
     },
     {
       "idle_timeout": "30m",
@@ -352,13 +352,13 @@
         "outage-66c62f5adc9e957c",
         "outage-ce63275ef75d2e01",
         "outage-1d56ec98ad7fb924",
+        "outage-2c1d57bd6bd06f01",
         "outage-7c39e0630616fbd4",
         "outage-4061aa8ff1cb260d",
         "outage-7e63934dd60eaa5f",
         "outage-b6b21bb88e5cc572",
-        "outage-4ff4170e58026ebc",
         "outage-6ba329cc8b18afab",
-        "outage-bfe0ccf4ea185ff7"
+        "outage-4d081da540c4f81f"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
