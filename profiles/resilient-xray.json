@@ -136,7 +136,7 @@
       "settings": {
         "servers": [
           {
-            "address": "167.82.76.7",
+            "address": "199.232.78.101",
             "password": "mitivpn",
             "port": 443
           }
@@ -146,7 +146,7 @@
         "network": "tcp",
         "security": "none"
       },
-      "tag": "resilient-1bf7d87d2c61a9cc"
+      "tag": "resilient-9a6b8fe1fbdc260f"
     },
     {
       "protocol": "trojan",
@@ -486,6 +486,35 @@
         }
       },
       "tag": "resilient-1d56ec98ad7fb924"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "mazandaran.up.railway.app",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d9ad5acb-f0c1-4d11-a122-878b70f34201"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "mazandaran.up.railway.app"
+        },
+        "wsSettings": {
+          "path": "/ws/d9ad5acb-f0c1-4d11-a122-878b70f34201"
+        }
+      },
+      "tag": "resilient-e26760524abfe685"
     },
     {
       "protocol": "trojan",
@@ -1205,6 +1234,50 @@
       "settings": {
         "vnext": [
           {
+            "address": "3.10.65.55",
+            "port": 22222,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-cef4ec77aeea7cbf"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "35.181.36.80",
+            "port": 22222,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-8d277c8faf5f340a"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "45.128.78.84",
             "port": 443,
             "users": [
@@ -1249,88 +1322,6 @@
         "security": "none"
       },
       "tag": "resilient-eb5e80c9dd7c6967"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "131.123.13.93",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "55ccbeb5-0bf4-4e4d-afcb-23c038e73e00"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "safari",
-          "publicKey": "rj3rvl7AGOd0NOPrX6h2c1auXGnCBJTPMDeT86AMvBA",
-          "serverName": "1mcfn.67resserv67.info",
-          "shortId": "29455a3a790acbd0",
-          "spiderX": "/"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-100aaa35be9f5410"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "77.83.246.202",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "454431fc-71e2-42b1-b375-5b55dd06666a"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU",
-          "serverName": "example.org"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-08800b4233bafe57"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "autorack.proxy.rlwy.net",
-            "port": 12717,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "cd0e3ada-a06f-4581-8672-5e134101ff76"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "httpupgradeSettings": {
-          "path": "/"
-        },
-        "network": "httpupgrade",
-        "security": "none"
-      },
-      "tag": "resilient-c3ec8c7d32b06178"
     },
     {
       "protocol": "vless",
