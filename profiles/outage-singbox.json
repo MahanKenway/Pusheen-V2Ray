@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "199.232.78.170",
+      "server_port": 443,
+      "tag": "outage-a3da46d603cee856",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "XpnTeam-75"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
       "tag": "outage-ae0e34d0d3e0fe8c",
@@ -64,6 +83,18 @@
       },
       "type": "vless",
       "uuid": "83021686-64bf-4a68-9fba-1f8addb07e18"
+    },
+    {
+      "network": "tcp",
+      "password": "1111",
+      "server": "104.21.53.151",
+      "server_port": 2096,
+      "tag": "outage-69c7e7c9c0fb7138",
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ngfast-v2ngfast-v2ngfast-v2ngfast.jakec78925.workers.dev"
+      },
+      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -147,18 +178,6 @@
         },
         "path": "/tr7PXHQRn4VPwGA2zY/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=?ed=2560",
         "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "075b9690-f1cc-4d0c-aa1e-f80f07f09815",
-      "server": "172.67.204.177",
-      "server_port": 443,
-      "tag": "outage-77faabc99d1ad19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "4o.191292.xyz"
       },
       "type": "trojan"
     },
@@ -267,14 +286,6 @@
     },
     {
       "network": "tcp",
-      "server": "104.19.12.94",
-      "server_port": 443,
-      "tag": "outage-ce63275ef75d2e01",
-      "type": "vless",
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4"
-    },
-    {
-      "network": "tcp",
       "password": "0oA8mLmVNA",
       "server": "discord.com",
       "server_port": 2083,
@@ -316,23 +327,23 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-a3da46d603cee856",
         "outage-ae0e34d0d3e0fe8c",
         "outage-78cd96fc215473e5",
         "outage-c85f69a4710fb360",
+        "outage-69c7e7c9c0fb7138",
         "outage-9a6b8fe1fbdc260f",
         "outage-9b3530303a292fd0",
         "outage-5310a83ede69c4da",
         "outage-05d4cc8b6affa2f3",
         "outage-a87c9044a2f86e94",
         "outage-15f2c77e459b048e",
-        "outage-77faabc99d1ad19a",
         "outage-401f37a434da4650",
         "outage-3c391bdbc48e557b",
         "outage-6b52dfb5090e3e37",
         "outage-9b0d24b6c1ae94fa",
         "outage-510f97cf22b3bdc3",
         "outage-66c62f5adc9e957c",
-        "outage-ce63275ef75d2e01",
         "outage-1d56ec98ad7fb924",
         "outage-2c1d57bd6bd06f01"
       ],
