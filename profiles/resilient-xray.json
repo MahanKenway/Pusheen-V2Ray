@@ -562,6 +562,54 @@
       "tag": "resilient-6ed2dcc43f21b7d3"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "198.62.62.4",
+            "password": "12345678",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "7bdfb97a.ikl.pages.dev"
+        },
+        "wsSettings": {
+          "path": "/7bdfb97a.ikl.pages.dev"
+        }
+      },
+      "tag": "resilient-2b259f158a39fdfd"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.25.165.81",
+            "password": "123456",
+            "port": 8443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "top-azx.pages.dev"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-2536d57000fda909"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -613,59 +661,6 @@
         }
       },
       "tag": "resilient-b6b21bb88e5cc572"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.16.192.1",
-            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "sherasheba.com"
-        },
-        "wsSettings": {
-          "path": "/6b777a91"
-        }
-      },
-      "tag": "resilient-4ff4170e58026ebc"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "69.46.46.146",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "10c3b62f-59da-55cb-b24f-2072ecb4348c"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "app-ysgsu34-iehe737-ddf-3d08d6-production.up.railway.app"
-        },
-        "wsSettings": {
-          "path": "/ws/Default"
-        }
-      },
-      "tag": "resilient-6ba329cc8b18afab"
     },
     {
       "protocol": "trojan",
@@ -893,25 +888,25 @@
       "settings": {
         "vnext": [
           {
-            "address": "fbc3ad3047dbf786.ultradns.space",
-            "port": 2082,
+            "address": "undef.network",
+            "port": 2052,
             "users": [
               {
-                "encryption": "mlkem768x25519plus.native.0rtt.hX1UbVNzjsRBvJzAkTzQmgdCeYrtU3s-yLHLba16SQc",
-                "id": "7eb360e0-3bf4-4e9b-9192-ca25a2f54b73"
+                "encryption": "none",
+                "id": "a2c57a6c-dacb-44d1-9055-fb42d4c888a5"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "httpupgradeSettings": {
-          "path": "/phpMyAdmin?q=\u4e00\u4f4d\u8655\u5973\u5728\u5b6b\u5148\u751f\u7684\u8fb2\u5834\u5de5\u4f5c\u3002"
-        },
-        "network": "httpupgrade",
-        "security": "none"
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/@BlueKnight_net--@BlueKnight_net"
+        }
       },
-      "tag": "resilient-f24c253204e8a57f"
+      "tag": "resilient-963d98da1104a5fa"
     },
     {
       "protocol": "vless",
@@ -1048,6 +1043,34 @@
       "settings": {
         "vnext": [
           {
+            "address": "172.86.111.135",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "79ccb156-bfc6-11f1-9811-525400d1d4f7"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "safari",
+          "publicKey": "n25FmewpAEsvLl9Vr0bRFcz044f4IE7orWeWOzu8rwk",
+          "serverName": "www.nvidia.com"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-8183c766e2f91d5c"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "169.40.42.182",
             "port": 443,
             "users": [
@@ -1125,6 +1148,35 @@
         }
       },
       "tag": "resilient-ce4a60ac05a1eeda"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "iiproxy888.iiproxy.com",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "806fa224-44f7-4c1b-b7a3-05bfdfdfbf87"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "iiproxy888.iiproxy.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-1ef5b801382be87c"
     },
     {
       "protocol": "vless",
@@ -1279,28 +1331,6 @@
         "security": "none"
       },
       "tag": "resilient-c3ec8c7d32b06178"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.44.154.185",
-            "port": 22222,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-a261be2e6264342c"
     },
     {
       "protocol": "vless",
