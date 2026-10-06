@@ -140,25 +140,29 @@
       "settings": {
         "vnext": [
           {
-            "address": "66.33.22.234",
-            "port": 26452,
+            "address": "199.232.78.185",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
-                "id": "e98595be-6464-410d-9404-eed1979fe2c8"
+                "encryption": "mlkem768x25519plus.native.0rtt.shwrr-SZXMfmu3Vc_3Ts3xVnLkri_jVutSWXpmT0KCc",
+                "id": "75039c69-6b87-449f-a0aa-ced7a8c069d3"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "httpupgradeSettings": {
-          "path": "/"
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
         },
-        "network": "httpupgrade",
-        "security": "none"
+        "wsSettings": {
+          "path": "/"
+        }
       },
-      "tag": "resilient-ff92f7228efd1ad2"
+      "tag": "resilient-e704574db8a47aed"
     },
     {
       "protocol": "trojan",
@@ -370,26 +374,6 @@
         }
       },
       "tag": "resilient-3c391bdbc48e557b"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "172.64.80.1",
-            "password": "0b5fa773-6f37-4134-87d4-0c349742b6f6",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/cmh"
-        }
-      },
-      "tag": "resilient-6b52dfb5090e3e37"
     },
     {
       "protocol": "vless",
@@ -908,30 +892,6 @@
       "tag": "resilient-05d9af311b973afd"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "uwu.blueknightnet.qzz.io",
-            "password": "0y7hid61k3k2vuy1",
-            "port": 2087
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "uwu.dianaw.cc.cd"
-        },
-        "wsSettings": {
-          "path": "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net"
-        }
-      },
-      "tag": "resilient-fa98f61ec31c3fdc"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1043,6 +1003,23 @@
         }
       },
       "tag": "resilient-1ef5b801382be87c"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "uwu.blueknightnet.qzz.io",
+            "password": "0y7hid61k3k2vuy1",
+            "port": 2087
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-7cc45744065b120c"
     },
     {
       "protocol": "vless",
@@ -1216,6 +1193,65 @@
         "security": "reality"
       },
       "tag": "resilient-e796038805da7943"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "195.252.179.1",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "596086c9-3167-0004-97a1-c04311039e06"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
+          "serverName": "diffoscope.com",
+          "shortId": "1c3e8241a8743df9"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-132bc7db0efcbddb"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "131.123.13.93",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "55ccbeb5-0bf4-4e4d-afcb-23c038e73e00"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "safari",
+          "publicKey": "rj3rvl7AGOd0NOPrX6h2c1auXGnCBJTPMDeT86AMvBA",
+          "serverName": "1mcfn.67resserv67.info",
+          "shortId": "29455a3a790acbd0",
+          "spiderX": "/"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-100aaa35be9f5410"
     },
     {
       "protocol": "trojan",
