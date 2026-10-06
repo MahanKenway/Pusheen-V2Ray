@@ -1,10 +1,10 @@
 {
   "by_protocol": {
-    "trojan": 18,
+    "trojan": 16,
     "vless": 34
   },
-  "count": 52,
-  "created_at": "2026-10-06T10:05:57.114898+00:00",
+  "count": 50,
+  "created_at": "2026-10-06T16:44:25.629162+00:00",
   "evidence": "recent successful TCP reachability",
   "max_evidence_age_hours": 72,
   "notice": "A receipt records why the item is eligible for this tier at publication time. It does not disclose hostnames, credentials, raw URIs, or guarantee availability from another network.",
@@ -80,20 +80,6 @@
       "transport_family": "vless:ws:none"
     },
     {
-      "id": "a87c9044a2f86e94",
-      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
-      "latest_source_id": "iboxz-vless-probationary",
-      "protocol": "vless",
-      "transport_family": "vless:ws:tls"
-    },
-    {
-      "id": "15f2c77e459b048e",
-      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
-      "latest_source_id": "ebrasha-trojan-probationary",
-      "protocol": "trojan",
-      "transport_family": "trojan:ws:tls"
-    },
-    {
       "id": "401f37a434da4650",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "iboxz-vless-probationary",
@@ -134,13 +120,6 @@
       "latest_source_id": "iboxz-vless-probationary",
       "protocol": "vless",
       "transport_family": "vless:tcp:none"
-    },
-    {
-      "id": "1d56ec98ad7fb924",
-      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
-      "latest_source_id": "ebrasha-trojan-probationary",
-      "protocol": "trojan",
-      "transport_family": "trojan:ws:tls"
     },
     {
       "id": "e26760524abfe685",
@@ -283,18 +262,18 @@
       "transport_family": "trojan:tcp:none"
     },
     {
-      "id": "e44e552ba8a17230",
+      "id": "cef4ec77aeea7cbf",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "iboxz-vless-probationary",
       "protocol": "vless",
       "transport_family": "vless:tcp:none"
     },
     {
-      "id": "cef4ec77aeea7cbf",
+      "id": "4fa7bb3776022ccc",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "iboxz-vless-probationary",
       "protocol": "vless",
-      "transport_family": "vless:tcp:none"
+      "transport_family": "vless:tcp:tls"
     },
     {
       "id": "8d277c8faf5f340a",
@@ -332,6 +311,13 @@
       "transport_family": "vless:tcp:reality"
     },
     {
+      "id": "79b20f90aa72a4fb",
+      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
+      "latest_source_id": "iboxz-vless-probationary",
+      "protocol": "vless",
+      "transport_family": "vless:tcp:reality"
+    },
+    {
       "id": "132bc7db0efcbddb",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "iboxz-vless-probationary",
@@ -346,13 +332,6 @@
       "transport_family": "vless:tcp:reality"
     },
     {
-      "id": "7e7007b1e8db038f",
-      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
-      "latest_source_id": "ebrasha-trojan-probationary",
-      "protocol": "trojan",
-      "transport_family": "trojan:tcp:tls"
-    },
-    {
       "id": "52bb1f766be4e217",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "configforge-vless",
@@ -361,6 +340,13 @@
     },
     {
       "id": "c30a39043ee19a0a",
+      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
+      "latest_source_id": "ebrasha-trojan-probationary",
+      "protocol": "trojan",
+      "transport_family": "trojan:tcp:tls"
+    },
+    {
+      "id": "0c55eae817e6d280",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "ebrasha-trojan-probationary",
       "protocol": "trojan",
