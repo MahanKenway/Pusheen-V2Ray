@@ -399,30 +399,6 @@
       "tag": "resilient-e26760524abfe685"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.21.70.21",
-            "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "id1.nathaya.web.id"
-        },
-        "wsSettings": {
-          "path": "/trojan"
-        }
-      },
-      "tag": "resilient-2c1d57bd6bd06f01"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -656,6 +632,56 @@
       "settings": {
         "vnext": [
           {
+            "address": "199.232.9.254",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "771e1d71-bd9f-45fb-af00-b72423f9cd51"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "global.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-a3097cb7a8df5b05"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.39.134",
+            "password": "258281a2-0ece-4eba-90f3-155306faa292",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "daxun-hkt2.windowsupdatea.com"
+        }
+      },
+      "tag": "resilient-f88c91f174961170"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "undef.network",
             "port": 2052,
             "users": [
@@ -675,35 +701,6 @@
         }
       },
       "tag": "resilient-963d98da1104a5fa"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "169.40.42.184",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "d65cc14c-f53f-4fe2-b262-97856601319c"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "serverName": "yahoo.com",
-          "shortId": "c39cc7310a"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-05d9af311b973afd"
     },
     {
       "protocol": "vless",
@@ -792,31 +789,6 @@
         "security": "reality"
       },
       "tag": "resilient-8183c766e2f91d5c"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "freesocks.work",
-            "port": 2052,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e3fb01b6-69b4-41d7-babf-696d992de194"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/@BlueKnight_net--@BlueKnight_net"
-        }
-      },
-      "tag": "resilient-ce4a60ac05a1eeda"
     },
     {
       "protocol": "vless",
@@ -912,6 +884,35 @@
         }
       },
       "tag": "resilient-4fa7bb3776022ccc"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "free.server11peekconfig.workers.dev",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "63f1ce15-1a88-4698-8a0e-59b85d75e607"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "FRee.SeRver11pEEkcONFIg.WorkeRS.DEv"
+        },
+        "wsSettings": {
+          "path": "/eyJqdW5rIjoiNDIxWGNPNW5CQXYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iLCJbMjYwMjpmYzU5OmIwOjY0OjpdIiwiWzI2MDI6ZmM1OToxMTo2NDo6XSJdfQ=="
+        }
+      },
+      "tag": "resilient-3cd3ea8da2dbea92"
     },
     {
       "protocol": "vless",
@@ -1179,6 +1180,37 @@
       "tag": "resilient-8150ce8c699d5122"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "87.239.135.112",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d18c7dfb-94c9-4caa-9d0d-da0e563a71ea"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "fingerprint": "safari",
+          "publicKey": "DpCRsmgaFW54dSpiAKYGnN6cNayu9prjZTYGAyiP_jo",
+          "serverName": "tel.free-run.club",
+          "shortId": "025f065c"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-02f9f82756f4203d"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1198,6 +1230,27 @@
         }
       },
       "tag": "resilient-99e31006aa7c97a6"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "47.250.84.25",
+            "password": "5931134d1cde66bf83a54acdfebe7ab2",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "moltbot.doctoroyy.net"
+        }
+      },
+      "tag": "resilient-6a7dc046e397585a"
     },
     {
       "protocol": "trojan",
