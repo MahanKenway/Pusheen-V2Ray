@@ -303,6 +303,77 @@
       "settings": {
         "vnext": [
           {
+            "address": "185.148.104.156",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "50414e45-4c5f-5a45-5553-f42c641ffe6e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/stream/PANEL_ZEUS/f42c641ffe6e"
+        }
+      },
+      "tag": "resilient-1bd55b4080fbf1e3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "154.197.75.32",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "50414e45-4c5f-5a45-5553-f42c641ffe6e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/stream/PANEL_ZEUS/f42c641ffe6e"
+        }
+      },
+      "tag": "resilient-79e64c3966a080cf"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "108.162.198.165",
+            "password": "4b040268-f3a5-4136-b1a9-506012e8e3d9",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssp1.100896.xyz"
+        }
+      },
+      "tag": "resilient-2afce0a2d28e5fe4"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "mazandaran.up.railway.app",
             "port": 443,
             "users": [
@@ -869,34 +940,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.128.78.84",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "3f58af8e-7c91-424e-85c7-ec6913b7fc8f"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "sellflow.org"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-03ac0453263a6f64"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "15.236.25.113",
             "port": 22222,
             "users": [
@@ -941,6 +984,31 @@
         }
       },
       "tag": "resilient-2293d9e6aa85bfcf"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.97.6",
+            "port": 2082,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/?ed=2560"
+        }
+      },
+      "tag": "resilient-57a40faba519339d"
     },
     {
       "protocol": "vless",
@@ -1111,35 +1179,25 @@
       "tag": "resilient-8150ce8c699d5122"
     },
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "87.239.135.112",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "d18c7dfb-94c9-4caa-9d0d-da0e563a71ea"
-              }
-            ]
+            "address": "51.68.164.10",
+            "password": "2e631f0c-226a-484b-9e7c-d6c9c444ef13",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "grpcSettings": {
-          "serviceName": ""
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "fingerprint": "safari",
-          "publicKey": "DpCRsmgaFW54dSpiAKYGnN6cNayu9prjZTYGAyiP_jo",
-          "serverName": "tel.free-run.club",
-          "shortId": "025f065c"
-        },
-        "security": "reality"
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "fmwf6gbnad0a.dop16.com"
+        }
       },
-      "tag": "resilient-02f9f82756f4203d"
+      "tag": "resilient-99e31006aa7c97a6"
     },
     {
       "protocol": "trojan",
