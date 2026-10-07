@@ -86,6 +86,25 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.239.239",
+      "server_port": 443,
+      "tag": "outage-a921a0124908b47e",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/?ed=2056",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "31608e93-a701-4604-b8de-c55baa393937"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.185",
       "server_port": 443,
       "tag": "outage-e704574db8a47aed",
@@ -164,99 +183,22 @@
     },
     {
       "network": "tcp",
-      "server": "188.114.97.6",
+      "server": "mazandaran.up.railway.app",
       "server_port": 443,
-      "tag": "outage-401f37a434da4650",
+      "tag": "outage-e26760524abfe685",
       "tls": {
         "enabled": true,
-        "server_name": "jp3.yohototo.top"
+        "server_name": "mazandaran.up.railway.app"
       },
       "transport": {
         "headers": {
-          "Host": "jp3.yohototo.top"
+          "Host": "mazandaran.up.railway.app"
         },
-        "path": "/tyxyws",
+        "path": "/ws/d9ad5acb-f0c1-4d11-a122-878b70f34201",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4"
-    },
-    {
-      "network": "tcp",
-      "password": "13561080-8b99-11ee-8d87-1239d0255272",
-      "server": "162.159.137.232",
-      "server_port": 443,
-      "tag": "outage-3c391bdbc48e557b",
-      "tls": {
-        "enabled": true,
-        "server_name": "de1.test3.net"
-      },
-      "transport": {
-        "headers": {
-          "Host": "de1.test3.net"
-        },
-        "path": "/howdy",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "69.46.46.91",
-      "server_port": 443,
-      "tag": "outage-9b0d24b6c1ae94fa",
-      "tls": {
-        "enabled": true,
-        "server_name": "app-3f588c-eb6ee5-production.up.railway.app"
-      },
-      "transport": {
-        "headers": {
-          "Host": "app-3f588c-eb6ee5-production.up.railway.app"
-        },
-        "path": "/ws/Marda",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "3d892ebf-8a37-5801-84f8-a8199bc2fc0f"
-    },
-    {
-      "network": "tcp",
-      "server": "69.46.46.02",
-      "server_port": 443,
-      "tag": "outage-510f97cf22b3bdc3",
-      "tls": {
-        "enabled": true,
-        "server_name": "app-3f588c-eb6ee5-production.up.railway.app"
-      },
-      "transport": {
-        "headers": {
-          "Host": "app-3f588c-eb6ee5-production.up.railway.app"
-        },
-        "path": "/ws/Marda",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "3d892ebf-8a37-5801-84f8-a8199bc2fc0f"
-    },
-    {
-      "network": "tcp",
-      "password": "114ad614-fe6c-4422-b0af-be6161190d7a",
-      "server": "104.21.61.154",
-      "server_port": 443,
-      "tag": "outage-66c62f5adc9e957c",
-      "tls": {
-        "enabled": true,
-        "server_name": "DDrt.191266.Xyz"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "104.19.12.94",
-      "server_port": 443,
-      "tag": "outage-ce63275ef75d2e01",
-      "type": "vless",
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4"
+      "uuid": "d9ad5acb-f0c1-4d11-a122-878b70f34201"
     },
     {
       "network": "tcp",
@@ -279,15 +221,22 @@
     },
     {
       "network": "tcp",
-      "password": "0bc8c688-e142-4a64-8885-f8c7498f8a90",
-      "server": "172.67.68.8",
+      "server": "69.46.46.71",
       "server_port": 443,
-      "tag": "outage-7c39e0630616fbd4",
+      "tag": "outage-ae7052cc7826ca18",
       "tls": {
         "enabled": true,
-        "server_name": "tro4replit.bunnylblbblbl.eu.org"
+        "server_name": "core-416959-e3ee42-production.up.railway.app"
       },
-      "type": "trojan"
+      "transport": {
+        "headers": {
+          "Host": "core-416959-e3ee42-production.up.railway.app"
+        },
+        "path": "/ws/e13be81031933026d3ea05e4fc8b4b62",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "e13be81031933026d3ea05e4fc8b4b62"
     },
     {
       "network": "tcp",
@@ -328,6 +277,68 @@
       "type": "trojan"
     },
     {
+      "network": "tcp",
+      "password": "13e26f64-2e0c-4461-92cd-d83294cc18f0",
+      "server": "172.67.185.107",
+      "server_port": 443,
+      "tag": "outage-3e7cadf4fc00b04a",
+      "tls": {
+        "enabled": true,
+        "server_name": "WwwDe.00890604.XyZ"
+      },
+      "transport": {
+        "headers": {
+          "Host": "WwwDe.00890604.XyZ"
+        },
+        "path": "/TDUxZUop9k44oPiit2OdWk0KwirdY",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "072f4db4-d89d-420d-9d9e-045ed8d5c9cc",
+      "server": "172.67.162.74",
+      "server_port": 443,
+      "tag": "outage-174b214c07b20d57",
+      "tls": {
+        "enabled": true,
+        "server_name": "10tyu.iran.pp.ua"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "superjinx93-production.up.railway.app",
+      "server_port": 443,
+      "tag": "outage-66ee4f8c686f3993",
+      "tls": {
+        "enabled": true,
+        "server_name": "superjinx93-production.up.railway.app"
+      },
+      "transport": {
+        "headers": {
+          "Host": "superjinx93-production.up.railway.app"
+        },
+        "path": "/jx-ozzlu9lrx2p9gx?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "ca612329-d894-46ec-a2d4-849df1193f25"
+    },
+    {
+      "network": "tcp",
+      "password": "512d9674-db12-44ca-a1b5-654244549b65",
+      "server": "172.66.132.196",
+      "server_port": 443,
+      "tag": "outage-3cf6845d80c3133a",
+      "tls": {
+        "enabled": true,
+        "server_name": "XxCdvfgty.444652.xyZ"
+      },
+      "type": "trojan"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -336,22 +347,22 @@
         "outage-ae0e34d0d3e0fe8c",
         "outage-78cd96fc215473e5",
         "outage-c85f69a4710fb360",
+        "outage-a921a0124908b47e",
         "outage-e704574db8a47aed",
         "outage-69c7e7c9c0fb7138",
         "outage-9a6b8fe1fbdc260f",
         "outage-9b3530303a292fd0",
         "outage-5310a83ede69c4da",
         "outage-05d4cc8b6affa2f3",
-        "outage-401f37a434da4650",
-        "outage-3c391bdbc48e557b",
-        "outage-9b0d24b6c1ae94fa",
-        "outage-510f97cf22b3bdc3",
-        "outage-66c62f5adc9e957c",
-        "outage-ce63275ef75d2e01",
+        "outage-e26760524abfe685",
         "outage-2c1d57bd6bd06f01",
-        "outage-7c39e0630616fbd4",
+        "outage-ae7052cc7826ca18",
         "outage-2b259f158a39fdfd",
-        "outage-2536d57000fda909"
+        "outage-2536d57000fda909",
+        "outage-3e7cadf4fc00b04a",
+        "outage-174b214c07b20d57",
+        "outage-66ee4f8c686f3993",
+        "outage-3cf6845d80c3133a"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
