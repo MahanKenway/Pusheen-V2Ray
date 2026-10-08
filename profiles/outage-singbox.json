@@ -202,6 +202,37 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.78.187",
+      "server_port": 443,
+      "tag": "outage-5f25e3370d05e957",
+      "tls": {
+        "enabled": true,
+        "server_name": "default.ssl.fastly.net"
+      },
+      "transport": {
+        "headers": {
+          "Host": "default.ssl.fastly.net"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "c326b0af-e926-4dc8-a8a3-e7790cc0bdec"
+    },
+    {
+      "network": "tcp",
+      "password": "3Ldo+,81m[h)3Lb+",
+      "server": "172.66.47.175",
+      "server_port": 2096,
+      "tag": "outage-c9f27869b69073f3",
+      "tls": {
+        "enabled": true,
+        "server_name": "azAdNEt05.pAgES.deV"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "6884d714-d3c4-4b49-aa20-767ea92837d6",
       "server": "172.67.70.191",
       "server_port": 443,
@@ -238,6 +269,18 @@
     },
     {
       "network": "tcp",
+      "password": "53027f0f-2581-469a-a802-825d46f37cda",
+      "server": "104.18.124.198",
+      "server_port": 443,
+      "tag": "outage-f9e3300441e388d7",
+      "tls": {
+        "enabled": true,
+        "server_name": "a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "288124da-0d68-42f4-9f48-70dc4dcc55a6",
       "server": "172.67.175.139",
       "server_port": 443,
@@ -261,37 +304,6 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "258281a2-0ece-4eba-90f3-155306faa292",
-      "server": "104.21.39.134",
-      "server_port": 443,
-      "tag": "outage-f88c91f174961170",
-      "tls": {
-        "enabled": true,
-        "server_name": "daxun-hkt2.windowsupdatea.com"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "5855d6850594830f",
-      "server": "104.21.8.63",
-      "server_port": 443,
-      "tag": "outage-86de99bece4cf5b0",
-      "tls": {
-        "enabled": true,
-        "server_name": "AkbARIan34.j9Z65Ce2uyks.WoRKeRS.DEV"
-      },
-      "transport": {
-        "headers": {
-          "Host": "AkbARIan34.j9Z65Ce2uyks.WoRKeRS.DEV"
-        },
-        "path": "/tr/w2O3K3xXNYDKIxwOIw7?ed=2560",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -308,13 +320,14 @@
         "outage-79e64c3966a080cf",
         "outage-2afce0a2d28e5fe4",
         "outage-ae7052cc7826ca18",
+        "outage-5f25e3370d05e957",
+        "outage-c9f27869b69073f3",
         "outage-e2d81d7f685a5e4d",
         "outage-5261e89fb03d99e0",
         "outage-3cf6845d80c3133a",
+        "outage-f9e3300441e388d7",
         "outage-84cfc30e6b14a07a",
-        "outage-54a4b3e0d0da33f4",
-        "outage-f88c91f174961170",
-        "outage-86de99bece4cf5b0"
+        "outage-54a4b3e0d0da33f4"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
