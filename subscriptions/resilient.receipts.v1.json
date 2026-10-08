@@ -1,16 +1,30 @@
 {
   "by_protocol": {
-    "trojan": 20,
+    "trojan": 18,
     "vless": 31
   },
-  "count": 51,
-  "created_at": "2026-10-08T03:01:29.967719+00:00",
+  "count": 49,
+  "created_at": "2026-10-08T10:25:21.180024+00:00",
   "evidence": "recent successful TCP reachability",
   "max_evidence_age_hours": 72,
   "notice": "A receipt records why the item is eligible for this tier at publication time. It does not disclose hostnames, credentials, raw URIs, or guarantee availability from another network.",
   "receipts": [
     {
+      "id": "c3dc5905cfc6f7bb",
+      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
+      "latest_source_id": "iboxz-vless-probationary",
+      "protocol": "vless",
+      "transport_family": "vless:tcp:none"
+    },
+    {
       "id": "a3da46d603cee856",
+      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
+      "latest_source_id": "iboxz-vless-probationary",
+      "protocol": "vless",
+      "transport_family": "vless:ws:tls"
+    },
+    {
+      "id": "9d8aaa9d5411d118",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "iboxz-vless-probationary",
       "protocol": "vless",
@@ -94,20 +108,6 @@
       "transport_family": "vless:ws:tls"
     },
     {
-      "id": "2b259f158a39fdfd",
-      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
-      "latest_source_id": "ebrasha-trojan-probationary",
-      "protocol": "trojan",
-      "transport_family": "trojan:ws:tls"
-    },
-    {
-      "id": "2536d57000fda909",
-      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
-      "latest_source_id": "ebrasha-trojan-probationary",
-      "protocol": "trojan",
-      "transport_family": "trojan:ws:tls"
-    },
-    {
       "id": "e2d81d7f685a5e4d",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "ebrasha-trojan-probationary",
@@ -164,13 +164,6 @@
       "transport_family": "trojan:ws:tls"
     },
     {
-      "id": "963d98da1104a5fa",
-      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
-      "latest_source_id": "iboxz-vless-probationary",
-      "protocol": "vless",
-      "transport_family": "vless:ws:none"
-    },
-    {
       "id": "00ab18d443899735",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "ebrasha-trojan-probationary",
@@ -179,20 +172,6 @@
     },
     {
       "id": "6fa8bd5e8ea35238",
-      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
-      "latest_source_id": "iboxz-vless-probationary",
-      "protocol": "vless",
-      "transport_family": "vless:ws:tls"
-    },
-    {
-      "id": "8183c766e2f91d5c",
-      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
-      "latest_source_id": "iboxz-vless-probationary",
-      "protocol": "vless",
-      "transport_family": "vless:tcp:reality"
-    },
-    {
-      "id": "1ef5b801382be87c",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "iboxz-vless-probationary",
       "protocol": "vless",
@@ -323,6 +302,13 @@
       "latest_source_id": "iboxz-vless-probationary",
       "protocol": "vless",
       "transport_family": "vless:tcp:reality"
+    },
+    {
+      "id": "7b880ea309384f47",
+      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
+      "latest_source_id": "iboxz-vless-probationary",
+      "protocol": "vless",
+      "transport_family": "vless:tcp:none"
     },
     {
       "id": "99e31006aa7c97a6",

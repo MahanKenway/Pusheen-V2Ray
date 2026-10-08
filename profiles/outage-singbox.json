@@ -14,6 +14,14 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "tag": "outage-c3dc5905cfc6f7bb",
+      "type": "vless",
+      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.170",
       "server_port": 443,
       "tag": "outage-a3da46d603cee856",
@@ -30,6 +38,25 @@
       },
       "type": "vless",
       "uuid": "XpnTeam-75"
+    },
+    {
+      "network": "tcp",
+      "server": "104.17.98.5",
+      "server_port": 443,
+      "tag": "outage-9d8aaa9d5411d118",
+      "tls": {
+        "enabled": true,
+        "server_name": "newcscf.jisucf.cloudns.ch"
+      },
+      "transport": {
+        "headers": {
+          "Host": "newcscf.jisucf.cloudns.ch"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "49ccad64-c854-4f33-b334-793cf0d02b74"
     },
     {
       "network": "tcp",
@@ -202,44 +229,6 @@
     },
     {
       "network": "tcp",
-      "password": "12345678",
-      "server": "198.62.62.4",
-      "server_port": 443,
-      "tag": "outage-2b259f158a39fdfd",
-      "tls": {
-        "enabled": true,
-        "server_name": "7bdfb97a.ikl.pages.dev"
-      },
-      "transport": {
-        "headers": {
-          "Host": "7bdfb97a.ikl.pages.dev"
-        },
-        "path": "/7bdfb97a.ikl.pages.dev",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "123456",
-      "server": "104.25.165.81",
-      "server_port": 8443,
-      "tag": "outage-2536d57000fda909",
-      "tls": {
-        "enabled": true,
-        "server_name": "top-azx.pages.dev"
-      },
-      "transport": {
-        "headers": {
-          "Host": "top-azx.pages.dev"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": "6884d714-d3c4-4b49-aa20-767ea92837d6",
       "server": "172.67.70.191",
       "server_port": 443,
@@ -288,29 +277,43 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.9.254",
+      "password": "258281a2-0ece-4eba-90f3-155306faa292",
+      "server": "104.21.39.134",
       "server_port": 443,
-      "tag": "outage-a3097cb7a8df5b05",
+      "tag": "outage-f88c91f174961170",
       "tls": {
         "enabled": true,
-        "server_name": "global.fastly.com"
+        "server_name": "daxun-hkt2.windowsupdatea.com"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "5855d6850594830f",
+      "server": "104.21.8.63",
+      "server_port": 443,
+      "tag": "outage-86de99bece4cf5b0",
+      "tls": {
+        "enabled": true,
+        "server_name": "AkbARIan34.j9Z65Ce2uyks.WoRKeRS.DEV"
       },
       "transport": {
         "headers": {
-          "Host": "global.fastly.com"
+          "Host": "AkbARIan34.j9Z65Ce2uyks.WoRKeRS.DEV"
         },
-        "path": "/",
+        "path": "/tr/w2O3K3xXNYDKIxwOIw7?ed=2560",
         "type": "ws"
       },
-      "type": "vless",
-      "uuid": "771e1d71-bd9f-45fb-af00-b72423f9cd51"
+      "type": "trojan"
     },
     {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-c3dc5905cfc6f7bb",
         "outage-a3da46d603cee856",
+        "outage-9d8aaa9d5411d118",
         "outage-501c3a99d77105e8",
         "outage-a921a0124908b47e",
         "outage-e704574db8a47aed",
@@ -322,13 +325,12 @@
         "outage-2afce0a2d28e5fe4",
         "outage-e26760524abfe685",
         "outage-ae7052cc7826ca18",
-        "outage-2b259f158a39fdfd",
-        "outage-2536d57000fda909",
         "outage-e2d81d7f685a5e4d",
         "outage-5261e89fb03d99e0",
         "outage-3cf6845d80c3133a",
         "outage-84cfc30e6b14a07a",
-        "outage-a3097cb7a8df5b05"
+        "outage-f88c91f174961170",
+        "outage-86de99bece4cf5b0"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
