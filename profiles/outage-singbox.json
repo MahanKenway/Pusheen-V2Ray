@@ -22,6 +22,25 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.78.170",
+      "server_port": 443,
+      "tag": "outage-da61b0584e5ed586",
+      "tls": {
+        "enabled": true,
+        "server_name": "Speedtest.net"
+      },
+      "transport": {
+        "headers": {
+          "Host": "Speedtest.net"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "XpnTeam-7"
+    },
+    {
+      "network": "tcp",
       "server": "104.17.98.5",
       "server_port": 443,
       "tag": "outage-9d8aaa9d5411d118",
@@ -57,25 +76,6 @@
       },
       "type": "vless",
       "uuid": "XpnTeam-79"
-    },
-    {
-      "network": "tcp",
-      "server": "199.232.78.170",
-      "server_port": 443,
-      "tag": "outage-d98fb89e4586df94",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ssl.fastly.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "XpnTeam-80"
     },
     {
       "network": "tcp",
@@ -163,6 +163,18 @@
       "server": "108.162.198.165",
       "server_port": 443,
       "tag": "outage-2afce0a2d28e5fe4",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssp1.100896.xyz"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "4b040268-f3a5-4136-b1a9-506012e8e3d9",
+      "server": "104.21.3.60",
+      "server_port": 443,
+      "tag": "outage-f988cd969422a63d",
       "tls": {
         "enabled": true,
         "server_name": "ssp1.100896.xyz"
@@ -292,32 +304,21 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "288124da-0d68-42f4-9f48-70dc4dcc55a6",
-      "server": "172.67.175.139",
-      "server_port": 443,
-      "tag": "outage-84cfc30e6b14a07a",
-      "tls": {
-        "enabled": true,
-        "server_name": "cvFbghYU.859886.XYZ"
-      },
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
         "outage-c3dc5905cfc6f7bb",
+        "outage-da61b0584e5ed586",
         "outage-9d8aaa9d5411d118",
         "outage-501c3a99d77105e8",
-        "outage-d98fb89e4586df94",
         "outage-a921a0124908b47e",
         "outage-9cba290586e792d1",
         "outage-c97fdae9a5d28673",
         "outage-1bd55b4080fbf1e3",
         "outage-79e64c3966a080cf",
         "outage-2afce0a2d28e5fe4",
+        "outage-f988cd969422a63d",
         "outage-ae7052cc7826ca18",
         "outage-fb83ca46f29e3aac",
         "outage-5f25e3370d05e957",
@@ -326,8 +327,7 @@
         "outage-e2d81d7f685a5e4d",
         "outage-5261e89fb03d99e0",
         "outage-3cf6845d80c3133a",
-        "outage-f9e3300441e388d7",
-        "outage-84cfc30e6b14a07a"
+        "outage-f9e3300441e388d7"
       ],
       "tag": "outage-auto",
       "tolerance": 200,

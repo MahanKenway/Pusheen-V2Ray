@@ -50,6 +50,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "199.232.78.170",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "XpnTeam-7"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "Speedtest.net"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-da61b0584e5ed586"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "104.17.98.5",
             "port": 443,
             "users": [
@@ -102,35 +131,6 @@
         }
       },
       "tag": "resilient-501c3a99d77105e8"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.170",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "XpnTeam-80"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssl.fastly.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-d98fb89e4586df94"
     },
     {
       "protocol": "vless",
@@ -281,6 +281,27 @@
         }
       },
       "tag": "resilient-2afce0a2d28e5fe4"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.3.60",
+            "password": "4b040268-f3a5-4136-b1a9-506012e8e3d9",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssp1.100896.xyz"
+        }
+      },
+      "tag": "resilient-f988cd969422a63d"
     },
     {
       "protocol": "vless",
@@ -732,33 +753,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "165.231.99.46",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "70ad3e9c-89e6-4ee3-91c3-7cb10a4e483a"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "file-6ac48f09.adhil.uk"
-        }
-      },
-      "tag": "resilient-4fa7bb3776022ccc"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "free.server11peekconfig.workers.dev",
             "port": 443,
             "users": [
@@ -807,35 +801,6 @@
         }
       },
       "tag": "resilient-57a40faba519339d"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "157.228.160.166",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "df53b6c2-8005-475c-9eb9-74e1be785dc8"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "randomized",
-          "publicKey": "NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M",
-          "serverName": "addons.mozilla.org",
-          "shortId": "3cef317b"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-79b20f90aa72a4fb"
     },
     {
       "protocol": "vless",
@@ -1169,6 +1134,28 @@
       "settings": {
         "vnext": [
           {
+            "address": "51.24.201.252",
+            "port": 22223,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-8275ff4d40c9edc2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "65.108.3.59",
             "port": 443,
             "users": [
@@ -1192,6 +1179,33 @@
         "security": "reality"
       },
       "tag": "resilient-38e6f493148af93b"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "196.240.125.3",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "20ef7310-0b50-4943-98a6-3d0856b383b1"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "vusr-6ac431f4.adhil.uk"
+        }
+      },
+      "tag": "resilient-1b72e693d8a92834"
     },
     {
       "protocol": "trojan",
@@ -1304,27 +1318,6 @@
         }
       },
       "tag": "resilient-c47f81e8a7a75446"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "194.233.88.107",
-            "password": "123456",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "trojan-ctb-sg01.globalssh.xyz"
-        }
-      },
-      "tag": "resilient-0c55eae817e6d280"
     },
     {
       "protocol": "trojan",
