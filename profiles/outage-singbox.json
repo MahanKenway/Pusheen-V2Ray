@@ -98,25 +98,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.185",
-      "server_port": 443,
-      "tag": "outage-e704574db8a47aed",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ssl.fastly.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "75039c69-6b87-449f-a0aa-ced7a8c069d3"
-    },
-    {
-      "network": "tcp",
       "password": "2YDH6ktJOt",
       "server": "172.67.161.74",
       "server_port": 8443,
@@ -126,6 +107,25 @@
         "server_name": "support.sabapardaziran.ir"
       },
       "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "chatgpt.com",
+      "server_port": 8443,
+      "tag": "outage-c97fdae9a5d28673",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.large-files.info"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.large-files.info"
+        },
+        "path": "/var/www/html/video/preview/download/i8o0la",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "7c99dc89-bf49-45c9-acc5-e43f36657518"
     },
     {
       "network": "tcp",
@@ -187,6 +187,18 @@
       },
       "type": "vless",
       "uuid": "e13be81031933026d3ea05e4fc8b4b62"
+    },
+    {
+      "network": "tcp",
+      "password": "357b1bba-6400-4944-baff-1b933311ff28",
+      "server": "104.21.88.226",
+      "server_port": 443,
+      "tag": "outage-fb83ca46f29e3aac",
+      "tls": {
+        "enabled": true,
+        "server_name": "XxxxxXXXXXXxXf.wwW890604.Dpdns.orG"
+      },
+      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -292,18 +304,6 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "21e5535e-4783-4a80-a735-24a1162d315c",
-      "server": "104.21.28.26",
-      "server_port": 443,
-      "tag": "outage-54a4b3e0d0da33f4",
-      "tls": {
-        "enabled": true,
-        "server_name": "xxscdF56.999182.xYZ"
-      },
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -313,12 +313,13 @@
         "outage-501c3a99d77105e8",
         "outage-d98fb89e4586df94",
         "outage-a921a0124908b47e",
-        "outage-e704574db8a47aed",
         "outage-9cba290586e792d1",
+        "outage-c97fdae9a5d28673",
         "outage-1bd55b4080fbf1e3",
         "outage-79e64c3966a080cf",
         "outage-2afce0a2d28e5fe4",
         "outage-ae7052cc7826ca18",
+        "outage-fb83ca46f29e3aac",
         "outage-5f25e3370d05e957",
         "outage-5b4854bbafabd103",
         "outage-c9f27869b69073f3",
@@ -326,8 +327,7 @@
         "outage-5261e89fb03d99e0",
         "outage-3cf6845d80c3133a",
         "outage-f9e3300441e388d7",
-        "outage-84cfc30e6b14a07a",
-        "outage-54a4b3e0d0da33f4"
+        "outage-84cfc30e6b14a07a"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
