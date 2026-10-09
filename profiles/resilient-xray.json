@@ -641,6 +641,26 @@
       "settings": {
         "servers": [
           {
+            "address": "chatbuzzteambhm.chatbuzzt7150.workers.dev",
+            "password": "22f86840-bcac-11ee-abea-1239d0255272",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false
+        }
+      },
+      "tag": "resilient-dcca69a2c6291fa7"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "35.168.124.79",
             "password": "3648425794742788096",
             "port": 443
@@ -685,23 +705,6 @@
         }
       },
       "tag": "resilient-6fa8bd5e8ea35238"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "uwu.blueknightnet.qzz.io",
-            "password": "0y7hid61k3k2vuy1",
-            "port": 2087
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-7cc45744065b120c"
     },
     {
       "protocol": "vless",
@@ -1028,44 +1031,29 @@
       "settings": {
         "vnext": [
           {
-            "address": "15.236.25.113",
-            "port": 22223,
+            "address": "www.speedtest.net",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+                "id": "dd3b59f1-1fa8-44f2-b188-45d8929a08ae"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none"
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ch2.talanetwork.eu.org"
+        },
+        "wsSettings": {
+          "path": "/sg-melbi"
+        }
       },
-      "tag": "resilient-11de5da1dc180187"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "15.224.185.204",
-            "port": 22222,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-8fd7372483254175"
+      "tag": "resilient-89013460717f7acb"
     },
     {
       "protocol": "vless",
@@ -1095,6 +1083,35 @@
         "security": "reality"
       },
       "tag": "resilient-6fd8eeed36e7fd2f"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "103.241.65.169",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "91344c03-b37f-42c5-90f1-cbb95c5cf256"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0",
+          "serverName": "gb.srv.dvzh.net",
+          "shortId": "d30f9d846a7c8cba"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-58c86ce452f67997"
     },
     {
       "protocol": "vless",
@@ -1203,6 +1220,26 @@
       "settings": {
         "servers": [
           {
+            "address": "us3-2.998998.best",
+            "password": "5504eaa8-1395-402f-8e0e-75ecd762e627",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/anyway"
+        }
+      },
+      "tag": "resilient-c47f81e8a7a75446"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "194.233.88.107",
             "password": "123456",
             "port": 443
@@ -1218,6 +1255,30 @@
         }
       },
       "tag": "resilient-0c55eae817e6d280"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "uwu.blueknightnet.qzz.io",
+            "password": "0y7hid61k3k2vuy1",
+            "port": 2087
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "uwu.dianaw.cc.cd"
+        },
+        "wsSettings": {
+          "path": "/@VPNine1--@VPNine1--@VPNine1"
+        }
+      },
+      "tag": "resilient-77d126c75fa34d04"
     },
     {
       "protocol": "trojan",
