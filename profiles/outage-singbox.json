@@ -110,43 +110,13 @@
     },
     {
       "network": "tcp",
-      "server": "185.148.104.156",
-      "server_port": 2052,
-      "tag": "outage-1bd55b4080fbf1e3",
-      "transport": {
-        "headers": {
-          "Host": "xozhtlekujts.akbar-25mor.workers.dev"
-        },
-        "path": "/stream/PANEL_ZEUS/f42c641ffe6e",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "50414e45-4c5f-5a45-5553-f42c641ffe6e"
-    },
-    {
-      "network": "tcp",
-      "server": "154.197.75.32",
-      "server_port": 2052,
-      "tag": "outage-79e64c3966a080cf",
-      "transport": {
-        "headers": {
-          "Host": "xozhtlekujts.akbar-25mor.workers.dev"
-        },
-        "path": "/stream/PANEL_ZEUS/f42c641ffe6e",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "50414e45-4c5f-5a45-5553-f42c641ffe6e"
-    },
-    {
-      "network": "tcp",
-      "password": "4b040268-f3a5-4136-b1a9-506012e8e3d9",
-      "server": "108.162.198.165",
+      "password": "3Ldo+,81m[h)3Lb+",
+      "server": "172.66.44.81",
       "server_port": 443,
-      "tag": "outage-2afce0a2d28e5fe4",
+      "tag": "outage-83cced528a9f3e6f",
       "tls": {
         "enabled": true,
-        "server_name": "ssp1.100896.xyz"
+        "server_name": "AzAdnet05.pAgEs.dev"
       },
       "type": "trojan"
     },
@@ -297,6 +267,25 @@
       "type": "trojan"
     },
     {
+      "network": "tcp",
+      "server": "199.232.9.254",
+      "server_port": 443,
+      "tag": "outage-a3097cb7a8df5b05",
+      "tls": {
+        "enabled": true,
+        "server_name": "global.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "global.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "771e1d71-bd9f-45fb-af00-b72423f9cd51"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -307,9 +296,7 @@
         "outage-501c3a99d77105e8",
         "outage-9cba290586e792d1",
         "outage-c97fdae9a5d28673",
-        "outage-1bd55b4080fbf1e3",
-        "outage-79e64c3966a080cf",
-        "outage-2afce0a2d28e5fe4",
+        "outage-83cced528a9f3e6f",
         "outage-f988cd969422a63d",
         "outage-8487b6272564a648",
         "outage-fb83ca46f29e3aac",
@@ -320,7 +307,8 @@
         "outage-5261e89fb03d99e0",
         "outage-6b529ccdee09fdc9",
         "outage-f9e3300441e388d7",
-        "outage-84cfc30e6b14a07a"
+        "outage-84cfc30e6b14a07a",
+        "outage-a3097cb7a8df5b05"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
