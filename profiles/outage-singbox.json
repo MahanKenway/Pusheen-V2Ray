@@ -122,6 +122,25 @@
     },
     {
       "network": "tcp",
+      "server": "69.46.46.149",
+      "server_port": 443,
+      "tag": "outage-622ee73ffec88571",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-9120d4-53ea2e-production.up.railway.app"
+      },
+      "transport": {
+        "headers": {
+          "Host": "srv-9120d4-53ea2e-production.up.railway.app"
+        },
+        "path": "/ws/Mardom",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "4e3c8768-486f-5804-8dbc-33e952f89859"
+    },
+    {
+      "network": "tcp",
       "password": "4b040268-f3a5-4136-b1a9-506012e8e3d9",
       "server": "104.21.3.60",
       "server_port": 443,
@@ -129,6 +148,18 @@
       "tls": {
         "enabled": true,
         "server_name": "ssp1.100896.xyz"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "509ed9b7-8d64-4204-8ec8-6b749020ac3f",
+      "server": "104.21.3.189",
+      "server_port": 443,
+      "tag": "outage-804ff9980cdb11ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "CcCVfGTyU.89060004.Xyz"
       },
       "type": "trojan"
     },
@@ -256,18 +287,6 @@
     },
     {
       "network": "tcp",
-      "password": "288124da-0d68-42f4-9f48-70dc4dcc55a6",
-      "server": "172.67.175.139",
-      "server_port": 443,
-      "tag": "outage-84cfc30e6b14a07a",
-      "tls": {
-        "enabled": true,
-        "server_name": "cvFbghYU.859886.XYZ"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "server": "199.232.9.254",
       "server_port": 443,
       "tag": "outage-a3097cb7a8df5b05",
@@ -297,7 +316,9 @@
         "outage-9cba290586e792d1",
         "outage-c97fdae9a5d28673",
         "outage-83cced528a9f3e6f",
+        "outage-622ee73ffec88571",
         "outage-f988cd969422a63d",
+        "outage-804ff9980cdb11ca",
         "outage-8487b6272564a648",
         "outage-fb83ca46f29e3aac",
         "outage-5f25e3370d05e957",
@@ -307,7 +328,6 @@
         "outage-5261e89fb03d99e0",
         "outage-6b529ccdee09fdc9",
         "outage-f9e3300441e388d7",
-        "outage-84cfc30e6b14a07a",
         "outage-a3097cb7a8df5b05"
       ],
       "tag": "outage-auto",
