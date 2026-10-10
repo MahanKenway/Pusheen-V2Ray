@@ -258,6 +258,27 @@
       "settings": {
         "servers": [
           {
+            "address": "104.26.12.31",
+            "password": "2faaf996-d2b0-440d-8258-81f2b05dd0e4",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "fwd-refuse-senators-brought.trycloudflare.com"
+        }
+      },
+      "tag": "resilient-f082f70b16c58a6a"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "104.21.3.189",
             "password": "509ed9b7-8d64-4204-8ec8-6b749020ac3f",
             "port": 443
@@ -438,6 +459,27 @@
       "tag": "resilient-5261e89fb03d99e0"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "141.101.120.10",
+            "password": "4b040268-f3a5-4136-b1a9-506012e8e3d9",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssp2.100896.xyz"
+        }
+      },
+      "tag": "resilient-c26fa619b79749cb"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -525,30 +567,6 @@
         }
       },
       "tag": "resilient-54a4b3e0d0da33f4"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.21.8.63",
-            "password": "5855d6850594830f",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "AkbARIan34.j9Z65Ce2uyks.WoRKeRS.DEV"
-        },
-        "wsSettings": {
-          "path": "/tr/w2O3K3xXNYDKIxwOIw7?ed=2560"
-        }
-      },
-      "tag": "resilient-86de99bece4cf5b0"
     },
     {
       "protocol": "vless",
@@ -655,27 +673,6 @@
         }
       },
       "tag": "resilient-dcca69a2c6291fa7"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "35.168.124.79",
-            "password": "3648425794742788096",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "humble-rodent.treefrog761.one"
-        }
-      },
-      "tag": "resilient-00ab18d443899735"
     },
     {
       "protocol": "vless",
@@ -918,6 +915,28 @@
       "settings": {
         "vnext": [
           {
+            "address": "51.200.42.237",
+            "port": 22223,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-efea73535a5be240"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "18.133.149.153",
             "port": 22223,
             "users": [
@@ -1125,28 +1144,6 @@
         "security": "none"
       },
       "tag": "resilient-6931178766a69dcd"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.24.201.252",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-8275ff4d40c9edc2"
     },
     {
       "protocol": "trojan",
