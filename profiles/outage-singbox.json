@@ -71,6 +71,25 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.239.239",
+      "server_port": 443,
+      "tag": "outage-1db1efb811e92f78",
+      "tls": {
+        "enabled": true,
+        "server_name": "speedtest.net"
+      },
+      "transport": {
+        "headers": {
+          "Host": "speedtest.net"
+        },
+        "path": "/?ed=2056",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "31608e93-a701-4604-b8de-c55baa393937"
+    },
+    {
+      "network": "tcp",
       "password": "3Ldo+,81m[h)3Lb+",
       "server": "172.66.44.81",
       "server_port": 8443,
@@ -179,6 +198,14 @@
     },
     {
       "network": "tcp",
+      "password": "44ddc8a7-27c6-4de8-a232-bcad6d0e66c6",
+      "server": "69.46.46.178",
+      "server_port": 443,
+      "tag": "outage-c508e93884faceda",
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "69.46.46.135",
       "server_port": 443,
       "tag": "outage-570e0164a49f1941",
@@ -253,25 +280,6 @@
     },
     {
       "network": "tcp",
-      "server": "8.47.69.0",
-      "server_port": 2053,
-      "tag": "outage-8487b6272564a648",
-      "tls": {
-        "enabled": true,
-        "server_name": "vless.api-music-fa.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "vless.api-music-fa.com"
-        },
-        "path": "/api/voip/updates/static/fr2035",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "9d672694-c146-422e-b3b5-3717a38a0fcc"
-    },
-    {
-      "network": "tcp",
       "password": "357b1bba-6400-4944-baff-1b933311ff28",
       "server": "104.21.88.226",
       "server_port": 443,
@@ -280,6 +288,14 @@
         "enabled": true,
         "server_name": "XxxxxXXXXXXxXf.wwW890604.Dpdns.orG"
       },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "44ddc8a7-27c6-4de8-a232-bcad6d0e66c6",
+      "server": "69.46.46.176",
+      "server_port": 443,
+      "tag": "outage-75c3bac7ada05582",
       "type": "trojan"
     },
     {
@@ -307,30 +323,6 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "4b040268-f3a5-4136-b1a9-506012e8e3d9",
-      "server": "141.101.120.10",
-      "server_port": 443,
-      "tag": "outage-c26fa619b79749cb",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssp2.100896.xyz"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "53027f0f-2581-469a-a802-825d46f37cda",
-      "server": "104.18.124.198",
-      "server_port": 443,
-      "tag": "outage-f9e3300441e388d7",
-      "tls": {
-        "enabled": true,
-        "server_name": "a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org"
-      },
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -338,6 +330,7 @@
         "outage-4da99d2bcab6873e",
         "outage-1e39ab7011e8cf3b",
         "outage-844e3bb6da7b175e",
+        "outage-1db1efb811e92f78",
         "outage-1776644bfe177ed4",
         "outage-089ba7a5b216c88f",
         "outage-48db1326d2210773",
@@ -345,17 +338,16 @@
         "outage-c97fdae9a5d28673",
         "outage-9e0df796fc53a058",
         "outage-83cced528a9f3e6f",
+        "outage-c508e93884faceda",
         "outage-570e0164a49f1941",
         "outage-622ee73ffec88571",
         "outage-f988cd969422a63d",
         "outage-f082f70b16c58a6a",
         "outage-804ff9980cdb11ca",
-        "outage-8487b6272564a648",
         "outage-fb83ca46f29e3aac",
+        "outage-75c3bac7ada05582",
         "outage-5b4854bbafabd103",
-        "outage-c9f27869b69073f3",
-        "outage-c26fa619b79749cb",
-        "outage-f9e3300441e388d7"
+        "outage-c9f27869b69073f3"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
