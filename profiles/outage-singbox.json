@@ -220,27 +220,22 @@
     },
     {
       "network": "tcp",
-      "password": "6884d714-d3c4-4b49-aa20-767ea92837d6",
-      "server": "172.67.70.191",
+      "server": "199.232.78.159",
       "server_port": 443,
-      "tag": "outage-e2d81d7f685a5e4d",
+      "tag": "outage-f549c5341fa86510",
       "tls": {
         "enabled": true,
-        "server_name": "icecream.955850.xyz"
+        "server_name": "safa.fastly.com"
       },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "1b3b276f-44b4-4c39-bfdf-67ff6337b41f",
-      "server": "172.64.155.187",
-      "server_port": 443,
-      "tag": "outage-5261e89fb03d99e0",
-      "tls": {
-        "enabled": true,
-        "server_name": "POOrIaREd--persEPolIS.pAGEs.Dev"
+      "transport": {
+        "headers": {
+          "Host": "safa.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
       },
-      "type": "trojan"
+      "type": "vless",
+      "uuid": "5b44c4dc-3b6b-4e61-96fa-6e89b349e6c4"
     },
     {
       "network": "tcp",
@@ -268,6 +263,18 @@
     },
     {
       "network": "tcp",
+      "password": "53027f0f-2581-469a-a802-825d46f37cda",
+      "server": "104.18.124.198",
+      "server_port": 443,
+      "tag": "outage-f9e3300441e388d7",
+      "tls": {
+        "enabled": true,
+        "server_name": "a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
       "tag": "outage-697a553ec2239c89",
@@ -287,22 +294,15 @@
     },
     {
       "network": "tcp",
-      "server": "sub-production-6a16.up.railway.app",
+      "password": "21e5535e-4783-4a80-a735-24a1162d315c",
+      "server": "104.21.28.26",
       "server_port": 443,
-      "tag": "outage-862f8658507db98b",
+      "tag": "outage-54a4b3e0d0da33f4",
       "tls": {
         "enabled": true,
-        "server_name": "sub-production-6a16.up.railway.app"
+        "server_name": "xxscdF56.999182.xYZ"
       },
-      "transport": {
-        "headers": {
-          "Host": "sub-production-6a16.up.railway.app"
-        },
-        "path": "/ws/27894f08-51ae-4f95-aca9-c3e66d060b56?ed=2560",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "786c817c-bf75-4f36-8195-187ae5fd0ff6"
+      "type": "trojan"
     },
     {
       "idle_timeout": "30m",
@@ -323,12 +323,12 @@
         "outage-5f25e3370d05e957",
         "outage-5b4854bbafabd103",
         "outage-c9f27869b69073f3",
-        "outage-e2d81d7f685a5e4d",
-        "outage-5261e89fb03d99e0",
+        "outage-f549c5341fa86510",
         "outage-c26fa619b79749cb",
         "outage-6b529ccdee09fdc9",
+        "outage-f9e3300441e388d7",
         "outage-697a553ec2239c89",
-        "outage-862f8658507db98b"
+        "outage-54a4b3e0d0da33f4"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
