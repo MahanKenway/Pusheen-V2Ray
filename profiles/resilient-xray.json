@@ -28,22 +28,29 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.97.6",
+            "address": "199.232.78.160",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "e6df2095-a73c-4043-8693-8d5a03686870"
+                "id": "XpnTeam-14"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none"
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "play.google.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
       },
-      "tag": "resilient-c3dc5905cfc6f7bb"
+      "tag": "resilient-844e3bb6da7b175e"
     },
     {
       "protocol": "vless",
@@ -55,7 +62,7 @@
             "users": [
               {
                 "encryption": "none",
-                "id": "XpnTeam-7"
+                "id": "XpnTeam-13"
               }
             ]
           }
@@ -66,25 +73,25 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "Speedtest.net"
+          "serverName": "play.google.com"
         },
         "wsSettings": {
           "path": "/"
         }
       },
-      "tag": "resilient-da61b0584e5ed586"
+      "tag": "resilient-48db1326d2210773"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.17.98.5",
+            "address": "104.21.63.236",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "49ccad64-c854-4f33-b334-793cf0d02b74"
+                "id": "77702cd2-6a11-40f4-a817-1efeae6f6889"
               }
             ]
           }
@@ -95,13 +102,13 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "newcscf.jisucf.cloudns.ch"
+          "serverName": "t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev"
         },
         "wsSettings": {
-          "path": "/"
+          "path": "/vl/Nmf5YfPITFhUjeHE8KfDU5T8H?ed=2560"
         }
       },
-      "tag": "resilient-9d8aaa9d5411d118"
+      "tag": "resilient-a56b04c6845fac0a"
     },
     {
       "protocol": "vless",
@@ -131,6 +138,28 @@
         }
       },
       "tag": "resilient-c97fdae9a5d28673"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.97.6",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "495c7195-85b8-498a-bf20-2ea9ce9175b5"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-9e0df796fc53a058"
     },
     {
       "protocol": "trojan",
@@ -464,35 +493,6 @@
       "tag": "resilient-f9e3300441e388d7"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.160",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "XpnTeam-10"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "play.google.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-697a553ec2239c89"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -645,6 +645,49 @@
       "settings": {
         "vnext": [
           {
+            "address": "13.36.158.26",
+            "port": 22222,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-deeb428f68ab5944"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "195.133.93.81",
+            "password": "3723507166611775488",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "sensible-ocelot.boa152.lol"
+        }
+      },
+      "tag": "resilient-ec2f33e00b661421"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "163.245.43.50",
             "port": 443,
             "users": [
@@ -725,6 +768,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "144.31.62.242",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "318c935d-c195-41d3-99ad-9bbcfdab3386"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
+          "serverName": "de2.srv.vbuste.ru",
+          "shortId": "4be4110078ebed4a"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-f0053a3b9222bf47"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "51.255.166.202",
             "port": 443,
             "users": [
@@ -746,6 +818,31 @@
         }
       },
       "tag": "resilient-19a922cd20d65476"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "94.183.170.135",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "06c4e938-2954-478f-a870-ca1b163e30e9"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-778c6f5f60776ca5"
     },
     {
       "protocol": "vless",
@@ -1049,63 +1146,6 @@
       "tag": "resilient-ddaec89af24215f9"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "64.188.83.186",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "616c7b3b-41f4-4038-88c6-d6fedd0ae4a7"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "random",
-          "publicKey": "PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs",
-          "serverName": "de-2.ardesnode.ru",
-          "shortId": "9ea74b83f4993ca9"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-26f13427102bd7cb"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "31.77.13.19",
-            "port": 2063,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "b18d5990-96eb-4587-a386-7f8ef7591e6a"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM",
-          "serverName": "rusbid.de"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-8255426e325a5ab5"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1125,35 +1165,6 @@
         }
       },
       "tag": "resilient-c33efa0296239366"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "205.237.110.254",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "e75ad2eb-6c1f-45ce-8023-f5f10875df66"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "IG6lxrx_xkGOoBuo3DC8sgQoIFmqVgznIr0qOuNO0w4",
-          "serverName": "zsit.eu-cdn294.com",
-          "shortId": "cd2d53510b4df2a8"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-b220dad5dd3fdb0e"
     },
     {
       "protocol": "trojan",
