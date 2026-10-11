@@ -14,6 +14,44 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "tag": "outage-4da99d2bcab6873e",
+      "tls": {
+        "enabled": true,
+        "server_name": "contriol.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "contriol.fastly.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "89d784c8-0764-477d-9082-cfff0570338e"
+    },
+    {
+      "network": "tcp",
+      "server": "172.66.149.243",
+      "server_port": 8443,
+      "tag": "outage-1e39ab7011e8cf3b",
+      "tls": {
+        "enabled": true,
+        "server_name": "baZYepC.AMINRAZAvI1384.WoRkERS.dEv"
+      },
+      "transport": {
+        "headers": {
+          "Host": "baZYepC.AMINRAZAvI1384.WoRkERS.dEv"
+        },
+        "path": "/eyJqdW5rIjoid2tkV0g2R3kxYlNTIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "ededaf7e-ad86-40bc-b837-b1403c56f311"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
       "tag": "outage-844e3bb6da7b175e",
@@ -30,6 +68,37 @@
       },
       "type": "vless",
       "uuid": "XpnTeam-14"
+    },
+    {
+      "network": "tcp",
+      "password": "3Ldo+,81m[h)3Lb+",
+      "server": "172.66.44.81",
+      "server_port": 8443,
+      "tag": "outage-1776644bfe177ed4",
+      "tls": {
+        "enabled": true,
+        "server_name": "AzAdNEt05.pAGES.Dev"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "104.17.98.5",
+      "server_port": 443,
+      "tag": "outage-089ba7a5b216c88f",
+      "tls": {
+        "enabled": true,
+        "server_name": "newcf.3xxx.de5.net"
+      },
+      "transport": {
+        "headers": {
+          "Host": "newcf.3xxx.de5.net"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "871f3020-6158-4829-88ed-81843bb956e1"
     },
     {
       "network": "tcp",
@@ -107,6 +176,25 @@
         "server_name": "AzAdnet05.pAgEs.dev"
       },
       "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "69.46.46.135",
+      "server_port": 443,
+      "tag": "outage-570e0164a49f1941",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-9120d4-53ea2e-production.up.railway.app"
+      },
+      "transport": {
+        "headers": {
+          "Host": "srv-9120d4-53ea2e-production.up.railway.app"
+        },
+        "path": "/ws/Mardom",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "4e3c8768-486f-5804-8dbc-33e952f89859"
     },
     {
       "network": "tcp",
@@ -196,25 +284,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.187",
-      "server_port": 443,
-      "tag": "outage-5f25e3370d05e957",
-      "tls": {
-        "enabled": true,
-        "server_name": "default.ssl.fastly.net"
-      },
-      "transport": {
-        "headers": {
-          "Host": "default.ssl.fastly.net"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "c326b0af-e926-4dc8-a8a3-e7790cc0bdec"
-    },
-    {
-      "network": "tcp",
       "password": "5041df4c-b3ae-481d-adf9-79b39f4810f2",
       "server": "104.26.14.85",
       "server_port": 2083,
@@ -239,25 +308,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.159",
-      "server_port": 443,
-      "tag": "outage-f549c5341fa86510",
-      "tls": {
-        "enabled": true,
-        "server_name": "safa.fastly.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "safa.fastly.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "5b44c4dc-3b6b-4e61-96fa-6e89b349e6c4"
-    },
-    {
-      "network": "tcp",
       "password": "4b040268-f3a5-4136-b1a9-506012e8e3d9",
       "server": "141.101.120.10",
       "server_port": 443,
@@ -267,18 +317,6 @@
         "server_name": "ssp2.100896.xyz"
       },
       "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "8.6.112.4",
-      "server_port": 2083,
-      "tag": "outage-6b529ccdee09fdc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "Site.check-looks.space"
-      },
-      "type": "vless",
-      "uuid": "ca608afb-55ff-4f36-9d00-606fedbb30e1"
     },
     {
       "network": "tcp",
@@ -293,62 +331,31 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "21e5535e-4783-4a80-a735-24a1162d315c",
-      "server": "104.21.28.26",
-      "server_port": 443,
-      "tag": "outage-54a4b3e0d0da33f4",
-      "tls": {
-        "enabled": true,
-        "server_name": "xxscdF56.999182.xYZ"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "sub-production-6a16.up.railway.app",
-      "server_port": 443,
-      "tag": "outage-862f8658507db98b",
-      "tls": {
-        "enabled": true,
-        "server_name": "sub-production-6a16.up.railway.app"
-      },
-      "transport": {
-        "headers": {
-          "Host": "sub-production-6a16.up.railway.app"
-        },
-        "path": "/ws/27894f08-51ae-4f95-aca9-c3e66d060b56?ed=2560",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "786c817c-bf75-4f36-8195-187ae5fd0ff6"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-4da99d2bcab6873e",
+        "outage-1e39ab7011e8cf3b",
         "outage-844e3bb6da7b175e",
+        "outage-1776644bfe177ed4",
+        "outage-089ba7a5b216c88f",
         "outage-48db1326d2210773",
         "outage-a56b04c6845fac0a",
         "outage-c97fdae9a5d28673",
         "outage-9e0df796fc53a058",
         "outage-83cced528a9f3e6f",
+        "outage-570e0164a49f1941",
         "outage-622ee73ffec88571",
         "outage-f988cd969422a63d",
         "outage-f082f70b16c58a6a",
         "outage-804ff9980cdb11ca",
         "outage-8487b6272564a648",
         "outage-fb83ca46f29e3aac",
-        "outage-5f25e3370d05e957",
         "outage-5b4854bbafabd103",
         "outage-c9f27869b69073f3",
-        "outage-f549c5341fa86510",
         "outage-c26fa619b79749cb",
-        "outage-6b529ccdee09fdc9",
-        "outage-f9e3300441e388d7",
-        "outage-54a4b3e0d0da33f4",
-        "outage-862f8658507db98b"
+        "outage-f9e3300441e388d7"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
