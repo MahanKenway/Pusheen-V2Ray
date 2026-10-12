@@ -16,20 +16,20 @@
       "network": "tcp",
       "server": "199.232.78.159",
       "server_port": 443,
-      "tag": "outage-4da99d2bcab6873e",
+      "tag": "outage-274d72ae9ff03656",
       "tls": {
         "enabled": true,
-        "server_name": "contriol.fastly.com"
+        "server_name": "google.com"
       },
       "transport": {
         "headers": {
-          "Host": "contriol.fastly.com"
+          "Host": "google.com"
         },
         "path": "/",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "89d784c8-0764-477d-9082-cfff0570338e"
+      "uuid": "51d039b4-6232-43fa-9161-46748776317c"
     },
     {
       "network": "tcp",
@@ -68,6 +68,18 @@
       },
       "type": "vless",
       "uuid": "XpnTeam-14"
+    },
+    {
+      "network": "tcp",
+      "password": "3Ldo+,81m[h)3Lb+",
+      "server": "172.66.44.81",
+      "server_port": 2087,
+      "tag": "outage-380de32d7495cd57",
+      "tls": {
+        "enabled": true,
+        "server_name": "aZaDnET05.pAges.DeV"
+      },
+      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -190,25 +202,6 @@
     },
     {
       "network": "tcp",
-      "server": "chatgpt.com",
-      "server_port": 8443,
-      "tag": "outage-c97fdae9a5d28673",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.large-files.info"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.large-files.info"
-        },
-        "path": "/var/www/html/video/preview/download/i8o0la",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "7c99dc89-bf49-45c9-acc5-e43f36657518"
-    },
-    {
-      "network": "tcp",
       "server": "188.114.97.6",
       "server_port": 443,
       "tag": "outage-9e0df796fc53a058",
@@ -292,18 +285,6 @@
     },
     {
       "network": "tcp",
-      "password": "357b1bba-6400-4944-baff-1b933311ff28",
-      "server": "104.21.88.226",
-      "server_port": 443,
-      "tag": "outage-fb83ca46f29e3aac",
-      "tls": {
-        "enabled": true,
-        "server_name": "XxxxxXXXXXXxXf.wwW890604.Dpdns.orG"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": "44ddc8a7-27c6-4de8-a232-bcad6d0e66c6",
       "server": "69.46.46.176",
       "server_port": 443,
@@ -327,9 +308,10 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
-        "outage-4da99d2bcab6873e",
+        "outage-274d72ae9ff03656",
         "outage-1e39ab7011e8cf3b",
         "outage-844e3bb6da7b175e",
+        "outage-380de32d7495cd57",
         "outage-1db1efb811e92f78",
         "outage-1776644bfe177ed4",
         "outage-089ba7a5b216c88f",
@@ -337,7 +319,6 @@
         "outage-e741216f91475d0c",
         "outage-a56b04c6845fac0a",
         "outage-ed58a7cfc38826b4",
-        "outage-c97fdae9a5d28673",
         "outage-9e0df796fc53a058",
         "outage-83cced528a9f3e6f",
         "outage-c508e93884faceda",
@@ -345,7 +326,6 @@
         "outage-f988cd969422a63d",
         "outage-f082f70b16c58a6a",
         "outage-804ff9980cdb11ca",
-        "outage-fb83ca46f29e3aac",
         "outage-75c3bac7ada05582",
         "outage-c26fa619b79749cb"
       ],
