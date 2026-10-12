@@ -579,27 +579,6 @@
       "settings": {
         "servers": [
           {
-            "address": "104.26.14.85",
-            "password": "5041df4c-b3ae-481d-adf9-79b39f4810f2",
-            "port": 2083
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "taqboostan.zagros.top"
-        }
-      },
-      "tag": "resilient-5b4854bbafabd103"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
             "address": "141.101.120.10",
             "password": "4b040268-f3a5-4136-b1a9-506012e8e3d9",
             "port": 443
@@ -643,6 +622,27 @@
         }
       },
       "tag": "resilient-1b20dd82870b8e5a"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.19.159.12",
+            "password": "242a3d8eee5e4ed1a6bfa4141d549a25",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "jobscareertoday.com"
+        }
+      },
+      "tag": "resilient-2cbce05b759739d0"
     },
     {
       "protocol": "trojan",
@@ -1007,28 +1007,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "15.224.125.183",
-            "port": 22222,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-4da28f0f6eb6c27c"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "www.speedtest.net",
             "port": 8443,
             "users": [
@@ -1252,6 +1230,35 @@
       "tag": "resilient-a75ea34ee48b7960"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "103.241.65.169",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "91344c03-b37f-42c5-90f1-cbb95c5cf256"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0",
+          "serverName": "gb.srv.dvzh.net",
+          "shortId": "d30f9d846a7c8cba"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-58c86ce452f67997"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1382,6 +1389,27 @@
         }
       },
       "tag": "resilient-fd76a65870985d40"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "b1.3danimation3.com",
+            "password": "3ixF51QWmFNmKOO_utPxVL-7gYYUb6HC",
+            "port": 8443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "b1.3danimation3.com"
+        }
+      },
+      "tag": "resilient-9dc7d718547ba09f"
     },
     {
       "protocol": "trojan",
