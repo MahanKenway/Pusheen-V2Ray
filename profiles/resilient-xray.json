@@ -506,27 +506,6 @@
       "settings": {
         "servers": [
           {
-            "address": "104.26.12.31",
-            "password": "2faaf996-d2b0-440d-8258-81f2b05dd0e4",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "fwd-refuse-senators-brought.trycloudflare.com"
-        }
-      },
-      "tag": "resilient-f082f70b16c58a6a"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
             "address": "104.17.147.3",
             "password": "669d0ac7b5b64ebbb1abb75d5d540a5c",
             "port": 443
@@ -559,27 +538,6 @@
         "security": "none"
       },
       "tag": "resilient-75c3bac7ada05582"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "141.101.120.10",
-            "password": "4b040268-f3a5-4136-b1a9-506012e8e3d9",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ssp2.100896.xyz"
-        }
-      },
-      "tag": "resilient-c26fa619b79749cb"
     },
     {
       "protocol": "vless",
@@ -635,6 +593,27 @@
       "settings": {
         "servers": [
           {
+            "address": "104.17.215.8",
+            "password": "2cba4104747d49d18319e5ade1b93ab5",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "jobscareertoday.com"
+        }
+      },
+      "tag": "resilient-7b04944f252102da"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "160.123.255.199",
             "password": "6884d714-d3c4-4b49-aa20-767ea92837d6",
             "port": 443
@@ -674,6 +653,27 @@
         }
       },
       "tag": "resilient-becaae7bc2434a42"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.19.64",
+            "password": "21c6c7cb-332b-4a0c-9ad7-dff9c3111442",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "us02web.zoom.us"
+        }
+      },
+      "tag": "resilient-12cebec23e00d962"
     },
     {
       "protocol": "vless",
@@ -1126,6 +1126,28 @@
       "settings": {
         "vnext": [
           {
+            "address": "52.56.174.51",
+            "port": 22223,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-d52cedd2d7323542"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "51.158.206.29",
             "port": 23576,
             "users": [
@@ -1232,35 +1254,6 @@
         }
       },
       "tag": "resilient-abf06bb1c7e168cf"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "157.228.155.238",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "4d852af3-a121-41aa-9aed-4ca40a6f7b4d"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "randomized",
-          "publicKey": "5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I",
-          "serverName": "addons.mozilla.org",
-          "shortId": "6f76ad09"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-82b025d9ac500af6"
     },
     {
       "protocol": "vless",
