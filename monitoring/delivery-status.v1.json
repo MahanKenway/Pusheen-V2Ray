@@ -2,8 +2,49 @@
   "gateway": "https://pusheen-feed-gateway.mahankenway.workers.dev",
   "measurements": [
     {
-      "measurement_id": "2He0T5uusDCNBhtST00021JA4",
+      "measurement_id": "2eRI7cL1uHfSrHUdl00021JHo",
       "path": "/health",
+      "requested_locations": [
+        "IR",
+        "DE",
+        "SG",
+        "US"
+      ],
+      "results": [
+        {
+          "country": "IR",
+          "failure_source": null,
+          "http_status": 200,
+          "status": "finished",
+          "total_ms": 452
+        },
+        {
+          "country": "DE",
+          "failure_source": null,
+          "http_status": 200,
+          "status": "finished",
+          "total_ms": 424
+        },
+        {
+          "country": "SG",
+          "failure_source": null,
+          "http_status": 200,
+          "status": "finished",
+          "total_ms": 359
+        },
+        {
+          "country": "US",
+          "failure_source": null,
+          "http_status": 200,
+          "status": "finished",
+          "total_ms": 469
+        }
+      ],
+      "target": "health"
+    },
+    {
+      "measurement_id": "2v8RY1tJxct4HjHpp00021JHo",
+      "path": "/outage.txt",
       "requested_locations": [
         "IR",
         "DE",
@@ -23,14 +64,14 @@
           "failure_source": null,
           "http_status": 200,
           "status": "finished",
-          "total_ms": 150
+          "total_ms": 329
         },
         {
           "country": "SG",
           "failure_source": null,
           "http_status": 200,
           "status": "finished",
-          "total_ms": 308
+          "total_ms": 706
         },
         {
           "country": "US",
@@ -38,47 +79,6 @@
           "http_status": 200,
           "status": "finished",
           "total_ms": 258
-        }
-      ],
-      "target": "health"
-    },
-    {
-      "measurement_id": "2Q8SJEC0j6JkhzxQn00021JA4",
-      "path": "/outage.txt",
-      "requested_locations": [
-        "IR",
-        "DE",
-        "SG",
-        "US"
-      ],
-      "results": [
-        {
-          "country": "IR",
-          "failure_source": null,
-          "http_status": 200,
-          "status": "finished",
-          "total_ms": 653
-        },
-        {
-          "country": "DE",
-          "failure_source": null,
-          "http_status": 200,
-          "status": "finished",
-          "total_ms": 140
-        },
-        {
-          "country": "SG",
-          "failure_source": null,
-          "http_status": 200,
-          "status": "finished",
-          "total_ms": 431
-        },
-        {
-          "country": "US",
-          "failure_source": null,
-          "http_status": 200,
-          "status": "finished",
-          "total_ms": 271
         }
       ],
       "target": "outage_feed"
@@ -93,5 +93,5 @@
     "sampled_probe_count": 8,
     "successful_http_200_count": 8
   },
-  "updated_at": "2026-10-13T08:20:48.510791+00:00"
+  "updated_at": "2026-10-13T16:20:33.569985+00:00"
 }
