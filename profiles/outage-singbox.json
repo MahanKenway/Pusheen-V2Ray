@@ -71,6 +71,25 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.78.199",
+      "server_port": 443,
+      "tag": "outage-acd9e4945cca925d",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.speedtest.net"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.speedtest.net"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "5e3d1236-9a23-4e32-947c-47d5827b838b"
+    },
+    {
+      "network": "tcp",
       "password": "6884d714-d3c4-4b49-aa20-767ea92837d6",
       "server": "104.16.223.254",
       "server_port": 443,
@@ -253,13 +272,13 @@
     },
     {
       "network": "tcp",
-      "password": "509ed9b7-8d64-4204-8ec8-6b749020ac3f",
-      "server": "104.21.3.189",
+      "password": "669d0ac7b5b64ebbb1abb75d5d540a5c",
+      "server": "104.17.147.3",
       "server_port": 443,
-      "tag": "outage-804ff9980cdb11ca",
+      "tag": "outage-2c25d8a7df37da17",
       "tls": {
         "enabled": true,
-        "server_name": "CcCVfGTyU.89060004.Xyz"
+        "server_name": "jobscareerfortoday.com"
       },
       "type": "trojan"
     },
@@ -296,6 +315,14 @@
       "type": "trojan"
     },
     {
+      "network": "tcp",
+      "server": "204.216.216.23",
+      "server_port": 10086,
+      "tag": "outage-4945f3e6c547b1ac",
+      "type": "vless",
+      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -303,6 +330,7 @@
         "outage-274d72ae9ff03656",
         "outage-1e39ab7011e8cf3b",
         "outage-844e3bb6da7b175e",
+        "outage-acd9e4945cca925d",
         "outage-f6aa6a72bc9c1e0a",
         "outage-380de32d7495cd57",
         "outage-1db1efb811e92f78",
@@ -315,10 +343,11 @@
         "outage-ed58a7cfc38826b4",
         "outage-c508e93884faceda",
         "outage-f082f70b16c58a6a",
-        "outage-804ff9980cdb11ca",
+        "outage-2c25d8a7df37da17",
         "outage-75c3bac7ada05582",
         "outage-c26fa619b79749cb",
-        "outage-2cbce05b759739d0"
+        "outage-2cbce05b759739d0",
+        "outage-4945f3e6c547b1ac"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
