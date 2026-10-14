@@ -1,10 +1,10 @@
 {
   "by_protocol": {
     "trojan": 10,
-    "vless": 14
+    "vless": 12
   },
-  "count": 24,
-  "created_at": "2026-10-13T23:04:58.138911+00:00",
+  "count": 22,
+  "created_at": "2026-10-14T01:50:16.245282+00:00",
   "evidence": "recent successful TCP reachability with tighter anti-concentration policy",
   "max_evidence_age_hours": 72,
   "notice": "A receipt records why the item is eligible for this tier at publication time. It does not disclose hostnames, credentials, raw URIs, or guarantee availability from another network.",
@@ -122,6 +122,13 @@
       "transport_family": "trojan:tcp:none"
     },
     {
+      "id": "6889e9baeb8d081e",
+      "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
+      "latest_source_id": "ebrasha-trojan-probationary",
+      "protocol": "trojan",
+      "transport_family": "trojan:tcp:tls"
+    },
+    {
       "id": "2c25d8a7df37da17",
       "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
       "latest_source_id": "ebrasha-trojan-probationary",
@@ -150,32 +157,11 @@
       "transport_family": "trojan:tcp:tls"
     },
     {
-      "id": "e0df6bcbe5d034b5",
-      "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
-      "latest_source_id": "ebrasha-trojan-probationary",
-      "protocol": "trojan",
-      "transport_family": "trojan:tcp:tls"
-    },
-    {
       "id": "4945f3e6c547b1ac",
       "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
       "latest_source_id": "raydikal-verified",
       "protocol": "vless",
       "transport_family": "vless:tcp:none"
-    },
-    {
-      "id": "26f13427102bd7cb",
-      "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
-      "latest_source_id": "configforge-vless",
-      "protocol": "vless",
-      "transport_family": "vless:tcp:reality"
-    },
-    {
-      "id": "2e565bcf0026565b",
-      "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
-      "latest_source_id": "configforge-vless",
-      "protocol": "vless",
-      "transport_family": "vless:tcp:reality"
     }
   ],
   "schema_version": 1,

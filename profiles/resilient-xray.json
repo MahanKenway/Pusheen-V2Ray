@@ -502,6 +502,52 @@
       "tag": "resilient-570e0164a49f1941"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.16.209.187",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "20cf8a2b-e301-4240-9c03-20883249a287"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/?ed=2560"
+        }
+      },
+      "tag": "resilient-a9c9109da8f754dd"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "172.66.46.213",
+            "password": "3]sjM!r|L;Ql",
+            "port": 2096
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "zs41T69imJif5VZsXvlG4GvItc80mmx5.PaGes.DeV"
+        }
+      },
+      "tag": "resilient-6889e9baeb8d081e"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -614,27 +660,6 @@
       "settings": {
         "servers": [
           {
-            "address": "160.123.255.199",
-            "password": "6884d714-d3c4-4b49-aa20-767ea92837d6",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "icecream.955850.xyz"
-        }
-      },
-      "tag": "resilient-e0df6bcbe5d034b5"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
             "address": "imanagha.airdrop2014aa5168.workers.dev",
             "password": "%",
             "port": 2053
@@ -653,6 +678,30 @@
         }
       },
       "tag": "resilient-becaae7bc2434a42"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.114.98.0",
+            "password": "1710442808",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "subb.nrshop198.workers.dev"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-4b5702c251bf773c"
     },
     {
       "protocol": "trojan",
@@ -1227,64 +1276,6 @@
       "tag": "resilient-1e93424eba566749"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "103.126.51.58",
-            "port": 995,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "1fc575d3-81bb-44d5-9efa-4131c7cc677a"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "httpupgradeSettings": {
-          "path": "/api/v1"
-        },
-        "network": "httpupgrade",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ocober-romania-new.yyuyy.com"
-        }
-      },
-      "tag": "resilient-abf06bb1c7e168cf"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "64.188.83.186",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "616c7b3b-41f4-4038-88c6-d6fedd0ae4a7"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "random",
-          "publicKey": "PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs",
-          "serverName": "de-2.ardesnode.ru",
-          "shortId": "9ea74b83f4993ca9"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-26f13427102bd7cb"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1325,35 +1316,6 @@
         }
       },
       "tag": "resilient-3f99dcfbe272aee9"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "150.241.101.80",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "yandex.net",
-          "shortId": "6ba85179e30d4fc2"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-2e565bcf0026565b"
     },
     {
       "protocol": "trojan",
