@@ -402,6 +402,52 @@
       "settings": {
         "vnext": [
           {
+            "address": "199.232.237.67",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "2c8296e2-71b5-455d-8eaf-35c4f05486fa"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/?TELEGRAM--BYA--CHANEL---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM"
+        }
+      },
+      "tag": "resilient-7a890b9cd110eda0"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.47.176",
+            "password": "52701795-3c3b-46b4-b7cf-c5978b3a4cf2",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "hdfyc1.achaemenidempireofpersia.uk"
+        }
+      },
+      "tag": "resilient-640aa4d401614689"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "169.40.42.104",
             "port": 443,
             "users": [
@@ -781,6 +827,36 @@
         "security": "reality"
       },
       "tag": "resilient-37ea7d1b93baee8f"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "147.45.60.160",
+            "port": 8444,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": "GunService"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "serverName": "github.com"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-51f5e2bcdf7e7031"
     },
     {
       "protocol": "vless",
@@ -1222,60 +1298,6 @@
       "tag": "resilient-d106cca415981182"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "94.183.170.135",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "06c4e938-2954-478f-a870-ca1b163e30e9"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-778c6f5f60776ca5"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "31.76.65.196",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "c96f941e-dd8a-00aa-89d5-740b79202ed0"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "7T9ZSCdUh4IUlx17R1Vbzk8kjiopA3j5mI7-inh6aQU",
-          "serverName": "x5club.ru",
-          "shortId": "187eea0acfb7f778",
-          "spiderX": "/c6e79208ab92a6b"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-1e93424eba566749"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1322,21 +1344,24 @@
       "settings": {
         "servers": [
           {
-            "address": "8.219.155.125",
-            "password": "4c3164ee-abcf-4091-abea-d1cd4937a68d",
+            "address": "cnamemc.ciscocdn1.live",
+            "password": "5de2dfab-28e4-4773-b0d3-8d43da0d9ac3",
             "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "jy.hhllfly.kdns.fr"
+          "serverName": "c3mc.ciscocdn1.live"
+        },
+        "wsSettings": {
+          "path": "/ywQ9KSLI4ZBm9wOAXUaN"
         }
       },
-      "tag": "resilient-540d01d5b852d303"
+      "tag": "resilient-020e7188f586c543"
     },
     {
       "protocol": "trojan",
