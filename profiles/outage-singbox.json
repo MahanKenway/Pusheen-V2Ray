@@ -71,6 +71,25 @@
     },
     {
       "network": "tcp",
+      "server": "172.67.155.65",
+      "server_port": 8443,
+      "tag": "outage-d15839b481b7c69d",
+      "tls": {
+        "enabled": true,
+        "server_name": "lucasjow.us.ci"
+      },
+      "transport": {
+        "headers": {
+          "Host": "lucasjow.us.ci"
+        },
+        "path": "/cart/docs/www/proxyip=108.160.132.132",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.199",
       "server_port": 443,
       "tag": "outage-acd9e4945cca925d",
@@ -252,21 +271,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.237.67",
-      "server_port": 80,
-      "tag": "outage-7a890b9cd110eda0",
-      "transport": {
-        "headers": {
-          "Host": "icjucvsgoqjwmtw.global.ssl.fastly.net"
-        },
-        "path": "/?TELEGRAM--BYA--CHANEL---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "2c8296e2-71b5-455d-8eaf-35c4f05486fa"
-    },
-    {
-      "network": "tcp",
       "password": "52701795-3c3b-46b4-b7cf-c5978b3a4cf2",
       "server": "104.21.47.176",
       "server_port": 443,
@@ -345,6 +349,7 @@
         "outage-274d72ae9ff03656",
         "outage-1e39ab7011e8cf3b",
         "outage-844e3bb6da7b175e",
+        "outage-d15839b481b7c69d",
         "outage-acd9e4945cca925d",
         "outage-f6aa6a72bc9c1e0a",
         "outage-380de32d7495cd57",
@@ -356,7 +361,6 @@
         "outage-e741216f91475d0c",
         "outage-a56b04c6845fac0a",
         "outage-ed58a7cfc38826b4",
-        "outage-7a890b9cd110eda0",
         "outage-640aa4d401614689",
         "outage-c508e93884faceda",
         "outage-6889e9baeb8d081e",
