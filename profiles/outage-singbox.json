@@ -33,6 +33,25 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "tag": "outage-d31648403c63fa42",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "play.google.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "XpnTeam-6"
+    },
+    {
+      "network": "tcp",
       "server": "172.67.155.65",
       "server_port": 8443,
       "tag": "outage-d15839b481b7c69d",
@@ -95,22 +114,15 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.239.239",
-      "server_port": 443,
-      "tag": "outage-1db1efb811e92f78",
+      "password": "5041df4c-b3ae-481d-adf9-79b39f4810f2",
+      "server": "172.67.148.211",
+      "server_port": 2083,
+      "tag": "outage-1b2d2365620e190f",
       "tls": {
         "enabled": true,
-        "server_name": "speedtest.net"
+        "server_name": "taqboostan.zagros.top"
       },
-      "transport": {
-        "headers": {
-          "Host": "speedtest.net"
-        },
-        "path": "/?ed=2056",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "31608e93-a701-4604-b8de-c55baa393937"
+      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -164,25 +176,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "tag": "outage-4bc6fea05efcd342",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "play.google.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "XpnTeam-1"
-    },
-    {
-      "network": "tcp",
       "server": "199.232.237.67",
       "server_port": 80,
       "tag": "outage-7a890b9cd110eda0",
@@ -225,14 +218,6 @@
     },
     {
       "network": "tcp",
-      "password": "44ddc8a7-27c6-4de8-a232-bcad6d0e66c6",
-      "server": "69.46.46.178",
-      "server_port": 443,
-      "tag": "outage-c508e93884faceda",
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "server": "104.16.209.187",
       "server_port": 80,
       "tag": "outage-a9c9109da8f754dd",
@@ -272,14 +257,6 @@
     },
     {
       "network": "tcp",
-      "password": "44ddc8a7-27c6-4de8-a232-bcad6d0e66c6",
-      "server": "69.46.46.176",
-      "server_port": 443,
-      "tag": "outage-75c3bac7ada05582",
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": "5504eaa8-1395-402f-8e0e-75ecd762e627",
       "server": "172.64.146.66",
       "server_port": 443,
@@ -311,6 +288,37 @@
     },
     {
       "network": "tcp",
+      "password": "2cba4104747d49d18319e5ade1b93ab5",
+      "server": "104.17.215.8",
+      "server_port": 443,
+      "tag": "outage-7b04944f252102da",
+      "tls": {
+        "enabled": true,
+        "server_name": "jobscareertoday.com"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "www.speedtest.net",
+      "server_port": 443,
+      "tag": "outage-a9b9beb9112e56e2",
+      "tls": {
+        "enabled": true,
+        "server_name": "pooriared.poorianahanshop3.workers.dev"
+      },
+      "transport": {
+        "headers": {
+          "Host": "pooriared.poorianahanshop3.workers.dev"
+        },
+        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "db3cd595-6111-006e-0f74-17ec582dee6f"
+    },
+    {
+      "network": "tcp",
       "server": "204.216.216.23",
       "server_port": 10086,
       "tag": "outage-4945f3e6c547b1ac",
@@ -323,25 +331,25 @@
       "interval": "10m",
       "outbounds": [
         "outage-274d72ae9ff03656",
+        "outage-d31648403c63fa42",
         "outage-d15839b481b7c69d",
         "outage-acd9e4945cca925d",
         "outage-f6aa6a72bc9c1e0a",
         "outage-380de32d7495cd57",
-        "outage-1db1efb811e92f78",
+        "outage-1b2d2365620e190f",
         "outage-ddd6e0916266698a",
         "outage-e741216f91475d0c",
         "outage-ed58a7cfc38826b4",
-        "outage-4bc6fea05efcd342",
         "outage-7a890b9cd110eda0",
         "outage-640aa4d401614689",
         "outage-5e339a0a0a6434a1",
-        "outage-c508e93884faceda",
         "outage-a9c9109da8f754dd",
         "outage-6889e9baeb8d081e",
         "outage-2c25d8a7df37da17",
-        "outage-75c3bac7ada05582",
         "outage-23d7e02d41f6f2f6",
         "outage-2cbce05b759739d0",
+        "outage-7b04944f252102da",
+        "outage-a9b9beb9112e56e2",
         "outage-4945f3e6c547b1ac"
       ],
       "tag": "outage-auto",
