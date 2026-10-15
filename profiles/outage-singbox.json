@@ -16,7 +16,7 @@
       "network": "tcp",
       "server": "199.232.78.159",
       "server_port": 443,
-      "tag": "outage-274d72ae9ff03656",
+      "tag": "outage-898801bbf52f5697",
       "tls": {
         "enabled": true,
         "server_name": "google.com"
@@ -29,7 +29,19 @@
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "51d039b4-6232-43fa-9161-46748776317c"
+      "uuid": "1f53fbaf-a976-47ad-8df7-ee89bf803c97"
+    },
+    {
+      "network": "tcp",
+      "password": "3]sjM!r|L;Ql",
+      "server": "104.17.147.22",
+      "server_port": 2096,
+      "tag": "outage-77b2d3ad995a9f73",
+      "tls": {
+        "enabled": true,
+        "server_name": "zS41t69imjIf5vZSXvLG4gvItC80mMX5.pAGEs.dev"
+      },
+      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -187,21 +199,6 @@
     },
     {
       "network": "tcp",
-      "server": "104.16.209.187",
-      "server_port": 80,
-      "tag": "outage-a9c9109da8f754dd",
-      "transport": {
-        "headers": {
-          "Host": "divine-hall-8adb-ppal03.niyabi6636.workers.dev"
-        },
-        "path": "/?ed=2560",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "20cf8a2b-e301-4240-9c03-20883249a287"
-    },
-    {
-      "network": "tcp",
       "password": "3]sjM!r|L;Ql",
       "server": "172.66.46.213",
       "server_port": 2096,
@@ -240,18 +237,6 @@
         },
         "path": "/w4e5yh0p945y3?ed=2560",
         "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "242a3d8eee5e4ed1a6bfa4141d549a25",
-      "server": "104.19.159.12",
-      "server_port": 443,
-      "tag": "outage-2cbce05b759739d0",
-      "tls": {
-        "enabled": true,
-        "server_name": "jobscareertoday.com"
       },
       "type": "trojan"
     },
@@ -299,7 +284,8 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
-        "outage-274d72ae9ff03656",
+        "outage-898801bbf52f5697",
+        "outage-77b2d3ad995a9f73",
         "outage-d31648403c63fa42",
         "outage-d15839b481b7c69d",
         "outage-acd9e4945cca925d",
@@ -310,11 +296,9 @@
         "outage-7a890b9cd110eda0",
         "outage-640aa4d401614689",
         "outage-5e339a0a0a6434a1",
-        "outage-a9c9109da8f754dd",
         "outage-6889e9baeb8d081e",
         "outage-2c25d8a7df37da17",
         "outage-23d7e02d41f6f2f6",
-        "outage-2cbce05b759739d0",
         "outage-7b04944f252102da",
         "outage-ba79281a86bd9bdb",
         "outage-4945f3e6c547b1ac"
