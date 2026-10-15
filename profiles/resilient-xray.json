@@ -606,6 +606,35 @@
       "tag": "resilient-23d7e02d41f6f2f6"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "speednet-api-production-9c23.up.railway.app",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "95ba13a6-f3cf-4cce-aeee-fd7a1a6e8586"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "speednet-api-production-9c23.up.railway.app"
+        },
+        "wsSettings": {
+          "path": "/3M0LhfXb-zFt"
+        }
+      },
+      "tag": "resilient-ce167fc4f5b2bac4"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -718,6 +747,30 @@
         }
       },
       "tag": "resilient-12cebec23e00d962"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "cnamemc1.cdncisco4.co",
+            "password": "63779501-4c22-4a03-83d3-9f611b227e7b",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "c1mc.cdncisco4.co"
+        },
+        "wsSettings": {
+          "path": "/422Kdfwzf49IxeZJa"
+        }
+      },
+      "tag": "resilient-a6abd8966b74b1ad"
     },
     {
       "protocol": "vless",
@@ -1314,35 +1367,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.158.206.29",
-            "port": 23576,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "serverName": "fuck.rkn",
-          "shortId": "01"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-d106cca415981182"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "31.76.65.196",
             "port": 8443,
             "users": [
@@ -1505,23 +1529,6 @@
         }
       },
       "tag": "resilient-020e7188f586c543"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "47.250.84.25",
-            "password": "5931134d1cde66bf83a54acdfebe7ab2",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-38793634976e359d"
     },
     {
       "protocol": "blackhole",
