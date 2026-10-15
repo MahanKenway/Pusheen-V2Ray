@@ -206,6 +206,25 @@
     },
     {
       "network": "tcp",
+      "server": "172.67.155.65",
+      "server_port": 2053,
+      "tag": "outage-5f53af4b178e94a8",
+      "tls": {
+        "enabled": true,
+        "server_name": "lucasjow.us.ci"
+      },
+      "transport": {
+        "headers": {
+          "Host": "lucasjow.us.ci"
+        },
+        "path": "/cart/docs/www/proxyip=108.160.132.132",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870"
+    },
+    {
+      "network": "tcp",
       "password": "3Ldo+,81m[h)3Lb+",
       "server": "172.66.47.175",
       "server_port": 8443,
@@ -242,6 +261,17 @@
     },
     {
       "network": "tcp",
+      "password": "2223970e6a0b8ad289d3c43dd85dd2c9",
+      "server": "167.82.101.159",
+      "server_port": 443,
+      "tag": "outage-4ad27dc7783edf66",
+      "tls": {
+        "enabled": true
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "5504eaa8-1395-402f-8e0e-75ecd762e627",
       "server": "172.64.146.66",
       "server_port": 443,
@@ -273,25 +303,6 @@
     },
     {
       "network": "tcp",
-      "password": "5504eaa8-1395-402f-8e0e-75ecd762e627",
-      "server": "104.18.65.57",
-      "server_port": 443,
-      "tag": "outage-ba79281a86bd9bdb",
-      "tls": {
-        "enabled": true,
-        "server_name": "nat3.xxai.dpdns.org"
-      },
-      "transport": {
-        "headers": {
-          "Host": "nat3.xxai.dpdns.org"
-        },
-        "path": "/anyway",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "server": "204.216.216.23",
       "server_port": 10086,
       "tag": "outage-4945f3e6c547b1ac",
@@ -315,12 +326,13 @@
         "outage-640aa4d401614689",
         "outage-5e339a0a0a6434a1",
         "outage-c832b2d11559f9b4",
+        "outage-5f53af4b178e94a8",
         "outage-e1439aa15df92872",
         "outage-6889e9baeb8d081e",
         "outage-2c25d8a7df37da17",
+        "outage-4ad27dc7783edf66",
         "outage-23d7e02d41f6f2f6",
         "outage-7b04944f252102da",
-        "outage-ba79281a86bd9bdb",
         "outage-4945f3e6c547b1ac"
       ],
       "tag": "outage-auto",
