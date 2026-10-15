@@ -1,14 +1,14 @@
 {
-  "artifact_hash": "b8bf2277977f22b4e93464e2d8ab7c8258b16eda24f8aec2b6562c718665f666",
+  "artifact_hash": "7d32ff0d5c58fcb23deb2af2828f0ad37f3e73b8888d529cccc21cc6abfaf2b0",
   "local_behavior": "URLTest probes from the client network every 10m with 200ms tolerance; no direct fallback is present.",
   "notice": "Local URLTest observations are not pipeline evidence and do not guarantee availability from another network.",
-  "outbound_count": 18,
+  "outbound_count": 19,
   "profile_path": "profiles/outage-singbox.json",
   "rejected_by_reason": {
-    "SECURITY_UNSUPPORTED": 4,
+    "SECURITY_UNSUPPORTED": 3,
     "TRANSPORT_UNSUPPORTED": 2
   },
-  "rejected_count": 6,
+  "rejected_count": 5,
   "runtime": "sing-box >= 1.13.19",
   "schema_version": 1,
   "selection": "outage-diverse TCP-evidence members only"
