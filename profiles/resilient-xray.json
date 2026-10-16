@@ -249,6 +249,51 @@
       "tag": "resilient-1b2d2365620e190f"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "172.66.47.175",
+            "password": "3Ldo+,81m[h)3Lb+",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "azadNET05.paGeS.deV"
+        }
+      },
+      "tag": "resilient-322437ccaabd5506"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.65.43",
+            "password": "0y7hid61k3k2vuy1",
+            "port": 2087
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "uwu.dianaw.cc.cd"
+        },
+        "wsSettings": {
+          "path": "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net"
+        }
+      },
+      "tag": "resilient-b639e6e4b16dd153"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -293,6 +338,35 @@
         }
       },
       "tag": "resilient-640aa4d401614689"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.26.14.229",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "3020090a-b19f-4109-9938-2b36f9bd428b"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "us-cdn.mobileemdad.top"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-ffef29154547aa27"
     },
     {
       "protocol": "vless",
@@ -1370,28 +1444,6 @@
       "tag": "resilient-c95e210870f59d63"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "35.181.252.118",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-4c135d68ce00bf59"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1484,47 +1536,6 @@
         "security": "reality"
       },
       "tag": "resilient-d3c27b49406be684"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "cnamemc.ciscocdn1.live",
-            "password": "5de2dfab-28e4-4773-b0d3-8d43da0d9ac3",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "c3mc.ciscocdn1.live"
-        },
-        "wsSettings": {
-          "path": "/ywQ9KSLI4ZBm9wOAXUaN"
-        }
-      },
-      "tag": "resilient-020e7188f586c543"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "47.250.84.25",
-            "password": "5931134d1cde66bf83a54acdfebe7ab2",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-38793634976e359d"
     },
     {
       "protocol": "blackhole",
