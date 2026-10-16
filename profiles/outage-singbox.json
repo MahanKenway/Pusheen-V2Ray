@@ -83,25 +83,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.199",
-      "server_port": 443,
-      "tag": "outage-acd9e4945cca925d",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.speedtest.net"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.speedtest.net"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "5e3d1236-9a23-4e32-947c-47d5827b838b"
-    },
-    {
-      "network": "tcp",
       "password": "3]sjM!r|L;Ql",
       "server": "172.66.45.43",
       "server_port": 2096,
@@ -280,6 +261,25 @@
     },
     {
       "network": "tcp",
+      "server": "146.75.59.186",
+      "server_port": 443,
+      "tag": "outage-d3ca2b48feb06476",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "google.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "c0331b33-4a3a-4320-bacb-78601f9795bd"
+    },
+    {
+      "network": "tcp",
       "password": "3Ldo+,81m[h)3Lb+",
       "server": "172.66.47.175",
       "server_port": 8443,
@@ -292,13 +292,16 @@
     },
     {
       "network": "tcp",
-      "password": "3]sjM!r|L;Ql",
-      "server": "172.66.46.213",
-      "server_port": 2096,
-      "tag": "outage-6889e9baeb8d081e",
-      "tls": {
-        "enabled": true,
-        "server_name": "zs41T69imJif5VZsXvlG4GvItc80mmx5.PaGes.DeV"
+      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+      "server": "104.18.32.87",
+      "server_port": 443,
+      "tag": "outage-3b6029292b36735c",
+      "transport": {
+        "headers": {
+          "Host": "id1.nathaya.web.id"
+        },
+        "path": "/trojan",
+        "type": "ws"
       },
       "type": "trojan"
     },
@@ -311,7 +314,6 @@
         "outage-898801bbf52f5697",
         "outage-77b2d3ad995a9f73",
         "outage-d15839b481b7c69d",
-        "outage-acd9e4945cca925d",
         "outage-a071937e4e127f2f",
         "outage-1b2d2365620e190f",
         "outage-a8631a15b89388f1",
@@ -324,8 +326,9 @@
         "outage-934760da74ee6f24",
         "outage-ffef29154547aa27",
         "outage-5e339a0a0a6434a1",
+        "outage-d3ca2b48feb06476",
         "outage-e1439aa15df92872",
-        "outage-6889e9baeb8d081e"
+        "outage-3b6029292b36735c"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
