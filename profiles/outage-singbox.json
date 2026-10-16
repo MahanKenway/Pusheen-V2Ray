@@ -126,6 +126,25 @@
     },
     {
       "network": "tcp",
+      "server": "188.114.98.0",
+      "server_port": 443,
+      "tag": "outage-a8631a15b89388f1",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.topingr.ir"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.topingr.ir"
+        },
+        "path": "/gropcdn",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "497f5381-3533-4c6a-939c-66eb3a7de108"
+    },
+    {
+      "network": "tcp",
       "password": "3Ldo+,81m[h)3Lb+",
       "server": "172.66.47.175",
       "server_port": 443,
@@ -179,6 +198,18 @@
       "tls": {
         "enabled": true,
         "server_name": "hdfyc1.achaemenidempireofpersia.uk"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "4c57a4f7-e137-4e0d-97c0-2f06bbcd2f2e",
+      "server": "141.193.213.156",
+      "server_port": 443,
+      "tag": "outage-cda77ffd65a0c0cc",
+      "tls": {
+        "enabled": true,
+        "server_name": "uk8i7uufxlcbr2hbym.jjjiedian6j4tblb.com"
       },
       "type": "trojan"
     },
@@ -249,25 +280,6 @@
     },
     {
       "network": "tcp",
-      "server": "146.75.59.186",
-      "server_port": 443,
-      "tag": "outage-d3ca2b48feb06476",
-      "tls": {
-        "enabled": true,
-        "server_name": "google.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "google.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "c0331b33-4a3a-4320-bacb-78601f9795bd"
-    },
-    {
-      "network": "tcp",
       "password": "3Ldo+,81m[h)3Lb+",
       "server": "172.66.47.175",
       "server_port": 8443,
@@ -291,18 +303,6 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "669d0ac7b5b64ebbb1abb75d5d540a5c",
-      "server": "104.17.147.3",
-      "server_port": 443,
-      "tag": "outage-2c25d8a7df37da17",
-      "tls": {
-        "enabled": true,
-        "server_name": "jobscareerfortoday.com"
-      },
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -314,18 +314,18 @@
         "outage-acd9e4945cca925d",
         "outage-a071937e4e127f2f",
         "outage-1b2d2365620e190f",
+        "outage-a8631a15b89388f1",
         "outage-322437ccaabd5506",
         "outage-b639e6e4b16dd153",
         "outage-7a890b9cd110eda0",
         "outage-640aa4d401614689",
+        "outage-cda77ffd65a0c0cc",
         "outage-7d40c0050bda88f6",
         "outage-934760da74ee6f24",
         "outage-ffef29154547aa27",
         "outage-5e339a0a0a6434a1",
-        "outage-d3ca2b48feb06476",
         "outage-e1439aa15df92872",
-        "outage-6889e9baeb8d081e",
-        "outage-2c25d8a7df37da17"
+        "outage-6889e9baeb8d081e"
       ],
       "tag": "outage-auto",
       "tolerance": 200,

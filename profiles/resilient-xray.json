@@ -228,6 +228,35 @@
       "tag": "resilient-1b2d2365620e190f"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.98.0",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "497f5381-3533-4c6a-939c-66eb3a7de108"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "cdn.topingr.ir"
+        },
+        "wsSettings": {
+          "path": "/gropcdn"
+        }
+      },
+      "tag": "resilient-a8631a15b89388f1"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -317,6 +346,27 @@
         }
       },
       "tag": "resilient-640aa4d401614689"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "141.193.213.156",
+            "password": "4c57a4f7-e137-4e0d-97c0-2f06bbcd2f2e",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "uk8i7uufxlcbr2hbym.jjjiedian6j4tblb.com"
+        }
+      },
+      "tag": "resilient-cda77ffd65a0c0cc"
     },
     {
       "protocol": "vless",
@@ -450,35 +500,6 @@
         }
       },
       "tag": "resilient-d3ca2b48feb06476"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.114.98.0",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e6df2095-a73c-4043-8693-8d5a03686870"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "lucasjow.us.ci"
-        },
-        "wsSettings": {
-          "path": "/?Telegram---mehrosaboran"
-        }
-      },
-      "tag": "resilient-c832b2d11559f9b4"
     },
     {
       "protocol": "vless",
@@ -1508,23 +1529,6 @@
         }
       },
       "tag": "resilient-020e7188f586c543"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "47.250.84.25",
-            "password": "5931134d1cde66bf83a54acdfebe7ab2",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-38793634976e359d"
     },
     {
       "protocol": "blackhole",
