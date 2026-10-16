@@ -14,6 +14,26 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "199.232.239.239",
+      "server_port": 443,
+      "tag": "outage-1aabc7235455d360",
+      "type": "vless",
+      "uuid": "b020c472-934e-4d99-e8f8-3851c001683a"
+    },
+    {
+      "network": "tcp",
+      "password": "4b040268-f3a5-4136-b1a9-506012e8e3d9",
+      "server": "108.162.196.69",
+      "server_port": 443,
+      "tag": "outage-c0590499bf67ddb8",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssp2.100896.xyz"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
       "tag": "outage-2995fdc3e0a9b5d2",
@@ -261,25 +281,6 @@
     },
     {
       "network": "tcp",
-      "server": "146.75.59.186",
-      "server_port": 443,
-      "tag": "outage-d3ca2b48feb06476",
-      "tls": {
-        "enabled": true,
-        "server_name": "google.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "google.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "c0331b33-4a3a-4320-bacb-78601f9795bd"
-    },
-    {
-      "network": "tcp",
       "password": "3Ldo+,81m[h)3Lb+",
       "server": "172.66.47.175",
       "server_port": 8443,
@@ -291,25 +292,12 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
-      "server": "104.18.32.87",
-      "server_port": 443,
-      "tag": "outage-3b6029292b36735c",
-      "transport": {
-        "headers": {
-          "Host": "id1.nathaya.web.id"
-        },
-        "path": "/trojan",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-1aabc7235455d360",
+        "outage-c0590499bf67ddb8",
         "outage-2995fdc3e0a9b5d2",
         "outage-898801bbf52f5697",
         "outage-77b2d3ad995a9f73",
@@ -326,9 +314,7 @@
         "outage-934760da74ee6f24",
         "outage-ffef29154547aa27",
         "outage-5e339a0a0a6434a1",
-        "outage-d3ca2b48feb06476",
-        "outage-e1439aa15df92872",
-        "outage-3b6029292b36735c"
+        "outage-e1439aa15df92872"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
