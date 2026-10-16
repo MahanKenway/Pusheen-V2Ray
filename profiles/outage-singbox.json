@@ -114,6 +114,18 @@
     },
     {
       "network": "tcp",
+      "password": "3]sjM!r|L;Ql",
+      "server": "172.66.45.43",
+      "server_port": 2096,
+      "tag": "outage-a071937e4e127f2f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ZS41t69ImjIF5VzSXVlG4gVItC80MMX5.Pages.Dev"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "5041df4c-b3ae-481d-adf9-79b39f4810f2",
       "server": "172.67.148.211",
       "server_port": 2083,
@@ -123,25 +135,6 @@
         "server_name": "taqboostan.zagros.top"
       },
       "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "tag": "outage-ddd6e0916266698a",
-      "tls": {
-        "enabled": true,
-        "server_name": "lucasjow.us.ci"
-      },
-      "transport": {
-        "headers": {
-          "Host": "lucasjow.us.ci"
-        },
-        "path": "/?Telegram---mehrosaboran",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870"
     },
     {
       "network": "tcp",
@@ -290,26 +283,6 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "password": "2cba4104747d49d18319e5ade1b93ab5",
-      "server": "104.17.215.8",
-      "server_port": 443,
-      "tag": "outage-7b04944f252102da",
-      "tls": {
-        "enabled": true,
-        "server_name": "jobscareertoday.com"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "204.216.216.23",
-      "server_port": 10086,
-      "tag": "outage-4945f3e6c547b1ac",
-      "type": "vless",
-      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -320,8 +293,8 @@
         "outage-d15839b481b7c69d",
         "outage-acd9e4945cca925d",
         "outage-f6aa6a72bc9c1e0a",
+        "outage-a071937e4e127f2f",
         "outage-1b2d2365620e190f",
-        "outage-ddd6e0916266698a",
         "outage-7a890b9cd110eda0",
         "outage-640aa4d401614689",
         "outage-5e339a0a0a6434a1",
@@ -331,9 +304,7 @@
         "outage-6889e9baeb8d081e",
         "outage-2c25d8a7df37da17",
         "outage-4ad27dc7783edf66",
-        "outage-23d7e02d41f6f2f6",
-        "outage-7b04944f252102da",
-        "outage-4945f3e6c547b1ac"
+        "outage-23d7e02d41f6f2f6"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
