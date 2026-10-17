@@ -544,6 +544,27 @@
       "settings": {
         "servers": [
           {
+            "address": "172.67.136.117",
+            "password": "62ab7405-f2f3-4e76-b2d8-b6b1b1fe4fd0",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "kdlsupport.zendesk.com"
+        }
+      },
+      "tag": "resilient-e2654103ab5936ce"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "104.26.6.214",
             "password": "6884d714-d3c4-4b49-aa20-767ea92837d6",
             "port": 443
@@ -891,6 +912,30 @@
         }
       },
       "tag": "resilient-ce167fc4f5b2bac4"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "siderail-production-a994.up.railway.app",
+            "password": "-RVFfqDgp7JvHDMa",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "siderail-production-a994.up.railway.app"
+        },
+        "wsSettings": {
+          "path": "/api/FpRcF-"
+        }
+      },
+      "tag": "resilient-c2d5ada26fc98dd3"
     },
     {
       "protocol": "trojan",
@@ -1465,54 +1510,6 @@
         }
       },
       "tag": "resilient-14abb1815e2cd67e"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "84.32.100.149",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "244d9eab-3311-40c7-b47f-4968dc3088a6"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "serverName": "tcpde7.figurapn.ru",
-          "shortId": "868419504747f6de"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-25e4da795a573395"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "51.83.186.142",
-            "password": "555034c8-6420-45d0-893c-905c02342150",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false
-        }
-      },
-      "tag": "resilient-451133a621e4cfbe"
     },
     {
       "protocol": "blackhole",
