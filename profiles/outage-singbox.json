@@ -72,6 +72,37 @@
     },
     {
       "network": "tcp",
+      "password": "6884d714-d3c4-4b49-aa20-767ea92837d6",
+      "server": "162.159.153.247",
+      "server_port": 443,
+      "tag": "outage-ef1d4d93149abcc4",
+      "tls": {
+        "enabled": true,
+        "server_name": "icecream.955850.xyz"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "123456",
+      "server": "162.159.152.31",
+      "server_port": 443,
+      "tag": "outage-51900153b4ac93bf",
+      "tls": {
+        "enabled": true,
+        "server_name": "now-pages-sub-em4.pages.dev"
+      },
+      "transport": {
+        "headers": {
+          "Host": "now-pages-sub-em4.pages.dev"
+        },
+        "path": "/?ed=2560",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "3]sjM!r|L;Ql",
       "server": "104.17.147.22",
       "server_port": 2096,
@@ -81,6 +112,25 @@
         "server_name": "zS41t69imjIf5vZSXvLG4gvItC80mMX5.pAGEs.dev"
       },
       "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "188.114.98.0",
+      "server_port": 443,
+      "tag": "outage-99be67b2d7663b81",
+      "tls": {
+        "enabled": true,
+        "server_name": "snip.edgeoneai.cc.cd"
+      },
+      "transport": {
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        },
+        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5"
     },
     {
       "network": "tcp",
@@ -105,25 +155,6 @@
         "server_name": "taqboostan.zagros.top"
       },
       "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "188.114.98.0",
-      "server_port": 443,
-      "tag": "outage-a8631a15b89388f1",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.topingr.ir"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.topingr.ir"
-        },
-        "path": "/gropcdn",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "497f5381-3533-4c6a-939c-66eb3a7de108"
     },
     {
       "network": "tcp",
@@ -220,18 +251,6 @@
     },
     {
       "network": "tcp",
-      "password": "4045e84e-5e3c-4f70-8ff5-c1097882a55a",
-      "server": "172.66.47.100",
-      "server_port": 443,
-      "tag": "outage-934760da74ee6f24",
-      "tls": {
-        "enabled": true,
-        "server_name": "BPb-WOrKeR-paneL1-e4P.PAGES.DEV"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "server": "104.26.14.229",
       "server_port": 443,
       "tag": "outage-ffef29154547aa27",
@@ -284,18 +303,6 @@
       "uuid": "e6df2095-a73c-4043-8693-8d5a03686870"
     },
     {
-      "network": "tcp",
-      "password": "3Ldo+,81m[h)3Lb+",
-      "server": "172.66.47.175",
-      "server_port": 8443,
-      "tag": "outage-e1439aa15df92872",
-      "tls": {
-        "enabled": true,
-        "server_name": "AZaDnet05.pAGEs.DEv"
-      },
-      "type": "trojan"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -304,21 +311,21 @@
         "outage-c0590499bf67ddb8",
         "outage-2995fdc3e0a9b5d2",
         "outage-898801bbf52f5697",
+        "outage-ef1d4d93149abcc4",
+        "outage-51900153b4ac93bf",
         "outage-77b2d3ad995a9f73",
+        "outage-99be67b2d7663b81",
         "outage-a071937e4e127f2f",
         "outage-1b2d2365620e190f",
-        "outage-a8631a15b89388f1",
         "outage-322437ccaabd5506",
         "outage-fb424d4e0f741303",
         "outage-076c11c5f046e3cc",
         "outage-b639e6e4b16dd153",
         "outage-7b42ded11c62f33c",
         "outage-cda77ffd65a0c0cc",
-        "outage-934760da74ee6f24",
         "outage-ffef29154547aa27",
         "outage-5e339a0a0a6434a1",
-        "outage-5f53af4b178e94a8",
-        "outage-e1439aa15df92872"
+        "outage-5f53af4b178e94a8"
       ],
       "tag": "outage-auto",
       "tolerance": 200,

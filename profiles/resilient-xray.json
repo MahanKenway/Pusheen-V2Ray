@@ -125,6 +125,51 @@
       "tag": "resilient-898801bbf52f5697"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "162.159.153.247",
+            "password": "6884d714-d3c4-4b49-aa20-767ea92837d6",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "icecream.955850.xyz"
+        }
+      },
+      "tag": "resilient-ef1d4d93149abcc4"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "162.159.152.31",
+            "password": "123456",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "now-pages-sub-em4.pages.dev"
+        },
+        "wsSettings": {
+          "path": "/?ed=2560"
+        }
+      },
+      "tag": "resilient-51900153b4ac93bf"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -171,6 +216,35 @@
       "tag": "resilient-77b2d3ad995a9f73"
     },
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.98.0",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "495c7195-85b8-498a-bf20-2ea9ce9175b5"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "snip.edgeoneai.cc.cd"
+        },
+        "wsSettings": {
+          "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed"
+        }
+      },
+      "tag": "resilient-99be67b2d7663b81"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -211,35 +285,6 @@
         }
       },
       "tag": "resilient-1b2d2365620e190f"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.114.98.0",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "497f5381-3533-4c6a-939c-66eb3a7de108"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "cdn.topingr.ir"
-        },
-        "wsSettings": {
-          "path": "/gropcdn"
-        }
-      },
-      "tag": "resilient-a8631a15b89388f1"
     },
     {
       "protocol": "trojan",
@@ -1147,6 +1192,37 @@
       "settings": {
         "vnext": [
           {
+            "address": "178.17.57.33",
+            "port": 8444,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": "GunService"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "serverName": "github.com",
+          "shortId": "457fab2ac885dbe0"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-32132c53ca7cfd6b"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "31.76.35.27",
             "port": 443,
             "users": [
@@ -1170,37 +1246,6 @@
         "security": "reality"
       },
       "tag": "resilient-f42192620f813e87"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "178.17.57.33",
-            "port": 8444,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "GunService"
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "fingerprint": "random",
-          "publicKey": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "serverName": "github.com",
-          "shortId": "457fab2ac885dbe0"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-55a29c7aa04bee78"
     },
     {
       "protocol": "vless",
@@ -1452,47 +1497,6 @@
         "security": "none"
       },
       "tag": "resilient-5517a6374efc5a3f"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "cnamemk.ciscocdn1.live",
-            "password": "4d706727-996f-4427-930d-60f3bd414cf9",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "c2mk.ciscocdn1.live"
-        },
-        "wsSettings": {
-          "path": "/rDCYQta83d0oPABKBhcIX"
-        }
-      },
-      "tag": "resilient-d978baa39644ad7b"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "47.250.84.25",
-            "password": "5931134d1cde66bf83a54acdfebe7ab2",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-38793634976e359d"
     },
     {
       "protocol": "blackhole",
