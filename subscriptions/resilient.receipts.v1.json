@@ -1,10 +1,10 @@
 {
   "by_protocol": {
-    "trojan": 26,
-    "vless": 34
+    "trojan": 27,
+    "vless": 33
   },
   "count": 60,
-  "created_at": "2026-10-17T10:33:45.931767+00:00",
+  "created_at": "2026-10-17T13:54:02.929680+00:00",
   "evidence": "recent successful TCP reachability",
   "max_evidence_age_hours": 72,
   "notice": "A receipt records why the item is eligible for this tier at publication time. It does not disclose hostnames, credentials, raw URIs, or guarantee availability from another network.",
@@ -50,13 +50,6 @@
       "latest_source_id": "ebrasha-trojan-probationary",
       "protocol": "trojan",
       "transport_family": "trojan:tcp:tls"
-    },
-    {
-      "id": "d15839b481b7c69d",
-      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
-      "latest_source_id": "iboxz-vless-probationary",
-      "protocol": "vless",
-      "transport_family": "vless:ws:tls"
     },
     {
       "id": "a071937e4e127f2f",
@@ -185,6 +178,13 @@
       "transport_family": "trojan:ws:none"
     },
     {
+      "id": "a08b814b50836394",
+      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
+      "latest_source_id": "iboxz-vless-probationary",
+      "protocol": "vless",
+      "transport_family": "vless:ws:tls"
+    },
+    {
       "id": "8ab8612f3b371c16",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "ebrasha-trojan-probationary",
@@ -290,11 +290,11 @@
       "transport_family": "vless:tcp:reality"
     },
     {
-      "id": "8bc12bcb030658e3",
+      "id": "9f50c92527abb0ce",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
-      "latest_source_id": "raydikal-verified",
-      "protocol": "vless",
-      "transport_family": "vless:tcp:reality"
+      "latest_source_id": "ebrasha-trojan-probationary",
+      "protocol": "trojan",
+      "transport_family": "trojan:tcp:tls"
     },
     {
       "id": "7f91bdd7f4a716ed",
@@ -395,11 +395,11 @@
       "transport_family": "vless:tcp:reality"
     },
     {
-      "id": "d53188eeb812ab22",
+      "id": "c35e5eae26dfd350",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "iboxz-vless-probationary",
       "protocol": "vless",
-      "transport_family": "vless:tcp:reality"
+      "transport_family": "vless:tcp:none"
     },
     {
       "id": "451133a621e4cfbe",
