@@ -486,31 +486,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.34.245",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "0b01d4d8-656d-4d55-8ad5-ed2a362788b5"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/pyip=ProxyIP.SG.CMLiussss.net"
-        }
-      },
-      "tag": "resilient-5e339a0a0a6434a1"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "169.40.42.163",
             "port": 443,
             "users": [
@@ -563,6 +538,48 @@
         }
       },
       "tag": "resilient-5f53af4b178e94a8"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.26.6.214",
+            "password": "6884d714-d3c4-4b49-aa20-767ea92837d6",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "icecream.955850.xyz"
+        }
+      },
+      "tag": "resilient-fbe7b94bc456ad37"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.16.159.112",
+            "password": "4aec4e7f8cf8454ea4613659822e1a61",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "jobscareertoday.com"
+        }
+      },
+      "tag": "resilient-f429938add3281c0"
     },
     {
       "protocol": "vless",
@@ -974,7 +991,7 @@
           "path": "/anyway"
         }
       },
-      "tag": "resilient-9650b34d818b8e44"
+      "tag": "resilient-f82fe272cc578de8"
     },
     {
       "protocol": "trojan",
@@ -1047,6 +1064,35 @@
         "security": "none"
       },
       "tag": "resilient-1b33ff63c4a58512"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "195.123.235.177",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "729dd5f2-f5ff-4070-8c10-863eceded0b1"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "5B83otQ5ZQwtBFhR7xzsGJRXflkFKRJpQguYbE5JWGI",
+          "serverName": "gateway.icloud.com",
+          "shortId": "c85d029f5e8eb393"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-e053de272a5a547c"
     },
     {
       "protocol": "vless",
@@ -1467,50 +1513,6 @@
         }
       },
       "tag": "resilient-451133a621e4cfbe"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "78.154.103.45",
-            "password": "1e9edd93-f160-4a4a-b369-2e5194b1932a",
-            "port": 11901
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "Telegram=@AmyraxVPN"
-        },
-        "network": "grpc",
-        "security": "none"
-      },
-      "tag": "resilient-5517a6374efc5a3f"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "cnamemk.ciscocdn1.live",
-            "password": "4d706727-996f-4427-930d-60f3bd414cf9",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "c2mk.ciscocdn1.live"
-        },
-        "wsSettings": {
-          "path": "/rDCYQta83d0oPABKBhcIX"
-        }
-      },
-      "tag": "resilient-d978baa39644ad7b"
     },
     {
       "protocol": "blackhole",

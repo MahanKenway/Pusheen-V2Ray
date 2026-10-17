@@ -270,21 +270,6 @@
     },
     {
       "network": "tcp",
-      "server": "104.18.34.245",
-      "server_port": 8880,
-      "tag": "outage-5e339a0a0a6434a1",
-      "transport": {
-        "headers": {
-          "Host": "square-tree-3dbf.285.workers.dev"
-        },
-        "path": "/pyip=ProxyIP.SG.CMLiussss.net",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "0b01d4d8-656d-4d55-8ad5-ed2a362788b5"
-    },
-    {
-      "network": "tcp",
       "server": "172.67.155.65",
       "server_port": 2053,
       "tag": "outage-5f53af4b178e94a8",
@@ -301,6 +286,25 @@
       },
       "type": "vless",
       "uuid": "e6df2095-a73c-4043-8693-8d5a03686870"
+    },
+    {
+      "network": "tcp",
+      "server": "162.159.152.4",
+      "server_port": 443,
+      "tag": "outage-d53d47db0f86cfaa",
+      "tls": {
+        "enabled": true,
+        "server_name": "dlk.mobileemdad.top"
+      },
+      "transport": {
+        "headers": {
+          "Host": "dlk.mobileemdad.top"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "556e306b-e0a1-4832-80e5-575696c27f88"
     },
     {
       "idle_timeout": "30m",
@@ -324,8 +328,8 @@
         "outage-7b42ded11c62f33c",
         "outage-cda77ffd65a0c0cc",
         "outage-ffef29154547aa27",
-        "outage-5e339a0a0a6434a1",
-        "outage-5f53af4b178e94a8"
+        "outage-5f53af4b178e94a8",
+        "outage-d53d47db0f86cfaa"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
