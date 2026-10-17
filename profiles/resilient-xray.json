@@ -665,52 +665,6 @@
       "tag": "resilient-3b6029292b36735c"
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.16.209.187",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "20cf8a2b-e301-4240-9c03-20883249a287"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/?ed=2560"
-        }
-      },
-      "tag": "resilient-a9c9109da8f754dd"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "172.66.46.213",
-            "password": "3]sjM!r|L;Ql",
-            "port": 2096
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "zs41T69imJif5VZsXvlG4GvItc80mmx5.PaGes.DeV"
-        }
-      },
-      "tag": "resilient-6889e9baeb8d081e"
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1420,6 +1374,55 @@
         }
       },
       "tag": "resilient-cb6ec5282df5adb0"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.171.133.209",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
+          "serverName": "anyfile2file.com",
+          "shortId": "64c1fe36c7846400"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-d53188eeb812ab22"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "51.83.186.142",
+            "password": "555034c8-6420-45d0-893c-905c02342150",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false
+        }
+      },
+      "tag": "resilient-451133a621e4cfbe"
     },
     {
       "protocol": "trojan",
