@@ -22,25 +22,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "tag": "outage-2995fdc3e0a9b5d2",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "play.google.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "XpnTeam-7"
-    },
-    {
-      "network": "tcp",
       "server": "199.232.78.170",
       "server_port": 443,
       "tag": "outage-e1cbf75ff4637607",
@@ -114,6 +95,25 @@
       },
       "type": "vless",
       "uuid": "e6df2095-a73c-4043-8693-8d5a03686870"
+    },
+    {
+      "network": "tcp",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "tag": "outage-9eba99711e2b21cf",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "play.google.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "XpnTeam-12"
     },
     {
       "network": "tcp",
@@ -309,11 +309,11 @@
       "interval": "10m",
       "outbounds": [
         "outage-1aabc7235455d360",
-        "outage-2995fdc3e0a9b5d2",
         "outage-e1cbf75ff4637607",
         "outage-24a68076c23c3985",
         "outage-ebb4953fcf1707a1",
         "outage-4f848a27ad3a80a9",
+        "outage-9eba99711e2b21cf",
         "outage-beb84272db2d36ee",
         "outage-fb424d4e0f741303",
         "outage-ffef29154547aa27",
