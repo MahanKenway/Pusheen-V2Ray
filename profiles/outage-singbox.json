@@ -24,7 +24,7 @@
       "network": "tcp",
       "server": "199.232.78.170",
       "server_port": 443,
-      "tag": "outage-e1cbf75ff4637607",
+      "tag": "outage-702471bbf5b79380",
       "tls": {
         "enabled": true,
         "server_name": "cdn.akamai.steamstatic.com"
@@ -37,7 +37,7 @@
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "XpnTeam-17"
+      "uuid": "XpnTeam-21"
     },
     {
       "network": "tcp",
@@ -81,7 +81,7 @@
       "network": "tcp",
       "server": "188.114.98.0",
       "server_port": 443,
-      "tag": "outage-4f848a27ad3a80a9",
+      "tag": "outage-c55f0c19433acaef",
       "tls": {
         "enabled": true,
         "server_name": "lucasjow.us.ci"
@@ -90,7 +90,26 @@
         "headers": {
           "Host": "lucasjow.us.ci"
         },
-        "path": "/?Telegram---DailyConfigs---DailyConfigs---DailyConfigsfp=chrome",
+        "path": "/cart",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870"
+    },
+    {
+      "network": "tcp",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "tag": "outage-358df4ccc6b65877",
+      "tls": {
+        "enabled": true,
+        "server_name": "lucasjow.us.ci"
+      },
+      "transport": {
+        "headers": {
+          "Host": "lucasjow.us.ci"
+        },
+        "path": "/",
         "type": "ws"
       },
       "type": "vless",
@@ -133,25 +152,6 @@
       },
       "type": "vless",
       "uuid": "eccc053a-7196-47cb-a4b5-f4b8bfd743d9"
-    },
-    {
-      "network": "tcp",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "tag": "outage-fb424d4e0f741303",
-      "tls": {
-        "enabled": true,
-        "server_name": "lucasjow.us.ci"
-      },
-      "transport": {
-        "headers": {
-          "Host": "lucasjow.us.ci"
-        },
-        "path": "/?Telegram---TEHRANARGO",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870"
     },
     {
       "network": "tcp",
@@ -317,13 +317,13 @@
       "interval": "10m",
       "outbounds": [
         "outage-1aabc7235455d360",
-        "outage-e1cbf75ff4637607",
+        "outage-702471bbf5b79380",
         "outage-24a68076c23c3985",
         "outage-ebb4953fcf1707a1",
-        "outage-4f848a27ad3a80a9",
+        "outage-c55f0c19433acaef",
+        "outage-358df4ccc6b65877",
         "outage-9eba99711e2b21cf",
         "outage-a26cf2adfd93b488",
-        "outage-fb424d4e0f741303",
         "outage-ffef29154547aa27",
         "outage-a94268fca1906bd9",
         "outage-3c0795ea9d87da4a",
