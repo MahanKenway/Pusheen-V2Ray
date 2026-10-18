@@ -523,6 +523,30 @@
       "settings": {
         "servers": [
           {
+            "address": "104.21.84.58",
+            "password": "2734c14b-e4ce-48b3-b3de-f80788cb4c47",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "XXXcddDe.IRaN2035.dpdNs.orG"
+        },
+        "wsSettings": {
+          "path": "/bdtuD5eD7Q29WxRG8DqNAB"
+        }
+      },
+      "tag": "resilient-29d845d774eb558c"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "172.67.136.117",
             "password": "62ab7405-f2f3-4e76-b2d8-b6b1b1fe4fd0",
             "port": 443
@@ -921,30 +945,6 @@
       "settings": {
         "servers": [
           {
-            "address": "104.18.65.57",
-            "password": "5504eaa8-1395-402f-8e0e-75ecd762e627",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "nat3.xxai.dpdns.org"
-        },
-        "wsSettings": {
-          "path": "/anyway"
-        }
-      },
-      "tag": "resilient-ba79281a86bd9bdb"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
             "address": "cnamemc1.cdncisco4.co",
             "password": "63779501-4c22-4a03-83d3-9f611b227e7b",
             "port": 443
@@ -992,6 +992,35 @@
         "security": "reality"
       },
       "tag": "resilient-b709792d58c46e8c"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "169.40.42.225",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "d65cc14c-f53f-4fe2-b262-97856601319c"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "serverName": "yahoo.com",
+          "shortId": "c39cc7310a"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-bf06de47ebc9f049"
     },
     {
       "protocol": "trojan",
@@ -1488,35 +1517,6 @@
         "security": "reality"
       },
       "tag": "resilient-3138fb2227075e53"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "2.59.253.251",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "serverName": "nvidia.com",
-          "shortId": "db04ce8bdb8900f1"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-10d6102bbbc406b5"
     },
     {
       "protocol": "blackhole",
