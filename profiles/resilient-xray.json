@@ -207,13 +207,17 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "security": "tls",
         "tlsSettings": {
-          "allowInsecure": false
+          "allowInsecure": false,
+          "serverName": "firefox.com"
+        },
+        "wsSettings": {
+          "path": "/"
         }
       },
-      "tag": "resilient-beb84272db2d36ee"
+      "tag": "resilient-a26cf2adfd93b488"
     },
     {
       "protocol": "vless",
@@ -301,35 +305,6 @@
         "security": "reality"
       },
       "tag": "resilient-df1129f52208acc0"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.67.155.65",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e6df2095-a73c-4043-8693-8d5a03686870"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "lucasjow.us.ci"
-        },
-        "wsSettings": {
-          "path": "/cart/docs/www/proxyip=108.160.132.132"
-        }
-      },
-      "tag": "resilient-5f53af4b178e94a8"
     },
     {
       "protocol": "vless",
@@ -555,35 +530,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "169.40.42.231",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "d65cc14c-f53f-4fe2-b262-97856601319c"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "serverName": "yahoo.com",
-          "shortId": "c39cc7310a"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-b709792d58c46e8c"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "169.40.42.225",
             "port": 443,
             "users": [
@@ -728,6 +674,50 @@
         "security": "none"
       },
       "tag": "resilient-7f91bdd7f4a716ed"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.45.54.244",
+            "port": 22223,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-b7375031c27a60e6"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "35.181.38.194",
+            "port": 22223,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-c8484006f5fb65f7"
     },
     {
       "protocol": "vless",
@@ -1023,34 +1013,6 @@
         }
       },
       "tag": "resilient-14abb1815e2cd67e"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "84.32.100.149",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "244d9eab-3311-40c7-b47f-4968dc3088a6"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "serverName": "tcpde7.figurapn.ru",
-          "shortId": "868419504747f6de"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-25e4da795a573395"
     },
     {
       "protocol": "vless",
