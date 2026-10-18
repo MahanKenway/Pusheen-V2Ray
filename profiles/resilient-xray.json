@@ -270,27 +270,6 @@
       "settings": {
         "servers": [
           {
-            "address": "172.67.148.211",
-            "password": "5041df4c-b3ae-481d-adf9-79b39f4810f2",
-            "port": 2083
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "taqboostan.zagros.top"
-        }
-      },
-      "tag": "resilient-1b2d2365620e190f"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
             "address": "172.66.47.175",
             "password": "3Ldo+,81m[h)3Lb+",
             "port": 443
@@ -1258,6 +1237,36 @@
       "settings": {
         "vnext": [
           {
+            "address": "185.121.179.122",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "63c5f8b3-3d3d-46a9-ae1f-58635cdaf891"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "wpZDT_592emHu309qN-7-qceofbMJzoAdIx9m9RFJGg",
+          "serverName": "de.stream-node6.com",
+          "shortId": "98753667b2406829",
+          "spiderX": "/"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-f9ffd6d357906cf8"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "185.102.115.7",
             "port": 443,
             "users": [
@@ -1340,29 +1349,58 @@
       "settings": {
         "vnext": [
           {
-            "address": "31.76.35.27",
+            "address": "31.57.190.89",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "4d852af3-a121-41aa-9aed-4ca40a6f7b4d"
+                "id": "d342d11e-d224-4463-b982-532309285094"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "P-r-oVr8MTTCILgRxk8YuB9OKVojYw3MkH_ERUXzX3s",
-          "serverName": "addons.mozilla.org",
-          "shortId": "b76a6309"
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ccc.010304.xyz"
         },
-        "security": "reality"
+        "wsSettings": {
+          "path": "/fp=chrome"
+        }
       },
-      "tag": "resilient-f42192620f813e87"
+      "tag": "resilient-1e76399349c1e2ee"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "46.101.253.244",
+            "port": 2083,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "bba95b1f-f48c-454b-897b-a6c6bc307df1"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "edge.yzkvm.top"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-9d2973b3a4d3a66b"
     },
     {
       "protocol": "vless",
@@ -1427,6 +1465,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "177.1.192.74",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "4d852af3-a121-41aa-9aed-4ca40a6f7b4d"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8",
+          "serverName": "addons.mozilla.org",
+          "shortId": "770618b6"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-3138fb2227075e53"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "2.59.253.251",
             "port": 443,
             "users": [
@@ -1450,66 +1517,6 @@
         "security": "reality"
       },
       "tag": "resilient-10d6102bbbc406b5"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.192.22.159",
-            "port": 8444,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "GunService"
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "serverName": "github.com",
-          "shortId": "457fab2ac885dbe0"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-1ee35aa60392b9e8"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "94.143.231.146",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "6e05822a-e9da-4135-a9db-71aa07a944af"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "sub.merky.top"
-        },
-        "wsSettings": {
-          "path": "/merky-connect/de6/"
-        }
-      },
-      "tag": "resilient-14abb1815e2cd67e"
     },
     {
       "protocol": "blackhole",
