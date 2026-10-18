@@ -1,28 +1,28 @@
 {
-  "artifact_hash": "ed73107c22c5e383a7356137f41c77e306d380a49a2e942d0c738fc5f70cc1b0",
+  "artifact_hash": "1aa57de89c12abe2a9ca1f4eec6eb4a0cd7a4a11189e8681fbafc287013e42ea",
   "by_protocol": {
-    "trojan": 27,
-    "vless": 33
+    "trojan": 26,
+    "vless": 34
   },
   "by_source": {
-    "configforge-vless": 2,
-    "ebrasha-trojan-probationary": 27,
-    "iboxz-vless-probationary": 30,
-    "raydikal-verified": 1
+    "configforge-vless": 4,
+    "ebrasha-trojan-probationary": 26,
+    "iboxz-vless-probationary": 30
   },
   "by_transport_family": {
     "trojan:tcp:none": 1,
-    "trojan:tcp:tls": 18,
+    "trojan:tcp:tls": 17,
     "trojan:ws:none": 1,
     "trojan:ws:tls": 7,
-    "vless:grpc:reality": 3,
-    "vless:tcp:none": 6,
-    "vless:tcp:reality": 10,
-    "vless:ws:tls": 14
+    "vless:grpc:reality": 2,
+    "vless:tcp:none": 3,
+    "vless:tcp:reality": 12,
+    "vless:ws:none": 1,
+    "vless:ws:tls": 16
   },
-  "created_at": "2026-10-18T10:54:03.126082+00:00",
+  "created_at": "2026-10-18T14:30:01.996095+00:00",
   "notice": "Recent TCP-reachability evidence from the validator origin with anti-concentration selection; not an end-to-end or Iran-availability guarantee.",
-  "reachable_count": 130,
+  "reachable_count": 129,
   "schema_version": 1,
   "selected_count": 60,
   "selection": {
@@ -32,9 +32,11 @@
     "max_source_share": 0.5,
     "max_transport_family_share": 0.5
   },
-  "snapshot_id": "20261018T105403Z-ed73107c22c5",
+  "snapshot_id": "20261018T143001Z-1aa57de89c12",
   "source_errors": {
-    "ebrasha-trojan-probationary": "SOURCE_HTTP_404"
+    "ebrasha-trojan-probationary": "SOURCE_HTTP_404",
+    "farid-iran-trojan-probationary": "SOURCE_TOO_LARGE",
+    "farid-iran-vless-probationary": "SOURCE_TOO_LARGE"
   },
   "tier": "tcp-reachable-diverse-v1"
 }

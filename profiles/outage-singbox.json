@@ -53,6 +53,25 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.78.170",
+      "server_port": 443,
+      "tag": "outage-e1cbf75ff4637607",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "XpnTeam-17"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.237.79",
       "server_port": 443,
       "tag": "outage-24a68076c23c3985",
@@ -296,6 +315,40 @@
     },
     {
       "network": "tcp",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "tag": "outage-a94268fca1906bd9",
+      "transport": {
+        "headers": {
+          "Host": "netlivpn2950.bbxff.workers.dev"
+        },
+        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "bd9ff08b-d042-3650-48e4-c4b400000000"
+    },
+    {
+      "network": "tcp",
+      "server": "8.6.112.6",
+      "server_port": 2087,
+      "tag": "outage-3c0795ea9d87da4a",
+      "tls": {
+        "enabled": true,
+        "server_name": "fx3l5i2wdfxln0.fx6hsv0.ccwu.cc"
+      },
+      "transport": {
+        "headers": {
+          "Host": "fx3l5i2wdfxln0.fx6hsv0.ccwu.cc"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+    },
+    {
+      "network": "tcp",
       "password": "2734c14b-e4ce-48b3-b3de-f80788cb4c47",
       "server": "104.21.84.58",
       "server_port": 443,
@@ -314,25 +367,6 @@
       "type": "trojan"
     },
     {
-      "network": "tcp",
-      "server": "162.159.152.4",
-      "server_port": 443,
-      "tag": "outage-d53d47db0f86cfaa",
-      "tls": {
-        "enabled": true,
-        "server_name": "dlk.mobileemdad.top"
-      },
-      "transport": {
-        "headers": {
-          "Host": "dlk.mobileemdad.top"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "556e306b-e0a1-4832-80e5-575696c27f88"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -340,6 +374,7 @@
         "outage-1aabc7235455d360",
         "outage-c0590499bf67ddb8",
         "outage-2995fdc3e0a9b5d2",
+        "outage-e1cbf75ff4637607",
         "outage-24a68076c23c3985",
         "outage-ebb4953fcf1707a1",
         "outage-ef1d4d93149abcc4",
@@ -355,8 +390,9 @@
         "outage-934760da74ee6f24",
         "outage-ffef29154547aa27",
         "outage-5f53af4b178e94a8",
-        "outage-29d845d774eb558c",
-        "outage-d53d47db0f86cfaa"
+        "outage-a94268fca1906bd9",
+        "outage-3c0795ea9d87da4a",
+        "outage-29d845d774eb558c"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
