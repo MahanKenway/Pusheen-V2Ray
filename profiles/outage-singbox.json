@@ -52,14 +52,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.239.239",
-      "server_port": 443,
-      "tag": "outage-1aabc7235455d360",
-      "type": "vless",
-      "uuid": "b020c472-934e-4d99-e8f8-3851c001683a"
-    },
-    {
-      "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
       "tag": "outage-9b5476cb2125085b",
@@ -280,6 +272,25 @@
     },
     {
       "network": "tcp",
+      "server": "69.46.46.71",
+      "server_port": 443,
+      "tag": "outage-bb94d9c9fa9925d8",
+      "tls": {
+        "enabled": true,
+        "server_name": "core-166442-d9f37e-production.up.railway.app"
+      },
+      "transport": {
+        "headers": {
+          "Host": "core-166442-d9f37e-production.up.railway.app"
+        },
+        "path": "/ws/d4c7937b83242588878da7ab7eb1e9a8",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "d4c7937b83242588878da7ab7eb1e9a8"
+    },
+    {
+      "network": "tcp",
       "password": "65c56e1f-5c41-40bc-b0b5-9346772476ca",
       "server": "cf.130209.xyz",
       "server_port": 2053,
@@ -334,7 +345,6 @@
       "outbounds": [
         "outage-1138a11764478117",
         "outage-aeaf8f3143b606b7",
-        "outage-1aabc7235455d360",
         "outage-9b5476cb2125085b",
         "outage-eb4bec6a1dccc7a7",
         "outage-702471bbf5b79380",
@@ -347,6 +357,7 @@
         "outage-2b2b7cd4355ae302",
         "outage-345c6a7825692180",
         "outage-800c3781e4bc0d9f",
+        "outage-bb94d9c9fa9925d8",
         "outage-9f50c92527abb0ce",
         "outage-aa2ad1d0dd3136b2",
         "outage-5510792ffff9c445",
