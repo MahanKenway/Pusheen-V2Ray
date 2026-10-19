@@ -365,6 +365,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "172.67.143.56",
+            "port": 2096,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "3804296d-167f-4c1b-8734-147f80473590"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "teLeGRaM.FrEEPerSiAnLaNd1.wOrkERS.DeV"
+        },
+        "wsSettings": {
+          "path": "/eyJqdW5rIjoiTGFDWG90NVpxV1B1d3B0IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIiwiWzI2MDI6ZmM1OToxMTo2NDo6XSJdfQ==?ed=2560"
+        }
+      },
+      "tag": "resilient-2b2b7cd4355ae302"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "104.16.71.200",
             "port": 443,
             "users": [
@@ -1084,26 +1113,6 @@
         }
       },
       "tag": "resilient-c8d235d4665260d4"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "us2.trojanvh.xyz",
-            "password": "255c924c-1314-4084-9a9e-1d1a82a5cf49",
-            "port": 80
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false
-        }
-      },
-      "tag": "resilient-8d1010567d8dc013"
     },
     {
       "protocol": "blackhole",
