@@ -28,6 +28,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "146.75.59.186",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "eccc053a-7196-47cb-a4b5-f4b8bfd743d9"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "firefox.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-1c26c964bedbe3ef"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "199.232.239.239",
             "port": 443,
             "users": [
@@ -218,35 +247,6 @@
         }
       },
       "tag": "resilient-9eba99711e2b21cf"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "146.75.59.186",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "eccc053a-7196-47cb-a4b5-f4b8bfd743d9"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "firefox.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-a26cf2adfd93b488"
     },
     {
       "protocol": "vless",
@@ -477,12 +477,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "speednet-api-production-9c23.up.railway.app",
+            "address": "69.46.46.71",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "95ba13a6-f3cf-4cce-aeee-fd7a1a6e8586"
+                "id": "d4c7937b83242588878da7ab7eb1e9a8"
               }
             ]
           }
@@ -493,37 +493,13 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "speednet-api-production-9c23.up.railway.app"
+          "serverName": "core-166442-d9f37e-production.up.railway.app"
         },
         "wsSettings": {
-          "path": "/3M0LhfXb-zFt"
+          "path": "/ws/d4c7937b83242588878da7ab7eb1e9a8"
         }
       },
-      "tag": "resilient-ce167fc4f5b2bac4"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "cnamemc1.cdncisco4.co",
-            "password": "63779501-4c22-4a03-83d3-9f611b227e7b",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "c1mc.cdncisco4.co"
-        },
-        "wsSettings": {
-          "path": "/422Kdfwzf49IxeZJa"
-        }
-      },
-      "tag": "resilient-a6abd8966b74b1ad"
+      "tag": "resilient-bb94d9c9fa9925d8"
     },
     {
       "protocol": "vless",
@@ -901,6 +877,31 @@
       "settings": {
         "vnext": [
           {
+            "address": "sourceforge.net",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "mlkem768x25519plus.random.0rtt.iZJwXenO31gj30xJyjEnDZ_qxA-iUdzbT1zdrr8Mbmo",
+                "id": "2fbb2107-bbcc-49db-ad46-3537a48dff16"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "path": "/"
+        },
+        "network": "httpupgrade",
+        "security": "none"
+      },
+      "tag": "resilient-1bb4004b8dcfdcf5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "177.1.192.74",
             "port": 443,
             "users": [
@@ -981,37 +982,6 @@
         "security": "reality"
       },
       "tag": "resilient-36aa7fdea3b64f3d"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.192.22.159",
-            "port": 8444,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "GunService"
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "serverName": "github.com",
-          "shortId": "457fab2ac885dbe0"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-1ee35aa60392b9e8"
     },
     {
       "protocol": "vless",

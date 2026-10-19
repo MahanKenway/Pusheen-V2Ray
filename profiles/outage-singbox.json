@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "146.75.59.186",
+      "server_port": 443,
+      "tag": "outage-1c26c964bedbe3ef",
+      "tls": {
+        "enabled": true,
+        "server_name": "firefox.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "firefox.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "eccc053a-7196-47cb-a4b5-f4b8bfd743d9"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.239.239",
       "server_port": 443,
       "tag": "outage-1aabc7235455d360",
@@ -136,25 +155,6 @@
     },
     {
       "network": "tcp",
-      "server": "146.75.59.186",
-      "server_port": 443,
-      "tag": "outage-a26cf2adfd93b488",
-      "tls": {
-        "enabled": true,
-        "server_name": "firefox.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "firefox.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "eccc053a-7196-47cb-a4b5-f4b8bfd743d9"
-    },
-    {
-      "network": "tcp",
       "server": "104.26.14.229",
       "server_port": 443,
       "tag": "outage-ffef29154547aa27",
@@ -242,25 +242,6 @@
     },
     {
       "network": "tcp",
-      "password": "63779501-4c22-4a03-83d3-9f611b227e7b",
-      "server": "cnamemc1.cdncisco4.co",
-      "server_port": 443,
-      "tag": "outage-a6abd8966b74b1ad",
-      "tls": {
-        "enabled": true,
-        "server_name": "c1mc.cdncisco4.co"
-      },
-      "transport": {
-        "headers": {
-          "Host": "c1mc.cdncisco4.co"
-        },
-        "path": "/422Kdfwzf49IxeZJa",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": "65c56e1f-5c41-40bc-b0b5-9346772476ca",
       "server": "cf.130209.xyz",
       "server_port": 2053,
@@ -316,6 +297,7 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-1c26c964bedbe3ef",
         "outage-1aabc7235455d360",
         "outage-702471bbf5b79380",
         "outage-24a68076c23c3985",
@@ -323,13 +305,11 @@
         "outage-c55f0c19433acaef",
         "outage-358df4ccc6b65877",
         "outage-9eba99711e2b21cf",
-        "outage-a26cf2adfd93b488",
         "outage-ffef29154547aa27",
         "outage-a94268fca1906bd9",
         "outage-3c0795ea9d87da4a",
         "outage-d53d47db0f86cfaa",
         "outage-800c3781e4bc0d9f",
-        "outage-a6abd8966b74b1ad",
         "outage-9f50c92527abb0ce",
         "outage-5510792ffff9c445",
         "outage-c8d235d4665260d4",
