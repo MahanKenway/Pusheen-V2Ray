@@ -234,25 +234,6 @@
     },
     {
       "network": "tcp",
-      "server": "104.18.37.127",
-      "server_port": 443,
-      "tag": "outage-a08b814b50836394",
-      "tls": {
-        "enabled": true,
-        "server_name": "snip.edgeoneai.cc.cd"
-      },
-      "transport": {
-        "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
-        },
-        "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5"
-    },
-    {
-      "network": "tcp",
       "server": "172.67.143.56",
       "server_port": 2096,
       "tag": "outage-2b2b7cd4355ae302",
@@ -306,14 +287,22 @@
     },
     {
       "network": "tcp",
-      "password": "65c56e1f-5c41-40bc-b0b5-9346772476ca",
-      "server": "cf.130209.xyz",
-      "server_port": 2053,
-      "tag": "outage-9f50c92527abb0ce",
+      "server": "69.46.46.71",
+      "server_port": 443,
+      "tag": "outage-bb94d9c9fa9925d8",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "core-166442-d9f37e-production.up.railway.app"
       },
-      "type": "trojan"
+      "transport": {
+        "headers": {
+          "Host": "core-166442-d9f37e-production.up.railway.app"
+        },
+        "path": "/ws/d4c7937b83242588878da7ab7eb1e9a8",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "d4c7937b83242588878da7ab7eb1e9a8"
     },
     {
       "network": "tcp",
@@ -351,11 +340,10 @@
         "outage-a94268fca1906bd9",
         "outage-3c0795ea9d87da4a",
         "outage-d53d47db0f86cfaa",
-        "outage-a08b814b50836394",
         "outage-2b2b7cd4355ae302",
         "outage-345c6a7825692180",
         "outage-800c3781e4bc0d9f",
-        "outage-9f50c92527abb0ce",
+        "outage-bb94d9c9fa9925d8",
         "outage-aa2ad1d0dd3136b2",
         "outage-c8d235d4665260d4"
       ],

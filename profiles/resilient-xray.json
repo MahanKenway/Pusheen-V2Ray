@@ -371,35 +371,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.37.127",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "495c7195-85b8-498a-bf20-2ea9ce9175b5"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "snip.edgeoneai.cc.cd"
-        },
-        "wsSettings": {
-          "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET"
-        }
-      },
-      "tag": "resilient-a08b814b50836394"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "172.67.143.56",
             "port": 2096,
             "users": [
@@ -595,26 +566,6 @@
       "tag": "resilient-e053de272a5a547c"
     },
     {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "cf.130209.xyz",
-            "password": "65c56e1f-5c41-40bc-b0b5-9346772476ca",
-            "port": 2053
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false
-        }
-      },
-      "tag": "resilient-9f50c92527abb0ce"
-    },
-    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -789,37 +740,6 @@
         "security": "reality"
       },
       "tag": "resilient-f9ffd6d357906cf8"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "178.17.57.33",
-            "port": 8444,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "GunService"
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "serverName": "github.com",
-          "shortId": "457fab2ac885dbe0"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-32132c53ca7cfd6b"
     },
     {
       "protocol": "vless",
@@ -1069,6 +989,61 @@
         "security": "reality"
       },
       "tag": "resilient-f34219f045b9f5a3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "2.26.225.89",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "51a1fd52-fd88-4905-a976-35e44be28e4b"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "pl.flen-vpn.xyz"
+        }
+      },
+      "tag": "resilient-b159c083a245e5c2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "157.228.155.184",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "c39f95b5-64b5-4f7a-a93d-fa9e9cf24de8"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "randomized",
+          "publicKey": "uYU7UXkfNB-BEfjyrCUtRcN2JfFdlFWfMHCeX7bz4Qc",
+          "serverName": "addons.mozilla.org",
+          "shortId": "e022bfea"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-65fc42fe1f1cff83"
     },
     {
       "protocol": "vless",
