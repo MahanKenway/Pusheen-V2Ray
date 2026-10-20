@@ -648,6 +648,28 @@
       "settings": {
         "vnext": [
           {
+            "address": "18.169.146.8",
+            "port": 22223,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-1b8b3f95cc17c08a"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "51.45.54.244",
             "port": 22222,
             "users": [
@@ -1018,34 +1040,6 @@
         }
       },
       "tag": "resilient-14abb1815e2cd67e"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "84.32.100.149",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "244d9eab-3311-40c7-b47f-4968dc3088a6"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "serverName": "tcpde7.figurapn.ru",
-          "shortId": "868419504747f6de"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-25e4da795a573395"
     },
     {
       "protocol": "vless",
