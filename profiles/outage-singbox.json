@@ -16,7 +16,7 @@
       "network": "tcp",
       "server": "146.75.59.186",
       "server_port": 443,
-      "tag": "outage-1138a11764478117",
+      "tag": "outage-10fa9856c6e02a14",
       "tls": {
         "enabled": true,
         "server_name": "firefox.com"
@@ -25,11 +25,11 @@
         "headers": {
           "Host": "firefox.com"
         },
-        "path": "/?TELEGRAM-DailyConfigs",
+        "path": "/",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "eccc053a-7196-47cb-a4b5-f4b8bfd743d9"
+      "uuid": "5db16cc8-23be-4b09-ade8-38b847a3c9cb"
     },
     {
       "network": "tcp",
@@ -125,6 +125,40 @@
       },
       "type": "vless",
       "uuid": "556e306b-e0a1-4832-80e5-575696c27f88"
+    },
+    {
+      "network": "tcp",
+      "server": "172.67.220.59",
+      "server_port": 443,
+      "tag": "outage-1c2200c4c13d4992",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "b8875d59-7568-4041-829a-cc6c82b70022"
+    },
+    {
+      "network": "tcp",
+      "server": "104.21.91.244",
+      "server_port": 443,
+      "tag": "outage-6b624196983b41f1",
+      "tls": {
+        "enabled": true,
+        "server_name": "lucasjow.us.ci"
+      },
+      "transport": {
+        "headers": {
+          "Host": "lucasjow.us.ci"
+        },
+        "path": "/Chanel0111Net",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870"
     },
     {
       "network": "tcp",
@@ -272,25 +306,6 @@
     },
     {
       "network": "tcp",
-      "server": "69.46.46.71",
-      "server_port": 443,
-      "tag": "outage-bb94d9c9fa9925d8",
-      "tls": {
-        "enabled": true,
-        "server_name": "core-166442-d9f37e-production.up.railway.app"
-      },
-      "transport": {
-        "headers": {
-          "Host": "core-166442-d9f37e-production.up.railway.app"
-        },
-        "path": "/ws/d4c7937b83242588878da7ab7eb1e9a8",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "d4c7937b83242588878da7ab7eb1e9a8"
-    },
-    {
-      "network": "tcp",
       "password": "65c56e1f-5c41-40bc-b0b5-9346772476ca",
       "server": "cf.130209.xyz",
       "server_port": 2053,
@@ -310,25 +325,6 @@
     },
     {
       "network": "tcp",
-      "server": "46.101.196.101",
-      "server_port": 2096,
-      "tag": "outage-5510792ffff9c445",
-      "tls": {
-        "enabled": true,
-        "server_name": "lucky-sky-0104.alvlirm444.workers.dev"
-      },
-      "transport": {
-        "headers": {
-          "Host": "lucky-sky-0104.alvlirm444.workers.dev"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "8525fe74-67e6-4a55-8a26-95f227bd1384"
-    },
-    {
-      "network": "tcp",
       "password": "38f169d6-d202-4b1b-8db8-e6eb1648f5cf",
       "server": "43.160.197.160",
       "server_port": 443,
@@ -343,12 +339,14 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
-        "outage-1138a11764478117",
+        "outage-10fa9856c6e02a14",
         "outage-aeaf8f3143b606b7",
         "outage-9b5476cb2125085b",
         "outage-eb4bec6a1dccc7a7",
         "outage-702471bbf5b79380",
         "outage-24a68076c23c3985",
+        "outage-1c2200c4c13d4992",
+        "outage-6b624196983b41f1",
         "outage-c55f0c19433acaef",
         "outage-a94268fca1906bd9",
         "outage-3c0795ea9d87da4a",
@@ -357,10 +355,8 @@
         "outage-2b2b7cd4355ae302",
         "outage-345c6a7825692180",
         "outage-800c3781e4bc0d9f",
-        "outage-bb94d9c9fa9925d8",
         "outage-9f50c92527abb0ce",
         "outage-aa2ad1d0dd3136b2",
-        "outage-5510792ffff9c445",
         "outage-c8d235d4665260d4"
       ],
       "tag": "outage-auto",
