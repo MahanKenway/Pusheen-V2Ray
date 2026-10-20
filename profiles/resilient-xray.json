@@ -858,6 +858,28 @@
       "settings": {
         "vnext": [
           {
+            "address": "35.181.176.187",
+            "port": 22222,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-81920a2647668bea"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "94.143.231.146",
             "port": 443,
             "users": [
@@ -944,6 +966,32 @@
       "settings": {
         "vnext": [
           {
+            "address": "2.26.225.89",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "51a1fd52-fd88-4905-a976-35e44be28e4b"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "pl.flen-vpn.xyz"
+        }
+      },
+      "tag": "resilient-b159c083a245e5c2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "51.44.145.134",
             "port": 22223,
             "users": [
@@ -995,28 +1043,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "16.61.117.36",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-c203f2626b6afc3d"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "31.77.148.89",
             "port": 45021,
             "users": [
@@ -1033,28 +1059,6 @@
         "security": "none"
       },
       "tag": "resilient-aa2ad1d0dd3136b2"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "35.181.176.187",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-1261810f34cc18a3"
     },
     {
       "protocol": "vless",
