@@ -52,6 +52,25 @@
     },
     {
       "network": "tcp",
+      "server": "104.18.43.174",
+      "server_port": 443,
+      "tag": "outage-e38ff0b935df7735",
+      "tls": {
+        "enabled": true,
+        "server_name": "lucasjow.us.ci"
+      },
+      "transport": {
+        "headers": {
+          "Host": "lucasjow.us.ci"
+        },
+        "path": "/?TELEGRAM----ICV2RAY?ed",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
       "tag": "outage-9b5476cb2125085b",
@@ -128,6 +147,25 @@
     },
     {
       "network": "tcp",
+      "server": "188.114.98.0",
+      "server_port": 443,
+      "tag": "outage-9179d85b25c085eb",
+      "tls": {
+        "enabled": true,
+        "server_name": "lucasjow.us.ci"
+      },
+      "transport": {
+        "headers": {
+          "Host": "lucasjow.us.ci"
+        },
+        "path": "/?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870"
+    },
+    {
+      "network": "tcp",
       "server": "108.162.198.178",
       "server_port": 8080,
       "tag": "outage-1b1211ee0c1b3cf8",
@@ -170,25 +208,6 @@
           "Host": "lucasjow.us.ci"
         },
         "path": "/Chanel0111Net",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870"
-    },
-    {
-      "network": "tcp",
-      "server": "188.114.98.0",
-      "server_port": 443,
-      "tag": "outage-c55f0c19433acaef",
-      "tls": {
-        "enabled": true,
-        "server_name": "lucasjow.us.ci"
-      },
-      "transport": {
-        "headers": {
-          "Host": "lucasjow.us.ci"
-        },
-        "path": "/cart",
         "type": "ws"
       },
       "type": "vless",
@@ -316,43 +335,28 @@
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
     },
     {
-      "network": "tcp",
-      "server": "199.232.78.159",
-      "server_port": 80,
-      "tag": "outage-01a6cdf828426e7e",
-      "transport": {
-        "headers": {
-          "Host": "rb24.ir"
-        },
-        "path": "ws/?ed=2048/@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN/?2048",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "927c80e3-d08c-4cd9-8ad5-dd5e026e0f0f"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
         "outage-10fa9856c6e02a14",
         "outage-aeaf8f3143b606b7",
+        "outage-e38ff0b935df7735",
         "outage-9b5476cb2125085b",
         "outage-eb4bec6a1dccc7a7",
         "outage-702471bbf5b79380",
         "outage-24a68076c23c3985",
+        "outage-9179d85b25c085eb",
         "outage-1b1211ee0c1b3cf8",
         "outage-1c2200c4c13d4992",
         "outage-6b624196983b41f1",
-        "outage-c55f0c19433acaef",
         "outage-2944250303d6d2a9",
         "outage-a94268fca1906bd9",
         "outage-3c0795ea9d87da4a",
         "outage-cbbc144902749546",
         "outage-2b2b7cd4355ae302",
         "outage-345c6a7825692180",
-        "outage-800c3781e4bc0d9f",
-        "outage-01a6cdf828426e7e"
+        "outage-800c3781e4bc0d9f"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
