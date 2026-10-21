@@ -202,6 +202,31 @@
       "settings": {
         "vnext": [
           {
+            "address": "108.162.198.178",
+            "port": 8080,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-1b1211ee0c1b3cf8"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "172.67.220.59",
             "port": 443,
             "users": [
@@ -879,6 +904,36 @@
       "settings": {
         "vnext": [
           {
+            "address": "13.140.92.21",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "35eb914a-f7c2-4ffa-8503-1bf30df0f1a5"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "rtYs5r9380Y2zvtXBFfaBbnypJQ7_1x_uYu0cLpOXk4",
+          "serverName": "www.cloudflare.com",
+          "shortId": "d8fee47b2d3d94",
+          "spiderX": "/ad7d3612c9c5309"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-f0a43d5f4b4b7618"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "163.245.42.48",
             "port": 443,
             "users": [
@@ -1007,28 +1062,6 @@
         }
       },
       "tag": "resilient-b159c083a245e5c2"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "16.61.117.36",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-c203f2626b6afc3d"
     },
     {
       "protocol": "vless",
