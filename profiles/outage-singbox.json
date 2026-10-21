@@ -211,6 +211,25 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.237.79",
+      "server_port": 443,
+      "tag": "outage-6b3f0c0f12c525e0",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "play.google.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "785f86f0-0de3-44cb-abc9-0450947214fe"
+    },
+    {
+      "network": "tcp",
       "server": "104.16.107.139",
       "server_port": 8880,
       "tag": "outage-2944250303d6d2a9",
@@ -279,22 +298,18 @@
     },
     {
       "network": "tcp",
-      "server": "104.16.71.200",
+      "server": "104.21.62.46",
       "server_port": 443,
-      "tag": "outage-345c6a7825692180",
+      "tag": "outage-a9acb12ba7517140",
       "tls": {
-        "enabled": true,
-        "server_name": "36Z9gwXP6-QFZHXPojDTktyP-r0eq.MosVSDbdbdbD.WorKErS.DEv"
+        "enabled": true
       },
       "transport": {
-        "headers": {
-          "Host": "36Z9gwXP6-QFZHXPojDTktyP-r0eq.MosVSDbdbdbD.WorKErS.DEv"
-        },
-        "path": "/vl/TbCP2PwiJ42OB798hgBhfWy85gAaq?ed=2560",
+        "path": "/",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "ef90e2bc-3a44-4501-a3ea-bf09db2a5add"
+      "uuid": "b8875d59-7568-4041-829a-cc6c82b70022"
     },
     {
       "network": "tcp",
@@ -346,25 +361,6 @@
       "uuid": "b585dc5e-55bf-4a8b-913a-27c9ccac05c3"
     },
     {
-      "network": "tcp",
-      "server": "b2n.ir",
-      "server_port": 443,
-      "tag": "outage-e340b1163f7deed7",
-      "tls": {
-        "enabled": true,
-        "server_name": "lucasjow.us.ci"
-      },
-      "transport": {
-        "headers": {
-          "Host": "lucasjow.us.ci"
-        },
-        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -380,15 +376,15 @@
         "outage-1c2200c4c13d4992",
         "outage-6b624196983b41f1",
         "outage-aa452d73953a5933",
+        "outage-6b3f0c0f12c525e0",
         "outage-2944250303d6d2a9",
         "outage-3288d740a626139f",
         "outage-cbbc144902749546",
         "outage-2b2b7cd4355ae302",
-        "outage-345c6a7825692180",
+        "outage-a9acb12ba7517140",
         "outage-bc4e80f133d2a690",
         "outage-01a6cdf828426e7e",
-        "outage-a9441dd12a79eea3",
-        "outage-e340b1163f7deed7"
+        "outage-a9441dd12a79eea3"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
