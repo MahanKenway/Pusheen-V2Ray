@@ -86,6 +86,56 @@
       "settings": {
         "vnext": [
           {
+            "address": "172.64.88.251",
+            "port": 8880,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "87a5d3eb-afd4-4193-9787-c54ef7c26c8c"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/pyip=ProxyIP.KR.CMLiussss.net"
+        }
+      },
+      "tag": "resilient-18285c134efec4c5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.25.122.72",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "6cd78ec7-b715-471c-92b4-0c3842caea4b"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/eyJqdW5rIjoiVXRIT2UwaDUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0="
+        }
+      },
+      "tag": "resilient-5e14e1c76b4bc8c2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "104.18.43.174",
             "port": 443,
             "users": [
@@ -167,35 +217,6 @@
         }
       },
       "tag": "resilient-eb4bec6a1dccc7a7"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.170",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "XpnTeam-21"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "cdn.akamai.steamstatic.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-702471bbf5b79380"
     },
     {
       "protocol": "vless",
@@ -720,6 +741,28 @@
       "settings": {
         "vnext": [
           {
+            "address": "35.180.76.81",
+            "port": 22223,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-8122ecd106edecd0"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "51.45.54.244",
             "port": 22222,
             "users": [
@@ -842,34 +885,6 @@
         "security": "reality"
       },
       "tag": "resilient-f0a43d5f4b4b7618"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "163.245.42.48",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "b9bfa54d-bc44-4592-a6d6-89a9665d286f"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "mother-earth.fyi"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-36aa7fdea3b64f3d"
     },
     {
       "protocol": "vless",
@@ -1139,35 +1154,6 @@
         "security": "reality"
       },
       "tag": "resilient-5da79db6bc55a063"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "funagfrdfs.alixxplay.com",
-            "port": 35544,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "57beeeb0-03fc-4fc9-94da-7604488a7134"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc",
-          "serverName": "iosapps.itunes.apple.com",
-          "shortId": "25c79e5856c7"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-08780434da6eb5cf"
     },
     {
       "protocol": "blackhole",
