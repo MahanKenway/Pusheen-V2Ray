@@ -33,25 +33,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.159",
-      "server_port": 443,
-      "tag": "outage-aeaf8f3143b606b7",
-      "tls": {
-        "enabled": true,
-        "server_name": "firefox.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "firefox.com"
-        },
-        "path": "/?TELEGRAM-TOOTFFARANGI",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "eccc053a-7196-47cb-a4b5-f4b8bfd743d9"
-    },
-    {
-      "network": "tcp",
       "server": "172.64.88.251",
       "server_port": 8880,
       "tag": "outage-18285c134efec4c5",
@@ -79,6 +60,25 @@
       },
       "type": "vless",
       "uuid": "6cd78ec7-b715-471c-92b4-0c3842caea4b"
+    },
+    {
+      "network": "tcp",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "tag": "outage-9cd7f154e2cac557",
+      "tls": {
+        "enabled": true,
+        "server_name": "firefox.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "firefox.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "a788913b-ea27-4198-8024-e69919916516"
     },
     {
       "network": "tcp",
@@ -335,6 +335,25 @@
     },
     {
       "network": "tcp",
+      "server": "146.75.57.238",
+      "server_port": 443,
+      "tag": "outage-492505966653472e",
+      "tls": {
+        "enabled": true,
+        "server_name": "firefox.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "firefox.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "5545d204-13f5-4e3e-af5c-4ded2b945743"
+    },
+    {
+      "network": "tcp",
       "server": "b2n.ir",
       "server_port": 443,
       "tag": "outage-e340b1163f7deed7",
@@ -358,9 +377,9 @@
       "interval": "10m",
       "outbounds": [
         "outage-10fa9856c6e02a14",
-        "outage-aeaf8f3143b606b7",
         "outage-18285c134efec4c5",
         "outage-5e14e1c76b4bc8c2",
+        "outage-9cd7f154e2cac557",
         "outage-e38ff0b935df7735",
         "outage-41bca4fc1d5e8abd",
         "outage-1b1211ee0c1b3cf8",
@@ -376,6 +395,7 @@
         "outage-a9acb12ba7517140",
         "outage-bc4e80f133d2a690",
         "outage-01a6cdf828426e7e",
+        "outage-492505966653472e",
         "outage-e340b1163f7deed7"
       ],
       "tag": "outage-auto",
