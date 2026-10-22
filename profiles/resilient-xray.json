@@ -574,35 +574,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "69.46.46.71",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "d4c7937b83242588878da7ab7eb1e9a8"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "core-166442-d9f37e-production.up.railway.app"
-        },
-        "wsSettings": {
-          "path": "/ws/d4c7937b83242588878da7ab7eb1e9a8"
-        }
-      },
-      "tag": "resilient-bb94d9c9fa9925d8"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "169.40.42.235",
             "port": 443,
             "users": [
@@ -801,31 +772,6 @@
         "security": "none"
       },
       "tag": "resilient-3ef9975218e7645d"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sourceforge.net",
-            "port": 2052,
-            "users": [
-              {
-                "encryption": "mlkem768x25519plus.random.0rtt.iZJwXenO31gj30xJyjEnDZ_qxA-iUdzbT1zdrr8Mbmo",
-                "id": "2fbb2107-bbcc-49db-ad46-3537a48dff16"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "httpupgradeSettings": {
-          "path": "/"
-        },
-        "network": "httpupgrade",
-        "security": "none"
-      },
-      "tag": "resilient-1bb4004b8dcfdcf5"
     },
     {
       "protocol": "vless",
@@ -1070,6 +1016,50 @@
       "settings": {
         "vnext": [
           {
+            "address": "35.180.76.81",
+            "port": 22222,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-9080eff66e0c1ca6"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.44.38.228",
+            "port": 22222,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-b75dc2eb7aa1685e"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "nl1.fluxorvpn.net",
             "port": 443,
             "users": [
@@ -1094,6 +1084,35 @@
         "security": "reality"
       },
       "tag": "resilient-b4f5b9ab1029c542"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "217.60.35.146",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "f8d52ece-fad4-478d-875d-df6eed3befa7"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg",
+          "serverName": "sw.golangwikito.cfd",
+          "shortId": "a1037b25dcef6aa7"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-6fca258526dfbe61"
     },
     {
       "protocol": "vless",
@@ -1125,35 +1144,6 @@
         "security": "reality"
       },
       "tag": "resilient-73775e0a00526943"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.158.206.20",
-            "port": 23576,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "serverName": "fuck.rkn",
-          "shortId": "01"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-5da79db6bc55a063"
     },
     {
       "protocol": "blackhole",
