@@ -2,7 +2,7 @@
   "gateway": "https://pusheen-feed-gateway.mahankenway.workers.dev",
   "measurements": [
     {
-      "measurement_id": "2ahI8GpvNgDOFYKrG00021N6s",
+      "measurement_id": "2J2ZGLLUnGouZ8LIB00021N9R",
       "path": "/health",
       "requested_locations": [
         "IR",
@@ -16,34 +16,34 @@
           "failure_source": null,
           "http_status": 200,
           "status": "finished",
-          "total_ms": 456
+          "total_ms": 460
         },
         {
           "country": "DE",
           "failure_source": null,
           "http_status": 200,
           "status": "finished",
-          "total_ms": 122
+          "total_ms": 99
         },
         {
           "country": "SG",
-          "failure_source": "target",
-          "http_status": null,
-          "status": "failed",
-          "total_ms": 30001
+          "failure_source": null,
+          "http_status": 200,
+          "status": "finished",
+          "total_ms": 559
         },
         {
           "country": "US",
           "failure_source": null,
           "http_status": 200,
           "status": "finished",
-          "total_ms": 329
+          "total_ms": 295
         }
       ],
       "target": "health"
     },
     {
-      "measurement_id": "2HaJqRJN2jEuzdOlt00021N6s",
+      "measurement_id": "2OVlYf3hibOPTeS3g00021N9R",
       "path": "/outage.txt",
       "requested_locations": [
         "IR",
@@ -57,28 +57,28 @@
           "failure_source": null,
           "http_status": 200,
           "status": "finished",
-          "total_ms": 629
+          "total_ms": 404
         },
         {
           "country": "DE",
           "failure_source": null,
           "http_status": 200,
           "status": "finished",
-          "total_ms": 261
+          "total_ms": 315
         },
         {
           "country": "SG",
           "failure_source": null,
           "http_status": 200,
           "status": "finished",
-          "total_ms": 338
+          "total_ms": 349
         },
         {
           "country": "US",
           "failure_source": null,
           "http_status": 200,
           "status": "finished",
-          "total_ms": 329
+          "total_ms": 304
         }
       ],
       "target": "outage_feed"
@@ -87,11 +87,11 @@
   "schema_version": 1,
   "scope": "public Gateway delivery only; proxy endpoints inside feeds are never measured",
   "summary": {
-    "failed_probe_count": 1,
+    "failed_probe_count": 0,
     "gateway_5xx_streak": 0,
     "iran_delivery": "reachable_from_sampled_probe",
     "sampled_probe_count": 8,
-    "successful_http_200_count": 7
+    "successful_http_200_count": 8
   },
-  "updated_at": "2026-10-23T21:18:51.197129+00:00"
+  "updated_at": "2026-10-23T23:57:15.725034+00:00"
 }
