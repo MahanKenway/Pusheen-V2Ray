@@ -14,25 +14,6 @@
   "outbounds": [
     {
       "network": "tcp",
-      "server": "146.75.59.186",
-      "server_port": 443,
-      "tag": "outage-10fa9856c6e02a14",
-      "tls": {
-        "enabled": true,
-        "server_name": "firefox.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "firefox.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "5db16cc8-23be-4b09-ade8-38b847a3c9cb"
-    },
-    {
-      "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
       "tag": "outage-3ae7948f1d646268",
@@ -177,6 +158,25 @@
     },
     {
       "network": "tcp",
+      "server": "146.75.59.186",
+      "server_port": 443,
+      "tag": "outage-b10ec177e6cea827",
+      "tls": {
+        "enabled": true,
+        "server_name": "firefox.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "firefox.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "dc7d45c9-c942-41e3-b880-9a7fd5b64e2f"
+    },
+    {
+      "network": "tcp",
       "server": "108.162.198.178",
       "server_port": 8080,
       "tag": "outage-1b1211ee0c1b3cf8",
@@ -192,40 +192,6 @@
     },
     {
       "network": "tcp",
-      "server": "172.67.220.59",
-      "server_port": 443,
-      "tag": "outage-1c2200c4c13d4992",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "b8875d59-7568-4041-829a-cc6c82b70022"
-    },
-    {
-      "network": "tcp",
-      "server": "104.21.91.244",
-      "server_port": 443,
-      "tag": "outage-6b624196983b41f1",
-      "tls": {
-        "enabled": true,
-        "server_name": "lucasjow.us.ci"
-      },
-      "transport": {
-        "headers": {
-          "Host": "lucasjow.us.ci"
-        },
-        "path": "/Chanel0111Net",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870"
-    },
-    {
-      "network": "tcp",
       "server": "188.114.97.6",
       "server_port": 2052,
       "tag": "outage-aa452d73953a5933",
@@ -238,6 +204,25 @@
       },
       "type": "vless",
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
+    },
+    {
+      "network": "tcp",
+      "server": "104.24.197.20",
+      "server_port": 443,
+      "tag": "outage-29a1a06930d1cd63",
+      "tls": {
+        "enabled": true,
+        "server_name": "snip.edgeoneai.cc.cd"
+      },
+      "transport": {
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5"
     },
     {
       "network": "tcp",
@@ -343,6 +328,21 @@
     },
     {
       "network": "tcp",
+      "server": "104.21.62.46",
+      "server_port": 443,
+      "tag": "outage-a9acb12ba7517140",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "b8875d59-7568-4041-829a-cc6c82b70022"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.159",
       "server_port": 80,
       "tag": "outage-01a6cdf828426e7e",
@@ -380,7 +380,6 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
-        "outage-10fa9856c6e02a14",
         "outage-3ae7948f1d646268",
         "outage-fbabd423133b1518",
         "outage-dfd97c6ddf64ea52",
@@ -389,16 +388,17 @@
         "outage-5e14e1c76b4bc8c2",
         "outage-9cd7f154e2cac557",
         "outage-e38ff0b935df7735",
+        "outage-b10ec177e6cea827",
         "outage-1b1211ee0c1b3cf8",
-        "outage-1c2200c4c13d4992",
-        "outage-6b624196983b41f1",
         "outage-aa452d73953a5933",
+        "outage-29a1a06930d1cd63",
         "outage-6b3f0c0f12c525e0",
         "outage-afc8d9e2faa16a0a",
         "outage-1f7ede8ffe401af5",
         "outage-2944250303d6d2a9",
         "outage-3288d740a626139f",
         "outage-cbbc144902749546",
+        "outage-a9acb12ba7517140",
         "outage-01a6cdf828426e7e",
         "outage-e340b1163f7deed7"
       ],
