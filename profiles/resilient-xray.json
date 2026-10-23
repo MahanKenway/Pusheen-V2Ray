@@ -550,31 +550,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.97.6",
-            "port": 8080,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "4212034d-c18b-4060-b218-4f8372e5473a"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/pyip=ProxyIP.JP.CMLiussss.net"
-        }
-      },
-      "tag": "resilient-bc4e80f133d2a690"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "199.232.78.159",
             "port": 80,
             "users": [
@@ -623,35 +598,6 @@
         }
       },
       "tag": "resilient-492505966653472e"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.21.91.244",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e6df2095-a73c-4043-8693-8d5a03686870"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "lucasjow.us.ci"
-        },
-        "wsSettings": {
-          "path": "/Chanel0111Net"
-        }
-      },
-      "tag": "resilient-be31521666ed541e"
     },
     {
       "protocol": "vless",
@@ -828,28 +774,6 @@
         "security": "reality"
       },
       "tag": "resilient-6734b1880310eedd"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "18.169.146.8",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-1b8b3f95cc17c08a"
     },
     {
       "protocol": "vless",
@@ -1165,6 +1089,95 @@
         "security": "reality"
       },
       "tag": "resilient-b4f5b9ab1029c542"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.182.120.128",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "9c794bb7-54fe-4acd-844a-a26209af36c3"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "7MRwvMvlDcjZqfdbBmePpZI5WDEYgya1y_pOp7B9CDc",
+          "serverName": "api.stride.surf",
+          "shortId": "d0dc65ab94f5e69b"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-a89fc2426f0b4ee3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "217.60.35.146",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "f8d52ece-fad4-478d-875d-df6eed3befa7"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg",
+          "serverName": "sw.golangwikito.cfd",
+          "shortId": "a1037b25dcef6aa7"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-6fca258526dfbe61"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "150.40.126.18",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "2f35965a-9a9b-45fd-ba32-987296dfb6be"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": "node.v2.ObjectService"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "upIzyaSbVz2ZK6KfGtXmPl_-sCwn8XLDyFDH5CsL9iY",
+          "serverName": "rs1.univesalsrv.com",
+          "shortId": "ed0cd5cc2e26e6e7"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-73775e0a00526943"
     },
     {
       "protocol": "blackhole",
