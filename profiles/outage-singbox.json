@@ -33,6 +33,44 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "tag": "outage-3ae7948f1d646268",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "XpnTeam-38"
+    },
+    {
+      "network": "tcp",
+      "server": "188.114.98.0",
+      "server_port": 443,
+      "tag": "outage-fbabd423133b1518",
+      "tls": {
+        "enabled": true,
+        "server_name": "server8.9966338.xyz"
+      },
+      "transport": {
+        "headers": {
+          "Host": "server8.9966338.xyz"
+        },
+        "path": "/fdtiouasopeiyre0r95y8?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "5504eaa8-1395-402f-8e0e-75ecd762e627"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.170",
       "server_port": 443,
       "tag": "outage-dfd97c6ddf64ea52",
@@ -49,25 +87,6 @@
       },
       "type": "vless",
       "uuid": "XpnTeam-34"
-    },
-    {
-      "network": "tcp",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "tag": "outage-678e0d250b5d3497",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "XpnTeam-33"
     },
     {
       "network": "tcp",
@@ -155,25 +174,6 @@
       },
       "type": "vless",
       "uuid": "e6df2095-a73c-4043-8693-8d5a03686870"
-    },
-    {
-      "network": "tcp",
-      "server": "188.114.98.0",
-      "server_port": 443,
-      "tag": "outage-41bca4fc1d5e8abd",
-      "tls": {
-        "enabled": true,
-        "server_name": "snip.edgeoneai.cc.cd"
-      },
-      "transport": {
-        "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
-        },
-        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5"
     },
     {
       "network": "tcp",
@@ -343,21 +343,6 @@
     },
     {
       "network": "tcp",
-      "server": "104.21.62.46",
-      "server_port": 443,
-      "tag": "outage-a9acb12ba7517140",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "b8875d59-7568-4041-829a-cc6c82b70022"
-    },
-    {
-      "network": "tcp",
       "server": "199.232.78.159",
       "server_port": 80,
       "tag": "outage-01a6cdf828426e7e",
@@ -396,14 +381,14 @@
       "interval": "10m",
       "outbounds": [
         "outage-10fa9856c6e02a14",
+        "outage-3ae7948f1d646268",
+        "outage-fbabd423133b1518",
         "outage-dfd97c6ddf64ea52",
-        "outage-678e0d250b5d3497",
         "outage-73865151cfece055",
         "outage-18285c134efec4c5",
         "outage-5e14e1c76b4bc8c2",
         "outage-9cd7f154e2cac557",
         "outage-e38ff0b935df7735",
-        "outage-41bca4fc1d5e8abd",
         "outage-1b1211ee0c1b3cf8",
         "outage-1c2200c4c13d4992",
         "outage-6b624196983b41f1",
@@ -414,7 +399,6 @@
         "outage-2944250303d6d2a9",
         "outage-3288d740a626139f",
         "outage-cbbc144902749546",
-        "outage-a9acb12ba7517140",
         "outage-01a6cdf828426e7e",
         "outage-e340b1163f7deed7"
       ],

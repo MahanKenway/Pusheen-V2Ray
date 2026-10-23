@@ -57,6 +57,64 @@
       "settings": {
         "vnext": [
           {
+            "address": "199.232.78.160",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "XpnTeam-38"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "cdn.akamai.steamstatic.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-3ae7948f1d646268"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.98.0",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "5504eaa8-1395-402f-8e0e-75ecd762e627"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "server8.9966338.xyz"
+        },
+        "wsSettings": {
+          "path": "/fdtiouasopeiyre0r95y8?ed=2560"
+        }
+      },
+      "tag": "resilient-fbabd423133b1518"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "199.232.78.170",
             "port": 443,
             "users": [
@@ -80,35 +138,6 @@
         }
       },
       "tag": "resilient-dfd97c6ddf64ea52"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.160",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "XpnTeam-33"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "cdn.akamai.steamstatic.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-678e0d250b5d3497"
     },
     {
       "protocol": "vless",
@@ -246,35 +275,6 @@
         }
       },
       "tag": "resilient-e38ff0b935df7735"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.114.98.0",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "495c7195-85b8-498a-bf20-2ea9ce9175b5"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "snip.edgeoneai.cc.cd"
-        },
-        "wsSettings": {
-          "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560"
-        }
-      },
-      "tag": "resilient-41bca4fc1d5e8abd"
     },
     {
       "protocol": "vless",
@@ -1096,54 +1096,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "35.181.176.187",
-            "port": 22222,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-81920a2647668bea"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "2.26.225.89",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "51a1fd52-fd88-4905-a976-35e44be28e4b"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "pl.flen-vpn.xyz"
-        }
-      },
-      "tag": "resilient-b159c083a245e5c2"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "116.204.164.17",
             "port": 7443,
             "users": [
@@ -1167,6 +1119,57 @@
         }
       },
       "tag": "resilient-5217c6b3abe6ae53"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.98.189.253",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "689a62e4-37e7-41de-9e6a-f2a56368c9e2"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "safari",
+          "publicKey": "XPXSq5nNCKDPwA_yk6AcOPRWC33E6APbjz_BaVJclzA",
+          "serverName": "www.surf.nl",
+          "shortId": "61"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-0a2e259a64c6ee96"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "35.180.76.81",
+            "port": 22222,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-9080eff66e0c1ca6"
     },
     {
       "protocol": "blackhole",
