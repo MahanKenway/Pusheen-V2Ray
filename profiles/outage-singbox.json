@@ -16,7 +16,7 @@
       "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
-      "tag": "outage-3ae7948f1d646268",
+      "tag": "outage-055e724aac2fdf13",
       "tls": {
         "enabled": true,
         "server_name": "cdn.akamai.steamstatic.com"
@@ -29,7 +29,26 @@
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "XpnTeam-38"
+      "uuid": "XpnTeam-40"
+    },
+    {
+      "network": "tcp",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "tag": "outage-8814ed97faa0bfd4",
+      "tls": {
+        "enabled": true,
+        "server_name": "firefox.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "firefox.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "7dee06cc-4bc8-43ca-a6c2-59f81107f2e3"
     },
     {
       "network": "tcp",
@@ -117,25 +136,6 @@
       },
       "type": "vless",
       "uuid": "6cd78ec7-b715-471c-92b4-0c3842caea4b"
-    },
-    {
-      "network": "tcp",
-      "server": "199.232.78.159",
-      "server_port": 443,
-      "tag": "outage-9cd7f154e2cac557",
-      "tls": {
-        "enabled": true,
-        "server_name": "firefox.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "firefox.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "a788913b-ea27-4198-8024-e69919916516"
     },
     {
       "network": "tcp",
@@ -380,13 +380,13 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
-        "outage-3ae7948f1d646268",
+        "outage-055e724aac2fdf13",
+        "outage-8814ed97faa0bfd4",
         "outage-fbabd423133b1518",
         "outage-dfd97c6ddf64ea52",
         "outage-73865151cfece055",
         "outage-18285c134efec4c5",
         "outage-5e14e1c76b4bc8c2",
-        "outage-9cd7f154e2cac557",
         "outage-e38ff0b935df7735",
         "outage-b10ec177e6cea827",
         "outage-1b1211ee0c1b3cf8",
