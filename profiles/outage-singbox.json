@@ -268,21 +268,6 @@
     },
     {
       "network": "tcp",
-      "server": "188.114.97.6",
-      "server_port": 2086,
-      "tag": "outage-3288d740a626139f",
-      "transport": {
-        "headers": {
-          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-    },
-    {
-      "network": "tcp",
       "server": "104.21.62.46",
       "server_port": 443,
       "tag": "outage-a9acb12ba7517140",
@@ -316,23 +301,17 @@
       "uuid": "5545d204-13f5-4e3e-af5c-4ded2b945743"
     },
     {
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
-      "server": "68.183.65.82",
-      "server_port": 2083,
-      "tag": "outage-90b50c9a55e8d107",
+      "server": "162.19.10.99",
+      "server_port": 443,
+      "tag": "outage-073dc6bf0b8edd7f",
       "tls": {
         "enabled": true,
-        "server_name": "lucky-sky-0104.alvlirm444.workers.dev"
-      },
-      "transport": {
-        "headers": {
-          "Host": "lucky-sky-0104.alvlirm444.workers.dev"
-        },
-        "path": "/",
-        "type": "ws"
+        "server_name": "nasnet-162191099-direct.mbghalibaf.com"
       },
       "type": "vless",
-      "uuid": "8525fe74-67e6-4a55-8a26-95f227bd1384"
+      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767"
     },
     {
       "idle_timeout": "30m",
@@ -353,10 +332,9 @@
         "outage-6b3f0c0f12c525e0",
         "outage-4212a1aa9ca6d6b4",
         "outage-afc8d9e2faa16a0a",
-        "outage-3288d740a626139f",
         "outage-a9acb12ba7517140",
         "outage-492505966653472e",
-        "outage-90b50c9a55e8d107"
+        "outage-073dc6bf0b8edd7f"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
