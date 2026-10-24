@@ -158,21 +158,6 @@
     },
     {
       "network": "tcp",
-      "server": "188.114.97.6",
-      "server_port": 2052,
-      "tag": "outage-aa452d73953a5933",
-      "transport": {
-        "headers": {
-          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-    },
-    {
-      "network": "tcp",
       "server": "104.24.197.20",
       "server_port": 443,
       "tag": "outage-29a1a06930d1cd63",
@@ -312,6 +297,25 @@
       "uuid": "b585dc5e-55bf-4a8b-913a-27c9ccac05c3"
     },
     {
+      "network": "tcp",
+      "server": "68.183.65.82",
+      "server_port": 2083,
+      "tag": "outage-90b50c9a55e8d107",
+      "tls": {
+        "enabled": true,
+        "server_name": "lucky-sky-0104.alvlirm444.workers.dev"
+      },
+      "transport": {
+        "headers": {
+          "Host": "lucky-sky-0104.alvlirm444.workers.dev"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "8525fe74-67e6-4a55-8a26-95f227bd1384"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -324,7 +328,6 @@
         "outage-18285c134efec4c5",
         "outage-5e14e1c76b4bc8c2",
         "outage-16819d5ea3b3d54d",
-        "outage-aa452d73953a5933",
         "outage-29a1a06930d1cd63",
         "outage-6b3f0c0f12c525e0",
         "outage-afc8d9e2faa16a0a",
@@ -332,7 +335,8 @@
         "outage-3288d740a626139f",
         "outage-a9acb12ba7517140",
         "outage-492505966653472e",
-        "outage-a9441dd12a79eea3"
+        "outage-a9441dd12a79eea3",
+        "outage-90b50c9a55e8d107"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
