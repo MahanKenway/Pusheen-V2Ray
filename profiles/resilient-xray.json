@@ -281,31 +281,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "108.162.198.178",
-            "port": 8080,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-1b1211ee0c1b3cf8"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "188.114.97.6",
             "port": 2052,
             "users": [
@@ -774,36 +749,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.140.92.21",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "35eb914a-f7c2-4ffa-8503-1bf30df0f1a5"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "rtYs5r9380Y2zvtXBFfaBbnypJQ7_1x_uYu0cLpOXk4",
-          "serverName": "www.cloudflare.com",
-          "shortId": "d8fee47b2d3d94",
-          "spiderX": "/ad7d3612c9c5309"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-f0a43d5f4b4b7618"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "51.158.206.86",
             "port": 23576,
             "users": [
@@ -827,6 +772,28 @@
         "security": "reality"
       },
       "tag": "resilient-f97bf56fdad9050b"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "13.38.185.27",
+            "port": 22222,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-338e5bb2ba005b9c"
     },
     {
       "protocol": "vless",
@@ -936,6 +903,35 @@
         "security": "reality"
       },
       "tag": "resilient-0a2e259a64c6ee96"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "179.237.109.135",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "bfd81b63-a43d-4c27-b71d-2c948cfc4ab2"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "D3LM6JIYP6kL--jSCj-BPj-qy-J7rzX0Jp9Z4ygNeV4",
+          "serverName": "seznam.cz",
+          "shortId": "7791e189a518d69e"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-f1ad5caa0648a843"
     },
     {
       "protocol": "vless",
@@ -1103,6 +1099,28 @@
       "settings": {
         "vnext": [
           {
+            "address": "65.109.181.18",
+            "port": 27014,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "a42fdac4-53c7-4a5d-8655-4168eecbe43d"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-71e19d7a679191f2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "31.57.190.49",
             "port": 443,
             "users": [
@@ -1155,35 +1173,6 @@
         "security": "reality"
       },
       "tag": "resilient-08780434da6eb5cf"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "200.165.231.209",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "ff0b6ba8-bed0-4c4d-bbc9-23af47582615"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "wstg.datasynctrue.online"
-        },
-        "wsSettings": {
-          "path": "/api/connect"
-        }
-      },
-      "tag": "resilient-de938ad84a3c6b52"
     },
     {
       "protocol": "blackhole",
