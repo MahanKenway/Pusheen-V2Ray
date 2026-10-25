@@ -166,44 +166,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.170",
-      "server_port": 443,
-      "tag": "outage-dfd97c6ddf64ea52",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "XpnTeam-34"
-    },
-    {
-      "network": "tcp",
-      "server": "151.101.56.6",
-      "server_port": 443,
-      "tag": "outage-73865151cfece055",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ssl.fastly.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "08ffff12-93bb-42eb-8c83-6489644a1d04"
-    },
-    {
-      "network": "tcp",
       "server": "188.114.97.6",
       "server_port": 8080,
       "tag": "outage-52ff43080204f5ee",
@@ -216,6 +178,25 @@
       },
       "type": "vless",
       "uuid": "b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9"
+    },
+    {
+      "network": "tcp",
+      "server": "104.17.215.31",
+      "server_port": 443,
+      "tag": "outage-39b0b5a1b9005c6a",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf.5208877.xyz"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cf.5208877.xyz"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "f6a015b4-4783-4f2a-a01b-39f281ba5d07"
     },
     {
       "network": "tcp",
@@ -287,6 +268,25 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.78.170",
+      "server_port": 443,
+      "tag": "outage-fece7f4c13fdc1ff",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "XpnTeam-43"
+    },
+    {
+      "network": "tcp",
       "server": "8.6.112.50",
       "server_port": 8880,
       "tag": "outage-aa854b3990ae1a31",
@@ -299,25 +299,6 @@
       },
       "type": "vless",
       "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    },
-    {
-      "network": "tcp",
-      "server": "69.46.46.215",
-      "server_port": 443,
-      "tag": "outage-634e1aacfb14b956",
-      "tls": {
-        "enabled": true,
-        "server_name": "service-453728-7467c1-production.up.railway.app"
-      },
-      "transport": {
-        "headers": {
-          "Host": "service-453728-7467c1-production.up.railway.app"
-        },
-        "path": "/ws/Default",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "10c3b62f-59da-55cb-b24f-2072ecb4348c"
     },
     {
       "flow": "xtls-rprx-vision",
@@ -345,15 +326,14 @@
         "outage-08553bfa71cd9d8d",
         "outage-055e724aac2fdf13",
         "outage-8814ed97faa0bfd4",
-        "outage-dfd97c6ddf64ea52",
-        "outage-73865151cfece055",
         "outage-52ff43080204f5ee",
+        "outage-39b0b5a1b9005c6a",
         "outage-29a1a06930d1cd63",
         "outage-e46fca062ffb5e9c",
         "outage-4212a1aa9ca6d6b4",
         "outage-afc8d9e2faa16a0a",
+        "outage-fece7f4c13fdc1ff",
         "outage-aa854b3990ae1a31",
-        "outage-634e1aacfb14b956",
         "outage-073dc6bf0b8edd7f"
       ],
       "tag": "outage-auto",
