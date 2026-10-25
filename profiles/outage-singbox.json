@@ -52,6 +52,44 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "tag": "outage-e13b27e51599804d",
+      "tls": {
+        "enabled": true,
+        "server_name": "firefox.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "firefox.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "34cb3fdc-2f33-49e0-8df3-d5793adf2de6"
+    },
+    {
+      "network": "tcp",
+      "server": "151.101.56.7",
+      "server_port": 443,
+      "tag": "outage-10ebc61018372542",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "d2299018-601d-488e-afd6-8f55b3f7439f"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.239.239",
       "server_port": 443,
       "tag": "outage-f1e62b3dc545a0ee",
@@ -144,25 +182,6 @@
       },
       "type": "vless",
       "uuid": "XpnTeam-40"
-    },
-    {
-      "network": "tcp",
-      "server": "199.232.78.159",
-      "server_port": 443,
-      "tag": "outage-8814ed97faa0bfd4",
-      "tls": {
-        "enabled": true,
-        "server_name": "firefox.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "firefox.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "7dee06cc-4bc8-43ca-a6c2-59f81107f2e3"
     },
     {
       "network": "tcp",
@@ -268,6 +287,14 @@
     },
     {
       "network": "tcp",
+      "server": "69.46.46.194",
+      "server_port": 443,
+      "tag": "outage-eb08d5c4d83f4f1f",
+      "type": "vless",
+      "uuid": "10c3b62f-59da-55cb-b24f-2072ecb4348c"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.170",
       "server_port": 443,
       "tag": "outage-fece7f4c13fdc1ff",
@@ -284,21 +311,6 @@
       },
       "type": "vless",
       "uuid": "XpnTeam-43"
-    },
-    {
-      "network": "tcp",
-      "server": "8.6.112.50",
-      "server_port": 8880,
-      "tag": "outage-aa854b3990ae1a31",
-      "transport": {
-        "headers": {
-          "Host": "vms.lifetime08.workers.dev"
-        },
-        "path": "/?ed=2560",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d"
     },
     {
       "flow": "xtls-rprx-vision",
@@ -320,20 +332,21 @@
       "outbounds": [
         "outage-481dd226df1694c1",
         "outage-7ffb5f7bdeb97e6e",
+        "outage-e13b27e51599804d",
+        "outage-10ebc61018372542",
         "outage-f1e62b3dc545a0ee",
         "outage-cfbedc74b842c443",
         "outage-3cc774d9aa45b59d",
         "outage-08553bfa71cd9d8d",
         "outage-055e724aac2fdf13",
-        "outage-8814ed97faa0bfd4",
         "outage-52ff43080204f5ee",
         "outage-39b0b5a1b9005c6a",
         "outage-29a1a06930d1cd63",
         "outage-e46fca062ffb5e9c",
         "outage-4212a1aa9ca6d6b4",
         "outage-afc8d9e2faa16a0a",
+        "outage-eb08d5c4d83f4f1f",
         "outage-fece7f4c13fdc1ff",
-        "outage-aa854b3990ae1a31",
         "outage-073dc6bf0b8edd7f"
       ],
       "tag": "outage-auto",

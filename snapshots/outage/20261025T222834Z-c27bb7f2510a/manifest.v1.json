@@ -1,0 +1,37 @@
+{
+  "artifact_hash": "c27bb7f2510a0ed656021aebd819e99e7a73d3d17c41972e1512c3acb312e8bf",
+  "by_protocol": {
+    "vless": 21
+  },
+  "by_source": {
+    "configforge-vless": 10,
+    "iboxz-vless-probationary": 10,
+    "raydikal-verified": 1
+  },
+  "by_transport_family": {
+    "vless:tcp:none": 1,
+    "vless:tcp:reality": 3,
+    "vless:tcp:tls": 1,
+    "vless:ws:none": 3,
+    "vless:ws:tls": 13
+  },
+  "created_at": "2026-10-25T22:28:34.490586+00:00",
+  "notice": "Recent TCP-reachability evidence from the validator origin with anti-concentration selection; not an end-to-end or Iran-availability guarantee.",
+  "reachable_count": 122,
+  "schema_version": 1,
+  "selected_count": 21,
+  "selection": {
+    "endpoint_limit": 1,
+    "input_order": "repository stability score then latest successful TCP latency",
+    "max_protocol_share": 0.65,
+    "max_source_share": 0.25,
+    "max_transport_family_share": 0.35
+  },
+  "snapshot_id": "20261025T222834Z-c27bb7f2510a",
+  "source_errors": {
+    "ebrasha-trojan-probationary": "SOURCE_HTTP_404",
+    "farid-iran-trojan-probationary": "SOURCE_TOO_LARGE",
+    "farid-iran-vless-probationary": "SOURCE_TOO_LARGE"
+  },
+  "tier": "tcp-reachable-outage-diverse-v1"
+}

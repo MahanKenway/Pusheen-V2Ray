@@ -86,6 +86,64 @@
       "settings": {
         "vnext": [
           {
+            "address": "199.232.78.159",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "34cb3fdc-2f33-49e0-8df3-d5793adf2de6"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "firefox.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-e13b27e51599804d"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "151.101.56.7",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d2299018-601d-488e-afd6-8f55b3f7439f"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053"
+        }
+      },
+      "tag": "resilient-10ebc61018372542"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "199.232.239.239",
             "port": 443,
             "users": [
@@ -225,35 +283,6 @@
         }
       },
       "tag": "resilient-055e724aac2fdf13"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.159",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "7dee06cc-4bc8-43ca-a6c2-59f81107f2e3"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "firefox.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-8814ed97faa0bfd4"
     },
     {
       "protocol": "vless",
@@ -416,6 +445,28 @@
         }
       },
       "tag": "resilient-afc8d9e2faa16a0a"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "69.46.46.194",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "10c3b62f-59da-55cb-b24f-2072ecb4348c"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-eb08d5c4d83f4f1f"
     },
     {
       "protocol": "vless",
@@ -1104,55 +1155,6 @@
         "security": "none"
       },
       "tag": "resilient-a20af427eba1d294"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "15.224.130.80",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-cd3e134de8d278b0"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.147.27.183",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "379998c5-2a71-4202-9c74-522e0c3c5404"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "user-6a917f32.noooo.win"
-        }
-      },
-      "tag": "resilient-d46996a95cc35181"
     },
     {
       "protocol": "blackhole",
