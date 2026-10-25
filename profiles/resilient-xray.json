@@ -451,35 +451,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "146.75.57.238",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "5545d204-13f5-4e3e-af5c-4ded2b945743"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "firefox.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-492505966653472e"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "8.6.112.50",
             "port": 8880,
             "users": [
@@ -499,6 +470,35 @@
         }
       },
       "tag": "resilient-aa854b3990ae1a31"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "69.46.46.215",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "10c3b62f-59da-55cb-b24f-2072ecb4348c"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "service-453728-7467c1-production.up.railway.app"
+        },
+        "wsSettings": {
+          "path": "/ws/Default"
+        }
+      },
+      "tag": "resilient-634e1aacfb14b956"
     },
     {
       "protocol": "vless",
