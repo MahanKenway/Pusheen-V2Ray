@@ -480,6 +480,31 @@
       "settings": {
         "vnext": [
           {
+            "address": "8.6.112.50",
+            "port": 8880,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "6202b230-417c-4d8e-b624-0f71afa9c75d"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/?ed=2560"
+        }
+      },
+      "tag": "resilient-aa854b3990ae1a31"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "169.40.42.231",
             "port": 443,
             "users": [
@@ -1141,35 +1166,6 @@
         "security": "none"
       },
       "tag": "resilient-d7d29872cf0460c0"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "176.98.189.253",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "689a62e4-37e7-41de-9e6a-f2a56368c9e2"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "safari",
-          "publicKey": "XPXSq5nNCKDPwA_yk6AcOPRWC33E6APbjz_BaVJclzA",
-          "serverName": "www.surf.nl",
-          "shortId": "61"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-0a2e259a64c6ee96"
     },
     {
       "protocol": "blackhole",

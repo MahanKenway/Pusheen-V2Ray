@@ -305,6 +305,21 @@
       "uuid": "5545d204-13f5-4e3e-af5c-4ded2b945743"
     },
     {
+      "network": "tcp",
+      "server": "8.6.112.50",
+      "server_port": 8880,
+      "tag": "outage-aa854b3990ae1a31",
+      "transport": {
+        "headers": {
+          "Host": "vms.lifetime08.workers.dev"
+        },
+        "path": "/?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    },
+    {
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "server": "162.19.10.99",
@@ -338,6 +353,7 @@
         "outage-4212a1aa9ca6d6b4",
         "outage-afc8d9e2faa16a0a",
         "outage-492505966653472e",
+        "outage-aa854b3990ae1a31",
         "outage-073dc6bf0b8edd7f"
       ],
       "tag": "outage-auto",
