@@ -86,6 +86,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "104.21.90.36",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "4908acbe-485f-4e1c-bb11-5dd04b9f7e88"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "restless-base-fe24.alirezahabibi20009.workers.dev"
+        },
+        "wsSettings": {
+          "path": "/eyJqdW5rIjoiRjhycEV5WUpJTGZpQSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
+        }
+      },
+      "tag": "resilient-016e9fc057f32684"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "199.232.78.160",
             "port": 443,
             "users": [
@@ -1129,28 +1158,6 @@
         "security": "reality"
       },
       "tag": "resilient-2ce68d42aa1ff12c"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "15.224.130.80",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-cd3e134de8d278b0"
     },
     {
       "protocol": "blackhole",
