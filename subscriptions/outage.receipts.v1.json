@@ -3,7 +3,7 @@
     "vless": 21
   },
   "count": 21,
-  "created_at": "2026-10-25T22:28:34.491726+00:00",
+  "created_at": "2026-10-26T00:40:00.254131+00:00",
   "evidence": "recent successful TCP reachability with tighter anti-concentration policy",
   "max_evidence_age_hours": 72,
   "notice": "A receipt records why the item is eligible for this tier at publication time. It does not disclose hostnames, credentials, raw URIs, or guarantee availability from another network.",
@@ -128,6 +128,13 @@
       "transport_family": "vless:ws:tls"
     },
     {
+      "id": "f2e8588c8521bc4e",
+      "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
+      "latest_source_id": "configforge-vless",
+      "protocol": "vless",
+      "transport_family": "vless:ws:none"
+    },
+    {
       "id": "23cc1b635e4d34e7",
       "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
       "latest_source_id": "configforge-vless",
@@ -140,13 +147,6 @@
       "latest_source_id": "configforge-vless",
       "protocol": "vless",
       "transport_family": "vless:tcp:tls"
-    },
-    {
-      "id": "f97bf56fdad9050b",
-      "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
-      "latest_source_id": "configforge-vless",
-      "protocol": "vless",
-      "transport_family": "vless:tcp:reality"
     },
     {
       "id": "6f6a17236770b999",
