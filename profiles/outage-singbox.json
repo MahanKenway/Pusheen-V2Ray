@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "146.75.59.186",
+      "server_port": 443,
+      "tag": "outage-d63e528b93986f75",
+      "tls": {
+        "enabled": true,
+        "server_name": "firefox.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "firefox.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "f9a9aa1f-75fb-4490-9155-85567af7a0ff"
+    },
+    {
+      "network": "tcp",
       "server": "172.67.155.65",
       "server_port": 8443,
       "tag": "outage-481dd226df1694c1",
@@ -33,41 +52,22 @@
     },
     {
       "network": "tcp",
-      "server": "146.75.59.186",
-      "server_port": 443,
-      "tag": "outage-7ffb5f7bdeb97e6e",
-      "tls": {
-        "enabled": true,
-        "server_name": "firefox.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "firefox.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "7dee06cc-4bc8-43ca-a6c2-59f81107f2e3"
-    },
-    {
-      "network": "tcp",
       "server": "199.232.78.159",
       "server_port": 443,
-      "tag": "outage-e13b27e51599804d",
+      "tag": "outage-9ce6516bb287648d",
       "tls": {
         "enabled": true,
-        "server_name": "firefox.com"
+        "server_name": "cdn.akamai.steamstatic.com"
       },
       "transport": {
         "headers": {
-          "Host": "firefox.com"
+          "Host": "cdn.akamai.steamstatic.com"
         },
         "path": "/",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "34cb3fdc-2f33-49e0-8df3-d5793adf2de6"
+      "uuid": "f9a9aa1f-75fb-4490-9155-85567af7a0ff"
     },
     {
       "network": "tcp",
@@ -272,14 +272,14 @@
     },
     {
       "network": "tcp",
-      "server": "108.162.198.178",
-      "server_port": 80,
-      "tag": "outage-afc8d9e2faa16a0a",
+      "server": "162.159.43.187",
+      "server_port": 2086,
+      "tag": "outage-39391005079bb605",
       "transport": {
         "headers": {
           "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         },
-        "path": "/",
+        "path": "/?ed=2560security=tls",
         "type": "ws"
       },
       "type": "vless",
@@ -292,6 +292,25 @@
       "tag": "outage-eb08d5c4d83f4f1f",
       "type": "vless",
       "uuid": "10c3b62f-59da-55cb-b24f-2072ecb4348c"
+    },
+    {
+      "network": "tcp",
+      "server": "172.67.163.68",
+      "server_port": 443,
+      "tag": "outage-4f9c31b702bd915e",
+      "tls": {
+        "enabled": true,
+        "server_name": "lczoox-b5gygc-24w8tc.rozhaghadri.workers.dev"
+      },
+      "transport": {
+        "headers": {
+          "Host": "lczoox-b5gygc-24w8tc.rozhaghadri.workers.dev"
+        },
+        "path": "/sync",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "26086552-5b79-d167-dd18-1ea000000000"
     },
     {
       "network": "tcp",
@@ -345,9 +364,9 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-d63e528b93986f75",
         "outage-481dd226df1694c1",
-        "outage-7ffb5f7bdeb97e6e",
-        "outage-e13b27e51599804d",
+        "outage-9ce6516bb287648d",
         "outage-10ebc61018372542",
         "outage-f1e62b3dc545a0ee",
         "outage-cfbedc74b842c443",
@@ -359,8 +378,9 @@
         "outage-29a1a06930d1cd63",
         "outage-e46fca062ffb5e9c",
         "outage-4212a1aa9ca6d6b4",
-        "outage-afc8d9e2faa16a0a",
+        "outage-39391005079bb605",
         "outage-eb08d5c4d83f4f1f",
+        "outage-4f9c31b702bd915e",
         "outage-fece7f4c13fdc1ff",
         "outage-f2e8588c8521bc4e",
         "outage-073dc6bf0b8edd7f"
