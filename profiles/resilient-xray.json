@@ -50,7 +50,7 @@
           "path": "/"
         }
       },
-      "tag": "resilient-d63e528b93986f75"
+      "tag": "resilient-ff48b0c45ac0312a"
     },
     {
       "protocol": "vless",
@@ -80,6 +80,35 @@
         }
       },
       "tag": "resilient-481dd226df1694c1"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "199.232.78.160",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cd07ae0d-f31d-4209-a0a4-d9d9cfcca1ad"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "firefox.com"
+        },
+        "wsSettings": {
+          "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET"
+        }
+      },
+      "tag": "resilient-0aaeee8c797609cf"
     },
     {
       "protocol": "vless",
@@ -254,35 +283,6 @@
         }
       },
       "tag": "resilient-08553bfa71cd9d8d"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.160",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "XpnTeam-40"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "cdn.akamai.steamstatic.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-055e724aac2fdf13"
     },
     {
       "protocol": "vless",
@@ -833,6 +833,33 @@
       "settings": {
         "vnext": [
           {
+            "address": "162.19.10.99",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "e8b1500b-e9e8-5492-8312-f4eadf7d0767"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "nasnet-162191099-direct.mbghalibaf.com"
+        }
+      },
+      "tag": "resilient-7f4683c726d6d932"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "208.69.78.217",
             "port": 2053,
             "users": [
@@ -855,33 +882,6 @@
         "security": "reality"
       },
       "tag": "resilient-fb945e615d6f7182"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "162.19.10.99",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "e8b1500b-e9e8-5492-8312-f4eadf7d0767"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "nasnet-162191099-direct.mbghalibaf.com"
-        }
-      },
-      "tag": "resilient-073dc6bf0b8edd7f"
     },
     {
       "protocol": "vless",

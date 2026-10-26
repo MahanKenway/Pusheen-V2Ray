@@ -16,7 +16,7 @@
       "network": "tcp",
       "server": "146.75.59.186",
       "server_port": 443,
-      "tag": "outage-d63e528b93986f75",
+      "tag": "outage-ff48b0c45ac0312a",
       "tls": {
         "enabled": true,
         "server_name": "firefox.com"
@@ -49,6 +49,25 @@
       },
       "type": "vless",
       "uuid": "e6df2095-a73c-4043-8693-8d5a03686870"
+    },
+    {
+      "network": "tcp",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "tag": "outage-0aaeee8c797609cf",
+      "tls": {
+        "enabled": true,
+        "server_name": "firefox.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "firefox.com"
+        },
+        "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "cd07ae0d-f31d-4209-a0a4-d9d9cfcca1ad"
     },
     {
       "network": "tcp",
@@ -163,25 +182,6 @@
       },
       "type": "vless",
       "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349"
-    },
-    {
-      "network": "tcp",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "tag": "outage-055e724aac2fdf13",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "XpnTeam-40"
     },
     {
       "network": "tcp",
@@ -332,7 +332,7 @@
       "network": "tcp",
       "server": "162.19.10.99",
       "server_port": 443,
-      "tag": "outage-073dc6bf0b8edd7f",
+      "tag": "outage-7f4683c726d6d932",
       "tls": {
         "enabled": true,
         "server_name": "nasnet-162191099-direct.mbghalibaf.com"
@@ -345,15 +345,15 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
-        "outage-d63e528b93986f75",
+        "outage-ff48b0c45ac0312a",
         "outage-481dd226df1694c1",
+        "outage-0aaeee8c797609cf",
         "outage-9ce6516bb287648d",
         "outage-10ebc61018372542",
         "outage-f1e62b3dc545a0ee",
         "outage-cfbedc74b842c443",
         "outage-3cc774d9aa45b59d",
         "outage-08553bfa71cd9d8d",
-        "outage-055e724aac2fdf13",
         "outage-52ff43080204f5ee",
         "outage-39b0b5a1b9005c6a",
         "outage-e46fca062ffb5e9c",
@@ -363,7 +363,7 @@
         "outage-4f9c31b702bd915e",
         "outage-fece7f4c13fdc1ff",
         "outage-f2e8588c8521bc4e",
-        "outage-073dc6bf0b8edd7f"
+        "outage-7f4683c726d6d932"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
