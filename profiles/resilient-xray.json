@@ -502,6 +502,31 @@
       "settings": {
         "vnext": [
           {
+            "address": "172.67.209.127",
+            "port": 8880,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "1b3ad465-d37e-48a2-bb53-d7fddfc97b11"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-8eb0237d9ccc819a"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "146.75.57.238",
             "port": 443,
             "users": [
@@ -633,6 +658,61 @@
         }
       },
       "tag": "resilient-634e1aacfb14b956"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "15.204.97.219",
+            "port": 23576,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "serverName": "fuck.rkn",
+          "shortId": "01"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-79554a1b7fb1bf5d"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "149.104.90.21",
+            "port": 19167,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e9a8144e-5237-488a-afb1-9ca3d8d54c80"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "mx001.zestapp778.com"
+        }
+      },
+      "tag": "resilient-5b3827251b276b07"
     },
     {
       "protocol": "vless",
@@ -1077,80 +1157,6 @@
         "security": "reality"
       },
       "tag": "resilient-10abd832c462e23b"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "35.181.146.222",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-2bb429d3e86f6a39"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "13.38.185.27",
-            "port": 22222,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-338e5bb2ba005b9c"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "177.3.222.26",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "46785352-db89-4839-8079-d4c69ad87996"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "grpc"
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "PTN5W-NGsWFwn28CX1hQh_aL-ucCEYYyFK-Kc0X7eVM",
-          "serverName": "smartcaptcha.yandexcloud.net"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-c5a6300c04b13b3c"
     },
     {
       "protocol": "blackhole",
