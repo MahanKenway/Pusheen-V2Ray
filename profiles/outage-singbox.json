@@ -33,22 +33,33 @@
     },
     {
       "network": "tcp",
-      "server": "172.67.155.65",
-      "server_port": 8443,
-      "tag": "outage-481dd226df1694c1",
-      "tls": {
-        "enabled": true,
-        "server_name": "lucasjow.us.ci"
-      },
+      "server": "172.66.140.62",
+      "server_port": 8880,
+      "tag": "outage-ae933792641aa450",
       "transport": {
         "headers": {
-          "Host": "lucasjow.us.ci"
+          "Host": "skk.moe"
         },
-        "path": "/cart/docs/www/proxyip?ed",
+        "path": "/",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870"
+      "uuid": "160ca353-676d-4b7f-a041-0289e388b865"
+    },
+    {
+      "network": "tcp",
+      "server": "172.64.150.28",
+      "server_port": 8880,
+      "tag": "outage-a79f917c829d7d71",
+      "transport": {
+        "headers": {
+          "Host": "vms.lifetime29.workers.dev"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d"
     },
     {
       "network": "tcp",
@@ -167,44 +178,6 @@
     {
       "network": "tcp",
       "server": "188.114.97.6",
-      "server_port": 443,
-      "tag": "outage-3cc774d9aa45b59d",
-      "tls": {
-        "enabled": true,
-        "server_name": "mao.kipfel.kdns.fr"
-      },
-      "transport": {
-        "headers": {
-          "Host": "mao.kipfel.kdns.fr"
-        },
-        "path": "/glasspanel/guest000_0_5de14443985f/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "30610baf-4645-4c7b-9a22-0d0a0a79eab5"
-    },
-    {
-      "network": "tcp",
-      "server": "188.114.98.0",
-      "server_port": 443,
-      "tag": "outage-08553bfa71cd9d8d",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.cintaku.qzz.io"
-      },
-      "transport": {
-        "headers": {
-          "Host": "vpn.cintaku.qzz.io"
-        },
-        "path": "/vlessws",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349"
-    },
-    {
-      "network": "tcp",
-      "server": "188.114.97.6",
       "server_port": 8080,
       "tag": "outage-52ff43080204f5ee",
       "transport": {
@@ -250,25 +223,6 @@
       },
       "type": "vless",
       "uuid": "38ede46b-d237-4c76-9de1-a10738642adc"
-    },
-    {
-      "network": "tcp",
-      "server": "88.216.69.253",
-      "server_port": 443,
-      "tag": "outage-4212a1aa9ca6d6b4",
-      "tls": {
-        "enabled": true,
-        "server_name": "server8.9966338.xyz"
-      },
-      "transport": {
-        "headers": {
-          "Host": "server8.9966338.xyz"
-        },
-        "path": "/fdtiouasopeiyre0r95y8",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "5504eaa8-1395-402f-8e0e-75ecd762e627"
     },
     {
       "network": "tcp",
@@ -348,18 +302,60 @@
     },
     {
       "network": "tcp",
-      "server": "108.162.198.178",
-      "server_port": 2086,
-      "tag": "outage-f2e8588c8521bc4e",
+      "server": "188.114.98.0",
+      "server_port": 443,
+      "tag": "outage-83d0bf223673ee20",
+      "tls": {
+        "enabled": true,
+        "server_name": "snip.edgeoneai.cc.cd"
+      },
       "transport": {
         "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+          "Host": "snip.edgeoneai.cc.cd"
+        },
+        "path": "/?telegram--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5"
+    },
+    {
+      "network": "tcp",
+      "server": "146.75.57.238",
+      "server_port": 443,
+      "tag": "outage-4c3238953274230b",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
         },
         "path": "/",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
+      "uuid": "5ec50dc8-fba8-42ad-b427-e51193bc5c2a"
+    },
+    {
+      "network": "tcp",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "tag": "outage-bc27a66c5bbc5f54",
+      "tls": {
+        "enabled": true,
+        "server_name": "FrEe.SeRVEr14peekCoNfIG.WoRKErS.dEV"
+      },
+      "transport": {
+        "headers": {
+          "Host": "FrEe.SeRVEr14peekCoNfIG.WoRKErS.dEV"
+        },
+        "path": "/eyJqdW5rIjoiQmFCblN3SmhXYTB3RzVoIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OjExOjY0OjpdIiwiWzJhMDI6ODk4OjE0Njo2NDo6XSIsIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "1c9daf90-3950-44ac-b06f-4cf9aec63170"
     },
     {
       "idle_timeout": "30m",
@@ -367,25 +363,25 @@
       "interval": "10m",
       "outbounds": [
         "outage-ff48b0c45ac0312a",
-        "outage-481dd226df1694c1",
+        "outage-ae933792641aa450",
+        "outage-a79f917c829d7d71",
         "outage-016e9fc057f32684",
         "outage-0aaeee8c797609cf",
         "outage-9ce6516bb287648d",
         "outage-10ebc61018372542",
         "outage-f1e62b3dc545a0ee",
         "outage-cfbedc74b842c443",
-        "outage-3cc774d9aa45b59d",
-        "outage-08553bfa71cd9d8d",
         "outage-52ff43080204f5ee",
         "outage-39b0b5a1b9005c6a",
         "outage-e46fca062ffb5e9c",
-        "outage-4212a1aa9ca6d6b4",
         "outage-7a1d2a4ca3d6600b",
         "outage-39391005079bb605",
         "outage-eb08d5c4d83f4f1f",
         "outage-4f9c31b702bd915e",
         "outage-8eb0237d9ccc819a",
-        "outage-f2e8588c8521bc4e"
+        "outage-83d0bf223673ee20",
+        "outage-4c3238953274230b",
+        "outage-bc27a66c5bbc5f54"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
