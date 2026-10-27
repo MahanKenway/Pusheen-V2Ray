@@ -272,6 +272,25 @@
     },
     {
       "network": "tcp",
+      "server": "chatgpt.com",
+      "server_port": 443,
+      "tag": "outage-7a1d2a4ca3d6600b",
+      "tls": {
+        "enabled": true,
+        "server_name": "ccc.010304.xyz"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ccc.010304.xyz"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "d342d11e-d224-4463-b982-532309285094"
+    },
+    {
+      "network": "tcp",
       "server": "162.159.43.187",
       "server_port": 2086,
       "tag": "outage-39391005079bb605",
@@ -329,25 +348,6 @@
     },
     {
       "network": "tcp",
-      "server": "146.75.57.238",
-      "server_port": 443,
-      "tag": "outage-4c3238953274230b",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "5ec50dc8-fba8-42ad-b427-e51193bc5c2a"
-    },
-    {
-      "network": "tcp",
       "server": "108.162.198.178",
       "server_port": 2086,
       "tag": "outage-f2e8588c8521bc4e",
@@ -380,11 +380,11 @@
         "outage-39b0b5a1b9005c6a",
         "outage-e46fca062ffb5e9c",
         "outage-4212a1aa9ca6d6b4",
+        "outage-7a1d2a4ca3d6600b",
         "outage-39391005079bb605",
         "outage-eb08d5c4d83f4f1f",
         "outage-4f9c31b702bd915e",
         "outage-8eb0237d9ccc819a",
-        "outage-4c3238953274230b",
         "outage-f2e8588c8521bc4e"
       ],
       "tag": "outage-auto",
