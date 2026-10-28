@@ -192,25 +192,6 @@
     },
     {
       "network": "tcp",
-      "server": "151.101.56.7",
-      "server_port": 443,
-      "tag": "outage-10ebc61018372542",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ssl.fastly.com"
-        },
-        "path": "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "d2299018-601d-488e-afd6-8f55b3f7439f"
-    },
-    {
-      "network": "tcp",
       "server": "167.82.64.64",
       "server_port": 443,
       "tag": "outage-486ff076422ce6d7",
@@ -227,25 +208,6 @@
       },
       "type": "vless",
       "uuid": "cd07ae0d-f31d-4209-a0a4-d9d9cfcca1ad"
-    },
-    {
-      "network": "tcp",
-      "server": "104.17.215.31",
-      "server_port": 443,
-      "tag": "outage-39b0b5a1b9005c6a",
-      "tls": {
-        "enabled": true,
-        "server_name": "cf.5208877.xyz"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cf.5208877.xyz"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "f6a015b4-4783-4f2a-a01b-39f281ba5d07"
     },
     {
       "network": "tcp",
@@ -336,6 +298,25 @@
     },
     {
       "network": "tcp",
+      "server": "146.75.57.238",
+      "server_port": 443,
+      "tag": "outage-4c3238953274230b",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "5ec50dc8-fba8-42ad-b427-e51193bc5c2a"
+    },
+    {
+      "network": "tcp",
       "server": "108.162.198.178",
       "server_port": 2086,
       "tag": "outage-f2e8588c8521bc4e",
@@ -348,6 +329,19 @@
       },
       "type": "vless",
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "server": "162.19.10.99",
+      "server_port": 443,
+      "tag": "outage-7f4683c726d6d932",
+      "tls": {
+        "enabled": true,
+        "server_name": "nasnet-162191099-direct.mbghalibaf.com"
+      },
+      "type": "vless",
+      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767"
     },
     {
       "idle_timeout": "30m",
@@ -364,15 +358,15 @@
         "outage-a79f917c829d7d71",
         "outage-016e9fc057f32684",
         "outage-0aaeee8c797609cf",
-        "outage-10ebc61018372542",
         "outage-486ff076422ce6d7",
-        "outage-39b0b5a1b9005c6a",
         "outage-6b7d67c4850b553e",
         "outage-7a1d2a4ca3d6600b",
         "outage-39391005079bb605",
         "outage-4f9c31b702bd915e",
         "outage-8eb0237d9ccc819a",
-        "outage-f2e8588c8521bc4e"
+        "outage-4c3238953274230b",
+        "outage-f2e8588c8521bc4e",
+        "outage-7f4683c726d6d932"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
