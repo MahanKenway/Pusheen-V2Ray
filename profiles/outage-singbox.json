@@ -177,28 +177,9 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.239.239",
-      "server_port": 443,
-      "tag": "outage-f1e62b3dc545a0ee",
-      "tls": {
-        "enabled": true,
-        "server_name": "firefox.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "firefox.com"
-        },
-        "path": "/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "49883404-5bd4-42fc-9cb4-913980e278ad"
-    },
-    {
-      "network": "tcp",
       "server": "167.82.64.64",
       "server_port": 443,
-      "tag": "outage-cfbedc74b842c443",
+      "tag": "outage-486ff076422ce6d7",
       "tls": {
         "enabled": true,
         "server_name": "cdn.akamai.steamstatic.com"
@@ -261,6 +242,25 @@
       },
       "type": "vless",
       "uuid": "38ede46b-d237-4c76-9de1-a10738642adc"
+    },
+    {
+      "network": "tcp",
+      "server": "104.16.111.193",
+      "server_port": 443,
+      "tag": "outage-6b7d67c4850b553e",
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray.simspeedup.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "v2ray.simspeedup.com"
+        },
+        "path": "/ws",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "3c52e091-6714-4915-949f-2149fe69951b"
     },
     {
       "network": "tcp",
@@ -371,11 +371,11 @@
         "outage-016e9fc057f32684",
         "outage-0aaeee8c797609cf",
         "outage-10ebc61018372542",
-        "outage-f1e62b3dc545a0ee",
-        "outage-cfbedc74b842c443",
+        "outage-486ff076422ce6d7",
         "outage-52ff43080204f5ee",
         "outage-39b0b5a1b9005c6a",
         "outage-e46fca062ffb5e9c",
+        "outage-6b7d67c4850b553e",
         "outage-7a1d2a4ca3d6600b",
         "outage-39391005079bb605",
         "outage-eb08d5c4d83f4f1f",
