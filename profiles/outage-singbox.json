@@ -14,22 +14,22 @@
   "outbounds": [
     {
       "network": "tcp",
-      "server": "146.75.59.186",
-      "server_port": 443,
-      "tag": "outage-ff48b0c45ac0312a",
+      "server": "172.64.145.202",
+      "server_port": 2087,
+      "tag": "outage-be8b81ff15025722",
       "tls": {
         "enabled": true,
-        "server_name": "firefox.com"
+        "server_name": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
       },
       "transport": {
         "headers": {
-          "Host": "firefox.com"
+          "Host": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
         },
         "path": "/",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "f9a9aa1f-75fb-4490-9155-85567af7a0ff"
+      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
     },
     {
       "network": "tcp",
@@ -154,6 +154,25 @@
     },
     {
       "network": "tcp",
+      "server": "146.75.59.186",
+      "server_port": 443,
+      "tag": "outage-c2fe5135fb307ceb",
+      "tls": {
+        "enabled": true,
+        "server_name": "firefox.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "firefox.com"
+        },
+        "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "f9a9aa1f-75fb-4490-9155-85567af7a0ff"
+    },
+    {
+      "network": "tcp",
       "server": "104.21.90.36",
       "server_port": 443,
       "tag": "outage-016e9fc057f32684",
@@ -170,25 +189,6 @@
       },
       "type": "vless",
       "uuid": "4908acbe-485f-4e1c-bb11-5dd04b9f7e88"
-    },
-    {
-      "network": "tcp",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "tag": "outage-0aaeee8c797609cf",
-      "tls": {
-        "enabled": true,
-        "server_name": "firefox.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "firefox.com"
-        },
-        "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "cd07ae0d-f31d-4209-a0a4-d9d9cfcca1ad"
     },
     {
       "network": "tcp",
@@ -245,6 +245,44 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "tag": "outage-ae0bf1496c95e269",
+      "tls": {
+        "enabled": true,
+        "server_name": "firefox.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "firefox.com"
+        },
+        "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "f9a9aa1f-75fb-4490-9155-85567af7a0ff"
+    },
+    {
+      "network": "tcp",
+      "server": "104.21.41.86",
+      "server_port": 443,
+      "tag": "outage-f7998d94b73581ea",
+      "tls": {
+        "enabled": true,
+        "server_name": "lczoox-b5gygc-24w8tc.rozhaghadri.workers.dev"
+      },
+      "transport": {
+        "headers": {
+          "Host": "lczoox-b5gygc-24w8tc.rozhaghadri.workers.dev"
+        },
+        "path": "/sync",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "26086552-5b79-d167-dd18-1ea000000000"
+    },
+    {
+      "network": "tcp",
       "server": "167.82.64.64",
       "server_port": 443,
       "tag": "outage-34909d96ba841c25",
@@ -282,24 +320,11 @@
       "uuid": "5ec50dc8-fba8-42ad-b427-e51193bc5c2a"
     },
     {
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "server": "162.19.10.99",
-      "server_port": 443,
-      "tag": "outage-7f4683c726d6d932",
-      "tls": {
-        "enabled": true,
-        "server_name": "nasnet-162191099-direct.mbghalibaf.com"
-      },
-      "type": "vless",
-      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
-        "outage-ff48b0c45ac0312a",
+        "outage-be8b81ff15025722",
         "outage-7bf5a871ad01714b",
         "outage-b2d2620dbc766dfb",
         "outage-3282cc13a80d500b",
@@ -307,14 +332,15 @@
         "outage-07e76c604420d5f3",
         "outage-ae933792641aa450",
         "outage-a79f917c829d7d71",
+        "outage-c2fe5135fb307ceb",
         "outage-016e9fc057f32684",
-        "outage-0aaeee8c797609cf",
         "outage-6b7d67c4850b553e",
         "outage-7a1d2a4ca3d6600b",
         "outage-8eb0237d9ccc819a",
+        "outage-ae0bf1496c95e269",
+        "outage-f7998d94b73581ea",
         "outage-34909d96ba841c25",
-        "outage-4c3238953274230b",
-        "outage-7f4683c726d6d932"
+        "outage-4c3238953274230b"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
