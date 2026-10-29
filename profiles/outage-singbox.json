@@ -192,25 +192,6 @@
     },
     {
       "network": "tcp",
-      "server": "167.82.64.64",
-      "server_port": 443,
-      "tag": "outage-486ff076422ce6d7",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "cd07ae0d-f31d-4209-a0a4-d9d9cfcca1ad"
-    },
-    {
-      "network": "tcp",
       "server": "104.16.111.193",
       "server_port": 443,
       "tag": "outage-6b7d67c4850b553e",
@@ -298,6 +279,25 @@
     },
     {
       "network": "tcp",
+      "server": "167.82.64.64",
+      "server_port": 443,
+      "tag": "outage-34909d96ba841c25",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "f9a9aa1f-75fb-4490-9155-85567af7a0ff"
+    },
+    {
+      "network": "tcp",
       "server": "146.75.57.238",
       "server_port": 443,
       "tag": "outage-4c3238953274230b",
@@ -314,21 +314,6 @@
       },
       "type": "vless",
       "uuid": "5ec50dc8-fba8-42ad-b427-e51193bc5c2a"
-    },
-    {
-      "network": "tcp",
-      "server": "108.162.198.178",
-      "server_port": 2086,
-      "tag": "outage-f2e8588c8521bc4e",
-      "transport": {
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
     },
     {
       "flow": "xtls-rprx-vision",
@@ -358,14 +343,13 @@
         "outage-a79f917c829d7d71",
         "outage-016e9fc057f32684",
         "outage-0aaeee8c797609cf",
-        "outage-486ff076422ce6d7",
         "outage-6b7d67c4850b553e",
         "outage-7a1d2a4ca3d6600b",
         "outage-39391005079bb605",
         "outage-4f9c31b702bd915e",
         "outage-8eb0237d9ccc819a",
+        "outage-34909d96ba841c25",
         "outage-4c3238953274230b",
-        "outage-f2e8588c8521bc4e",
         "outage-7f4683c726d6d932"
       ],
       "tag": "outage-auto",
