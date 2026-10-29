@@ -776,35 +776,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "b19419fa-8009-455b-b059-765e2856883a"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "akbarian34.j9z65ce2uyks.workers.dev"
-        },
-        "wsSettings": {
-          "path": "/vl/3Qe9Fv1V2cqEtXyBQApZYi?ed=2560"
-        }
-      },
-      "tag": "resilient-6146f6058f08b7a6"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "35.181.146.222",
             "port": 22223,
             "users": [
@@ -878,6 +849,28 @@
       "settings": {
         "vnext": [
           {
+            "address": "13.38.161.70",
+            "port": 22222,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-6bf3c5a0894f26ef"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "51.158.206.26",
             "port": 23576,
             "users": [
@@ -931,6 +924,35 @@
         "security": "reality"
       },
       "tag": "resilient-66448c0b2bf6547a"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.158.206.86",
+            "port": 23576,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "serverName": "fuck.rkn",
+          "shortId": "01"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-a17d4b6bd63c5083"
     },
     {
       "protocol": "vless",
@@ -1043,12 +1065,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.175.205.190",
-            "port": 27774,
+            "address": "193.160.141.81",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "id": "653137c6-474e-4a3d-9a20-5a5afb3d4a4f"
+                "flow": "xtls-rprx-vision",
+                "id": "ee82f319-ab92-425d-8e04-28a29f33f670"
               }
             ]
           }
@@ -1056,9 +1079,14 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "none"
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "apple.com"
+        },
+        "security": "reality"
       },
-      "tag": "resilient-83d5d990e2d09487"
+      "tag": "resilient-6a07989e24d86c64"
     },
     {
       "protocol": "vless",
@@ -1139,34 +1167,6 @@
         "security": "reality"
       },
       "tag": "resilient-77585573aa6fc729"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "193.160.140.154",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "54d1afe5-f5aa-47e6-a02f-6c41a6f886b3"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "gb.ozon.ru"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-9af7dd070b6ed252"
     },
     {
       "protocol": "blackhole",
