@@ -1,0 +1,32 @@
+{
+  "artifact_hash": "6fae427cb22ecf0273828e749ab07ebcaa5cca0213366bcfc31ff67c91b8c0e8",
+  "by_protocol": {
+    "vless": 42
+  },
+  "by_source": {
+    "configforge-vless": 12,
+    "iboxz-vless-probationary": 30
+  },
+  "by_transport_family": {
+    "vless:grpc:reality": 1,
+    "vless:tcp:none": 7,
+    "vless:tcp:reality": 16,
+    "vless:ws:none": 4,
+    "vless:ws:tls": 14
+  },
+  "created_at": "2026-10-30T07:16:36.816737+00:00",
+  "notice": "Recent TCP-reachability evidence from the validator origin with anti-concentration selection; not an end-to-end or Iran-availability guarantee.",
+  "reachable_count": 85,
+  "schema_version": 1,
+  "selected_count": 42,
+  "selection": {
+    "endpoint_limit": 1,
+    "input_order": "repository stability score then latest successful TCP latency",
+    "max_protocol_share": 0.7,
+    "max_source_share": 0.5,
+    "max_transport_family_share": 0.5
+  },
+  "snapshot_id": "20261030T071636Z-6fae427cb22e",
+  "source_errors": {},
+  "tier": "tcp-reachable-diverse-v1"
+}
