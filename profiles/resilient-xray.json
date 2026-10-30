@@ -227,56 +227,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.66.140.62",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "160ca353-676d-4b7f-a041-0289e388b865"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-ae933792641aa450"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.64.150.28",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "6202b230-417c-4d8e-b624-0f71afa9c75d"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-a79f917c829d7d71"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "199.232.78.160",
             "port": 443,
             "users": [
@@ -533,6 +483,31 @@
       "settings": {
         "vnext": [
           {
+            "address": "188.114.97.6",
+            "port": 8080,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e5c5c336-8ca7-44bc-82d6-0473a55ad1ae"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-beee44c1cbeaae2b"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "15.204.97.206",
             "port": 23576,
             "users": [
@@ -622,34 +597,6 @@
         "security": "none"
       },
       "tag": "resilient-a7a9845ba54bae95"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "113.30.154.207",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "ca926603-c678-4639-b726-a5b82d7e110c"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "apple.com"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-518e71e780d74ea8"
     },
     {
       "protocol": "vless",
@@ -1150,6 +1097,63 @@
         "security": "reality"
       },
       "tag": "resilient-091d3004e753db26"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "193.160.141.81",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "ee82f319-ab92-425d-8e04-28a29f33f670"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "apple.com"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-6a07989e24d86c64"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "159.65.51.189",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d342d11e-d224-4463-b982-532309285094"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ccc.010304.xyz"
+        },
+        "wsSettings": {
+          "path": "/fp=chrome"
+        }
+      },
+      "tag": "resilient-7fe3ed841716ff6c"
     },
     {
       "protocol": "vless",

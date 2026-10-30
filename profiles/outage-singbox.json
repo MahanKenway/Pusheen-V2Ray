@@ -124,36 +124,6 @@
     },
     {
       "network": "tcp",
-      "server": "172.66.140.62",
-      "server_port": 8880,
-      "tag": "outage-ae933792641aa450",
-      "transport": {
-        "headers": {
-          "Host": "skk.moe"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "160ca353-676d-4b7f-a041-0289e388b865"
-    },
-    {
-      "network": "tcp",
-      "server": "172.64.150.28",
-      "server_port": 8880,
-      "tag": "outage-a79f917c829d7d71",
-      "transport": {
-        "headers": {
-          "Host": "vms.lifetime29.workers.dev"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    },
-    {
-      "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
       "tag": "outage-2a7df76ac077a852",
@@ -268,6 +238,25 @@
     },
     {
       "network": "tcp",
+      "server": "209.94.90.201",
+      "server_port": 2083,
+      "tag": "outage-5b4afb6de5f0b67d",
+      "tls": {
+        "enabled": true,
+        "server_name": "vipfree.dr-ping.ir"
+      },
+      "transport": {
+        "headers": {
+          "Host": "vipfree.dr-ping.ir"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "a6ad7987-f17e-41fa-a752-72db9a725eb2"
+    },
+    {
+      "network": "tcp",
       "server": "141.193.27.4",
       "server_port": 80,
       "tag": "outage-49cdbe00222878df",
@@ -282,6 +271,21 @@
       "uuid": "e403856e-4e50-49e6-9edc-d9536a803a6a"
     },
     {
+      "network": "tcp",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "tag": "outage-beee44c1cbeaae2b",
+      "transport": {
+        "headers": {
+          "Host": "pingoneorg.hydrash.workers.dev"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "e5c5c336-8ca7-44bc-82d6-0473a55ad1ae"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -292,15 +296,15 @@
         "outage-3282cc13a80d500b",
         "outage-ff99009ae3526b2e",
         "outage-07e76c604420d5f3",
-        "outage-ae933792641aa450",
-        "outage-a79f917c829d7d71",
         "outage-2a7df76ac077a852",
         "outage-4ebd005b73eec062",
         "outage-3764995e542e2ce0",
         "outage-6b7d67c4850b553e",
         "outage-f7998d94b73581ea",
         "outage-1ede006bcae72501",
-        "outage-49cdbe00222878df"
+        "outage-5b4afb6de5f0b67d",
+        "outage-49cdbe00222878df",
+        "outage-beee44c1cbeaae2b"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
