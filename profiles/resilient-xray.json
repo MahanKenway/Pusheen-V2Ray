@@ -277,6 +277,64 @@
       "settings": {
         "vnext": [
           {
+            "address": "199.232.78.160",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "XpnTeam-66"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "cdn.akamai.steamstatic.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-2a7df76ac077a852"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "192.200.160.14",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "53bea386-912e-4fe3-9eff-59c2285a176c"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "9.neshaan.org"
+        },
+        "wsSettings": {
+          "path": "/admins?ed=2560"
+        }
+      },
+      "tag": "resilient-4ebd005b73eec062"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "146.75.59.186",
             "port": 443,
             "users": [
@@ -335,35 +393,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "chatgpt.com",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "d342d11e-d224-4463-b982-532309285094"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "ccc.010304.xyz"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-7a1d2a4ca3d6600b"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "104.21.41.86",
             "port": 443,
             "users": [
@@ -398,7 +427,7 @@
             "users": [
               {
                 "encryption": "none",
-                "id": "f9a9aa1f-75fb-4490-9155-85567af7a0ff"
+                "id": "46cb8a26-0712-4e85-89bf-2538a2788652"
               }
             ]
           }
@@ -415,36 +444,7 @@
           "path": "/"
         }
       },
-      "tag": "resilient-34909d96ba841c25"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.160",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e9a9d2ba-8c33-4e5e-a903-efa595db2fff"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "firefox.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-957b9692d2c275a0"
+      "tag": "resilient-1ede006bcae72501"
     },
     {
       "protocol": "vless",
@@ -817,28 +817,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "18.171.125.127",
-            "port": 22222,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-58ec042fefeb8c3a"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "51.158.206.12",
             "port": 23576,
             "users": [
@@ -1116,6 +1094,34 @@
         "security": "reality"
       },
       "tag": "resilient-98a96799dd74b7f0"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "9.247.23.209",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "b9bfa54d-bc44-4592-a6d6-89a9665d286f"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "mother-earth.fyi"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-f85bc0427e11a745"
     },
     {
       "protocol": "vless",

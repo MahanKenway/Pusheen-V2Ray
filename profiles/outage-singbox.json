@@ -154,6 +154,44 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "tag": "outage-2a7df76ac077a852",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "XpnTeam-66"
+    },
+    {
+      "network": "tcp",
+      "server": "192.200.160.14",
+      "server_port": 2053,
+      "tag": "outage-4ebd005b73eec062",
+      "tls": {
+        "enabled": true,
+        "server_name": "9.neshaan.org"
+      },
+      "transport": {
+        "headers": {
+          "Host": "9.neshaan.org"
+        },
+        "path": "/admins?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "53bea386-912e-4fe3-9eff-59c2285a176c"
+    },
+    {
+      "network": "tcp",
       "server": "146.75.59.186",
       "server_port": 443,
       "tag": "outage-3764995e542e2ce0",
@@ -192,25 +230,6 @@
     },
     {
       "network": "tcp",
-      "server": "chatgpt.com",
-      "server_port": 443,
-      "tag": "outage-7a1d2a4ca3d6600b",
-      "tls": {
-        "enabled": true,
-        "server_name": "ccc.010304.xyz"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ccc.010304.xyz"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "d342d11e-d224-4463-b982-532309285094"
-    },
-    {
-      "network": "tcp",
       "server": "104.21.41.86",
       "server_port": 443,
       "tag": "outage-f7998d94b73581ea",
@@ -232,7 +251,7 @@
       "network": "tcp",
       "server": "167.82.64.64",
       "server_port": 443,
-      "tag": "outage-34909d96ba841c25",
+      "tag": "outage-1ede006bcae72501",
       "tls": {
         "enabled": true,
         "server_name": "cdn.akamai.steamstatic.com"
@@ -245,26 +264,7 @@
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "f9a9aa1f-75fb-4490-9155-85567af7a0ff"
-    },
-    {
-      "network": "tcp",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "tag": "outage-957b9692d2c275a0",
-      "tls": {
-        "enabled": true,
-        "server_name": "firefox.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "firefox.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "e9a9d2ba-8c33-4e5e-a903-efa595db2fff"
+      "uuid": "46cb8a26-0712-4e85-89bf-2538a2788652"
     },
     {
       "network": "tcp",
@@ -294,12 +294,12 @@
         "outage-07e76c604420d5f3",
         "outage-ae933792641aa450",
         "outage-a79f917c829d7d71",
+        "outage-2a7df76ac077a852",
+        "outage-4ebd005b73eec062",
         "outage-3764995e542e2ce0",
         "outage-6b7d67c4850b553e",
-        "outage-7a1d2a4ca3d6600b",
         "outage-f7998d94b73581ea",
-        "outage-34909d96ba841c25",
-        "outage-957b9692d2c275a0",
+        "outage-1ede006bcae72501",
         "outage-49cdbe00222878df"
       ],
       "tag": "outage-auto",
