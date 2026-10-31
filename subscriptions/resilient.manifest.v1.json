@@ -1,5 +1,5 @@
 {
-  "artifact_hash": "34cfa19cdcaaa4d80d269843ac2b2954fc08c0d9d9775dbfef301d722a513b1f",
+  "artifact_hash": "d63c9dbcf743fa109ac109d6a1bf84ab5ab093f8e9a351d1a2de8342157dc8f9",
   "by_protocol": {
     "vless": 42
   },
@@ -8,15 +8,16 @@
     "iboxz-vless-probationary": 29
   },
   "by_transport_family": {
-    "vless:grpc:reality": 2,
+    "vless:grpc:reality": 3,
+    "vless:grpc:tls": 1,
     "vless:tcp:none": 5,
     "vless:tcp:reality": 18,
-    "vless:ws:none": 5,
-    "vless:ws:tls": 12
+    "vless:ws:none": 4,
+    "vless:ws:tls": 11
   },
-  "created_at": "2026-10-31T08:48:00.335610+00:00",
+  "created_at": "2026-10-31T14:50:13.081585+00:00",
   "notice": "Recent TCP-reachability evidence from the validator origin with anti-concentration selection; not an end-to-end or Iran-availability guarantee.",
-  "reachable_count": 88,
+  "reachable_count": 87,
   "schema_version": 1,
   "selected_count": 42,
   "selection": {
@@ -26,7 +27,7 @@
     "max_source_share": 0.5,
     "max_transport_family_share": 0.5
   },
-  "snapshot_id": "20261031T084800Z-34cfa19cdcaa",
+  "snapshot_id": "20261031T145013Z-d63c9dbcf743",
   "source_errors": {
     "ebrasha-trojan-probationary": "SOURCE_HTTP_404",
     "farid-iran-trojan-probationary": "SOURCE_TOO_LARGE",

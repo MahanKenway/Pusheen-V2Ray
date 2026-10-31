@@ -52,40 +52,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.170",
-      "server_port": 443,
-      "tag": "outage-7bf5a871ad01714b",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "XpnTeam-59"
-    },
-    {
-      "network": "tcp",
-      "server": "172.65.90.52",
-      "server_port": 8880,
-      "tag": "outage-b2d2620dbc766dfb",
-      "transport": {
-        "headers": {
-          "Host": "blue-rice-7142.30-346.workers.dev"
-        },
-        "path": "/pyip=ProxyIP.US.CMLiussss.net",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "30e4c878-15ca-4f53-ab32-04c60ecd3f31"
-    },
-    {
-      "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
       "tag": "outage-2a7df76ac077a852",
@@ -124,25 +90,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.159",
-      "server_port": 443,
-      "tag": "outage-05d365f38c74532a",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "46cb8a26-0712-4e85-89bf-2538a2788652"
-    },
-    {
-      "network": "tcp",
       "server": "146.75.59.186",
       "server_port": 443,
       "tag": "outage-3764995e542e2ce0",
@@ -159,6 +106,25 @@
       },
       "type": "vless",
       "uuid": "46cb8a26-0712-4e85-89bf-2538a2788652"
+    },
+    {
+      "network": "tcp",
+      "server": "199.232.78.170",
+      "server_port": 443,
+      "tag": "outage-8e20923554b7e74e",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "XpnTeam-65"
     },
     {
       "network": "tcp",
@@ -277,12 +243,10 @@
       "outbounds": [
         "outage-1d86a239383654b6",
         "outage-be8b81ff15025722",
-        "outage-7bf5a871ad01714b",
-        "outage-b2d2620dbc766dfb",
         "outage-2a7df76ac077a852",
         "outage-4ebd005b73eec062",
-        "outage-05d365f38c74532a",
         "outage-3764995e542e2ce0",
+        "outage-8e20923554b7e74e",
         "outage-96a5bb4b98bcc13b",
         "outage-d101a8bb1e7dc985",
         "outage-b118a6d9c161d11d",
