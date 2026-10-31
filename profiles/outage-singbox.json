@@ -234,44 +234,6 @@
     },
     {
       "network": "tcp",
-      "server": "167.82.64.64",
-      "server_port": 443,
-      "tag": "outage-1ede006bcae72501",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "46cb8a26-0712-4e85-89bf-2538a2788652"
-    },
-    {
-      "network": "tcp",
-      "server": "209.94.90.201",
-      "server_port": 2083,
-      "tag": "outage-5b4afb6de5f0b67d",
-      "tls": {
-        "enabled": true,
-        "server_name": "vipfree.dr-ping.ir"
-      },
-      "transport": {
-        "headers": {
-          "Host": "vipfree.dr-ping.ir"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "a6ad7987-f17e-41fa-a752-72db9a725eb2"
-    },
-    {
-      "network": "tcp",
       "server": "141.193.27.4",
       "server_port": 80,
       "tag": "outage-49cdbe00222878df",
@@ -301,6 +263,14 @@
       "uuid": "e5c5c336-8ca7-44bc-82d6-0473a55ad1ae"
     },
     {
+      "network": "tcp",
+      "server": "51.158.206.29",
+      "server_port": 23576,
+      "tag": "outage-97f37c323dc52621",
+      "type": "vless",
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -317,10 +287,9 @@
         "outage-d101a8bb1e7dc985",
         "outage-b118a6d9c161d11d",
         "outage-f7998d94b73581ea",
-        "outage-1ede006bcae72501",
-        "outage-5b4afb6de5f0b67d",
         "outage-49cdbe00222878df",
-        "outage-beee44c1cbeaae2b"
+        "outage-beee44c1cbeaae2b",
+        "outage-97f37c323dc52621"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
