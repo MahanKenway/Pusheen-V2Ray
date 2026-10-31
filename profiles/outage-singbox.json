@@ -181,6 +181,25 @@
     },
     {
       "network": "tcp",
+      "server": "172.64.152.241",
+      "server_port": 443,
+      "tag": "outage-7dc656748a97aee5",
+      "tls": {
+        "enabled": true,
+        "server_name": "ccc.010304.xyz"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ccc.010304.xyz"
+        },
+        "path": "/fp=chrome",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "d342d11e-d224-4463-b982-532309285094"
+    },
+    {
+      "network": "tcp",
       "server": "104.21.41.86",
       "server_port": 443,
       "tag": "outage-f7998d94b73581ea",
@@ -250,6 +269,7 @@
         "outage-96a5bb4b98bcc13b",
         "outage-d101a8bb1e7dc985",
         "outage-b118a6d9c161d11d",
+        "outage-7dc656748a97aee5",
         "outage-f7998d94b73581ea",
         "outage-49cdbe00222878df",
         "outage-beee44c1cbeaae2b",

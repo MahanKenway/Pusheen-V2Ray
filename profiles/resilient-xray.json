@@ -342,6 +342,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "172.64.152.241",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d342d11e-d224-4463-b982-532309285094"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ccc.010304.xyz"
+        },
+        "wsSettings": {
+          "path": "/fp=chrome"
+        }
+      },
+      "tag": "resilient-7dc656748a97aee5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "104.21.41.86",
             "port": 443,
             "users": [
@@ -1163,35 +1192,6 @@
         "security": "reality"
       },
       "tag": "resilient-091d3004e753db26"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "62.210.91.2",
-            "port": 23576,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "serverName": "fuck.rkn",
-          "shortId": "01"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-36435c784b3f3d99"
     },
     {
       "protocol": "blackhole",
