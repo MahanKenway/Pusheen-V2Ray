@@ -90,25 +90,6 @@
     },
     {
       "network": "tcp",
-      "server": "146.75.59.186",
-      "server_port": 443,
-      "tag": "outage-3764995e542e2ce0",
-      "tls": {
-        "enabled": true,
-        "server_name": "firefox.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "firefox.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "46cb8a26-0712-4e85-89bf-2538a2788652"
-    },
-    {
-      "network": "tcp",
       "server": "199.232.78.170",
       "server_port": 443,
       "tag": "outage-8e20923554b7e74e",
@@ -125,6 +106,25 @@
       },
       "type": "vless",
       "uuid": "XpnTeam-65"
+    },
+    {
+      "network": "tcp",
+      "server": "chatgpt.com",
+      "server_port": 443,
+      "tag": "outage-6330f3764d23af87",
+      "tls": {
+        "enabled": true,
+        "server_name": "ccc.010304.xyz"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ccc.010304.xyz"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "d342d11e-d224-4463-b982-532309285094"
     },
     {
       "network": "tcp",
@@ -200,6 +200,25 @@
     },
     {
       "network": "tcp",
+      "server": "146.75.59.186",
+      "server_port": 443,
+      "tag": "outage-6b93b3ba037f834d",
+      "tls": {
+        "enabled": true,
+        "server_name": "firefox.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "firefox.com"
+        },
+        "path": "/?TELEGRAM--FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE--TELEGRAM",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "f9a9aa1f-75fb-4490-9155-85567af7a0ff"
+    },
+    {
+      "network": "tcp",
       "server": "104.21.41.86",
       "server_port": 443,
       "tag": "outage-f7998d94b73581ea",
@@ -248,14 +267,6 @@
       "uuid": "e5c5c336-8ca7-44bc-82d6-0473a55ad1ae"
     },
     {
-      "network": "tcp",
-      "server": "51.158.206.29",
-      "server_port": 23576,
-      "tag": "outage-97f37c323dc52621",
-      "type": "vless",
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -264,16 +275,16 @@
         "outage-be8b81ff15025722",
         "outage-2a7df76ac077a852",
         "outage-4ebd005b73eec062",
-        "outage-3764995e542e2ce0",
         "outage-8e20923554b7e74e",
+        "outage-6330f3764d23af87",
         "outage-96a5bb4b98bcc13b",
         "outage-d101a8bb1e7dc985",
         "outage-b118a6d9c161d11d",
         "outage-7dc656748a97aee5",
+        "outage-6b93b3ba037f834d",
         "outage-f7998d94b73581ea",
         "outage-49cdbe00222878df",
-        "outage-beee44c1cbeaae2b",
-        "outage-97f37c323dc52621"
+        "outage-beee44c1cbeaae2b"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
