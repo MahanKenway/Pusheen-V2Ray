@@ -376,6 +376,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "188.114.97.8",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d4d2d3f3-9dec-4e8f-8daf-145ecac96e66"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv"
+        },
+        "wsSettings": {
+          "path": "/eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
+        }
+      },
+      "tag": "resilient-9e20c61f6a8f038c"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "188.114.97.6",
             "port": 443,
             "users": [
@@ -676,6 +705,87 @@
         "security": "reality"
       },
       "tag": "resilient-77d4c42baf2d3839"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.236.96.70",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision-udp443",
+                "id": "5f56202c-7741-45be-a9f9-eab2d1b7575d"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "t1EfLTZbuteZoUMYJ45eMB25qXvKpyhUDczTWKyK_Hw",
+          "serverName": "play.googleapis.com",
+          "shortId": "45f605f1e9db13f9"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-3a4975a8c2a7ce00"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "47.253.226.114",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-68a32d1f467d1b3e"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "169.40.42.202",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision-udp443",
+                "id": "d65cc14c-f53f-4fe2-b262-97856601319c"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "serverName": "yahoo.com",
+          "shortId": "c39cc7310a"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-b05c1293cffda3fc"
     },
     {
       "protocol": "vless",
@@ -1052,28 +1162,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.38.161.70",
-            "port": 22222,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-6bf3c5a0894f26ef"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "199.195.193.91",
             "port": 443,
             "users": [
@@ -1097,86 +1185,6 @@
         "security": "reality"
       },
       "tag": "resilient-d1cb4f065c9594bd"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "13.39.132.84",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-66a3810a020a2a52"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.92.218.130",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "9ff5db63-88ff-4276-ab71-ac2b5cb2a740"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "I0vZxWIjZYvtzlcvGaW01Q1U3M-vHD8iI8BM5KTuuiM",
-          "serverName": "delivery.mp.microsoft.com",
-          "shortId": "d3feff5d570d6b",
-          "spiderX": "/a38e5cd3c84c243"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-7143881f6a87aeed"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.158.206.86",
-            "port": 23576,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "serverName": "fuck.rkn",
-          "shortId": "01"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-a17d4b6bd63c5083"
     },
     {
       "protocol": "blackhole",

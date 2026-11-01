@@ -3,7 +3,7 @@
     "vless": 21
   },
   "count": 21,
-  "created_at": "2026-11-01T14:28:32.051193+00:00",
+  "created_at": "2026-11-01T19:08:34.268641+00:00",
   "evidence": "recent successful TCP reachability with tighter anti-concentration policy",
   "max_evidence_age_hours": 72,
   "notice": "A receipt records why the item is eligible for this tier at publication time. It does not disclose hostnames, credentials, raw URIs, or guarantee availability from another network.",
@@ -93,6 +93,13 @@
       "transport_family": "vless:ws:tls"
     },
     {
+      "id": "9e20c61f6a8f038c",
+      "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
+      "latest_source_id": "configforge-vless",
+      "protocol": "vless",
+      "transport_family": "vless:ws:tls"
+    },
+    {
       "id": "3171ad7f710a42d2",
       "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
       "latest_source_id": "iboxz-vless-probationary",
@@ -105,13 +112,6 @@
       "latest_source_id": "configforge-vless",
       "protocol": "vless",
       "transport_family": "vless:ws:none"
-    },
-    {
-      "id": "f6dba6ce650a792e",
-      "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
-      "latest_source_id": "configforge-vless",
-      "protocol": "vless",
-      "transport_family": "vless:ws:tls"
     },
     {
       "id": "b3f0e0ae0a248dc1",
@@ -149,11 +149,11 @@
       "transport_family": "vless:grpc:reality"
     },
     {
-      "id": "a17d4b6bd63c5083",
+      "id": "1e08feffa02b7f6d",
       "inclusion": "selected from recent TCP-reachability evidence after tighter source, protocol, endpoint, and transport anti-concentration policy",
       "latest_source_id": "configforge-vless",
       "protocol": "vless",
-      "transport_family": "vless:tcp:reality"
+      "transport_family": "vless:grpc:reality"
     }
   ],
   "schema_version": 1,

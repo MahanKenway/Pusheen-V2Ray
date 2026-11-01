@@ -223,6 +223,25 @@
     },
     {
       "network": "tcp",
+      "server": "188.114.97.8",
+      "server_port": 8443,
+      "tag": "outage-9e20c61f6a8f038c",
+      "tls": {
+        "enabled": true,
+        "server_name": "cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv"
+        },
+        "path": "/eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "d4d2d3f3-9dec-4e8f-8daf-145ecac96e66"
+    },
+    {
+      "network": "tcp",
       "server": "188.114.97.6",
       "server_port": 443,
       "tag": "outage-3171ad7f710a42d2",
@@ -254,25 +273,6 @@
       },
       "type": "vless",
       "uuid": "74ed78f1-4095-47e6-b043-094e494fb7e5"
-    },
-    {
-      "network": "tcp",
-      "server": "104.17.70.206",
-      "server_port": 8443,
-      "tag": "outage-f6dba6ce650a792e",
-      "tls": {
-        "enabled": true,
-        "server_name": "free.sahanwickramasinghe.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "free.sahanwickramasinghe.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "5f704d93-7e7f-45b5-81f5-08db4a946220"
     },
     {
       "network": "tcp",
@@ -320,9 +320,9 @@
         "outage-4ebd005b73eec062",
         "outage-8e20923554b7e74e",
         "outage-6330f3764d23af87",
+        "outage-9e20c61f6a8f038c",
         "outage-3171ad7f710a42d2",
         "outage-b118a6d9c161d11d",
-        "outage-f6dba6ce650a792e",
         "outage-49cdbe00222878df",
         "outage-beee44c1cbeaae2b"
       ],
