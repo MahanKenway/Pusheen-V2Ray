@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "146.75.59.186",
+      "server_port": 443,
+      "tag": "outage-2f603f1598d22f99",
+      "tls": {
+        "enabled": true,
+        "server_name": "firefox.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "firefox.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "780aa2f6-1a02-4fa2-bcd0-fa7d469bdff7"
+    },
+    {
+      "network": "tcp",
       "server": "188.114.98.0",
       "server_port": 443,
       "tag": "outage-1d86a239383654b6",
@@ -128,6 +147,25 @@
     },
     {
       "network": "tcp",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "tag": "outage-3171ad7f710a42d2",
+      "tls": {
+        "enabled": true,
+        "server_name": "lucasjow.us.ci"
+      },
+      "transport": {
+        "headers": {
+          "Host": "lucasjow.us.ci"
+        },
+        "path": "/cart/docs/www/proxyip",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870"
+    },
+    {
+      "network": "tcp",
       "server": "104.21.221.158",
       "server_port": 443,
       "tag": "outage-96a5bb4b98bcc13b",
@@ -181,41 +219,22 @@
     },
     {
       "network": "tcp",
-      "server": "172.64.152.241",
-      "server_port": 443,
-      "tag": "outage-7dc656748a97aee5",
+      "server": "104.17.70.206",
+      "server_port": 8443,
+      "tag": "outage-f6dba6ce650a792e",
       "tls": {
         "enabled": true,
-        "server_name": "ccc.010304.xyz"
+        "server_name": "free.sahanwickramasinghe.com"
       },
       "transport": {
         "headers": {
-          "Host": "ccc.010304.xyz"
+          "Host": "free.sahanwickramasinghe.com"
         },
-        "path": "/fp=chrome",
+        "path": "/",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "d342d11e-d224-4463-b982-532309285094"
-    },
-    {
-      "network": "tcp",
-      "server": "146.75.59.186",
-      "server_port": 443,
-      "tag": "outage-6b93b3ba037f834d",
-      "tls": {
-        "enabled": true,
-        "server_name": "firefox.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "firefox.com"
-        },
-        "path": "/?TELEGRAM--FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE--TELEGRAM",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "f9a9aa1f-75fb-4490-9155-85567af7a0ff"
+      "uuid": "5f704d93-7e7f-45b5-81f5-08db4a946220"
     },
     {
       "network": "tcp",
@@ -271,17 +290,18 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-2f603f1598d22f99",
         "outage-1d86a239383654b6",
         "outage-be8b81ff15025722",
         "outage-2a7df76ac077a852",
         "outage-4ebd005b73eec062",
         "outage-8e20923554b7e74e",
         "outage-6330f3764d23af87",
+        "outage-3171ad7f710a42d2",
         "outage-96a5bb4b98bcc13b",
         "outage-d101a8bb1e7dc985",
         "outage-b118a6d9c161d11d",
-        "outage-7dc656748a97aee5",
-        "outage-6b93b3ba037f834d",
+        "outage-f6dba6ce650a792e",
         "outage-f7998d94b73581ea",
         "outage-49cdbe00222878df",
         "outage-beee44c1cbeaae2b"
