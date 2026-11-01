@@ -16,7 +16,7 @@
       "network": "tcp",
       "server": "146.75.59.186",
       "server_port": 443,
-      "tag": "outage-2f603f1598d22f99",
+      "tag": "outage-0f0872da162c0bf3",
       "tls": {
         "enabled": true,
         "server_name": "firefox.com"
@@ -30,6 +30,44 @@
       },
       "type": "vless",
       "uuid": "780aa2f6-1a02-4fa2-bcd0-fa7d469bdff7"
+    },
+    {
+      "network": "tcp",
+      "server": "199.232.78.120",
+      "server_port": 443,
+      "tag": "outage-9481b102d044a375",
+      "tls": {
+        "enabled": true,
+        "server_name": "firefox.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "firefox.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "7cefd992-452a-4c28-86bb-6195876582cf"
+    },
+    {
+      "network": "tcp",
+      "server": "63.141.128.22",
+      "server_port": 443,
+      "tag": "outage-2566fd9a291472a0",
+      "tls": {
+        "enabled": true,
+        "server_name": "MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv"
+      },
+      "transport": {
+        "headers": {
+          "Host": "MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv"
+        },
+        "path": "/eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "b8b01773-36b1-4b49-9bd0-6249f52345b4"
     },
     {
       "network": "tcp",
@@ -185,25 +223,6 @@
     },
     {
       "network": "tcp",
-      "server": "188.114.96.198",
-      "server_port": 443,
-      "tag": "outage-d101a8bb1e7dc985",
-      "tls": {
-        "enabled": true,
-        "server_name": "tepar-k4j9.jounet.workers.dev"
-      },
-      "transport": {
-        "headers": {
-          "Host": "tepar-k4j9.jounet.workers.dev"
-        },
-        "path": "/stream/DEVCOP/8651a8ada76c/loc-1",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "b15f187e-9b34-437c-8243-8651a8ada76c"
-    },
-    {
-      "network": "tcp",
       "server": "45.131.4.115",
       "server_port": 80,
       "tag": "outage-b118a6d9c161d11d",
@@ -290,7 +309,9 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
-        "outage-2f603f1598d22f99",
+        "outage-0f0872da162c0bf3",
+        "outage-9481b102d044a375",
+        "outage-2566fd9a291472a0",
         "outage-1d86a239383654b6",
         "outage-be8b81ff15025722",
         "outage-2a7df76ac077a852",
@@ -299,7 +320,6 @@
         "outage-6330f3764d23af87",
         "outage-3171ad7f710a42d2",
         "outage-96a5bb4b98bcc13b",
-        "outage-d101a8bb1e7dc985",
         "outage-b118a6d9c161d11d",
         "outage-f6dba6ce650a792e",
         "outage-f7998d94b73581ea",
