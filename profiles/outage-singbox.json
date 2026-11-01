@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "tag": "outage-8552e4c40642103a",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "780aa2f6-1a02-4fa2-bcd0-fa7d469bdff7"
+    },
+    {
+      "network": "tcp",
       "server": "146.75.59.186",
       "server_port": 443,
       "tag": "outage-0f0872da162c0bf3",
@@ -49,6 +68,25 @@
       },
       "type": "vless",
       "uuid": "7cefd992-452a-4c28-86bb-6195876582cf"
+    },
+    {
+      "network": "tcp",
+      "server": "188.164.248.216",
+      "server_port": 443,
+      "tag": "outage-483685db58fc494e",
+      "tls": {
+        "enabled": true,
+        "server_name": "ccc.010304.xyz"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ccc.010304.xyz"
+        },
+        "path": "/?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "d342d11e-d224-4463-b982-532309285094"
     },
     {
       "network": "tcp",
@@ -204,25 +242,6 @@
     },
     {
       "network": "tcp",
-      "server": "104.21.221.158",
-      "server_port": 443,
-      "tag": "outage-96a5bb4b98bcc13b",
-      "tls": {
-        "enabled": true,
-        "server_name": "ccc.010304.xyz"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ccc.010304.xyz"
-        },
-        "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "d342d11e-d224-4463-b982-532309285094"
-    },
-    {
-      "network": "tcp",
       "server": "45.131.4.115",
       "server_port": 80,
       "tag": "outage-b118a6d9c161d11d",
@@ -254,25 +273,6 @@
       },
       "type": "vless",
       "uuid": "5f704d93-7e7f-45b5-81f5-08db4a946220"
-    },
-    {
-      "network": "tcp",
-      "server": "104.21.41.86",
-      "server_port": 443,
-      "tag": "outage-f7998d94b73581ea",
-      "tls": {
-        "enabled": true,
-        "server_name": "lczoox-b5gygc-24w8tc.rozhaghadri.workers.dev"
-      },
-      "transport": {
-        "headers": {
-          "Host": "lczoox-b5gygc-24w8tc.rozhaghadri.workers.dev"
-        },
-        "path": "/sync",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "26086552-5b79-d167-dd18-1ea000000000"
     },
     {
       "network": "tcp",
@@ -309,8 +309,10 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-8552e4c40642103a",
         "outage-0f0872da162c0bf3",
         "outage-9481b102d044a375",
+        "outage-483685db58fc494e",
         "outage-2566fd9a291472a0",
         "outage-1d86a239383654b6",
         "outage-be8b81ff15025722",
@@ -319,10 +321,8 @@
         "outage-8e20923554b7e74e",
         "outage-6330f3764d23af87",
         "outage-3171ad7f710a42d2",
-        "outage-96a5bb4b98bcc13b",
         "outage-b118a6d9c161d11d",
         "outage-f6dba6ce650a792e",
-        "outage-f7998d94b73581ea",
         "outage-49cdbe00222878df",
         "outage-beee44c1cbeaae2b"
       ],
