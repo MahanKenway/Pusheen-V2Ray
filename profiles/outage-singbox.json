@@ -155,6 +155,25 @@
     },
     {
       "network": "tcp",
+      "server": "104.19.215.97",
+      "server_port": 2087,
+      "tag": "outage-373ee5968485a37f",
+      "tls": {
+        "enabled": true,
+        "server_name": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+      },
+      "transport": {
+        "headers": {
+          "Host": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+    },
+    {
+      "network": "tcp",
       "server": "188.114.97.8",
       "server_port": 8443,
       "tag": "outage-9e20c61f6a8f038c",
@@ -190,59 +209,6 @@
       },
       "type": "vless",
       "uuid": "e6df2095-a73c-4043-8693-8d5a03686870"
-    },
-    {
-      "network": "tcp",
-      "server": "104.21.221.158",
-      "server_port": 443,
-      "tag": "outage-96a5bb4b98bcc13b",
-      "tls": {
-        "enabled": true,
-        "server_name": "ccc.010304.xyz"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ccc.010304.xyz"
-        },
-        "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "d342d11e-d224-4463-b982-532309285094"
-    },
-    {
-      "network": "tcp",
-      "server": "188.114.96.198",
-      "server_port": 443,
-      "tag": "outage-d101a8bb1e7dc985",
-      "tls": {
-        "enabled": true,
-        "server_name": "tepar-k4j9.jounet.workers.dev"
-      },
-      "transport": {
-        "headers": {
-          "Host": "tepar-k4j9.jounet.workers.dev"
-        },
-        "path": "/stream/DEVCOP/8651a8ada76c/loc-1",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "b15f187e-9b34-437c-8243-8651a8ada76c"
-    },
-    {
-      "network": "tcp",
-      "server": "45.131.4.115",
-      "server_port": 80,
-      "tag": "outage-b118a6d9c161d11d",
-      "transport": {
-        "headers": {
-          "Host": "worker3.gisenoj224.workers.dev"
-        },
-        "path": "/sVnT0vhrV7WAl52Z",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "74ed78f1-4095-47e6-b043-094e494fb7e5"
     },
     {
       "network": "tcp",
@@ -283,6 +249,25 @@
       "uuid": "780aa2f6-1a02-4fa2-bcd0-fa7d469bdff7"
     },
     {
+      "network": "tcp",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "tag": "outage-b8c89909b40095f5",
+      "tls": {
+        "enabled": true,
+        "server_name": "community.fastly.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "community.fastly.steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "3d9d91c0-0a90-471a-a518-a0ff66a1970a"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -295,13 +280,12 @@
         "outage-1d86a239383654b6",
         "outage-b104859ce196f1b5",
         "outage-6330f3764d23af87",
+        "outage-373ee5968485a37f",
         "outage-9e20c61f6a8f038c",
         "outage-3171ad7f710a42d2",
-        "outage-96a5bb4b98bcc13b",
-        "outage-d101a8bb1e7dc985",
-        "outage-b118a6d9c161d11d",
         "outage-f6dba6ce650a792e",
-        "outage-9cdb1c5942bdc55e"
+        "outage-9cdb1c5942bdc55e",
+        "outage-b8c89909b40095f5"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
