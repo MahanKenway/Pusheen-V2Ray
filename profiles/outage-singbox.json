@@ -109,22 +109,22 @@
     },
     {
       "network": "tcp",
-      "server": "188.114.98.0",
+      "server": "146.75.57.111",
       "server_port": 443,
-      "tag": "outage-1d86a239383654b6",
+      "tag": "outage-4428c2929afb1340",
       "tls": {
         "enabled": true,
-        "server_name": "jyfrj1cims.dev.onappjet.com"
+        "server_name": "cdn.akamai.steamstatic.com"
       },
       "transport": {
         "headers": {
-          "Host": "jyfrj1cims.dev.onappjet.com"
+          "Host": "cdn.akamai.steamstatic.com"
         },
-        "path": "/jx-yjkteysq815pzp",
+        "path": "/",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "49996e29-93c5-4975-b56f-792acbbf3444"
+      "uuid": "3d9d91c0-0a90-471a-a518-a0ff66a1970a"
     },
     {
       "network": "tcp",
@@ -133,6 +133,25 @@
       "tag": "outage-b104859ce196f1b5",
       "type": "vless",
       "uuid": "d342d11e-d224-4463-b982-532309285094"
+    },
+    {
+      "network": "tcp",
+      "server": "188.114.98.0",
+      "server_port": 443,
+      "tag": "outage-6d489d656a0c76b5",
+      "tls": {
+        "enabled": true,
+        "server_name": "n04.jinggai.online"
+      },
+      "transport": {
+        "headers": {
+          "Host": "n04.jinggai.online"
+        },
+        "path": "/nvl-n04-ws/e0577fe8fd7c8823",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a"
     },
     {
       "network": "tcp",
@@ -277,8 +296,9 @@
         "outage-9481b102d044a375",
         "outage-483685db58fc494e",
         "outage-2566fd9a291472a0",
-        "outage-1d86a239383654b6",
+        "outage-4428c2929afb1340",
         "outage-b104859ce196f1b5",
+        "outage-6d489d656a0c76b5",
         "outage-6330f3764d23af87",
         "outage-373ee5968485a37f",
         "outage-9e20c61f6a8f038c",
