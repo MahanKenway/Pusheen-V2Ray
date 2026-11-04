@@ -1,5 +1,5 @@
 {
-  "artifact_hash": "052ae113b62165a45d90f354f8b0c325fcc52a29c4eb69a220964930ddd50624",
+  "artifact_hash": "443ce9573ea7cd0781d3b9832b8e3e5d302f757b010678c1c370375fc3bbab19",
   "by_protocol": {
     "vless": 21
   },
@@ -15,9 +15,9 @@
     "vless:ws:none": 2,
     "vless:ws:tls": 12
   },
-  "created_at": "2026-11-03T22:21:57.168405+00:00",
+  "created_at": "2026-11-04T02:28:43.078167+00:00",
   "notice": "Recent TCP-reachability evidence from the validator origin with anti-concentration selection; not an end-to-end or Iran-availability guarantee.",
-  "reachable_count": 80,
+  "reachable_count": 78,
   "schema_version": 1,
   "selected_count": 21,
   "selection": {
@@ -27,7 +27,11 @@
     "max_source_share": 0.25,
     "max_transport_family_share": 0.35
   },
-  "snapshot_id": "20261103T222157Z-052ae113b621",
-  "source_errors": {},
+  "snapshot_id": "20261104T022843Z-443ce9573ea7",
+  "source_errors": {
+    "ebrasha-trojan-probationary": "SOURCE_HTTP_404",
+    "farid-iran-trojan-probationary": "SOURCE_TOO_LARGE",
+    "farid-iran-vless-probationary": "SOURCE_TOO_LARGE"
+  },
   "tier": "tcp-reachable-outage-diverse-v1"
 }
