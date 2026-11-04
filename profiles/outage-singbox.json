@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "146.75.59.186",
+      "server_port": 443,
+      "tag": "outage-02737aa6bf095d5b",
+      "tls": {
+        "enabled": true,
+        "server_name": "community.fastly.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "community.fastly.steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "72881b3f-76f7-4cae-912d-e95e602a5ca4"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.159",
       "server_port": 443,
       "tag": "outage-a11847462273729b",
@@ -30,6 +49,25 @@
       },
       "type": "vless",
       "uuid": "afed9510-8648-49c6-9fbd-c2d4d8bdd417"
+    },
+    {
+      "network": "tcp",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "tag": "outage-a5d74e0a51768f51",
+      "tls": {
+        "enabled": true,
+        "server_name": "community.fastly.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "community.fastly.steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "72881b3f-76f7-4cae-912d-e95e602a5ca4"
     },
     {
       "network": "tcp",
@@ -90,25 +128,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "tag": "outage-7544005d312df952",
-      "tls": {
-        "enabled": true,
-        "server_name": "community.fastly.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "community.fastly.steamstatic.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "afed9510-8648-49c6-9fbd-c2d4d8bdd417"
-    },
-    {
-      "network": "tcp",
       "server": "104.19.215.97",
       "server_port": 2087,
       "tag": "outage-373ee5968485a37f",
@@ -125,44 +144,6 @@
       },
       "type": "vless",
       "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
-    },
-    {
-      "network": "tcp",
-      "server": "188.114.97.8",
-      "server_port": 8443,
-      "tag": "outage-9e20c61f6a8f038c",
-      "tls": {
-        "enabled": true,
-        "server_name": "cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv"
-        },
-        "path": "/eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "d4d2d3f3-9dec-4e8f-8daf-145ecac96e66"
-    },
-    {
-      "network": "tcp",
-      "server": "146.75.59.186",
-      "server_port": 443,
-      "tag": "outage-c73e3afca5661960",
-      "tls": {
-        "enabled": true,
-        "server_name": "community.fastly.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "community.fastly.steamstatic.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "961a71bb-43d4-41db-b501-243404643155"
     },
     {
       "network": "tcp",
@@ -241,23 +222,36 @@
       "uuid": "d342d11e-d224-4463-b982-532309285094"
     },
     {
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "server": "177.177.215.45",
+      "server_port": 444,
+      "tag": "outage-c7da3b4907ba0a90",
+      "tls": {
+        "enabled": true,
+        "server_name": "ams2.shtil.io"
+      },
+      "type": "vless",
+      "uuid": "254f28cb-d0c1-41e9-a06b-f2155213ff04"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-02737aa6bf095d5b",
         "outage-a11847462273729b",
+        "outage-a5d74e0a51768f51",
         "outage-adaa71bab870dcc7",
         "outage-aab8276b4184b1d8",
         "outage-4428c2929afb1340",
         "outage-b104859ce196f1b5",
-        "outage-7544005d312df952",
         "outage-373ee5968485a37f",
-        "outage-9e20c61f6a8f038c",
-        "outage-c73e3afca5661960",
         "outage-9cdb1c5942bdc55e",
         "outage-478eb30c7f038c31",
         "outage-6286ea0c17a5ef9b",
-        "outage-f16698ef498dc3a0"
+        "outage-f16698ef498dc3a0",
+        "outage-c7da3b4907ba0a90"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
