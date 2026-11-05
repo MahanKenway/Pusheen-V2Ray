@@ -139,6 +139,25 @@
     },
     {
       "network": "tcp",
+      "server": "188.114.97.3",
+      "server_port": 443,
+      "tag": "outage-5114e912e64b03e4",
+      "tls": {
+        "enabled": true,
+        "server_name": "63yw55ibrgt8rswbfnmhapuzux4p29favnxxslbjbnmqjzz7efh95h3nfdsfdsf.d2ha6.workers.Dev"
+      },
+      "transport": {
+        "headers": {
+          "Host": "63yw55ibrgt8rswbfnmhapuzux4p29favnxxslbjbnmqjzz7efh95h3nfdsfdsf.d2ha6.workers.Dev"
+        },
+        "path": "Telegram channel : @pandavpntc",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "27135ee3-0829-4dbc-ae3e-b70e86e5d510"
+    },
+    {
+      "network": "tcp",
       "server": "172.64.52.230",
       "server_port": 2087,
       "tag": "outage-478eb30c7f038c31",
@@ -195,23 +214,18 @@
       "uuid": "d342d11e-d224-4463-b982-532309285094"
     },
     {
+      "alter_id": 0,
       "network": "tcp",
-      "server": "minimize-evenness.cdn-content.com",
-      "server_port": 443,
-      "tag": "outage-a833caca1aead92d",
+      "security": "auto",
+      "server": "167.88.62.134",
+      "server_port": 1270,
+      "tag": "outage-bf496069f5e7a375",
       "tls": {
         "enabled": true,
-        "server_name": "minimize-evenness.cdn-content.com"
+        "server_name": "xmfhlpy.com"
       },
-      "transport": {
-        "headers": {
-          "Host": "minimize-evenness.cdn-content.com"
-        },
-        "path": "/ws",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "9760fa51-423f-4000-9dd8-15eccf811982"
+      "type": "vmess",
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735"
     },
     {
       "flow": "xtls-rprx-vision",
@@ -238,10 +252,11 @@
         "outage-aab8276b4184b1d8",
         "outage-4428c2929afb1340",
         "outage-373ee5968485a37f",
+        "outage-5114e912e64b03e4",
         "outage-478eb30c7f038c31",
         "outage-6286ea0c17a5ef9b",
         "outage-f16698ef498dc3a0",
-        "outage-a833caca1aead92d",
+        "outage-bf496069f5e7a375",
         "outage-c7da3b4907ba0a90"
       ],
       "tag": "outage-auto",
