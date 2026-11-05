@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "tag": "outage-126960ce633bc40b",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "XpnTeam-88"
+    },
+    {
+      "network": "tcp",
       "server": "146.75.59.186",
       "server_port": 443,
       "tag": "outage-02737aa6bf095d5b",
@@ -49,25 +68,6 @@
       },
       "type": "vless",
       "uuid": "afed9510-8648-49c6-9fbd-c2d4d8bdd417"
-    },
-    {
-      "network": "tcp",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "tag": "outage-a5d74e0a51768f51",
-      "tls": {
-        "enabled": true,
-        "server_name": "community.fastly.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "community.fastly.steamstatic.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "72881b3f-76f7-4cae-912d-e95e602a5ca4"
     },
     {
       "network": "tcp",
@@ -147,25 +147,6 @@
     },
     {
       "network": "tcp",
-      "server": "146.75.57.238",
-      "server_port": 443,
-      "tag": "outage-9cdb1c5942bdc55e",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "780aa2f6-1a02-4fa2-bcd0-fa7d469bdff7"
-    },
-    {
-      "network": "tcp",
       "server": "172.64.52.230",
       "server_port": 2087,
       "tag": "outage-478eb30c7f038c31",
@@ -239,15 +220,14 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-126960ce633bc40b",
         "outage-02737aa6bf095d5b",
         "outage-a11847462273729b",
-        "outage-a5d74e0a51768f51",
         "outage-adaa71bab870dcc7",
         "outage-aab8276b4184b1d8",
         "outage-4428c2929afb1340",
         "outage-b104859ce196f1b5",
         "outage-373ee5968485a37f",
-        "outage-9cdb1c5942bdc55e",
         "outage-478eb30c7f038c31",
         "outage-6286ea0c17a5ef9b",
         "outage-f16698ef498dc3a0",
