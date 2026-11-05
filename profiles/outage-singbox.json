@@ -120,14 +120,6 @@
     },
     {
       "network": "tcp",
-      "server": "172.64.152.241",
-      "server_port": 443,
-      "tag": "outage-b104859ce196f1b5",
-      "type": "vless",
-      "uuid": "d342d11e-d224-4463-b982-532309285094"
-    },
-    {
-      "network": "tcp",
       "server": "104.19.215.97",
       "server_port": 2087,
       "tag": "outage-373ee5968485a37f",
@@ -203,6 +195,25 @@
       "uuid": "d342d11e-d224-4463-b982-532309285094"
     },
     {
+      "network": "tcp",
+      "server": "minimize-evenness.cdn-content.com",
+      "server_port": 443,
+      "tag": "outage-a833caca1aead92d",
+      "tls": {
+        "enabled": true,
+        "server_name": "minimize-evenness.cdn-content.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "minimize-evenness.cdn-content.com"
+        },
+        "path": "/ws",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "9760fa51-423f-4000-9dd8-15eccf811982"
+    },
+    {
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "server": "177.177.215.45",
@@ -226,11 +237,11 @@
         "outage-adaa71bab870dcc7",
         "outage-aab8276b4184b1d8",
         "outage-4428c2929afb1340",
-        "outage-b104859ce196f1b5",
         "outage-373ee5968485a37f",
         "outage-478eb30c7f038c31",
         "outage-6286ea0c17a5ef9b",
         "outage-f16698ef498dc3a0",
+        "outage-a833caca1aead92d",
         "outage-c7da3b4907ba0a90"
       ],
       "tag": "outage-auto",
