@@ -52,25 +52,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.159",
-      "server_port": 443,
-      "tag": "outage-a11847462273729b",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "afed9510-8648-49c6-9fbd-c2d4d8bdd417"
-    },
-    {
-      "network": "tcp",
       "server": "104.18.38.47",
       "server_port": 2087,
       "tag": "outage-c2046b8eec3ff1d4",
@@ -136,6 +117,25 @@
       },
       "type": "vless",
       "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+    },
+    {
+      "network": "tcp",
+      "server": "104.16.10.2",
+      "server_port": 443,
+      "tag": "outage-23d05b67b6aa1fba",
+      "tls": {
+        "enabled": true,
+        "server_name": "u.srilankangrill.online"
+      },
+      "transport": {
+        "headers": {
+          "Host": "u.srilankangrill.online"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e"
     },
     {
       "network": "tcp",
@@ -274,11 +274,11 @@
       "outbounds": [
         "outage-126960ce633bc40b",
         "outage-02737aa6bf095d5b",
-        "outage-a11847462273729b",
         "outage-c2046b8eec3ff1d4",
         "outage-adaa71bab870dcc7",
         "outage-aab8276b4184b1d8",
         "outage-14efc1ea960fdb88",
+        "outage-23d05b67b6aa1fba",
         "outage-5114e912e64b03e4",
         "outage-478eb30c7f038c31",
         "outage-6286ea0c17a5ef9b",
