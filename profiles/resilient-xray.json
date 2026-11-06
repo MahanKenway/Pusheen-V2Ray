@@ -223,7 +223,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.19.215.97",
+            "address": "104.18.42.54",
             "port": 2087,
             "users": [
               {
@@ -245,7 +245,7 @@
           "path": "/"
         }
       },
-      "tag": "resilient-373ee5968485a37f"
+      "tag": "resilient-14efc1ea960fdb88"
     },
     {
       "protocol": "vless",
@@ -368,35 +368,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "169.40.42.168",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "d65cc14c-f53f-4fe2-b262-97856601319c"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "serverName": "yahoo.com",
-          "shortId": "c39cc7310a"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-e08da0a712ef9cab"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "15.204.97.197",
             "port": 23576,
             "users": [
@@ -475,6 +446,35 @@
         "security": "reality"
       },
       "tag": "resilient-0797e9a55c8abac5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "spiderpanel-production-66af.up.railway.app",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "dd2ca3cd-2dae-4ec5-8af0-20c0b83a1cd4"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "spiderpanel-production-66af.up.railway.app"
+        },
+        "wsSettings": {
+          "path": "/ws/dd2ca3cd-2dae-4ec5-8af0-20c0b83a1cd4"
+        }
+      },
+      "tag": "resilient-7d5ca11182a06e95"
     },
     {
       "protocol": "vless",
@@ -853,28 +853,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.135.43.120",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-b6f09d0846823c09"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "156.252.229.11",
             "port": 8443,
             "users": [
@@ -980,57 +958,6 @@
         "security": "reality"
       },
       "tag": "resilient-efb38d99f1f9ef10"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "193.124.17.190",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "ed042cf7-efe0-49bd-848b-8d7e655111ff"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "serverName": "www.mozilla.org",
-          "shortId": "1036b2383b72"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-29957b9226caa554"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.44.3.217",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-f2d80bcdda22e083"
     },
     {
       "protocol": "vless",
@@ -1196,6 +1123,93 @@
         "security": "reality"
       },
       "tag": "resilient-42e20cab95dcfc18"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "89.144.53.4",
+            "port": 8445,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "5c32201a-6c0e-451b-8f0a-24b4bd40df59"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk",
+          "serverName": "videos.porsche.com",
+          "shortId": "1a2b3c4d"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-b9d8a298b572770c"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "217.19.122.156",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "c720cb74-4c84-4fce-b8ae-637dbaa16199"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "z1q3pv4g78.rucdncomp.pro"
+        },
+        "wsSettings": {
+          "path": "/useraction/events/b892639b7195/"
+        }
+      },
+      "tag": "resilient-f588439f21d5fb8f"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "wwww.qarvian.ir",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "72881b3f-76f7-4cae-912d-e95e602a5ca4"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "cdn.akamai.steamstatic.com"
+        },
+        "wsSettings": {
+          "path": "/?TELEGRAM-----TOOTFFARANGI "
+        }
+      },
+      "tag": "resilient-296ab5ad48156c4a"
     },
     {
       "protocol": "blackhole",

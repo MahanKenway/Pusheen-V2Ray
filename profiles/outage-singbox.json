@@ -139,9 +139,9 @@
     },
     {
       "network": "tcp",
-      "server": "104.19.215.97",
+      "server": "104.18.42.54",
       "server_port": 2087,
-      "tag": "outage-373ee5968485a37f",
+      "tag": "outage-14efc1ea960fdb88",
       "tls": {
         "enabled": true,
         "server_name": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
@@ -247,6 +247,25 @@
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735"
     },
     {
+      "network": "tcp",
+      "server": "spiderpanel-production-66af.up.railway.app",
+      "server_port": 443,
+      "tag": "outage-7d5ca11182a06e95",
+      "tls": {
+        "enabled": true,
+        "server_name": "spiderpanel-production-66af.up.railway.app"
+      },
+      "transport": {
+        "headers": {
+          "Host": "spiderpanel-production-66af.up.railway.app"
+        },
+        "path": "/ws/dd2ca3cd-2dae-4ec5-8af0-20c0b83a1cd4",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "dd2ca3cd-2dae-4ec5-8af0-20c0b83a1cd4"
+    },
+    {
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "server": "177.177.215.45",
@@ -271,12 +290,13 @@
         "outage-adaa71bab870dcc7",
         "outage-aab8276b4184b1d8",
         "outage-4428c2929afb1340",
-        "outage-373ee5968485a37f",
+        "outage-14efc1ea960fdb88",
         "outage-5114e912e64b03e4",
         "outage-478eb30c7f038c31",
         "outage-6286ea0c17a5ef9b",
         "outage-f16698ef498dc3a0",
         "outage-bf496069f5e7a375",
+        "outage-7d5ca11182a06e95",
         "outage-c7da3b4907ba0a90"
       ],
       "tag": "outage-auto",
