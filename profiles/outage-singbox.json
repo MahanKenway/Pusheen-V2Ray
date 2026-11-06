@@ -120,25 +120,6 @@
     },
     {
       "network": "tcp",
-      "server": "146.75.57.111",
-      "server_port": 443,
-      "tag": "outage-4428c2929afb1340",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "3d9d91c0-0a90-471a-a518-a0ff66a1970a"
-    },
-    {
-      "network": "tcp",
       "server": "104.18.42.54",
       "server_port": 2087,
       "tag": "outage-14efc1ea960fdb88",
@@ -266,6 +247,14 @@
       "uuid": "dd2ca3cd-2dae-4ec5-8af0-20c0b83a1cd4"
     },
     {
+      "network": "tcp",
+      "server": "13.41.3.108",
+      "server_port": 22223,
+      "tag": "outage-0d043f759015180e",
+      "type": "vless",
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+    },
+    {
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "server": "177.177.215.45",
@@ -289,7 +278,6 @@
         "outage-c2046b8eec3ff1d4",
         "outage-adaa71bab870dcc7",
         "outage-aab8276b4184b1d8",
-        "outage-4428c2929afb1340",
         "outage-14efc1ea960fdb88",
         "outage-5114e912e64b03e4",
         "outage-478eb30c7f038c31",
@@ -297,6 +285,7 @@
         "outage-f16698ef498dc3a0",
         "outage-bf496069f5e7a375",
         "outage-7d5ca11182a06e95",
+        "outage-0d043f759015180e",
         "outage-c7da3b4907ba0a90"
       ],
       "tag": "outage-auto",
