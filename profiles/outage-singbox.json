@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "199.232.78.120",
+      "server_port": 443,
+      "tag": "outage-8fac3f225ffa8fbe",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "921b248d-f094-4a59-a794-cdbab080c26a"
+    },
+    {
+      "network": "tcp",
       "server": "146.75.59.186",
       "server_port": 443,
       "tag": "outage-384b9059ed81088a",
@@ -68,6 +87,44 @@
       },
       "type": "vless",
       "uuid": "XpnTeam-88"
+    },
+    {
+      "network": "tcp",
+      "server": "172.64.144.66",
+      "server_port": 2087,
+      "tag": "outage-5e1e7e6fb273f92f",
+      "tls": {
+        "enabled": true,
+        "server_name": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+      },
+      "transport": {
+        "headers": {
+          "Host": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+    },
+    {
+      "network": "tcp",
+      "server": "45.81.58.159",
+      "server_port": 2096,
+      "tag": "outage-c52a098aa8bc721e",
+      "tls": {
+        "enabled": true,
+        "server_name": "e832b8629fff3263.hozheen.ir"
+      },
+      "transport": {
+        "headers": {
+          "Host": "e832b8629fff3263.hozheen.ir"
+        },
+        "path": "/ws?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "359b9ad3-0009-4655-8872-d0ab566751d3"
     },
     {
       "network": "tcp",
@@ -212,22 +269,15 @@
     },
     {
       "network": "tcp",
-      "server": "www.visa.com",
-      "server_port": 8443,
-      "tag": "outage-f21b6be02ce80fd7",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "server": "66.163.114.106",
+      "server_port": 443,
+      "tag": "outage-d19932f282df8a6d",
       "tls": {
         "enabled": true,
-        "server_name": "hk.zhaoqing.city"
+        "server_name": "www.findconnectwithemployersandbuildprofessionalnetwork.com"
       },
-      "transport": {
-        "headers": {
-          "Host": "hk.zhaoqing.city"
-        },
-        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "226279dd-28b2-4b61-96be-a2a0b1afd522"
+      "type": "trojan"
     },
     {
       "alter_id": 0,
@@ -244,45 +294,16 @@
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735"
     },
     {
-      "network": "tcp",
-      "server": "spiderpanel-production-66af.up.railway.app",
-      "server_port": 443,
-      "tag": "outage-7d5ca11182a06e95",
-      "tls": {
-        "enabled": true,
-        "server_name": "spiderpanel-production-66af.up.railway.app"
-      },
-      "transport": {
-        "headers": {
-          "Host": "spiderpanel-production-66af.up.railway.app"
-        },
-        "path": "/ws/dd2ca3cd-2dae-4ec5-8af0-20c0b83a1cd4",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "dd2ca3cd-2dae-4ec5-8af0-20c0b83a1cd4"
-    },
-    {
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "server": "177.177.215.45",
-      "server_port": 444,
-      "tag": "outage-c7da3b4907ba0a90",
-      "tls": {
-        "enabled": true,
-        "server_name": "ams2.shtil.io"
-      },
-      "type": "vless",
-      "uuid": "254f28cb-d0c1-41e9-a06b-f2155213ff04"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-8fac3f225ffa8fbe",
         "outage-384b9059ed81088a",
         "outage-e9611f017915fd2e",
         "outage-126960ce633bc40b",
+        "outage-5e1e7e6fb273f92f",
+        "outage-c52a098aa8bc721e",
         "outage-24f4936644b185ca",
         "outage-c93e09795a41f086",
         "outage-d27fb3f0a244bbc9",
@@ -291,10 +312,8 @@
         "outage-14efc1ea960fdb88",
         "outage-23d05b67b6aa1fba",
         "outage-5114e912e64b03e4",
-        "outage-f21b6be02ce80fd7",
-        "outage-bf496069f5e7a375",
-        "outage-7d5ca11182a06e95",
-        "outage-c7da3b4907ba0a90"
+        "outage-d19932f282df8a6d",
+        "outage-bf496069f5e7a375"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
