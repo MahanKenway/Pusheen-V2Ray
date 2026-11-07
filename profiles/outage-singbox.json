@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "199.232.249.131",
+      "server_port": 443,
+      "tag": "outage-e9611f017915fd2e",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/?TELEGRAM-----TEHRANARGO ",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "33751cb1-43ea-458c-8dc5-0b8993746bce"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
       "tag": "outage-126960ce633bc40b",
@@ -49,6 +68,25 @@
       },
       "type": "vless",
       "uuid": "72881b3f-76f7-4cae-912d-e95e602a5ca4"
+    },
+    {
+      "network": "tcp",
+      "server": "162.159.249.92",
+      "server_port": 443,
+      "tag": "outage-ef1bab8be7036fe1",
+      "tls": {
+        "enabled": true,
+        "server_name": "DD-xx.PAGES.DEV"
+      },
+      "transport": {
+        "headers": {
+          "Host": "DD-xx.PAGES.DEV"
+        },
+        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "00c82fcb-2c67-465d-8432-6743a1593efa"
     },
     {
       "network": "tcp",
@@ -128,22 +166,22 @@
     },
     {
       "network": "tcp",
-      "server": "172.64.52.230",
-      "server_port": 2087,
-      "tag": "outage-478eb30c7f038c31",
+      "server": "www.visa.com",
+      "server_port": 8443,
+      "tag": "outage-f21b6be02ce80fd7",
       "tls": {
         "enabled": true,
-        "server_name": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+        "server_name": "hk.zhaoqing.city"
       },
       "transport": {
         "headers": {
-          "Host": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+          "Host": "hk.zhaoqing.city"
         },
-        "path": "/",
+        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+      "uuid": "226279dd-28b2-4b61-96be-a2a0b1afd522"
     },
     {
       "network": "tcp",
@@ -163,25 +201,6 @@
       },
       "type": "vless",
       "uuid": "4908acbe-485f-4e1c-bb11-5dd04b9f7e88"
-    },
-    {
-      "network": "tcp",
-      "server": "104.18.47.73",
-      "server_port": 443,
-      "tag": "outage-f16698ef498dc3a0",
-      "tls": {
-        "enabled": true,
-        "server_name": "ccc.010304.xyz"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ccc.010304.xyz"
-        },
-        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "d342d11e-d224-4463-b982-532309285094"
     },
     {
       "alter_id": 0,
@@ -242,15 +261,16 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-e9611f017915fd2e",
         "outage-126960ce633bc40b",
         "outage-02737aa6bf095d5b",
+        "outage-ef1bab8be7036fe1",
         "outage-c2046b8eec3ff1d4",
         "outage-14efc1ea960fdb88",
         "outage-23d05b67b6aa1fba",
         "outage-5114e912e64b03e4",
-        "outage-478eb30c7f038c31",
+        "outage-f21b6be02ce80fd7",
         "outage-6286ea0c17a5ef9b",
-        "outage-f16698ef498dc3a0",
         "outage-bf496069f5e7a375",
         "outage-7d5ca11182a06e95",
         "outage-0d043f759015180e",
