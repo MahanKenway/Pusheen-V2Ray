@@ -115,6 +115,57 @@
       "settings": {
         "vnext": [
           {
+            "address": "104.18.40.152",
+            "port": 2087,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-24f4936644b185ca"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.98.0",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "22424ee2-6fe3-42ca-9749-6d4c5a8acc82"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-c93e09795a41f086"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "199.232.78.159",
             "port": 443,
             "users": [
@@ -1054,6 +1105,28 @@
       "settings": {
         "vnext": [
           {
+            "address": "52.47.132.205",
+            "port": 22223,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-503a737468d1781a"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "91.107.243.131",
             "port": 465,
             "users": [
@@ -1137,89 +1210,6 @@
         "security": "reality"
       },
       "tag": "resilient-b9d8a298b572770c"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "57.129.41.216",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "18535741-e8b3-4b43-9348-785b55936751"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/vless/"
-        }
-      },
-      "tag": "resilient-fe851d70fe8296b7"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "3.114.220.22",
-            "port": 10583,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "814bd064-544d-4255-a070-5705c03f6da9"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "serverName": "www.apple.com",
-          "shortId": "48050fab"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-213a4e5199bed0f1"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "129.101.100.126",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "981c7ccc-2b17-473c-8358-7fd1d6eec1b4"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "lte-v2-ws.gacvpn.site"
-        },
-        "wsSettings": {
-          "path": "/static/js/runtime.9d03c7.js"
-        }
-      },
-      "tag": "resilient-c74ae591d26a73ad"
     },
     {
       "protocol": "blackhole",
