@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "tag": "outage-545a9a7e730cafd5",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "8fdeb819-df0c-456d-9a1d-e3a9950ece4d"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.78.120",
       "server_port": 443,
       "tag": "outage-8fac3f225ffa8fbe",
@@ -68,25 +87,6 @@
       },
       "type": "vless",
       "uuid": "33751cb1-43ea-458c-8dc5-0b8993746bce"
-    },
-    {
-      "network": "tcp",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "tag": "outage-126960ce633bc40b",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "XpnTeam-88"
     },
     {
       "network": "tcp",
@@ -155,25 +155,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.159",
-      "server_port": 443,
-      "tag": "outage-d27fb3f0a244bbc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "33751cb1-43ea-458c-8dc5-0b8993746bce"
-    },
-    {
-      "network": "tcp",
       "server": "162.159.249.92",
       "server_port": 443,
       "tag": "outage-ef1bab8be7036fe1",
@@ -209,6 +190,25 @@
       },
       "type": "vless",
       "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+    },
+    {
+      "network": "tcp",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "tag": "outage-67c9ba1597d143b6",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "XpnTeam-93"
     },
     {
       "network": "tcp",
@@ -298,17 +298,17 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-545a9a7e730cafd5",
         "outage-8fac3f225ffa8fbe",
         "outage-384b9059ed81088a",
         "outage-e9611f017915fd2e",
-        "outage-126960ce633bc40b",
         "outage-5e1e7e6fb273f92f",
         "outage-c52a098aa8bc721e",
         "outage-24f4936644b185ca",
         "outage-c93e09795a41f086",
-        "outage-d27fb3f0a244bbc9",
         "outage-ef1bab8be7036fe1",
         "outage-c2046b8eec3ff1d4",
+        "outage-67c9ba1597d143b6",
         "outage-14efc1ea960fdb88",
         "outage-23d05b67b6aa1fba",
         "outage-5114e912e64b03e4",
