@@ -1,17 +1,20 @@
 {
-  "artifact_hash": "25b2ce4a8030ab7eb08e025719bfce61ade1286e0d9a8313a7f58f269568c32e",
+  "artifact_hash": "c8c4c3dd3101642e8787a5cc9cf93b846d7b16db94125287cb7fab5e4172dcd1",
   "by_protocol": {
     "trojan": 1,
-    "vless": 85,
-    "vmess": 1
+    "vless": 85
   },
-  "created_at": "2026-11-08T17:58:23.384887+00:00",
+  "created_at": "2026-11-08T21:57:16.937955+00:00",
   "fast_count": 50,
   "notice": "TCP-reachable from the validator origin; not an end-to-end availability guarantee.",
   "ordering": "latest successful TCP latency, then freshness; protocol-specific variants are published separately",
-  "reachable_count": 87,
+  "reachable_count": 86,
   "schema_version": 3,
-  "snapshot_id": "20261108T175823Z-25b2ce4a8030",
-  "source_errors": {},
+  "snapshot_id": "20261108T215716Z-c8c4c3dd3101",
+  "source_errors": {
+    "ebrasha-trojan-probationary": "SOURCE_HTTP_404",
+    "farid-iran-trojan-probationary": "SOURCE_TOO_LARGE",
+    "farid-iran-vless-probationary": "SOURCE_TOO_LARGE"
+  },
   "tier": "tcp-reachable-v4"
 }
