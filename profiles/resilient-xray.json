@@ -951,6 +951,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "89.105.218.148",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "90157e25-cee1-4217-921e-91f300bc1a24"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
+          "serverName": "golos.mail.ru",
+          "shortId": "428ef87fd47a3a32"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-6ac803d4c3b9e168"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "185.215.184.85",
             "port": 443,
             "users": [
@@ -1003,6 +1032,35 @@
         "security": "reality"
       },
       "tag": "resilient-d31d7fdcf2edd046"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "198.16.113.222",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "98a24806-141a-43d3-b094-bd66c4eb93b8"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE",
+          "serverName": "www.apple.com",
+          "shortId": "69984b9e02545831"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-839a953f048f5201"
     },
     {
       "protocol": "vless",
@@ -1193,60 +1251,6 @@
         "security": "reality"
       },
       "tag": "resilient-b9d8a298b572770c"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "57.129.41.216",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "18535741-e8b3-4b43-9348-785b55936751"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/vless/"
-        }
-      },
-      "tag": "resilient-fe851d70fe8296b7"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "3.114.220.22",
-            "port": 10583,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "814bd064-544d-4255-a070-5705c03f6da9"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "serverName": "www.apple.com",
-          "shortId": "48050fab"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-213a4e5199bed0f1"
     },
     {
       "protocol": "blackhole",
