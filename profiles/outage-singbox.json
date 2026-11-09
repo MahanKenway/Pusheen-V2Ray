@@ -90,6 +90,25 @@
     },
     {
       "network": "tcp",
+      "server": "188.114.98.0",
+      "server_port": 443,
+      "tag": "outage-cad2d153448ce806",
+      "tls": {
+        "enabled": true,
+        "server_name": "fast-route-279ca1-gw.staging-api-c694f6.workers.dev"
+      },
+      "transport": {
+        "headers": {
+          "Host": "fast-route-279ca1-gw.staging-api-c694f6.workers.dev"
+        },
+        "path": "/3c7d135ea6a9e966?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "4911ec85-501b-4841-92d5-fbf9d942faf4"
+    },
+    {
+      "network": "tcp",
       "server": "172.64.144.66",
       "server_port": 2087,
       "tag": "outage-5e1e7e6fb273f92f",
@@ -147,14 +166,6 @@
     },
     {
       "network": "tcp",
-      "server": "188.114.98.0",
-      "server_port": 443,
-      "tag": "outage-c93e09795a41f086",
-      "type": "vless",
-      "uuid": "22424ee2-6fe3-42ca-9749-6d4c5a8acc82"
-    },
-    {
-      "network": "tcp",
       "server": "162.159.249.92",
       "server_port": 443,
       "tag": "outage-ef1bab8be7036fe1",
@@ -193,25 +204,6 @@
     },
     {
       "network": "tcp",
-      "server": "104.16.10.2",
-      "server_port": 443,
-      "tag": "outage-23d05b67b6aa1fba",
-      "tls": {
-        "enabled": true,
-        "server_name": "u.srilankangrill.online"
-      },
-      "transport": {
-        "headers": {
-          "Host": "u.srilankangrill.online"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e"
-    },
-    {
-      "network": "tcp",
       "server": "www.visa.com",
       "server_port": 8443,
       "tag": "outage-f21b6be02ce80fd7",
@@ -242,6 +234,14 @@
       "type": "trojan"
     },
     {
+      "network": "tcp",
+      "server": "35.181.201.219",
+      "server_port": 22222,
+      "tag": "outage-43228c86f206c03c",
+      "type": "vless",
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -250,15 +250,15 @@
         "outage-8fac3f225ffa8fbe",
         "outage-384b9059ed81088a",
         "outage-e9611f017915fd2e",
+        "outage-cad2d153448ce806",
         "outage-5e1e7e6fb273f92f",
         "outage-c52a098aa8bc721e",
         "outage-24f4936644b185ca",
-        "outage-c93e09795a41f086",
         "outage-ef1bab8be7036fe1",
         "outage-67f7961d544665a3",
-        "outage-23d05b67b6aa1fba",
         "outage-f21b6be02ce80fd7",
-        "outage-d19932f282df8a6d"
+        "outage-d19932f282df8a6d",
+        "outage-43228c86f206c03c"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
