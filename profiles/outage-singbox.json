@@ -16,7 +16,7 @@
       "network": "tcp",
       "server": "199.232.78.159",
       "server_port": 443,
-      "tag": "outage-545a9a7e730cafd5",
+      "tag": "outage-7c6ef1106a02c4e1",
       "tls": {
         "enabled": true,
         "server_name": "cdn.akamai.steamstatic.com"
@@ -29,7 +29,26 @@
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "8fdeb819-df0c-456d-9a1d-e3a9950ece4d"
+      "uuid": "64ce5faf-427b-4dd1-926c-6b7ced6b8c38"
+    },
+    {
+      "network": "tcp",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "tag": "outage-a2112da8fc0fc6df",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "64ce5faf-427b-4dd1-926c-6b7ced6b8c38"
     },
     {
       "network": "tcp",
@@ -87,6 +106,25 @@
       },
       "type": "vless",
       "uuid": "33751cb1-43ea-458c-8dc5-0b8993746bce"
+    },
+    {
+      "network": "tcp",
+      "server": "198.41.214.162",
+      "server_port": 443,
+      "tag": "outage-8ae431ca72fc29a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "kvprotocol.de5.net"
+      },
+      "transport": {
+        "headers": {
+          "Host": "kvprotocol.de5.net"
+        },
+        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "c6683832-d6e2-4814-ab10-77cf4ab27368"
     },
     {
       "network": "tcp",
@@ -185,25 +223,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "tag": "outage-67f7961d544665a3",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/?TELEGRAM-----TOOTFFARANGI ",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "8fdeb819-df0c-456d-9a1d-e3a9950ece4d"
-    },
-    {
-      "network": "tcp",
       "server": "www.visa.com",
       "server_port": 8443,
       "tag": "outage-f21b6be02ce80fd7",
@@ -246,16 +265,17 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
-        "outage-545a9a7e730cafd5",
+        "outage-7c6ef1106a02c4e1",
+        "outage-a2112da8fc0fc6df",
         "outage-8fac3f225ffa8fbe",
         "outage-384b9059ed81088a",
         "outage-e9611f017915fd2e",
+        "outage-8ae431ca72fc29a4",
         "outage-cad2d153448ce806",
         "outage-5e1e7e6fb273f92f",
         "outage-c52a098aa8bc721e",
         "outage-24f4936644b185ca",
         "outage-ef1bab8be7036fe1",
-        "outage-67f7961d544665a3",
         "outage-f21b6be02ce80fd7",
         "outage-d19932f282df8a6d",
         "outage-43228c86f206c03c"
