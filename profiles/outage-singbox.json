@@ -90,25 +90,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.249.131",
-      "server_port": 443,
-      "tag": "outage-e9611f017915fd2e",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/?TELEGRAM-----TEHRANARGO ",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "33751cb1-43ea-458c-8dc5-0b8993746bce"
-    },
-    {
-      "network": "tcp",
       "server": "198.41.214.162",
       "server_port": 443,
       "tag": "outage-8ae431ca72fc29a4",
@@ -144,6 +125,25 @@
       },
       "type": "vless",
       "uuid": "4911ec85-501b-4841-92d5-fbf9d942faf4"
+    },
+    {
+      "network": "tcp",
+      "server": "199.232.249.131",
+      "server_port": 443,
+      "tag": "outage-d80420ed76ead0c3",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "33751cb1-43ea-458c-8dc5-0b8993746bce"
     },
     {
       "network": "tcp",
@@ -204,44 +204,6 @@
     },
     {
       "network": "tcp",
-      "server": "162.159.249.92",
-      "server_port": 443,
-      "tag": "outage-ef1bab8be7036fe1",
-      "tls": {
-        "enabled": true,
-        "server_name": "DD-xx.PAGES.DEV"
-      },
-      "transport": {
-        "headers": {
-          "Host": "DD-xx.PAGES.DEV"
-        },
-        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "00c82fcb-2c67-465d-8432-6743a1593efa"
-    },
-    {
-      "network": "tcp",
-      "server": "www.visa.com",
-      "server_port": 8443,
-      "tag": "outage-f21b6be02ce80fd7",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk.zhaoqing.city"
-      },
-      "transport": {
-        "headers": {
-          "Host": "hk.zhaoqing.city"
-        },
-        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "226279dd-28b2-4b61-96be-a2a0b1afd522"
-    },
-    {
-      "network": "tcp",
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "server": "66.163.114.106",
       "server_port": 443,
@@ -269,14 +231,12 @@
         "outage-a2112da8fc0fc6df",
         "outage-8fac3f225ffa8fbe",
         "outage-384b9059ed81088a",
-        "outage-e9611f017915fd2e",
         "outage-8ae431ca72fc29a4",
         "outage-cad2d153448ce806",
+        "outage-d80420ed76ead0c3",
         "outage-5e1e7e6fb273f92f",
         "outage-c52a098aa8bc721e",
         "outage-24f4936644b185ca",
-        "outage-ef1bab8be7036fe1",
-        "outage-f21b6be02ce80fd7",
         "outage-d19932f282df8a6d",
         "outage-43228c86f206c03c"
       ],
