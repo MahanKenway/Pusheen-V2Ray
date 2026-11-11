@@ -52,25 +52,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.120",
-      "server_port": 443,
-      "tag": "outage-8fac3f225ffa8fbe",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "921b248d-f094-4a59-a794-cdbab080c26a"
-    },
-    {
-      "network": "tcp",
       "server": "198.41.214.162",
       "server_port": 443,
       "tag": "outage-8ae431ca72fc29a4",
@@ -109,6 +90,25 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.78.120",
+      "server_port": 443,
+      "tag": "outage-3fe9fe2f64cf2e4a",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "06765612-2da6-4729-8c17-60133d235fca"
+    },
+    {
+      "network": "tcp",
       "server": "199.232.249.131",
       "server_port": 443,
       "tag": "outage-d80420ed76ead0c3",
@@ -125,44 +125,6 @@
       },
       "type": "vless",
       "uuid": "33751cb1-43ea-458c-8dc5-0b8993746bce"
-    },
-    {
-      "network": "tcp",
-      "server": "172.64.144.66",
-      "server_port": 2087,
-      "tag": "outage-5e1e7e6fb273f92f",
-      "tls": {
-        "enabled": true,
-        "server_name": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
-      },
-      "transport": {
-        "headers": {
-          "Host": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
-    },
-    {
-      "network": "tcp",
-      "server": "45.81.58.159",
-      "server_port": 2096,
-      "tag": "outage-c52a098aa8bc721e",
-      "tls": {
-        "enabled": true,
-        "server_name": "e832b8629fff3263.hozheen.ir"
-      },
-      "transport": {
-        "headers": {
-          "Host": "e832b8629fff3263.hozheen.ir"
-        },
-        "path": "/ws?ed=2560",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "359b9ad3-0009-4655-8872-d0ab566751d3"
     },
     {
       "network": "tcp",
@@ -185,15 +147,22 @@
     },
     {
       "network": "tcp",
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "server": "66.163.114.106",
+      "server": "urfddtest-production.up.railway.app",
       "server_port": 443,
-      "tag": "outage-d19932f282df8a6d",
+      "tag": "outage-a600255ab855b40b",
       "tls": {
         "enabled": true,
-        "server_name": "www.findconnectwithemployersandbuildprofessionalnetwork.com"
+        "server_name": "urfddtest-production.up.railway.app"
       },
-      "type": "trojan"
+      "transport": {
+        "headers": {
+          "Host": "urfddtest-production.up.railway.app"
+        },
+        "path": "/api/x0-C9f",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "327ad26c-1501-41b3-9f33-12b85de39d5f"
     },
     {
       "idle_timeout": "30m",
@@ -202,14 +171,12 @@
       "outbounds": [
         "outage-7c6ef1106a02c4e1",
         "outage-a2112da8fc0fc6df",
-        "outage-8fac3f225ffa8fbe",
         "outage-8ae431ca72fc29a4",
         "outage-cad2d153448ce806",
+        "outage-3fe9fe2f64cf2e4a",
         "outage-d80420ed76ead0c3",
-        "outage-5e1e7e6fb273f92f",
-        "outage-c52a098aa8bc721e",
         "outage-5e1fa86d391cd379",
-        "outage-d19932f282df8a6d"
+        "outage-a600255ab855b40b"
       ],
       "tag": "outage-auto",
       "tolerance": 200,

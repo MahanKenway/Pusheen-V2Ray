@@ -86,35 +86,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "199.232.78.120",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "921b248d-f094-4a59-a794-cdbab080c26a"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "cdn.akamai.steamstatic.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-8fac3f225ffa8fbe"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "198.41.214.162",
             "port": 443,
             "users": [
@@ -173,6 +144,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "199.232.78.120",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "06765612-2da6-4729-8c17-60133d235fca"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "cdn.akamai.steamstatic.com"
+        },
+        "wsSettings": {
+          "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560"
+        }
+      },
+      "tag": "resilient-3fe9fe2f64cf2e4a"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "199.232.249.131",
             "port": 443,
             "users": [
@@ -196,64 +196,6 @@
         }
       },
       "tag": "resilient-d80420ed76ead0c3"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.64.144.66",
-            "port": 2087,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-5e1e7e6fb273f92f"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.81.58.159",
-            "port": 2096,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "359b9ad3-0009-4655-8872-d0ab566751d3"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "e832b8629fff3263.hozheen.ir"
-        },
-        "wsSettings": {
-          "path": "/ws?ed=2560"
-        }
-      },
-      "tag": "resilient-c52a098aa8bc721e"
     },
     {
       "protocol": "vless",
@@ -343,25 +285,33 @@
       "tag": "resilient-65405d81e936163b"
     },
     {
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "66.163.114.106",
-            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-            "port": 443
+            "address": "urfddtest-production.up.railway.app",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "327ad26c-1501-41b3-9f33-12b85de39d5f"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "www.findconnectwithemployersandbuildprofessionalnetwork.com"
+          "serverName": "urfddtest-production.up.railway.app"
+        },
+        "wsSettings": {
+          "path": "/api/x0-C9f"
         }
       },
-      "tag": "resilient-d19932f282df8a6d"
+      "tag": "resilient-a600255ab855b40b"
     },
     {
       "protocol": "vless",
@@ -847,6 +797,28 @@
         "security": "reality"
       },
       "tag": "resilient-1ff21070bc676fe1"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "200.96.106.2",
+            "port": 9889,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "0dcefe19-a42a-4d57-96be-83dcbffd425f"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-463ab7496048a6e6"
     },
     {
       "protocol": "vless",
