@@ -173,35 +173,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "199.232.249.131",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "33751cb1-43ea-458c-8dc5-0b8993746bce"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "cdn.akamai.steamstatic.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-d80420ed76ead0c3"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "146.75.59.186",
             "port": 443,
             "users": [
@@ -347,60 +318,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "194.104.9.44",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "1d1eda2e-0bd7-4478-877b-1c5425c6c4dd"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38",
-          "serverName": "tradingview.com",
-          "shortId": "8f3c6e2a1b5d4f09"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-379dd38376a63b08"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "213.182.201.18",
-            "port": 3090,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "8bac7917-b4d2-4338-bbfc-5d47bda8c5ab"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "vless"
-        },
-        "network": "grpc",
-        "security": "none"
-      },
-      "tag": "resilient-41856359c9a5d116"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "88.210.14.234",
             "port": 8443,
             "users": [
@@ -424,34 +341,6 @@
         "security": "reality"
       },
       "tag": "resilient-a9a09959a9518e4a"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "213.108.21.173",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "c1fdf1e6-6370-4bad-a866-f80f27f5e785"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "oSbyJBoI2JTEva2ks51kmUCA7z-iFUcoGYCk-ciEaDU",
-          "serverName": "nl1.kids-games.ru"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-47f43442420b5e53"
     },
     {
       "protocol": "vless",
@@ -487,7 +376,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.215.184.85",
+            "address": "179.43.166.190",
             "port": 443,
             "users": [
               {
@@ -504,12 +393,13 @@
         "realitySettings": {
           "fingerprint": "firefox",
           "publicKey": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
-          "serverName": "dvizhok.su",
-          "shortId": "428ef87fd47a3a32"
+          "serverName": "perevodchiki.su",
+          "shortId": "428ef87fd47a3a32",
+          "spiderX": "/"
         },
         "security": "reality"
       },
-      "tag": "resilient-47cf5572a491a6b5"
+      "tag": "resilient-620ffa73a741d814"
     },
     {
       "protocol": "vless",
@@ -569,6 +459,35 @@
         "security": "reality"
       },
       "tag": "resilient-1b3a926022664bdc"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "109.70.74.177",
+            "port": 33970,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "68bbbb90-73eb-4463-a830-2e85e25df42d"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "GwUduwZQoBNQ9Rm7l-07aSvV3Y3zrHafZvLERdxgvjs",
+          "serverName": "www.samsung.com",
+          "shortId": "46fcff3fd2e4",
+          "spiderX": "/fc2921eb506a6d6"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-1dbe98543e0752a9"
     },
     {
       "protocol": "vless",
@@ -1223,6 +1142,93 @@
         }
       },
       "tag": "resilient-2d41d07e6520503b"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "tunell2027.crackerbinam.org",
+            "port": 48312,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "f47057d5-120d-4b42-b6d6-30469aef6813"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "d9eM_jy8ztZrOf3DMq1m55VQSo7bnKcG1dRnO9ktJ2Y",
+          "serverName": "www.cloudflare.com",
+          "shortId": "902c315efc",
+          "spiderX": "/"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-e3890a65034f1483"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "smart2.khinikadze.com",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "3bb97d46-789b-4229-88f6-9beb222a4137"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "lIZbI6KG18rkVDyMhLo7e6KvmffxR6fvFNzzC-O9vT8",
+          "serverName": "smart2.khinikadze.com"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-0ffd96bb40c7c677"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "tickets.betust.net",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "95d0e214-eab0-4701-93ed-fea4f1b56062"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "TRaUsnzFf-AhWUuW4RQUQOBYTdM-qJdLDTTkzQNkcRw",
+          "serverName": "tickets.betust.net",
+          "shortId": "f70764f8",
+          "spiderX": "/"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-92fde0e301f3174e"
     },
     {
       "protocol": "blackhole",
