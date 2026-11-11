@@ -1,9 +1,9 @@
 {
   "by_protocol": {
-    "vless": 42
+    "vless": 41
   },
-  "count": 42,
-  "created_at": "2026-11-11T17:24:52.426535+00:00",
+  "count": 41,
+  "created_at": "2026-11-11T23:40:14.027906+00:00",
   "evidence": "recent successful TCP reachability",
   "max_evidence_age_hours": 72,
   "notice": "A receipt records why the item is eligible for this tier at publication time. It does not disclose hostnames, credentials, raw URIs, or guarantee availability from another network.",
@@ -100,11 +100,18 @@
       "transport_family": "vless:tcp:reality"
     },
     {
-      "id": "6ac803d4c3b9e168",
+      "id": "12444712da45630c",
+      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
+      "latest_source_id": "iboxz-vless-probationary",
+      "protocol": "vless",
+      "transport_family": "vless:tcp:none"
+    },
+    {
+      "id": "68400f6ded4e24d7",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "configforge-vless",
       "protocol": "vless",
-      "transport_family": "vless:tcp:reality"
+      "transport_family": "vless:grpc:tls"
     },
     {
       "id": "7df8d8eae768fe3f",
@@ -121,14 +128,7 @@
       "transport_family": "vless:tcp:reality"
     },
     {
-      "id": "839a953f048f5201",
-      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
-      "latest_source_id": "iboxz-vless-probationary",
-      "protocol": "vless",
-      "transport_family": "vless:tcp:reality"
-    },
-    {
-      "id": "1b3a926022664bdc",
+      "id": "5941cf7fc12c6c35",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "configforge-vless",
       "protocol": "vless",
@@ -140,13 +140,6 @@
       "latest_source_id": "iboxz-vless-probationary",
       "protocol": "vless",
       "transport_family": "vless:tcp:reality"
-    },
-    {
-      "id": "f8577780ae8bc530",
-      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
-      "latest_source_id": "iboxz-vless-probationary",
-      "protocol": "vless",
-      "transport_family": "vless:tcp:none"
     },
     {
       "id": "33a4fd8184feabbc",
@@ -163,21 +156,14 @@
       "transport_family": "vless:tcp:reality"
     },
     {
-      "id": "091c5ba88a6ea09a",
-      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
-      "latest_source_id": "configforge-vless",
-      "protocol": "vless",
-      "transport_family": "vless:tcp:reality"
-    },
-    {
-      "id": "17704eb36d017719",
+      "id": "ab872f900992abf5",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "iboxz-vless-probationary",
       "protocol": "vless",
-      "transport_family": "vless:tcp:reality"
+      "transport_family": "vless:grpc:reality"
     },
     {
-      "id": "145a366884fc95ce",
+      "id": "17704eb36d017719",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "iboxz-vless-probationary",
       "protocol": "vless",
@@ -296,11 +282,18 @@
       "transport_family": "vless:tcp:reality"
     },
     {
-      "id": "bea6ddfddf78a397",
+      "id": "0ffd96bb40c7c677",
+      "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
+      "latest_source_id": "iboxz-vless-probationary",
+      "protocol": "vless",
+      "transport_family": "vless:tcp:reality"
+    },
+    {
+      "id": "c581dc30e1fb70b9",
       "inclusion": "selected from recent TCP-reachability evidence after resilient anti-concentration policy",
       "latest_source_id": "configforge-vless",
       "protocol": "vless",
-      "transport_family": "vless:ws:tls"
+      "transport_family": "vless:tcp:reality"
     }
   ],
   "schema_version": 1,
