@@ -71,22 +71,41 @@
     },
     {
       "network": "tcp",
-      "server": "188.114.98.0",
+      "server": "146.75.59.186",
       "server_port": 443,
-      "tag": "outage-cad2d153448ce806",
+      "tag": "outage-d68ad8a04968881f",
       "tls": {
         "enabled": true,
-        "server_name": "fast-route-279ca1-gw.staging-api-c694f6.workers.dev"
+        "server_name": "cdn.akamai.steamstatic.com"
       },
       "transport": {
         "headers": {
-          "Host": "fast-route-279ca1-gw.staging-api-c694f6.workers.dev"
+          "Host": "cdn.akamai.steamstatic.com"
         },
-        "path": "/3c7d135ea6a9e966?ed=2560",
+        "path": "/",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "4911ec85-501b-4841-92d5-fbf9d942faf4"
+      "uuid": "97e0ea78-67ae-4984-8a14-a7d1a51e58de"
+    },
+    {
+      "network": "tcp",
+      "server": "172.64.53.140",
+      "server_port": 2087,
+      "tag": "outage-7b848fd1d70cc3a3",
+      "tls": {
+        "enabled": true,
+        "server_name": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+      },
+      "transport": {
+        "headers": {
+          "Host": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
     },
     {
       "network": "tcp",
@@ -109,22 +128,22 @@
     },
     {
       "network": "tcp",
-      "server": "146.75.59.186",
+      "server": "188.114.98.0",
       "server_port": 443,
-      "tag": "outage-5e1fa86d391cd379",
+      "tag": "outage-92dfed347c4210c5",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
+        "server_name": "fs.qicai99.com"
       },
       "transport": {
         "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
+          "Host": "fs.qicai99.com"
         },
-        "path": "/",
+        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "64ce5faf-427b-4dd1-926c-6b7ced6b8c38"
+      "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e"
     },
     {
       "network": "tcp",
@@ -154,19 +173,6 @@
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
     },
     {
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "server": "129.101.100.219",
-      "server_port": 443,
-      "tag": "outage-2d41d07e6520503b",
-      "tls": {
-        "enabled": true,
-        "server_name": "db-28.topp-con.xyz"
-      },
-      "type": "vless",
-      "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -174,12 +180,12 @@
         "outage-7c6ef1106a02c4e1",
         "outage-a2112da8fc0fc6df",
         "outage-8ae431ca72fc29a4",
-        "outage-cad2d153448ce806",
+        "outage-d68ad8a04968881f",
+        "outage-7b848fd1d70cc3a3",
         "outage-c33b8cce14624c43",
-        "outage-5e1fa86d391cd379",
+        "outage-92dfed347c4210c5",
         "outage-a600255ab855b40b",
-        "outage-9412c2868078bd5f",
-        "outage-2d41d07e6520503b"
+        "outage-9412c2868078bd5f"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
