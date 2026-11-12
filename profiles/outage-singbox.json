@@ -90,6 +90,25 @@
     },
     {
       "network": "tcp",
+      "server": "170.114.46.6",
+      "server_port": 2096,
+      "tag": "outage-c33b8cce14624c43",
+      "tls": {
+        "enabled": true,
+        "server_name": "pcloud.z-tas.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "pcloud.z-tas.com"
+        },
+        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2048",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "efd11a89-7506-44ce-95b6-6654859f155b"
+    },
+    {
+      "network": "tcp",
       "server": "146.75.59.186",
       "server_port": 443,
       "tag": "outage-5e1fa86d391cd379",
@@ -135,14 +154,6 @@
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
     },
     {
-      "network": "tcp",
-      "server": "15.224.233.144",
-      "server_port": 22223,
-      "tag": "outage-53932a839a474b60",
-      "type": "vless",
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-    },
-    {
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "server": "129.101.100.219",
@@ -164,10 +175,10 @@
         "outage-a2112da8fc0fc6df",
         "outage-8ae431ca72fc29a4",
         "outage-cad2d153448ce806",
+        "outage-c33b8cce14624c43",
         "outage-5e1fa86d391cd379",
         "outage-a600255ab855b40b",
         "outage-9412c2868078bd5f",
-        "outage-53932a839a474b60",
         "outage-2d41d07e6520503b"
       ],
       "tag": "outage-auto",
