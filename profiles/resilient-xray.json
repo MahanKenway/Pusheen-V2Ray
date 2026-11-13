@@ -202,6 +202,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "199.232.78.120",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "cdn.akamai.steamstatic.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-601f9e36befaa67e"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "188.114.98.0",
             "port": 443,
             "users": [
@@ -225,6 +254,35 @@
         }
       },
       "tag": "resilient-92dfed347c4210c5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.67.74.177",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "99c5b713-dedf-4a10-8070-916ff3f49b0e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "fs.qicai99.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-89151244dfcde797"
     },
     {
       "protocol": "vless",
@@ -761,6 +819,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "195.72.166.251",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "64c05afc-ce81-4ba0-b697-afa04da1427e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "RKDT6fVgcZS8Qfzhv5rbeHRIflA3UTKD_HNLJyOoUwk",
+          "serverName": "www.lloydsbankinggroup.com",
+          "shortId": "25349b36802f"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-64819842bc332d02"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "188.130.209.212",
             "port": 443,
             "users": [
@@ -1042,93 +1129,6 @@
         }
       },
       "tag": "resilient-8d2f169174b5507a"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "qq.utiltools.site",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "4054fdc2-ee80-4419-8a8e-d937df4719e2"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "drY21DHNOr6ezJLA2B10mzTExeJ9-gVBfTBNLwVBtWI",
-          "serverName": "qq.utiltools.site"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-36b8608ac87f2749"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.215.184.78",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "90157e25-cee1-4217-921e-91f300bc1a24"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
-          "serverName": "dvizhok.su",
-          "shortId": "428ef87fd47a3a32"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-ac764e7e55c4c6de"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "tickets.betust.net",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "95d0e214-eab0-4701-93ed-fea4f1b56062"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "TRaUsnzFf-AhWUuW4RQUQOBYTdM-qJdLDTTkzQNkcRw",
-          "serverName": "tickets.betust.net",
-          "shortId": "f70764f8",
-          "spiderX": "/"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-92fde0e301f3174e"
     },
     {
       "protocol": "blackhole",

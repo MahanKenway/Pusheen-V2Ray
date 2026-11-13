@@ -128,6 +128,25 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.78.120",
+      "server_port": 443,
+      "tag": "outage-601f9e36befaa67e",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
+    },
+    {
+      "network": "tcp",
       "server": "188.114.98.0",
       "server_port": 443,
       "tag": "outage-92dfed347c4210c5",
@@ -140,6 +159,25 @@
           "Host": "fs.qicai99.com"
         },
         "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e"
+    },
+    {
+      "network": "tcp",
+      "server": "172.67.74.177",
+      "server_port": 443,
+      "tag": "outage-89151244dfcde797",
+      "tls": {
+        "enabled": true,
+        "server_name": "fs.qicai99.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "fs.qicai99.com"
+        },
+        "path": "/",
         "type": "ws"
       },
       "type": "vless",
@@ -165,14 +203,6 @@
       "uuid": "327ad26c-1501-41b3-9f33-12b85de39d5f"
     },
     {
-      "network": "tcp",
-      "server": "13.37.145.19",
-      "server_port": 22223,
-      "tag": "outage-9412c2868078bd5f",
-      "type": "vless",
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -183,9 +213,10 @@
         "outage-d68ad8a04968881f",
         "outage-7b848fd1d70cc3a3",
         "outage-c33b8cce14624c43",
+        "outage-601f9e36befaa67e",
         "outage-92dfed347c4210c5",
-        "outage-a600255ab855b40b",
-        "outage-9412c2868078bd5f"
+        "outage-89151244dfcde797",
+        "outage-a600255ab855b40b"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
