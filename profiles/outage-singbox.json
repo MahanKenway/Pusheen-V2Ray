@@ -203,6 +203,25 @@
       "uuid": "327ad26c-1501-41b3-9f33-12b85de39d5f"
     },
     {
+      "network": "tcp",
+      "server": "188.225.37.175",
+      "server_port": 443,
+      "tag": "outage-af2c8ea130e59a67",
+      "tls": {
+        "enabled": true,
+        "server_name": "cryptoventura.online"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cryptoventura.online"
+        },
+        "path": "/api/de3/live",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "820fa845-a1eb-4a83-b613-e6714cea8a1a"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -216,7 +235,8 @@
         "outage-c33b8cce14624c43",
         "outage-601f9e36befaa67e",
         "outage-89151244dfcde797",
-        "outage-a600255ab855b40b"
+        "outage-a600255ab855b40b",
+        "outage-af2c8ea130e59a67"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
