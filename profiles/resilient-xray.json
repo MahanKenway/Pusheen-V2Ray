@@ -57,6 +57,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "104.24.196.20",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "99c5b713-dedf-4a10-8070-916ff3f49b0e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "fs.qicai99.com"
+        },
+        "wsSettings": {
+          "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET"
+        }
+      },
+      "tag": "resilient-f19adb05a7ec0b9b"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "146.75.59.186",
             "port": 443,
             "users": [
@@ -192,10 +221,10 @@
           "serverName": "fs.qicai99.com"
         },
         "wsSettings": {
-          "path": "/fp"
+          "path": "/fp=chromefp=chrome"
         }
       },
-      "tag": "resilient-774f7e595d0853e3"
+      "tag": "resilient-3a3f3bfb10f4c1e1"
     },
     {
       "protocol": "vless",
@@ -531,35 +560,6 @@
         "security": "none"
       },
       "tag": "resilient-53932a839a474b60"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "88.210.14.234",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "eb733326-d5b1-4e96-a0b5-ba0d61b2f60a"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "rvoYYePJymtl89onIoho0KSX6GXJhN0-vzfZOfeKqBs",
-          "serverName": "gbts.coldcrate.pro",
-          "shortId": "e3a57469d9a51ee4"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-a9a09959a9518e4a"
     },
     {
       "protocol": "vless",
@@ -1059,6 +1059,34 @@
         "security": "reality"
       },
       "tag": "resilient-0ea0242639c2152b"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "109.69.218.172",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "664f65f4-33b3-43a3-b9e5-68192d1d428e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "cv_KJnMzQUZruACPbH-BCgLWrYqPm2dbUymg-gW_sVc",
+          "serverName": "zealous-vortex.cdn.cachefleet.com"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-534eee2d2e498483"
     },
     {
       "protocol": "vless",

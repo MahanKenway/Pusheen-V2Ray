@@ -33,6 +33,25 @@
     },
     {
       "network": "tcp",
+      "server": "104.24.196.20",
+      "server_port": 443,
+      "tag": "outage-f19adb05a7ec0b9b",
+      "tls": {
+        "enabled": true,
+        "server_name": "fs.qicai99.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "fs.qicai99.com"
+        },
+        "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e"
+    },
+    {
+      "network": "tcp",
       "server": "146.75.59.186",
       "server_port": 443,
       "tag": "outage-d68ad8a04968881f",
@@ -111,7 +130,7 @@
       "network": "tcp",
       "server": "188.114.98.0",
       "server_port": 443,
-      "tag": "outage-774f7e595d0853e3",
+      "tag": "outage-3a3f3bfb10f4c1e1",
       "tls": {
         "enabled": true,
         "server_name": "fs.qicai99.com"
@@ -120,7 +139,7 @@
         "headers": {
           "Host": "fs.qicai99.com"
         },
-        "path": "/fp",
+        "path": "/fp=chromefp=chrome",
         "type": "ws"
       },
       "type": "vless",
@@ -185,25 +204,6 @@
     },
     {
       "network": "tcp",
-      "server": "urfddtest-production.up.railway.app",
-      "server_port": 443,
-      "tag": "outage-a600255ab855b40b",
-      "tls": {
-        "enabled": true,
-        "server_name": "urfddtest-production.up.railway.app"
-      },
-      "transport": {
-        "headers": {
-          "Host": "urfddtest-production.up.railway.app"
-        },
-        "path": "/api/x0-C9f",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "327ad26c-1501-41b3-9f33-12b85de39d5f"
-    },
-    {
-      "network": "tcp",
       "server": "188.225.37.175",
       "server_port": 443,
       "tag": "outage-af2c8ea130e59a67",
@@ -227,15 +227,15 @@
       "interval": "10m",
       "outbounds": [
         "outage-7aea536d07c6caa7",
+        "outage-f19adb05a7ec0b9b",
         "outage-d68ad8a04968881f",
         "outage-7b848fd1d70cc3a3",
         "outage-1a0e15794471bb80",
         "outage-2b81ebe473ad793c",
-        "outage-774f7e595d0853e3",
+        "outage-3a3f3bfb10f4c1e1",
         "outage-c33b8cce14624c43",
         "outage-601f9e36befaa67e",
         "outage-89151244dfcde797",
-        "outage-a600255ab855b40b",
         "outage-af2c8ea130e59a67"
       ],
       "tag": "outage-auto",
