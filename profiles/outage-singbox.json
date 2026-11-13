@@ -14,28 +14,9 @@
   "outbounds": [
     {
       "network": "tcp",
-      "server": "199.232.78.159",
-      "server_port": 443,
-      "tag": "outage-7c6ef1106a02c4e1",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "64ce5faf-427b-4dd1-926c-6b7ced6b8c38"
-    },
-    {
-      "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
-      "tag": "outage-a2112da8fc0fc6df",
+      "tag": "outage-7aea536d07c6caa7",
       "tls": {
         "enabled": true,
         "server_name": "cdn.akamai.steamstatic.com"
@@ -44,30 +25,11 @@
         "headers": {
           "Host": "cdn.akamai.steamstatic.com"
         },
-        "path": "/",
+        "path": "/?Telegram---CAPOIT---CAPOIT---CAPOIT---CAPOIT",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "64ce5faf-427b-4dd1-926c-6b7ced6b8c38"
-    },
-    {
-      "network": "tcp",
-      "server": "198.41.214.162",
-      "server_port": 443,
-      "tag": "outage-8ae431ca72fc29a4",
-      "tls": {
-        "enabled": true,
-        "server_name": "kvprotocol.de5.net"
-      },
-      "transport": {
-        "headers": {
-          "Host": "kvprotocol.de5.net"
-        },
-        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "c6683832-d6e2-4814-ab10-77cf4ab27368"
+      "uuid": "97e0ea78-67ae-4984-8a14-a7d1a51e58de"
     },
     {
       "network": "tcp",
@@ -109,6 +71,63 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "tag": "outage-1a0e15794471bb80",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
+    },
+    {
+      "network": "tcp",
+      "server": "162.159.198.1",
+      "server_port": 443,
+      "tag": "outage-2b81ebe473ad793c",
+      "tls": {
+        "enabled": true,
+        "server_name": "fs.qicai99.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "fs.qicai99.com"
+        },
+        "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e"
+    },
+    {
+      "network": "tcp",
+      "server": "188.114.98.0",
+      "server_port": 443,
+      "tag": "outage-774f7e595d0853e3",
+      "tls": {
+        "enabled": true,
+        "server_name": "fs.qicai99.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "fs.qicai99.com"
+        },
+        "path": "/fp",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e"
+    },
+    {
+      "network": "tcp",
       "server": "170.114.46.6",
       "server_port": 2096,
       "tag": "outage-c33b8cce14624c43",
@@ -144,25 +163,6 @@
       },
       "type": "vless",
       "uuid": "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
-    },
-    {
-      "network": "tcp",
-      "server": "188.114.98.0",
-      "server_port": 443,
-      "tag": "outage-92dfed347c4210c5",
-      "tls": {
-        "enabled": true,
-        "server_name": "fs.qicai99.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "fs.qicai99.com"
-        },
-        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e"
     },
     {
       "network": "tcp",
@@ -207,14 +207,14 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
-        "outage-7c6ef1106a02c4e1",
-        "outage-a2112da8fc0fc6df",
-        "outage-8ae431ca72fc29a4",
+        "outage-7aea536d07c6caa7",
         "outage-d68ad8a04968881f",
         "outage-7b848fd1d70cc3a3",
+        "outage-1a0e15794471bb80",
+        "outage-2b81ebe473ad793c",
+        "outage-774f7e595d0853e3",
         "outage-c33b8cce14624c43",
         "outage-601f9e36befaa67e",
-        "outage-92dfed347c4210c5",
         "outage-89151244dfcde797",
         "outage-a600255ab855b40b"
       ],
