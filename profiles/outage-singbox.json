@@ -33,6 +33,25 @@
     },
     {
       "network": "tcp",
+      "server": "199.232.78.120",
+      "server_port": 443,
+      "tag": "outage-4c08f93d54270553",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "685b5831-59a3-4d14-9afe-199880ae43a0"
+    },
+    {
+      "network": "tcp",
       "server": "104.24.196.20",
       "server_port": 443,
       "tag": "outage-f19adb05a7ec0b9b",
@@ -49,6 +68,25 @@
       },
       "type": "vless",
       "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e"
+    },
+    {
+      "network": "tcp",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "tag": "outage-d6f435d1b9eeccac",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "97e0ea78-67ae-4984-8a14-a7d1a51e58de"
     },
     {
       "network": "tcp",
@@ -87,25 +125,6 @@
       },
       "type": "vless",
       "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
-    },
-    {
-      "network": "tcp",
-      "server": "199.232.78.159",
-      "server_port": 443,
-      "tag": "outage-1a0e15794471bb80",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
     },
     {
       "network": "tcp",
@@ -166,25 +185,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.120",
-      "server_port": 443,
-      "tag": "outage-601f9e36befaa67e",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
-    },
-    {
-      "network": "tcp",
       "server": "172.67.74.177",
       "server_port": 443,
       "tag": "outage-89151244dfcde797",
@@ -227,14 +227,14 @@
       "interval": "10m",
       "outbounds": [
         "outage-7aea536d07c6caa7",
+        "outage-4c08f93d54270553",
         "outage-f19adb05a7ec0b9b",
+        "outage-d6f435d1b9eeccac",
         "outage-d68ad8a04968881f",
         "outage-7b848fd1d70cc3a3",
-        "outage-1a0e15794471bb80",
         "outage-2b81ebe473ad793c",
         "outage-3a3f3bfb10f4c1e1",
         "outage-c33b8cce14624c43",
-        "outage-601f9e36befaa67e",
         "outage-89151244dfcde797",
         "outage-af2c8ea130e59a67"
       ],
