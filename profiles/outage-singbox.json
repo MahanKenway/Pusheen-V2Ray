@@ -35,7 +35,7 @@
       "network": "tcp",
       "server": "199.232.78.120",
       "server_port": 443,
-      "tag": "outage-4c08f93d54270553",
+      "tag": "outage-663c8f1320775a33",
       "tls": {
         "enabled": true,
         "server_name": "cdn.akamai.steamstatic.com"
@@ -64,6 +64,25 @@
           "Host": "fs.qicai99.com"
         },
         "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e"
+    },
+    {
+      "network": "tcp",
+      "server": "188.114.98.0",
+      "server_port": 443,
+      "tag": "outage-1cf50de70f7c9aab",
+      "tls": {
+        "enabled": true,
+        "server_name": "fs.qicai99.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "fs.qicai99.com"
+        },
+        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2048",
         "type": "ws"
       },
       "type": "vless",
@@ -147,25 +166,6 @@
     },
     {
       "network": "tcp",
-      "server": "188.114.98.0",
-      "server_port": 443,
-      "tag": "outage-3a3f3bfb10f4c1e1",
-      "tls": {
-        "enabled": true,
-        "server_name": "fs.qicai99.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "fs.qicai99.com"
-        },
-        "path": "/fp=chromefp=chrome",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e"
-    },
-    {
-      "network": "tcp",
       "server": "170.114.46.6",
       "server_port": 2096,
       "tag": "outage-c33b8cce14624c43",
@@ -204,6 +204,14 @@
     },
     {
       "network": "tcp",
+      "server": "212.227.235.66",
+      "server_port": 2053,
+      "tag": "outage-d5a0fcb7cbc2faf5",
+      "type": "vless",
+      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3"
+    },
+    {
+      "network": "tcp",
       "server": "188.225.37.175",
       "server_port": 443,
       "tag": "outage-af2c8ea130e59a67",
@@ -227,15 +235,16 @@
       "interval": "10m",
       "outbounds": [
         "outage-7aea536d07c6caa7",
-        "outage-4c08f93d54270553",
+        "outage-663c8f1320775a33",
         "outage-f19adb05a7ec0b9b",
+        "outage-1cf50de70f7c9aab",
         "outage-d6f435d1b9eeccac",
         "outage-d68ad8a04968881f",
         "outage-7b848fd1d70cc3a3",
         "outage-2b81ebe473ad793c",
-        "outage-3a3f3bfb10f4c1e1",
         "outage-c33b8cce14624c43",
         "outage-89151244dfcde797",
+        "outage-d5a0fcb7cbc2faf5",
         "outage-af2c8ea130e59a67"
       ],
       "tag": "outage-auto",

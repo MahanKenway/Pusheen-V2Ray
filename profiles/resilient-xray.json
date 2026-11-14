@@ -79,7 +79,7 @@
           "path": "/"
         }
       },
-      "tag": "resilient-4c08f93d54270553"
+      "tag": "resilient-663c8f1320775a33"
     },
     {
       "protocol": "vless",
@@ -109,6 +109,35 @@
         }
       },
       "tag": "resilient-f19adb05a7ec0b9b"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.98.0",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "99c5b713-dedf-4a10-8070-916ff3f49b0e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "fs.qicai99.com"
+        },
+        "wsSettings": {
+          "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2048"
+        }
+      },
+      "tag": "resilient-1cf50de70f7c9aab"
     },
     {
       "protocol": "vless",
@@ -231,35 +260,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.98.0",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "99c5b713-dedf-4a10-8070-916ff3f49b0e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "fs.qicai99.com"
-        },
-        "wsSettings": {
-          "path": "/fp=chromefp=chrome"
-        }
-      },
-      "tag": "resilient-3a3f3bfb10f4c1e1"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "170.114.46.6",
             "port": 2096,
             "users": [
@@ -376,6 +376,28 @@
       "settings": {
         "vnext": [
           {
+            "address": "212.227.235.66",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-d5a0fcb7cbc2faf5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "68.221.177.135",
             "port": 2083,
             "users": [
@@ -457,6 +479,28 @@
       "settings": {
         "vnext": [
           {
+            "address": "15.236.176.177",
+            "port": 22223,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-579210de865fefc5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "15.224.233.144",
             "port": 22223,
             "users": [
@@ -499,6 +543,84 @@
         }
       },
       "tag": "resilient-a1bf3d3c46729b7c"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "91.107.207.171",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "mlkem768x25519plus.native.0rtt.GlIc2LFlqBQ3itRnw8zoo3tfD7MSknWWmmLVDdr88jE",
+                "id": "a366968f-fc43-4376-80ee-a23e2389b170"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "path": "/?ed=1024"
+        },
+        "network": "httpupgrade",
+        "security": "none"
+      },
+      "tag": "resilient-fdc793e5cdda00b9"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "159.195.207.238",
+            "port": 49313,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "855c7aaa-e7d6-463e-971e-d36032744428"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-0bb05ca8903a7e3c"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "201.58.189.105",
+            "port": 2083,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d7ddade6-b7a0-4cab-a910-d5d5c378d98a"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": "google.storage.v2.Storage"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "B7x5bYp-YhtLeH31zYcilpKFCkGTMe3jtSECSw-bMC4",
+          "serverName": "dl.google.com",
+          "shortId": "8bd80253"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-3108bc60331a1d07"
     },
     {
       "protocol": "vless",
@@ -834,6 +956,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "85.90.197.158",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "99c5b713-dedf-4a10-8070-916ff3f49b0e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "fs.qicai99.com"
+        },
+        "wsSettings": {
+          "path": "/fp"
+        }
+      },
+      "tag": "resilient-e9647d1bbb6dde00"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "45.92.219.47",
             "port": 443,
             "users": [
@@ -912,149 +1063,6 @@
         "security": "reality"
       },
       "tag": "resilient-ee3c80deca2e0995"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.213.24.16",
-            "port": 2083,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "52a5a29f-c162-411a-8a37-a3f11b0dc537"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4",
-          "serverName": "www.apple.com",
-          "shortId": "0123456789abcdef"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-e5777fc96924182d"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "92.119.165.51",
-            "port": 6443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "68a67906-5b37-4779-a6cc-58a1655f18b4"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "zug-net.locallynet.org"
-        }
-      },
-      "tag": "resilient-76fa7068c8a09e0b"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "195.72.166.251",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "64c05afc-ce81-4ba0-b697-afa04da1427e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "RKDT6fVgcZS8Qfzhv5rbeHRIflA3UTKD_HNLJyOoUwk",
-          "serverName": "www.lloydsbankinggroup.com",
-          "shortId": "25349b36802f"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-64819842bc332d02"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "80.47.11.123",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "fa081e9f-7574-4e18-8928-31aa5ac923c7"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "serverName": "pl8.lazeroe.com",
-          "shortId": "868419504747f6de"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-4a34a63a384efd46"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.130.209.212",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "c8c2ddff-825a-46c3-bbdd-4a101de468a7"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "6vubZmkLVtaiFF8JyGFy7XSy2pc7ywN4P625QLKw8wc",
-          "serverName": "thumbs.mycdn-io.ru",
-          "shortId": "11979c0c9b2da371"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-0ea0242639c2152b"
     },
     {
       "protocol": "vless",
