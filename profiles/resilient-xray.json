@@ -144,6 +144,64 @@
       "settings": {
         "vnext": [
           {
+            "address": "199.232.78.159",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "64ce5faf-427b-4dd1-926c-6b7ced6b8c38"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "cdn.akamai.steamstatic.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-2cc0734194cdbd3c"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.64.53.60",
+            "port": 2087,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-b2c6f324bd2faa48"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "104.24.196.20",
             "port": 443,
             "users": [
@@ -196,35 +254,6 @@
         }
       },
       "tag": "resilient-663c8f1320775a33"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.159",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "97e0ea78-67ae-4984-8a14-a7d1a51e58de"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "cdn.akamai.steamstatic.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-d6f435d1b9eeccac"
     },
     {
       "protocol": "vless",
@@ -456,35 +485,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "68.221.177.135",
-            "port": 2083,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "52a5a29f-c162-411a-8a37-a3f11b0dc537"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4",
-          "serverName": "www.apple.com",
-          "shortId": "0123456789abcdef"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-2fdf8f22880649d7"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "13.37.145.19",
             "port": 22223,
             "users": [
@@ -501,36 +501,6 @@
         "security": "none"
       },
       "tag": "resilient-9412c2868078bd5f"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "67.159.44.219",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "90157e25-cee1-4217-921e-91f300bc1a24"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
-          "serverName": "bestgif.su",
-          "shortId": "428ef87fd47a3a32",
-          "spiderX": "/"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-3b347bd18ed4f805"
     },
     {
       "protocol": "vless",
@@ -813,35 +783,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.83.182.80",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "99c5b713-dedf-4a10-8070-916ff3f49b0e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "fs.qicai99.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-7df8d8eae768fe3f"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "93.190.9.97",
             "port": 3090,
             "users": [
@@ -1041,13 +982,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "109.69.218.172",
+            "address": "194.150.220.101",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "664f65f4-33b3-43a3-b9e5-68192d1d428e"
+                "id": "6d9b168e-b952-452f-9307-53d2fdb926ef"
               }
             ]
           }
@@ -1057,12 +997,70 @@
         "network": "tcp",
         "realitySettings": {
           "fingerprint": "firefox",
-          "publicKey": "cv_KJnMzQUZruACPbH-BCgLWrYqPm2dbUymg-gW_sVc",
-          "serverName": "zealous-vortex.cdn.cachefleet.com"
+          "publicKey": "wfp4jyEksrozyS739zqIsNXySoqeEVtaQlVmeNeLp28",
+          "serverName": "cdn.jsdelivr.net"
         },
         "security": "reality"
       },
-      "tag": "resilient-534eee2d2e498483"
+      "tag": "resilient-de0a7079c6f9fe7f"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "157.22.185.68",
+            "port": 2058,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "4ad9f982-b56a-444a-9684-35ce51307a36"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "lJBsn9ndieTIUBzXkJUhf6O0OE8pm29_z1fUtARwL0s",
+          "serverName": "www.cloudflare.com",
+          "shortId": "937255313d6ce673"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-ee3c80deca2e0995"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.213.24.16",
+            "port": 2083,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "52a5a29f-c162-411a-8a37-a3f11b0dc537"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4",
+          "serverName": "www.apple.com",
+          "shortId": "0123456789abcdef"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-e5777fc96924182d"
     },
     {
       "protocol": "vless",
@@ -1092,6 +1090,32 @@
         }
       },
       "tag": "resilient-af2c8ea130e59a67"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "194.60.228.97",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "667016ca-f02e-4b5f-bfc3-3d8ed81e9bec"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "base.hosamobenl.co.uk"
+        }
+      },
+      "tag": "resilient-6589bcf096e40212"
     },
     {
       "protocol": "vless",
