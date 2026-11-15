@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "server": "172.64.145.166",
+      "server_port": 2087,
+      "tag": "outage-0c1d9c280baea4c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+      },
+      "transport": {
+        "headers": {
+          "Host": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+    },
+    {
+      "network": "tcp",
       "server": "104.18.38.33",
       "server_port": 443,
       "tag": "outage-0c839ae4285af3cd",
@@ -30,25 +49,6 @@
       },
       "type": "vless",
       "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e"
-    },
-    {
-      "network": "tcp",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "tag": "outage-7aea536d07c6caa7",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/?Telegram---CAPOIT---CAPOIT---CAPOIT---CAPOIT",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "97e0ea78-67ae-4984-8a14-a7d1a51e58de"
     },
     {
       "network": "tcp",
@@ -295,8 +295,8 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-0c1d9c280baea4c4",
         "outage-0c839ae4285af3cd",
-        "outage-7aea536d07c6caa7",
         "outage-e6542a7b6d3626f3",
         "outage-fe61692fd6f75a7d",
         "outage-2cc0734194cdbd3c",
