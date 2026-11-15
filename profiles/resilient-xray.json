@@ -144,6 +144,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "146.75.59.186",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "45e70574-a1f1-46c8-ae7a-c0320e4eee2d"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "cdn.akamai.steamstatic.com"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-d19862d287919af1"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "199.232.78.159",
             "port": 443,
             "users": [
@@ -289,35 +318,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "146.75.59.186",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "97e0ea78-67ae-4984-8a14-a7d1a51e58de"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "cdn.akamai.steamstatic.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-d68ad8a04968881f"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "172.64.53.140",
             "port": 2087,
             "users": [
@@ -428,6 +428,34 @@
         }
       },
       "tag": "resilient-89151244dfcde797"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "hiccuped-tacos.sports-streams.org",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "11b8d1a3-d3f3-48b9-bdf2-fef490069bea"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "6dc3iKXilOQpA_JFrKlk5-CsFjSmOm_5p0kSQcO9qi4",
+          "serverName": "liggo.love"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-d88eca78ae13c4b8"
     },
     {
       "protocol": "vless",
@@ -1040,12 +1068,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "194.150.220.101",
-            "port": 443,
+            "address": "51.158.206.29",
+            "port": 23576,
             "users": [
               {
                 "encryption": "none",
-                "id": "6d9b168e-b952-452f-9307-53d2fdb926ef"
+                "flow": "xtls-rprx-vision",
+                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
               }
             ]
           }
@@ -1054,13 +1083,14 @@
       "streamSettings": {
         "network": "tcp",
         "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "wfp4jyEksrozyS739zqIsNXySoqeEVtaQlVmeNeLp28",
-          "serverName": "cdn.jsdelivr.net"
+          "fingerprint": "chrome",
+          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "serverName": "fuck.rkn",
+          "shortId": "01"
         },
         "security": "reality"
       },
-      "tag": "resilient-de0a7079c6f9fe7f"
+      "tag": "resilient-e33abef9f8abe0b1"
     },
     {
       "protocol": "vless",
