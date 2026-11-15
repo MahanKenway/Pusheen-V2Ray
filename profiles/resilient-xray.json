@@ -260,6 +260,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "104.16.150.246",
+            "port": 2087,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+        },
+        "wsSettings": {
+          "path": "/"
+        }
+      },
+      "tag": "resilient-87bcf8d74dec9572"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "146.75.59.186",
             "port": 443,
             "users": [
@@ -684,12 +713,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "18.169.33.146",
-            "port": 22223,
+            "address": "62.210.91.10",
+            "port": 23576,
             "users": [
               {
                 "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+                "flow": "xtls-rprx-vision",
+                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
               }
             ]
           }
@@ -697,38 +727,15 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-12444712da45630c"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "89.105.195.150",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "1653818d-532e-46be-b825-384107fb7c3a"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "stats.v2.StreamService"
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "serverName": "fuck.rkn",
+          "shortId": "01"
         },
-        "network": "grpc",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "cdn.mediacorphub.org"
-        }
+        "security": "reality"
       },
-      "tag": "resilient-68400f6ded4e24d7"
+      "tag": "resilient-c47988ccd75a9c29"
     },
     {
       "protocol": "vless",
@@ -889,36 +896,6 @@
         "security": "reality"
       },
       "tag": "resilient-f9db014530b52189"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "2.28.102.229",
-            "port": 3939,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "032c5a4d-0e1b-4077-89ad-129386180d2c"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "dnnN66V_xqEbGoG5P8E_Zqk3TaZt2lM4SI9N7Ana7FA",
-          "serverName": "ai.android",
-          "shortId": "d9a2600fdecd7be2",
-          "spiderX": "/16504cba99195d6"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-5941cf7fc12c6c35"
     },
     {
       "protocol": "vless",
