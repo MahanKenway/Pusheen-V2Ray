@@ -28,6 +28,64 @@
       "settings": {
         "vnext": [
           {
+            "address": "199.232.78.120",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "cdn.akamai.steamstatic.com"
+        },
+        "wsSettings": {
+          "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560"
+        }
+      },
+      "tag": "resilient-e2d920e133d82654"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.97.6",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "jp3.yohototo.top"
+        },
+        "wsSettings": {
+          "path": "/tyxyws"
+        }
+      },
+      "tag": "resilient-253179b8681e5054"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "172.64.145.166",
             "port": 2087,
             "users": [
@@ -260,35 +318,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "199.232.78.120",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "685b5831-59a3-4d14-9afe-199880ae43a0"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "cdn.akamai.steamstatic.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-663c8f1320775a33"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "104.16.150.246",
             "port": 2087,
             "users": [
@@ -401,35 +430,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.67.74.177",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "99c5b713-dedf-4a10-8070-916ff3f49b0e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "fs.qicai99.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-89151244dfcde797"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "hiccuped-tacos.sports-streams.org",
             "port": 443,
             "users": [
@@ -502,6 +502,57 @@
         "security": "none"
       },
       "tag": "resilient-d5a0fcb7cbc2faf5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "35.181.22.136",
+            "port": 22223,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-66d07a5b5deb022c"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "129.101.120.5",
+            "port": 37951,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "25284368-40d5-4abe-9f56-54a07e88a7af"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "O6ZOpoz4sxon8iHxCd5EEvx2K9NUThd4SvOCBEvADEI",
+          "serverName": "nl2.dzvn.space",
+          "shortId": "a9e21fd097d019c6"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-feba97bd4ca33fd1"
     },
     {
       "protocol": "vless",
@@ -998,60 +1049,6 @@
         "security": "reality"
       },
       "tag": "resilient-f9db014530b52189"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "www.speedtest.net",
-            "port": 2095,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "17c45b20-9128-4eaf-a444-15a394f7e77c"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "httpupgradeSettings": {
-          "path": "/@v2safee-@v2safee-@v2safee-@v2safee-@v2safee-@v2safee-@v2safee-@v2safee-@v2safee-@v2safee-@v2safee-@v2safee-@v2safee-@v2safee-@v2safee-@v2safee-@v2safee-@v2safee-@v2safee-@v2safee-?ed=2048"
-        },
-        "network": "httpupgrade",
-        "security": "none"
-      },
-      "tag": "resilient-83e56956c6045184"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "85.90.197.158",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "99c5b713-dedf-4a10-8070-916ff3f49b0e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "fs.qicai99.com"
-        },
-        "wsSettings": {
-          "path": "/fp"
-        }
-      },
-      "tag": "resilient-e9647d1bbb6dde00"
     },
     {
       "protocol": "vless",
