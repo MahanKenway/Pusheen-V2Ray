@@ -458,6 +458,34 @@
       "settings": {
         "vnext": [
           {
+            "address": "66.70.179.198",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "dc620cd6-a9d8-4a0f-8f18-006b895db77e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU",
+          "serverName": "www.cloudflare.com",
+          "shortId": "83f8317a948bb769"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-615e1a4c03644b88"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "caudal-reason.freevideochats.org",
             "port": 443,
             "users": [
@@ -937,31 +965,6 @@
         "security": "none"
       },
       "tag": "resilient-7cca4423808e6467"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "93.190.9.97",
-            "port": 3090,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "8ed234a6-e129-442c-a482-aae569c3834f"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "vless"
-        },
-        "network": "grpc",
-        "security": "none"
-      },
-      "tag": "resilient-e4068de43a004dc4"
     },
     {
       "protocol": "vless",
