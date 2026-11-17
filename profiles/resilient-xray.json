@@ -47,10 +47,10 @@
           "serverName": "cdn.akamai.steamstatic.com"
         },
         "wsSettings": {
-          "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560"
+          "path": "/"
         }
       },
-      "tag": "resilient-e2d920e133d82654"
+      "tag": "resilient-7eff3afd9e5362d8"
     },
     {
       "protocol": "vless",
@@ -682,32 +682,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "87.248.149.50",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "667016ca-f02e-4b5f-bfc3-3d8ed81e9bec"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "base.hosamobenl.co.uk"
-        }
-      },
-      "tag": "resilient-a1bf3d3c46729b7c"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "140.225.209.171",
             "port": 11443,
             "users": [
@@ -778,6 +752,32 @@
         "security": "none"
       },
       "tag": "resilient-0bb05ca8903a7e3c"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "179.43.187.67",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "9dd38d60-e683-47c6-bd53-d71bdfee78f3"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "portal.mavexa.ir"
+        }
+      },
+      "tag": "resilient-6a5ac22bab11bda9"
     },
     {
       "protocol": "vless",
@@ -1059,35 +1059,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.225.73.41",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "4cabcd59-a405-4c00-96f5-03507e1e28fa"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "cache.sync.v1"
-        },
-        "network": "grpc",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "cadrin.wtf"
-        }
-      },
-      "tag": "resilient-781db5092fc76f2d"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "200.96.106.2",
             "port": 9889,
             "users": [
@@ -1165,6 +1136,37 @@
         }
       },
       "tag": "resilient-6589bcf096e40212"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "84.23.52.104",
+            "port": 9079,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "6a5b48fe-9a99-4509-9bad-8ad9b44bd56e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": "inetgrpc"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "V1ifE7iJ4ITZfA10PNaR7fF7Lz1E_9v7a9S4jPOY-A8",
+          "serverName": "by.84-23-52-104.sslip.io",
+          "shortId": "069074d6fbb09e56"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-4af96f29d3383c49"
     },
     {
       "protocol": "blackhole",

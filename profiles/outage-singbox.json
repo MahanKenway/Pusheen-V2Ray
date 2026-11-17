@@ -16,7 +16,7 @@
       "network": "tcp",
       "server": "199.232.78.120",
       "server_port": 443,
-      "tag": "outage-e2d920e133d82654",
+      "tag": "outage-7eff3afd9e5362d8",
       "tls": {
         "enabled": true,
         "server_name": "cdn.akamai.steamstatic.com"
@@ -25,7 +25,7 @@
         "headers": {
           "Host": "cdn.akamai.steamstatic.com"
         },
-        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560",
+        "path": "/",
         "type": "ws"
       },
       "type": "vless",
@@ -253,11 +253,23 @@
       "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
     },
     {
+      "network": "tcp",
+      "server": "194.60.228.97",
+      "server_port": 443,
+      "tag": "outage-6589bcf096e40212",
+      "tls": {
+        "enabled": true,
+        "server_name": "base.hosamobenl.co.uk"
+      },
+      "type": "vless",
+      "uuid": "667016ca-f02e-4b5f-bfc3-3d8ed81e9bec"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
-        "outage-e2d920e133d82654",
+        "outage-7eff3afd9e5362d8",
         "outage-253179b8681e5054",
         "outage-0c1d9c280baea4c4",
         "outage-0c839ae4285af3cd",
@@ -269,7 +281,8 @@
         "outage-b32148c613e2738e",
         "outage-87bcf8d74dec9572",
         "outage-2fdb9a2b8ca48614",
-        "outage-ac6eb867163561ad"
+        "outage-ac6eb867163561ad",
+        "outage-6589bcf096e40212"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
