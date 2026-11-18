@@ -33,6 +33,25 @@
     },
     {
       "network": "tcp",
+      "server": "104.19.214.98",
+      "server_port": 2087,
+      "tag": "outage-18a4b37202d585c6",
+      "tls": {
+        "enabled": true,
+        "server_name": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+      },
+      "transport": {
+        "headers": {
+          "Host": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+    },
+    {
+      "network": "tcp",
       "server": "188.114.97.6",
       "server_port": 443,
       "tag": "outage-253179b8681e5054",
@@ -121,25 +140,6 @@
     },
     {
       "network": "tcp",
-      "server": "104.16.150.7",
-      "server_port": 2087,
-      "tag": "outage-ac6eb867163561ad",
-      "tls": {
-        "enabled": true,
-        "server_name": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
-      },
-      "transport": {
-        "headers": {
-          "Host": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
-    },
-    {
-      "network": "tcp",
       "server": "172.66.213.209",
       "server_port": 2087,
       "tag": "outage-13f9501a9c9d61aa",
@@ -190,12 +190,12 @@
       "interval": "10m",
       "outbounds": [
         "outage-7eff3afd9e5362d8",
+        "outage-18a4b37202d585c6",
         "outage-253179b8681e5054",
         "outage-9b76cbf78001bc9d",
         "outage-d19862d287919af1",
         "outage-7dd3efda0670e3ee",
         "outage-2fdb9a2b8ca48614",
-        "outage-ac6eb867163561ad",
         "outage-13f9501a9c9d61aa",
         "outage-66d07a5b5deb022c",
         "outage-941eb7cf63670844"
