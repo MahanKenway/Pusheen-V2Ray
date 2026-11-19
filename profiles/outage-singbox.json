@@ -52,25 +52,6 @@
     },
     {
       "network": "tcp",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "tag": "outage-253179b8681e5054",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.yohototo.top"
-      },
-      "transport": {
-        "headers": {
-          "Host": "jp3.yohototo.top"
-        },
-        "path": "/tyxyws",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4"
-    },
-    {
-      "network": "tcp",
       "server": "199.232.78.160",
       "server_port": 443,
       "tag": "outage-9b76cbf78001bc9d",
@@ -155,11 +136,30 @@
     },
     {
       "network": "tcp",
-      "server": "35.181.22.136",
+      "server": "15.224.89.220",
       "server_port": 22223,
-      "tag": "outage-66d07a5b5deb022c",
+      "tag": "outage-ca3a494622e96301",
       "type": "vless",
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+    },
+    {
+      "network": "tcp",
+      "server": "149.202.58.99",
+      "server_port": 443,
+      "tag": "outage-ca80e3cb680bd048",
+      "tls": {
+        "enabled": true,
+        "server_name": "bab-6.site"
+      },
+      "transport": {
+        "headers": {
+          "Host": "bab-6.site"
+        },
+        "path": "/vws/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "b585dc5e-55bf-4a8b-913a-27c9ccac05c3"
     },
     {
       "network": "tcp",
@@ -206,13 +206,13 @@
       "outbounds": [
         "outage-7eff3afd9e5362d8",
         "outage-18a4b37202d585c6",
-        "outage-253179b8681e5054",
         "outage-9b76cbf78001bc9d",
         "outage-7dd3efda0670e3ee",
         "outage-fc3145bd0269dac6",
         "outage-1b0df61e5be5e96a",
         "outage-13f9501a9c9d61aa",
-        "outage-66d07a5b5deb022c",
+        "outage-ca3a494622e96301",
+        "outage-ca80e3cb680bd048",
         "outage-941eb7cf63670844",
         "outage-945a3e1eaa5f6104"
       ],
