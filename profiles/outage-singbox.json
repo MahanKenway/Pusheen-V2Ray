@@ -14,25 +14,6 @@
   "outbounds": [
     {
       "network": "tcp",
-      "server": "199.232.78.120",
-      "server_port": 443,
-      "tag": "outage-7eff3afd9e5362d8",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
-    },
-    {
-      "network": "tcp",
       "server": "146.75.59.186",
       "server_port": 443,
       "tag": "outage-d714004c9f32763d",
@@ -201,6 +182,25 @@
     },
     {
       "network": "tcp",
+      "server": "149.202.58.99",
+      "server_port": 443,
+      "tag": "outage-ca80e3cb680bd048",
+      "tls": {
+        "enabled": true,
+        "server_name": "bab-6.site"
+      },
+      "transport": {
+        "headers": {
+          "Host": "bab-6.site"
+        },
+        "path": "/vws/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "b585dc5e-55bf-4a8b-913a-27c9ccac05c3"
+    },
+    {
+      "network": "tcp",
       "server": "88.216.70.125",
       "server_port": 443,
       "tag": "outage-941eb7cf63670844",
@@ -242,7 +242,6 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
-        "outage-7eff3afd9e5362d8",
         "outage-d714004c9f32763d",
         "outage-18a4b37202d585c6",
         "outage-9b76cbf78001bc9d",
@@ -253,6 +252,7 @@
         "outage-13f9501a9c9d61aa",
         "outage-63fdd59ca8a490cf",
         "outage-ca3a494622e96301",
+        "outage-ca80e3cb680bd048",
         "outage-941eb7cf63670844",
         "outage-945a3e1eaa5f6104"
       ],

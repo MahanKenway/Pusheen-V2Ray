@@ -28,35 +28,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "199.232.78.120",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "8d2cbffd-43d0-458d-906b-7c54b7b51f38"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "cdn.akamai.steamstatic.com"
-        },
-        "wsSettings": {
-          "path": "/"
-        }
-      },
-      "tag": "resilient-7eff3afd9e5362d8"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "146.75.59.186",
             "port": 443,
             "users": [
@@ -506,32 +477,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "179.43.187.67",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "9dd38d60-e683-47c6-bd53-d71bdfee78f3"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "portal.mavexa.ir"
-        }
-      },
-      "tag": "resilient-6a5ac22bab11bda9"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "51.158.206.103",
             "port": 23576,
             "users": [
@@ -887,13 +832,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "bg.spirako.com",
-            "port": 8443,
+            "address": "179.43.187.67",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "081cd1d2-4a06-440b-b68a-1472a6aa69f1"
+                "id": "9dd38d60-e683-47c6-bd53-d71bdfee78f3"
               }
             ]
           }
@@ -901,15 +845,13 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "0hH6R90pSxwm7nZPGtJJcJFhwCXU3Rvf-wcEHE7hczo",
-          "serverName": "apple.com",
-          "shortId": "9ce04f63"
-        },
-        "security": "reality"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "portal.mavexa.ir"
+        }
       },
-      "tag": "resilient-2d876d0ea4d66066"
+      "tag": "resilient-1ecf476ab9ad4323"
     },
     {
       "protocol": "vless",
@@ -966,6 +908,28 @@
         "security": "reality"
       },
       "tag": "resilient-aa5f7cb1c0216371"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "13.39.41.107",
+            "port": 22223,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-9627370b06367dee"
     },
     {
       "protocol": "vless",
@@ -1132,6 +1096,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "144.31.179.156",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "0001f119-4d6d-42ae-b2f0-d07ed4694381"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "f3Ooz7Yxw4QqQNxddxYG0zOewK8zullgKVTBZxR1a0Y",
+          "serverName": "www.samsung.com",
+          "shortId": "cc981b746a300649"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-c4c02eba743723fc"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "196.196.148.85",
             "port": 443,
             "users": [
@@ -1160,29 +1153,29 @@
       "settings": {
         "vnext": [
           {
-            "address": "67.159.52.81",
+            "address": "201.51.2.188",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "a16bd0e2-ff2e-4e4c-a955-0c684255a065"
+                "id": "25ac78e7-6d1d-4c9a-a450-c01a4871769f"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "-YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs",
-          "serverName": "sg.fasti.win",
-          "shortId": "feedbacc"
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "sequoia.merlano.monster"
         },
-        "security": "reality"
+        "wsSettings": {
+          "path": "/api/de1/stream"
+        }
       },
-      "tag": "resilient-dd010b42240df87d"
+      "tag": "resilient-b69eacbf6f964c56"
     },
     {
       "protocol": "blackhole",
