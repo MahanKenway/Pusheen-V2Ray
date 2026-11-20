@@ -128,30 +128,68 @@
     },
     {
       "network": "tcp",
-      "server": "169.40.42.89",
-      "server_port": 443,
-      "tag": "outage-1b0df61e5be5e96a",
-      "type": "vless",
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c"
-    },
-    {
-      "network": "tcp",
-      "server": "172.66.213.209",
-      "server_port": 2087,
-      "tag": "outage-13f9501a9c9d61aa",
+      "server": "8.6.112.0",
+      "server_port": 2083,
+      "tag": "outage-ed8889b08883c735",
       "tls": {
         "enabled": true,
-        "server_name": "testvip1.aattaash.com"
+        "server_name": "ds1-mx-fn154-protection.iranlease.com"
       },
       "transport": {
         "headers": {
-          "Host": "testvip1.aattaash.com"
+          "Host": "ds1-mx-fn154-protection.iranlease.com"
+        },
+        "path": "/?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "96d9bcb0-9ad2-48be-85a2-a9ab3a005261"
+    },
+    {
+      "network": "tcp",
+      "password": "mitivpn",
+      "server": "167.82.64.7",
+      "server_port": 443,
+      "tag": "outage-8bd99c56bffef261",
+      "tls": {
+        "enabled": true,
+        "server_name": "steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "steamstatic.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "8.6.112.0",
+      "server_port": 2053,
+      "tag": "outage-8583d9350c44a613",
+      "tls": {
+        "enabled": true,
+        "server_name": "ir7.hnbyme.online"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ir7.hnbyme.online"
         },
         "path": "/",
         "type": "ws"
       },
       "type": "vless",
-      "uuid": "089151c6-276a-4292-b8c3-b65ce1193b49"
+      "uuid": "48792731-6fc9-4415-8b51-6007825daf82"
+    },
+    {
+      "network": "tcp",
+      "server": "169.40.42.89",
+      "server_port": 443,
+      "tag": "outage-1b0df61e5be5e96a",
+      "type": "vless",
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c"
     },
     {
       "network": "tcp",
@@ -179,25 +217,6 @@
       "tag": "outage-ca3a494622e96301",
       "type": "vless",
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-    },
-    {
-      "network": "tcp",
-      "server": "149.202.58.99",
-      "server_port": 443,
-      "tag": "outage-ca80e3cb680bd048",
-      "tls": {
-        "enabled": true,
-        "server_name": "bab-6.site"
-      },
-      "transport": {
-        "headers": {
-          "Host": "bab-6.site"
-        },
-        "path": "/vws/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "b585dc5e-55bf-4a8b-913a-27c9ccac05c3"
     },
     {
       "network": "tcp",
@@ -238,6 +257,25 @@
       "uuid": "fda89998-7e9a-4494-857a-cd0d00661b58"
     },
     {
+      "network": "tcp",
+      "password": "jcTG9WSWMJAmR4rv10xpww",
+      "server": "fastly2.dunnexa.ir",
+      "server_port": 443,
+      "tag": "outage-2292c2554baaea20",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
@@ -248,13 +286,15 @@
         "outage-95d3b8250aa29c2f",
         "outage-7dd3efda0670e3ee",
         "outage-fc3145bd0269dac6",
+        "outage-ed8889b08883c735",
+        "outage-8bd99c56bffef261",
+        "outage-8583d9350c44a613",
         "outage-1b0df61e5be5e96a",
-        "outage-13f9501a9c9d61aa",
         "outage-63fdd59ca8a490cf",
         "outage-ca3a494622e96301",
-        "outage-ca80e3cb680bd048",
         "outage-941eb7cf63670844",
-        "outage-945a3e1eaa5f6104"
+        "outage-945a3e1eaa5f6104",
+        "outage-2292c2554baaea20"
       ],
       "tag": "outage-auto",
       "tolerance": 200,

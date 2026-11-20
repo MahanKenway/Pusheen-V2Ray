@@ -13,7 +13,7 @@
       "max_evidence_age_hours": 72,
       "published": true,
       "reason": null,
-      "snapshot_id": "20261120T102432Z-b51ef21cff76",
+      "snapshot_id": "20261120T184643Z-cfe8701ce27f",
       "variants": [
         "reachable",
         "reachable-fast",
@@ -24,26 +24,26 @@
       ]
     },
     "outage_diverse": {
-      "count": 20,
+      "count": 22,
       "evidence": "recent TCP reachability with tighter source, protocol, endpoint, and transport concentration caps",
       "max_evidence_age_hours": 72,
       "path": "subscriptions/outage.txt",
       "published": true,
       "reason": null,
-      "receipt_count": 20,
+      "receipt_count": 22,
       "receipt_path": "subscriptions/outage.receipts.v1.json",
       "receipt_published": true,
       "receipt_reason": null,
       "selection_notice": "Designed to reduce shared failure modes; not evidence from inside Iran and not a shutdown-availability guarantee.",
       "singbox_profile": {
-        "artifact_hash": "3f7b9203c0f81ab6b73b05621c7e4dfb89acbe1766e876569c437508142b0929",
-        "count": 13,
+        "artifact_hash": "9c3fd18c974d8227d9e1c55786ccab5ad3d62330f496982a47979e0451ff660a",
+        "count": 15,
         "path": "profiles/outage-singbox.json",
         "published": true,
         "reason": null,
         "rejected_count": 7
       },
-      "snapshot_id": "20261120T102432Z-78e13d6ebcc0"
+      "snapshot_id": "20261120T184643Z-e8cb8d70d0a9"
     },
     "primary": {
       "count": 57,
@@ -53,14 +53,14 @@
       "path": "subscriptions/all.txt",
       "published": true,
       "reason": null,
-      "snapshot_id": "20261120T102432Z-b51ef21cff76"
+      "snapshot_id": "20261120T184643Z-cfe8701ce27f"
     },
     "resilient": {
-      "count": 42,
+      "count": 43,
       "evidence": "recent TCP reachability with source, protocol, endpoint, and transport anti-concentration",
       "failover_profile": {
-        "artifact_hash": "75b6f59eb222c20f5d3e22fcd52648569d56d795c5d246281535b95ff9b16b42",
-        "count": 42,
+        "artifact_hash": "8d28153a395f4a39b726a68854d9872b3a42006cffe17e73c442031bea8501bc",
+        "count": 43,
         "path": "profiles/resilient-xray.json",
         "published": true,
         "reason": null
@@ -69,12 +69,12 @@
       "path": "subscriptions/resilient.txt",
       "published": true,
       "reason": null,
-      "receipt_count": 42,
+      "receipt_count": 43,
       "receipt_path": "subscriptions/resilient.receipts.v1.json",
       "receipt_published": true,
       "receipt_reason": null,
       "selection_notice": "This is a common-mode-risk reduction policy, not an Iran-availability or end-to-end guarantee.",
-      "snapshot_id": "20261120T102432Z-69ca02781ff7"
+      "snapshot_id": "20261120T184643Z-5494b52a2fc9"
     },
     "strict": {
       "count": 7,
@@ -87,13 +87,12 @@
     }
   },
   "ingestion": {
-    "discovered": 990,
-    "duplicates": 748,
-    "parsed": 6,
-    "rejected": 236,
+    "discovered": 1190,
+    "duplicates": 801,
+    "parsed": 145,
+    "rejected": 244,
     "source_errors": {
       "ebrasha-trojan-probationary": "SOURCE_HTTP_404",
-      "farid-iran-trojan-probationary": "SOURCE_TOO_LARGE",
       "farid-iran-vless-probationary": "SOURCE_TOO_LARGE"
     }
   },
@@ -105,117 +104,117 @@
     "status": "degraded"
   },
   "sources": {
-    "healthy": 4,
+    "healthy": 5,
     "items": [
       {
-        "consecutive_failures": 15,
+        "consecutive_failures": 16,
         "enabled": true,
         "last_accepted_count": 27,
-        "last_checked_at": "2026-11-20T10:24:20.593803+00:00",
+        "last_checked_at": "2026-11-20T18:46:34.115271+00:00",
         "last_discovered_count": 200,
         "last_error_code": "PARSE_FAILURE_RATE_HIGH",
-        "quarantine_until": "2026-11-20T16:24:20.664430+00:00",
+        "quarantine_until": "2026-11-21T00:46:34.167562+00:00",
         "quarantined": true,
         "source_id": "aggregator-merge",
         "successful_runs": 590,
-        "total_runs": 661
+        "total_runs": 662
       },
       {
         "consecutive_failures": 0,
         "enabled": true,
         "last_accepted_count": 200,
-        "last_checked_at": "2026-11-20T10:24:20.593803+00:00",
+        "last_checked_at": "2026-11-20T18:46:34.115271+00:00",
         "last_discovered_count": 200,
         "last_error_code": null,
         "quarantine_until": null,
         "quarantined": false,
         "source_id": "configforge-vless",
-        "successful_runs": 705,
-        "total_runs": 718
+        "successful_runs": 706,
+        "total_runs": 719
       },
       {
-        "consecutive_failures": 96,
+        "consecutive_failures": 97,
         "enabled": true,
         "last_accepted_count": 0,
-        "last_checked_at": "2026-11-20T10:24:20.593803+00:00",
+        "last_checked_at": "2026-11-20T18:46:34.115271+00:00",
         "last_discovered_count": 0,
         "last_error_code": "SOURCE_HTTP_404",
-        "quarantine_until": "2026-11-20T16:24:21.275065+00:00",
+        "quarantine_until": "2026-11-21T00:46:34.646308+00:00",
         "quarantined": true,
         "source_id": "ebrasha-trojan-probationary",
         "successful_runs": 533,
-        "total_runs": 635
+        "total_runs": 636
       },
       {
-        "consecutive_failures": 149,
+        "consecutive_failures": 0,
         "enabled": true,
-        "last_accepted_count": 0,
-        "last_checked_at": "2026-11-20T10:24:20.593803+00:00",
-        "last_discovered_count": 0,
-        "last_error_code": "SOURCE_TOO_LARGE",
-        "quarantine_until": "2026-11-20T16:24:21.181382+00:00",
-        "quarantined": true,
+        "last_accepted_count": 199,
+        "last_checked_at": "2026-11-20T18:46:34.115271+00:00",
+        "last_discovered_count": 200,
+        "last_error_code": null,
+        "quarantine_until": null,
+        "quarantined": false,
         "source_id": "farid-iran-trojan-probationary",
-        "successful_runs": 419,
-        "total_runs": 587
+        "successful_runs": 420,
+        "total_runs": 588
       },
       {
-        "consecutive_failures": 214,
+        "consecutive_failures": 215,
         "enabled": true,
         "last_accepted_count": 0,
-        "last_checked_at": "2026-11-20T10:24:20.593803+00:00",
+        "last_checked_at": "2026-11-20T18:46:34.115271+00:00",
         "last_discovered_count": 0,
         "last_error_code": "SOURCE_TOO_LARGE",
-        "quarantine_until": "2026-11-20T16:24:21.041248+00:00",
+        "quarantine_until": "2026-11-21T00:46:34.462857+00:00",
         "quarantined": true,
         "source_id": "farid-iran-vless-probationary",
         "successful_runs": 252,
-        "total_runs": 490
+        "total_runs": 491
       },
       {
         "consecutive_failures": 0,
         "enabled": true,
         "last_accepted_count": 200,
-        "last_checked_at": "2026-11-20T10:24:20.593803+00:00",
+        "last_checked_at": "2026-11-20T18:46:34.115271+00:00",
         "last_discovered_count": 200,
         "last_error_code": null,
         "quarantine_until": null,
         "quarantined": false,
         "source_id": "iboxz-vless-probationary",
-        "successful_runs": 692,
-        "total_runs": 692
+        "successful_runs": 693,
+        "total_runs": 693
       },
       {
         "consecutive_failures": 0,
         "enabled": true,
         "last_accepted_count": 188,
-        "last_checked_at": "2026-11-20T10:24:20.593803+00:00",
+        "last_checked_at": "2026-11-20T18:46:34.115271+00:00",
         "last_discovered_count": 190,
         "last_error_code": null,
         "quarantine_until": null,
         "quarantined": false,
         "source_id": "matin-hysteria2-probationary",
-        "successful_runs": 699,
-        "total_runs": 699
+        "successful_runs": 700,
+        "total_runs": 700
       },
       {
         "consecutive_failures": 0,
         "enabled": true,
-        "last_accepted_count": 139,
-        "last_checked_at": "2026-11-20T10:24:20.593803+00:00",
+        "last_accepted_count": 132,
+        "last_checked_at": "2026-11-20T18:46:34.115271+00:00",
         "last_discovered_count": 200,
         "last_error_code": null,
         "quarantine_until": null,
         "quarantined": false,
         "source_id": "raydikal-verified",
-        "successful_runs": 718,
-        "total_runs": 718
+        "successful_runs": 719,
+        "total_runs": 719
       }
     ],
-    "quarantined": 4,
+    "quarantined": 3,
     "total": 8
   },
-  "updated_at": "2026-11-20T10:24:32.478734+00:00",
+  "updated_at": "2026-11-20T18:46:44.451705+00:00",
   "validation": {
     "allocator": {
       "exploration_budget": 2,
