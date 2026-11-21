@@ -410,6 +410,50 @@
       "settings": {
         "vnext": [
           {
+            "address": "62.210.91.2",
+            "port": 23576,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-91b9c5b3c11b089b"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "13.38.184.123",
+            "port": 22224,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-4e855151348a4547"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "15.224.89.220",
             "port": 22223,
             "users": [
@@ -426,6 +470,35 @@
         "security": "none"
       },
       "tag": "resilient-ca3a494622e96301"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "192.142.12.198",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "bc93a03d-13b5-0004-8ee7-d50c11459dab"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
+          "serverName": "diffoscope.com",
+          "shortId": "1c3e8241a8743df9"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-ad640fb2b8bfcfaf"
     },
     {
       "protocol": "vless",
@@ -707,6 +780,35 @@
         }
       },
       "tag": "resilient-54440b13b36ac570"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "147.45.103.94",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "ef5a57c7-84d5-4f86-b99c-875a16da485f"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "lUcH1QMpmsh4MyoJcJ4QuvmCo_x_vFcfOHFqNN_7wQM",
+          "serverName": "rumicro249.grizpliz.am",
+          "shortId": "ccda6ab207401e4d"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-cd539aa1c10dce9f"
     },
     {
       "protocol": "vless",
@@ -1012,86 +1114,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "57.129.132.223",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "9e20b04d-5a81-4e16-b421-01e502f0aac6"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-351543851a92899f"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "144.48.11.146",
-            "port": 43000,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "4a923161-156f-4914-8cac-762fb2433bfb"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "CG0mVPuvPcfZjplA21zehlqoDpGHihJBK8K_u1zfhgQ",
-          "serverName": "144.48.11.146",
-          "shortId": "ee4ea980"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-5667ab3e0a7c0ff3"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "144.31.179.156",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "0001f119-4d6d-42ae-b2f0-d07ed4694381"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "f3Ooz7Yxw4QqQNxddxYG0zOewK8zullgKVTBZxR1a0Y",
-          "serverName": "www.samsung.com",
-          "shortId": "cc981b746a300649"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-c4c02eba743723fc"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "196.196.148.85",
             "port": 443,
             "users": [
@@ -1114,35 +1136,6 @@
         "security": "reality"
       },
       "tag": "resilient-8edc5de8701c69ff"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "129.101.98.60",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "e75ad2eb-6c1f-45ce-8023-f5f10875df66"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "lews1n_fypGexd_dMofEO4Vy1ULsFeVIFa90MMY3pm4",
-          "serverName": "ru7e2bab87cc39.eu-cdn539.com",
-          "shortId": "3992cc7fb9fcbe58"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-bbc8238d346029f3"
     },
     {
       "protocol": "vless",
