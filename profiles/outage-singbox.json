@@ -33,22 +33,22 @@
     },
     {
       "network": "tcp",
-      "server": "104.19.214.98",
-      "server_port": 2087,
-      "tag": "outage-18a4b37202d585c6",
+      "password": "mitivpn",
+      "server": "167.82.64.46",
+      "server_port": 443,
+      "tag": "outage-0a0a14c66221599d",
       "tls": {
         "enabled": true,
-        "server_name": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+        "server_name": "firefox.com"
       },
       "transport": {
         "headers": {
-          "Host": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+          "Host": "firefox.com"
         },
-        "path": "/",
+        "path": "/?Telegram---DailyConfigs---DailyConfigs---DailyConfigs---DailyConfigs",
         "type": "ws"
       },
-      "type": "vless",
-      "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -72,18 +72,18 @@
     {
       "network": "tcp",
       "password": "mitivpn",
-      "server": "167.82.64.46",
+      "server": "167.82.76.27",
       "server_port": 443,
-      "tag": "outage-73952b119da84f47",
+      "tag": "outage-6dd5847f38830ff2",
       "tls": {
         "enabled": true,
-        "server_name": "firefox.com"
+        "server_name": "ssl.fastly.com"
       },
       "transport": {
         "headers": {
-          "Host": "firefox.com"
+          "Host": "ssl.fastly.com"
         },
-        "path": "/?DailyConfigs--DailyConfigs--DailyConfigs?ed=2048",
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
         "type": "ws"
       },
       "type": "trojan"
@@ -247,6 +247,25 @@
     },
     {
       "network": "tcp",
+      "server": "48.102.173.24",
+      "server_port": 444,
+      "tag": "outage-158c4906da426d11",
+      "tls": {
+        "enabled": true,
+        "server_name": "neplay603.gangtype.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "neplay603.gangtype.com"
+        },
+        "path": "/stream/updates/a66d7902",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "ef5a57c7-84d5-4f86-b99c-875a16da485f"
+    },
+    {
+      "network": "tcp",
       "server": "51.38.71.147",
       "server_port": 443,
       "tag": "outage-945a3e1eaa5f6104",
@@ -308,9 +327,9 @@
       "interval": "10m",
       "outbounds": [
         "outage-d714004c9f32763d",
-        "outage-18a4b37202d585c6",
+        "outage-0a0a14c66221599d",
         "outage-95d3b8250aa29c2f",
-        "outage-73952b119da84f47",
+        "outage-6dd5847f38830ff2",
         "outage-715121e8016fe9ec",
         "outage-fc3145bd0269dac6",
         "outage-ed8889b08883c735",
@@ -321,6 +340,7 @@
         "outage-63fdd59ca8a490cf",
         "outage-91b9c5b3c11b089b",
         "outage-4e855151348a4547",
+        "outage-158c4906da426d11",
         "outage-945a3e1eaa5f6104",
         "outage-b69eacbf6f964c56",
         "outage-2292c2554baaea20"

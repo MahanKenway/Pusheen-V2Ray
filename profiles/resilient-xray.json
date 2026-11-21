@@ -53,18 +53,13 @@
       "tag": "resilient-d714004c9f32763d"
     },
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "104.19.214.98",
-            "port": 2087,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
-              }
-            ]
+            "address": "167.82.64.46",
+            "password": "mitivpn",
+            "port": 443
           }
         ]
       },
@@ -73,13 +68,13 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+          "serverName": "firefox.com"
         },
         "wsSettings": {
-          "path": "/"
+          "path": "/?Telegram---DailyConfigs---DailyConfigs---DailyConfigs---DailyConfigs"
         }
       },
-      "tag": "resilient-18a4b37202d585c6"
+      "tag": "resilient-0a0a14c66221599d"
     },
     {
       "protocol": "vless",
@@ -111,6 +106,30 @@
       "tag": "resilient-95d3b8250aa29c2f"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "167.82.76.27",
+            "password": "mitivpn",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+        }
+      },
+      "tag": "resilient-6dd5847f38830ff2"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -137,30 +156,6 @@
         "security": "reality"
       },
       "tag": "resilient-f7d7a1ef31512d6c"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "167.82.64.46",
-            "password": "mitivpn",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "firefox.com"
-        },
-        "wsSettings": {
-          "path": "/?DailyConfigs--DailyConfigs--DailyConfigs?ed=2048"
-        }
-      },
-      "tag": "resilient-73952b119da84f47"
     },
     {
       "protocol": "trojan",
@@ -302,34 +297,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "84.32.54.237",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "a30903dc-1bf0-4be5-8b1b-603a3a56211c"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "serverName": "rly-gw-cfg.galioncc.com",
-          "shortId": "868419504747f6de"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-a2885fa825a720ce"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "169.40.42.89",
             "port": 443,
             "users": [
@@ -454,22 +421,29 @@
       "settings": {
         "vnext": [
           {
-            "address": "15.224.89.220",
-            "port": 22223,
+            "address": "48.102.173.24",
+            "port": 444,
             "users": [
               {
                 "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+                "id": "ef5a57c7-84d5-4f86-b99c-875a16da485f"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none"
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "neplay603.gangtype.com"
+        },
+        "wsSettings": {
+          "path": "/stream/updates/a66d7902"
+        }
       },
-      "tag": "resilient-ca3a494622e96301"
+      "tag": "resilient-158c4906da426d11"
     },
     {
       "protocol": "vless",
@@ -638,34 +612,6 @@
         }
       },
       "tag": "resilient-ccd53377e0213177"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "88.216.211.36",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "a30903dc-1bf0-4be5-8b1b-603a3a56211c"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "serverName": "de8.galioncc.com",
-          "shortId": "c4e7a1902b8d6f35"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-131c6649a7d6d777"
     },
     {
       "protocol": "vless",
@@ -843,6 +789,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "153.80.22.106",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "ef5a57c7-84d5-4f86-b99c-875a16da485f"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "IU5C8_llRrimMDeJDPc3XM256DZOWIYblUdDYilAcFM",
+          "serverName": "rusbox729.alexdjane.am",
+          "shortId": "686f7ed96ec0227d"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-531cbe64512dc76d"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "45.144.52.252",
             "port": 443,
             "users": [
@@ -892,6 +867,35 @@
         }
       },
       "tag": "resilient-1685d97a78e14170"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "83.141.92.168",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "a7595994-695d-484e-bfcb-e9fbb73cfa39"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "firefox",
+          "publicKey": "kpQWnVk3fEJXfPGFsMerUoPV_ZqUJUJFRnF1FvKyhRY",
+          "serverName": "sladovna.russianpiwo.fun",
+          "shortId": "7a7d19880a9ee786"
+        },
+        "security": "reality"
+      },
+      "tag": "resilient-5844465512e34452"
     },
     {
       "protocol": "vless",
