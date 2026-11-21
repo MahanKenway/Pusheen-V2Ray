@@ -52,25 +52,6 @@
     },
     {
       "network": "tcp",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "tag": "outage-9b76cbf78001bc9d",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "64ce5faf-427b-4dd1-926c-6b7ced6b8c38"
-    },
-    {
-      "network": "tcp",
       "server": "104.19.214.146",
       "server_port": 2087,
       "tag": "outage-95d3b8250aa29c2f",
@@ -87,6 +68,44 @@
       },
       "type": "vless",
       "uuid": "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+    },
+    {
+      "network": "tcp",
+      "password": "mitivpn",
+      "server": "167.82.64.46",
+      "server_port": 443,
+      "tag": "outage-73952b119da84f47",
+      "tls": {
+        "enabled": true,
+        "server_name": "firefox.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "firefox.com"
+        },
+        "path": "/?DailyConfigs--DailyConfigs--DailyConfigs?ed=2048",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "mitivpn",
+      "server": "199.232.78.101",
+      "server_port": 443,
+      "tag": "outage-715121e8016fe9ec",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
+        "type": "ws"
+      },
+      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -220,22 +239,11 @@
     },
     {
       "network": "tcp",
-      "server": "88.216.70.125",
-      "server_port": 443,
-      "tag": "outage-941eb7cf63670844",
-      "tls": {
-        "enabled": true,
-        "server_name": "o685y.save-node.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "o685y.save-node.com"
-        },
-        "path": "/api/se1k2rfxlsuer3ry4u6e84kl8rqp721p",
-        "type": "ws"
-      },
+      "server": "13.37.206.2",
+      "server_port": 22223,
+      "tag": "outage-cbcce019764ff179",
       "type": "vless",
-      "uuid": "88e79aa6-f431-4453-8dcc-652a0c747198"
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
     },
     {
       "network": "tcp",
@@ -255,6 +263,25 @@
       },
       "type": "vless",
       "uuid": "fda89998-7e9a-4494-857a-cd0d00661b58"
+    },
+    {
+      "network": "tcp",
+      "server": "201.51.2.188",
+      "server_port": 443,
+      "tag": "outage-b69eacbf6f964c56",
+      "tls": {
+        "enabled": true,
+        "server_name": "sequoia.merlano.monster"
+      },
+      "transport": {
+        "headers": {
+          "Host": "sequoia.merlano.monster"
+        },
+        "path": "/api/de1/stream",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "25ac78e7-6d1d-4c9a-a450-c01a4871769f"
     },
     {
       "network": "tcp",
@@ -282,8 +309,9 @@
       "outbounds": [
         "outage-d714004c9f32763d",
         "outage-18a4b37202d585c6",
-        "outage-9b76cbf78001bc9d",
         "outage-95d3b8250aa29c2f",
+        "outage-73952b119da84f47",
+        "outage-715121e8016fe9ec",
         "outage-7dd3efda0670e3ee",
         "outage-fc3145bd0269dac6",
         "outage-ed8889b08883c735",
@@ -292,8 +320,9 @@
         "outage-1b0df61e5be5e96a",
         "outage-63fdd59ca8a490cf",
         "outage-ca3a494622e96301",
-        "outage-941eb7cf63670844",
+        "outage-cbcce019764ff179",
         "outage-945a3e1eaa5f6104",
+        "outage-b69eacbf6f964c56",
         "outage-2292c2554baaea20"
       ],
       "tag": "outage-auto",
