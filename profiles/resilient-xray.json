@@ -154,6 +154,54 @@
       "tag": "resilient-6dd5847f38830ff2"
     },
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "199.232.78.188",
+            "password": "mitivpn",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "ssl.fastly.com"
+        },
+        "wsSettings": {
+          "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET"
+        }
+      },
+      "tag": "resilient-27c216ca15c8b975"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.42.145.180",
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.volumeroot.com"
+        },
+        "wsSettings": {
+          "path": "/assignment"
+        }
+      },
+      "tag": "resilient-6bdebbb55688a3a5"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -292,28 +340,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "169.40.42.89",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "d65cc14c-f53f-4fe2-b262-97856601319c"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-1b0df61e5be5e96a"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "ipfast.kingmna.com",
             "port": 443,
             "users": [
@@ -445,36 +471,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.158.206.103",
-            "port": 23576,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "serverName": "fuck.rkn",
-          "shortId": "01",
-          "spiderX": "/HesarWeb"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-ce15bf8ed8970582"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "85.14.243.91",
             "port": 8443,
             "users": [
@@ -500,28 +496,6 @@
         "security": "reality"
       },
       "tag": "resilient-b2ca5356e928be33"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "13.37.206.2",
-            "port": 22223,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "resilient-cbcce019764ff179"
     },
     {
       "protocol": "vless",
@@ -685,35 +659,6 @@
         "security": "reality"
       },
       "tag": "resilient-385310247c1d7978"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "144.31.214.68",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "12910384-1ef8-40a3-818a-57277063ea66"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "serviceName": "vlgrpc"
-        },
-        "network": "grpc",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "kk-fr2-21468.testkknegr.online"
-        }
-      },
-      "tag": "resilient-54440b13b36ac570"
     },
     {
       "protocol": "vless",
@@ -998,6 +943,28 @@
       "settings": {
         "vnext": [
           {
+            "address": "52.47.138.188",
+            "port": 22222,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-858006ae18ff0d6d"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "13.39.41.107",
             "port": 22223,
             "users": [
@@ -1014,6 +981,72 @@
         "security": "none"
       },
       "tag": "resilient-9627370b06367dee"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "15.224.140.219",
+            "port": 22223,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-ecef9e24961adc75"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "52.47.138.188",
+            "port": 22223,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-7810bc4adff5d116"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "15.224.140.219",
+            "port": 22222,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "resilient-df81ae63f0f84ce4"
     },
     {
       "protocol": "vless",
@@ -1041,59 +1074,6 @@
         }
       },
       "tag": "resilient-43c6265b5212ee7b"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ov-france1.09vpn.com",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "f5c47e9c-914a-4a91-a81e-a5a77bc10fc1"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/vless/"
-        }
-      },
-      "tag": "resilient-02ccfd1ebd19404e"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "196.196.148.85",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs",
-          "serverName": "5d0319t.nl7.h1clayd.click",
-          "shortId": "361d0dd59c70516f"
-        },
-        "security": "reality"
-      },
-      "tag": "resilient-8edc5de8701c69ff"
     },
     {
       "protocol": "vless",

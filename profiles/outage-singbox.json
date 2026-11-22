@@ -110,6 +110,44 @@
     {
       "network": "tcp",
       "password": "mitivpn",
+      "server": "199.232.78.188",
+      "server_port": 443,
+      "tag": "outage-27c216ca15c8b975",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
+      "server": "188.42.145.180",
+      "server_port": 443,
+      "tag": "outage-6bdebbb55688a3a5",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.volumeroot.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.volumeroot.com"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "mitivpn",
       "server": "199.232.78.101",
       "server_port": 443,
       "tag": "outage-715121e8016fe9ec",
@@ -182,14 +220,6 @@
       },
       "type": "vless",
       "uuid": "48792731-6fc9-4415-8b51-6007825daf82"
-    },
-    {
-      "network": "tcp",
-      "server": "169.40.42.89",
-      "server_port": 443,
-      "tag": "outage-1b0df61e5be5e96a",
-      "type": "vless",
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c"
     },
     {
       "network": "tcp",
@@ -293,11 +323,12 @@
         "outage-95d3b8250aa29c2f",
         "outage-bca334414800d9b9",
         "outage-6dd5847f38830ff2",
+        "outage-27c216ca15c8b975",
+        "outage-6bdebbb55688a3a5",
         "outage-715121e8016fe9ec",
         "outage-ed8889b08883c735",
         "outage-8bd99c56bffef261",
         "outage-8583d9350c44a613",
-        "outage-1b0df61e5be5e96a",
         "outage-63fdd59ca8a490cf",
         "outage-91b9c5b3c11b089b",
         "outage-4e855151348a4547",
