@@ -33,6 +33,25 @@
     },
     {
       "network": "tcp",
+      "password": "jcTG9WSWMJAmR4rv10xpww",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "tag": "outage-79e135c06de7948e",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "mitivpn",
       "server": "199.232.78.101",
       "server_port": 443,
@@ -84,44 +103,6 @@
           "Host": "ssl.fastly.com"
         },
         "path": "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/des---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "jcTG9WSWMJAmR4rv10xpww",
-      "server": "199.232.78.159",
-      "server_port": 443,
-      "tag": "outage-2138358624d3a6ce",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "cdn.akamai.steamstatic.com"
-        },
-        "path": "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "humanity",
-      "server": "188.114.98.0",
-      "server_port": 443,
-      "tag": "outage-1c55d9ed82136cf5",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.calmlunch.com"
-        },
-        "path": "/assignment?ed#Telegram---mehrosaboran",
         "type": "ws"
       },
       "type": "trojan"
@@ -219,6 +200,25 @@
     },
     {
       "network": "tcp",
+      "server": "188.114.98.0",
+      "server_port": 443,
+      "tag": "outage-a1dc9ed010b475b2",
+      "tls": {
+        "enabled": true,
+        "server_name": "freeceshi6.frii.site"
+      },
+      "transport": {
+        "headers": {
+          "Host": "freeceshi6.frii.site"
+        },
+        "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "53bbdad4-2f4e-45db-8df4-fa491a6a7227"
+    },
+    {
+      "network": "tcp",
       "password": "mitivpn",
       "server": "167.82.76.7",
       "server_port": 443,
@@ -298,26 +298,35 @@
       "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581"
     },
     {
+      "network": "tcp",
+      "password": "jyneij42qcfg3x9f",
+      "server": "179.254.191.2",
+      "server_port": 39105,
+      "tag": "outage-bd04417871018f55",
+      "type": "trojan"
+    },
+    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
         "outage-f6e3c60f0f1cef53",
+        "outage-79e135c06de7948e",
         "outage-9bc0e06feeaa10f7",
         "outage-095140329ba6b176",
         "outage-f83cd2d63db3575c",
-        "outage-2138358624d3a6ce",
-        "outage-1c55d9ed82136cf5",
         "outage-ff8fc97e5e0bfab7",
         "outage-96ac0190a480ad4b",
         "outage-5084f145498f5bba",
         "outage-ce4f5664a78768c5",
         "outage-90747f54fdfd048c",
+        "outage-a1dc9ed010b475b2",
         "outage-8c51ca393ebdec6b",
         "outage-c885f6c52c9c36cf",
         "outage-135a9e8076c375ed",
         "outage-2f32fd976988c997",
-        "outage-fdcd8012074900d8"
+        "outage-fdcd8012074900d8",
+        "outage-bd04417871018f55"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
