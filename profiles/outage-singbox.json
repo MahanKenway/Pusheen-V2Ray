@@ -33,6 +33,25 @@
     },
     {
       "network": "tcp",
+      "password": "mitivpn",
+      "server": "199.232.78.101",
+      "server_port": 443,
+      "tag": "outage-9bc0e06feeaa10f7",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "ssl.fastly.com"
+        },
+        "path": "/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@@MetiVIP/---@@MetiVIP---@MetiVIP",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "server": "172.64.154.113",
       "server_port": 8443,
       "tag": "outage-095140329ba6b176",
@@ -49,25 +68,6 @@
       },
       "type": "vless",
       "uuid": "53bbdad4-2f4e-45db-8df4-fa491a6a7227"
-    },
-    {
-      "network": "tcp",
-      "password": "mitivpn",
-      "server": "167.82.64.46",
-      "server_port": 443,
-      "tag": "outage-0a0a14c66221599d",
-      "tls": {
-        "enabled": true,
-        "server_name": "firefox.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "firefox.com"
-        },
-        "path": "/?Telegram---DailyConfigs---DailyConfigs---DailyConfigs---DailyConfigs",
-        "type": "ws"
-      },
-      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -128,25 +128,6 @@
     },
     {
       "network": "tcp",
-      "password": "humanity",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "tag": "outage-bca334414800d9b9",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        },
-        "path": "/assignment",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "password": "mitivpn",
       "server": "199.232.78.188",
       "server_port": 443,
@@ -179,6 +160,44 @@
           "Host": "www.volumeroot.com"
         },
         "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "173.245.58.75",
+      "server_port": 443,
+      "tag": "outage-ff8fc97e5e0bfab7",
+      "tls": {
+        "enabled": true,
+        "server_name": "amoosamiii.net"
+      },
+      "transport": {
+        "headers": {
+          "Host": "amoosamiii.net"
+        },
+        "path": "/poiuyws@ThePackageCom",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "4f013568-a58b-4b04-b5dd-4d52bf1c33a4"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
+      "server": "8.47.69.0",
+      "server_port": 443,
+      "tag": "outage-96ac0190a480ad4b",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        },
+        "path": "/assignment?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
         "type": "ws"
       },
       "type": "trojan"
@@ -260,42 +279,25 @@
       "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581"
     },
     {
-      "network": "tcp",
-      "server": "15.188.103.0",
-      "server_port": 22223,
-      "tag": "outage-60696d568e7a7323",
-      "type": "vless",
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-    },
-    {
-      "network": "tcp",
-      "server": "13.39.219.105",
-      "server_port": 22222,
-      "tag": "outage-d892b19f8f1a07af",
-      "type": "vless",
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-    },
-    {
       "idle_timeout": "30m",
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
         "outage-f6e3c60f0f1cef53",
+        "outage-9bc0e06feeaa10f7",
         "outage-095140329ba6b176",
-        "outage-0a0a14c66221599d",
         "outage-f83cd2d63db3575c",
         "outage-2138358624d3a6ce",
         "outage-1c55d9ed82136cf5",
-        "outage-bca334414800d9b9",
         "outage-27c216ca15c8b975",
         "outage-6bdebbb55688a3a5",
+        "outage-ff8fc97e5e0bfab7",
+        "outage-96ac0190a480ad4b",
         "outage-5084f145498f5bba",
         "outage-ce4f5664a78768c5",
         "outage-135a9e8076c375ed",
         "outage-2f32fd976988c997",
-        "outage-fdcd8012074900d8",
-        "outage-60696d568e7a7323",
-        "outage-d892b19f8f1a07af"
+        "outage-fdcd8012074900d8"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
