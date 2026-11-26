@@ -257,17 +257,6 @@
     },
     {
       "network": "tcp",
-      "server": "216.106.185.158",
-      "server_port": 443,
-      "tag": "outage-135a9e8076c375ed",
-      "tls": {
-        "enabled": true
-      },
-      "type": "vless",
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581"
-    },
-    {
-      "network": "tcp",
       "server": "www.speedtest.net",
       "server_port": 2083,
       "tag": "outage-2f32fd976988c997",
@@ -284,6 +273,25 @@
       },
       "type": "vless",
       "uuid": "715777c7-708c-4eee-b5c3-84abf9b52d9a"
+    },
+    {
+      "network": "tcp",
+      "password": "e72mPnUKt4rNf29k",
+      "server": "vghui9ytyu-production.up.railway.app",
+      "server_port": 443,
+      "tag": "outage-ca79818e85fa1401",
+      "tls": {
+        "enabled": true,
+        "server_name": "vghui9ytyu-production.up.railway.app"
+      },
+      "transport": {
+        "headers": {
+          "Host": "vghui9ytyu-production.up.railway.app"
+        },
+        "path": "/api/EhPu6G",
+        "type": "ws"
+      },
+      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -323,8 +331,8 @@
         "outage-a1dc9ed010b475b2",
         "outage-8c51ca393ebdec6b",
         "outage-c885f6c52c9c36cf",
-        "outage-135a9e8076c375ed",
         "outage-2f32fd976988c997",
+        "outage-ca79818e85fa1401",
         "outage-fdcd8012074900d8",
         "outage-bd04417871018f55"
       ],
