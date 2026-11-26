@@ -90,6 +90,63 @@
     },
     {
       "network": "tcp",
+      "password": "humanity",
+      "server": "108.162.194.134",
+      "server_port": 443,
+      "tag": "outage-8f39d173a1d45689",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
+      "server": "104.18.35.86",
+      "server_port": 443,
+      "tag": "outage-77a9224811b0c29a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.volumerOot.coM."
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.volumerOot.coM."
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "server": "104.26.14.111",
+      "server_port": 2083,
+      "tag": "outage-796d6744b5ae0b0a",
+      "tls": {
+        "enabled": true,
+        "server_name": "site.check-looks.space"
+      },
+      "transport": {
+        "headers": {
+          "Host": "site.check-looks.space"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "bd6c11e0-0233-4fb1-ba97-8d5f16d7155f"
+    },
+    {
+      "network": "tcp",
       "password": "mitivpn",
       "server": "167.82.76.27",
       "server_port": 443,
@@ -307,11 +364,11 @@
     },
     {
       "network": "tcp",
-      "password": "jyneij42qcfg3x9f",
-      "server": "179.254.191.2",
-      "server_port": 39105,
-      "tag": "outage-bd04417871018f55",
-      "type": "trojan"
+      "server": "13.39.219.105",
+      "server_port": 22222,
+      "tag": "outage-d892b19f8f1a07af",
+      "type": "vless",
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
     },
     {
       "idle_timeout": "30m",
@@ -322,6 +379,9 @@
         "outage-79e135c06de7948e",
         "outage-9bc0e06feeaa10f7",
         "outage-095140329ba6b176",
+        "outage-8f39d173a1d45689",
+        "outage-77a9224811b0c29a",
+        "outage-796d6744b5ae0b0a",
         "outage-f83cd2d63db3575c",
         "outage-ff8fc97e5e0bfab7",
         "outage-96ac0190a480ad4b",
@@ -334,7 +394,7 @@
         "outage-2f32fd976988c997",
         "outage-ca79818e85fa1401",
         "outage-fdcd8012074900d8",
-        "outage-bd04417871018f55"
+        "outage-d892b19f8f1a07af"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
