@@ -131,14 +131,33 @@
       "password": "humanity",
       "server": "188.114.97.6",
       "server_port": 443,
-      "tag": "outage-7225f7f5903a1526",
+      "tag": "outage-99af2a53e507a43d",
       "tls": {
         "enabled": true,
-        "server_name": "www.trusteeforward.com"
+        "server_name": "www.pleadcourt.org"
       },
       "transport": {
         "headers": {
-          "Host": "www.trusteeforward.com"
+          "Host": "www.pleadcourt.org"
+        },
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
+      "password": "humanity",
+      "server": "141.193.213.172",
+      "server_port": 443,
+      "tag": "outage-e61ff53171ece157",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "www.calmlunch.com"
         },
         "path": "/assignment",
         "type": "ws"
@@ -163,25 +182,6 @@
       },
       "type": "vless",
       "uuid": "bd6c11e0-0233-4fb1-ba97-8d5f16d7155f"
-    },
-    {
-      "network": "tcp",
-      "password": "mitivpn",
-      "server": "167.82.76.27",
-      "server_port": 443,
-      "tag": "outage-f83cd2d63db3575c",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ssl.fastly.com"
-        },
-        "path": "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/des---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1",
-        "type": "ws"
-      },
-      "type": "trojan"
     },
     {
       "network": "tcp",
@@ -220,21 +220,6 @@
         "type": "ws"
       },
       "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "server": "170.114.45.6",
-      "server_port": 80,
-      "tag": "outage-ce4f5664a78768c5",
-      "transport": {
-        "headers": {
-          "Host": "matrix.learnpodedu.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "9ce32242-557a-4d18-864d-c9c385b3dfa4"
     },
     {
       "network": "tcp",
@@ -371,23 +356,30 @@
     },
     {
       "network": "tcp",
-      "server": "kuruish.org",
-      "server_port": 443,
-      "tag": "outage-fdcd8012074900d8",
-      "tls": {
-        "enabled": true,
-        "server_name": "kuruish.org"
-      },
-      "type": "vless",
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581"
-    },
-    {
-      "network": "tcp",
       "server": "13.39.219.105",
       "server_port": 22222,
       "tag": "outage-d892b19f8f1a07af",
       "type": "vless",
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+    },
+    {
+      "network": "tcp",
+      "server": "88.216.70.125",
+      "server_port": 443,
+      "tag": "outage-8108af1e875bd136",
+      "tls": {
+        "enabled": true,
+        "server_name": "o685y.save-node.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "o685y.save-node.com"
+        },
+        "path": "/api/se1k2rfxlsuer3ry4u6e84kl8rqp721p",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "88e79aa6-f431-4453-8dcc-652a0c747198"
     },
     {
       "idle_timeout": "30m",
@@ -400,12 +392,11 @@
         "outage-095140329ba6b176",
         "outage-8f39d173a1d45689",
         "outage-77a9224811b0c29a",
-        "outage-7225f7f5903a1526",
+        "outage-99af2a53e507a43d",
+        "outage-e61ff53171ece157",
         "outage-796d6744b5ae0b0a",
-        "outage-f83cd2d63db3575c",
         "outage-ff8fc97e5e0bfab7",
         "outage-96ac0190a480ad4b",
-        "outage-ce4f5664a78768c5",
         "outage-a1dc9ed010b475b2",
         "outage-8c51ca393ebdec6b",
         "outage-c885f6c52c9c36cf",
@@ -413,8 +404,8 @@
         "outage-93df46a111743980",
         "outage-2f32fd976988c997",
         "outage-ca79818e85fa1401",
-        "outage-fdcd8012074900d8",
-        "outage-d892b19f8f1a07af"
+        "outage-d892b19f8f1a07af",
+        "outage-8108af1e875bd136"
       ],
       "tag": "outage-auto",
       "tolerance": 200,
