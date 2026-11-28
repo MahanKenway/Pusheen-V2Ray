@@ -14,6 +14,25 @@
   "outbounds": [
     {
       "network": "tcp",
+      "password": "h3ilje76tkhrajug",
+      "server": "172.67.182.229",
+      "server_port": 2083,
+      "tag": "outage-bc1b8c37b73e3a21",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl1.xnetaro.ir"
+      },
+      "transport": {
+        "headers": {
+          "Host": "nl1.xnetaro.ir"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "network": "tcp",
       "password": "jcTG9WSWMJAmR4rv10xpww",
       "server": "199.232.78.159",
       "server_port": 443,
@@ -27,25 +46,6 @@
           "Host": "cdn.akamai.steamstatic.com"
         },
         "path": "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
-      "password": "mitivpn",
-      "server": "199.232.78.101",
-      "server_port": 443,
-      "tag": "outage-9bc0e06feeaa10f7",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
-      "transport": {
-        "headers": {
-          "Host": "ssl.fastly.com"
-        },
-        "path": "/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@@MetiVIP/---@@MetiVIP---@MetiVIP",
         "type": "ws"
       },
       "type": "trojan"
@@ -185,44 +185,6 @@
     },
     {
       "network": "tcp",
-      "server": "173.245.58.75",
-      "server_port": 443,
-      "tag": "outage-ff8fc97e5e0bfab7",
-      "tls": {
-        "enabled": true,
-        "server_name": "amoosamiii.net"
-      },
-      "transport": {
-        "headers": {
-          "Host": "amoosamiii.net"
-        },
-        "path": "/poiuyws@ThePackageCom",
-        "type": "ws"
-      },
-      "type": "vless",
-      "uuid": "4f013568-a58b-4b04-b5dd-4d52bf1c33a4"
-    },
-    {
-      "network": "tcp",
-      "password": "humanity",
-      "server": "8.47.69.0",
-      "server_port": 443,
-      "tag": "outage-96ac0190a480ad4b",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org"
-      },
-      "transport": {
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        },
-        "path": "/assignment?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
-      "network": "tcp",
       "server": "188.114.98.0",
       "server_port": 443,
       "tag": "outage-a1dc9ed010b475b2",
@@ -317,6 +279,25 @@
       "uuid": "963A4918-A630-29DA-A873-093CDF8AD784"
     },
     {
+      "network": "tcp",
+      "password": "lDU6Jpl4nSXA-x4sWmb1LQ",
+      "server": "ipfast.kingmna.com",
+      "server_port": 443,
+      "tag": "outage-3ca036ecf799c48b",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "headers": {
+          "Host": "cdn.akamai.steamstatic.com"
+        },
+        "path": "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "server": "31.76.93.112",
@@ -334,8 +315,8 @@
       "interrupt_exist_connections": false,
       "interval": "10m",
       "outbounds": [
+        "outage-bc1b8c37b73e3a21",
         "outage-79e135c06de7948e",
-        "outage-9bc0e06feeaa10f7",
         "outage-86e42bd411a8ae7e",
         "outage-8f39d173a1d45689",
         "outage-77a9224811b0c29a",
@@ -343,13 +324,12 @@
         "outage-e61ff53171ece157",
         "outage-796d6744b5ae0b0a",
         "outage-dcffd099d40e252f",
-        "outage-ff8fc97e5e0bfab7",
-        "outage-96ac0190a480ad4b",
         "outage-a1dc9ed010b475b2",
         "outage-8c51ca393ebdec6b",
         "outage-c885f6c52c9c36cf",
         "outage-7d590772c1b134a0",
         "outage-93df46a111743980",
+        "outage-3ca036ecf799c48b",
         "outage-0617ee951b8abf61"
       ],
       "tag": "outage-auto",
